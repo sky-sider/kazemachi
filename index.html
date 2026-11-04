@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.79</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.92</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -725,8 +725,8 @@ select,input[type="text"],input[type="number"],textarea{min-height:44px;border-r
 </style>
 <style id="save-scroll-target-v0934">
 /* Keep the record heading visible beneath sticky page navigation. */
-#adventurerRecordSection{scroll-margin-top:105px;}
-@media(max-width:759px){#adventurerRecordSection{scroll-margin-top:142px;}}
+#gameSettingsSection{scroll-margin-top:105px;}
+@media(max-width:759px){#gameSettingsSection{scroll-margin-top:142px;}}
 </style>
 <style id="stories-person-first-v0935">
 #chapterSection.story-legacy-source,.story-legacy-source{display:none!important}
@@ -1370,11 +1370,166 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 #loginGiftDialog .gift-alert{font-size:12px;color:#915343;min-height:1.5em;margin-top:7px}
 @media(max-width:370px){#loginGiftDialog{padding:14px 11px}#loginGiftDialog .gift-week{gap:3px}#loginGiftDialog .gift-day{font-size:10px}#loginGiftDialog h2{font-size:20px}}
 </style>
+<style>
+/* v0.9.80: storybook farming, scoped to its own guild panel */
+.farm-panel{background:linear-gradient(150deg,#fff9ea,#eaf1e5)!important;color:#314e43!important;border:1px solid #bbc9af!important;overflow:hidden}
+.farm-panel h2,.farm-panel h3,.farm-panel strong{color:#285144!important}
+.farm-panel button{cursor:pointer;min-height:43px;touch-action:manipulation}
+.farm-panel button:disabled{cursor:not-allowed;opacity:.48}
+.farm-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.farm-head h2{font-size:1.3rem;margin:2px 0 6px}
+.farm-head p{line-height:1.65;font-size:.88rem;color:#536b5a;margin:0}
+.farm-head .farm-kicker{font-size:10px;letter-spacing:.12em;font-weight:800;color:#809372}
+.farm-pill{border-radius:99px;border:1px solid #abc2a5;background:#e4f2dd;padding:7px 11px;color:#315c41;font-weight:750;font-size:12px;white-space:nowrap}
+.farm-status{background:#eff3e5;border:1px solid #c8d7b8;border-radius:10px;padding:11px 13px;font-size:13px;line-height:1.8;margin:12px 0;color:#3d5b45}
+.farm-plot-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+.farm-plot{border:1px solid #c4c9a9;border-radius:12px;background:#fffdf4;min-width:0;padding:11px 7px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;min-height:160px}
+.farm-plot.locked{background:#e6e9dc;color:#6e8069}
+.farm-plot.ready{background:#eff9e9;border-color:#85b78e}
+.farm-plot-icon{font-size:28px;line-height:1.2}
+.farm-plot-title{font-weight:760;font-size:13px;line-height:1.35}
+.farm-plot-note{font-size:11px;color:#647567;line-height:1.45;min-height:30px}
+.farm-plot button{padding:7px 5px;min-height:37px;border:1px solid #91ad93;color:#295544;background:#e2f1de;border-radius:8px;font-weight:700;font-size:12px;width:100%;margin-top:auto}
+.farm-plot button.ready-button{background:#36715d;color:#fff;border-color:#36715d}
+.farm-progress{height:6px;border-radius:6px;background:#dce7d6;overflow:hidden;width:100%}.farm-progress>span{display:block;background:#84b38a;height:100%}
+.farm-controls,.farm-storage,.farm-history{background:#fffdf5;border:1px solid #d2d4bc;border-radius:12px;padding:13px;margin-top:13px}
+.farm-control-title h3,.farm-storage h3,.farm-history h3{font-size:15px;margin:0 0 4px}
+.farm-control-title p,.farm-storage p{font-size:12px;line-height:1.65;margin:0 0 10px;color:#657764}
+.farm-inputrow{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:9px}.farm-inputrow label{font-size:12px;color:#46634d;font-weight:700}
+.farm-inputrow select{margin-top:4px;background:#fff;color:#214737;border:1px solid #bdcbb4;width:100%;min-height:42px;font-size:14px}
+.farm-seed-info{font-size:12px;line-height:1.6;color:#546a55;margin:8px 0}
+.farm-actionrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.farm-btn{background:#e9f2e0;border:1px solid #acc5a6!important;color:#365a45!important;border-radius:9px;padding:9px 7px;font-weight:700;font-size:12px;line-height:1.5}
+.farm-btn-primary{background:#36715d!important;border-color:#36715d!important;color:#fff!important}
+.farm-ready-badge{position:absolute;right:7px;top:4px;font-size:11px;color:#f0ca67;text-shadow:0 1px #345841;pointer-events:none}
+.farm-ready-badge[hidden]{display:none!important}
+.farm-store-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.farm-store-item{border:1px solid #dddcc6;border-radius:9px;padding:10px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.farm-store-item .farm-store-label{font-size:13px;line-height:1.6;min-width:0}
+.farm-store-item button{border:1px solid #c2d0bd;border-radius:7px;background:#f0f5e9;color:#365843;padding:7px;font-size:12px;flex:none}
+.farm-history-list{font-size:12px;color:#5c6c59;line-height:1.75;max-height:170px;overflow:auto}
+.farm-history-list p{margin:0 0 6px}
+@media(max-width:950px){.farm-plot-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.farm-plot{min-height:142px}.farm-actionrow{grid-template-columns:1fr}.farm-store-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.farm-head h2{font-size:1.18rem}}
+</style>
+<style>
+/* v0.9.81: cooking station; own panel keeps the farm short on phones. */
+.meal-adventure-status{margin:9px 0;padding:10px 12px;border-radius:10px;border:1px solid #b0c8ae;background:#e8f2e4;color:#315942;font-size:13px;line-height:1.6}
+.kitchen-meal-status{margin:11px 0;background:#e1eee0;border:1px solid #b6c8ab;border-radius:10px;padding:11px 13px;font-size:13px;line-height:1.7;color:#345a44}
+.kitchen-meal-note{display:block;font-size:12px;color:#536d59;line-height:1.65;margin-top:2px}
+.kitchen-panel button.meal-eat{background:#396f58;color:#fff;border-color:#396f58}
+
+.kitchen-panel{background:linear-gradient(155deg,#fbf5e5,#f1eee0)!important;color:#314d40!important;border:1px solid #c5c5a9!important;overflow:hidden}
+.kitchen-panel h2,.kitchen-panel h3,.kitchen-panel strong{color:#304f42!important}
+.kitchen-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.kitchen-head h2{font-size:1.25rem;margin:1px 0 5px}
+.kitchen-head .kitchen-kicker{font-size:10px;font-weight:800;letter-spacing:.12em;color:#8b8968;margin-bottom:4px}
+.kitchen-desc{font-size:13px;line-height:1.75;color:#637260;margin:0}
+.kitchen-status{margin:12px 0;background:#edf0e1;border:1px solid #d0d7c1;color:#395d47;border-radius:10px;padding:10px 13px;font-size:13px;line-height:1.7;white-space:normal}
+.kitchen-section-title{font-size:15px;margin:17px 0 8px}
+.kitchen-recipes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.kitchen-card{background:#fffdf6;border:1px solid #d7d5be;border-radius:13px;padding:13px;min-width:0;display:flex;flex-direction:column;gap:7px}
+.kitchen-card.locked{background:#f5f1e6}
+.kitchen-card-header{display:flex;align-items:center;gap:9px;min-width:0}
+.kitchen-card-icon{display:grid;place-items:center;flex:none;width:38px;height:38px;background:#f2e9d2;border-radius:10px;font-size:24px}
+.kitchen-card-header>div{min-width:0;flex:1}
+.kitchen-card h3{font-size:14px;line-height:1.4;margin:0}
+.kitchen-tag{font-size:10px;color:#607563;margin-top:3px;line-height:1.4}
+.kitchen-ingredients{font-size:12px;line-height:1.7;color:#526755;margin:0}
+.kitchen-ingredients .missing{color:#b05e4f;font-weight:700}
+.kitchen-ingredients .enough{color:#417b53}
+.kitchen-price{font-size:12px;color:#657361;margin:0}
+.kitchen-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.kitchen-panel button{min-height:41px;cursor:pointer;touch-action:manipulation;border-radius:9px;border:1px solid #aabda8;background:#e8f1df;color:#355b44;padding:8px 10px;font-weight:700;font-size:12px;line-height:1.45;flex:1}
+.kitchen-panel button.primary{background:#3b725d;color:#fff;border-color:#3b725d}
+.kitchen-panel button:disabled{opacity:.48;cursor:not-allowed}
+.kitchen-pantry{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.kitchen-pantry-item{border:1px solid #ddd9bd;border-radius:10px;background:#fffdf6;padding:11px;display:flex;flex-direction:column;gap:7px}
+.kitchen-pantry-item .pantry-name{font-size:13px;font-weight:700;line-height:1.4}
+.kitchen-pantry-item .pantry-meta{font-size:12px;color:#68715e}
+.kitchen-pantry-item .kitchen-actions{margin:0}
+.kitchen-history{background:#fffdf7;border:1px solid #d9d7c2;border-radius:11px;padding:12px;font-size:12px;color:#536554;line-height:1.7;max-height:160px;overflow:auto}
+.kitchen-history p{margin:0 0 5px}
+@media(max-width:650px){.kitchen-recipes,.kitchen-pantry{grid-template-columns:1fr}.kitchen-head h2{font-size:1.15rem}}
+</style>
+<style id="kaze-collection-css-v084">
+/* v0.9.84: compact farm/food reference book, only on the Records page. */
+.farm-collection{background:linear-gradient(140deg,#fdf8e9,#eff3e9)!important;color:#315243!important;border-color:#becab2!important}
+.farm-collection h2,.farm-collection h3{color:#2d5143!important}
+.collection-title{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.collection-title h2{margin:4px 0 8px}.collection-title p{color:#536b5e!important;line-height:1.6}
+.collection-kicker{font-size:10px;letter-spacing:.16em;color:#73846d;margin:0}
+.collection-progress{background:#d7dfd0;border-radius:999px;height:8px;overflow:hidden;margin:10px 0 15px}
+.collection-progress>div{height:100%;background:#558c6d;transition:width .2s ease;width:0}
+.collection-nav{display:flex;gap:8px;margin:0 0 12px}
+.collection-nav button{flex:1;min-width:0;border:1px solid #b6c6b3;border-radius:10px;background:#f7f4e9;color:#345b49;padding:10px;min-height:44px;font:inherit;font-weight:700;cursor:pointer}
+.collection-nav button[aria-pressed="true"]{background:#37695a;color:#fffdf3;border-color:#37695a}
+.collection-nav span{font-size:12px;opacity:.85;white-space:nowrap}
+.collection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.collection-item{border:1px solid #cfd7c7;background:#fffdf4;border-radius:12px;padding:12px;min-width:0;display:flex;gap:10px;align-items:flex-start}
+.collection-item.unknown{background:#f1f1e9;border-style:dashed}
+.collection-icon{flex:0 0 38px;display:grid;place-items:center;width:38px;height:38px;border-radius:9px;background:#eaf0e0;font-size:23px}
+.collection-item.unknown .collection-icon{filter:grayscale(1);opacity:.55}
+.collection-copy{min-width:0;flex:1}.collection-copy strong{color:#315443;font-size:14px;line-height:1.5}
+.collection-copy small{display:block;font-size:12px;line-height:1.6;color:#657b6b}
+.collection-copy .found{color:#2b7652;font-weight:700}
+.collection-foot{font-size:12px!important;color:#667c6f!important;line-height:1.7;margin:12px 0 0!important}
+@media(max-width:550px){.collection-grid{grid-template-columns:minmax(0,1fr)}.collection-item{padding:10px}.collection-title h2{font-size:17px}}
+</style><style id="gear-journal-086">
+.gear-journal-panel{color:#345647!important;background:linear-gradient(145deg,#fffaf0,#eef2e5)!important;border-color:#c0c8b5!important}
+.gear-journal-panel h2,.gear-journal-panel strong{color:#254a3b!important}
+.gear-journal-title{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.gear-journal-progress{height:10px;overflow:hidden;border-radius:50px;background:#dae4d4;border:1px solid #bccdbb;margin:13px 0}
+.gear-journal-progress>div{height:100%;width:0;background:#678f70;transition:width .2s}
+.gear-journal-controls{display:flex;gap:15px;flex-wrap:wrap;align-items:end;margin:12px 0}
+.gear-journal-controls label{color:#3d5a4b;font-size:13px;font-weight:700}
+.gear-journal-controls select{display:block;min-width:210px;max-width:100%;background:#fffdf6;color:#294c40;border:1px solid #aabcae;margin-top:5px;font-size:14px}
+.gear-journal-controls .gear-journal-missing{display:flex;gap:8px;align-items:center;min-height:44px}.gear-journal-missing input{width:18px;height:18px}
+.gear-journal-area{font-size:13px;line-height:1.6;margin:10px 0;color:#466951;font-weight:700}
+.gear-journal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.gear-journal-item{display:flex;align-items:flex-start;gap:10px;min-width:0;border:1px solid #ced6c4;border-radius:11px;padding:12px;background:#fffdf6;color:#375748}
+.gear-journal-item.is-unknown{background:#f2f1e7;color:#8a9288}
+.gear-journal-symbol{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:9px;background:#ebedde;color:#65836c;font-size:19px}
+.gear-journal-body{min-width:0}.gear-journal-item strong{display:block;margin:0 0 5px;font-size:14px;overflow-wrap:anywhere}
+.gear-journal-item small{display:block;color:#627569;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.gear-journal-rarity{color:#8f6730;font-weight:700}.gear-journal-more{width:100%;margin-top:12px}
+@media(max-width:690px){.gear-journal-grid{grid-template-columns:1fr}.gear-journal-controls{display:grid;gap:5px}.gear-journal-controls select{width:100%}}
+</style>
+
+<style id="settings-save-relocation-v09090">
+.settings-save-tools{margin-top:18px;padding-top:16px;border-top:1px solid #d6c6a8}
+.settings-save-tools h3{margin-bottom:8px}
+.settings-save-tools .buttons{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.settings-save-tools .buttons .btn{flex:1 1 155px;min-width:0}
+.settings-save-tools #reset{background:#f4e5de;border-color:#c5a899;color:#71443c}
+#result:empty{display:none}
+</style>
+<style id="guide-updated-v091">
+#guideOverlay .guide-quick-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:9px}
+#guideOverlay .guide-quick-actions button{min-width:0;min-height:44px;padding:9px 7px;background:#fffef8;border:1px solid #9eaf9d;border-radius:10px;color:#315748;font:700 13px/1.45 system-ui,-apple-system,"Noto Sans JP",sans-serif;cursor:pointer;white-space:normal;text-align:center}
+#guideOverlay .guide-quick-actions button:focus-visible{outline:3px solid #cf934e;outline-offset:2px}
+#guideOverlay .guide-chapter-body strong{color:#254f40}
+#guideOverlay .guide-paytable{table-layout:auto}
+@media(min-width:720px){#guideOverlay .guide-quick-actions{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style>
+<style id="navigation-location-v092">
+@media(min-width:760px){
+ .story-cover + #bookTabs{margin-top:22px;margin-bottom:0}
+ #bookTabs + .heroBanner{margin-top:14px}
+}
+</style>
 </head><body><main>
 <header class="story-cover">
 <div aria-hidden="true" class="cover-art"><span class="cover-sun"></span><span class="cover-hill cover-hill-back"></span><span class="cover-hill cover-hill-front"></span><span class="cover-tree cover-tree-a"></span><span class="cover-tree cover-tree-b"></span><span class="cover-tree cover-tree-c"></span><span class="cover-house"><i></i></span><span class="cover-path"></span></div>
-<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">試作 0.9.79</span></h1></div></header>
-<div class="heroBanner"><div><div class="eyebrow" style="margin-bottom:3px">MY ADVENTURER</div><div class="big" id="heroTitle">剣士 · 冒険者 Lv10</div><div class="small muted" id="jobLine">職業Lv8 / 次の成長まで</div></div><div class="stats"><div class="stat"><strong id="gold">180</strong><small>所持金 G</small></div><div class="stat"><strong id="wins">0</strong><small>通算勝利</small></div></div>
+<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">試作 0.9.92</span></h1></div></header>
+<nav aria-label="ゲームの画面を切り替える" class="storybook-tabs" id="bookTabs" role="tablist">
+<button aria-controls="gamePanels" aria-selected="true" class="book-tab is-selected" data-ui-go="adventure" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⚔</span><span>冒険</span><span aria-label="ボス戦の指示待ち" class="tab-alert" hidden="" id="bossAlert">!</span></button>
+<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="hero" role="tab" type="button"><span aria-hidden="true" class="tab-icon">✦</span><span>主人公</span></button>
+<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="party" role="tab" type="button"><span aria-hidden="true" class="tab-icon">♧</span><span>仲間</span></button>
+<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="guild" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⌂</span><span>ギルド</span><span class="farm-ready-badge" id="farmReadyBadge" hidden aria-label="収穫可能な作物があります">●</span></button>
+<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="records" role="tab" type="button"><span aria-hidden="true" class="tab-icon">▤</span><span>記録</span></button>
+</nav>
+<div class="heroBanner"><div><div class="eyebrow" style="margin-bottom:3px">MY ADVENTURER</div><div class="big" id="heroTitle">剣士 · 冒険者 Lv10</div><div class="small muted" id="jobLine">職業Lv8</div></div><div class="stats"><div class="stat"><strong id="gold">180</strong><small>所持金 G</small></div><div class="stat"><strong id="wins">0</strong><small>通算勝利</small></div></div>
 <div aria-label="ゲーム内の時刻と時間の流れ" class="sky-clock phase-day" id="skyClock">
 <div class="sky-clock-head"><div><span class="sky-clock-kicker">✦ 風待ちの空時計</span><strong id="skyClockTime">第1日 08:00</strong></div><span class="sky-clock-phase" id="skyClockPhase">☀ 朝</span></div>
 <div aria-hidden="true" class="sky-visual" id="skyVisual"><div class="sky-stars">✦　·　✧　·　✦　·　✧　·　✦</div><div class="sky-horizon"></div><div class="sky-orb" id="skyOrb">☀</div></div>
@@ -1392,13 +1547,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <span aria-hidden="true" class="mini-clock-progress"><span id="miniClockFill"></span></span>
 </button>
 </div>
-<nav aria-label="ゲームの画面を切り替える" class="storybook-tabs" id="bookTabs" role="tablist">
-<button aria-controls="gamePanels" aria-selected="true" class="book-tab is-selected" data-ui-go="adventure" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⚔</span><span>冒険</span><span aria-label="ボス戦の指示待ち" class="tab-alert" hidden="" id="bossAlert">!</span></button>
-<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="hero" role="tab" type="button"><span aria-hidden="true" class="tab-icon">✦</span><span>主人公</span></button>
-<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="party" role="tab" type="button"><span aria-hidden="true" class="tab-icon">♧</span><span>仲間</span></button>
-<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="guild" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⌂</span><span>ギルド</span></button>
-<button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="records" role="tab" type="button"><span aria-hidden="true" class="tab-icon">▤</span><span>記録</span></button>
-</nav>
+
 <div aria-live="polite" class="storybook-page-heading"><div class="page-guide-row"><span class="page-chapter" id="pageChapter">CHAPTER I · はじまりの森</span><div class="page-heading-main"><h2 id="pageTitle" tabindex="-1">冒険</h2><button aria-controls="guideOverlay" aria-haspopup="dialog" class="guide-open-btn" id="guideOpen" type="button">？ 遊び方</button></div></div></div>
 <div class="quick-note" id="quickNote"><span aria-hidden="true">✿</span><span id="quickNoteText">今は町でひと休み。新しい物語の行き先を選んでください。</span></div>
 
@@ -1436,11 +1585,11 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  <div id="dawnMapHint"></div>
 </div>
 </section>
-<section class="panel" data-ui-order="0" data-ui-page="adventure"><div class="panel-pagehint"><span>01 / 旅支度</span><button class="ink-link" data-scroll-destinations type="button">行き先を見る ↗</button></div><h2>⚔️ 冒険の準備</h2><div class="group"><div class="fieldrow"><div><label class="label" for="job">主人公の職業</label><select id="job"><option value="sword">剣士</option><option value="hunter">狩人</option><option value="mage">魔術師</option><option value="healer">癒し手</option><option disabled="" value="guardian">守護騎士（上位職）</option><option disabled="" value="blade">剣豪（上位職）</option><option disabled="" value="sniper">神射手（上位職）</option><option disabled="" value="tracker">追跡者（上位職）</option><option disabled="" value="archmage">大魔導師（上位職）</option><option disabled="" value="hexer">呪術師（上位職）</option><option disabled="" value="saint">聖職者（上位職）</option><option disabled="" value="sage">賢者（上位職）</option></select></div><div class="destination-selected-field"><div class="label">現在の行き先</div><strong aria-live="polite" id="selectedDestinationName">🌲 緑風の森</strong><span class="destination-selected-hint">変更は上の「冒険の行き先」から</span><select aria-hidden="true" id="zone" tabindex="-1"><option value="forest">🌲 緑風の森</option><option value="mine">⛏️ 赤錆の鉱山</option><option value="boss">🗿 忘却の地下聖堂（ボス・推奨Lv22／4人）</option><option disabled="" value="oldroad">🌿 苔むした旧道（未発見）</option><option disabled="" value="ruins">🏛️ 巡礼者の地下遺跡（未発見）</option><option disabled="" value="highland">🍃 風鳴りの高原（未発見）</option><option disabled="" value="starwood">🌳 星影の樹海（未発見）</option><option disabled="" value="observatory">🌟 玻璃の天文塔（未発見）</option><option disabled="" value="dawnsea">☀️ 暁の雲海（未発見）</option><option disabled="" value="eclipse">🌘 星蝕の断崖（未発見）</option><option disabled="" value="starpit">🌑 無明の星坑（未発見）</option></select></div></div><div><div class="label">同行NPC（最大3人・編成を外すと自律活動を再開）</div><div class="checkrows" id="companions"><label class="checkrow"><input checked="" type="checkbox" value="gald"/>🛡️ ガルド / 剣士</label><label class="checkrow"><input checked="" type="checkbox" value="rio"/>🏹 リオ / 狩人</label><label class="checkrow"><input type="checkbox" value="sera"/>✨ セラ / 魔術師</label><label class="checkrow"><input checked="" type="checkbox" value="mina"/>💚 ミーナ / 癒し手</label><label class="checkrow"><input type="checkbox" value="noel"/>📖 ノエル / 魔術師</label><label class="checkrow"><input type="checkbox" value="eda"/>🌼 エダ / 癒し手</label><label class="checkrow"><input type="checkbox" value="toto"/>🪙 トト / 狩人</label><label class="checkrow"><input type="checkbox" value="van"/>⚔️ ヴァン / 剣士</label></div></div><div><label class="label" for="speed">戦闘の表示速度</label><select id="speed"><option value="1">1倍</option><option value="3">3倍</option><option selected="" value="8">8倍（テスト向け）</option></select></div><label class="checkboxWide"><input id="loop" type="checkbox"/>勝利したら自動的に次の戦闘へ（ボスは除く）</label><label class="checkboxWide"><input id="autoPotion" type="checkbox"/>周回中にHP・MP回復薬を自動使用する</label><div class="buttons"><button class="btn" id="start">▶ 冒険を始める</button><button class="btn secondary" disabled="" id="pause">一時停止</button><button class="btn secondary" disabled="" id="retreat">撤退する</button></div><div class="notice" id="fieldNotice">体力を保ちながら連続探索できます。HPが危険域になると自動撤退し、次の戦闘を始めません。</div></div></section>
+<section class="panel" data-ui-order="0" data-ui-page="adventure"><div class="panel-pagehint"><span>01 / 旅支度</span><button class="ink-link" data-scroll-destinations type="button">行き先を見る ↗</button></div><h2>⚔️ 冒険の準備</h2><div class="group"><div class="fieldrow"><div><label class="label" for="job">主人公の職業</label><select id="job"><option value="sword">剣士</option><option value="hunter">狩人</option><option value="mage">魔術師</option><option value="healer">癒し手</option><option disabled="" value="guardian">守護騎士（上位職）</option><option disabled="" value="blade">剣豪（上位職）</option><option disabled="" value="sniper">神射手（上位職）</option><option disabled="" value="tracker">追跡者（上位職）</option><option disabled="" value="archmage">大魔導師（上位職）</option><option disabled="" value="hexer">呪術師（上位職）</option><option disabled="" value="saint">聖職者（上位職）</option><option disabled="" value="sage">賢者（上位職）</option></select></div><div class="destination-selected-field"><div class="label">現在の行き先</div><strong aria-live="polite" id="selectedDestinationName">🌲 緑風の森</strong><span class="destination-selected-hint">変更は上の「冒険の行き先」から</span><select aria-hidden="true" id="zone" tabindex="-1"><option value="forest">🌲 緑風の森</option><option value="mine">⛏️ 赤錆の鉱山</option><option value="boss">🗿 忘却の地下聖堂（ボス・推奨Lv22／4人）</option><option disabled="" value="oldroad">🌿 苔むした旧道（未発見）</option><option disabled="" value="ruins">🏛️ 巡礼者の地下遺跡（未発見）</option><option disabled="" value="highland">🍃 風鳴りの高原（未発見）</option><option disabled="" value="starwood">🌳 星影の樹海（未発見）</option><option disabled="" value="observatory">🌟 玻璃の天文塔（未発見）</option><option disabled="" value="dawnsea">☀️ 暁の雲海（未発見）</option><option disabled="" value="eclipse">🌘 星蝕の断崖（未発見）</option><option disabled="" value="starpit">🌑 無明の星坑（未発見）</option></select></div></div><div><div class="label">同行NPC（最大3人・編成を外すと自律活動を再開）</div><div class="checkrows" id="companions"><label class="checkrow"><input checked="" type="checkbox" value="gald"/>🛡️ ガルド / 剣士</label><label class="checkrow"><input checked="" type="checkbox" value="rio"/>🏹 リオ / 狩人</label><label class="checkrow"><input type="checkbox" value="sera"/>✨ セラ / 魔術師</label><label class="checkrow"><input checked="" type="checkbox" value="mina"/>💚 ミーナ / 癒し手</label><label class="checkrow"><input type="checkbox" value="noel"/>📖 ノエル / 魔術師</label><label class="checkrow"><input type="checkbox" value="eda"/>🌼 エダ / 癒し手</label><label class="checkrow"><input type="checkbox" value="toto"/>🪙 トト / 狩人</label><label class="checkrow"><input type="checkbox" value="van"/>⚔️ ヴァン / 剣士</label></div></div><div><label class="label" for="speed">戦闘の表示速度</label><select id="speed"><option value="1">1倍</option><option value="3">3倍</option><option selected="" value="8">8倍（テスト向け）</option></select></div><label class="checkboxWide"><input id="loop" type="checkbox"/>勝利したら自動的に次の戦闘へ（ボスは除く）</label><label class="checkboxWide"><input id="autoPotion" type="checkbox"/>周回中にHP・MP回復薬を自動使用する</label><div class="buttons"><button class="btn" id="start">▶ 冒険を始める</button><button class="btn secondary" disabled="" id="pause">一時停止</button><button class="btn secondary" disabled="" id="retreat">撤退する</button></div><div class="meal-adventure-status" id="mealAdventureStatus" role="status" aria-live="polite">🍽️ 食事効果なし。ギルドの調理場で料理を食べると次の冒険に効果が付きます。</div><div class="notice" id="fieldNotice">体力を保ちながら連続探索できます。HPが危険域になると自動撤退し、次の戦闘を始めません。</div></div></section>
 <section class="panel" data-ui-order="1" data-ui-page="hero"><div aria-label="主人公の肖像画" class="portrait-hero feature-book">
 <div class="portrait-frame hero-frame"><img alt="主人公・冒険者の肖像画" data-portrait-id="001" height="170" width="170"/></div>
-<div class="portrait-hero-copy"><p class="portrait-kicker">CHARACTER 001 ・ 冒険者の手帳</p><h3>旅の主人公</h3><p id="heroPortraitMeta">冒険者の旅が、ここから始まります。</p><p class="portrait-quote">まだ知らない景色が、この先にある。</p></div>
-</div><h2>🌱 主人公の成長</h2><div class="barlabel"><strong id="heroLevel">冒険者 Lv10</strong><span id="expLabel">0 / 640 EXP</span></div><div class="growBar"><div id="expBar" style="width:0%"></div></div><div class="barlabel mt"><strong id="jobLevel">剣士 職業Lv8</strong><span id="jobExpLabel">0 / 269 職業EXP</span></div><div class="growBar"><div id="jobExpBar" style="width:0%"></div></div><div class="twoStat mt" id="heroStats"></div><div class="readout" id="heroNote">新しい職業に変えると、職業別の熟練はその職業の記録から再開します。</div></section>
+<div class="portrait-hero-copy"><p class="portrait-kicker">CHARACTER 001</p><h3>旅の主人公</h3><p id="heroPortraitMeta">冒険者の旅が、ここから始まります。</p></div>
+</div><h2>🌱 主人公の成長</h2><div class="barlabel"><strong id="heroLevel">冒険者 Lv10</strong><span id="expLabel">0 / 640 EXP</span></div><div class="growBar"><div id="expBar" style="width:0%"></div></div><div class="barlabel mt"><strong id="jobLevel">剣士 職業Lv8</strong><span id="jobExpLabel">0 / 269 職業EXP</span></div><div class="growBar"><div id="jobExpBar" style="width:0%"></div></div><div class="twoStat mt" id="heroStats"></div></section>
 <section class="panel wide" data-ui-order="12.92" data-ui-page="records" id="fieldSurveyHistory" aria-label="現地調査の記録">
  <div class="sectionRow"><h2 style="margin:0">🧾 現地調査の記録</h2></div>
  <p class="help">新しい地域を見つけた経緯や、そのとき選んだ調査方法を振り返れます。次の行き先や地域解放は「冒険」で確認してください。</p>
@@ -1457,7 +1606,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  </section>
 <section class="panel wide endgame-section" data-ui-order="2.98" data-ui-page="adventure" id="starpitSection">
  <div class="sectionRow"><h2 style="margin:0">🌑 無明の星坑・三層迷宮</h2><span class="pill" id="starpitStatus">未解放</span></div>
- <p class="help">断崖5勝で開く最深部。階層を跨いで体力・魔力を持ち越し、途中帰還した場合は第1層から再挑戦します。星王は戦闘中の指揮を必要とします。</p>
+ <p class="help">断崖5勝で開く最深部。階層を跨いで体力・魔力を持ち越し、途中帰還した場合は第1層から再挑戦します。星王は戦闘中の指揮を必要とします。星王の後半は回復魔法が弱まる「星核の不協和」に注意。防御・妨害の判断が重要です。</p>
  <div class="readout mt" id="starpitGuide"></div><div class="readout mt" id="starpitHistory"></div>
  <details class="mt"><summary>この地域で見つかる18種類の装備を見る</summary><p class="help mt">断崖：宵裂きの長剣／夜渡りの弓／星蝕の導杖／断崖の戦衣／宵星の兜／月喰いの盾／星喰いの矢筒／薄月の写本／夜護りの護符</p><p class="help">星坑：無明の大剣／静寂の長弓／虚星の祭杖／星坑の守衣／封星の冠／深星の護盾／深闇の魔導書／薄明の灯具／天底の指輪</p><p class="help">装備の名前と品質を抽選します。レジェンダリーは希少で、確定入手ではありません。固有能力はレジェンダリーのときのみ有効です。</p></details>
 </section>
@@ -1468,9 +1617,9 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 </section>
 <section class="panel" data-ui-order="4" data-ui-page="hero"><h2>📖 スキル・戦術の編成</h2><div class="readout" id="skillsTitle">スキルを読み込み中</div><div id="skillArea"></div>
 <div class="inherit-book" id="inheritBook"><h3>✦ 他職の補助技能（1枠）</h3><div class="skillGrid" id="supportArea"></div>
-<h3 class="mt">✧ 職業の極意（2枠）</h3><div class="skillGrid" id="masteryArea"></div><p class="help" id="inheritSummary"></p><div class="heritage-stats"><strong>選んだ技能を反映した戦闘能力</strong><div aria-live="polite" class="heritage-stat-grid" id="heritagePreview"></div><p id="heritageCaveat" role="status"></p><p>装備・通常の技能・職業熟練・補助技能・極意をすべて反映した値です。装備や職業の変更で再計算されます。</p></div></div><hr class="sep"/><div class="tacticBox"><div><label class="label" for="tactic">戦闘の作戦</label><select id="tactic"><option value="balanced">バランス重視</option><option value="aggressive">速攻重視</option><option value="safe">安全重視</option></select></div><div><label class="label" for="healThreshold">回復を優先するHP：<strong id="healValue">62%</strong></label><input id="healThreshold" max="85" min="35" step="5" style="width:100%;accent-color:var(--gold);height:35px" type="range" value="62"/></div></div><div class="notice mt" id="specialCurrent">装備中の固有能力を確認できます。</div></section>
+<h3 class="mt">✧ 職業の極意（2枠）</h3><div class="skillGrid" id="masteryArea"></div><p class="help" id="inheritSummary"></p><div class="heritage-stats"><strong>選んだ技能を反映した戦闘能力</strong><div aria-live="polite" class="heritage-stat-grid" id="heritagePreview"></div><p id="heritageCaveat" role="status"></p></div></div><hr class="sep"/><div class="tacticBox"><div><label class="label" for="tactic">戦闘の作戦</label><select id="tactic"><option value="balanced">バランス重視</option><option value="aggressive">速攻重視</option><option value="safe">安全重視</option></select></div><div><label class="label" for="healThreshold">回復を優先するHP：<strong id="healValue">62%</strong></label><input id="healThreshold" max="85" min="35" step="5" style="width:100%;accent-color:var(--gold);height:35px" type="range" value="62"/></div></div><div class="notice mt" id="specialCurrent">装備中の固有能力を確認できます。</div></section>
 <section class="panel" data-ui-order="5" data-ui-page="adventure"><h2>💚 仲間の体力・回復</h2><div class="help" id="allies">町で準備中。体力と魔力は戦闘の前後で引き継がれます。</div><hr class="sep"/><div class="sectionRow tight"><h3 style="margin:0">持ち物と休息</h3><span class="pill" id="potions">回復薬×5 / 魔力薬×3</span></div><div class="inlineControls"><select aria-label="回復対象" id="healTarget"><option value="hero">主人公</option><option value="gald">ガルド</option><option value="rio">リオ</option><option value="sera">セラ</option><option value="mina">ミーナ</option><option value="noel">ノエル</option><option value="eda">エダ</option><option value="toto">トト</option><option value="van">ヴァン</option></select><button class="btn secondary" id="healHp">HP回復薬を使う</button><button class="btn secondary" id="healMp">MP回復薬を使う</button></div><div class="buttons mt"><button class="btn secondary" id="buyHp">回復薬を購入（30G）</button><button class="btn secondary" id="buyMp">魔力薬を購入（35G）</button></div><div class="buttons mt"><button class="btn secondary" id="camp">野営：部分回復（無料）</button><button class="btn secondary" id="inn">宿屋で全快（60G）</button></div></section>
-<section class="panel" data-ui-order="6" data-ui-page="hero"><h2>🧰 装備と収集（6枠）</h2><div class="equipmentSlots" id="equipped"></div><p class="help mt" id="gearStats"></p><hr class="sep"/><div class="sectionRow tight"><h3 style="margin:0">所持装備</h3><span class="pill" id="gearCount">0個</span></div><div class="mt" id="pendingLoot"></div>
+<section class="panel" data-ui-order="6" data-ui-page="hero"><h2>🧰 装備と収集（6枠）</h2><p class="help">✧ エピック以上のドロップ装備には、まれに1つの追加特性が付きます。特性付きは自動保護。詳細から効果を確認できます。</p><div class="equipmentSlots" id="equipped"></div><p class="help mt" id="gearStats"></p><hr class="sep"/><div class="sectionRow tight"><h3 style="margin:0">所持装備</h3><span class="pill" id="gearCount">0個</span></div><div class="mt" id="pendingLoot"></div>
 <div class="gear-toolbar" id="gearToolbar">
  <label class="gear-field gear-search"><span>装備を検索</span><input type="search" id="gearSearch" placeholder="名前を入力して探す" autocomplete="off" aria-label="所持装備を名前で検索"></label>
  <label class="gear-field"><span>部位</span><select id="gearSlot" aria-label="装備の部位で絞り込む"><option value="all">すべての部位</option><option value="weapon">武器</option><option value="offhand">補助装備</option><option value="armor">胴防具</option><option value="head">頭防具</option><option value="charm">装飾品</option></select></label>
@@ -1485,7 +1634,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 </div>
 <div class="gear-batch-tools" id="gearBatchTools" aria-label="鞄の整理・一括売却">
  <h3>✧ 鞄の整理・一括売却</h3>
- <p class="gear-batch-intro">売却するレアリティを選びます。上の検索・絞り込みに関係なく、鞄の中から対象を探します。</p>
+ 
  <div class="gear-batch-rarities" role="group" aria-label="一括売却するレアリティ">
   <label class="gear-batch-rarity"><input type="checkbox" name="gearBatchRarity" value="コモン" checked>コモン</label>
   <label class="gear-batch-rarity"><input type="checkbox" name="gearBatchRarity" value="アンコモン" checked>アンコモン</label>
@@ -1494,7 +1643,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
   <label class="gear-batch-rarity"><input type="checkbox" name="gearBatchRarity" value="レジェンダリー">レジェンダリー</label>
  </div>
  <label class="gear-batch-enhanced"><input type="checkbox" id="gearBatchEnhanced"><span>強化済み装備も候補に含める <small style="display:block;color:#6b7b6d">初期設定では強化済み装備（+1以上）は除外します。</small></span></label>
- <p class="gear-batch-safety">装備中・保護中・初期装備は必ず除外。レア以上の選択は任意です。売却の前に装備名と価格を確認できます。</p>
+ <p class="gear-batch-safety">装備中・保護中・初期装備は必ず除外。</p>
  <div class="gear-batch-summary" id="gearBatchSummary" aria-live="polite">売却候補を集計しています…</div>
  <button class="btn secondary" type="button" id="gearBatchPreview">売却対象を確認する</button>
 </div></section>
@@ -1572,7 +1721,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  <details class="town-event-log"><summary>これまでの出来事を振り返る</summary><div id="townEventHistory"></div></details>
 </section>
 <section class="panel" data-ui-order="8" data-ui-page="guild" id="guildSection"><div class="sectionRow"><h2 style="margin:0">📜 ギルドの動的依頼</h2><span class="pill" id="questCount">依頼確認中</span></div>
-<div aria-live="polite" id="questActive"></div><div class="sectionRow mt"><h3 style="margin:0">新着依頼</h3><span class="small muted">町や冒険者の活動に連動</span></div>
+<div aria-live="polite" id="questActive"></div><div class="sectionRow mt"><h3 style="margin:0">新着依頼</h3><span class="small muted">町の活動＋毎ゲーム内日の農場・料理注文</span></div><p class="help tight">農作物と料理の注文はゲーム内の1日ごとに更新。受注済みは期限なし。納品・調査を含め、同時に受注できる依頼は1件です。</p>
 <div aria-live="polite" class="questList" id="questOffers"></div><h3 class="mt">完了した依頼</h3><div class="help" id="questHistory">まだありません。</div>
 </section>
 <section class="panel wide" data-ui-order="9" data-ui-page="guild" id="personalSection">
@@ -1594,6 +1743,30 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <div class="inlineControls mt"><label class="label" for="marketQty">売買する個数</label><select aria-label="売買個数" id="marketQty"><option value="1">1個</option><option value="5">5個</option><option value="10">10個</option></select></div>
 <div aria-live="polite" class="marketGoods" id="marketGoods"></div>
 <div class="readout mt" id="marketHistory">まだ市場の取引記録がありません。</div>
+</section>
+<section class="panel wide farm-panel" data-ui-order="11.2" data-ui-page="guild" id="farmSection" aria-labelledby="farmTitle">
+ <div class="farm-head"><div><p class="farm-kicker">GUILD / FARM LIFE</p><h2 id="farmTitle">🌱 風待ちの小さな農場</h2><p>種を買って植えたら、あとは冒険へ。作物はゲーム内の時間で育ち、成熟後も枯れません。</p></div><span id="farmPlotsCounter" class="farm-pill">2 / 10区画</span></div>
+ <div class="farm-status" id="farmStatus" aria-live="polite">農場を準備中…</div>
+ <div class="farm-plot-grid" id="farmPlotGrid" aria-label="畑の区画"></div>
+ <div class="farm-controls">
+  <div class="farm-control-title"><h3>🧺 種屋と畑の道具箱</h3><p>作物を選んで、種の購入や植え付けを行えます。</p></div>
+  <div class="farm-inputrow"><label for="farmSeedChoice">作物<select id="farmSeedChoice"></select></label><label for="farmQty">購入個数<select id="farmQty"><option value="1">1個</option><option value="5">5個</option><option value="10">10個</option></select></label></div>
+  <p class="farm-seed-info" id="farmSeedInfo"></p>
+  <div class="farm-actionrow"><button type="button" class="farm-btn farm-btn-primary" id="farmBuySeeds">選んだ種を購入</button><button type="button" class="farm-btn" id="farmPlantAll">空き区画にまとめて植える</button><button type="button" class="farm-btn" id="farmHarvestAll">収穫可能な作物を一括収穫</button>
+    <button type="button" class="farm-btn" id="farmReplantEmpty">前回と同じ作物を空き区画に植える</button>
+    <button type="button" class="farm-btn farm-btn-primary" id="farmHarvestReplant">収穫して同じ作物を植え直す</button></div>
+    <p class="farm-seed-info">植え直しは、各区画で前回育てた作物の種を使用します。種が足りない区画は空きのまま残ります。種は自動購入しません。</p>
+ </div>
+ <div class="farm-storage"><h3>🍅 作物の保管箱</h3><p>収穫した作物は傷まずに保管できます。ギルドの調理場で料理の材料にも使えます。</p><div id="farmStorageGrid" class="farm-store-grid"></div></div>
+ <div class="farm-history"><h3>📒 畑仕事の記録</h3><div id="farmHistory" class="farm-history-list">まだ記録がありません。</div></div>
+</section>
+
+<section class="panel wide kitchen-panel" data-ui-order="11.3" data-ui-page="guild" id="kitchenSection" aria-labelledby="kitchenTitle">
+ <div class="kitchen-head"><div><p class="kitchen-kicker">GUILD / COOKING HOUSE</p><h2 id="kitchenTitle">🍳 風待ちの調理場</h2><p class="kitchen-desc">農場で育てた作物を料理に。レシピはゴールドで永久解放。完成した料理は売却するか、食べて次の冒険に備えられます。</p></div><span class="farm-pill" id="kitchenCounter">レシピ 0 / 6</span></div>
+ <div id="kitchenStatus" class="kitchen-status" role="status" aria-live="polite">調理場を準備中…</div>
+ <h3 class="kitchen-section-title">📖 レシピ帳</h3><div id="kitchenRecipes" class="kitchen-recipes"></div>
+ <h3 class="kitchen-section-title">🧺 料理の保管箱</h3><p class="kitchen-desc" style="margin-bottom:8px">完成した料理は傷みません。食べると次の冒険1回に効果が付きます。連続探索では最初の1戦のみ、三層遠征では遠征終了まで有効です。</p><div class="kitchen-meal-status" id="kitchenMealStatus" aria-live="polite">食事効果なし</div><div id="kitchenPantry" class="kitchen-pantry"></div>
+ <h3 class="kitchen-section-title">📜 調理の記録</h3><div id="kitchenHistory" class="kitchen-history">まだ調理の記録はありません。</div>
 </section>
 <section class="panel portrait-inn" data-ui-order="11.5" data-ui-page="guild" id="innPortraitSection">
 <h2>🛏️ 風待ちの宿屋</h2>
@@ -1683,28 +1856,44 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  <div id="tutorialSouvenir" class="tutorial-souvenir" hidden></div>
  <details id="tutorialStoryJournal" class="tutorial-story-journal"><summary>はじまりの旅の思い出を読み返す</summary>
  <div id="tutorialStoryHistory" class="tutorial-story-history"></div></details>
- <button class="btn secondary" type="button" id="tutorialReplay">はじまりの旅を見直す</button><button class="btn secondary" type="button" id="tutorialFreedomReopen">自由な旅のヒントを見る</button></section><section class="panel" data-ui-order="13" data-ui-page="records" id="adventurerRecordSection"><h2>📜 冒険者の記録</h2><div class="stats"><div class="stat"><strong id="runs">0</strong><small>戦闘回数</small></div><div class="stat"><strong id="expTotal">0</strong><small>累計獲得EXP</small></div><div class="stat"><strong id="gearFound">0</strong><small>装備発見数</small></div></div><h3 class="mt">最近の出来事</h3><div class="help" id="loot">まだ冒険の記録がありません。</div><hr class="sep"/><div class="buttons"><button class="btn secondary" id="export">JSONに保存</button><button class="btn secondary" id="importBtn">JSONから復元</button><input accept=".json,application/json" class="hidden" id="importFile" type="file"/><button class="btn secondary" id="reset">新しく始める</button></div></section>
+ <button class="btn secondary" type="button" id="tutorialReplay">はじまりの旅を見直す</button><button class="btn secondary" type="button" id="tutorialFreedomReopen">自由な旅のヒントを見る</button></section>
 <section class="panel wide" data-ui-order="13.4" data-ui-page="records" id="bossJournalSection">
 <h2>📖 強敵攻略帳</h2>
 <div aria-live="polite" class="readout" id="bossJournalReadout">まだ強敵の記録はありません。</div>
 </section>
-<section aria-label="周回の記録帳" class="panel wide" data-ui-order="13.5" data-ui-page="records" id="runLedgerSection">
-<h2>📒 周回の記録帳</h2>
-<div aria-live="polite" class="readout" id="runLedgerReadout">これからの周回を記録します。</div>
+
+<section aria-label="旅装備図鑑" class="panel wide gear-journal-panel" data-ui-order="13.515" data-ui-page="records" id="gearJournalSection">
+ <div class="gear-journal-title"><div><p class="collection-kicker">EQUIPMENT COLLECTION</p><h2>⚔️ 旅装備図鑑</h2><p class="help">一度入手した装備は売却しても記録に残ります。装備の追跡や確定入手の仕組みはありません。</p></div><span class="farm-pill" id="gearJournalTotal">0 / 118種類</span></div>
+ <div class="gear-journal-progress" role="progressbar" aria-label="装備の収集率" aria-valuemin="0" aria-valuemax="118" aria-valuenow="0" id="gearJournalOverallBar"><div id="gearJournalOverall"></div></div>
+ <div class="gear-journal-controls"><label for="gearJournalAreas">地域ごとの収集状況<select id="gearJournalAreas"></select></label><label class="gear-journal-missing"><input id="gearJournalOnlyMissing" type="checkbox"/> 未発見だけ表示</label></div>
+ <p class="gear-journal-area" id="gearJournalAreaProgress">地域を読み込み中…</p><div class="gear-journal-grid" id="gearJournalList" aria-live="polite"></div>
+ <button type="button" class="btn secondary gear-journal-more" id="gearJournalMore" hidden>続きを表示</button>
+ <p class="collection-foot">地域ごとの一覧は実際のドロップ候補を使用。同じ装備が複数地域に現れることがあります。初期・鍛冶屋専用装備も収録。旧版の図鑑は現存する装備と未受取品からのみ復元し、過去に売却した品を推測で登録しません。性能は強化前・獲得時の数値です。</p>
 </section>
-<section aria-label="旅の家計簿" class="panel wide" data-ui-order="13.55" data-ui-page="records" id="economySection">
-<h2>🪙 旅の家計簿</h2>
-<div aria-live="polite" class="readout" id="economyReadout">家計簿の準備中…</div>
+<section aria-label="農作物と料理の図鑑" class="panel wide farm-collection" data-ui-order="13.52" data-ui-page="records" id="farmCollectionSection">
+ <div class="collection-title"><div><p class="collection-kicker">LIFE & COLLECTION</p><h2>📗 農作物・料理図鑑</h2><p class="help">初めて収穫した作物と、初めて調理した料理を記録します。種やレシピを買うだけでは登録されません。</p></div><span class="farm-pill" id="farmCollectionCounter">0 / 14種類</span></div>
+ <div class="collection-progress" role="progressbar" aria-label="農作物と料理の収集率" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0" id="farmCollectionProgress"><div id="farmCollectionFill"></div></div>
+ <div class="collection-nav" role="group" aria-label="図鑑の種類"><button type="button" data-collection-page="crop" aria-pressed="true">🌱 作物 <span id="farmCollectionCrops">0/8</span></button><button type="button" data-collection-page="food" aria-pressed="false">🍳 料理 <span id="farmCollectionFoods">0/6</span></button></div>
+ <div id="farmCollectionGrid" class="collection-grid" aria-live="polite"></div>
+ <p class="collection-foot">旧版の記録は、現在の在庫と保存済みの履歴から確認できる品目のみ引き継ぎます。種類別の累計数は図鑑導入後から集計します。</p>
 </section>
+
 <section aria-label="旅の総括" class="panel wide" data-ui-order="13.6" data-ui-page="records" id="journeySummarySection">
 <h2>🌿 旅の総括</h2>
 <div aria-live="polite" class="readout" id="journeySummary">旅の記録をまとめています。</div>
 </section>
 <section class="panel wide" data-ui-order="17" data-ui-page="records" id="gameSettingsSection">
 <h2>⚙️ 設定</h2>
-<label class="setting-toggle-row" for="timeOfDayEffects"><span class="setting-toggle-copy"><strong>時間帯の演出</strong><span>朝・昼・夕暮れ・夜の空の色変化と、時間の節目のお知らせを表示します。</span></span><input aria-describedby="timeOfDaySettingHelp" checked="" id="timeOfDayEffects" type="checkbox"/><span aria-hidden="true" class="setting-switch"></span></label>
-<p class="settings-help" id="timeOfDaySettingHelp">オフでも空時計の時刻・太陽や月の位置・進行ゲージは動きます。世界の時間と仲間の行動には影響しません。</p>
+<label class="setting-toggle-row" for="miniClockEnabled"><span class="setting-toggle-copy"><strong>スクロール時のミニ時計</strong><span>画面を下へスクロールしたとき、右上に時刻を小さく表示します。オフでも通常の空時計とゲーム内時間はそのまま動きます。</span></span><input aria-describedby="miniClockSettingHelp" checked="" id="miniClockEnabled" type="checkbox"/><span aria-hidden="true" class="setting-switch"></span></label>
+<p class="settings-help" id="miniClockSettingHelp">オンの場合は上部の空時計が画面外に出たときだけ表示します。設定はセーブデータに保存されます。</p>
 <label class="setting-toggle-row" for="windLetterNotifications"><span class="setting-toggle-copy"><strong>風信帳の新着通知</strong><span>新着時に画面上部へ短いお知らせを表示します。オフでもメッセージは届きます。</span></span><input checked="" id="windLetterNotifications" type="checkbox"/><span aria-hidden="true" class="setting-switch"></span></label>
+
+<div class="settings-save-tools" aria-label="セーブデータの管理">
+<h3>💾 セーブデータ</h3>
+<p class="settings-help">セーブデータをJSON形式で書き出したり、保存済みのデータから復元できます。</p>
+<div class="buttons"><button class="btn secondary" id="export">JSONに保存</button><button class="btn secondary" id="importBtn">JSONから復元</button><input accept=".json,application/json" class="hidden" id="importFile" type="file"/><button class="btn secondary" id="reset">新しく始める</button></div>
+<p class="settings-help">「新しく始める」は冒険の進行を初期化します。必要な場合は先にJSONに保存してください。</p>
+</div>
 </section>
 <section class="panel wide wind-letter-panel" data-ui-order="13.9" data-ui-page="party" id="windLetterPanel">
 <div class="sectionRow tight"><h2 style="margin:0">✉️ 風信帳</h2><span class="pill" id="windInboxCount">新着なし</span></div>
@@ -1716,9 +1905,8 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <div aria-live="polite" class="npcGrid" id="worldPeople"></div>
 <hr class="sep"/><h3>🧭 NPC同士の共同遠征</h3><div aria-live="polite" class="expeditionList" id="worldExpeditions"></div><hr class="sep"/><h3>📰 ギルドの近況掲示板</h3><div class="readout" id="worldMarket">市場在庫を確認中</div><div class="newsList" id="worldNews"></div>
 <h3 class="mt">冒険者同士の関係と実績</h3><div class="relationGrid" id="worldRelations">ギルドでの交流を記録します。</div>
-<p class="worldFooter">活動の結果は実際に保存データへ反映されます。NPCが市場に納品した素材は市場在庫へ移動し、本人の所持素材が減ります。発見は本人の記憶に保存します。共同遠征では成功・撤退が起こり、両者の成長・資金・素材・親しさ・記憶に反映されます。NPCは自身の資金で装備更新も行います。主人公も町の市場で素材を売買でき、在庫・資金・鍛冶素材へ即時反映されます。人物ごとの節目は活動実績と一致する場合にのみ記録されます。個人クエストの同行戦闘・分岐選択と達成記録はギルドで確認できます。</p>
 </section>
-<section class="panel wide" data-ui-order="15" data-ui-page="adventure"><div class="sectionRow tight"><h2 style="margin:0">🕰️ 戦闘ログ</h2><span class="pill" id="status">町で待機中</span></div><div aria-live="polite" class="log" id="log"><div class="logline">目的地と仲間を決めて、冒険を始めてください。</div></div><div class="result" id="result">戦闘の結果は経験値・所持金・装備・HP・MPに反映されます。</div><div class="reviewBox" id="combatReview">まだ戦闘データがありません。</div></section>
+<section class="panel wide" data-ui-order="15" data-ui-page="adventure"><div class="sectionRow tight"><h2 style="margin:0">🕰️ 戦闘ログ</h2><span class="pill" id="status">町で待機中</span></div><div aria-live="polite" class="log" id="log"><div class="logline">目的地と仲間を決めて、冒険を始めてください。</div></div><div class="result" id="result"></div><div class="reviewBox" id="combatReview">まだ戦闘データがありません。</div></section>
 </div>
 </main>
 <dialog aria-describedby="jointConfirmExplanation" aria-labelledby="jointConfirmTitle" class="joint-confirm-dialog" id="jointExpeditionConfirm">
@@ -1736,101 +1924,150 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 </dialog>
 <div class="guide-backdrop" hidden="" id="guideOverlay">
 <div aria-labelledby="guideTitle" aria-modal="true" class="guide-dialog" role="dialog" tabindex="-1">
-<div class="guide-header"><div><span class="guide-eyebrow">TRAVELER’S HANDBOOK</span><h2 id="guideTitle">旅人の手引き <span>遊び方</span></h2></div><button aria-label="遊び方を閉じる" id="guideClose" type="button">×</button></div>
-<div class="guide-tools"><label for="guideSearch">知りたいことを探す</label><input autocomplete="off" id="guideSearch" placeholder="例：補給、職業、スロット、セーブ" type="search"/><div aria-live="polite" class="guide-search-status" id="guideSearchStatus"></div></div>
-<nav aria-label="遊び方の章を選ぶ" class="guide-chapters"><button data-guide-chapter="windletters" type="button">✉️ 風信帳・メッセージ</button><button data-guide-chapter="start" type="button">🌱 はじめに</button><button data-guide-chapter="adventure" type="button">⚔️ 冒険・戦闘・探索</button><button data-guide-chapter="jobs" type="button">✦ 主人公・職業・スキル</button><button data-guide-chapter="equipment" type="button">🧰 装備・素材・鍛冶</button><button data-guide-chapter="companions" type="button">♧ 仲間の暮らし・時間</button><button data-guide-chapter="guild" type="button">🏘️ ギルド・市場・宿屋・補給</button><button data-guide-chapter="town" type="button">🍃 町で起きている出来事</button><button data-guide-chapter="quests" type="button">✉️ 依頼・個人物語</button><button data-guide-chapter="casino" type="button">🎰 遊戯館の共通ルール</button><button data-guide-chapter="slot" type="button">🍃 風車スロット</button><button data-guide-chapter="race" type="button">🏁 風走りレース</button><button data-guide-chapter="cards" type="button">🃏 風札の二十一</button><button data-guide-chapter="dice" type="button">🎲 三風の骰子</button><button data-guide-chapter="records" type="button">📒 記録・収支・セーブ</button></nav>
-<div class="guide-scroll" id="guideScroll"><details class="guide-chapter" data-guide-name="風信帳 メッセージ 仲間 連絡 返信 暮らし 共同遠征 訓練 採集 活動" id="guide-windletters">
-<summary><span aria-hidden="true" class="guide-chapter-icon">✉️</span><span>風信帳・メッセージ</span></summary>
-<div class="guide-chapter-body"><p>「仲間」タブの風信帳で8人の冒険者と連絡を取れます。日常・最近の活動・旅の話題から選んで送ると、ゲーム内時間が進んだあとに返信が届きます。</p><p>仲間から思いがけず便りが届くこともあります。時間が進むのは従来どおりで、ゲームを閉じていた時間も既存の時間進行上限内で反映されます。</p><p><strong>短い返事：</strong>仲間から届いた便りの「↩ 返事する」を押すと、内容に合う短い相槌を3つから選んで送れます。返事はすぐ履歴に残り、昔の便りにも後から返事ができます。特別な相談は従来の3択で返答します。相槌は仲間の行動や物語の進み方を変えず、返事をしなくてもペナルティはありません。</p><p>未読は仲間タブの印で確認できます。個人カードの「便りを開く」からも直接会話を開けます。返信を待つ間も冒険・共同遠征は自由に続けられます。</p><p>8人それぞれの口調で返事が届きます。相手が訓練・採集・調査など何をしているかによって「今日の活動」の答えも変わります。同じ話題を繰り返しても、直近の返事と重ならないよう複数の文章から選ばれます。</p><p>暮らしの便り：仲間が訓練・採集・調査などを終えたり、共同遠征から帰還したりすると、実際の出来事をきっかけに便りが届くことがあります。共同遠征中は送信を保留し、帰還後に届けます。すべての活動が通知されるわけではなく、同じ報告の連続も抑えられます。以前の「言葉の記憶」が、その人物の後の活動報告にさりげなく現れることもあります。</p><p><strong>特別なやり取り：</strong>各人物には一度きりの小さな相談があります。「少し話しかける」でこちらから始めることも、仲間から突然届くこともあります。届いた問いに対して3つの返答から選ぶと、時間差で返事が届き、ゲーム内の翌日以降に後日談も届きます。</p><p>選択肢に正解・不正解や好感度の減点はありません。選んだ言葉は「言葉の記憶」としてその人物の風信帳に残り、保存とJSONバックアップにも含まれます。返信を選ぶ期限はなく、遠征中でも会話は保持されます。</p><p><strong>物語のその後：</strong>個人依頼や第二章を達成すると、実際に選んだ方針に応じた振り返りが、時間をおいて風信帳に届きます。第二章にはさらに後日談もあり、実際に同行した仲間や以前の「言葉の記憶」に触れることがあります。未達成の物語の話は届きません。共同遠征・同行中は保留され、新着の数が増えすぎないよう頻度を抑えています。以前に達成済みの物語も対象です。</p><p>便りは実際の活動報告と、何気ない日常のやり取りの両方から届きます。主人公に同行中の仲間からも休憩の合間などに短い連絡が届くことがあります。共同遠征中の連絡は原則として帰還を待ちます。特別な会話を保留しても日常の連絡は続き、大切な記録は古い雑談より優先して残ります。</p><p><strong>はじまりの旅の便り：</strong>「はじまりの旅」を完了すると、エダから初めての森の依頼について尋ねる便りが届きます。勝利・敗北・撤退によって問いかけが変わり、3つの返答から選ぶと時間差の返事と後日談が届きます。さらに、冒険の結果に応じて別の仲間からも一通届きます。物語の再体験ではこのやり取りは重複せず、選んだ言葉は保存されます。</p><p>仲間たちには、活動や旅でふと考えたことが、数日後やさらに先の便りにつながる小さな物語もあります。誰かの生活の中で始まり、時間とともに少しずつ続いていきます。返事を急ぐ必要はありません。共同遠征中は便りを保留し、記録はセーブに残ります。</p></div></details><details class="guide-chapter" data-guide-name="はじめに" id="guide-start" open="">
+<div class="guide-header"><div><span class="guide-eyebrow">TRAVELER'S HANDBOOK</span><h2 id="guideTitle">旅人の手引き <span>遊び方</span></h2></div><button aria-label="遊び方を閉じる" id="guideClose" type="button">×</button></div>
+<div class="guide-tools"><label for="guideSearch">知りたいことを探す</label><input autocomplete="off" id="guideSearch" placeholder="例：地図、装備、農場、セーブ" type="search"/><div aria-live="polite" class="guide-search-status" id="guideSearchStatus"></div></div>
+<nav aria-label="遊び方の章を選ぶ" class="guide-chapters"><button data-guide-chapter="start" type="button">🌱 はじめに</button><button data-guide-chapter="adventure" type="button">⚔️ 冒険・探索と戦闘</button><button data-guide-chapter="high" type="button">🌑 地域の解放と高難度</button><button data-guide-chapter="jobs" type="button">✦ 主人公・職業・スキル</button><button data-guide-chapter="equipment" type="button">🧰 装備・鍛冶・装備図鑑</button><button data-guide-chapter="companions" type="button">♧ 仲間の暮らし・共同遠征</button><button data-guide-chapter="windletters" type="button">✉️ 風信帳・仲間との会話</button><button data-guide-chapter="chat" type="button">💬 冒険者チャット</button><button data-guide-chapter="guild" type="button">🏘️ ギルド・市場・回復</button><button data-guide-chapter="farm" type="button">🌱 農場・料理・食事効果</button><button data-guide-chapter="quests" type="button">📜 ギルド依頼・個人物語</button><button data-guide-chapter="town" type="button">🍃 世界イベント・町の変化</button><button data-guide-chapter="login" type="button">🎁 起動時の贈りもの</button><button data-guide-chapter="records" type="button">📒 記録・設定・セーブ</button><button data-guide-chapter="casino" type="button">🎰 風灯の遊戯館</button></nav>
+<div class="guide-scroll" id="guideScroll"><details class="guide-chapter" data-guide-name="初心者 最初 チュートリアル 目的 タブ 迷ったとき どこへ 旅のしおり" id="guide-start" open="">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🌱</span><span>はじめに</span></summary>
-<div class="guide-chapter-body"><p>この作品は、主人公を育てながら、独自の生活を送る8人の冒険者と旅する<strong>一人用の冒険RPG</strong>です。戦闘は基本的に自動で進み、大切な場面で編成や指示を選びます。</p>
-<ol><li><strong>冒険</strong>の「冒険の行き先」で地域を選び、「冒険の準備」で職業・同行者を選ぶ。</li><li>装備と回復薬を確認し、探索を始める。</li><li>戦闘で経験値・G・装備・素材を獲得する。</li><li><strong>主人公</strong>でスキルや装備を調整し、<strong>ギルド</strong>で買い物や依頼を進める。</li><li><strong>記録</strong>で地図と旅の履歴を確認する。</li></ol>
-<p>初めて遊ぶときは「はじまりの旅」が始まります。「旅のしおり」に従って最初の森の依頼を進めましょう。案内を飛ばすこともでき、過去のセーブでは自動開始されません。完了後には風信帳で最初の旅を振り返れます。画面ごとの「確認して次へ」ボタンを押せば、旅のしおりへ戻らずに進められます。完了後には「森の再探索」「ギルドの依頼」「仲間への便り」から自由な次の一歩を選べます。</p><div class="guide-note">画面下の5つのタブを切り替えて遊びます。「？ 遊び方」はいつでも開けます。主人公欄の空時計は世界の時間を示し、下のゲージは次の30分までの進み具合です。スクロールして大きな時計が隠れると、画面上部に小さな時計が現れます。小さな時計を押すと大きな時計へ戻れます。朝・昼・夕暮れ・夜の演出は「記録」→「設定」で切り替えられます。演出を切っても時間は進みます。</div></div></details>
-<details class="guide-chapter" data-guide-name="冒険・戦闘・探索" id="guide-adventure">
-<summary><span aria-hidden="true" class="guide-chapter-icon">⚔️</span><span>冒険・戦闘・探索</span></summary>
-<div class="guide-chapter-body"><h4>戦闘と準備</h4><p>冒険のページで職業、探索地、同行する冒険者（最大3人）を選びます。戦闘は自動進行です。通常の戦闘は最大150秒、古竜戦は最大300秒です。重要なボス戦では「防御」「妨害」「集中攻撃」などの指示を選ぶ場面があります。</p>
-<p>HP・MPは戦闘が終わっても引き継がれます。自動回復を有効にすると、HP52%未満・MP30%未満のとき手持ちの回復薬を使います。薬が無い場合に無料で補充されることはありません。自動周回は危険なHPに達すると撤退します。</p>
-<h4>地域と解放</h4><p>最初は「緑風の森」「赤錆の鉱山」が探索の中心です。「忘却の地下聖堂」ではボスに挑戦できます。「苔むした旧道」は仲間の発見から、「風鳴りの高原」はLv30から、「星影の樹海」はLv50から、「玻璃の天文塔」はLv65〜80帯、「暁の雲海」はLv80〜100帯で冒険を広げます。未発見の場所は選べません。</p>
-<p>「巡礼者の地下遺跡」は3階層の分岐遠征で、階を突破すると進行が保存されます。天文塔も分岐や同行者の探索能力が影響します。雲海の古竜は自動周回ではなく手動で再戦する相手です。</p>
-<h4>ボスへのアドバイス</h4><p>防御は被害を抑えますが、古竜は守られる間に力を蓄えます。妨害は技能との相性が重要です。集中攻撃は早期決着を狙えますが、反撃の危険もあります。狩人の応急手当、剣士の盾構え、魔術師の魔法障壁などの編成も役立ちます。</p></div></details>
-<details class="guide-chapter" data-guide-name="主人公・職業・スキル" id="guide-jobs">
+<div class="guide-chapter-body"><p>『カゼマチヴィアートル』は、主人公を育てながら8人の仲間と旅する<strong>一人用の冒険RPG</strong>です。ほかのプレイヤーとの通信や対戦はなく、戦闘は基本的に自動で進みます。</p>
+<h4>初めての冒険は、この順番で</h4>
+<ol><li><strong>「旅のしおり」</strong>に沿って、受付ふくろうとの会話と旅支度を進めます。</li><li><strong>「冒険」</strong>で行き先と同行者を確認し、最初の「緑風の森」を探索します。</li><li>戦闘後にHP・MPと報酬を確認します。傷ついたら回復し、装備を手に入れたら<strong>「主人公」</strong>で着替えます。</li><li><strong>「ギルド」</strong>で依頼・買い物・宿屋などを利用し、次の冒険を選びます。</li></ol>
+<p>「はじまりの旅」を終えたら、森の再探索・ギルドの依頼・仲間への便りなど、好きな行動を選べます。<strong>期限や毎日必ずすることはありません。</strong></p>
+<h4>画面下の5タブ</h4>
+<p><strong>冒険：</strong>行き先・探索・戦闘／<strong>主人公：</strong>職業・装備・スキル／<strong>仲間：</strong>8人の暮らし・風信帳／<strong>ギルド：</strong>依頼・市場・鍛冶・農場・料理・宿屋／<strong>記録：</strong>図鑑・旅の振り返り・設定。</p>
+<div class="guide-note"><strong>やりたいことから探す</strong><div class="guide-quick-actions"><button type="button" data-guide-chapter="adventure">⚔️ 探索に行く</button><button type="button" data-guide-chapter="equipment">🧰 装備を探す</button><button type="button" data-guide-chapter="companions">♧ 仲間を知る</button><button type="button" data-guide-chapter="farm">🌱 農場・料理</button><button type="button" data-guide-chapter="chat">💬 チャット</button><button type="button" data-guide-chapter="records">💾 セーブする</button></div></div>
+<p>「？ 遊び方」はいつでも開けます。章名を押すと詳しい説明が開き、検索欄からキーワードでも探せます。</p></div></details>
+<details class="guide-chapter" data-guide-name="冒険 行き先 地図 探索 自動戦闘 撤退 回復 戦闘ログ ボス 自動周回" id="guide-adventure">
+<summary><span aria-hidden="true" class="guide-chapter-icon">⚔️</span><span>冒険・探索と戦闘</span></summary>
+<div class="guide-chapter-body"><h4>行き先を選ぶ</h4>
+<p>「冒険」タブの<strong>「冒険の行き先」</strong>で地域を選び、必要なら地域の調査・解放を行います。地図と行き先の操作は冒険タブに集約されています。未発見の地域は、表示された条件を満たすまで出発できません。</p>
+<h4>戦闘の準備と進行</h4>
+<p>冒険の準備で主人公の職業と同行する仲間（最大3人）を確認し、探索を始めます。基本戦闘は自動で進み、重要なボス戦では<strong>防御・妨害・集中攻撃</strong>などの指示を選ぶ場面があります。戦闘の経過は冒険タブの戦闘ログと、常設チャットの「戦闘」で見られます。</p>
+<p>勝利すると経験値・G・装備・素材などを得られます。<strong>HP・MPは戦闘後も引き継ぎます。</strong>無理に周回せず、HPが減ったら回復し、装備やスキルを見直してください。</p>
+<h4>休息と連続探索</h4>
+<p>回復薬を使う自動回復や自動周回を利用できます。自動回復はHP・MPが一定割合を下回ると手持ちの薬を使用し、薬が足りなければ無料で補充はされません。危険な状態では自動周回が撤退する場合があります。ギルドの宿屋や野営も活用しましょう。</p>
+<div class="guide-note">勝てない敵は、今すぐ倒す必要はありません。レベル上げ、装備更新、仲間の育成をしてから再挑戦できます。</div></div></details>
+<details class="guide-chapter" data-guide-name="地域 高難度 古竜 星蝕の断崖 無明の星坑 星影の樹海 玻璃の天文塔 暁の雲海 レジェンダリー 星位" id="guide-high">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🌑</span><span>地域の解放と高難度</span></summary>
+<div class="guide-chapter-body"><p>冒険が進むと旧道、高原、樹海、天文塔、雲海などに行けるようになります。地域ごとに解放条件があり、<strong>条件の確認と解放操作は「冒険」タブの行き先カード</strong>で行います。</p>
+<h4>装備の目安</h4>
+<p><strong>星影の樹海：</strong>エピック中心／<strong>玻璃の天文塔：</strong>エピック〜レジェンダリー／<strong>暁の雲海：</strong>レジェンダリー中心／<strong>星蝕の断崖：</strong>レジェンダリー前提／<strong>無明の星坑：</strong>レジェンダリー6枠＋強化を推奨。</p>
+<p>これらは攻略の目安で、入場に必要な装備枚数を固定するものではありません。高難度では仲間の組み合わせ、回復手段、作戦も重要です。</p>
+<h4>奥地への挑戦</h4>
+<p>古竜を討伐すると「星蝕の断崖」、断崖で勝利を重ねると「無明の星坑」へ進めます。星坑は三層連続の遠征で、HP・MPと食事効果が階層間で引き継がれます。最深層の星王は<strong>静穏・均衡・烈星</strong>の状態で攻撃の激しさが変わります。</p>
+<p>同じレジェンダリーでも個体差があり、＋5までの装備強化も役立ちます。ただし最良装備でも勝利は保証されません。どの手段で生き残るかを考えて挑みましょう。</p></div></details>
+<details class="guide-chapter" data-guide-name="主人公 職業 レベル 上位職 転職 スキル 編成 熟練 補助技能 極意 継承" id="guide-jobs">
 <summary><span aria-hidden="true" class="guide-chapter-icon">✦</span><span>主人公・職業・スキル</span></summary>
-<div class="guide-chapter-body"><p><strong>冒険者レベル</strong>は全職業で共通、上限は100。<strong>職業レベル</strong>は職業ごとに別々に成長し、転職しても過去のレベルは残ります。基本職を育てると上位職が解放されます。昇格条件は人物画面で確認しましょう。</p>
-<p>スキルは職業ごとに編成を保存します。<strong>編成した技だけ</strong>が自動戦闘で使われます。戦闘中は装備・スキルを変更できません。空いた枠では通常攻撃を行います。</p>
-<p>別系統の基本職を職業Lv18まで鍛えると、小さな常時効果を引き継げます。攻撃技そのものは持ち越せません。基本・上位職の各職業Lv30で得る「極意」は、転職後も使える弱い常時効果です。</p>
-<p>作戦の「速攻」は与ダメージ+9%・被ダメージ+6%、「安全」は与ダメージ−4%・被ダメージ−9%です。NPCには本人ごとの既定スキルと作戦があります。魔術師系が「星影の樹海」「玻璃の天文塔」を単独で探索すると、条件によりMP6を使う「独行詠唱」が働きます（ボス戦・パーティー戦は対象外）。</p></div></details>
-<details class="guide-chapter" data-guide-name="装備・素材・鍛冶" id="guide-equipment">
-<summary><span aria-hidden="true" class="guide-chapter-icon">🧰</span><span>装備・素材・鍛冶</span></summary>
-<div class="guide-chapter-body"><p>装備は最大6枠。敵から得た装備は同じ名前でも性能が異なる場合があります。所持装備は名前・部位・レアリティで検索・絞り込みできます。装備を選ぶと、現在の主人公の能力値と交換後の能力値、特殊効果の増減を比較できます。装飾品は①と②を別々に比較できます。鞄の整理ではコモンからレジェンダリーまで任意のレアリティを選び、売却候補の装備名・個数・金額を確認して一括売却できます。装備中・保護中・初期装備は常に除外され、強化済み装備も初期設定では除外されます。レア以上を売却するときは追加の確認が必要です。検索・絞り込みと一括売却の対象選択は連動しません。大切な品は保護し、売却前に確認してください。</p>
-<p>鍛冶屋では探索で見つけた素材を使って装備を製作・強化できます。製作は確実に成功し、<strong>+5までの強化は失敗・装備消失がありません</strong>。材料は森、鉱山、ボスなどで獲得します。</p>
-<p>製作レシピは「武器・補助装備・胴防具・頭防具・装飾品」で絞り込みでき、「現在の職業で使える」「今すぐ製作可能」も選べます。レシピを選ぶと、完成品の予想性能、いま装備している品との差、必要素材の所持数・不足数が分かります。</p>
-<p>完成品はコモン品質で、攻撃・防御・HP・MPは基礎値から約±6%変動します。会心率は固定です。比較は装備の補正値のみを対象とし、実際の製作結果によって差が変動する場合があります。装飾品は2枠をそれぞれ比較できます。職業が違う装備も製作できますが、該当職業でなければ装備できません。</p>
-<div class="guide-note">装備袋がいっぱいのときは、新しく得た品の取り扱いを確認してから整理しましょう。レアな装備は間違えて売らないよう保護がおすすめです。</div></div></details>
-<details class="guide-chapter" data-guide-name="仲間の暮らし・時間" id="guide-companions">
-<summary><span aria-hidden="true" class="guide-chapter-icon">♧</span><span>仲間の暮らし・時間</span></summary>
-<div class="guide-chapter-body"><p>8人の冒険者は、同行していない時間にも<strong>採集・訓練・調査・休息</strong>などを自分の意思で行います。仲間同士で共同遠征に出ることもあります。共同遠征中の仲間を主人公の同行者に選ぶと、中断によって報酬を失うため確認画面が表示されます。「遠征を続ける」で取り消せます。共同遠征中のNPCを同行者に選ぶと、その遠征は中断され報酬は発生しません。</p>
-<p>ゲームを閉じている間も、最大8時間分の活動を簡易計算します。NPCが発見した手掛かりが、新しい探索地につながる場合があります。主人公のG・装備とNPCの持ち物は別管理です。</p>
-<p>仲間はそれぞれ異なる目標、成長、節目、記憶を持っています。単に数値を上げるだけでなく、本人と実際に冒険した結果によって出来事が変わります。</p></div></details>
-<details class="guide-chapter" data-guide-name="ギルド・市場・宿屋・補給" id="guide-guild">
-<summary><span aria-hidden="true" class="guide-chapter-icon">🏘️</span><span>ギルド・市場・宿屋・補給</span></summary>
-<div class="guide-chapter-body"><h4>休息と回復</h4><p>野営は無料でHP・MPを50%まで回復します。再利用には3勝必要です。宿屋は60Gで全員を全快させ、野営の待ち時間も解消します。所持金が不足した場合は、無料救護で50%まで回復できます。</p>
-<h4>町の経済</h4><p>市場の素材在庫は、NPCの採集・町の工房・住民・NPCの注文と共有されます。買値と売値は異なり、取引時の在庫に応じて価格が決まります。装備売却や鍛冶、宿屋などの費用はGに反映されます。</p>
-<h4>遠征補給と支援</h4><p>ギルドタブの受付ふくろうにある「受付で依頼する」から、遠征補給・復興計画・旅人便・同行訓練を選べます。選んだ受付だけが開きます。</p><p>ギルドの補給は10戦分を購入し、勝利後に必要があれば生存者のHPを最大値の18%、MPを14%回復します。上限は30回分。回復不要時は消費せず、戦闘中の復活や回復には使えません。価格はレベル帯で変化します。</p>
-<p>同行訓練は主人公より15レベル以上低い仲間向けの有料10勝契約。本人が同行して勝利したときだけ追加経験値を得ます。Lv80以降の町の復興・旅人便の後援は任意の支出で、直接戦闘力やドロップ率を上げません。</p>
-<div class="guide-note">長期の資金管理では、宿屋・補給・鍛冶・市場の支出を比べてみましょう。特に補給は場所によって戦闘報酬より高くつく場合があります。</div><div class="guide-note" hidden="" id="guideLiveSupply"></div></div></details>
-<details class="guide-chapter" id="guide-town" data-guide-name="町で起きている出来事 世界イベント 救援 調査 支援 荷馬車 鉱山 青い光 市場 薬草不足">
- <summary><span class="guide-chapter-icon" aria-hidden="true">🍃</span><span>町で起きている出来事</span></summary><div class="guide-chapter-body">
- <p>「ギルド」タブには、主人公がいなくても進む小さな世界の出来事があります。仲間たちの巡回・採集・研究などの活動によって、町の結末が変わることがあります。</p>
- <p>事件が起きたら「自分も現地へ向かう」「素材を届ける」「仲間たちを見守る」から選べます。現地へ向かった場合は、案内された地域で戦闘に1回勝つと貢献できます。素材を届ける場合は、必要数を所持しているときに限り実行できます。選択は一度だけで、無理に参加する必要はありません。</p>
- <p>出来事はゲーム内時間で進み、期限が来ると結末が決まります。活動が十分に進まなければ、解決に時間がかかることもあります。市場の薬草・鉄鉱石の在庫が少し変動し、ギルドに記録が残ります。</p>
- <p>関連したNPCから風信帳に便りが届くこともあります。共同遠征中の相手からの便りは帰還後に届き、短い相槌を返すこともできます。</p>
- <p>事件の結末が次の事件の原因になることがあります。荷馬車の帰還が遅れると薬草不足につながり、鉱山の調査が進めば追加調査の話が出ることもあります。続く事件は、直前の原因を画面とギルドの記録に表示します。通常の事件3種類に加え、連鎖専用の事件が2種類あります。続編から無限に事件が連鎖することはありません。</p>
- <div class="guide-note">この世界の出来事は、通常のギルドの依頼とは別のものです。既存の依頼の受注や報酬を変更せず、イベントへの参加にも手数料はかかりません。支援を選ぶと素材だけを消費し、イベントから直接Gや装備は付与されません。</div>
- </div></details><details class="guide-chapter" data-guide-name="依頼・個人物語" id="guide-quests">
-<summary><span aria-hidden="true" class="guide-chapter-icon">✉️</span><span>依頼・個人物語</span></summary>
-<div class="guide-chapter-body"><p>ギルドの動的依頼は町の素材不足やNPCの発見など、実際の世界の状況に応じて届きます。通常のギルド依頼は一度に1件受注できます。受注後は町の状況が変わっても依頼を保持します。</p>
-<p>ギルドの「冒険者からの個人的な依頼」は人物ごとの一覧です。人物名を開くと、第一章・第二章と達成済みの記録をまとめて確認できます。今後の章も同じ人物の中へ増えていく構成です。</p>
-<p>各冒険者の<strong>個人依頼</strong>は通常の依頼と別枠です。指定の場所で本人と同行して勝利するなど、達成条件を満たしたらギルドへ報告します。第一章を終えた相手には第二章の相談が届き、現地調査、方針選択、再訪を通じて本人の記憶や自主行動が少しずつ変わります。第一章と第二章を同時には受注できません。</p></div></details>
-<details class="guide-chapter" data-guide-name="遊戯館の共通ルール" id="guide-casino">
-<summary><span aria-hidden="true" class="guide-chapter-icon">🎰</span><span>遊戯館の共通ルール</span></summary>
-<div class="guide-chapter-body"><p>「ギルド → 風灯の遊戯館」で4種類の遊びを選べます。<strong>使うのはゲーム内Gだけ</strong>。実際のお金の支払いや換金はありません。戦闘中・ダンジョン探索中は遊べません。</p>
-<p>賭け金は主人公のレベルと現在の所持金に応じて選べます。賭け確定時にGを支払い、勝負が終わると当選額を受け取ります。<strong>配当倍率には賭け金の返還分を含みます</strong>。たとえば100Gを賭けて2倍なら受取総額は200G（純利益100G）です。</p>
-<p>各ゲームは基本的にプレイヤーが操作する1勝負ずつの方式です。勝負途中の状態を保存し、閉じても再開できるようにしています。賭け金と払戻は「記録 → 旅の家計簿」に別々に反映されます。</p>
-</div></details>
-<details class="guide-chapter" data-guide-name="風車スロット" id="guide-slot">
+<div class="guide-chapter-body"><p>主人公には全職業共通の<strong>冒険者レベル（最大100）</strong>と、職業ごとに育つ<strong>職業レベル</strong>があります。転職しても、その職業で積み上げた熟練は保存されます。</p>
+<p>「主人公」でスキル・作戦・装備を整えましょう。戦闘で使われるのは基本的に<strong>編成している技能</strong>です。戦闘中は装備・スキルを変更できません。</p>
+<h4>上位職への道</h4>
+<p>基本職を育てると上位職への昇格試練が解放されます。「主人公 → 上位職への道」で、必要な職業レベル、指定地域での勝利、費用・素材を確認できます。習得した職業はあとから切り替えられます。</p>
+<p>別系統の基本職を育てて得る補助技能や、職業ごとの「極意」は、ほかの職業でも役立つ常時効果です。好きな職業だけを育てても、複数の職業を育ててもかまいません。</p></div></details>
+<details class="guide-chapter" data-guide-name="装備 レジェンダリー エピック 鞄 武器 盾 装飾品 特性 強化 保護 一括売却 図鑑 ドロップ" id="guide-equipment">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🧰</span><span>装備・鍛冶・装備図鑑</span></summary>
+<div class="guide-chapter-body"><h4>装備を集める</h4>
+<p>探索で装備が手に入り、主人公の装備6枠で使用します。現在の基本装備は<strong>118種類</strong>。同名装備でも性能に個体差があります。エピック・レジェンダリーの一部には「✧」印付きの小さな<strong>追加特性</strong>が付きます。</p>
+<p>装備を選ぶと、現在の装備との能力値比較ができます。職業によって装備できる品が異なり、装飾品は2枠を別々に扱います。</p>
+<h4>強化・製作・整理</h4>
+<p>「ギルド」の鍛冶屋では素材とGを使って製作・強化できます。<strong>＋5までの強化は失敗や装備消失がありません。</strong>武器・防具などのレシピと必要な素材は鍛冶屋で確認できます。</p>
+<p>「主人公」の鞄では検索・絞り込み、一括売却、装備保護が使えます。装備中・保護中・初期装備は一括売却の対象外です。強化済み装備も初期状態では対象外。特性付き装備は入手時に自動保護されます。売却候補を確認してから決定してください。</p>
+<h4>装備を集めた記録</h4>
+<p>「記録 → 旅装備図鑑」では、地域別の発見数、最高レアリティ、個体の最高性能、入手回数を見られます。<strong>売却しても図鑑の記録は消えません。</strong>狙った装備の確定入手や追跡調査はありません。地域を探索しながら掘り当てましょう。</p></div></details>
+<details class="guide-chapter" data-guide-name="仲間 NPC 暮らし 共同遠征 活動 訓練 採集 市場 装備 更新 成長 親しさ 記憶" id="guide-companions">
+<summary><span aria-hidden="true" class="guide-chapter-icon">♧</span><span>仲間の暮らし・共同遠征</span></summary>
+<div class="guide-chapter-body"><p>「仲間」タブには8人の冒険者がいます。主人公に同行していないときも<strong>採集・訓練・調査・休息</strong>などを自分で選び、仲間同士で共同遠征にも出かけます。活動はゲーム内時間とともに進みます。</p>
+<h4>活動はゲームの世界に反映される</h4>
+<p>NPCが採集した素材を市場へ納品すると、本人の素材が減り市場の在庫が増えます。仲間は自分の資金で装備を更新することもあります。発見した手掛かりはその人物の記憶に残り、新しい地域の調査につながる場合があります。</p>
+<p>共同遠征には<strong>成功や撤退</strong>があり、結果に応じて参加した仲間の経験・資金・素材・親しさ・記憶が変わります。人物の節目も、実際に達成した活動に応じて記録されます。</p>
+<h4>共同遠征中の仲間を連れて行きたいとき</h4>
+<p>共同遠征中の仲間を主人公の同行者に選ぶと、<strong>共同遠征を中断するかの確認</strong>が表示されます。中断すると共同遠征の報酬はありません。遠征を続けたい場合はキャンセルしてください。</p>
+<p>主人公の所持金や装備とNPC個人の資金・持ち物は別管理です。ゲームを閉じていた時間も既定の上限内で進みます。</p></div></details>
+<details class="guide-chapter" data-guide-name="風信帳 手紙 便り メッセージ 返信 相槌 相談 物語 記憶 交流 未読" id="guide-windletters">
+<summary><span aria-hidden="true" class="guide-chapter-icon">✉️</span><span>風信帳・仲間との会話</span></summary>
+<div class="guide-chapter-body"><p>「仲間 → 風信帳」で8人に便りを送れます。日常・活動・旅の話題を選んで送ると、<strong>ゲーム内時間が経ってから</strong>返信が届きます。相手から先に便りが届くこともあります。</p>
+<p>届いた便りの「返事する」から短い相槌を選べます。相談や物語上の重要な問いには、内容に応じた選択肢が出ます。<strong>返信期限や、返事をしなかったことによる罰はありません。</strong></p>
+<p>活動や共同遠征の実際の結果が便りになることもあります。共同遠征中は一部の便りが帰還まで保留されます。個人依頼や第二章を進めると、あとから続きを伝えてくれる場合もあります。</p>
+<p>未読は仲間タブの印で確認できます。選んだ言葉や特別な相談の記録もセーブに残ります。</p></div></details>
+<details class="guide-chapter" data-guide-name="チャット 世界 戦闘 ギルド 常設 モブ 会話 雑談 一時停止 下部 画面" id="guide-chat">
+<summary><span aria-hidden="true" class="guide-chapter-icon">💬</span><span>冒険者チャット</span></summary>
+<div class="guide-chapter-body"><p>画面下部の<strong>「✧ CHAT」</strong>を押すと、どのタブにいても冒険者チャットを開けます。<strong>閲覧専用</strong>で、メッセージを送る操作はありません。閉じても小さなチャットバーは残ります。</p>
+<p><strong>世界：</strong>8人の仲間や町の住人の雑談、出来事への反応／<strong>戦闘：</strong>実際の戦闘経過／<strong>ギルド：</strong>NPC活動・共同遠征・依頼などの近況。</p>
+<p>「雑談を一時停止」は、生活雑談の自動追加だけを止めます。実際の戦闘や重要な通知を止めるものではありません。会話の履歴と選んだチャンネルはセーブに残ります。</p>
+<div class="guide-note">スマホではチャットを畳むと画面が広く使えます。下部の5つのゲームタブはチャットとは別です。</div></div></details>
+<details class="guide-chapter" data-guide-name="ギルド 市場 買い物 売却 宿屋 野営 救護 回復薬 補給 鍛冶 受付 旅人便 復興" id="guide-guild">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🏘️</span><span>ギルド・市場・回復</span></summary>
+<div class="guide-chapter-body"><h4>冒険から帰ったら</h4>
+<p>ギルドには受付ふくろう、動的依頼、市場、鍛冶屋、宿屋、農場、調理場、遊戯館などがあります。必要な窓口だけ使えば十分です。</p>
+<h4>HP・MPを回復する</h4>
+<p>無料の<strong>野営</strong>はHP・MPを50%まで回復します（再利用には3勝が必要）。<strong>宿屋</strong>は60Gで全員を全快させ、野営の待ち時間も解消します。所持金が不足したときは無料救護も利用できます。</p>
+<h4>市場と装備の用意</h4>
+<p>町の市場で素材を買ったり売ったりできます。取引すると主人公のG・素材と市場在庫がその場で変化します。NPCの採集・納品や注文も在庫に影響します。鍛冶屋では集めた素材で装備を製作・強化できます。</p>
+<h4>遠征の補給</h4>
+<p>受付ふくろうの「受付で依頼する」から、遠征補給・同行訓練・復興計画などを選べます。遠征補給は勝利後のHP・MPの回復を助け、同行訓練は対象の仲間が同行して勝利した際の成長を助けます。いずれもGを使うので、必要なときに利用しましょう。</p>
+<div class="guide-note" hidden="" id="guideLiveSupply"></div></div></details>
+<details class="guide-chapter" data-guide-name="農場 畑 種 作物 収穫 栽培 料理 レシピ 調理 食事 ドロップ 金策 納品 区画 図鑑" id="guide-farm">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🌱</span><span>農場・料理・食事効果</span></summary>
+<div class="guide-chapter-body"><h4>種を植えて育てる</h4>
+<p>「ギルド → 風待ちの小さな農場」で種を購入し、空いた畑に植えます。作物はゲーム内時間で成長し、<strong>成熟後は放置しても枯れません。</strong>水やりや収穫期限も不要です。最初は2区画、Gで最大10区画まで開放できます。</p>
+<p>一括収穫、一括植え付け、前回と同じ作物への植え直しができます。種が不足していても収穫自体は可能で、種の自動購入は行われません。収穫できる畑があると「ギルド」タブに小さな印が出ます。</p>
+<h4>料理を作る・食べる・売る</h4>
+<p>「ギルド → 風待ちの調理場」でレシピをGで解放し、作物と調理費を使って料理します。「1皿」「5皿」「作れるだけ」の一括調理もできます。料理は腐らず、売却・ギルド納品・食事に使えます。</p>
+<p>料理を<strong>「食べる」</strong>と次の探索1回にボーナスが付きます（G・経験値・装備ドロップ率など）。効果は1種類のみで重ね掛けできません。三層の遠征では遠征全体に有効で、勝利・敗北・撤退後に終了します。</p>
+<p>ドロップ率上昇は<strong>相対倍率</strong>です。たとえば元の装備ドロップ率20%に＋12%の効果なら22.4%。レジェンダリーになる確率そのものは上がりません。</p>
+<h4>収集の記録</h4>
+<p>「記録 → 農作物・料理図鑑」では作物8種類・料理6種類の初収穫／初調理を確認できます。作物や料理を売っても図鑑の登録は残ります。</p></div></details>
+<details class="guide-chapter" data-guide-name="ギルド 動的依頼 納品 料理 農作物 訓練 個人依頼 第二章 受注 達成 報告" id="guide-quests">
+<summary><span aria-hidden="true" class="guide-chapter-icon">📜</span><span>ギルド依頼・個人物語</span></summary>
+<div class="guide-chapter-body"><h4>ギルドの依頼</h4>
+<p>「ギルド → ギルドの動的依頼」で、指定の探索・素材・農作物・料理の納品などを受けられます。<strong>通常の依頼は同時に1件まで</strong>です。作物と料理の納品依頼も同じ枠を使います。受注した依頼は日付が変わっても保持されます。</p>
+<p>納品には指定数の在庫が必要です。達成時に素材や料理が減り、報酬のGや経験値を受け取ります。畑で育てた作物を料理にするか、売るか、依頼に納めるかは自由です。</p>
+<h4>8人の個人依頼</h4>
+<p>「ギルド → 冒険者からの個人的な依頼」では、各仲間の第一章・第二章や達成済みの記録を確認できます。本人を同行させて特定地域で勝利することや、会話で方針を選ぶことが必要になる場合があります。</p>
+<p>個人依頼は通常のギルド依頼とは別枠です。進行と選択の結果はその人物の記憶に残り、風信帳で後日談が届くことがあります。</p></div></details>
+<details class="guide-chapter" data-guide-name="世界イベント 市場 出来事 荷馬車 鉱山 青い光 薬草不足 支援 NPC 生活" id="guide-town">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🍃</span><span>世界イベント・町の変化</span></summary>
+<div class="guide-chapter-body"><p>「ギルド → 町で起きている出来事」では、主人公が参加しなくても、NPCの活動やゲーム内時間に応じて事件が進みます。荷馬車の遅れや鉱山の調査など、ある事件の結末が次の出来事につながることもあります。</p>
+<p>事件が起きたら、現地で戦闘に勝つ・素材を届ける・仲間を見守るなどから選べます。<strong>参加は任意</strong>です。結果によって市場の在庫や仲間の活動記録が変化します。</p>
+<p>世界イベントは通常のギルド依頼とは別です。出来事の経過と結末はギルドで確認でき、関連する仲間から便りが届くこともあります。</p></div></details>
+<details class="guide-chapter" data-guide-name="ログインボーナス 風待ちの贈りもの 毎日 7日 5時 定期補給 受取" id="guide-login">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🎁</span><span>起動時の贈りもの</span></summary>
+<div class="guide-chapter-body"><p>「風待ちの贈りもの」は、冒険者ギルドの<strong>7回周期の定期補給</strong>です。ゲームを起動したとき未受取なら案内が出ます。閉じた場合も「ギルド」の窓口から受け取れます。</p>
+<p><strong>連続起動は不要</strong>です。受け取った回数が進み、7回目の後は1回目へ戻ります。現実の日本時間<strong>午前5時</strong>に新しい受取日へ切り替わります。同じ受取日に2回は受け取れません。</p>
+<p>補給品には回復アイテム・G・素材などがあり、7回目は内容を選べます。起動しなかった日の報酬を失う仕組みではありません。初回の物語中は案内が重ならないようにします。</p></div></details>
+<details class="guide-chapter" data-guide-name="記録 設定 JSONに保存 JSONから復元 新しく始める バックアップ セーブ 装備図鑑 調査記録" id="guide-records">
+<summary><span aria-hidden="true" class="guide-chapter-icon">📒</span><span>記録・設定・セーブ</span></summary>
+<div class="guide-chapter-body"><h4>記録で振り返る</h4>
+<p>「記録」タブには<strong>現地調査の記録・はじまりの旅・強敵攻略帳・旅装備図鑑・農作物と料理の図鑑・旅の総括</strong>があります。次の行き先を選んだり、地域を解放したりする操作は「冒険」タブで行います。</p>
+<h4>セーブを守る</h4>
+<p>通常の進行はブラウザ内に自動保存されます。バックアップを作る場合は、<strong>「記録 → 設定 → セーブデータ → JSONに保存」</strong>を選びます。保存したJSONは「JSONから復元」で戻せます。</p>
+<p>HTMLファイルの保存先を変えたり、別のブラウザで開いたりすると、自動保存を引き継げない場合があります。<strong>ゲームを更新する前にJSONバックアップ</strong>を作るのがおすすめです。</p>
+<p>「新しく始める」は現在の進行を初期化します。実行前にバックアップを確認してください。スクロール時のミニ時計や風信帳の新着通知は「設定」で切り替えられます。</p></div></details>
+<details class="guide-chapter" data-guide-name="ギルド 遊戯館 スロット レース 風札 二十一 骰子 ゲーム コイン 賭け金 G" id="guide-casino">
+<summary><span aria-hidden="true" class="guide-chapter-icon">🎰</span><span>風灯の遊戯館</span></summary>
+<div class="guide-chapter-body"><p>「ギルド → 風灯の遊戯館」では、4種類の遊びを楽しめます。使うのは<strong>ゲーム内Gだけ</strong>で、実際のお金の支払いや換金はありません。戦闘中・遠征中は利用できません。</p>
+<p>賭け金は勝負の前に支払い、当選時には倍率に応じた金額を受け取ります。<strong>倍率は元の賭け金も含む総受取額</strong>です。100Gを賭けて2倍なら200Gを受け取り、純利益は100Gです。</p>
+<p>各遊びの詳しいルールは、下の折りたたみ項目で確認できます。勝負途中の状態は保存されるため、閉じても再開できます。</p></div></details>
+<details class="guide-chapter" data-guide-name="スロット 絵柄 倍率 リール" id="guide-slot">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🍃</span><span>風車スロット</span></summary>
-<div class="guide-chapter-body"><p>賭け金を選んで「この金額で回す」を押すと3つの絵柄が決まります。4種類の絵柄は独立して同じ確率で出ます。演出が終わるまで次の勝負はできません。</p>
-<table class="guide-paytable"><tr><th>結果</th><th>払戻倍率</th></tr><tr><td>🍃🍃🍃</td><td>3倍</td></tr><tr><td>⭐⭐⭐</td><td>4倍</td></tr><tr><td>🔔🔔🔔</td><td>5倍</td></tr><tr><td>🐉🐉🐉</td><td>10倍</td></tr><tr><td>同じ絵柄が2つ</td><td>1倍（元本返還）</td></tr><tr><td>すべて違う</td><td>0倍</td></tr></table>
-<p>絵柄は抽選で決まり、止めるタイミングによって結果は変わりません。</p></div></details>
-<details class="guide-chapter" data-guide-name="風走りレース" id="guide-race">
+<div class="guide-chapter-body"><p>賭け金を選び「この金額で回す」を押します。3つの絵柄が抽選され、揃い方によって払戻が変わります。止めるタイミングで抽選結果は変わりません。</p>
+<table class="guide-paytable"><tr><th>結果</th><th>払戻倍率</th></tr><tr><td>🍃🍃🍃</td><td>3倍</td></tr><tr><td>⭐⭐⭐</td><td>4倍</td></tr><tr><td>🔔🔔🔔</td><td>5倍</td></tr><tr><td>🐉🐉🐉</td><td>10倍</td></tr><tr><td>同じ絵柄が2つ</td><td>1倍（元本返還）</td></tr><tr><td>すべて違う</td><td>0倍</td></tr></table></div></details>
+<details class="guide-chapter" data-guide-name="レース 帆車 単勝 勝率 天候 倍率" id="guide-race">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🏁</span><span>風走りレース</span></summary>
-<div class="guide-chapter-body"><p>4台の帆車（赤羽号・青鐘号・緑葉号・金月号）から、1位になると思う1台を選びます。<strong>単勝のみ</strong>です。出走前の天候、速度、風への適性、安定性が勝率に影響します。</p>
-<p>選択画面に表示された勝率と倍率を見て賭けます。的中すれば、元本を含む「賭け金×表示倍率」の賞金を受け取れます。勝者は賭け確定時に抽選済みで、観戦中に変更されません。</p>
-<div class="guide-note">倍率の高い帆車は当たりにくい傾向があります。大きな倍率だけでなく勝率も比べてみましょう。</div></div></details>
-<details class="guide-chapter" data-guide-name="風札の二十一" id="guide-cards">
+<div class="guide-chapter-body"><p>4台の帆車から1位になると思う1台を選びます。単勝のみです。出走前に表示される天候・速度・風への適性・安定性が勝率に影響します。</p><p>表示された勝率と倍率を比べて賭け、選んだ帆車が1位なら元本込みの賞金を受け取ります。</p></div></details>
+<details class="guide-chapter" data-guide-name="風札 二十一 21 ディーラー 札 カード" id="guide-cards">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🃏</span><span>風札の二十一</span></summary>
-<div class="guide-chapter-body"><p>合計21以下の範囲で、親（ディーラー）より高い合計を目指します。札は1〜10から毎回同じ確率で引かれ、山札の残り枚数は減りません。</p>
-<ol><li>賭け金を決めて「札を配ってもらう」。自分と親に2枚ずつ配られ、親の1枚は公開されます。</li><li>「もう1枚引く」か「この合計で勝負する」を選びます。</li><li>21を超えたら即敗北。勝負すると親は17以上になるまで引きます。</li></ol>
-<p><strong>勝ち</strong>（21以内で親より上、または親が超過）＝2倍、<strong>同点</strong>＝1倍返還、<strong>負け</strong>＝0倍。21ちょうどの特別配当やエースの特例はありません。</p>
-<div class="guide-note">すでに合計が高いときは、追加で引くと21を超える可能性も高くなります。公開された親の札と自分の合計を考えて決めましょう。</div></div></details>
-<details class="guide-chapter" data-guide-name="三風の骰子" id="guide-dice">
+<div class="guide-chapter-body"><p>合計21を超えないように札を引き、親より高い合計を目指します。賭け金を決めて2枚ずつ配り、親の1枚は公開されます。</p><p>「もう1枚引く」か「この合計で勝負する」を選びます。21超過は即敗北。親は合計17以上になるまで引き、勝ちは2倍、同点は1倍返還、負けは0倍です。エースの特例や21ちょうどの特別配当はありません。</p></div></details>
+<details class="guide-chapter" data-guide-name="骰子 サイコロ 出目 固定 役 振り直し" id="guide-dice">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🎲</span><span>三風の骰子</span></summary>
-<div class="guide-chapter-body"><p>1〜6の骰子を3つ振ります。好きな骰子をタップして<strong>固定</strong>し、残りを最大2回振り直せます。途中で「この役で勝負する」を選んでもかまいません。</p>
-<table class="guide-paytable"><tr><th>役</th><th>払戻倍率</th></tr><tr><td>同じ数字3つ</td><td>2.5倍</td></tr><tr><td>連続した数字3つ</td><td>1.2倍</td></tr><tr><td>同じ数字2つ</td><td>0.3倍</td></tr><tr><td>役なし</td><td>0倍</td></tr></table>
-<p>各出目は独立した均等抽選です。どの骰子を残して振り直すかを、自分で決められます。</p>
-<div class="guide-note">たとえば「3・3・5」なら3を2つ固定して、残りの1つを振り直すことで三つ揃いを狙えます。</div></div></details>
-<details class="guide-chapter" data-guide-name="記録・収支・セーブ" id="guide-records">
-<summary><span aria-hidden="true" class="guide-chapter-icon">📒</span><span>記録・収支・セーブ</span></summary>
-<div class="guide-chapter-body"><p><strong>記録</strong>では現地調査の記録、強敵攻略帳（直近16件）、周回の記録帳（直近30戦）、旅の家計簿、旅の総括を見られます。周回の記録帳は戦闘の成績、家計簿は実際のGの増減を記録する別の機能です。</p>
-<p>旅の家計簿の集計は<strong>導入後の取引のみ</strong>。以前のバージョンで使ったGを推測して補うことはありません。ゲームはブラウザ内に自動保存しますが、端末変更・ブラウザのデータ削除に備えて「JSONに保存」でバックアップしてください。「JSONから復元」で戻せます。</p>
-<p>最新版に更新するときは、先に旧版の「記録 → JSONに保存」を実行し、新版を起動して進行状況を確認してください。別のブラウザや保存先でHTMLを開くと、自動保存が共有されないことがあります。必要に応じてJSONから復元してください。</p>
-<div class="guide-note">「新しく始める」は現在の進行を初期化します。実行する前にバックアップを取っておくと安心です。</div></div></details>
-<p hidden="" id="guideNoResults">一致する項目がありません。別の言葉で探してください。</p>
-</div>
-<div class="guide-footer"><span>いつでも読み返せます。ゲームはそのまま続きます。</span><button id="guideDone" type="button">冒険に戻る</button></div>
-</div>
-</div>
+<div class="guide-chapter-body"><p>1〜6の骰子を3つ振り、好きな骰子を固定して残りを最大2回振り直します。途中で「この役で勝負する」を選んでもかまいません。</p>
+<table class="guide-paytable"><tr><th>役</th><th>払戻倍率</th></tr><tr><td>同じ数字が3つ</td><td>2.5倍</td></tr><tr><td>連続する数字が3つ</td><td>1.2倍</td></tr><tr><td>同じ数字が2つ</td><td>0.3倍</td></tr><tr><td>役なし</td><td>0倍</td></tr></table></div></details><p hidden="" id="guideNoResults">一致する項目がありません。別の言葉で探してください。</p></div>
+<div class="guide-footer"><span>いつでも読み返せます。ゲームの進行はそのままです。</span><button id="guideDone" type="button">冒険に戻る</button></div>
+</div></div>
 <script>
+
+// v0.9.89: area-specific equipment additions; a 16% share of name rolls.
+// Equipment-drop occurrence and rarity-tier rolls remain unchanged.
+const EXPANSION_GEAR = Object.freeze({"starwood":[["小夜の短剣","苔深の灯具"],["月苔の魔導書","露星の帽子"],["星樹の外套","幽翠の指輪"]],"dawnsea":[["朝焼けの帽子","霞紡ぎの灯具"],["雲渡りの魔導書"],["虹光の指輪","風冠の盾"],["古竜の曲剣"]],"observatory":["玻璃の細剣","星屑の短弓","天球の兜","軌道の盾","星詠みの灯具","球儀の法衣"],"eclipse":["星喰みの外套","断崖の星環","薄月の灯具"],"starpit":["深淵の杖","星骨の兜","虚無の指環"]});
 
 const CombatEngine = (() => {
  const JOBS={
@@ -2086,6 +2323,11 @@ const CombatEngine = (() => {
  }
  function afterStrike(b,att,tar,res,text){addLog(b,`${att.name}の${text} → ${tar.name}に${res.value}${res.crit?'（会心）':''}`);if(tar.hp<=0){addLog(b,`${tar.name}を倒した！`);if(tar.team==='enemy'&&!tar.rewarded){b.kills.push(tar.kind);tar.rewarded=true;}}}
  function strike(b,a,target,power,label){if(target.hp<=0)return;const r=damage(b,a,target,power);afterStrike(b,a,target,r,label);}
+ function starHealFactor(b){
+  if(b.zone!=='starpit'||b.dungeonFloor!==3||!(b.starDissonanceUntil>b.time))return 1;
+  const healers=b.allies.filter(a=>a.hp>0&&BASE_JOB(a.job)==='healer').length;
+  return healers>=2?.53:.67;
+ }
  function allyAction(b,a){
   if(a.hp<=0)return;
   const enemies=living(b.enemies);if(!enemies.length)return;
@@ -2100,7 +2342,7 @@ const CombatEngine = (() => {
   // 生命維持と防御は攻撃より優先する。
   if(can('benediction',19)&&teammates.some(x=>x.hp/x.maxHp<healPct)){
    tickSkill(b,a,'benediction',19,11);
-   for(const friend of teammates){const old=friend.hp;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*1.14*(passive(a,'grace')?1.12:1)));addLog(b,`${a.name}の祝福の祈り → ${friend.name}を${friend.hp-old}回復`);}return;
+   for(const friend of teammates){const old=friend.hp;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*1.14*(passive(a,'grace')?1.12:1)*starHealFactor(b)));addLog(b,`${a.name}の祝福の祈り → ${friend.name}を${friend.hp-old}回復`);}return;
   }
   if(can('lightwall',20)&&teammates.filter(x=>x.hp/x.maxHp<.8).length>=2&&teammates.some(x=>x.protectUntil<=b.time)){
    tickSkill(b,a,'lightwall',20,15);for(const friend of teammates)friend.protectUntil=b.time+10;addLog(b,a.name+'の聖光の壁 → 仲間全員を防護');return;
@@ -2112,9 +2354,9 @@ const CombatEngine = (() => {
    tickSkill(b,a,'clarity',15,14);for(const friend of teammates)friend.mp=Math.min(friend.maxMp,friend.mp+Math.round(friend.maxMp*.16));addLog(b,a.name+'の魔力の泉 → 味方全員のMPが回復');return;
   }
   if(can('groupheal',18)&&teammates.filter(x=>x.hp/x.maxHp<healPct).length>=2){
-   tickSkill(b,a,'groupheal',18,12);for(const friend of teammates){const was=friend.hp;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*.85*(passive(a,'mercy')?1.15:1)*(passive(a,'grace')?1.12:1)*(hasSpecial(a,'healing_grace')?1.2:1)*(hasSpecial(a,'magic_resonance')?1.10:1)));addLog(b,`${a.name}の祈りの輪 → ${friend.name}を${friend.hp-was}回復`);}return;
+   tickSkill(b,a,'groupheal',18,12);for(const friend of teammates){const was=friend.hp;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*.85*(passive(a,'mercy')?1.15:1)*(passive(a,'grace')?1.12:1)*(hasSpecial(a,'healing_grace')?1.2:1)*(hasSpecial(a,'magic_resonance')?1.10:1)*starHealFactor(b)));addLog(b,`${a.name}の祈りの輪 → ${friend.name}を${friend.hp-was}回復`);}return;
   }
-  if(can('heal',11)&&hurt.hp/hurt.maxHp<healPct){tickSkill(b,a,'heal',11,6.4);const was=hurt.hp;hurt.hp=Math.min(hurt.maxHp,hurt.hp+Math.round(a.atk*1.6*(passive(a,'mercy')?1.15:1)*(passive(a,'grace')?1.12:1)*(hasSpecial(a,'healing_grace')?1.2:1)*(hasSpecial(a,'magic_resonance')?1.10:1)));addLog(b,`${a.name}の治癒 → ${hurt.name}を${hurt.hp-was}回復`);if(hasSpecial(a,'healing_grace'))logSpecial(b,'healing_grace','祈りの護符が治癒を強めた！');return;}
+  if(can('heal',11)&&hurt.hp/hurt.maxHp<healPct){tickSkill(b,a,'heal',11,6.4);const was=hurt.hp;hurt.hp=Math.min(hurt.maxHp,hurt.hp+Math.round(a.atk*1.6*(passive(a,'mercy')?1.15:1)*(passive(a,'grace')?1.12:1)*(hasSpecial(a,'healing_grace')?1.2:1)*(hasSpecial(a,'magic_resonance')?1.10:1)*starHealFactor(b)));addLog(b,`${a.name}の治癒 → ${hurt.name}を${hurt.hp-was}回復`);if(hasSpecial(a,'healing_grace'))logSpecial(b,'healing_grace','祈りの護符が治癒を強めた！');return;}
   if(can('herb',9)&&hurt.hp/hurt.maxHp<(fieldTeam?.68:Math.min(healPct,.48))){
    tickSkill(b,a,'herb',9,fieldTeam?10:9);const was=hurt.hp;
    const ordinary=Math.round(a.atk*.75*(hasSpecial(a,'healing_grace')?1.2:1));
@@ -2150,7 +2392,7 @@ const CombatEngine = (() => {
   if(can('arcflare',24)){tickSkill(b,a,'arcflare',24,10);strike(b,a,target,2.45,'星核の一撃');return;}
   if(can('curse',13)&&target.weakenUntil<=b.time){tickSkill(b,a,'curse',13,10);target.weakenUntil=b.time+11;strike(b,a,target,1.05,'衰弱の呪い');return;}
   if(can('siphon',16)){tickSkill(b,a,'siphon',16,8);strike(b,a,target,1.62,'魂吸い');a.mp=Math.min(a.maxMp,a.mp+10);return;}
-  if(can('lumen',15)){tickSkill(b,a,'lumen',15,7.5);strike(b,a,target,1.50,'賢者の光');const friend=hurt;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*.28));return;}
+  if(can('lumen',15)){tickSkill(b,a,'lumen',15,7.5);strike(b,a,target,1.50,'賢者の光');const friend=hurt;friend.hp=Math.min(friend.maxHp,friend.hp+Math.round(a.atk*.28*starHealFactor(b)));return;}
   // 攻撃スキルは複数の候補から状況にあわせて選ぶ。
   if(can('nova',20)&&enemies.length>=3){tickSkill(b,a,'nova',20,13);for(const e of [...enemies])strike(b,a,e,1.08,'魔力爆発');return;}
   if(can('cleave',12)&&enemies.length>=2){tickSkill(b,a,'cleave',12,9);for(const e of enemies.slice(0,2))strike(b,a,e,1.02,'薙ぎ払い');return;}
@@ -2188,7 +2430,7 @@ const CombatEngine = (() => {
   const boss=living(b.enemies).find(x=>x.boss);if(!boss)return;
   const phase=b.pending||1;b.pending=null;b.state='running';
   const allies=living(b.allies),isDragon=boss.kind==='dawnwyrm',isStarKing=boss.kind==='hollowking';
-  if(isStarKing&&phase===2){b.starEnraged=true;b.eclipseNext=Math.min(b.eclipseNext||Infinity,b.time+1);addLog(b,'☾ 星王が残光を飲み込み、星蝕の周期が早まった！');}
+  if(isStarKing&&phase===1){b.starDissonanceUntil=b.time+22;addLog(b,'☾ 星核の揺らぎ：22秒間、回復魔法が弱まる。防御・妨害を使い分けよう。');}if(isStarKing&&phase===2){b.starEnraged=true;b.eclipseNext=Math.min(b.eclipseNext||Infinity,b.time+1);b.starDissonanceUntil=b.time+38;addLog(b,'☾ 星王が残光を飲み込み、星蝕の周期が早まった！');addLog(b,'☾ 星核の不協和：38秒間、回復魔法の効果が低下する。防御・妨害でこの時間を乗り切ろう。');}
   let interrupted=false,mitigation=1,extraDamage=0,healed=0,result='';
   if(choice==='guard'){
    mitigation=isDragon?(phase===1?.34:.52):(phase===1?.40:.55);
@@ -2262,7 +2504,7 @@ const CombatEngine = (() => {
    const boss=living(b.enemies).find(x=>x.kind==='hollowking');
    const disrupted=boss&&(boss.weakenUntil>b.time||boss.markUntil>b.time);
    rate=Math.max(.020,rate+(b.starEcho||0)*(disrupted?.7:1)-(disrupted?.012:0)
-    +(b.starPhase==='raging'?(b.starPhaseSuppressedUntil>b.time?.041:.105):b.starPhase==='dim'?-.018:0));
+    +(b.starPhase==='raging'?(b.starPhaseSuppressedUntil>b.time?.055:.19):b.starPhase==='dim'?-.018:0));
    rate*=.79+b.rand()*.42;
    b.starEcho=Math.max(0,(b.starEcho||0)-.025);
   }
@@ -2347,7 +2589,9 @@ const CombatEngine = (() => {
    gold+=Math.round((5+f.level*3)*(endgame?(boss?14:3.3):boss?(dawn?13:11):dawn?2.8:tower?2.1:starwood?1.8:highland?1.35:1));
    if(random()<(endgame?.94:boss?1:kind==='golem'?.75:b.zone==='highland'?.70:starwood?.77:tower?.92:dawn?.86:.61))materials.push(boss?'古代の魔石':(starwood||tower||dawn||endgame)?(random()<(endgame?.65:tower?.45:dawn?.47:starwood&&b.starwoodTier>=3?.21:.12)?'古代の魔石':random()<.65?'鉄鉱石':'薬草'):b.zone==='highland'?(b.highlandTier>=3&&random()<.17?'古代の魔石':random()<.65?'鉄鉱石':'薬草'):b.zone==='mine'||b.zone==='oldroad'&&random()<.35?'鉄鉱石':'薬草');
    const dropRate=b.zone==='eclipse'?.38:b.zone==='starpit'?(boss?.85:b.dungeonRoute==='scavenge'?.56:.43):null;
-   if(random()<(dropRate??(boss?.65:b.zone==='highland'?.18:starwood?.21:tower?.52:dawn?(b.dawnTier===4?.70:.26):b.zone==='mine'?.14:b.zone==='oldroad'?.16:.11))){
+   const naturalDrop=dropRate??(boss?.65:b.zone==='highland'?.18:starwood?.21:tower?.52:dawn?(b.dawnTier===4?.70:.26):b.zone==='mine'?.14:b.zone==='oldroad'?.16:.11);
+    // Relative modifier to equipment-drop occurrence; rarity table remains untouched.
+    if(random()<Math.min(1,naturalDrop*(1+(b.mealBonus?.drop||0)))){
     const roll=random()*100;
     let rarity=endgame?(roll<(boss?3.4:1.8)?'レジェンダリー':roll<10?'エピック':roll<30?'レア':roll<65?'アンコモン':'コモン')
       :dawn?(roll<3.0?'レジェンダリー':roll<16.0?'エピック':roll<35?'レア':roll<65?'アンコモン':'コモン')
@@ -2355,10 +2599,24 @@ const CombatEngine = (() => {
       :starwood?(roll<.25?'レジェンダリー':roll<7.0?'エピック':roll<22?'レア':roll<51?'アンコモン':'コモン')
       :(roll<.2?'レジェンダリー':roll<2?'エピック':roll<12?'レア':roll<40?'アンコモン':'コモン');
     const names=b.zone==='eclipse'?ECLIPSE_GEAR:b.zone==='starpit'?STARPIT_GEAR:dawn?(b.dawnTier===1?['朝霧の長剣','白雲の弓','夜明けの杖','雲織りの衣']:b.dawnTier===2?['霞守りの盾','虹路の兜','風見の護符','薄明の矢筒']:b.dawnTier===3?['星渡りの剣','黎明の長弓','暁光の導杖','天風の外套','雲の指輪']:['古竜の鱗盾','暁の竜冠','竜息の護符']):starwood?(b.starwoodTier===1?['木漏れ日の剣','薄明の弓','星雫の杖','木陰の法衣']:b.starwoodTier===2?['月映えの盾','霞織りの衣','星読みの護符','夜風の矢筒']:['星樹の長剣','月影の長弓','夜光の杖','深緑の兜','星蜜の指輪']):tower?['玻璃の大剣','星盤の長弓','天文の導杖','星守の外套','硝子の護符']:b.zone==='highland'?(b.highlandTier===1?['風渡りの長剣','渡り鳥の弓','そよぎの杖','野花の衣']:b.highlandTier===2?['風切りの矢筒','風織りの外套','風鳴りの杖','旅風の護符']:['雲裂きの剣','雷雲の長弓','空色の灯杖','雷雲の兜','風追いの指輪']):b.zone==='ruins'?['巡礼の護符','巡礼の古杖','旧道の大剣']:boss?['石像兵の護符','聖堂の古杖','守護者の大剣']:b.zone==='mine'?['赤錆の剣','鉱山の革鎧','石穿ちの弓','祈りの護符']:b.zone==='oldroad'?['旧道の旅衣','森番の長剣','木の杖','石穿ちの弓']:['森番の長剣','木の杖','旅人の革衣','若木の弓'];
-    gears.push(`${rarity}・${names[Math.floor(random()*names.length)]}`);
+    const newTierPool=b.zone==='starwood'
+      ?EXPANSION_GEAR.starwood[Math.max(0,Math.min(2,(Number(b.starwoodTier)||1)-1))]
+      :b.zone==='dawnsea'
+      ?EXPANSION_GEAR.dawnsea[Math.max(0,Math.min(3,(Number(b.dawnTier)||1)-1))]
+      :EXPANSION_GEAR[b.zone]||[];
+    const nameRoll=random(),freshShare=newTierPool.length?0.16:0;
+    const chosen=freshShare&&nameRoll<freshShare
+      ?newTierPool[Math.min(newTierPool.length-1,Math.floor(nameRoll/freshShare*newTierPool.length))]
+      :names[Math.min(names.length-1,Math.floor((nameRoll-freshShare)/(1-freshShare)*names.length))];
+    gears.push(`${rarity}・${chosen}`);
    }
   }
-  if(b.allies.some(a=>passive(a,'picker'))&&random()<.18)materials.push(b.zone==='mine'||b.zone==='highland'?'鉄鉱石':'薬草'); xp=Math.round(xp/(1+Math.max(0,b.allies.length-1)*.38)); return {xp,gold,materials,gears};
+  if(b.allies.some(a=>passive(a,'picker'))&&random()<.18)materials.push(b.zone==='mine'||b.zone==='highland'?'鉄鉱石':'薬草');
+   // Extra material copies are sampled only from actual drops (no rare-material guarantee).
+   if(b.mealBonus?.material){for(const m of [...materials])if(random()<b.mealBonus.material)materials.push(m);}
+   xp=Math.round(xp/(1+Math.max(0,b.allies.length-1)*.38));
+   xp=Math.round(xp*(1+(b.mealBonus?.xp||0)));gold=Math.round(gold*(1+(b.mealBonus?.gold||0)));
+   return {xp,gold,materials,gears};
  }
  return {JOBS,ADVANCED,BASE_JOB,NPCS,FOES,SKILLS,DEFAULT_BUILDS,heroActor,begin,step,resolveBoss,reward,levelXp,jobXp,checkpoint,resume};
 })();
@@ -2474,7 +2732,7 @@ const WorldEngine = (() => {
   return ({gald:'「無事に帰るまでが遠征だ」',rio:'「知らない道があるなら調べたいな」',sera:'「現地の記録がもう少し欲しいわ」',mina:'「出発前の準備を大切にしてくださいね」',noel:'「今日は訓練をひとつ増やしてみようかな」',eda:'「助けるだけじゃなくて、私も行ってみたいの」',toto:'「素材も信用も、積み重ねが大切だよ」',van:'「強い敵の噂があるなら聞かせてくれ」'})[id];
  }
  function seedPeople(){const people={};for(const n of CombatEngine.NPCS)people[n.id]={equipment:{weapon:gearFor(n.job,'weapon'),armor:gearFor(n.job,'armor')},level:n.level,xp:0,jobLevel:Math.max(1,n.level-3),jobXp:0,gold:80,stock:{'薬草':0,'鉄鉱石':0},fatigue:12,location:'guild',activity:'guild',remaining:0,missions:0,sales:0,discoveries:0,story:[],trust:10,closeness:10,partyBattles:0,coExpeditions:0,memories:[],outlook:null,last:'ギルドで次の予定を考えている。'};return people;}
- function initial(now=Date.now()){return {version:7,guild:{offers:[],active:null,history:[],completedTotal:0,seen:[],lastOffered:{herb:-100,ore:-100},nextId:1,reports:0},marketStats:{bought:0,sold:0,paid:0,earned:0},shopRevenue:0,shopOrders:0,worldConsumed:{'薬草':0,'鉄鉱石':0},lodgingSpent:0,lastReal:now,halfHours:0,seed:9124381,people:seedPeople(),market:{'薬草':18,'鉄鉱石':9},relations:{},pairStats:{},expeditions:[],expeditionHistory:[],nextExpeditionId:1,news:[],totalEvents:0,windEventSeq:0,windEvents:[]};}
+ function initial(now=Date.now()){return {version:7,guild:{offers:[],active:null,history:[],completedTotal:0,seen:[],lastOffered:{herb:-100,ore:-100},lastFarmDay:-1,nextId:1,reports:0},marketStats:{bought:0,sold:0,paid:0,earned:0},shopRevenue:0,shopOrders:0,worldConsumed:{'薬草':0,'鉄鉱石':0},lodgingSpent:0,lastReal:now,halfHours:0,seed:9124381,people:seedPeople(),market:{'薬草':18,'鉄鉱石':9},relations:{},pairStats:{},expeditions:[],expeditionHistory:[],nextExpeditionId:1,news:[],totalEvents:0,windEventSeq:0,windEvents:[]};}
  function sanitize(raw,now=Date.now()){
   const w=initial(now);if(!raw||![1,2,3,4,5,6,7].includes(raw.version))return w;
   w.lastReal=int(raw.lastReal,now-365*86400000,now+STEP_MS,now);w.halfHours=int(raw.halfHours,0,2000000,0);w.seed=int(raw.seed,0,4294967295,9124381)>>>0;w.totalEvents=int(raw.totalEvents,0,1e8,0);w.shopRevenue=int(raw.shopRevenue,0,1e9,0);w.shopOrders=int(raw.shopOrders,0,1e7,0);for(const key of ['bought','sold','paid','earned'])w.marketStats[key]=int(raw.marketStats?.[key],0,1e9,0);w.lodgingSpent=int(raw.lodgingSpent,0,1e9,0);for(const mat of ['薬草','鉄鉱石'])w.worldConsumed[mat]=int(raw.worldConsumed?.[mat],0,1e9,0);
@@ -2482,9 +2740,16 @@ const WorldEngine = (() => {
   if(raw.version>=6&&raw.guild&&typeof raw.guild==='object'){
    const g=raw.guild;w.guild.nextId=int(g.nextId,1,1000000,1);w.guild.reports=int(g.reports,0,10000,0);w.guild.completedTotal=int(g.completedTotal,0,100000000,Array.isArray(g.history)?g.history.length:0);
    for(const type of ['herb','ore'])w.guild.lastOffered[type]=int(g.lastOffered?.[type],-100,w.halfHours,-100);
+   w.guild.lastFarmDay=int(g.lastFarmDay,-1,Math.floor((w.halfHours+16)/48),-1);
    w.guild.seen=Array.isArray(g.seen)?[...new Set(g.seen.filter(x=>typeof x==='string'&&/^(gald|rio|sera|mina|noel|eda|toto|van):[0-9]{1,9}$/.test(x)))].slice(-100):[];
    const safeQuest=q=>{
     if(!q||!Number.isSafeInteger(q.id)||q.id<1||q.id>1000000)return null;
+    if(q.type==='farmOrder'){
+     const template=FARM_DELIVERY_BY_ID[q.itemId];
+     if(!template||q.kind!==template.kind)return null;
+     return {id:q.id,type:'farmOrder',itemId:template.id,kind:template.kind,material:template.name,sourceId:null,memo:'',need:template.need,progress:0,
+      createdTick:int(q.createdTick,0,w.halfHours,0),createdDay:int(q.createdDay,0,Math.floor((w.halfHours+16)/48),0),rewardGold:template.gold,rewardExp:template.xp};
+    }
     const type=q.type==='supply'?'supply':q.type==='investigate'?'investigate':null;if(!type)return null;
     const material=type==='supply'?(q.material==='薬草'||q.material==='鉄鉱石'?q.material:null):null;
     const sourceId=type==='investigate'&&KNOWN.includes(q.sourceId)?q.sourceId:null;
@@ -2609,6 +2874,52 @@ const WorldEngine = (() => {
  function npcMeet(w,selected){const free=CombatEngine.NPCS.filter(n=>!selected.includes(n.id)&&w.people[n.id].location==='guild'&&w.people[n.id].activity==='guild');if(free.length<2||random(w)>.085)return;
   const a=free[Math.floor(random(w)*free.length)],b=free.filter(n=>n.id!==a.id)[Math.floor(random(w)*(free.length-1))];if(!b)return;const key=pairKey(a.id,b.id),current=w.relations[key]??10;w.relations[key]=Math.min(100,current+(current<60?1:random(w)<.35?1:0));log(w,'social',`${a.name}と${b.name}がギルドで情報交換をした。親しさ ${w.relations[key]}。`);
  }
+ // v0.9.83: farm and kitchen delivery requests. Their prices are deliberately
+ // modestly above direct sales, not a repeatable gold exploit. Each order consumes stock.
+ const FARM_DELIVERY_CATALOG=[
+  {id:'wheat',kind:'crop',name:'小麦',need:6,level:1,gold:65,xp:30},
+  {id:'carrot',kind:'crop',name:'にんじん',need:6,level:1,gold:100,xp:35},
+  {id:'potato',kind:'crop',name:'じゃがいも',need:8,level:15,gold:150,xp:50},
+  {id:'tomato',kind:'crop',name:'トマト',need:6,level:25,gold:220,xp:70},
+  {id:'herb',kind:'crop',name:'香草',need:6,level:35,gold:305,xp:85},
+  {id:'pumpkin',kind:'crop',name:'かぼちゃ',need:6,level:50,gold:550,xp:120},
+  {id:'berry',kind:'crop',name:'星蜜ベリー',need:3,level:65,gold:535,xp:155},
+  {id:'moonturnip',kind:'crop',name:'月光かぶ',need:3,level:80,gold:1150,xp:220},
+  {id:'bread',kind:'food',name:'焼き麦パン',need:2,level:1,gold:65,xp:50},
+  {id:'veggieSoup',kind:'food',name:'野菜スープ',need:2,level:15,gold:155,xp:75},
+  {id:'herbPotatoes',kind:'food',name:'じゃがいもの香草焼き',need:2,level:35,gold:260,xp:100},
+  {id:'pumpkinSoup',kind:'food',name:'かぼちゃのポタージュ',need:2,level:50,gold:630,xp:150},
+  {id:'berryTart',kind:'food',name:'星蜜ベリーのタルト',need:2,level:65,gold:1050,xp:200},
+  {id:'moonStew',kind:'food',name:'月光かぶのシチュー',need:2,level:80,gold:2360,xp:275}
+ ];
+ const FARM_DELIVERY_BY_ID=Object.fromEntries(FARM_DELIVERY_CATALOG.map(o=>[o.id,o]));
+ function refreshFarmOrders(w,farm,heroLevel){
+  const g=w.guild;if(!g||!farm)return false;
+  const day=Math.floor((w.halfHours+16)/48);
+  if(g.lastFarmDay===day)return false;
+  g.lastFarmDay=day;
+  // Unaccepted offers expire at the next in-game day; accepted quests never expire.
+  g.offers=g.offers.filter(q=>q.type!=='farmOrder');
+  const crops=FARM_DELIVERY_CATALOG.filter(o=>o.kind==='crop'&&heroLevel>=o.level);
+  const foods=FARM_DELIVERY_CATALOG.filter(o=>o.kind==='food'&&heroLevel>=o.level&&farm.kitchen?.unlockedRecipes?.includes(o.id));
+  if(!crops.length)return true;
+  const index=(day+Math.floor(day/3))%crops.length;
+  const first=crops[index];
+  const fallback=crops.length>1?crops[(index+1)%crops.length]:first;
+  // With one unlocked recipe, avoid offering the same cooking order every day.
+  // With multiple recipes, rotate to another recipe on the next game day.
+  const second=foods.length&&(foods.length>1||day%2===0)?foods[day%foods.length]:fallback;
+  const templates=first.id===second.id?[first]:[first,second];
+  for(const o of templates){
+   if(g.nextId>999999)break;
+   const q={id:g.nextId++,type:'farmOrder',itemId:o.id,kind:o.kind,material:o.name,sourceId:null,memo:'',need:o.need,progress:0,createdTick:w.halfHours,createdDay:day,rewardGold:o.gold,rewardExp:o.xp};
+   if(g.offers.length<8)g.offers.push(q);
+  }
+  // Keep existing guild requests ahead of newly generated deliveries.
+  // If the board is full, skip a farm offer instead of deleting an old request.
+  g.offers=g.offers.slice(0,8);
+  return true;
+ }
  const QUEST_MATERIALS=[{id:'herb',material:'薬草',threshold:24,need:8,rewardGold:100,rewardExp:70},{id:'ore',material:'鉄鉱石',threshold:16,need:6,rewardGold:155,rewardExp:90}];
  function refreshQuests(w){
   const g=w.guild;if(!g)return;
@@ -2629,7 +2940,7 @@ const WorldEngine = (() => {
   }}
   g.seen=g.seen.slice(-100);
  }
- function questTitle(q){return q.type==='supply'?`${q.material}の緊急納品`:`${name(q.sourceId)}が見つけた旧道の調査`;}
+ function questTitle(q){return q.type==='farmOrder'?`${q.material}の納品依頼`:q.type==='supply'?`${q.material}の緊急納品`:`${name(q.sourceId)}が見つけた旧道の調査`;}
  function takeQuest(w,id){const g=w.guild;if(g.active)return {ok:false,reason:'すでに受注中の依頼があります。'};
   const index=g.offers.findIndex(q=>q.id===id);if(index<0)return {ok:false,reason:'依頼が見つかりません。'};
   const q=g.offers.splice(index,1)[0];g.active=q;log(w,'quest',`主人公が「${questTitle(q)}」を受注した。`);return {ok:true,title:questTitle(q)};
@@ -2637,10 +2948,22 @@ const WorldEngine = (() => {
  function recordQuestVictory(w,zone){const q=w.guild?.active;if(!q||q.type!=='investigate'||zone!=='forest')return false;
   q.progress=Math.min(q.need,q.progress+1);if(q.progress===q.need)log(w,'quest',`調査依頼「${questTitle(q)}」の現地調査を終えた。ギルドで報告できる。`);return true;
  }
- function claimQuest(w,materials,gold){const g=w.guild,q=g?.active;if(!q)return {ok:false,reason:'受注中の依頼はありません。'};
+ function claimQuest(w,materials,gold,farm){const g=w.guild,q=g?.active;if(!q)return {ok:false,reason:'受注中の依頼はありません。'};
   if(g.history.some(x=>x.id===q.id))return {ok:false,reason:'この依頼はすでに完了しています。'};
   if(gold+q.rewardGold>1e9)return {ok:false,reason:'所持金上限のため報酬を受け取れません。'};
-  if(q.type==='supply'){
+  if(q.type==='farmOrder'){
+   const o=FARM_DELIVERY_BY_ID[q.itemId];
+   if(!o||q.kind!==o.kind||q.need!==o.need||q.rewardGold!==o.gold||q.rewardExp!==o.xp)return {ok:false,reason:'依頼情報が一致しません。'};
+   const stock=o.kind==='crop'?farm?.crops:farm?.kitchen?.foods;
+   const owned=Number(stock?.[o.id]||0);
+   if(!Number.isSafeInteger(owned)||owned<o.need)return {ok:false,reason:`${o.name}があと${Math.max(0,o.need-owned)}個必要です。`};
+   stock[o.id]=owned-o.need;
+   const dest=o.kind==='crop'?farm.history:farm.kitchen.history;
+   if(Array.isArray(dest)){
+    dest.push({tick:w.halfHours,text:`ギルドへ${o.name}×${o.need}を納品`});
+    if(dest.length>30)dest.splice(0,dest.length-30);
+   }
+  }else if(q.type==='supply'){
    const owned=Number(materials[q.material]||0);if(!Number.isSafeInteger(owned)||owned<q.need)return {ok:false,reason:`${q.material}があと${Math.max(0,q.need-owned)}個必要です。`};
    materials[q.material]=owned-q.need;
    const stored=Math.min(q.need,Math.max(0,200-w.market[q.material]));w.market[q.material]+=stored;
@@ -2720,7 +3043,7 @@ const WorldEngine = (() => {
   refreshQuests(w);return {ok:true,gold:heroGold,material,side,qty,unit:q.unit,total:q.total};
  }
  function timeText(w){const total=8*60+w.halfHours*30,day=Math.floor(total/1440)+1,minutes=total%1440;return `第${day}日 ${String(Math.floor(minutes/60)).padStart(2,'0')}:${String(minutes%60).padStart(2,'0')}`;}
- return {PROFILES,LABEL,ACTIONS,PAIRS,STEP_MS,storyStatus,personaLine,STORIES,initial,sanitize,tick,catchUp,reserve,recordParty,grantMentorXp,timeText,gearStats,power,maybeShop,MARKET,marketQuote,marketTrade,refreshQuests,questTitle,takeQuest,recordQuestVictory,claimQuest};
+ return {PROFILES,LABEL,ACTIONS,PAIRS,STEP_MS,storyStatus,personaLine,STORIES,initial,sanitize,tick,catchUp,reserve,recordParty,grantMentorXp,timeText,gearStats,power,maybeShop,MARKET,marketQuote,marketTrade,refreshQuests,refreshFarmOrders,questTitle,takeQuest,recordQuestVictory,claimQuest};
 })();
 (function(){
 'use strict';
@@ -2796,7 +3119,31 @@ const TEMPLATE={
  '深星の護盾':{slot:'offhand',job:'sword',def:139,hp:460},
  '深闇の魔導書':{slot:'offhand',job:'mage',atk:100,mp:300},
  '薄明の灯具':{slot:'offhand',job:'healer',hp:265,mp:255,def:52},
- '天底の指輪':{slot:'charm',atk:120,def:55,mp:165}
+ '天底の指輪':{slot:'charm',atk:120,def:55,mp:165},
+ '小夜の短剣':{"slot":"weapon","job":"sword","atk":101,"def":17},
+ '苔深の灯具':{"slot":"offhand","job":"healer","hp":76,"mp":102,"def":8},
+ '月苔の魔導書':{"slot":"offhand","job":"mage","atk":29,"mp":135},
+ '露星の帽子':{"slot":"head","def":40,"hp":166},
+ '星樹の外套':{"slot":"armor","def":49,"hp":202},
+ '幽翠の指輪':{"slot":"charm","atk":33,"mp":53,"crit":0.011},
+ '玻璃の細剣':{"slot":"weapon","job":"sword","atk":177,"def":28},
+ '星屑の短弓':{"slot":"weapon","job":"hunter","atk":170,"crit":0.056},
+ '天球の兜':{"slot":"head","def":64,"hp":249},
+ '軌道の盾':{"slot":"offhand","job":"sword","def":62,"hp":210},
+ '星詠みの灯具':{"slot":"offhand","job":"healer","hp":155,"mp":174,"def":25},
+ '球儀の法衣':{"slot":"armor","def":62,"hp":267,"mp":48},
+ '朝焼けの帽子':{"slot":"head","def":72,"hp":282},
+ '霞紡ぎの灯具':{"slot":"offhand","job":"healer","hp":169,"mp":220,"def":38},
+ '雲渡りの魔導書':{"slot":"offhand","job":"mage","atk":63,"mp":237},
+ '虹光の指輪':{"slot":"charm","atk":68,"hp":165,"mp":68},
+ '風冠の盾':{"slot":"offhand","job":"sword","def":101,"hp":265},
+ '古竜の曲剣':{"slot":"weapon","job":"sword","atk":267,"def":46},
+ '星喰みの外套':{"slot":"armor","def":117,"hp":548},
+ '断崖の星環':{"slot":"charm","atk":81,"def":54,"mp":173},
+ '薄月の灯具':{"slot":"offhand","job":"healer","hp":229,"mp":272,"def":44},
+ '深淵の杖':{"slot":"weapon","job":"mage/healer","atk":348,"mp":398},
+ '星骨の兜':{"slot":"head","def":150,"hp":500,"mp":82},
+ '虚無の指環':{"slot":"charm","atk":112,"hp":213,"mp":172}
 
 };
 const SLOTS={weapon:'武器',offhand:'補助装備',armor:'胴防具',head:'頭防具',charm:'装飾品①',charm2:'装飾品②'};
@@ -2832,9 +3179,32 @@ const CRAFTS=[
  {name:'天風の外套',gold:19500,mats:{'薬草':95,'鉄鉱石':88,'古代の魔石':24}}
 ];
 const statLabels={atk:'攻撃',def:'防御',hp:'HP',mp:'MP',crit:'会心率'};
+/* v0.9.89: one small, immutable random property on epic/legendary natural drops.
+   Applies only to that item's own stat contribution, never to hero total stats. */
+const GEAR_TRAITS={
+ keen:{name:'鋭利',stat:'atk',rate:.02,description:'この装備の攻撃力 +2%'},
+ sturdy:{name:'堅牢',stat:'def',rate:.02,description:'この装備の防御力 +2%'},
+ vital:{name:'活力',stat:'hp',rate:.03,description:'この装備のHP +3%'},
+ focused:{name:'充填',stat:'mp',rate:.03,description:'この装備のMP +3%'},
+ precise:{name:'精密',stat:'crit',rate:.004,description:'会心率 +0.4ポイント'}
+};
+function gearTraitInfo(item){return item&&Object.hasOwn(GEAR_TRAITS,item.trait)?GEAR_TRAITS[item.trait]:null;}
+function rollGearTrait(item,random=Math.random){
+ if(!item||!['エピック','レジェンダリー'].includes(item.rarity))return item;
+ const chance=item.rarity==='レジェンダリー'?.35:.22;
+ if(random()>=chance)return item;
+ const candidates=Object.entries(GEAR_TRAITS).filter(([id,t])=>t.stat==='crit'||(Number(item.stats?.[t.stat])||0)>=30);
+ if(candidates.length){item.trait=candidates[Math.floor(random()*candidates.length)][0];item.protected=true;}
+ return item;
+}
 function effectiveStats(item){
  const inc=1+Math.min(5,Math.max(0,Number(item.enhance)||0))*.075;
  const result={};for(const [k,v] of Object.entries(item.stats))result[k]=k==='crit'?v:Math.round(v*inc);
+ const trait=gearTraitInfo(item);
+ if(trait){
+  if(trait.stat==='crit')result.crit=Math.round(((result.crit||0)+trait.rate)*10000)/10000;
+  else if(Number(result[trait.stat])>0)result[trait.stat]+=Math.max(1,Math.round(result[trait.stat]*trait.rate));
+ }
  return result;
 }
 const PLANT_UPGRADES=new Set(['訓練用の弓','訓練用の杖','癒しの練習杖','木盾','狩人の矢筒','見習い魔導書','祝福の灯具','革の帽子','森の冠','木の杖','若木の弓','石穿ちの弓','聖堂の古杖','旅人の革衣','鉱山の革鎧','練習用の革衣','祈りの護符','風の指輪']);
@@ -3167,8 +3537,147 @@ function renderChapters(){
  $('#chapterHistory').innerHTML=journal.history.length?journal.history.map(x=>`<p class="small tight">✓ <b>${escape(personalNpcName(x.id))}</b>：${escape(x.text)}</p>`).join(''):'まだ第二章の記録はありません。';
 }
 
-function initial(){return {version:45,loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalQuests:{active:null,completed:{},history:[]},dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
+// v0.9.86: equipment discovery ledger. These pools mirror CombatEngine.reward's actual item names.
+const GEAR_REGIONS=[
+ {id:'forest',name:'緑風の森',items:['森番の長剣','木の杖','旅人の革衣','若木の弓']},
+ {id:'mine',name:'赤錆の鉱山',items:['赤錆の剣','鉱山の革鎧','石穿ちの弓','祈りの護符']},
+ {id:'boss',name:'忘却の地下聖堂',items:['石像兵の護符','聖堂の古杖','守護者の大剣']},
+ {id:'oldroad',name:'苔むした旧道',items:['旧道の旅衣','森番の長剣','木の杖','石穿ちの弓']},
+ {id:'ruins',name:'巡礼者の地下遺跡',items:['巡礼の護符','巡礼の古杖','旧道の大剣']},
+ {id:'highland',name:'風鳴りの高原',items:['風渡りの長剣','渡り鳥の弓','そよぎの杖','野花の衣','風切りの矢筒','風織りの外套','風鳴りの杖','旅風の護符','雲裂きの剣','雷雲の長弓','空色の灯杖','雷雲の兜','風追いの指輪']},
+ {id:'starwood',name:'星影の樹海',items:['木漏れ日の剣','薄明の弓','星雫の杖','木陰の法衣','月映えの盾','霞織りの衣','星読みの護符','夜風の矢筒','星樹の長剣','月影の長弓','夜光の杖','深緑の兜','星蜜の指輪']},
+ {id:'observatory',name:'玻璃の天文塔',items:['玻璃の大剣','星盤の長弓','天文の導杖','星守の外套','硝子の護符']},
+ {id:'dawnsea',name:'暁の雲海',items:['朝霧の長剣','白雲の弓','夜明けの杖','雲織りの衣','霞守りの盾','虹路の兜','風見の護符','薄明の矢筒','星渡りの剣','黎明の長弓','暁光の導杖','天風の外套','雲の指輪','古竜の鱗盾','暁の竜冠','竜息の護符']},
+ {id:'eclipse',name:'星蝕の断崖',items:['宵裂きの長剣','夜渡りの弓','星蝕の導杖','断崖の戦衣','宵星の兜','月喰いの盾','星喰いの矢筒','薄月の写本','夜護りの護符']},
+ {id:'starpit',name:'無明の星坑',items:['無明の大剣','静寂の長弓','虚星の祭杖','星坑の守衣','封星の冠','深星の護盾','深闇の魔導書','薄明の灯具','天底の指輪']}
+];
+for(const region of GEAR_REGIONS){
+ const added=EXPANSION_GEAR[region.id];
+ if(added)region.items.push(...added.flat());
+}
+const GEAR_DROPPABLE=new Set(GEAR_REGIONS.flatMap(r=>r.items));
+GEAR_REGIONS.unshift({id:'workshop',name:'旅支度・工房',items:Object.keys(TEMPLATE).filter(n=>!GEAR_DROPPABLE.has(n))});
+function gearJournalScore(item){
+ const v=effectiveStats({...item,enhance:0})||{};return Math.round((Number(v.atk)||0)*10+(Number(v.def)||0)*14+(Number(v.hp)||0)*1+(Number(v.mp)||0)*1.1+(Number(v.crit)||0)*1500);
+}
+function gearJournalSnapshot(item){const result={};for(const key of ['atk','def','hp','mp','crit']){const v=Number(item?.stats?.[key]);if(Number.isFinite(v)&&v>=0&&v<=10000)result[key]=v;}return result;}
+function blankGearJournal(){return {version:1,initialized:false,entries:{}};}
+function gearJournalApply(j,item,zone,tick,legacy=false){
+ if(!item||!Object.hasOwn(TEMPLATE,item.name)||!Object.hasOwn(TIERS,item.rarity))return;
+ const name=item.name,score=gearJournalScore(item),prev=j.entries[name],nRank=TIERS[item.rarity],pRank=prev?TIERS[prev.bestRarity]:-1;
+ if(!prev){j.entries[name]={count:1,bestRarity:item.rarity,bestScore:score,bestStats:gearJournalSnapshot(item),bestTrait:gearTraitInfo(item)?item.trait:null,firstTick:legacy?null:tick,lastTick:legacy?null:tick,lastSource:zone||'',imported:!!legacy};return;}
+ prev.count=Math.min(100000000,prev.count+1);
+ if(nRank>pRank||(nRank===pRank&&score>prev.bestScore)){prev.bestRarity=item.rarity;prev.bestScore=score;prev.bestStats=gearJournalSnapshot(item);prev.bestTrait=gearTraitInfo(item)?item.trait:null;}
+ if(!legacy){prev.lastTick=tick;prev.lastSource=zone||'';prev.imported=false;}
+}
+function gearJournalNormalize(raw,owned,pending,legacy){
+ const j=blankGearJournal(),old=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw.entries:null;
+ if(old&&typeof old==='object'&&!Array.isArray(old))for(const [name,e] of Object.entries(old)){
+  if(!Object.hasOwn(TEMPLATE,name)||!e||typeof e!=='object'||!Object.hasOwn(TIERS,e.bestRarity))continue;
+  const obj={count:safeInteger(e.count,1,100000000,1),bestRarity:e.bestRarity,bestScore:safeInteger(e.bestScore,0,1000000000,0),bestStats:{},bestTrait:typeof e.bestTrait==='string'&&Object.hasOwn(GEAR_TRAITS,e.bestTrait)?e.bestTrait:null,firstTick:Number.isInteger(e.firstTick)&&e.firstTick>=0&&e.firstTick<=2000000?e.firstTick:null,lastTick:Number.isInteger(e.lastTick)&&e.lastTick>=0&&e.lastTick<=2000000?e.lastTick:null,lastSource:typeof e.lastSource==='string'?e.lastSource.slice(0,24):'',imported:e.imported===true};
+  for(const k of ['atk','def','hp','mp','crit']){const v=Number(e.bestStats?.[k]);if(Number.isFinite(v)&&v>=0&&v<=10000)obj.bestStats[k]=v;}
+  j.entries[name]=obj;
+ }
+ // Version migration: only reconstruct names demonstrably present in current inventory or unclaimed loot.
+ // Already-recorded entries are untouched so a normal reload never inflates acquisition counts.
+ for(const item of [...owned,...pending])if(item&&!Object.hasOwn(j.entries,item.name))gearJournalApply(j,item,'',0,true);
+ if(!old){const counts={};for(const item of [...owned,...pending])if(item&&Object.hasOwn(j.entries,item.name))counts[item.name]=(counts[item.name]||0)+1;
+  for(const [name,count] of Object.entries(counts))j.entries[name].count=count;
+ }
+ j.initialized=true;return j;
+}
+function recordGearFound(item,source){
+ if(!save.gearJournal?.initialized)save.gearJournal=gearJournalNormalize(null,save.gear,save.pendingGear,true);
+ gearJournalApply(save.gearJournal,item,source,save.npcWorld?.halfHours||0,false);
+}
+let gearJournalArea='forest',gearJournalOnlyMissing=false,gearJournalPageSize=24;
+function renderGearJournal(){
+ const root=$('#gearJournalList');if(!root)return;
+ const j=save.gearJournal;
+ const region=GEAR_REGIONS.find(r=>r.id===gearJournalArea)||GEAR_REGIONS[0];
+ const discovered=Object.keys(j.entries).length,all=Object.keys(TEMPLATE).length;
+ $('#gearJournalTotal').textContent=`${discovered} / ${all}種類`;$('#gearJournalOverall').style.width=(100*discovered/all).toFixed(1)+'%';
+ $('#gearJournalOverallBar').setAttribute('aria-valuenow',discovered);$('#gearJournalOverallBar').setAttribute('aria-valuemax',all);
+ const per=GEAR_REGIONS.map(r=>({r,n:r.items.filter(name=>Object.hasOwn(j.entries,name)).length}));
+ $('#gearJournalAreas').innerHTML=per.map(({r,n})=>`<option value="${r.id}">${escape(r.name)} ${n}/${r.items.length}${n===r.items.length?' ✓':''}</option>`).join('');
+ $('#gearJournalAreas').value=region.id;
+ const seenHere=region.items.filter(n=>Object.hasOwn(j.entries,n)).length;
+ $('#gearJournalAreaProgress').textContent=`${region.name}：${seenHere}/${region.items.length}種類${seenHere===region.items.length?' · この地域の収集完了':''}`;
+ const names=region.items.filter(n=>!gearJournalOnlyMissing||!Object.hasOwn(j.entries,n));
+ const view=names.slice(0,gearJournalPageSize);
+ root.innerHTML=view.map(name=>{const e=j.entries[name],t=TEMPLATE[name],slot=SLOTS[t.slot]||t.slot;
+  if(!e)return `<div class="gear-journal-item is-unknown"><span class="gear-journal-symbol">？</span><div><strong>？？？？</strong><small>${escape(slot)} · 未発見</small></div></div>`;
+  const stats=Object.entries(e.bestStats||{}).map(([k,v])=>`${statLabels[k]||k} ${k==='crit'?(v*100).toFixed(1)+'%':Math.round(v)}`).join(' / ');
+  const first=e.firstTick===null?'旧版からの引継ぎ':`第${Math.floor((8+e.firstTick/2)/24)+1}日`;
+  const src=e.lastSource&&GEAR_REGIONS.some(r=>r.id===e.lastSource)?GEAR_REGIONS.find(r=>r.id===e.lastSource).name:e.lastSource==='craft'?'鍛冶屋':e.lastSource==='starter'?'旅支度':'';
+  return `<div class="gear-journal-item"><span class="gear-journal-symbol">${t.slot==='weapon'?'⚔':t.slot==='armor'?'✦':t.slot==='head'?'♜':t.slot==='offhand'?'♧':'◇'}</span><div class="gear-journal-body"><strong>${escape(name)}</strong><small>${escape(slot)} · 最高：<span class="gear-journal-rarity">${escape(e.bestRarity)}</span> · 入手${e.count}回</small><small>最高入手性能：${escape(stats||'記録なし')}${e.bestTrait&&GEAR_TRAITS[e.bestTrait]?' · 特性：'+escape(GEAR_TRAITS[e.bestTrait].name):''}</small><small>初回：${first}${src?' · 直近：'+escape(src):''}</small></div></div>`;
+ }).join('')||'<p class="help">対象の装備はありません。</p>';
+ const more=$('#gearJournalMore');more.hidden=names.length<=view.length;more.textContent=`続きを表示（残り${names.length-view.length}種類）`;
+}
+
+function initial(){return {version:45,gearJournal:blankGearJournal(),farm:{version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}},loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,miniClockEnabled:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalQuests:{active:null,completed:{},history:[]},dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
 function safeInteger(n,min,max,fallback){n=Number(n);return Number.isFinite(n)?Math.max(min,Math.min(max,Math.floor(n))):fallback;}
+// v0.9.80: Farm is part of the same JSON save, with fixed plot indexes and a closed crop whitelist.
+function sanitizeFarm(raw,tick){
+ const ids=['wheat','carrot','potato','tomato','herb','pumpkin','berry','moonturnip'];
+ const result={version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}};
+  if(!raw||typeof raw!=='object')return result;
+ result.unlockedPlots=safeInteger(raw.unlockedPlots,2,10,2);
+ for(const id of ids){
+  const seeds=safeInteger(raw.seeds?.[id],0,100000,0),crops=safeInteger(raw.crops?.[id],0,100000,0);
+  if(seeds)result.seeds[id]=seeds;if(crops)result.crops[id]=crops;
+ }
+ for(let i=0;i<result.unlockedPlots;i++){
+  const p=raw.plots?.[i];if(!p||typeof p!=='object')continue;
+  const lastCropId=ids.includes(p.lastCropId)?p.lastCropId:ids.includes(p.cropId)?p.cropId:null;
+  if(ids.includes(p.cropId)&&Number.isFinite(Number(p.plantedAt)))
+   result.plots[i]={cropId:p.cropId,plantedAt:safeInteger(p.plantedAt,0,tick,tick),lastCropId};
+  else result.plots[i]={cropId:null,plantedAt:null,lastCropId};
+ }
+ result.harvestCount=safeInteger(raw.harvestCount,0,100000000,0);
+ result.earned=safeInteger(raw.earned,0,1000000000,0);
+ result.history=Array.isArray(raw.history)?raw.history.filter(x=>x&&typeof x.text==='string').slice(-25).map(x=>({tick:safeInteger(x.tick,0,tick,0),text:x.text.slice(0,100)})):[];
+ // v0.9.81: a bounded recipe whitelist prevents malformed imported saves from
+ // granting unknown foods or corrupting the farm/crop inventories.
+ const recipeIds=['bread','veggieSoup','herbPotatoes','pumpkinSoup','berryTart','moonStew'];
+ const kitchen=raw.kitchen;
+ if(kitchen&&typeof kitchen==='object'&&!Array.isArray(kitchen)){
+  const k=result.kitchen;
+  k.unlockedRecipes=[...new Set(Array.isArray(kitchen.unlockedRecipes)?kitchen.unlockedRecipes.filter(id=>recipeIds.includes(id)):[])];
+  for(const id of recipeIds){const n=safeInteger(kitchen.foods?.[id],0,100000,0);if(n)k.foods[id]=n;}
+  k.cookedTotal=safeInteger(kitchen.cookedTotal,0,100000000,0);
+  k.earned=safeInteger(kitchen.earned,0,1000000000,0);
+  k.recipeSpent=safeInteger(kitchen.recipeSpent,0,1000000000,0);
+  k.cookSpent=safeInteger(kitchen.cookSpent,0,1000000000,0);
+  k.history=Array.isArray(kitchen.history)?kitchen.history.filter(x=>x&&typeof x.text==='string').slice(-30).map(x=>({tick:safeInteger(x.tick,0,tick,0),text:x.text.slice(0,120)})):[];
+   k.mealsEaten=safeInteger(kitchen.mealsEaten,0,100000000,0);
+   const mb=kitchen.mealBuff;
+   if(mb&&recipeIds.includes(mb.id)&&['ready','active'].includes(mb.phase)){
+    const validZone=['forest','mine','boss','oldroad','ruins','highland','starwood','observatory','dawnsea','eclipse','starpit'];
+    if(mb.phase==='ready'||validZone.includes(mb.zone))k.mealBuff={id:mb.id,phase:mb.phase,zone:mb.phase==='active'?mb.zone:'',startedRun:safeInteger(mb.startedRun,0,100000000,0)};
+   }
+ }
+ // 0.9.84: persistent crop-and-cooking collection journal. Older saves have
+ // only capped activity logs, so infer solely from current holdings or explicit
+ // recorded harvesting/cooking; never assume bought seeds or recipes were used.
+ const names={wheat:'小麦',carrot:'にんじん',potato:'じゃがいも',tomato:'トマト',herb:'香草',pumpkin:'かぼちゃ',berry:'星蜜ベリー',moonturnip:'月光かぶ'};
+ const foodNames={bread:'焼き麦パン',veggieSoup:'野菜スープ',herbPotatoes:'じゃがいもの香草焼き',pumpkinSoup:'かぼちゃのポタージュ',berryTart:'星蜜ベリーのタルト',moonStew:'月光かぶのシチュー'};
+ const col=result.collection,rawCol=raw.collection&&typeof raw.collection==='object'&&!Array.isArray(raw.collection)?raw.collection:null;
+ for(const id of ids){
+  const had=!!(result.crops[id]>0||result.history.some(e=>e.text.includes('収穫：')&&e.text.includes(names[id]+'×')));
+  if(had||(rawCol&&Array.isArray(rawCol.seenCrops)&&rawCol.seenCrops.includes(id)))col.seenCrops.push(id);
+  col.harvested[id]=safeInteger(rawCol?.harvested?.[id],0,100000000,0);
+  if(col.seenCrops.includes(id)&&Number.isInteger(rawCol?.firstHarvest?.[id]))col.firstHarvest[id]=safeInteger(rawCol.firstHarvest[id],0,tick,0);
+ }
+ for(const id of recipeIds){
+  const had=!!(result.kitchen.foods[id]>0||result.kitchen.history.some(e=>e.text.includes(foodNames[id]+'を調理')));
+  if(had||(rawCol&&Array.isArray(rawCol.seenFoods)&&rawCol.seenFoods.includes(id)))col.seenFoods.push(id);
+  col.cooked[id]=safeInteger(rawCol?.cooked?.[id],0,100000000,0);
+  if(col.seenFoods.includes(id)&&Number.isInteger(rawCol?.firstCook?.[id]))col.firstCook[id]=safeInteger(rawCol.firstCook[id],0,tick,0);
+ }
+ return result;
+}
+
 function migrate(old){
  const s=initial();s.tutorial.status='skipped';s.tutorial.step=6;if(!old||typeof old!=='object')return s;
  // The older test saved cumulative EXP only; it is not re-spent as level-up EXP.
@@ -3228,7 +3737,8 @@ function sanitize(raw){
   s.tutorial.freeGuideDismissed=tut.freeGuideDismissed===true;
   if(s.tutorial.status!=='active')s.tutorial.step=6;
  }else{s.tutorial.status='skipped';s.tutorial.step=6;}
- s.settings.timeOfDayEffects=raw.settings?.timeOfDayEffects!==false;
+ s.settings.timeOfDayEffects=true;
+ s.settings.miniClockEnabled=raw.settings?.miniClockEnabled!==false;
  s.settings.windLetterNotifications=raw.settings?.windLetterNotifications!==false;
  // Wind letters: carefully validate imported records; keep old saves compatible.
  if(raw.windLetters && typeof raw.windLetters==='object' && !Array.isArray(raw.windLetters)){
@@ -3300,7 +3810,7 @@ function sanitize(raw){
   }
  }
 
- // v0.9.79: 7-day offline guild login gift; imported saves retain their prior claims.
+ // v0.9.80: 7-day offline guild login gift; imported saves retain their prior claims.
  if(raw.loginGift&&typeof raw.loginGift==='object'&&!Array.isArray(raw.loginGift)){
   const g=raw.loginGift;
   s.loginGift.claims=safeInteger(g.claims,0,100000000,0);
@@ -3504,10 +4014,10 @@ function sanitize(raw){
  if(typeof raw.supportSkill==='string'&&CROSS_SUPPORT[raw.supportSkill]&&s.jobs[raw.supportSkill]?.level>=18&&raw.supportSkill!==CombatEngine.BASE_JOB(s.job))s.supportSkill=raw.supportSkill;
  if(Array.isArray(raw.gear)){
   const good=raw.gear.filter(i=>i&&typeof i.id==='string'&&typeof i.name==='string'&&typeof i.slot==='string'&&i.stats&&typeof i.stats==='object'&&TIERS[i.rarity]!==undefined&&TEMPLATE[i.name]).slice(0,MAX_ITEMS);
-  s.gear=good.map(i=>{const x=makeItem(i.name,i.rarity);x.id=i.id.slice(0,90);x.enhance=safeInteger(i.enhance,0,5,0);x.protected=typeof i.protected==='boolean'?i.protected:i.rarity==='レジェンダリー';for(const key of Object.keys(x.stats))x.stats[key]=Math.max(0,Math.min(10000,Number(i.stats[key])||0));return x;});
+  s.gear=good.map(i=>{const x=makeItem(i.name,i.rarity);x.id=i.id.slice(0,90);x.enhance=safeInteger(i.enhance,0,5,0);x.protected=typeof i.protected==='boolean'?i.protected:i.rarity==='レジェンダリー';if(['エピック','レジェンダリー'].includes(i.rarity)&&typeof i.trait==='string'&&Object.hasOwn(GEAR_TRAITS,i.trait))x.trait=i.trait;for(const key of Object.keys(x.stats))x.stats[key]=Math.max(0,Math.min(10000,Number(i.stats[key])||0));return x;});
   if(!s.gear.length)s.gear=starterItems();
  }
- if(Array.isArray(raw.pendingGear)){s.pendingGear=raw.pendingGear.filter(i=>i&&typeof i.id==='string'&&typeof i.name==='string'&&i.stats&&TIERS[i.rarity]!==undefined&&TEMPLATE[i.name]).slice(0,10).map(i=>{const x=makeItem(i.name,i.rarity);x.id=i.id.slice(0,90);x.enhance=safeInteger(i.enhance,0,5,0);x.protected=typeof i.protected==='boolean'?i.protected:i.rarity==='レジェンダリー';for(const key of Object.keys(x.stats))x.stats[key]=Math.max(0,Math.min(10000,Number(i.stats[key])||0));return x;});}
+ if(Array.isArray(raw.pendingGear)){s.pendingGear=raw.pendingGear.filter(i=>i&&typeof i.id==='string'&&typeof i.name==='string'&&i.stats&&TIERS[i.rarity]!==undefined&&TEMPLATE[i.name]).slice(0,10).map(i=>{const x=makeItem(i.name,i.rarity);x.id=i.id.slice(0,90);x.enhance=safeInteger(i.enhance,0,5,0);x.protected=typeof i.protected==='boolean'?i.protected:i.rarity==='レジェンダリー';if(['エピック','レジェンダリー'].includes(i.rarity)&&typeof i.trait==='string'&&Object.hasOwn(GEAR_TRAITS,i.trait))x.trait=i.trait;for(const key of Object.keys(x.stats))x.stats[key]=Math.max(0,Math.min(10000,Number(i.stats[key])||0));return x;});}
  normalizeGearIds([...s.gear,...s.pendingGear]);
  s.equipment=Object.fromEntries(Object.keys(SLOTS).map(slot=>[slot,null]));
  for(const slot of Object.keys(s.equipment))if(raw.equipment?.[slot]&&s.gear.some(g=>g.id===raw.equipment[slot]&&(g.slot===slot||(slot==='charm2'&&g.slot==='charm'))))s.equipment[slot]=raw.equipment[slot];
@@ -3673,6 +4183,8 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
    for(const name of ['ガルド','リオ','セラ','ミーナ','ノエル','エダ','トト','ヴァン']){const item=tm.personaHistory?.[name];if(item&&typeof item==='object')s.chatRoom.townMemory.personaHistory[name]={day:safeInteger(item.day,0,1000000,0),at:safeInteger(item.at,0,Date.now()+86400000,0)};}
   }else s.chatRoom.townMemory=null;
  }
+ s.farm=sanitizeFarm(raw?.farm,s.npcWorld.halfHours);
+ s.gearJournal=gearJournalNormalize(raw?.gearJournal,s.gear,s.pendingGear,true);
  return s;
 }
 const SLOT_SIGNS=['🍃','⭐','🔔','🐉'];
@@ -3778,8 +4290,29 @@ function load(){
  return initial();
 }
 let save=load(),battle=save.bossCheckpoint?CombatEngine.resume(save.bossCheckpoint):null,paused=false,settled=false,lastLog=0,loopTimer=null,messageTimer=null;
+// Interrupted ordinary battles are not replayed: their meal has already been used.
+if(save.farm?.kitchen?.mealBuff?.phase==='active'){
+ const b=save.farm.kitchen.mealBuff,z=b.zone;
+ const ongoing=z==='ruins'&&save.dungeon.active||z==='observatory'&&save.tower.active||z==='starpit'&&save.endgame.active;
+ if(!ongoing&&!battle)save.farm.kitchen.mealBuff=null;
+}
 let economyAnchor=save.gold;
-const ECONOMY_LABELS={diceWager:'三風の骰子・賭け金',dicePayout:'三風の骰子・払戻',cardWager:'風札の二十一・賭け金',cardPayout:'風札の二十一・払戻',raceWager:'風走りレースの賭け金',racePayout:'風走りレースの払戻',casinoWager:'風車スロットの賭け金',casinoPayout:'風車スロットの払戻',battle:'戦闘報酬',quest:'依頼報酬',gearSale:'装備売却',marketBuy:'市場購入',marketSell:'市場売却',inn:'宿屋',supply:'遠征補給',potion:'回復薬',craft:'装備製作',upgrade:'装備強化',training:'同行訓練',promotion:'昇格',support:'復興支援',caravan:'旅人便',loginGift:'ギルドの定期補給',otherIn:'その他収入',otherOut:'その他支出'};
+const MEAL_EFFECTS={
+ bread:{name:'焼き麦パン',label:'獲得ゴールド＋6%',gold:.06},
+ veggieSoup:{name:'野菜スープ',label:'獲得経験値＋8%',xp:.08},
+ herbPotatoes:{name:'じゃがいもの香草焼き',label:'装備ドロップ率＋8%（相対）',drop:.08},
+ pumpkinSoup:{name:'かぼちゃのポタージュ',label:'素材獲得数の期待値＋10%',material:.10},
+ berryTart:{name:'星蜜ベリーのタルト',label:'装備ドロップ率＋12%（相対）',drop:.12},
+ moonStew:{name:'月光かぶのシチュー',label:'獲得ゴールド＋12%・経験値＋6%',gold:.12,xp:.06}
+};
+function mealState(){return save.farm?.kitchen?.mealBuff||null;}
+function clearActiveMeal(zone){const b=mealState();if(b?.phase==='active'&&(!zone||b.zone===zone))save.farm.kitchen.mealBuff=null;}
+function renderMealStatus(){const el=document.getElementById('mealAdventureStatus');if(!el)return;
+ const b=mealState(),e=b&&MEAL_EFFECTS[b.id];
+ el.textContent=!e?'🍽️ 食事効果なし。ギルドの調理場で料理を食べると、次の冒険に効果が付きます。':`🍽️ ${e.name}：${e.label} ／ ${b.phase==='ready'?'次の冒険で有効':'遠征中・効果継続中'}`;
+}
+window.KazeMealUI={sync:renderMealStatus,effects:MEAL_EFFECTS};
+const ECONOMY_LABELS={diceWager:'三風の骰子・賭け金',dicePayout:'三風の骰子・払戻',cardWager:'風札の二十一・賭け金',cardPayout:'風札の二十一・払戻',raceWager:'風走りレースの賭け金',racePayout:'風走りレースの払戻',casinoWager:'風車スロットの賭け金',casinoPayout:'風車スロットの払戻',battle:'戦闘報酬',quest:'依頼報酬',gearSale:'装備売却',marketBuy:'市場購入',marketSell:'市場売却',inn:'宿屋',supply:'遠征補給',potion:'回復薬',craft:'装備製作',upgrade:'装備強化',training:'同行訓練',promotion:'昇格',support:'復興支援',caravan:'旅人便',loginGift:'ギルドの定期補給',farmSeeds:'農場・種の購入',farmPlot:'農場・区画開放',farmSell:'農作物の売却',kitchenRecipe:'調理場・レシピ購入',kitchenCook:'調理場・調理費',kitchenSell:'調理場・料理売却',otherIn:'その他収入',otherOut:'その他支出'};
 function bookGold(reason){
  const delta=Math.round(save.gold-economyAnchor);if(!delta)return;
  economyAnchor=save.gold;
@@ -3796,7 +4329,7 @@ function persist(reason){bookGold(reason);save.bossCheckpoint=CombatEngine.check
  if(existing){try{const old=JSON.parse(existing);if(old&&old.version===41)localStorage.setItem(BACKUP_KEY,existing);}catch(e){}}
  localStorage.setItem(KEY,JSON.stringify(save));
  }catch(e){warn('ブラウザ保存に失敗しました。JSONバックアップを保存してください。');return false;}return true;}
-// v0.9.79: Tokyo 05:00 daily boundary. Daily state is gameplay save state,
+// v0.9.80: Tokyo 05:00 daily boundary. Daily state is gameplay save state,
 // not a second copy in localStorage (so backup/import remains coherent).
 function giftDay(now=Date.now()){return Math.floor((now+4*3600000)/86400000);}
 function giftScale(){return save.heroLevel>=80?3:save.heroLevel>=40?2:1;}
@@ -4040,7 +4573,7 @@ function dungeonSecret(action){
 function dungeonExit(reason='途中帰還'){
  if(isBusy()||!save.dungeon.active)return;
  const d=save.dungeon;dungeonNote(`${d.floor}層から${reason}。踏破途中の進行は終了した。`);
- d.active=false;d.phase='idle';d.floor=1;d.route='';d.bonusOre=0;
+ d.active=false;d.phase='idle';d.floor=1;d.route='';d.bonusOre=0;clearActiveMeal('ruins');
  $('#zone').value='forest';persist();renderAll();msg('町へ帰還しました。獲得済みの戦利品は残ります。');
 }
 function renderDungeon(){
@@ -4103,7 +4636,7 @@ function towerChoose(id){const d=save.tower;if(isBusy()||!d.active||d.phase!=='c
  d.pending=p;d.phase='ready';towerNote(`第${d.floor}層で${id==='scout'?'隠れた小径を探した':id==='study'?'星図を読み解いた':id==='heal'?'傷を手当てした':id==='guard'?'守りを固めた':id==='rally'?'隊列を整えた':'周囲を調査した'}。`);
  persist();renderAll();}
 function towerExit(reason='途中帰還'){if(isBusy()||!save.tower.active)return;const d=save.tower;
- towerNote(reason+'。未確定の追加報酬は受け取らずに帰還した。');d.active=false;d.phase='idle';d.floor=1;d.route='';d.pending=null;d.party=[];
+ towerNote(reason+'。未確定の追加報酬は受け取らずに帰還した。');d.active=false;d.phase='idle';d.floor=1;d.route='';d.pending=null;d.party=[];clearActiveMeal('observatory');
  $('#zone').value='starwood';persist();renderAll();msg('天文塔から帰還しました。');}
 function renderTower(){const box=$('#towerSection');if(!box)return;const d=save.tower;
  $('#towerStatus').textContent=!save.map.observatory?'未発見':d.active?`第${d.floor}層・遠征中`:'探索可能';
@@ -4160,13 +4693,20 @@ function start(){
  if(zone==='ruins'&&save.dungeon.floor===1&&save.dungeon.route==='safe'){
   for(const a of battle.allies)a.guardUntil=6; // the wall inscription offered protective instructions
  }
+ // Lock the meal to the first real battle, not the route-selection screen.
+  const meal=mealState();
+  if(meal?.phase==='ready'&&MEAL_EFFECTS[meal.id]){meal.phase='active';meal.zone=zone;meal.startedRun=save.runs+1;}
+  if(meal?.phase==='active'&&meal.zone===zone&&MEAL_EFFECTS[meal.id]){
+   battle.mealBonus={...MEAL_EFFECTS[meal.id]};battle.mealFoodId=meal.id;
+   battle.log.push({t:0,text:`🍽️ ${MEAL_EFFECTS[meal.id].name}：${MEAL_EFFECTS[meal.id].label}（${['ruins','observatory','starpit'].includes(zone)?'三層遠征中':'この探索のみ'}）`});
+  }
  battle.autoRetreat=true;
  battle.entryVitals=Object.fromEntries(battle.allies.map(a=>[a.id,{hp:a.hp,mp:a.mp}]));
  settled=false;paused=false;lastLog=0;
  $('#combatReview').textContent='戦闘中です。結果が出ると、消費HP・MPや使用スキルを表示します。';$('#log').innerHTML='';$('#result').textContent='探索中。前回の戦闘からHP・MPを引き継いでいます。';$('#pause').textContent='一時停止';
- refreshControls();renderBattle();persist();
+ refreshControls();renderBattle();renderMealStatus();persist();
 }
-function updateLoot(r){const found=[];for(const str of r.gears){const parts=str.split('・');const rarity=parts.shift(),name=parts.join('・');if(TEMPLATE[name]){const item=uniqueGearDropId(makeItem(name,rarity,battle.rand));if(save.gear.length<MAX_ITEMS){save.gear.push(item);found.push(item.name+' ['+item.rarity+']');}else{save.pendingGear.push(item);found.push('未受取として保管：'+item.name+' ['+item.rarity+']');}}}
+function updateLoot(r){const found=[];for(const str of r.gears){const parts=str.split('・');const rarity=parts.shift(),name=parts.join('・');if(TEMPLATE[name]){const item=uniqueGearDropId(rollGearTrait(makeItem(name,rarity,battle.rand),battle.rand));recordGearFound(item,battle?.zone||'');if(save.gear.length<MAX_ITEMS){save.gear.push(item);found.push(item.name+' ['+item.rarity+']');}else{save.pendingGear.push(item);found.push('未受取として保管：'+item.name+' ['+item.rarity+']');}}}
  save.found+=r.gears.length;return found;
 }
 function recordBossResult(){
@@ -4301,7 +4841,10 @@ function complete(){if(!battle||settled)return;settled=true;recordBossResult();s
  }else if(battle.state==='retreated'){if(battle.zone==='starpit')endgameStop('撤退');if(battle.zone==='observatory'&&save.tower.active){save.tower.pending=null;save.tower.active=false;save.tower.phase='idle';save.tower.floor=1;save.tower.party=[];towerNote('戦闘から撤退した。');}if(battle.zone==='ruins'&&save.dungeon.active)dungeonExit('戦闘から撤退して帰還');save.latest=['撤退：経験値・戦利品なし。HPとMPの消耗は継続。'];$('#result').innerHTML='<strong>撤退しました。</strong> 戦利品はありません。負傷やMPの消耗は残るので、回復して再挑戦しましょう。';}
  else {if(battle.zone==='starpit')endgameStop('戦闘不能により帰還');if(battle.zone==='observatory'&&save.tower.active){save.tower.pending=null;save.tower.active=false;save.tower.phase='idle';save.tower.floor=1;save.tower.party=[];towerNote('戦闘不能となり遠征を終了した。');}if(battle.zone==='ruins'&&save.dungeon.active)dungeonExit('戦闘不能で帰還');save.campCooldown=0;save.campUsed=false;save.latest=['戦闘不能：経験値・戦利品なし。'];$('#result').innerHTML='<strong>パーティーが戦闘不能。</strong> 無料の野営または宿屋で立て直しましょう。';}
  recordRunLedger(battle.state,Math.max(0,save.totalExp-ledgerBefore.exp),Math.max(0,save.gold-ledgerBefore.gold),Math.max(0,save.found-ledgerBefore.found),Math.max(0,Object.values(save.materials).reduce((sum,n)=>sum+(Number(n)||0),0)-ledgerBefore.materials));
- bookGold('battle');refreshControls();renderAll();showReview();persist();
+  // A meal lasts one field battle, or the full continuous three-floor expedition.
+  const continuing=battle.zone==='ruins'&&save.dungeon.active||battle.zone==='observatory'&&save.tower.active||battle.zone==='starpit'&&save.endgame.active;
+  if(!continuing)clearActiveMeal(battle.zone);
+  bookGold('battle');refreshControls();renderAll();showReview();persist();
  if(battle.state==='won'&&$('#loop').checked&&!['boss','ruins','observatory','eclipse','starpit'].includes(battle.zone)&&!(battle.zone==='dawnsea'&&battle.dawnTier===4))loopTimer=setTimeout(nextLoop,900);
 }
 function nextLoop(){if(isBusy()||!$('#loop').checked||!battle||battle.state!=='won')return;
@@ -4449,7 +4992,7 @@ function craftItem(name){if(isBusy())return;const recipe=CRAFTS.find(x=>x.name==
  if(save.gear.length>=MAX_ITEMS||save.pendingGear.length){warn('装備袋を整理し、未受取品を受け取ってから製作してください。');return;}
  if(!canAfford(recipe)){warn('製作に必要な所持金または素材が足りません。');return;}
  const item=uniqueGearDropId(makeItem(name,'コモン'));
- pay(recipe);save.gear.push(item);save.found++;save.latest=[`鍛冶屋で${name}を製作しました。`,...save.latest].slice(0,12);persist('craft');renderAll();msg(`${name}を製作しました！`);
+ pay(recipe);save.gear.push(item);recordGearFound(item,'craft');save.found++;save.latest=[`鍛冶屋で${name}を製作しました。`,...save.latest].slice(0,12);persist('craft');renderAll();msg(`${name}を製作しました！`);
 }
 function upgradeGear(id){if(isBusy())return;const item=save.gear.find(x=>x.id===id);if(!item)return;
  if((item.enhance||0)>=5){warn('この装備は+5まで強化されています。');return;}
@@ -4561,7 +5104,7 @@ function renderPromotions(){
   return `<article class="promotion-card"><div class="sectionRow"><strong>${escape(m.name)}</strong><span class="pill">${unlocked?'取得済み':active?`試練 ${prog}/3`:`${escape(CombatEngine.JOBS[m.parent].name)} Lv${base.level}/30`}</span></div><p class="help tight">${escape(m.desc)}／${escape(({forest:'緑風の森',mine:'赤錆の鉱山',oldroad:'苔むした旧道'})[m.site])}で3勝</p><div class="buttons"><button type="button" class="btn secondary" data-promotion="${id}" data-operation="${active?'claim':'start'}" ${active?(!canClaim?'disabled':''):(!canApply?'disabled':'')}>${unlocked?'習得済み':active?'昇格する（250G・鉄鉱石2）':'昇格試練を受ける'}</button></div></article>`;
  }).join('');
  const a=save.trials.active,notice=a?`<div class="notice">進行中：${escape(CombatEngine.ADVANCED[a.id].name)}の試練 ${a.progress}/3勝。<br>※対応する基本職で戦闘してください。<br><button type="button" class="btn secondary" data-operation="cancel">試練を取り消す</button></div>`:'<div class="readout">基本職をLv30にすると昇格試練を受けられます。受注中は別の試練を開始できません。</div>';
- panel.innerHTML=`<h2>✦ 上位職への道</h2><p class="help">基本職Lv30で昇格試練が解放。指定地域で基本職のまま3勝し、250Gと鉄鉱石2個を納めて転職します。習得済みの職業は自由に選択できます。</p>${notice}<details data-promotion-list ${opened?'open':''}><summary>上位職8種類と転職条件を確認する</summary><div class="promotion-grid">${entries}</div></details><p class="help mt">上位職はそれぞれ職業Lv1から成長します。基本職のスキルを引き継ぎ、専用スキルを追加で習得します。冒険者Lv・装備・他職のレベルは失いません。</p>`;
+ panel.innerHTML=`<h2>✦ 上位職への道</h2>${notice}<details data-promotion-list ${opened?'open':''}><summary>上位職8種類と転職条件を確認する</summary><div class="promotion-grid">${entries}</div></details><p class="help mt">上位職はそれぞれ職業Lv1から成長します。基本職のスキルを引き継ぎ、専用スキルを追加で習得します。冒険者Lv・装備・他職のレベルは失いません。</p>`;
  const select=$('#job'),current=select.value;
  for(const id of UPPER_ORDER){const opt=select.querySelector(`option[value="${id}"]`);if(opt)opt.disabled=!save.trials.unlocked.includes(id);}
 }
@@ -4609,13 +5152,13 @@ function renderStarwood(){const pane=$('#starwoodSection');if(!pane)return;const
 function renderTotals(){
  const j=save.jobs[save.job],need=CombatEngine.levelXp(save.heroLevel),jobNeed=CombatEngine.jobXp(j.level);const cap=save.heroLevel>=MAX_LEVEL;
  $('#heroTitle').textContent=`${CombatEngine.JOBS[save.job].name} · 冒険者 Lv${save.heroLevel}`;
- $('#jobLine').textContent=`職業Lv${j.level} / スキルと装備で冒険を組み立てよう`;
+ $('#jobLine').textContent=`職業Lv${j.level}`;
  $('#heroLevel').textContent=`冒険者 Lv${save.heroLevel}`;$('#expLabel').textContent=cap?'この試作の上限に到達':`${nfmt(save.heroExp)} / ${nfmt(need)} EXP`;$('#expBar').style.width=cap?'100%':Math.min(100,save.heroExp/need*100)+'%';
  $('#jobLevel').textContent=`${CombatEngine.JOBS[save.job].name} 職業Lv${j.level}`;$('#jobExpLabel').textContent=j.level>=30?'職業Lv上限':`${nfmt(j.xp)} / ${nfmt(jobNeed)} 職業EXP`;$('#jobExpBar').style.width=j.level>=30?'100%':Math.min(100,j.xp/jobNeed*100)+'%';
  const hero=makeActor('hero');$('#heroStats').innerHTML=[['HP',hero.maxHp],['MP',hero.maxMp],['攻撃力',hero.atk],['防御力',hero.def],['会心率',Math.round(hero.crit*1000)/10+'%'],['攻撃間隔',hero.speed+'秒']].map(([k,v])=>`<span>${escape(k)} <b>${escape(v)}</b></span>`).join('');
- $('#gold').textContent=nfmt(save.gold);$('#wins').textContent=nfmt(save.wins);$('#runs').textContent=nfmt(save.runs);$('#expTotal').textContent=nfmt(save.totalExp);$('#gearFound').textContent=nfmt(save.found);
+ $('#gold').textContent=nfmt(save.gold);$('#wins').textContent=nfmt(save.wins);if($('#runs'))$('#runs').textContent=nfmt(save.runs);if($('#expTotal'))$('#expTotal').textContent=nfmt(save.totalExp);if($('#gearFound'))$('#gearFound').textContent=nfmt(save.found);
  $('#potions').textContent=`HP薬×${save.items.hp} / MP薬×${save.items.mp}`;
- $('#loot').innerHTML=save.latest.length?save.latest.map(x=>`<div>・${escape(x)}</div>`).join(''):'まだ冒険の記録がありません。';
+ if($('#loot'))$('#loot').innerHTML=save.latest.length?save.latest.map(x=>`<div>・${escape(x)}</div>`).join(''):'まだ冒険の記録がありません。';
  if(!isBusy())$('#allies').innerHTML=['hero',...selectedParty()].map(id=>memberHTML(conditionView(id))).join('');
  $('#camp').disabled=isBusy()||(save.campCooldown||0)>0;$('#camp').textContent=(save.campCooldown||0)>0?'野営：あと'+save.campCooldown+'勝で再使用':'野営：部分回復（無料）';$('#inn').textContent=save.gold>=60?'宿屋で全快（60G）':'ギルド救護（無料・50%）';
  $('#inn').disabled=isBusy();
@@ -4735,7 +5278,7 @@ function gearCompareMarkup(item,slot){
 function gearComparisonMarkup(item,allowed){
  if(!allowed)return '<div class="gear-detail-section gear-compare-section"><strong>装備変更前の比較</strong><p class="gear-compare-info">現在の職業では装備できないため、交換後の能力値は表示できません。</p></div>';
  const slots=item.slot==='charm'?['charm','charm2']:[item.slot];
- return `<div class="gear-detail-section gear-compare-section"><strong>装備変更前の比較</strong><p class="gear-compare-info">現在の主人公の能力値と、装備を変更した場合の数値を比較します。強化値・職業・パッシブ・継承・極意の補正を反映しています。</p>${slots.map(slot=>gearCompareMarkup(item,slot)).join('')}${slots.length>1?'<p class="gear-compare-info">装飾品は①・②の交換先によって結果が異なります。該当の枠に装備するボタンを選んでください。</p>':''}<p class="gear-compare-caution">特殊効果は種類ごとに表示しています。実戦での有利・不利は戦闘や編成によって変わるため、単純な強さの順位付けはしていません。</p></div>`;
+ return `<div class="gear-detail-section gear-compare-section"><strong>装備変更前の比較</strong>${slots.map(slot=>gearCompareMarkup(item,slot)).join('')}${slots.length>1?'<p class="gear-compare-info">装飾品は①・②の交換先によって結果が異なります。該当の枠に装備するボタンを選んでください。</p>':''}</div>`;
 }
 const gearView={selectedId:null};
 function gearStatLine(item){
@@ -4743,11 +5286,11 @@ function gearStatLine(item){
  return Object.entries(values).filter(([k,v])=>v!==0).map(([k,v])=>`${statLabels[k]||k} +${k==='crit'?(v*100).toFixed(1)+'%':nfmt(v)}`).join(' / ')||'能力値の補正なし';
 }
 function renderGear(){
- const stats=equippedStats();$('#gearStats').textContent=`装備ボーナス：攻撃 +${stats.atk} / 防御 +${stats.def} / HP +${stats.hp} / MP +${stats.mp} / 会心率 +${(stats.crit*100).toFixed(1)}%`;
+ const stats=equippedStats();$('#gearStats').textContent=`装備ボーナス（追加特性を含む）：攻撃 +${stats.atk} / 防御 +${stats.def} / HP +${stats.hp} / MP +${stats.mp} / 会心率 +${(stats.crit*100).toFixed(1)}%`;
  const used=new Set(Object.values(save.equipment).filter(Boolean));
- $('#equipped').innerHTML=Object.keys(SLOTS).map(slot=>{const item=save.gear.find(g=>g.id===save.equipment[slot]);return `<div class="equip"><span class="label">${SLOTS[slot]}</span><div class="equipName ${item?'rar-'+item.rarity:''}">${item?escape(item.name)+` +${item.enhance||0}`:'未装備'}</div>${item?`<div class="gear-equip-actions"><button class="actionbtn" data-gear-equipped="${escape(item.id)}" type="button">詳細</button><button class="actionbtn" data-unequip="${slot}" ${isBusy()?'disabled':''}>外す</button></div>`:''}</div>`;}).join('');
+ $('#equipped').innerHTML=Object.keys(SLOTS).map(slot=>{const item=save.gear.find(g=>g.id===save.equipment[slot]);return `<div class="equip"><span class="label">${SLOTS[slot]}</span><div class="equipName ${item?'rar-'+item.rarity:''}">${item?escape(item.name)+` +${item.enhance||0}`+(gearTraitInfo(item)?' · ✧'+escape(gearTraitInfo(item).name):''):'未装備'}</div>${item?`<div class="gear-equip-actions"><button class="actionbtn" data-gear-equipped="${escape(item.id)}" type="button">詳細</button><button class="actionbtn" data-unequip="${slot}" ${isBusy()?'disabled':''}>外す</button></div>`:''}</div>`;}).join('');
  $('#gearCount').textContent=`${save.gear.length} / ${MAX_ITEMS}`;renderGearBatchSummary();
- $('#pendingLoot').innerHTML=save.pendingGear.length?`<div class="notice"><strong>未受取装備 ${save.pendingGear.length}個</strong><p class="small" style="margin:5px 0">${save.pendingGear.map(x=>escape(x.rarity+'・'+x.name)).join(' / ')}</p><button class="actionbtn" id="claimLoot" ${save.gear.length>=MAX_ITEMS?'disabled':''}>空き枠へ受け取る</button></div>`:'';
+ $('#pendingLoot').innerHTML=save.pendingGear.length?`<div class="notice"><strong>未受取装備 ${save.pendingGear.length}個</strong><p class="small" style="margin:5px 0">${save.pendingGear.map(x=>escape(x.rarity+'・'+x.name+(gearTraitInfo(x)?' ✧'+gearTraitInfo(x).name:''))).join(' / ')}</p><button class="actionbtn" id="claimLoot" ${save.gear.length>=MAX_ITEMS?'disabled':''}>空き枠へ受け取る</button></div>`:'';
  const q=($('#gearSearch').value||'').trim().toLocaleLowerCase('ja'),slot=$('#gearSlot').value,rarity=$('#gearRarity').value,state=$('#gearState').value,sort=$('#gearSort').value;
  const candidates=save.gear.map((item,index)=>({item,index})).filter(({item})=>{
   if(q&&!String(item.name).toLocaleLowerCase('ja').includes(q))return false;
@@ -4776,9 +5319,9 @@ function renderGear(){
  const list=$('#inventory'),previousScroll=list.scrollTop;
  list.innerHTML=visible.map(item=>{
   const current=used.has(item.id),allowed=isAllowed(item),selected=item.id===gearView.selectedId;
-  const bits=[SLOTS[item.slot]==='装飾品①'?'装飾品':SLOTS[item.slot],item.rarity];
+  const bits=[SLOTS[item.slot]==='装飾品①'?'装飾品':SLOTS[item.slot],item.rarity];if(gearTraitInfo(item))bits.push('✧'+gearTraitInfo(item).name);
   const flags=[current?'<span class="gear-row-tag">装備中</span>':'',item.protected?'<span class="gear-row-tag">🔒 保護</span>':'',!allowed?'<span class="gear-row-tag">職業制限</span>':''].join('');
-  return `<button type="button" class="gear-list-row ${selected?'is-selected':''}" data-gear-select="${escape(item.id)}" aria-pressed="${selected?'true':'false'}"><span class="gear-row-top"><strong class="rar-${item.rarity}">${escape(item.name)} <span class="upgradeLevel">+${item.enhance||0}</span></strong><span class="gear-row-chevron" aria-hidden="true">›</span></span><span class="gear-row-meta">${escape(bits.join(' · '))}</span><span class="gear-row-stats">${escape(gearStatLine(item))}</span>${flags?`<span class="gear-row-tags">${flags}</span>`:''}</button>`;
+  return `<button type="button" class="gear-list-row ${selected?'is-selected':''}" data-gear-select="${escape(item.id)}" aria-pressed="${selected?'true':'false'}"><span class="gear-row-top"><strong class="rar-${item.rarity}">${escape(item.name)} <span class="upgradeLevel">+${item.enhance||0}</span>${gearTraitInfo(item)?` <span class="gear-trait-mark" aria-label="追加特性あり">✧</span>`:''}</strong><span class="gear-row-chevron" aria-hidden="true">›</span></span><span class="gear-row-meta">${escape(bits.join(' · '))}</span><span class="gear-row-stats">${escape(gearStatLine(item))}</span>${flags?`<span class="gear-row-tags">${flags}</span>`:''}</button>`;
  }).join('')||'<div class="gear-empty"><strong>該当する装備がありません</strong><p>検索語や絞り込み条件を変更してください。</p></div>';
  list.scrollTop=previousScroll;
  const i=save.gear.find(g=>g.id===gearView.selectedId),detailPane=$('#gearDetail');
@@ -4790,7 +5333,7 @@ function renderGear(){
  const equipButtons=i.slot==='charm'?`<button class="actionbtn" data-equip="${escape(i.id)}" data-slot="charm" ${(!allowed||isBusy()||save.equipment.charm===i.id)?'disabled':''}>装飾①に装備</button><button class="actionbtn" data-equip="${escape(i.id)}" data-slot="charm2" ${(!allowed||isBusy()||save.equipment.charm2===i.id)?'disabled':''}>装飾②に装備</button>`:`<button class="actionbtn" data-equip="${escape(i.id)}" ${(!allowed||eq||isBusy())?'disabled':''}>${eq?'装備中':allowed?'この装備に変更':'職業制限により装備不可'}</button>`;
  const saleValue=gearSaleValue(i);
  detailPane.innerHTML=`<div class="gear-detail-head"><span class="gear-detail-kicker">SELECTED EQUIPMENT · ${escape(SLOTS[i.slot]==='装飾品①'?'装飾品':SLOTS[i.slot])}</span><h4 class="rar-${i.rarity}">${escape(i.name)} <span class="upgradeLevel">+${i.enhance||0}</span></h4><div class="gear-detail-badges"><span>${escape(i.rarity)}</span>${eq?'<span>装備中</span>':''}${i.protected?'<span>🔒 保護中</span>':''}${!allowed?'<span>現在の職業では使えません</span>':''}</div></div>
- <div class="gear-detail-section"><strong>この装備の性能</strong><p class="gear-detail-stats">${escape(gearStatLine(i))}</p>${special?`<p class="gear-special">✧ ${escape(special[1])}</p>`:''}${i.job?`<p class="gear-detail-muted">対応職業：${escape(i.job.split('/').map(k=>CombatEngine.JOBS[k]?.name||k).join('・'))}</p>`:''}</div>
+ <div class="gear-detail-section"><strong>この装備の性能</strong><p class="gear-detail-stats">${escape(gearStatLine(i))}</p>${special?`<p class="gear-special">✧ ${escape(special[1])}</p>`:''}${gearTraitInfo(i)?`<p class="gear-special">✧ 追加特性「${escape(gearTraitInfo(i).name)}」：${escape(gearTraitInfo(i).description)}（強化後の装備値に適用）</p>`:''}${i.job?`<p class="gear-detail-muted">対応職業：${escape(i.job.split('/').map(k=>CombatEngine.JOBS[k]?.name||k).join('・'))}</p>`:''}</div>
  ${gearComparisonMarkup(i,allowed)}
  <div class="gear-detail-section"><strong>装備・強化・整理</strong><div class="gear-detail-actions">${equipButtons}<button class="actionbtn" data-enhance="${escape(i.id)}" ${(!upgradeAfford||isBusy())?'disabled':''}>${canUpgrade?`強化：${escape(fee.material)}×${fee.qty} / ${nfmt(fee.gold)}G`:'強化上限 +5'}</button><button class="actionbtn" data-protect="${escape(i.id)}" ${isBusy()?'disabled':''}>${i.protected?'🔓 保護解除':'🔒 保護する'}</button>${!eq&&!i.id.startsWith('starter')?`<button class="actionbtn danger" data-sell="${escape(i.id)}" ${(isBusy()||i.protected)?'disabled':''}>売却（${nfmt(saleValue)}G）</button>`:''}</div>${canUpgrade?`<p class="gear-detail-muted">次の強化：${escape(upgradeDiff||'丸めにより、この段階の表示数値は変化しません')}</p>`:''}</div>`;
  renderForge();
@@ -4816,8 +5359,7 @@ function updateSkyClock(){
  const now=Date.now(),elapsed=Math.max(0,now-w.lastReal),part=Math.max(0,Math.min(1,elapsed/SKY_STEP_MS));
  const minute= (8*60+w.halfHours*30)%1440,hour=minute/60;
  const phase=hour>=5&&hour<11?'morning':hour>=11&&hour<17?'day':hour>=17&&hour<19?'dusk':'night';
- const label=SKY_PHASES[phase],enabled=save.settings?.timeOfDayEffects!==false;
- const check=$('#timeOfDayEffects');if(check&&check.checked!==enabled)check.checked=enabled;
+ const label=SKY_PHASES[phase],enabled=true;
  $('#skyClockTime').textContent=WorldEngine.timeText(w);
  $('#skyClockPhase').textContent=enabled?label.label:(hour>=5&&hour<19?'☀':'☾')+' 時刻';
  root.classList.remove('phase-morning','phase-day','phase-dusk','phase-night','phase-neutral');
@@ -4883,15 +5425,16 @@ function tradeMarket(side,material){
  persist(side==='buy'?'marketBuy':'marketSell');renderAll();msg(`${material}×${r.qty}を${r.total}Gで${side==='buy'?'購入':'売却'}しました。`);
 }
 function renderGuild(){
- const w=save.npcWorld,g=w.guild;const owned=m=>Number(save.materials[m]||0);const active=g.active;
+ const w=save.npcWorld,g=w.guild;WorldEngine.refreshFarmOrders(w,save.farm,save.heroLevel);
+ const owned=m=>Number(save.materials[m]||0);const ownedFarm=q=>Number((q.kind==='crop'?save.farm.crops:save.farm.kitchen.foods)[q.itemId]||0);const active=g.active;
  $('#questCount').textContent=`達成 ${g.completedTotal}件・調査報告 ${g.reports}件`;
  if(active){
-  const title=WorldEngine.questTitle(active),done=active.type==='supply'?Math.min(active.need,owned(active.material)):active.progress;
+  const title=WorldEngine.questTitle(active),done=active.type==='farmOrder'?Math.min(active.need,ownedFarm(active)):active.type==='supply'?Math.min(active.need,owned(active.material)):active.progress;
   const ready=done>=active.need;
-  const detail=active.type==='supply'?`所持 ${owned(active.material)}個 / 納品 ${active.need}個。受け渡すと町の在庫へ加わります。`:`緑風の森で勝利：${active.progress} / ${active.need}回。情報提供：${WorldEngine.PROFILES[active.sourceId]?.style||'冒険者'}。`;
-  $('#questActive').innerHTML=`<article class="questCard mt"><span class="pill">受注中</span><h3 class="mt">${escape(title)}</h3><div class="small">${escape(active.type==='supply'?'町の素材不足を解消する納品依頼':active.memo)}</div><p class="help mt">${escape(detail)}</p><div class="questBar"><div style="width:${Math.min(100,Math.round(done/active.need*100))}%"></div></div><div class="questMeta">報酬 ${active.rewardGold}G / EXP ${active.rewardExp}</div><div class="questActions"><button type="button" class="btn" data-claim-quest="1" ${ready&&!isBusy()?'':'disabled'}>${ready?'達成報告して報酬を受け取る':'達成条件を満たしていません'}</button></div></article>`;
+  const detail=active.type==='farmOrder'?`${active.kind==='crop'?'収穫した作物':'調理済みの料理'}：所持 ${ownedFarm(active)}個 / 納品 ${active.need}個。納品すると在庫から差し引かれます。`:active.type==='supply'?`所持 ${owned(active.material)}個 / 納品 ${active.need}個。受け渡すと町の在庫へ加わります。`:`緑風の森で勝利：${active.progress} / ${active.need}回。情報提供：${WorldEngine.PROFILES[active.sourceId]?.style||'冒険者'}。`;
+  $('#questActive').innerHTML=`<article class="questCard mt"><span class="pill">受注中</span><h3 class="mt">${escape(title)}</h3><div class="small">${escape(active.type==='farmOrder'?'ギルドの農作物・料理納品依頼':active.type==='supply'?'町の素材不足を解消する納品依頼':active.memo)}</div><p class="help mt">${escape(detail)}</p><div class="questBar"><div style="width:${Math.min(100,Math.round(done/active.need*100))}%"></div></div><div class="questMeta">報酬 ${active.rewardGold}G / EXP ${active.rewardExp}</div><div class="questActions"><button type="button" class="btn" data-claim-quest="1" ${ready&&!isBusy()?'':'disabled'}>${ready?'達成報告して報酬を受け取る':'達成条件を満たしていません'}</button></div></article>`;
  }else $('#questActive').innerHTML='<div class="readout mt">受注中の依頼はありません。下の依頼から1件選べます。</div>';
- $('#questOffers').innerHTML=g.offers.length?g.offers.map(q=>`<article class="questCard"><div class="sectionRow"><strong>${escape(WorldEngine.questTitle(q))}</strong><span class="pill">${q.type==='supply'?'納品':'調査'}</span></div><p class="help mt tight">${escape(q.type==='supply'?`町の${q.material}の在庫が${w.market[q.material]}個に減っています。${q.material}×${q.need}個を納品してください。`:`${q.memo} 緑風の森で3勝して現地を調べてください。`)}</p><div class="questMeta">報酬 ${q.rewardGold}G / EXP ${q.rewardExp} ・ ${escape(WorldEngine.timeText({halfHours:q.createdTick}))}掲示</div><div class="questActions"><button type="button" class="actionbtn" data-take-quest="${q.id}" ${active||isBusy()?'disabled':''}>依頼を受ける</button></div></article>`).join(''):'<p class="help">現在、新しい依頼はありません。NPCの調査や市場の動きで更新されます。</p>';
+ $('#questOffers').innerHTML=g.offers.length?g.offers.map(q=>`<article class="questCard"><div class="sectionRow"><strong>${escape(WorldEngine.questTitle(q))}</strong><span class="pill">${q.type==='farmOrder'?(q.kind==='crop'?'農作物':'料理'):q.type==='supply'?'納品':'調査'}</span></div><p class="help mt tight">${escape(q.type==='farmOrder'?`${q.material}×${q.need}個を届けてください。${q.kind==='crop'?'農場で収穫した作物':'調理場で作った料理'}を納品します。`:q.type==='supply'?`町の${q.material}の在庫が${w.market[q.material]}個に減っています。${q.material}×${q.need}個を納品してください。`:`${q.memo} 緑風の森で3勝して現地を調べてください。`)}</p><div class="questMeta">報酬 ${q.rewardGold}G / EXP ${q.rewardExp} ・ ${escape(WorldEngine.timeText({halfHours:q.createdTick}))}掲示</div><div class="questActions"><button type="button" class="actionbtn" data-take-quest="${q.id}" ${active||isBusy()?'disabled':''}>依頼を受ける</button></div></article>`).join(''):'<p class="help">現在、新しい依頼はありません。NPCの調査や市場の動きで更新されます。</p>';
  $('#questHistory').innerHTML=g.history.length?g.history.slice(0,5).map(x=>`<div class="small">✓ ${escape(x.title)} <span class="muted">（${escape(WorldEngine.timeText({halfHours:x.tick}))}）</span></div>`).join(''):'<span class="muted">まだ完了した依頼はありません。</span>';
 }
 const DAWN_AREAS=[
@@ -4905,7 +5448,7 @@ function endgameStop(reason='途中帰還'){
  const d=save.endgame;
  if(!d.active)return;
  d.history.unshift(`第${d.floor}層から${reason}。途中の進行は終了した。`);
- d.history=d.history.slice(0,14);d.active=false;d.floor=1;d.phase='idle';d.route='guard';d.party=[];
+ d.history=d.history.slice(0,14);d.active=false;d.floor=1;d.phase='idle';d.route='guard';d.party=[];clearActiveMeal('starpit');
 }
 function renderEndgame(){
  const d=save.endgame,field=canTravel('eclipse'),pit=canTravel('starpit');
@@ -5531,7 +6074,10 @@ function renderStoryPeople(){
  // The portrait registry loads later than the first game render; a rerender can reuse the existing images.
  document.getElementById('personalCount').textContent=`第1章 ${Object.keys(save.personalQuests.completed).length}/8 · 第2章 ${Object.keys(save.personalChapters.completed).length}/8`;
 }
-function renderAll(){window.KazeLoginGift?.sync?.();renderEndgame();renderDice();renderCards();renderRace();renderCasino();renderEconomyLedger();renderRunLedger();renderJourneySummary();renderTotals();renderHighland();renderStarwood();renderDawn();renderDawnMilestones();renderSupport();renderCaravanFund();renderMentor();renderBossJournal();renderTower();renderPromotions();renderGear();refreshControls();renderSkills();renderWorld();window.KazeWorldEvents?.sync();window.WindLetterUI?.sync();renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();renderStoryPeople();renderMap();renderDungeon();if(battle)renderBattle();}
+function renderAll(){const miniClockToggle=$('#miniClockEnabled');if(miniClockToggle){miniClockToggle.checked=save.settings?.miniClockEnabled!==false;window.KazeMiniClockRefresh?.();}if(!save.gearJournal?.initialized){save.gearJournal=gearJournalNormalize(null,save.gear,save.pendingGear,false);for(const e of Object.values(save.gearJournal.entries)){e.firstTick=0;e.lastTick=0;e.lastSource='starter';e.imported=false;}}renderGearJournal();renderMealStatus();window.KazeKitchen?.sync?.();window.KazeLoginGift?.sync?.();renderEndgame();renderDice();renderCards();renderRace();renderCasino();renderEconomyLedger();renderRunLedger();renderJourneySummary();renderTotals();renderHighland();renderStarwood();renderDawn();renderDawnMilestones();renderSupport();renderCaravanFund();renderMentor();renderBossJournal();renderTower();renderPromotions();renderGear();refreshControls();renderSkills();renderWorld();window.KazeWorldEvents?.sync();window.WindLetterUI?.sync();renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();renderStoryPeople();renderMap();renderDungeon();if(battle)renderBattle();}
+$('#gearJournalAreas').addEventListener('change',e=>{if(GEAR_REGIONS.some(r=>r.id===e.target.value))gearJournalArea=e.target.value;gearJournalPageSize=24;renderGearJournal();});
+$('#gearJournalOnlyMissing').addEventListener('change',e=>{gearJournalOnlyMissing=e.target.checked;gearJournalPageSize=24;renderGearJournal();});
+$('#gearJournalMore').addEventListener('click',()=>{gearJournalPageSize+=24;renderGearJournal();});
 setInterval(()=>{if(!battle||paused||battle.state==='decision'||settled)return;if(battle.state==='running'){CombatEngine.step(battle,battle.time+.25*Number($('#speed').value));renderBattle();if(battle.state==='decision')persist();if(['won','lost','retreated'].includes(battle.state))complete();}},250);
 $('#slotBet').addEventListener('change',e=>{const bet=Number(e.target.value);if(SLOT_BETS.includes(bet)&&bet<=slotMaxBet())save.casino.bet=bet;renderCasino();});
 $('#slotSpin').addEventListener('click',playCasinoSlot);
@@ -5666,8 +6212,8 @@ const gearActionHandler=e=>{const t=e.target.closest('[data-equip],[data-sell],[
  $('#gearSearch').addEventListener('input',()=>{gearView.selectedId=null;$('#inventory').scrollTop=0;renderGear();});
 $('#guildSection').addEventListener('click',e=>{
  const take=e.target.closest('[data-take-quest]'),claim=e.target.closest('[data-claim-quest]');if(isBusy())return;
- if(take){const r=WorldEngine.takeQuest(save.npcWorld,Number(take.dataset.takeQuest));if(!r.ok){warn(r.reason);return;}save.latest=[`受注：${r.title}`,...save.latest].slice(0,12);persist();renderAll();msg(`「${r.title}」を受注しました。`);}
- if(claim){const r=WorldEngine.claimQuest(save.npcWorld,save.materials,save.gold);if(!r.ok){warn(r.reason);renderGuild();return;}save.gold+=r.gold;const lines=levelUp(r.xp);save.latest=[`依頼達成：${r.title}・${r.gold}G / EXP +${r.xp}`,...lines,...save.latest].slice(0,12);persist('quest');renderAll();msg(`依頼達成！ ${r.gold}G・EXP ${r.xp}を獲得しました。`);}
+ if(take){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.takeQuest(save.npcWorld,Number(take.dataset.takeQuest));if(!r.ok){warn(r.reason);return;}save.latest=[`受注：${r.title}`,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`「${r.title}」を受注しました。`);}
+ if(claim){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.claimQuest(save.npcWorld,save.materials,save.gold,save.farm);if(!r.ok){warn(r.reason);renderGuild();return;}save.gold+=r.gold;const lines=levelUp(r.xp);save.latest=[`依頼達成：${r.title}・${r.gold}G / EXP +${r.xp}`,...lines,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`依頼達成！ ${r.gold}G・EXP ${r.xp}を獲得しました。`);}
 });
  $('#personalSection').addEventListener('click',e=>{
   const start=e.target.closest('[data-personal-start]'),claim=e.target.closest('[data-personal-claim]'),cancel=e.target.closest('[data-personal-cancel]');
@@ -5705,15 +6251,15 @@ $('#destinationPanel').addEventListener('click',e=>{
 });
 $('#zone').addEventListener('change',()=>{if(save.tower.active&&$('#zone').value!=='observatory'){$('#zone').value='observatory';warn('天文塔の遠征中はほかの地域へ移動できません。');}if(save.dungeon.active&&$('#zone').value!=='ruins'){$('#zone').value='ruins';warn('遠征中は地下遺跡から先に帰還してください。');}if(!canTravel($('#zone').value))$('#zone').value='forest';if(['boss','ruins','observatory'].includes($('#zone').value))$('#loop').checked=false;renderMap();});
 $('#reset').addEventListener('click',()=>{if(!confirm('冒険者レベル・装備・所持金を含む進行をすべて初期化しますか？'))return;clearTimeout(loopTimer);battle=null;settled=false;try{localStorage.removeItem(BACKUP_KEY);}catch(e){}save=initial();economyAnchor=save.gold;raceAnimating=false;racePresentation=null;if(raceTimer){clearInterval(raceTimer);raceTimer=null;}casinoStorageBlocked=false;WorldEngine.refreshQuests(save.npcWorld);WorldEngine.reserve(save.npcWorld,save.selected);$('#job').value=save.job;$('#zone').value='forest';$('#loop').checked=false;document.querySelectorAll('#companions input').forEach(x=>x.checked=save.selected.includes(x.value));persist();$('#enemies').textContent='まだ敵と遭遇していません。';$('#log').textContent='新たな冒険を始めましょう。';$('#decision').classList.add('hidden');$('#status').textContent='町で待機中';$('#result').textContent='冒険の記録を初期化しました。';$('#combatReview').textContent='まだ戦闘データがありません。';renderAll();});
-$('#export').addEventListener('click',()=>{persist();const blob=new Blob([JSON.stringify({version:41,savedAt:new Date().toISOString(),progress:save},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='kazemachi_adventure_save_v0925.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000);});
+$('#export').addEventListener('click',()=>{persist();const blob=new Blob([JSON.stringify({version:41,savedAt:new Date().toISOString(),progress:save},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='kazemachi_adventure_save_v0990.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000);});
 $('#importBtn').addEventListener('click',()=>$('#importFile').click());
 $('#importFile').addEventListener('change',async e=>{const file=e.target.files?.[0];if(!file)return;try{if(file.size>2000000)throw Error('ファイルが大きすぎます');const j=JSON.parse(await file.text());if(!j||typeof j!=='object'||(!j.progress&&!Array.isArray(j.gear)&&![2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41].includes(j.version)))throw Error('セーブ形式が一致しません');if(!confirm('現在の進行を読み込んだデータで置き換えますか？'))return;save=sanitize(j.progress||j);economyAnchor=save.gold;casinoStorageBlocked=false;slotAnimating=false;raceAnimating=false;racePresentation=null;if(raceTimer){clearInterval(raceTimer);raceTimer=null;}battle=save.bossCheckpoint?CombatEngine.resume(save.bossCheckpoint):null;if(save.casino.pending&&!settleCasinoPending())throw Error('保留中のスロット精算を保存できません');if(save.race.pending&&!settleRacePending())throw Error('保留中のレース精算を保存できません');if(save.cards.pending?.stage==='settling'&&!settleCardPending())throw Error('カード精算を保存できません');if(save.dice.pending?.stage==='settling'&&!settleDicePending())throw Error('骰子精算を保存できません');WorldEngine.refreshQuests(save.npcWorld);WorldEngine.reserve(save.npcWorld,save.selected);settled=false;clearTimeout(loopTimer);$('#job').value=save.job;document.querySelectorAll('#companions input').forEach(x=>x.checked=save.selected.includes(x.value));$('#enemies').textContent='探索先を選んで出発してください。';$('#log').textContent='バックアップを読み込みました。';$('#status').textContent=battle?.state==='decision'?'ボス戦・指示待ち':'町で待機中';if(!battle)$('#decision').classList.add('hidden');else $('#zone').value=battle.zone;$('#combatReview').textContent='復元後の冒険で戦闘レポートが表示されます。';persist();renderAll();msg(battle?.state==='decision'?'ボス戦の指示待ちを復元しました。':'バックアップを復元しました。');}catch(err){warn('読み込みに失敗しました：'+err.message);}finally{e.target.value='';}});
-$('#timeOfDayEffects').addEventListener('change',e=>{
- const before=save.settings?.timeOfDayEffects!==false;
+$('#miniClockEnabled').addEventListener('change',e=>{
+ const before=save.settings?.miniClockEnabled!==false;
  save.settings=save.settings||{};
- save.settings.timeOfDayEffects=e.target.checked;
- if(!persist()){save.settings.timeOfDayEffects=before;e.target.checked=before;}
- updateSkyClock();
+ save.settings.miniClockEnabled=e.target.checked;
+ if(!persist()){save.settings.miniClockEnabled=before;e.target.checked=before;}
+ window.KazeMiniClockRefresh?.();
 });
 // 1-second rendering only: game time advances through the original catchUp loop.
 setInterval(updateSkyClock,1000);
@@ -5727,7 +6273,7 @@ $('#worldObserve').addEventListener('click',()=>{
 setInterval(()=>{const n=WorldEngine.catchUp(save.npcWorld,Date.now(),save.selected);if(n){window.KazeWorldEvents?.sync();persist();renderWorld();window.WindLetterUI?.sync();renderMarket();renderSupplies();renderGuild();renderMap();renderDungeon();renderStarwood();renderTower();renderPersonal();renderChapters();renderStoryPeople();}},15000);
 WorldEngine.reserve(save.npcWorld,save.selected);WorldEngine.catchUp(save.npcWorld,Date.now(),save.selected);WorldEngine.refreshQuests(save.npcWorld);$('#job').value=save.job;document.querySelectorAll('#companions input').forEach(x=>x.checked=save.selected.includes(x.value));if(battle?.state==='decision'){const z=$('#zone');if(z.querySelector('option[value="'+battle.zone+'"]'))z.value=battle.zone;$('#result').textContent='ボス戦の指示待ちを復元しました。作戦を選んで再開してください。';}window.KazeWindBridge={
   read:()=>save,
-  persist:reason=>persist(reason),
+  persist:reason=>persist(reason),restoreFarmLedger:()=>{economyAnchor=save.gold;},
   loginGiftInfo,loginGiftTouch,claimLoginGift,dismissLoginGift,giftPayload,
   people:()=>CombatEngine.NPCS.map(n=>({id:n.id,name:n.name,job:n.job})),
   pairTitle:(a,b)=>WorldEngine.PAIRS[[a,b].sort().join(':')]?.title||'',
@@ -6153,7 +6699,7 @@ footer{font-size:13px;line-height:1.6}
  function filter(){
   const q=norm(search.value.trim()); let count=0;
   chapters.forEach(c=>{
-   const visible=!q||norm(c.textContent).includes(q);
+   const visible=!q||norm(c.textContent+' '+(c.dataset.guideName||'')).includes(q);
    c.hidden=!visible;
    if(q&&visible)c.open=true;
    if(visible)count++;
@@ -6214,7 +6760,7 @@ footer{font-size:13px;line-height:1.6}
     hero:[['✦ 成長','scroll','[data-ui-page="hero"][data-ui-order="1"]'],['🛡 装備','scroll','[data-ui-page="hero"][data-ui-order="6"]'],['📘 スキル','scroll','[data-ui-page="hero"][data-ui-order="4"]']],
     party:[['✉ 風信帳','scroll','#windLetterPanel'],['♧ 人物録','scroll','#worldPeople'],['⛺ 共同遠征','scroll','#worldExpeditions'],['🤝 関係','scroll','#worldRelations']],
     guild:[['⌂ 受付','scroll','#guildReception'],['📜 依頼','scroll','[data-ui-page="guild"][data-ui-order="8"]'],['🎰 遊戯館','guide','casino'],['🛏 宿屋','scroll','#innPortraitSection']],
-    records:[['🧾 調査記録','scroll','#fieldSurveyHistory'],['🪙 家計簿','scroll','#economySection'],['📖 手引き','guide','start'],['💾 セーブ','scroll','#adventurerRecordSection']]
+    records:[['🧾 調査記録','scroll','#fieldSurveyHistory'],['📚 装備図鑑','scroll','#gearJournalSection'],['📖 手引き','guide','start'],['⚙️ 設定','scroll','#gameSettingsSection']]
   };
   function activePage(){return tabs.querySelector('.book-tab.is-selected')?.dataset.uiGo||'adventure';}
   function smoothTo(el){if(!el)return;el.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
@@ -6561,13 +7107,15 @@ footer{color:#645941!important;}
  function checkVisible(){
   const fullClockAboveViewport=source.getBoundingClientRect().bottom<=0;
   const guideIsOpen=overlay&&!overlay.hidden;
-  const show=fullClockAboveViewport&&!guideIsOpen&&!document.hidden;
+  const settingEnabled=get('miniClockEnabled')?.checked!==false;
+  const show=settingEnabled&&fullClockAboveViewport&&!guideIsOpen&&!document.hidden;
   if(mini.hidden===show){mini.hidden=!show;document.body.classList.toggle('mini-clock-visible',show);}
  }
  function scheduleCheck(){
   if(checking)return;checking=true;
   requestAnimationFrame(()=>{checking=false;checkVisible();});
  }
+ window.KazeMiniClockRefresh=scheduleCheck;
  window.addEventListener('scroll',scheduleCheck,{passive:true});
  window.addEventListener('resize',scheduleCheck,{passive:true});
  document.addEventListener('visibilitychange',scheduleCheck);
@@ -9020,6 +9568,370 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  setInterval(()=>{const before=bridge.loginGiftInfo();if(before.day>before.maxSeenDay)bridge.loginGiftTouch();render();maybeOpen();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden){nextOpen=false;bridge.loginGiftTouch();render();}});
  window.KazeLoginGift={sync,open,inspect:()=>bridge.loginGiftInfo()};
+})();
+</script>
+<script>
+/* v0.9.80: Guild farm. No new timers for crop growth; derives maturity from WorldEngine.halfHours. */
+(()=>{
+ 'use strict';
+ const bridge=window.KazeWindBridge,root=document.getElementById('farmSection');
+ if(!bridge||!root)return;
+ const CROPS=[
+  {id:'wheat',name:'小麦',icon:'🌾',seed:20,grow:2,yield:3,sell:9,level:1},
+  {id:'carrot',name:'にんじん',icon:'🥕',seed:30,grow:3,yield:3,sell:14,level:1},
+  {id:'potato',name:'じゃがいも',icon:'🥔',seed:45,grow:4,yield:4,sell:16,level:15},
+  {id:'tomato',name:'トマト',icon:'🍅',seed:75,grow:6,yield:3,sell:31,level:25},
+  {id:'herb',name:'香草',icon:'🌿',seed:110,grow:8,yield:3,sell:43,level:35},
+  {id:'pumpkin',name:'かぼちゃ',icon:'🎃',seed:200,grow:10,yield:3,sell:78,level:50},
+  {id:'berry',name:'星蜜ベリー',icon:'🫐',seed:420,grow:12,yield:3,sell:157,level:65},
+  {id:'moonturnip',name:'月光かぶ',icon:'🌙',seed:900,grow:16,yield:3,sell:330,level:80}
+ ];
+ const BY_ID=Object.fromEntries(CROPS.map(c=>[c.id,c]));
+ const PRICES=[0,0,200,450,1000,2200,4800,10500,23000,50000]; // index plot 0=first plot
+ const $=id=>document.getElementById(id);
+ let prevRef=null,prevTick=-1,prevGold=null,prevLevel=null,prevBusy=null,prevFarmSig='',status='';
+ const seedChoice=$('farmSeedChoice'),qtyChoice=$('farmQty');
+ seedChoice.innerHTML=CROPS.map(c=>`<option value="${c.id}">${c.icon} ${c.name}（種${c.seed}G）</option>`).join('');
+ function farm(){return bridge.read().farm;}
+ function tick(){return Math.max(0,Number(bridge.tick())||0);}
+ function selected(){return BY_ID[seedChoice.value]||CROPS[0];}
+ function formatG(x){return Number(x).toLocaleString('ja-JP')+'G';}
+ function time(t){return `${Math.floor(t/2)}時間${t%2?'30分':''}`;}
+ function eventLog(f,what){f.history.push({tick:tick(),text:what});f.history=f.history.slice(-25);}
+ function transact(label,fn,reason){
+  const s=bridge.read(),old={gold:s.gold,farm:JSON.parse(JSON.stringify(s.farm)),ledger:JSON.parse(JSON.stringify(s.economyLedger))};
+  const result=fn(s,s.farm);
+  if(result===false)return false;
+  if(!bridge.persist(reason)){
+   s.gold=old.gold;s.farm=old.farm;s.economyLedger=old.ledger;bridge.restoreFarmLedger();
+   status='保存できなかったため、操作を取り消しました。JSON保存先とブラウザの容量を確認してください。';render();return false;
+  }
+  status=label;render();return true;
+ }
+ function buySeeds(){
+  const c=selected(),q=Number(qtyChoice.value),s=bridge.read();
+  if(s.heroLevel<c.level){status=`${c.name}の種は主人公Lv${c.level}から販売されます。`;render();return;}
+  const price=q*c.seed;
+  if(s.gold<price){status=`種の購入には${formatG(price)}必要です。`;render();return;}
+  if((farm().seeds[c.id]||0)+q>100000){status='種の保管上限（100,000個）を超えます。';render();return;}
+  transact(`${c.name}の種を${q}個購入しました。`,(s,f)=>{s.gold-=price;f.seeds[c.id]=(f.seeds[c.id]||0)+q;eventLog(f,`${c.name}の種×${q}を${formatG(price)}で購入`);},'farmSeeds');
+ }
+ function plantOne(i){
+  const c=selected(),f=farm();
+  if(i>=f.unlockedPlots||f.plots[i].cropId){status='この区画には今、種を植えられません。';render();return;}
+  if(!(f.seeds[c.id]>0)){status=`${c.name}の種がありません。種屋で購入してください。`;render();return;}
+  transact(`第${i+1}区画に${c.name}を植えました。`,(s,f)=>{
+   f.seeds[c.id]-=1;f.plots[i]={cropId:c.id,plantedAt:tick(),lastCropId:c.id};eventLog(f,`第${i+1}区画に${c.name}を植えた`);
+  });
+ }
+ function plantAll(){
+  const c=selected(),f=farm();let spots=[];
+  for(let i=0;i<f.unlockedPlots;i++)if(!f.plots[i].cropId)spots.push(i);
+  const count=Math.min(spots.length,f.seeds[c.id]||0);
+  if(!count){status='植えられる空き区画か種がありません。';render();return;}
+  transact(`${c.name}を${count}区画に植えました。`,(s,f)=>{
+   for(const i of spots.slice(0,count))f.plots[i]={cropId:c.id,plantedAt:tick(),lastCropId:c.id};
+   f.seeds[c.id]-=count;eventLog(f,`${c.name}を${count}区画にまとめて植えた`);
+  });
+ }
+ function harvest(indexes){
+  const f=farm(),now=tick(),ready=indexes.filter(i=>i<f.unlockedPlots&&f.plots[i]?.cropId&&now-f.plots[i].plantedAt>=BY_ID[f.plots[i].cropId].grow);
+  if(!ready.length){status='収穫できる作物はありません。';render();return;}
+  const total={};for(const i of ready){const c=BY_ID[f.plots[i].cropId];total[c.id]=(total[c.id]||0)+c.yield;}
+  for(const [id,q] of Object.entries(total))if((f.crops[id]||0)+q>100000){status='作物の保管上限（100,000個）を超えます。先に売却してください。';render();return;}
+  transact(`${ready.length}区画から作物を収穫しました。`,(s,f)=>{
+   for(const i of ready){const p=f.plots[i],c=BY_ID[p.cropId];f.crops[c.id]=(f.crops[c.id]||0)+c.yield;f.plots[i]={cropId:null,plantedAt:null,lastCropId:c.id};}
+   f.harvestCount+=ready.length;
+   const journal=f.collection;
+   for(const [id,q] of Object.entries(total)){
+    if(!journal.seenCrops.includes(id)){
+     journal.seenCrops.push(id);journal.firstHarvest[id]=tick();
+    }
+    journal.harvested[id]=Math.min(100000000,(journal.harvested[id]||0)+q);
+   }
+   eventLog(f,`収穫：${Object.entries(total).map(([id,q])=>BY_ID[id].name+'×'+q).join('・')}`);
+  });
+ }
+ // One action can collect matured plots and replant the *same* crops in each plot.
+ // Each plot remembers the last crop after manual harvesting; imported v0.9.84
+ // saves retain a memory for plots that were still growing on import.
+ function replantRemembered(withHarvest){
+  const s=bridge.read(),f=s.farm,now=tick();
+  const ripe=[];
+  if(withHarvest)for(let i=0;i<f.unlockedPlots;i++){
+   const p=f.plots[i],c=BY_ID[p.cropId];
+   if(c&&now-p.plantedAt>=c.grow)ripe.push(i);
+  }
+  const total={};for(const i of ripe){const c=BY_ID[f.plots[i].cropId];total[c.id]=(total[c.id]||0)+c.yield;}
+  for(const [id,q] of Object.entries(total))if((f.crops[id]||0)+q>100000){
+   status='作物の保管上限を超えます。先に作物を売却してください。';render();return;
+  }
+  const available={...f.seeds},plant=[];
+  for(let i=0;i<f.unlockedPlots;i++){
+   const p=f.plots[i];if(p.cropId&&!ripe.includes(i))continue;
+   const id=BY_ID[p.lastCropId]?p.lastCropId:BY_ID[p.cropId]?p.cropId:null;
+   if(id&&(available[id]||0)>0){available[id]--;plant.push([i,id]);}
+  }
+  if(!ripe.length&&!plant.length){status='植え直せる区画がありません。前回の種があるか確認してください。';render();return;}
+  transact(`${ripe.length}区画を収穫し、${plant.length}区画に前回と同じ種を植えました。`,(s,f)=>{
+   if(ripe.length){
+    for(const i of ripe){const p=f.plots[i],c=BY_ID[p.cropId];f.crops[c.id]=(f.crops[c.id]||0)+c.yield;f.plots[i]={cropId:null,plantedAt:null,lastCropId:c.id};}
+    f.harvestCount+=ripe.length;
+    const journal=f.collection;
+    for(const [id,q] of Object.entries(total)){
+     if(!journal.seenCrops.includes(id)){journal.seenCrops.push(id);journal.firstHarvest[id]=tick();}
+     journal.harvested[id]=Math.min(100000000,(journal.harvested[id]||0)+q);
+    }
+   }
+   for(const [i,id] of plant){f.seeds[id]--;f.plots[i]={cropId:id,plantedAt:tick(),lastCropId:id};}
+   eventLog(f,`まとめ作業：${ripe.length}区画を収穫・${plant.length}区画に再植え付け`);
+  },'farmReplant');
+ }
+ function openPlot(){
+  const f=farm(),n=f.unlockedPlots,price=PRICES[n];
+  if(n>=10)return;
+  if(bridge.read().gold<price){status=`第${n+1}区画の開放には${formatG(price)}必要です。`;render();return;}
+  transact(`第${n+1}区画を開放しました。`,(s,f)=>{s.gold-=price;f.unlockedPlots++;eventLog(f,`第${n+1}区画を${formatG(price)}で開放`);},'farmPlot');
+ }
+ function sell(id){
+  const f=farm(),c=BY_ID[id],q=f.crops[id]||0;if(!q)return;
+  const s=bridge.read(),max=Math.floor((1e9-s.gold)/c.sell),take=Math.min(q,max),price=take*c.sell;
+  if(!take){status='所持金が上限に達しています。';render();return;}
+  transact(`${c.name}×${take}を${formatG(price)}で売却しました。`,(s,f)=>{
+   f.crops[id]-=take;s.gold+=price;f.earned+=price;eventLog(f,`${c.name}×${take}を${formatG(price)}で売却`);
+  },'farmSell');
+ }
+ function render(){
+  const s=bridge.read(),f=s.farm;if(!f)return;
+  const now=tick(),c=selected(),busy=!!bridge.active();
+  prevRef=s;prevTick=now;prevGold=s.gold;prevLevel=s.heroLevel;prevBusy=busy;prevFarmSig=JSON.stringify([f.plots,f.seeds,f.crops,f.unlockedPlots]);
+  $('farmPlotsCounter').textContent=`${f.unlockedPlots} / 10区画`;
+  const ready=f.plots.slice(0,f.unlockedPlots).filter(p=>p.cropId&&now-p.plantedAt>=BY_ID[p.cropId].grow).length;
+  const badge=$('farmReadyBadge');if(badge)badge.hidden=ready===0;
+  $('farmStatus').textContent=(status?status+' ｜ ':'')+`所持金 ${formatG(s.gold)}　・　収穫可能 ${ready}区画　・　累計収穫 ${f.harvestCount}区画　・　売却収入 ${formatG(f.earned)}`;
+  $('farmPlotGrid').innerHTML=f.plots.map((p,i)=>{
+   if(i>=f.unlockedPlots){
+    if(i>f.unlockedPlots)return ''; // Don't fill the narrow mobile screen with unreached locked plots.
+    const next=i===f.unlockedPlots,price=PRICES[i];
+    return `<div class="farm-plot locked"><span class="farm-plot-icon">🔒</span><span class="farm-plot-title">第${i+1}区画</span><span class="farm-plot-note">${next?formatG(price):'前の区画から順に開放'}</span>${next?`<button type="button" data-farm-open="1" ${s.gold<price||busy?'disabled':''}>区画を開放</button>`:''}</div>`;
+   }
+   if(!p.cropId)return `<div class="farm-plot"><span class="farm-plot-icon">🌱</span><span class="farm-plot-title">第${i+1}区画・空き</span><span class="farm-plot-note">植える種：${c.name}</span><button type="button" data-farm-plant="${i}" ${!(f.seeds[c.id]>0)||busy?'disabled':''}>この区画に植える</button></div>`;
+   const crop=BY_ID[p.cropId],elapsed=Math.max(0,now-p.plantedAt),done=elapsed>=crop.grow,remain=Math.max(0,crop.grow-elapsed);
+   return `<div class="farm-plot ${done?'ready':''}"><span class="farm-plot-icon">${crop.icon}</span><span class="farm-plot-title">第${i+1}区画・${crop.name}</span><span class="farm-plot-note">${done?'収穫できます！':`あと ${time(remain)}（ゲーム内）`}</span>${done?'<div class="farm-progress"><span style="width:100%"></span></div>':`<div class="farm-progress"><span style="width:${Math.round(100*elapsed/crop.grow)}%"></span></div>`}<button type="button" data-farm-harvest="${i}" class="${done?'ready-button':''}" ${done&&!busy?'':'disabled'}>${done?`収穫する（×${crop.yield}）`:'栽培中'}</button></div>`;
+  }).join('');
+  seedChoice.querySelectorAll('option').forEach(opt=>{const item=BY_ID[opt.value];opt.disabled=s.heroLevel<item.level;opt.textContent=`${item.icon} ${item.name}（${item.seed}G${s.heroLevel<item.level?'・Lv'+item.level+'で解放':''}）`;});
+  if(s.heroLevel<c.level){seedChoice.value=CROPS.find(x=>s.heroLevel>=x.level).id;}
+  const sel=selected(),q=Number(qtyChoice.value);
+  $('farmSeedInfo').textContent=`${sel.name}の種：${formatG(sel.seed)}/個　・　所持${f.seeds[sel.id]||0}個　・　成長${time(sel.grow)}（ゲーム内）　・　収穫${sel.yield}個　・　作物売却${formatG(sel.sell)}/個`;
+  $('farmBuySeeds').disabled=busy||s.gold<sel.seed*q||(f.seeds[sel.id]||0)+q>100000;
+  $('farmPlantAll').disabled=busy||!(f.seeds[sel.id]>0)||!f.plots.slice(0,f.unlockedPlots).some(p=>!p.cropId);
+  $('farmHarvestAll').disabled=busy||!ready;
+  const lastEmpty=f.plots.slice(0,f.unlockedPlots).some(p=>!p.cropId&&BY_ID[p.lastCropId]&&(f.seeds[p.lastCropId]||0)>0);
+  $('farmReplantEmpty').disabled=busy||!lastEmpty;
+  $('farmHarvestReplant').disabled=busy||(!ready&&!lastEmpty);
+  $('farmStorageGrid').innerHTML=CROPS.map(x=>{
+   const q=f.crops[x.id]||0;
+   return `<div class="farm-store-item"><span class="farm-store-label">${x.icon} <strong>${x.name}</strong> ×${q}<br><small>売値${formatG(x.sell)}/個</small></span><button type="button" data-farm-sell="${x.id}" ${q&&!busy?'':'disabled'}>まとめて売る</button></div>`;
+  }).join('');
+  $('farmHistory').innerHTML=f.history.length?f.history.slice(-7).reverse().map(x=>`<p>・${x.text} <small>(${bridge.worldTime()===null?'':`第${1+Math.floor((480+x.tick*30)/1440)}日`})</small></p>`).join(''):'まだ畑仕事の記録はありません。';
+ }
+ root.addEventListener('click',e=>{
+  const el=e.target.closest('button');if(!el||el.disabled)return;if(bridge.active()){status='冒険中は畑仕事を行えません。帰還してから利用してください。';render();return;}
+  if(el.hasAttribute('data-farm-plant'))plantOne(Number(el.dataset.farmPlant));
+  else if(el.hasAttribute('data-farm-harvest'))harvest([Number(el.dataset.farmHarvest)]);
+  else if(el.hasAttribute('data-farm-open'))openPlot();
+  else if(el.hasAttribute('data-farm-sell'))sell(el.dataset.farmSell);
+  else if(el.id==='farmBuySeeds')buySeeds();
+  else if(el.id==='farmPlantAll')plantAll();
+  else if(el.id==='farmHarvestAll')harvest([...Array(10).keys()]);
+  else if(el.id==='farmReplantEmpty')replantRemembered(false);
+  else if(el.id==='farmHarvestReplant')replantRemembered(true);
+ });
+ seedChoice.addEventListener('change',()=>{status='';render();});qtyChoice.addEventListener('change',()=>{status='';render();});
+ function sync(){const s=bridge.read(),t=tick(),busy=!!bridge.active(),farmSig=JSON.stringify([s.farm?.plots,s.farm?.seeds,s.farm?.crops,s.farm?.unlockedPlots]);if(s!==prevRef||t!==prevTick||s.gold!==prevGold||s.heroLevel!==prevLevel||busy!==prevBusy||farmSig!==prevFarmSig){status='';render();}}
+ window.KazeFarm={sync,inspect:()=>JSON.parse(JSON.stringify(farm())),crops:CROPS,plotPrices:PRICES.slice(2)};
+ render();setInterval(sync,1200);
+})();
+
+</script>
+<script>
+/* v0.9.82: Six sellable foods, meal buffs persist across a three-floor expedition. */
+(()=>{
+ 'use strict';
+ const bridge=window.KazeWindBridge,root=document.getElementById('kitchenSection');
+ if(!bridge||!root)return;
+ const CROPS={
+  wheat:['小麦','🌾'],carrot:['にんじん','🥕'],potato:['じゃがいも','🥔'],
+  tomato:['トマト','🍅'],herb:['香草','🌿'],pumpkin:['かぼちゃ','🎃'],
+  berry:['星蜜ベリー','🫐'],moonturnip:['月光かぶ','🌙']
+ };
+ const RECIPES=[
+  {id:'bread',name:'焼き麦パン',icon:'🍞',level:1,unlock:60,fee:4,sell:27,need:{wheat:2}},
+  {id:'veggieSoup',name:'野菜スープ',icon:'🥣',level:15,unlock:200,fee:8,sell:65,need:{carrot:2,potato:1}},
+  {id:'herbPotatoes',name:'じゃがいもの香草焼き',icon:'🥔',level:35,unlock:500,fee:12,sell:109,need:{potato:2,herb:1}},
+  {id:'pumpkinSoup',name:'かぼちゃのポタージュ',icon:'🎃',level:50,unlock:1300,fee:22,sell:275,need:{pumpkin:2,herb:1}},
+  {id:'berryTart',name:'星蜜ベリーのタルト',icon:'🥧',level:65,unlock:3200,fee:34,sell:455,need:{berry:2,wheat:2}},
+  {id:'moonStew',name:'月光かぶのシチュー',icon:'🍲',level:80,unlock:9000,fee:84,sell:1025,need:{moonturnip:2,pumpkin:1}}
+ ];
+ const BY_ID=Object.fromEntries(RECIPES.map(r=>[r.id,r]));
+ const MEALS=window.KazeMealUI?.effects||{};
+ const $=id=>document.getElementById(id),format=x=>Number(x).toLocaleString('ja-JP')+'G';
+ const escapeText=x=>String(x).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+ let status='',lastSignature='';
+ function k(){return bridge.read().farm.kitchen;}
+ function f(){return bridge.read().farm;}
+ function now(){return Math.max(0,Number(bridge.tick())||0);}
+ function note(text){const x=k();x.history.push({tick:now(),text});x.history=x.history.slice(-30);}
+ // All mutating operations are one transaction, then persisted once. On failure
+ // restore both wallet and farm kitchen to prevent half-completed recipes/items.
+ function transact(message,reason,operation){
+  const s=bridge.read();
+  const old={gold:s.gold,farm:JSON.parse(JSON.stringify(s.farm)),ledger:JSON.parse(JSON.stringify(s.economyLedger))};
+  operation(s,s.farm,s.farm.kitchen);
+  if(!bridge.persist(reason)){
+   s.gold=old.gold;s.farm=old.farm;s.economyLedger=old.ledger;bridge.restoreFarmLedger();
+   status='保存に失敗したため、取引を取り消しました。端末の保存容量をご確認ください。';
+   render();return false;
+  }
+  status=message;window.KazeFarm?.sync();render();return true;
+ }
+ function buy(id){
+  const r=BY_ID[id],s=bridge.read(),x=k();if(!r)return;
+  if(bridge.active()){status='冒険中は調理場を利用できません。';render();return;}
+  if(x.unlockedRecipes.includes(id)){status='このレシピはすでに購入済みです。';render();return;}
+  if(s.heroLevel<r.level){status=`${r.name}は主人公Lv${r.level}から解放できます。`;render();return;}
+  if(s.gold<r.unlock){status=`レシピ購入には${format(r.unlock)}必要です。`;render();return;}
+  transact(`${r.name}のレシピを購入しました。`,'kitchenRecipe',(s,f,k)=>{
+   s.gold-=r.unlock;k.unlockedRecipes.push(id);k.recipeSpent+=r.unlock;note(`${r.name}のレシピを${format(r.unlock)}で購入`);
+  });
+ }
+ function maxCookable(r,s){
+  if(!k().unlockedRecipes.includes(r.id))return 0;
+  let max=Math.min(100000-(k().foods[r.id]||0),Math.floor(s.gold/r.fee));
+  for(const [crop,q] of Object.entries(r.need))max=Math.min(max,Math.floor((f().crops[crop]||0)/q));
+  return Math.max(0,Math.floor(max));
+ }
+ function cook(id,requested=1){
+  const r=BY_ID[id],s=bridge.read();if(!r)return;
+  if(bridge.active()){status='冒険中は調理場を利用できません。';render();return;}
+  if(!k().unlockedRecipes.includes(id)){status='先にレシピを購入してください。';render();return;}
+  const max=maxCookable(r,s),q=requested==='all'?max:Number(requested);
+  if(!Number.isSafeInteger(q)||q<1||q>max){status=`材料・調理費・保管枠が不足しています。現在は最大${max}皿調理できます。`;render();return;}
+  if(q>20&&!window.confirm(`${r.name}を${q}皿調理しますか？ 材料と調理費${format(q*r.fee)}をまとめて消費します。`))return;
+  transact(`${r.name}を${q}皿調理しました。`,'kitchenCook',(s,f,k)=>{
+   for(const [crop,n] of Object.entries(r.need))f.crops[crop]-=n*q;
+   s.gold-=r.fee*q;k.foods[id]=(k.foods[id]||0)+q;k.cookedTotal+=q;k.cookSpent+=r.fee*q;
+   const journal=f.collection;
+   if(!journal.seenFoods.includes(id)){journal.seenFoods.push(id);journal.firstCook[id]=now();}
+   journal.cooked[id]=Math.min(100000000,(journal.cooked[id]||0)+q);
+   note(`${r.name}を${q}皿調理（調理費${format(r.fee*q)}）`);
+  });
+ }
+ function sell(id,all){
+  const r=BY_ID[id],s=bridge.read();if(!r)return;
+  if(bridge.active()){status='冒険中は調理場を利用できません。';render();return;}
+  const quantity=k().foods[id]||0;
+  if(!quantity){status='売却する料理がありません。';render();return;}
+  const room=Math.floor((1e9-s.gold)/r.sell),q=Math.min(all?quantity:1,room);
+  if(q<1){status='所持金の上限に達しています。';render();return;}
+  const earned=q*r.sell;
+  transact(`${r.name}×${q}を${format(earned)}で売却しました。`,'kitchenSell',(s,f,k)=>{
+   k.foods[id]-=q;s.gold+=earned;k.earned+=earned;
+   note(`${r.name}×${q}を${format(earned)}で売却`);
+  });
+ }
+ function eat(id){
+  const r=BY_ID[id],s=bridge.read();if(!r||!MEALS[id])return;
+  if(bridge.active()||s.dungeon?.active||s.tower?.active||s.endgame?.active){status='冒険・三層遠征中は食事を変更できません。';render();return;}
+  if(!(k().foods[id]>0)){status='この料理の在庫がありません。';render();return;}
+  if(k().mealBuff?.phase==='ready'&&!window.confirm('準備済みの食事効果を上書きしますか？ 前の料理は戻りません。'))return;
+  transact(`${r.name}を食べました。次の冒険：${MEALS[id].label}`,'kitchenMeal',(s,f,k)=>{
+   k.foods[id]--;k.mealsEaten=(k.mealsEaten||0)+1;
+   k.mealBuff={id,phase:'ready',zone:'',startedRun:0};
+   note(`${r.name}を食べた（次の冒険：${MEALS[id].label}）`);
+  });
+  window.KazeMealUI?.sync?.();
+ }
+ function signature(){const s=bridge.read();return JSON.stringify([
+  s.gold,s.heroLevel,bridge.active(),s.dungeon?.active,s.tower?.active,s.endgame?.active,s.farm?.crops,s.farm?.kitchen]);}
+ function render(){
+  const s=bridge.read(),farm=s.farm,x=k(),busy=!!bridge.active();if(!x)return;
+  lastSignature=signature();
+  $('kitchenCounter').textContent=`レシピ ${x.unlockedRecipes.length} / ${RECIPES.length}`;
+  $('kitchenStatus').textContent=(status?status+' ｜ ':'')+`所持金 ${format(s.gold)}　・　調理累計 ${x.cookedTotal}皿　・　料理売上 ${format(x.earned)}`;
+   const mb=x.mealBuff,info=mb&&MEALS[mb.id];
+   $('kitchenMealStatus').textContent=info?`🍽️ ${info.name}：${info.label}（${mb.phase==='ready'?'次の冒険まで保持':'三層遠征中・終了まで有効'}）`:'🍽️ 食事効果なし。料理を食べると次の冒険へ持っていけます。';
+  $('kitchenRecipes').innerHTML=RECIPES.map(r=>{
+   const unlocked=x.unlockedRecipes.includes(r.id),available=s.heroLevel>=r.level,
+    have=Object.entries(r.need).every(([id,q])=>(farm.crops[id]||0)>=q),
+    canCook=unlocked&&have&&s.gold>=r.fee&&(x.foods[r.id]||0)<100000&&!busy,canMake=unlocked?maxCookable(r,s):0;
+   const ingredients=Object.entries(r.need).map(([id,q])=>{
+    const owned=farm.crops[id]||0,label=CROPS[id];
+    return `<span class="${owned>=q?'enough':'missing'}">${label[1]}${label[0]} ${owned}/${q}</span>`;
+   }).join(' ・ ');
+   return `<article class="kitchen-card ${unlocked?'':'locked'}"><div class="kitchen-card-header"><span class="kitchen-card-icon">${r.icon}</span><div><h3>${r.name}</h3><div class="kitchen-tag">${unlocked?'✓ レシピ購入済み':available?'レシピ未購入':'主人公Lv'+r.level+'で購入可能'}</div></div></div>
+    <p class="kitchen-ingredients">材料：${ingredients}</p><p class="kitchen-ingredients">🍽️ ${MEALS[r.id]?.label||'効果なし'}（次の冒険1回）</p><p class="kitchen-price">調理費 ${format(r.fee)} ／ 売値 ${format(r.sell)} ／ レシピ ${format(r.unlock)}</p>
+    <div class="kitchen-actions">${unlocked?`<button type="button" class="primary" data-kitchen-cook="${r.id}" data-kitchen-qty="1" ${canMake>=1&&!busy?'':'disabled'}>1皿</button><button type="button" data-kitchen-cook="${r.id}" data-kitchen-qty="5" ${canMake>=5&&!busy?'':'disabled'}>5皿</button><button type="button" data-kitchen-cook="${r.id}" data-kitchen-qty="all" ${canMake>=1&&!busy?'':'disabled'}>作れるだけ（${canMake}皿）</button>`:
+     `<button type="button" class="primary" data-kitchen-buy="${r.id}" ${!busy&&available&&s.gold>=r.unlock?'':'disabled'}>レシピを購入（${format(r.unlock)}）</button>`}</div></article>`;
+  }).join('');
+  $('kitchenPantry').innerHTML=RECIPES.map(r=>{
+   const qty=x.foods[r.id]||0;
+   const eatingAllowed=!busy&&!s.dungeon?.active&&!s.tower?.active&&!s.endgame?.active&&qty>0;
+   return `<div class="kitchen-pantry-item"><span class="pantry-name">${r.icon} ${r.name} ×${qty}</span><span class="pantry-meta">売値 ${format(r.sell)}/皿　／　${MEALS[r.id]?.label||'効果なし'}</span><div class="kitchen-actions"><button type="button" class="meal-eat" data-kitchen-eat="${r.id}" ${eatingAllowed?'':'disabled'}>食べる</button><button type="button" data-kitchen-sell="${r.id}" ${!busy&&qty>0&&s.gold+r.sell<=1e9?'':'disabled'}>1皿売る</button><button type="button" data-kitchen-sellall="${r.id}" ${!busy&&qty>0&&s.gold+r.sell<=1e9?'':'disabled'}>全部売る</button></div></div>`;
+  }).join('');
+  $('kitchenHistory').innerHTML=x.history.length?x.history.slice(-10).reverse().map(a=>`<p>・${escapeText(a.text)} <small>(第${Math.floor((480+a.tick*30)/1440)+1}日)</small></p>`).join(''):'まだ調理の記録はありません。';
+ }
+ root.addEventListener('click',e=>{
+  const el=e.target.closest('button');if(!el||el.disabled)return;
+  if(el.hasAttribute('data-kitchen-eat'))eat(el.dataset.kitchenEat);
+   else if(el.hasAttribute('data-kitchen-buy'))buy(el.dataset.kitchenBuy);
+  else if(el.hasAttribute('data-kitchen-cook'))cook(el.dataset.kitchenCook,el.dataset.kitchenQty==='all'?'all':Number(el.dataset.kitchenQty||1));
+  else if(el.hasAttribute('data-kitchen-sell'))sell(el.dataset.kitchenSell,false);
+  else if(el.hasAttribute('data-kitchen-sellall'))sell(el.dataset.kitchenSellall,true);
+ });
+ function sync(){const next=signature();if(next!==lastSignature){status='';render();}}
+ window.KazeKitchen={sync,inspect:()=>JSON.parse(JSON.stringify(k())),recipes:RECIPES};
+ render();setInterval(sync,1300);
+})();
+</script>
+<script id="kaze-collection-v084">
+(()=>{
+ 'use strict';
+ const bridge=window.KazeWindBridge,root=document.getElementById('farmCollectionSection');
+ if(!bridge||!root)return;
+ const crops=window.KazeFarm?.crops||[],foods=window.KazeKitchen?.recipes||[];
+ const $=id=>document.getElementById(id);
+ let page='crop',last='';
+ function stamp(t){return Number.isInteger(t)?`第${Math.floor((480+t*30)/1440)+1}日`:'旧版からの引き継ぎ';}
+ function signature(){const farm=bridge.read().farm;return JSON.stringify([farm.collection,farm.crops,farm.kitchen?.foods,page]);}
+ function render(){
+  const farm=bridge.read().farm,c=farm.collection;
+  if(!c)return;
+  last=signature();
+  const nCrop=c.seenCrops.length,nFood=c.seenFoods.length,total=nCrop+nFood;
+  $('farmCollectionCounter').textContent=`${total} / 14種類`;
+  $('farmCollectionCrops').textContent=`${nCrop}/8`;
+  $('farmCollectionFoods').textContent=`${nFood}/6`;
+  $('farmCollectionFill').style.width=`${total/14*100}%`;
+  $('farmCollectionProgress').setAttribute('aria-valuenow',String(total));
+  root.querySelectorAll('[data-collection-page]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.collectionPage===page)));
+  const list=page==='crop'?crops:foods,seen=page==='crop'?c.seenCrops:c.seenFoods;
+  const counts=page==='crop'?c.harvested:c.cooked,first=page==='crop'?c.firstHarvest:c.firstCook;
+  const stock=page==='crop'?farm.crops:farm.kitchen.foods;
+  $('farmCollectionGrid').innerHTML=list.map(item=>{
+   const got=seen.includes(item.id),count=counts[item.id]||0;
+   const date=got?`初${page==='crop'?'収穫':'調理'}：${stamp(first[item.id])}`:`${page==='crop'?'まだ収穫していません':'まだ調理していません'}`;
+   return `<article class="collection-item ${got?'':'unknown'}"><span class="collection-icon" aria-hidden="true">${got?item.icon:'❔'}</span><div class="collection-copy"><strong>${got?item.name:'未発見の'+(page==='crop'?'作物':'料理')}</strong><small class="${got?'found':''}">${got?'✓ 図鑑登録済み':'未登録'}・${date}</small>${got?`<small>現在の在庫 ${stock[item.id]||0}個 ／ 図鑑導入後${page==='crop'?'収穫':'調理'} ${count}個</small>`:''}</div></article>`;
+  }).join('');
+ }
+ root.addEventListener('click',e=>{
+  const btn=e.target.closest('[data-collection-page]');
+  if(!btn)return;
+  page=btn.dataset.collectionPage==='food'?'food':'crop';render();
+ });
+ function sync(){if(last!==signature())render();}
+ window.KazeCollection={sync,inspect:()=>JSON.parse(JSON.stringify(bridge.read().farm.collection))};
+ render();setInterval(sync,1400);
 })();
 </script>
 </body></html>

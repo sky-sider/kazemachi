@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.92</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.94</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -1518,10 +1518,97 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  #bookTabs + .heroBanner{margin-top:14px}
 }
 </style>
+
+<style id="guild-five-venues-v093">
+/* Guild workspace: the original sections remain direct children of #gamePanels. */
+#gamePanels > .panel[data-guild-room]:not(.kaze-guild-shown){display:none!important}
+#gamePanels > .panel[data-guild-room]{order:3!important}
+#gamePanels > #guildRoomFooter{order:4!important;grid-column:1/-1;color:#385b4b;background:#f7eedb!important;border:1px solid #d8c5a7}
+#guildRoomFooter p{color:#617668;font-size:13px;margin:0 0 10px}
+.kaze-guild-footer-actions{display:flex;gap:9px;flex-wrap:wrap}
+.kaze-guild-footer-actions button{flex:1 1 170px;min-height:44px;border:1px solid #c4b593;border-radius:12px;background:#fffbf2;color:#335848;font-weight:800;cursor:pointer}
+.kaze-guild-footer-actions button:focus-visible{outline:3px solid #bb9257;outline-offset:2px}
+body.kaze-guild-viewing #quickActions{display:none!important}
+#gamePanels > .kaze-guild-hub{grid-column:1/-1;order:1!important;min-width:0}
+#gamePanels > .kaze-guild-room-heading{grid-column:1/-1;order:2!important;min-width:0}
+#guildHub,#guildRoomHeader{color:#355b4c!important;background:linear-gradient(155deg,#fff9e9,#f4ead5)!important;border:1px solid #d7c4a2!important}
+#guildHub h2,#guildRoomHeader h2{color:#294f43!important;margin:4px 0 9px;font-size:clamp(18px,2vw,23px)}
+#guildHub :is(p,small),#guildRoomHeader p{color:#617568}
+.kaze-guild-kicker{font-size:11px;letter-spacing:.12em;font-weight:850;color:#947a50!important;margin:0 0 4px}
+.kaze-guild-welcome{font-size:15px;line-height:1.6;font-weight:750;margin:8px 0}
+.kaze-guild-help{font-size:13px;line-height:1.65;margin:0 0 14px}
+.kaze-guild-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.kaze-guild-venue{display:flex;align-items:center;text-align:left;gap:10px;background:#fffdf5;color:#355847;border:1px solid #d6cab4;border-radius:14px;padding:13px 12px;min-height:80px;min-width:0;cursor:pointer;font:inherit;box-shadow:0 2px 0 #99846418;transition:background .16s ease,border-color .16s ease}
+.kaze-guild-venue:hover,.kaze-guild-venue:focus-visible{background:#eff4e6;border-color:#648b72}
+.kaze-guild-venue:focus-visible,.kaze-guild-back:focus-visible{outline:3px solid #bb9257;outline-offset:3px}
+.kaze-guild-venue.is-selected{background:#e8f1e4;border-color:#56806a;box-shadow:inset 4px 0 #57816b}
+.kaze-guild-venue-icon{flex:0 0 36px;font-size:24px;text-align:center}
+.kaze-guild-venue-main{display:grid;gap:4px;min-width:0;flex:1}
+.kaze-guild-venue-main strong{font-size:16px;line-height:1.3;color:#294f43}
+.kaze-guild-venue-main small{font-size:12px;line-height:1.5;color:#718074;overflow-wrap:anywhere}
+.kaze-guild-chevron{font-size:24px;line-height:1;color:#779481}
+.kaze-guild-back{min-height:44px;border-radius:11px;border:1px solid #cdbb9a;background:#fffcf5;color:#35594a;font-weight:800;padding:9px 13px;margin:0 0 12px;cursor:pointer}
+#guildRoomSubtitle{font-size:13px;line-height:1.6;margin:0}
+#gamePanels.kaze-guild-hub-mode > #guildRoomHeader,#gamePanels.kaze-guild-hub-mode > #guildRoomFooter{display:none!important}
+@media(max-width:999px){
+ #gamePanels.kaze-guild-hub-mode > .panel[data-guild-room]{display:none!important}
+ #gamePanels.kaze-guild-room-mode > #guildHub{display:none!important}
+ #gamePanels.kaze-guild-room-mode > .panel[data-guild-room]{grid-column:1/-1!important}
+ #guildHub .kaze-guild-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:479px){#guildHub .kaze-guild-menu{grid-template-columns:1fr 1fr;gap:8px}.kaze-guild-venue{gap:7px;padding:10px 8px;min-height:77px}.kaze-guild-venue-icon{flex-basis:28px;font-size:20px}.kaze-guild-venue-main strong{font-size:14px}.kaze-guild-venue-main small{font-size:11px}.kaze-guild-chevron{display:none}}
+@media(min-width:1000px){
+ #gamePanels.kaze-guild-active{grid-template-columns:minmax(232px,265px) minmax(0,1fr);}
+ #gamePanels > #guildRoomFooter{display:none!important}
+ #gamePanels.kaze-guild-active > #guildHub{grid-column:1!important;grid-row:1 / span var(--kaze-guild-rows,2)!important;order:1!important;align-self:start;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto;scrollbar-width:thin;}
+ #gamePanels.kaze-guild-active > #guildRoomHeader{grid-column:2!important;grid-row:1!important;order:2!important;}
+ #gamePanels.kaze-guild-active > .panel[data-guild-room]{grid-column:2!important;grid-row:auto!important;order:3!important;min-width:0;width:100%;}
+ #gamePanels.kaze-guild-active > section[data-ui-page="guild"][data-ui-order="7"][data-guild-room]{grid-column:2!important;grid-row:auto!important;order:3!important;}
+ #gamePanels.kaze-guild-active > #guildReception,#gamePanels.kaze-guild-active > #guildSection,#gamePanels.kaze-guild-active > #personalSection,#gamePanels.kaze-guild-active > #marketSection,#gamePanels.kaze-guild-active > #innPortraitSection,#gamePanels.kaze-guild-active > #casinoPortraitSection{grid-column:2!important;order:3!important;}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-menu{grid-template-columns:1fr;gap:7px}
+ #gamePanels.kaze-guild-active .kaze-guild-venue{min-height:67px;padding:10px}
+ #gamePanels.kaze-guild-active #guildHub h2{font-size:17px;line-height:1.35;margin-bottom:9px}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-welcome,#gamePanels.kaze-guild-active #guildHub .kaze-guild-help{display:none}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-venue{min-height:49px;padding:8px 10px}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-venue-icon{flex-basis:23px;font-size:18px}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-venue-main small{display:none}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-venue-main strong{font-size:14px}
+ #gamePanels.kaze-guild-active #guildHub .kaze-guild-chevron{font-size:17px}
+ #gamePanels.kaze-guild-active #guildReturnHub{display:none}
+}
+@media(prefers-reduced-motion:reduce){.kaze-guild-venue{transition:none}}
+</style>
+
+<style id="guild-venue-organization-v094">
+/* Smaller, task-first guild reception. Accordion leaves the existing stateful panels untouched. */
+.kaze-guild-subheading{font-weight:850;color:#3d6252;font-size:13px;margin:0 0 8px}
+#receptionServices .reception-service-buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#receptionServices .reception-service-button{min-height:48px}
+#receptionServices .reception-service-panel{scroll-margin-top:104px}
+.kaze-guild-disclosure{margin-top:12px;border:1px solid #d6c6a9;border-radius:13px;background:#faf3e6;color:#375a49;min-width:0;overflow:hidden}
+.kaze-guild-disclosure>summary{cursor:pointer;padding:12px 13px;min-height:44px;font-size:14px;font-weight:800;line-height:1.5;list-style-position:inside}
+.kaze-guild-disclosure>summary::marker{color:#668770}
+.kaze-guild-disclosure>summary small{font-weight:500;color:#63796b;margin-left:7px}
+.kaze-guild-disclosure[open]>summary{border-bottom:1px solid #dac8a7;background:#eff1e4}
+.kaze-reception-secondary>.reception-service-buttons{padding:11px 12px 13px}
+.kaze-guild-history{margin-top:11px;background:#fffaf1}
+.kaze-guild-history>.readout{margin:8px 12px 12px!important;overflow-wrap:anywhere}
+.kaze-guild-subnav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0;align-items:stretch}
+#guildSuppliesNav[hidden]{display:none!important}
+.kaze-guild-subnav button{flex:1 1 120px;min-height:46px;border:1px solid #c4b89c;border-radius:11px;padding:10px 12px;background:#fffaf0;color:#36594b;font-size:14px;font-weight:850;cursor:pointer;touch-action:manipulation}
+.kaze-guild-subnav button[aria-pressed="true"]{background:#356759;border-color:#315e51;color:#fff9ec}
+.kaze-guild-subnav button:focus-visible,.kaze-guild-disclosure>summary:focus-visible{outline:3px solid #c99a5b;outline-offset:2px}
+#gamePanels.kaze-guild-active>.panel[data-guild-room="supplies"]:not(.kaze-guild-subshown){display:none!important}
+@media(max-width:470px){
+ .kaze-guild-subnav{gap:6px}
+ .kaze-guild-subnav button{flex:1 1 0;font-size:12px;padding:9px 5px;white-space:nowrap}
+ .kaze-guild-disclosure>summary small{display:block;margin-left:0;font-size:12px}
+}
+</style>
 </head><body><main>
 <header class="story-cover">
 <div aria-hidden="true" class="cover-art"><span class="cover-sun"></span><span class="cover-hill cover-hill-back"></span><span class="cover-hill cover-hill-front"></span><span class="cover-tree cover-tree-a"></span><span class="cover-tree cover-tree-b"></span><span class="cover-tree cover-tree-c"></span><span class="cover-house"><i></i></span><span class="cover-path"></span></div>
-<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">試作 0.9.92</span></h1></div></header>
+<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">試作 0.9.94</span></h1></div></header>
 <nav aria-label="ゲームの画面を切り替える" class="storybook-tabs" id="bookTabs" role="tablist">
 <button aria-controls="gamePanels" aria-selected="true" class="book-tab is-selected" data-ui-go="adventure" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⚔</span><span>冒険</span><span aria-label="ボス戦の指示待ち" class="tab-alert" hidden="" id="bossAlert">!</span></button>
 <button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="hero" role="tab" type="button"><span aria-hidden="true" class="tab-icon">✦</span><span>主人公</span></button>
@@ -1657,19 +1744,46 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  <label class="gear-batch-high-agree" id="gearBatchHighLabel" hidden><input type="checkbox" id="gearBatchHighAgree"><span>レア以上の装備が含まれています。対象を確認し、まとめて売却することに同意します。</span></label>
  <div class="gear-batch-dialog-actions"><button type="button" id="gearBatchCancel">戻って選び直す</button><button type="button" id="gearBatchConfirm">この装備を売却する</button></div>
  </div>
-</dialog><section class="panel wide portrait-reception" data-ui-order="6.8" data-ui-page="guild" id="guildReception">
+</dialog>
+<section class="panel wide kaze-guild-hub" data-ui-order="6.65" data-ui-page="guild" id="guildHub" aria-labelledby="guildHubTitle">
+  <p class="kaze-guild-kicker">KAZEMACHI GUILD</p>
+  <h2 id="guildHubTitle">🏘️ 風待ちのギルド広場</h2>
+  <p class="kaze-guild-welcome">🦉「お帰りなさい。今日はどちらへ？」</p>
+  <p class="kaze-guild-help">行きたい施設を選んでください。冒険や仲間の活動は、施設を閉じても続きます。</p>
+  <nav class="kaze-guild-menu" aria-label="ギルド内の施設">
+    <button type="button" data-guild-select="reception" class="kaze-guild-venue"><span class="kaze-guild-venue-icon">🏠</span><span class="kaze-guild-venue-main"><strong>受付</strong><small>補給・訓練・贈りもの</small></span><span class="kaze-guild-chevron">›</span></button>
+    <button type="button" data-guild-select="quests" class="kaze-guild-venue"><span class="kaze-guild-venue-icon">📜</span><span class="kaze-guild-venue-main"><strong>依頼</strong><small>ギルドの仕事・個人物語</small></span><span class="kaze-guild-chevron">›</span></button>
+    <button type="button" data-guild-select="supplies" class="kaze-guild-venue"><span class="kaze-guild-venue-icon">⚒️</span><span class="kaze-guild-venue-main"><strong>旅支度</strong><small>鍛冶屋・市場・宿屋</small></span><span class="kaze-guild-chevron">›</span></button>
+    <button type="button" data-guild-select="farm" class="kaze-guild-venue"><span class="kaze-guild-venue-icon">🌱</span><span class="kaze-guild-venue-main"><strong>農場・料理</strong><small>畑・種屋・調理場</small></span><span class="kaze-guild-chevron">›</span></button>
+    <button type="button" data-guild-select="games" class="kaze-guild-venue"><span class="kaze-guild-venue-icon">🎲</span><span class="kaze-guild-venue-main"><strong>遊戯館</strong><small>町の4つの遊び</small></span><span class="kaze-guild-chevron">›</span></button>
+  </nav>
+</section>
+<section class="panel wide kaze-guild-room-heading" data-ui-order="6.7" data-ui-page="guild" id="guildRoomHeader" aria-live="polite">
+  <button type="button" id="guildReturnHub" class="kaze-guild-back">‹ ギルド広場へ戻る</button>
+  <p class="kaze-guild-kicker">GUILD / <span id="guildRoomKicker">RECEPTION</span></p>
+  <h2 id="guildRoomTitle">🏠 受付</h2>
+  <p id="guildRoomSubtitle">補給・訓練・贈りものを確認できます。</p>
+<nav class="kaze-guild-subnav" id="guildSuppliesNav" aria-label="旅支度の施設を選ぶ" hidden>
+ <button type="button" data-guild-subplace="forge" aria-pressed="true">🔨 鍛冶屋</button>
+ <button type="button" data-guild-subplace="market" aria-pressed="false">🛒 市場</button>
+ <button type="button" data-guild-subplace="inn" aria-pressed="false">🛏️ 宿屋</button>
+</nav>
+</section>
+<section class="panel wide portrait-reception" data-ui-order="6.8" data-ui-page="guild" id="guildReception" data-guild-room="reception">
 <div class="feature-book portrait-service portrait-service--reception">
 <div class="portrait-frame"><img alt="ギルドの受付ふくろうの肖像画" data-portrait-id="010" height="130" width="130"/></div>
 <div class="portrait-service-copy"><p class="portrait-kicker">風待ちの冒険者ギルド · ようこそ</p><h2>受付ふくろう</h2><p>「お帰りなさい、旅人さん。今日はどんな冒険のお話を持ってきてくれましたか？」</p></div>
 </div>
 <div class="reception-services" id="receptionServices">
 <h3 class="reception-services-title">受付で依頼する</h3>
-<div aria-label="受付ふくろうの依頼メニュー" class="reception-service-buttons" role="group">
-<button aria-controls="supplySection" aria-expanded="false" class="reception-service-button" data-reception-target="supplySection" type="button"><span aria-hidden="true">🧺</span> 遠征補給</button>
-<button aria-controls="supportSection" aria-expanded="false" class="reception-service-button" data-reception-target="supportSection" type="button"><span aria-hidden="true">🏡</span> 復興計画</button>
-<button aria-controls="caravanSection" aria-expanded="false" class="reception-service-button" data-reception-target="caravanSection" type="button"><span aria-hidden="true">✉️</span> 旅人便</button>
-<button aria-controls="mentorSection" aria-expanded="false" class="reception-service-button" data-reception-target="mentorSection" type="button"><span aria-hidden="true">📖</span> 同行訓練</button>
-</div>
+<div class="kaze-reception-menu" aria-label="受付の用件">
+  <p class="kaze-guild-subheading">よく使う受付</p>
+  <div class="reception-service-buttons" role="group" aria-label="冒険の準備"><button aria-controls="supplySection" aria-expanded="false" class="reception-service-button" data-reception-target="supplySection" type="button"><span aria-hidden="true">🧺</span> 遠征補給</button><button aria-controls="mentorSection" aria-expanded="false" class="reception-service-button" data-reception-target="mentorSection" type="button"><span aria-hidden="true">📖</span> 同行訓練</button></div>
+  <details class="kaze-guild-disclosure kaze-reception-secondary" id="receptionOtherServices">
+    <summary>町の活動・後援 <small>復興計画・旅人便</small></summary>
+    <div class="reception-service-buttons" role="group" aria-label="町の活動・後援"><button aria-controls="supportSection" aria-expanded="false" class="reception-service-button" data-reception-target="supportSection" type="button"><span aria-hidden="true">🏡</span> 復興計画</button><button aria-controls="caravanSection" aria-expanded="false" class="reception-service-button" data-reception-target="caravanSection" type="button"><span aria-hidden="true">✉️</span> 旅人便</button></div>
+  </details>
+ </div>
 <section aria-label="補給の受付" class="reception-service-panel" hidden="" id="supplySection" role="region">
 <h2>🧺 ギルドの遠征補給</h2>
 <div aria-live="polite" class="notice good" id="supplyStatus">補給の準備状況を確認中…</div>
@@ -1680,13 +1794,13 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <h2>🏡 町の小さな復興計画</h2>
 <div aria-live="polite" class="readout" id="supportStatus">ギルドの計画を確認中…</div>
 <button class="btn secondary" id="supportBuy" type="button">次の計画を支援する</button>
-<div class="readout mt" id="supportHistory">まだ支援の記録はありません。</div>
+<details class="kaze-guild-disclosure kaze-guild-history"><summary>復興計画の記録を見る</summary><div class="readout mt" id="supportHistory">まだ支援の記録はありません。</div></details>
 </section>
 <section aria-label="後援の受付" class="reception-service-panel" hidden="" id="caravanSection" role="region">
 <h2>✉️ 旅人便の後援</h2>
 <div aria-live="polite" class="readout" id="caravanStatus">後援の案内を準備中…</div>
 <button class="btn secondary" id="caravanBuy" type="button">旅人便を後援する</button>
-<div class="readout mt" id="caravanHistory">まだ旅人便の記録はありません。</div>
+<details class="kaze-guild-disclosure kaze-guild-history"><summary>旅人便の記録を見る</summary><div class="readout mt" id="caravanHistory">まだ旅人便の記録はありません。</div></details>
 </section>
 <section aria-label="訓練の受付" class="reception-service-panel" hidden="" id="mentorSection" role="region">
 <h2>📖 ギルドの同行訓練</h2>
@@ -1696,7 +1810,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 </section>
 </div>
 </section>
-<section class="panel" data-ui-order="7" data-ui-page="guild"><h2>🔨 町の鍛冶屋</h2><div class="portrait-service portrait-service--small">
+<section class="panel" data-ui-order="7" data-ui-page="guild" data-guild-room="supplies" data-guild-subplace="forge"><h2>🔨 町の鍛冶屋</h2><div class="portrait-service portrait-service--small">
 <div class="portrait-frame"><img alt="鍛冶屋の店員の肖像画" data-portrait-id="013" height="120" width="120"/></div>
 <div class="portrait-service-copy"><p class="portrait-kicker">鍛冶屋</p><h3>鉄と火の仕事場</h3><p>「いい道具は旅の味方だ。素材を持ってきたなら、見せてみな。」</p></div>
 </div><div class="notice good" id="materialsDisplay">素材を読み込み中…</div>
@@ -1713,38 +1827,38 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 </div>
 </div></section>
 
-<section class="panel wide town-events-panel" id="townEventsSection" data-ui-page="guild" data-ui-order="7.7" aria-label="町で起きている出来事">
+<section class="panel wide town-events-panel" id="townEventsSection" data-ui-page="guild" data-ui-order="7.7" aria-label="町で起きている出来事" data-guild-room="quests">
  <div class="sectionRow tight"><h2 style="margin:0">🍃 町で起きている出来事</h2><span class="pill" id="townEventCount">様子を確認中</span></div>
  <p class="town-event-lead">主人公が動かなくても、町や仲間の時間は進み続けます。参加しても、仲間に任せても構いません。</p>
  <div id="townEventActive" aria-live="polite"></div>
  <p class="small" id="townEventFeedback" aria-live="polite"></p>
  <details class="town-event-log"><summary>これまでの出来事を振り返る</summary><div id="townEventHistory"></div></details>
 </section>
-<section class="panel" data-ui-order="8" data-ui-page="guild" id="guildSection"><div class="sectionRow"><h2 style="margin:0">📜 ギルドの動的依頼</h2><span class="pill" id="questCount">依頼確認中</span></div>
+<section class="panel" data-ui-order="8" data-ui-page="guild" id="guildSection" data-guild-room="quests"><div class="sectionRow"><h2 style="margin:0">📜 ギルドの動的依頼</h2><span class="pill" id="questCount">依頼確認中</span></div>
 <div aria-live="polite" id="questActive"></div><div class="sectionRow mt"><h3 style="margin:0">新着依頼</h3><span class="small muted">町の活動＋毎ゲーム内日の農場・料理注文</span></div><p class="help tight">農作物と料理の注文はゲーム内の1日ごとに更新。受注済みは期限なし。納品・調査を含め、同時に受注できる依頼は1件です。</p>
 <div aria-live="polite" class="questList" id="questOffers"></div><h3 class="mt">完了した依頼</h3><div class="help" id="questHistory">まだありません。</div>
 </section>
-<section class="panel wide" data-ui-order="9" data-ui-page="guild" id="personalSection">
+<section class="panel wide" data-ui-order="9" data-ui-page="guild" id="personalSection" data-guild-room="quests">
 <div class="sectionRow"><h2 style="margin:0">✉️ 冒険者からの個人的な依頼</h2><span class="pill" id="personalCount">達成 0 / 8</span></div>
 <div aria-label="冒険者ごとの個人物語" class="story-people-list" id="storyPeople"></div>
 <div aria-hidden="true" class="story-legacy-source">
 <div id="personalActive"></div><div id="personalOffers"></div><div id="personalHistory"></div>
 </div>
 </section>
-<section aria-hidden="true" class="panel wide story-legacy-source" data-ui-order="10" data-ui-page="guild" id="chapterSection">
+<section aria-hidden="true" class="panel wide story-legacy-source" data-ui-order="10" data-ui-page="guild" id="chapterSection" data-guild-room="quests">
 <span id="chapterCount">0 / 8</span>
 <div id="chapterActive"></div><div id="chapterOffers"></div><div id="chapterHistory"></div>
 </section>
-<section class="panel" data-ui-order="11" data-ui-page="guild" id="marketSection"><h2>🛒 風待ちの市場</h2><div class="portrait-service portrait-service--small">
+<section class="panel" data-ui-order="11" data-ui-page="guild" id="marketSection" data-guild-room="supplies" data-guild-subplace="market"><h2>🛒 風待ちの市場</h2><div class="portrait-service portrait-service--small">
 <div class="portrait-frame"><img alt="市場の店員猫の肖像画" data-portrait-id="012" height="120" width="120"/></div>
 <div class="portrait-service-copy"><p class="portrait-kicker">町の市場</p><h3>森と鉱山の品が集まるお店</h3><p>「今日の品物はこれだよ。誰が持ち帰ったものかも、聞いていく？」</p></div>
 </div>
 <div aria-live="polite" class="notice good" id="marketWallet">価格を計算中…</div>
 <div class="inlineControls mt"><label class="label" for="marketQty">売買する個数</label><select aria-label="売買個数" id="marketQty"><option value="1">1個</option><option value="5">5個</option><option value="10">10個</option></select></div>
 <div aria-live="polite" class="marketGoods" id="marketGoods"></div>
-<div class="readout mt" id="marketHistory">まだ市場の取引記録がありません。</div>
+<details class="kaze-guild-disclosure kaze-guild-history"><summary>最近の市場取引を見る</summary><div class="readout mt" id="marketHistory">まだ市場の取引記録がありません。</div></details>
 </section>
-<section class="panel wide farm-panel" data-ui-order="11.2" data-ui-page="guild" id="farmSection" aria-labelledby="farmTitle">
+<section class="panel wide farm-panel" data-ui-order="11.2" data-ui-page="guild" id="farmSection" aria-labelledby="farmTitle" data-guild-room="farm">
  <div class="farm-head"><div><p class="farm-kicker">GUILD / FARM LIFE</p><h2 id="farmTitle">🌱 風待ちの小さな農場</h2><p>種を買って植えたら、あとは冒険へ。作物はゲーム内の時間で育ち、成熟後も枯れません。</p></div><span id="farmPlotsCounter" class="farm-pill">2 / 10区画</span></div>
  <div class="farm-status" id="farmStatus" aria-live="polite">農場を準備中…</div>
  <div class="farm-plot-grid" id="farmPlotGrid" aria-label="畑の区画"></div>
@@ -1761,14 +1875,14 @@ body.mini-clock-visible .storybook-tabs{top:70px}
  <div class="farm-history"><h3>📒 畑仕事の記録</h3><div id="farmHistory" class="farm-history-list">まだ記録がありません。</div></div>
 </section>
 
-<section class="panel wide kitchen-panel" data-ui-order="11.3" data-ui-page="guild" id="kitchenSection" aria-labelledby="kitchenTitle">
+<section class="panel wide kitchen-panel" data-ui-order="11.3" data-ui-page="guild" id="kitchenSection" aria-labelledby="kitchenTitle" data-guild-room="farm">
  <div class="kitchen-head"><div><p class="kitchen-kicker">GUILD / COOKING HOUSE</p><h2 id="kitchenTitle">🍳 風待ちの調理場</h2><p class="kitchen-desc">農場で育てた作物を料理に。レシピはゴールドで永久解放。完成した料理は売却するか、食べて次の冒険に備えられます。</p></div><span class="farm-pill" id="kitchenCounter">レシピ 0 / 6</span></div>
  <div id="kitchenStatus" class="kitchen-status" role="status" aria-live="polite">調理場を準備中…</div>
  <h3 class="kitchen-section-title">📖 レシピ帳</h3><div id="kitchenRecipes" class="kitchen-recipes"></div>
  <h3 class="kitchen-section-title">🧺 料理の保管箱</h3><p class="kitchen-desc" style="margin-bottom:8px">完成した料理は傷みません。食べると次の冒険1回に効果が付きます。連続探索では最初の1戦のみ、三層遠征では遠征終了まで有効です。</p><div class="kitchen-meal-status" id="kitchenMealStatus" aria-live="polite">食事効果なし</div><div id="kitchenPantry" class="kitchen-pantry"></div>
  <h3 class="kitchen-section-title">📜 調理の記録</h3><div id="kitchenHistory" class="kitchen-history">まだ調理の記録はありません。</div>
 </section>
-<section class="panel portrait-inn" data-ui-order="11.5" data-ui-page="guild" id="innPortraitSection">
+<section class="panel portrait-inn" data-ui-order="11.5" data-ui-page="guild" id="innPortraitSection" data-guild-room="supplies" data-guild-subplace="inn">
 <h2>🛏️ 風待ちの宿屋</h2>
 <div class="portrait-service portrait-service--small">
 <div class="portrait-frame"><img alt="宿屋の店員の肖像画" data-portrait-id="011" height="120" width="120"/></div>
@@ -1777,7 +1891,15 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <button class="btn secondary" id="guildInnButton" type="button">宿屋で全快（60G）</button>
 </section>
 <!-- 0.9.24: all four casino games playable; portrait preserved in inline WebP. -->
-<section aria-label="風灯の遊戯館" class="panel wide casino-foyer" data-ui-order="11.6" data-ui-page="guild" id="casinoPortraitSection">
+
+<section class="panel wide kaze-guild-room-footer" data-ui-order="11.65" data-ui-page="guild" id="guildRoomFooter">
+  <p>ほかの施設へ寄りますか？</p>
+  <div class="kaze-guild-footer-actions">
+    <button type="button" id="guildFooterHub">🏘️ ギルド広場へ戻る</button>
+    <button type="button" id="guildFooterTop">↑ この施設の先頭へ</button>
+  </div>
+</section>
+<section aria-label="風灯の遊戯館" class="panel wide casino-foyer" data-ui-order="11.6" data-ui-page="guild" id="casinoPortraitSection" data-guild-room="games">
 <h2>🎰 風灯の遊戯館</h2>
 <div class="feature-book portrait-service portrait-service--casino">
 <div class="portrait-frame"><img alt="遊戯館のうさぎディーラーの肖像画。トランプを手にしたうさぎ" data-portrait-id="014" height="145" width="145"/></div>
@@ -1997,7 +2119,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <details class="guide-chapter" data-guide-name="ギルド 市場 買い物 売却 宿屋 野営 救護 回復薬 補給 鍛冶 受付 旅人便 復興" id="guide-guild">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🏘️</span><span>ギルド・市場・回復</span></summary>
 <div class="guide-chapter-body"><h4>冒険から帰ったら</h4>
-<p>ギルドには受付ふくろう、動的依頼、市場、鍛冶屋、宿屋、農場、調理場、遊戯館などがあります。必要な窓口だけ使えば十分です。</p>
+<p>ギルドは「受付」「依頼」「旅支度」「農場・料理」「遊戯館」の5施設に分かれています。スマホではギルド広場から施設を選び、PCでは左側のメニューから選びます。受付ふくろうや市場、鍛冶屋、宿屋、農場、調理場、遊戯館は、それぞれの施設内で利用できます。</p>
 <h4>HP・MPを回復する</h4>
 <p>無料の<strong>野営</strong>はHP・MPを50%まで回復します（再利用には3勝が必要）。<strong>宿屋</strong>は60Gで全員を全快させ、野営の待ち時間も解消します。所持金が不足したときは無料救護も利用できます。</p>
 <h4>市場と装備の用意</h4>
@@ -2008,7 +2130,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <details class="guide-chapter" data-guide-name="農場 畑 種 作物 収穫 栽培 料理 レシピ 調理 食事 ドロップ 金策 納品 区画 図鑑" id="guide-farm">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🌱</span><span>農場・料理・食事効果</span></summary>
 <div class="guide-chapter-body"><h4>種を植えて育てる</h4>
-<p>「ギルド → 風待ちの小さな農場」で種を購入し、空いた畑に植えます。作物はゲーム内時間で成長し、<strong>成熟後は放置しても枯れません。</strong>水やりや収穫期限も不要です。最初は2区画、Gで最大10区画まで開放できます。</p>
+<p>「ギルド → 農場・料理 → 風待ちの小さな農場」で種を購入し、空いた畑に植えます。作物はゲーム内時間で成長し、<strong>成熟後は放置しても枯れません。</strong>水やりや収穫期限も不要です。最初は2区画、Gで最大10区画まで開放できます。</p>
 <p>一括収穫、一括植え付け、前回と同じ作物への植え直しができます。種が不足していても収穫自体は可能で、種の自動購入は行われません。収穫できる畑があると「ギルド」タブに小さな印が出ます。</p>
 <h4>料理を作る・食べる・売る</h4>
 <p>「ギルド → 風待ちの調理場」でレシピをGで解放し、作物と調理費を使って料理します。「1皿」「5皿」「作れるだけ」の一括調理もできます。料理は腐らず、売却・ギルド納品・食事に使えます。</p>
@@ -2019,14 +2141,14 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <details class="guide-chapter" data-guide-name="ギルド 動的依頼 納品 料理 農作物 訓練 個人依頼 第二章 受注 達成 報告" id="guide-quests">
 <summary><span aria-hidden="true" class="guide-chapter-icon">📜</span><span>ギルド依頼・個人物語</span></summary>
 <div class="guide-chapter-body"><h4>ギルドの依頼</h4>
-<p>「ギルド → ギルドの動的依頼」で、指定の探索・素材・農作物・料理の納品などを受けられます。<strong>通常の依頼は同時に1件まで</strong>です。作物と料理の納品依頼も同じ枠を使います。受注した依頼は日付が変わっても保持されます。</p>
+<p>「ギルド → 依頼 → ギルドの動的依頼」で、指定の探索・素材・農作物・料理の納品などを受けられます。<strong>通常の依頼は同時に1件まで</strong>です。作物と料理の納品依頼も同じ枠を使います。受注した依頼は日付が変わっても保持されます。</p>
 <p>納品には指定数の在庫が必要です。達成時に素材や料理が減り、報酬のGや経験値を受け取ります。畑で育てた作物を料理にするか、売るか、依頼に納めるかは自由です。</p>
 <h4>8人の個人依頼</h4>
 <p>「ギルド → 冒険者からの個人的な依頼」では、各仲間の第一章・第二章や達成済みの記録を確認できます。本人を同行させて特定地域で勝利することや、会話で方針を選ぶことが必要になる場合があります。</p>
 <p>個人依頼は通常のギルド依頼とは別枠です。進行と選択の結果はその人物の記憶に残り、風信帳で後日談が届くことがあります。</p></div></details>
 <details class="guide-chapter" data-guide-name="世界イベント 市場 出来事 荷馬車 鉱山 青い光 薬草不足 支援 NPC 生活" id="guide-town">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🍃</span><span>世界イベント・町の変化</span></summary>
-<div class="guide-chapter-body"><p>「ギルド → 町で起きている出来事」では、主人公が参加しなくても、NPCの活動やゲーム内時間に応じて事件が進みます。荷馬車の遅れや鉱山の調査など、ある事件の結末が次の出来事につながることもあります。</p>
+<div class="guide-chapter-body"><p>「ギルド → 依頼 → 町で起きている出来事」では、主人公が参加しなくても、NPCの活動やゲーム内時間に応じて事件が進みます。荷馬車の遅れや鉱山の調査など、ある事件の結末が次の出来事につながることもあります。</p>
 <p>事件が起きたら、現地で戦闘に勝つ・素材を届ける・仲間を見守るなどから選べます。<strong>参加は任意</strong>です。結果によって市場の在庫や仲間の活動記録が変化します。</p>
 <p>世界イベントは通常のギルド依頼とは別です。出来事の経過と結末はギルドで確認でき、関連する仲間から便りが届くこともあります。</p></div></details>
 <details class="guide-chapter" data-guide-name="ログインボーナス 風待ちの贈りもの 毎日 7日 5時 定期補給 受取" id="guide-login">
@@ -2044,7 +2166,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 <p>「新しく始める」は現在の進行を初期化します。実行前にバックアップを確認してください。スクロール時のミニ時計や風信帳の新着通知は「設定」で切り替えられます。</p></div></details>
 <details class="guide-chapter" data-guide-name="ギルド 遊戯館 スロット レース 風札 二十一 骰子 ゲーム コイン 賭け金 G" id="guide-casino">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🎰</span><span>風灯の遊戯館</span></summary>
-<div class="guide-chapter-body"><p>「ギルド → 風灯の遊戯館」では、4種類の遊びを楽しめます。使うのは<strong>ゲーム内Gだけ</strong>で、実際のお金の支払いや換金はありません。戦闘中・遠征中は利用できません。</p>
+<div class="guide-chapter-body"><p>「ギルド → 遊戯館」では、4種類の遊びを楽しめます。使うのは<strong>ゲーム内Gだけ</strong>で、実際のお金の支払いや換金はありません。戦闘中・遠征中は利用できません。</p>
 <p>賭け金は勝負の前に支払い、当選時には倍率に応じた金額を受け取ります。<strong>倍率は元の賭け金も含む総受取額</strong>です。100Gを賭けて2倍なら200Gを受け取り、純利益は100Gです。</p>
 <p>各遊びの詳しいルールは、下の折りたたみ項目で確認できます。勝負途中の状態は保存されるため、閉じても再開できます。</p></div></details>
 <details class="guide-chapter" data-guide-name="スロット 絵柄 倍率 リール" id="guide-slot">
@@ -6759,7 +6881,7 @@ footer{font-size:13px;line-height:1.6}
     adventure:[['🧭 行き先','scroll','#destinationPanel'],['❤ 回復','scroll','[data-ui-page="adventure"][data-ui-order="5"]'],['🗺 地図','scroll','#adventureMapArtSection']],
     hero:[['✦ 成長','scroll','[data-ui-page="hero"][data-ui-order="1"]'],['🛡 装備','scroll','[data-ui-page="hero"][data-ui-order="6"]'],['📘 スキル','scroll','[data-ui-page="hero"][data-ui-order="4"]']],
     party:[['✉ 風信帳','scroll','#windLetterPanel'],['♧ 人物録','scroll','#worldPeople'],['⛺ 共同遠征','scroll','#worldExpeditions'],['🤝 関係','scroll','#worldRelations']],
-    guild:[['⌂ 受付','scroll','#guildReception'],['📜 依頼','scroll','[data-ui-page="guild"][data-ui-order="8"]'],['🎰 遊戯館','guide','casino'],['🛏 宿屋','scroll','#innPortraitSection']],
+    guild:[['🏘 広場','guild','hub'],['📜 依頼','guild','quests'],['🌱 農場・料理','guild','farm']],
     records:[['🧾 調査記録','scroll','#fieldSurveyHistory'],['📚 装備図鑑','scroll','#gearJournalSection'],['📖 手引き','guide','start'],['⚙️ 設定','scroll','#gameSettingsSection']]
   };
   function activePage(){return tabs.querySelector('.book-tab.is-selected')?.dataset.uiGo||'adventure';}
@@ -6775,6 +6897,7 @@ footer{font-size:13px;line-height:1.6}
       b.innerHTML=sub?`<span>${label}</span><span class="mini">${sub}</span>`:`<span>${label}</span>`;
       b.addEventListener('click',()=>{
         if(type==='scroll') smoothTo(document.querySelector(target));
+        else if(type==='guild') window.KazeGuildUI?.open(target);
         else if(type==='jumpPage'){
           const tab=tabs.querySelector(`[data-ui-go="${target}"]`);
           if(tab) tab.click();
@@ -8298,7 +8421,7 @@ repairLegacyJointReports();sync();setInterval(sync,12000);
  el('tutorialFreedom').addEventListener('click',e=>{
   const key=e.target.closest('[data-tutorial-freedom]')?.dataset.tutorialFreedom;
   if(!key)return;
-  const destinations={adventure:['adventure','#destinationPanel'],guild:['guild','#guildSection'],party:['party','#windLetterPanel']};
+  const destinations={adventure:['adventure','#destinationPanel'],guild:['guild','#guildRoomHeader'],party:['party','#windLetterPanel']};
   const route=destinations[key];if(route)goPage(...route);
  });
  el('tutorialConfirm').addEventListener('click',()=>{
@@ -9932,6 +10055,125 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  function sync(){if(last!==signature())render();}
  window.KazeCollection={sync,inspect:()=>JSON.parse(JSON.stringify(bridge.read().farm.collection))};
  render();setInterval(sync,1400);
+})();
+</script>
+
+<script id="guild-five-venues-controller-v093">
+(()=>{
+ 'use strict';
+ const root=document.getElementById('gamePanels'),tabs=document.getElementById('bookTabs');
+ const hub=document.getElementById('guildHub'),header=document.getElementById('guildRoomHeader');
+ if(!root||!tabs||!hub||!header)return;
+ const rooms=[...root.querySelectorAll(':scope > .panel[data-guild-room]')];
+ const names={
+  reception:['🏠 受付','補給・訓練・贈りものを確認できます。','RECEPTION'],
+  quests:['📜 依頼','ギルドの仕事・個人依頼・町の出来事を確認できます。','QUESTS'],
+  supplies:['⚒️ 旅支度','鍛冶屋・市場・宿屋を切り替えて利用できます。','SUPPLIES'],
+  farm:['🌱 農場・料理','種屋・畑・調理場を利用できます。','FARM & KITCHEN'],
+  games:['🎲 遊戯館','町の4つの遊びでひと休みできます。','GAMES']
+ };
+ const key='kazemachi.guild.lastRoom.v093';
+ let selected=null,mode='hub',hadTutorialPriority=false;
+ try{const v=sessionStorage.getItem(key);if(names[v]){selected=v;mode='room';}}catch{}
+ const currentPage=()=>tabs.querySelector('.book-tab.is-selected')?.dataset.uiGo||'adventure';
+ const desktop=()=>window.matchMedia('(min-width:1000px)').matches;
+ const isTutorialGuild=()=>{
+  try{const t=window.KazeWindBridge?.read()?.tutorial;return t?.status==='active'&&(t.step===0||t.step===4);}catch{return false;}
+ };
+ function position(target){
+  if(currentPage()!=='guild')return;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(currentPage()!=='guild')return;
+   const e=target==='hub'?hub:header;
+   if(!e)return;
+   e.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  }));
+ }
+ function render(){
+  if(hadTutorialPriority){try{if(window.KazeWindBridge?.read()?.tutorial?.status!=='active'){hadTutorialPriority=false;const v=sessionStorage.getItem(key);if(!names[v]){selected=null;mode='hub';}}}catch{}}
+  const guildActive=currentPage()==='guild';
+  root.classList.toggle('kaze-guild-active',guildActive);document.body.classList.toggle('kaze-guild-viewing',guildActive);
+  const room=selected||'reception';
+  root.classList.toggle('kaze-guild-hub-mode',mode==='hub'&&!desktop());
+  root.classList.toggle('kaze-guild-room-mode',mode!=='hub'||desktop());
+  root.style.setProperty('--kaze-guild-rows',String(1+rooms.filter(e=>e.dataset.guildRoom===room&&!e.classList.contains('story-legacy-source')&&(room!=='supplies'||!e.dataset.guildSubplace||e.dataset.guildSubplace===(window.KazeGuildSubnav?.get?.()||'forge'))).length));
+  rooms.forEach(e=>e.classList.toggle('kaze-guild-shown',e.dataset.guildRoom===room));
+  for(const b of hub.querySelectorAll('[data-guild-select]')){
+   const active=b.dataset.guildSelect===room;
+   b.classList.toggle('is-selected',active);
+   if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
+  }
+  document.getElementById('guildRoomTitle').textContent=names[room][0];
+  document.getElementById('guildRoomSubtitle').textContent=names[room][1];
+  document.getElementById('guildRoomKicker').textContent=names[room][2];
+  header.setAttribute('aria-label',names[room][0]);
+  window.KazeGuildSubnav?.sync(room,guildActive);
+ }
+ function open(room,scroll=true,remember=true){
+  if(room==='hub'&&!desktop())mode='hub';
+  else if(names[room]){selected=room;mode='room';if(remember){try{sessionStorage.setItem(key,room)}catch{}}}
+  else if(room==='hub'){mode='room';}
+  render();
+  if(scroll)position(mode==='hub'&&!desktop()?'hub':'room');
+ }
+ hub.addEventListener('click',e=>{const b=e.target.closest('[data-guild-select]');if(b)open(b.dataset.guildSelect);});
+ document.getElementById('guildReturnHub').addEventListener('click',()=>open('hub'));
+ document.getElementById('guildFooterHub').addEventListener('click',()=>open('hub'));
+ document.getElementById('guildFooterTop').addEventListener('click',()=>position('room'));
+ // Main nav retains the last room, except tutorial returns always open the reception desk.
+ tabs.addEventListener('click',e=>{
+  if(!e.target.closest('[data-ui-go="guild"]'))return;
+  if(isTutorialGuild()){hadTutorialPriority=true;open('reception',false,false);}else render();
+ });
+ document.addEventListener('click',e=>{if(e.target.closest('[data-ui-jump="guild"]'))queueMicrotask(()=>{if(isTutorialGuild()){hadTutorialPriority=true;open('reception',false,false);}else render();});});
+ document.addEventListener('click',e=>{if(e.target.closest('[data-tutorial-freedom="guild"]'))queueMicrotask(()=>open('quests',false));});
+ // Other scripts can route directly to a specific guild facility without relying on hidden scrolling targets.
+ window.KazeGuildUI={open,inspect:()=>({selected,mode,active:currentPage()==='guild'})};
+ window.addEventListener('resize',render);
+ const observer=new MutationObserver(()=>{if(currentPage()==='guild')render();});
+ observer.observe(tabs,{attributes:true,attributeFilter:['class'],subtree:true});
+ if(isTutorialGuild()){hadTutorialPriority=true;open('reception',false,false);}else render();
+})();
+</script>
+
+<script id="guild-venue-organization-controller-v094">
+(()=>{
+ 'use strict';
+ const root=document.getElementById('gamePanels');
+ const nav=document.getElementById('guildSuppliesNav');
+ if(!root||!nav||!window.KazeGuildUI)return;
+ const panels=[...root.querySelectorAll(':scope > [data-guild-room="supplies"][data-guild-subplace]')];
+ if(panels.length!==3)return;
+ const names=['forge','market','inn'],key='kazemachi.guild.supplies.last.v094';
+ let selected='forge';
+ try{const stored=sessionStorage.getItem(key);if(names.includes(stored))selected=stored;}catch{}
+ function sync(room,guildActive){
+  nav.hidden=room!=='supplies'||!guildActive;
+  panels.forEach(panel=>panel.classList.toggle('kaze-guild-subshown',panel.dataset.guildSubplace===selected));
+  nav.querySelectorAll('[data-guild-subplace]').forEach(button=>{
+   const active=button.dataset.guildSubplace===selected;
+   button.setAttribute('aria-pressed',String(active));
+  });
+ }
+ function open(place,scroll=true){
+  if(!names.includes(place))return;
+  selected=place;
+  try{sessionStorage.setItem(key,selected);}catch{}
+  window.KazeGuildUI.open('supplies',false);
+  sync('supplies',true);
+  // Correct desktop grid span after subview selection; existing room UI owns main page navigation.
+  root.style.setProperty('--kaze-guild-rows','2');
+  if(scroll){requestAnimationFrame(()=>{if(!root.classList.contains('kaze-guild-active'))return;
+   nav.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
+  });}
+ }
+ nav.addEventListener('click',event=>{
+  const button=event.target.closest('[data-guild-subplace]');
+  if(button)open(button.dataset.guildSubplace);
+ });
+ window.KazeGuildSubnav={sync,open,get:()=>selected};
+ const room=window.KazeGuildUI.inspect();
+ sync(room.selected||'reception',room.active);
 })();
 </script>
 </body></html>

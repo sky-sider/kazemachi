@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.94</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜0.9.96</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -1605,6 +1605,34 @@ body.kaze-guild-viewing #quickActions{display:none!important}
  .kaze-guild-disclosure>summary small{display:block;margin-left:0;font-size:12px}
 }
 </style>
+<style>
+/* v0.9.96: PC visitors can return to the adventure without scrolling back to the title tabs. */
+#guildBackAdventurePC{display:none!important}
+@media(min-width:1000px){#guildBackAdventurePC{display:inline-flex!important;align-items:center;justify-content:center;margin:0 0 10px 10px;}}
+</style>
+<style id="gear-rarity-left-band-v099">
+/* v0.9.99: quiet rarity markers that preserve every v0.9.96 card background and text color. */
+.rarity-コモン{--gear-rarity-band:#91978e}
+.rarity-アンコモン{--gear-rarity-band:#719c75}
+.rarity-レア{--gear-rarity-band:#698ab4}
+.rarity-エピック{--gear-rarity-band:#a187bc}
+.rarity-レジェンダリー{--gear-rarity-band:#cba05f}
+/* The thick rarity stripe is shared. Text indentation is not: the legacy
+   six-slot cards reserve a separate area for a positioned gear illustration. */
+.equipmentSlots .equip.has-rarity,
+#gearWorkspace .gear-list-row.has-rarity,
+.gear-detail-head.has-rarity{
+  border-left:10px solid var(--gear-rarity-band,#91978e);
+}
+/* Keep the illustration and the copy in distinct horizontal areas. */
+.equipmentSlots .equip.has-rarity{
+  padding-left:56px;
+}
+/* Extra breathing room belongs ONLY to the detail header, not to the slots. */
+.gear-detail-head.has-rarity{
+  padding-left:12px;
+}
+</style>
 </head><body><main>
 <header class="story-cover">
 <div aria-hidden="true" class="cover-art"><span class="cover-sun"></span><span class="cover-hill cover-hill-back"></span><span class="cover-hill cover-hill-front"></span><span class="cover-tree cover-tree-a"></span><span class="cover-tree cover-tree-b"></span><span class="cover-tree cover-tree-c"></span><span class="cover-house"><i></i></span><span class="cover-path"></span></div>
@@ -1760,6 +1788,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </section>
 <section class="panel wide kaze-guild-room-heading" data-ui-order="6.7" data-ui-page="guild" id="guildRoomHeader" aria-live="polite">
   <button type="button" id="guildReturnHub" class="kaze-guild-back">‹ ギルド広場へ戻る</button>
+<button class="kaze-guild-back" id="guildBackAdventurePC" type="button" title="冒険の準備へ戻る">⚔ 冒険に戻る</button>
   <p class="kaze-guild-kicker">GUILD / <span id="guildRoomKicker">RECEPTION</span></p>
   <h2 id="guildRoomTitle">🏠 受付</h2>
   <p id="guildRoomSubtitle">補給・訓練・贈りものを確認できます。</p>
@@ -5410,7 +5439,7 @@ function gearStatLine(item){
 function renderGear(){
  const stats=equippedStats();$('#gearStats').textContent=`装備ボーナス（追加特性を含む）：攻撃 +${stats.atk} / 防御 +${stats.def} / HP +${stats.hp} / MP +${stats.mp} / 会心率 +${(stats.crit*100).toFixed(1)}%`;
  const used=new Set(Object.values(save.equipment).filter(Boolean));
- $('#equipped').innerHTML=Object.keys(SLOTS).map(slot=>{const item=save.gear.find(g=>g.id===save.equipment[slot]);return `<div class="equip"><span class="label">${SLOTS[slot]}</span><div class="equipName ${item?'rar-'+item.rarity:''}">${item?escape(item.name)+` +${item.enhance||0}`+(gearTraitInfo(item)?' · ✧'+escape(gearTraitInfo(item).name):''):'未装備'}</div>${item?`<div class="gear-equip-actions"><button class="actionbtn" data-gear-equipped="${escape(item.id)}" type="button">詳細</button><button class="actionbtn" data-unequip="${slot}" ${isBusy()?'disabled':''}>外す</button></div>`:''}</div>`;}).join('');
+ $('#equipped').innerHTML=Object.keys(SLOTS).map(slot=>{const item=save.gear.find(g=>g.id===save.equipment[slot]);return `<div class="equip ${item?`has-rarity rarity-${item.rarity}`:''}"><span class="label">${SLOTS[slot]}</span><div class="equipName ${item?'rar-'+item.rarity:''}">${item?escape(item.name)+` +${item.enhance||0}`+(gearTraitInfo(item)?' · ✧'+escape(gearTraitInfo(item).name):''):'未装備'}</div>${item?`<div class="gear-equip-actions"><button class="actionbtn" data-gear-equipped="${escape(item.id)}" type="button">詳細</button><button class="actionbtn" data-unequip="${slot}" ${isBusy()?'disabled':''}>外す</button></div>`:''}</div>`;}).join('');
  $('#gearCount').textContent=`${save.gear.length} / ${MAX_ITEMS}`;renderGearBatchSummary();
  $('#pendingLoot').innerHTML=save.pendingGear.length?`<div class="notice"><strong>未受取装備 ${save.pendingGear.length}個</strong><p class="small" style="margin:5px 0">${save.pendingGear.map(x=>escape(x.rarity+'・'+x.name+(gearTraitInfo(x)?' ✧'+gearTraitInfo(x).name:''))).join(' / ')}</p><button class="actionbtn" id="claimLoot" ${save.gear.length>=MAX_ITEMS?'disabled':''}>空き枠へ受け取る</button></div>`:'';
  const q=($('#gearSearch').value||'').trim().toLocaleLowerCase('ja'),slot=$('#gearSlot').value,rarity=$('#gearRarity').value,state=$('#gearState').value,sort=$('#gearSort').value;
@@ -5443,7 +5472,7 @@ function renderGear(){
   const current=used.has(item.id),allowed=isAllowed(item),selected=item.id===gearView.selectedId;
   const bits=[SLOTS[item.slot]==='装飾品①'?'装飾品':SLOTS[item.slot],item.rarity];if(gearTraitInfo(item))bits.push('✧'+gearTraitInfo(item).name);
   const flags=[current?'<span class="gear-row-tag">装備中</span>':'',item.protected?'<span class="gear-row-tag">🔒 保護</span>':'',!allowed?'<span class="gear-row-tag">職業制限</span>':''].join('');
-  return `<button type="button" class="gear-list-row ${selected?'is-selected':''}" data-gear-select="${escape(item.id)}" aria-pressed="${selected?'true':'false'}"><span class="gear-row-top"><strong class="rar-${item.rarity}">${escape(item.name)} <span class="upgradeLevel">+${item.enhance||0}</span>${gearTraitInfo(item)?` <span class="gear-trait-mark" aria-label="追加特性あり">✧</span>`:''}</strong><span class="gear-row-chevron" aria-hidden="true">›</span></span><span class="gear-row-meta">${escape(bits.join(' · '))}</span><span class="gear-row-stats">${escape(gearStatLine(item))}</span>${flags?`<span class="gear-row-tags">${flags}</span>`:''}</button>`;
+  return `<button type="button" class="gear-list-row has-rarity rarity-${item.rarity} ${selected?'is-selected':''}" data-gear-select="${escape(item.id)}" aria-pressed="${selected?'true':'false'}"><span class="gear-row-top"><strong class="rar-${item.rarity}">${escape(item.name)} <span class="upgradeLevel">+${item.enhance||0}</span>${gearTraitInfo(item)?` <span class="gear-trait-mark" aria-label="追加特性あり">✧</span>`:''}</strong><span class="gear-row-chevron" aria-hidden="true">›</span></span><span class="gear-row-meta">${escape(bits.join(' · '))}</span><span class="gear-row-stats">${escape(gearStatLine(item))}</span>${flags?`<span class="gear-row-tags">${flags}</span>`:''}</button>`;
  }).join('')||'<div class="gear-empty"><strong>該当する装備がありません</strong><p>検索語や絞り込み条件を変更してください。</p></div>';
  list.scrollTop=previousScroll;
  const i=save.gear.find(g=>g.id===gearView.selectedId),detailPane=$('#gearDetail');
@@ -5454,7 +5483,7 @@ function renderGear(){
  const upgradeDiff=canUpgrade?Object.entries(nextStats).filter(([k,v])=>k!=='crit'&&v!==curStats[k]).map(([k,v])=>`${statLabels[k]||k} +${nfmt(v-(curStats[k]||0))}`).join(' / '):'';
  const equipButtons=i.slot==='charm'?`<button class="actionbtn" data-equip="${escape(i.id)}" data-slot="charm" ${(!allowed||isBusy()||save.equipment.charm===i.id)?'disabled':''}>装飾①に装備</button><button class="actionbtn" data-equip="${escape(i.id)}" data-slot="charm2" ${(!allowed||isBusy()||save.equipment.charm2===i.id)?'disabled':''}>装飾②に装備</button>`:`<button class="actionbtn" data-equip="${escape(i.id)}" ${(!allowed||eq||isBusy())?'disabled':''}>${eq?'装備中':allowed?'この装備に変更':'職業制限により装備不可'}</button>`;
  const saleValue=gearSaleValue(i);
- detailPane.innerHTML=`<div class="gear-detail-head"><span class="gear-detail-kicker">SELECTED EQUIPMENT · ${escape(SLOTS[i.slot]==='装飾品①'?'装飾品':SLOTS[i.slot])}</span><h4 class="rar-${i.rarity}">${escape(i.name)} <span class="upgradeLevel">+${i.enhance||0}</span></h4><div class="gear-detail-badges"><span>${escape(i.rarity)}</span>${eq?'<span>装備中</span>':''}${i.protected?'<span>🔒 保護中</span>':''}${!allowed?'<span>現在の職業では使えません</span>':''}</div></div>
+ detailPane.innerHTML=`<div class="gear-detail-head has-rarity rarity-${i.rarity}"><span class="gear-detail-kicker">SELECTED EQUIPMENT · ${escape(SLOTS[i.slot]==='装飾品①'?'装飾品':SLOTS[i.slot])}</span><h4 class="rar-${i.rarity}">${escape(i.name)} <span class="upgradeLevel">+${i.enhance||0}</span></h4><div class="gear-detail-badges"><span>${escape(i.rarity)}</span>${eq?'<span>装備中</span>':''}${i.protected?'<span>🔒 保護中</span>':''}${!allowed?'<span>現在の職業では使えません</span>':''}</div></div>
  <div class="gear-detail-section"><strong>この装備の性能</strong><p class="gear-detail-stats">${escape(gearStatLine(i))}</p>${special?`<p class="gear-special">✧ ${escape(special[1])}</p>`:''}${gearTraitInfo(i)?`<p class="gear-special">✧ 追加特性「${escape(gearTraitInfo(i).name)}」：${escape(gearTraitInfo(i).description)}（強化後の装備値に適用）</p>`:''}${i.job?`<p class="gear-detail-muted">対応職業：${escape(i.job.split('/').map(k=>CombatEngine.JOBS[k]?.name||k).join('・'))}</p>`:''}</div>
  ${gearComparisonMarkup(i,allowed)}
  <div class="gear-detail-section"><strong>装備・強化・整理</strong><div class="gear-detail-actions">${equipButtons}<button class="actionbtn" data-enhance="${escape(i.id)}" ${(!upgradeAfford||isBusy())?'disabled':''}>${canUpgrade?`強化：${escape(fee.material)}×${fee.qty} / ${nfmt(fee.gold)}G`:'強化上限 +5'}</button><button class="actionbtn" data-protect="${escape(i.id)}" ${isBusy()?'disabled':''}>${i.protected?'🔓 保護解除':'🔒 保護する'}</button>${!eq&&!i.id.startsWith('starter')?`<button class="actionbtn danger" data-sell="${escape(i.id)}" ${(isBusy()||i.protected)?'disabled':''}>売却（${nfmt(saleValue)}G）</button>`:''}</div>${canUpgrade?`<p class="gear-detail-muted">次の強化：${escape(upgradeDiff||'丸めにより、この段階の表示数値は変化しません')}</p>`:''}</div>`;
@@ -6878,9 +6907,9 @@ footer{font-size:13px;line-height:1.6}
   const quick=document.getElementById('quickActions');
   if(!tabs||!quick)return;
   const byPage={
-    adventure:[['🧭 行き先','scroll','#destinationPanel'],['❤ 回復','scroll','[data-ui-page="adventure"][data-ui-order="5"]'],['🗺 地図','scroll','#adventureMapArtSection']],
-    hero:[['✦ 成長','scroll','[data-ui-page="hero"][data-ui-order="1"]'],['🛡 装備','scroll','[data-ui-page="hero"][data-ui-order="6"]'],['📘 スキル','scroll','[data-ui-page="hero"][data-ui-order="4"]']],
-    party:[['✉ 風信帳','scroll','#windLetterPanel'],['♧ 人物録','scroll','#worldPeople'],['⛺ 共同遠征','scroll','#worldExpeditions'],['🤝 関係','scroll','#worldRelations']],
+    adventure:[['🧭 行き先','scroll','#destinationPanel'],['❤ 回復','scroll','[data-ui-page="adventure"][data-ui-order="5"]'],['🗺 地図','scroll','#adventureMapArtSection'],['🛏 宿屋へ','guildRoute','inn'],['⚒ 鍛冶屋へ','guildRoute','forge']],
+    hero:[['✦ 成長','scroll','[data-ui-page="hero"][data-ui-order="1"]'],['🛡 装備','scroll','[data-ui-page="hero"][data-ui-order="6"]'],['📘 スキル','scroll','[data-ui-page="hero"][data-ui-order="4"]'],['⚒ 鍛冶屋へ','guildRoute','forge'],['🧺 市場へ','guildRoute','market']],
+    party:[['✉ 風信帳','scroll','#windLetterPanel'],['♧ 人物録','scroll','#worldPeople'],['⛺ 共同遠征','scroll','#worldExpeditions'],['🤝 関係','scroll','#worldRelations'],['📜 個人依頼へ','guildRoute','personal']],
     guild:[['🏘 広場','guild','hub'],['📜 依頼','guild','quests'],['🌱 農場・料理','guild','farm']],
     records:[['🧾 調査記録','scroll','#fieldSurveyHistory'],['📚 装備図鑑','scroll','#gearJournalSection'],['📖 手引き','guide','start'],['⚙️ 設定','scroll','#gameSettingsSection']]
   };
@@ -6898,6 +6927,7 @@ footer{font-size:13px;line-height:1.6}
       b.addEventListener('click',()=>{
         if(type==='scroll') smoothTo(document.querySelector(target));
         else if(type==='guild') window.KazeGuildUI?.open(target);
+        else if(type==='guildRoute') window.KazeGuildRoute?.go(target);
         else if(type==='jumpPage'){
           const tab=tabs.querySelector(`[data-ui-go="${target}"]`);
           if(tab) tab.click();
@@ -8326,6 +8356,12 @@ repairLegacyJointReports();sync();setInterval(sync,12000);
   requestAnimationFrame(()=>{if(t.pendingScene&&!$dlg.open)displayScene(t.pendingScene);});
  }
  function goPage(page,selector){
+  // A facility can be hidden behind the new five-venue guild menu.
+  // Navigate through the venue controller before scrolling to the target.
+  if(page==='guild' && window.KazeGuildRoute){
+   window.KazeGuildRoute.go(selector==='#guildReception'?'reception':'quests');
+   return;
+  }
   document.querySelector(`#bookTabs [data-ui-go="${page}"]`)?.click();
   const node=selector?document.querySelector(selector):el('pageTitle');
   if(node)requestAnimationFrame(()=>node.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
@@ -9614,6 +9650,9 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  'use strict';
  const bridge=window.KazeWindBridge,guild=document.getElementById('guildReception');
  if(!bridge||!guild)return;
+ // If this boot began during the first-journey tutorial, its ending guidance takes priority.
+ // Supplies remain claimable at the guild counter, and auto-open normally next launch.
+ const tutorialAtBoot=bridge.read().tutorial?.status==='active';
  const guildBox=document.createElement('div');guildBox.id='loginGiftGuild';
  guildBox.innerHTML='<h3>🎁 風待ちの贈りもの</h3><p>冒険者ギルドの定期補給です。7回受け取ると最初の贈りものに戻ります。連続ログインは不要です。</p><div class="gift-status" aria-live="polite"></div><button type="button" class="gift-open">補給を確認する</button>';
  const intro=guild.querySelector('.feature-book')||guild.firstElementChild;
@@ -9681,7 +9720,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  function sync(){render();if(!overlay.hidden)return;}
  function maybeOpen(){
   const i=bridge.loginGiftInfo();
-  if(nextOpen||!i.canClaim||i.dismissedDay===i.day||bridge.active()||bridge.read().tutorial?.status==='active')return;
+  if(tutorialAtBoot||nextOpen||!i.canClaim||i.dismissedDay===i.day||bridge.active()||bridge.read().tutorial?.status==='active')return;
   nextOpen=true;open();
  }
  // 1st boot: ignore opening tutorial until it concludes, then show once.
@@ -10130,7 +10169,8 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  // Other scripts can route directly to a specific guild facility without relying on hidden scrolling targets.
  window.KazeGuildUI={open,inspect:()=>({selected,mode,active:currentPage()==='guild'})};
  window.addEventListener('resize',render);
- const observer=new MutationObserver(()=>{if(currentPage()==='guild')render();});
+ // Reset guild-only layout/quick-actions every time the main tab changes, including leaving guild.
+ const observer=new MutationObserver(()=>render());
  observer.observe(tabs,{attributes:true,attributeFilter:['class'],subtree:true});
  if(isTutorialGuild()){hadTutorialPriority=true;open('reception',false,false);}else render();
 })();
@@ -10174,6 +10214,72 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  window.KazeGuildSubnav={sync,open,get:()=>selected};
  const room=window.KazeGuildUI.inspect();
  sync(room.selected||'reception',room.active);
+})();
+</script>
+
+<script id="guild-direct-navigation-v095">
+(()=>{
+ 'use strict';
+ // Route to visible guild facilities, rather than scrolling to panels hidden by the guild hub.
+ const targets=Object.freeze({
+  reception:{room:'reception',selector:'#guildReception'},
+  quests:{room:'quests',selector:'#guildSection'},
+  personal:{room:'quests',selector:'#personalSection'},
+  events:{room:'quests',selector:'#townEventsSection'},
+  forge:{room:'supplies',sub:'forge',selector:'[data-guild-room="supplies"][data-guild-subplace="forge"]'},
+  market:{room:'supplies',sub:'market',selector:'#marketSection'},
+  inn:{room:'supplies',sub:'inn',selector:'#innPortraitSection'},
+  farm:{room:'farm',selector:'#farmSection'},
+  kitchen:{room:'farm',selector:'#kitchenSection'},
+  games:{room:'games',selector:'#casinoPortraitSection'}
+ });
+ let sequence=0;
+ const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const guildTab=()=>document.querySelector('#bookTabs [data-ui-go="guild"]');
+ function go(destination,options={}){
+  const target=targets[destination];
+  if(!target||!window.KazeGuildUI)return false;
+  const tab=guildTab();
+  if(!tab)return false;
+  const id=++sequence;
+  if(!tab.classList.contains('is-selected'))tab.click();
+  if(target.sub && window.KazeGuildSubnav)window.KazeGuildSubnav.open(target.sub,false);
+  else window.KazeGuildUI.open(target.room,false);
+  // Scroll after the tab and both nested menus become visible; never follow an old route.
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(id!==sequence||!tab.classList.contains('is-selected'))return;
+   const element=document.querySelector(target.selector);
+   if(!element)return;
+   const panel=element.closest('[data-guild-room]')||element;
+   if(panel.hidden||getComputedStyle(panel).display==='none')return;
+   element.scrollIntoView({block:'start',behavior:reduced()?'auto':'smooth'});
+  }));
+  return true;
+ }
+ document.addEventListener('click',e=>{
+  const control=e.target.closest('[data-guild-route]');
+  if(!control)return;
+  if(go(control.dataset.guildRoute))e.preventDefault();
+ });
+ window.KazeGuildRoute={go, destinations:Object.keys(targets)};
+})();
+</script>
+
+<script id="guild-first-journey-flow-v096">
+(()=>{
+  'use strict';
+  const back=document.getElementById('guildBackAdventurePC');
+  if(!back)return;
+  back.addEventListener('click',()=>{
+    const tab=document.querySelector('#bookTabs [data-ui-go="adventure"]');
+    if(!tab)return;
+    tab.click();
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(!tab.classList.contains('is-selected'))return;
+      const prep=document.querySelector('[data-ui-page="adventure"][data-ui-order="0"]');
+      (prep||document.getElementById('destinationPanel'))?.scrollIntoView({block:'start',behavior:'auto'});
+    }));
+  });
 })();
 </script>
 </body></html>

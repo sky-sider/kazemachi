@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.121</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.127</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -1050,7 +1050,7 @@ body.mini-clock-visible .storybook-tabs{top:70px}
 .wind-unread{background:#477665;color:#fffaf0;border-radius:999px;font-size:12px;min-width:23px;height:23px;display:grid;place-items:center;padding-inline:6px}
 .wind-empty{padding:12px;color:#64766c;font-size:14px}
 .wind-letter-open{display:block;width:100%;margin-top:10px}
-#worldPeople .npcCard.wind-compact:not(.wind-expanded)>:not(.npcHead):not(.npcActivity):not(.wind-card-actions){display:none!important}
+#worldPeople .npcCard.wind-compact:not(.wind-expanded)>:not(.npcHead):not(.npcActivity):not(.wind-card-actions):not(.npc-daily-scene){display:none!important}
 #worldPeople .npcCard.wind-compact{padding-bottom:12px!important}
 #worldPeople .wind-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;position:relative;z-index:1}
 #worldPeople .wind-card-actions button{min-height:40px;padding:8px 12px;border-radius:12px;border:1px solid #c4b28f;background:#f5efe1;color:#2c5549;font-weight:750;cursor:pointer;flex:1 1 115px}
@@ -1637,7 +1637,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </style>
 
 <style id="personal-readability-v109">
-/* v0.9.121 | personal request and second-chapter readability */
+/* v0.9.127 | personal request and second-chapter readability */
 #personalSection .personalQuest,#chapterSection .chapterCard{display:grid;gap:12px;padding:16px 14px 15px;overflow-wrap:anywhere;}
 #personalSection .personalQuest .sectionRow,#chapterSection .chapterCard .sectionRow{align-items:flex-start;gap:10px;}
 #personalSection .personalQuest h3,#chapterSection .chapterCard h3{font-size:17px;line-height:1.5;margin:0;flex:1;min-width:0;}
@@ -1699,7 +1699,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </style>
 
 <style id="gear-storage-v09113">
-/* v0.9.121 | Compact permanent gear storage expansion. */
+/* v0.9.127 | Compact permanent gear storage expansion. */
 #gearStorageUpgrade.gear-storage-upgrade{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;padding:9px 11px;margin:6px 0 3px;border:1px solid #d9ceb4;background:#f6f2e7;border-radius:11px;min-width:0;color:#385a4c;line-height:1.4}
 #gearStorageUpgrade .gear-storage-label{display:flex;align-items:center;column-gap:8px;row-gap:3px;flex-wrap:wrap;min-width:0;font-size:14px;font-weight:750}
 #gearStorageUpgrade .gear-storage-label strong{font-size:13px;color:#516958;font-weight:700}
@@ -1774,10 +1774,43 @@ body.kaze-guild-viewing #quickActions{display:none!important}
   }
 }
 </style>
+<style id="npc-daily-scenes-style-v122">
+.npcCard .npc-daily-scene{margin:9px 0;padding:10px 12px;background:#f6f0e1;border:1px solid #d9cbaf;border-left:4px solid #9eae88;border-radius:10px;color:#385749;}
+.npcCard .npc-daily-kicker{display:block;font-size:13px;font-weight:800;color:#55755b;margin-bottom:4px;}
+.npcCard .npc-daily-scene p{margin:0;font-size:14px;line-height:1.8;overflow-wrap:anywhere;}
+.npcCard .npc-daily-scene details{margin-top:6px;padding:0;border:0;background:transparent;}
+.npcCard .npc-daily-scene summary{cursor:pointer;font-size:13px;line-height:1.6;color:#456a57;}
+.npcCard .npc-daily-scene .npc-daily-past{padding-top:7px;margin-top:7px;border-top:1px solid #dbceb5;color:#607367;font-size:13px;line-height:1.7;}
+#worldPeople .npcCard.wind-compact:not(.wind-expanded) .npc-daily-scene p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+#worldPeople .npcCard.wind-compact:not(.wind-expanded) .npc-daily-scene details{display:none;}
+</style>
+
+<style id="dungeon-expanded-v124">
+.dungeon-discovery-details{margin:8px 0;padding:9px 11px;border:1px solid #d4c4a3;border-radius:10px;background:#fffaf0;color:#355447;}
+.dungeon-discovery-details summary{cursor:pointer;font-size:14px;line-height:1.5;font-weight:750;}
+.dungeon-discovery-details .help{margin-top:9px;font-size:14px;line-height:1.8;overflow-wrap:anywhere;}
+</style>
+
+<style id="guild-quests-v126">
+/* Expanded guild quests: keep method-specific reporting buttons compact and readable. */
+#guildSection .questActions{display:flex;gap:8px;flex-wrap:wrap;}
+#guildSection .questActions [data-claim-quest]{flex:1 1 170px;min-height:44px;white-space:normal;line-height:1.5;font-size:14px;}
+#guildSection .questCard .help{font-size:14px;line-height:1.7;}
+@media(max-width:440px){#guildSection .questActions [data-claim-quest]{flex-basis:100%;}}
+</style>
+<style id="hero-job-switch-v127">
+/* v0.9.127: Move job selection to the protagonist's own growth panel. */
+.hero-destination-only{grid-template-columns:minmax(0,1fr)}
+.hero-job-switch{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,1.35fr);align-items:center;gap:7px 14px;margin:0 0 18px;padding:12px 14px;background:#f5efe2;border:1px solid #d7c7a8;border-radius:13px;min-width:0;}
+.hero-job-switch .label{margin:0;font-size:15px;font-weight:750;color:#375449;}
+.hero-job-switch #job{min-width:0;width:100%;max-width:100%;font-size:16px;min-height:44px;}
+.hero-job-switch .hero-job-help{grid-column:1/-1;font-size:13px;line-height:1.55;margin:0;color:#637469;}
+@media(max-width:550px){.hero-job-switch{grid-template-columns:minmax(0,1fr);padding:11px 12px;gap:7px}.hero-job-switch #job{font-size:16px}.hero-job-switch .label{font-size:15px}}
+</style>
 </head><body><main>
 <header class="story-cover">
 <div aria-hidden="true" class="cover-art"><span class="cover-sun"></span><span class="cover-hill cover-hill-back"></span><span class="cover-hill cover-hill-front"></span><span class="cover-tree cover-tree-a"></span><span class="cover-tree cover-tree-b"></span><span class="cover-tree cover-tree-c"></span><span class="cover-house"><i></i></span><span class="cover-path"></span></div>
-<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">v0.9.121</span></h1></div></header>
+<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">v0.9.127</span></h1></div></header>
 <nav aria-label="ゲームの画面を切り替える" class="storybook-tabs" id="bookTabs" role="tablist">
 <button aria-controls="gamePanels" aria-selected="true" class="book-tab is-selected" data-ui-go="adventure" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⚔</span><span>冒険</span><span aria-label="ボス戦の指示待ち" class="tab-alert" hidden="" id="bossAlert">!</span></button>
 <button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="hero" role="tab" type="button"><span aria-hidden="true" class="tab-icon">✦</span><span>主人公</span></button>
@@ -1841,11 +1874,11 @@ body.kaze-guild-viewing #quickActions{display:none!important}
  <div id="dawnMapHint"></div>
 </div>
 </section>
-<section class="panel" data-ui-order="0" data-ui-page="adventure"><div class="panel-pagehint"><span>01 / 旅支度</span><button class="ink-link" data-scroll-destinations type="button">行き先を見る ↗</button></div><h2>⚔️ 冒険の準備</h2><div class="group"><div class="fieldrow"><div><label class="label" for="job">主人公の職業</label><select id="job"><option value="sword">剣士</option><option value="hunter">狩人</option><option value="mage">魔術師</option><option value="healer">癒し手</option><option disabled="" value="guardian">守護騎士（上位職）</option><option disabled="" value="blade">剣豪（上位職）</option><option disabled="" value="sniper">神射手（上位職）</option><option disabled="" value="tracker">追跡者（上位職）</option><option disabled="" value="archmage">大魔導師（上位職）</option><option disabled="" value="hexer">呪術師（上位職）</option><option disabled="" value="saint">聖職者（上位職）</option><option disabled="" value="sage">賢者（上位職）</option></select></div><div class="destination-selected-field"><div class="label">現在の行き先</div><strong aria-live="polite" id="selectedDestinationName">🌲 緑風の森</strong><span class="destination-selected-hint">変更は上の「冒険の行き先」から</span><select aria-hidden="true" id="zone" tabindex="-1"><option value="forest">🌲 緑風の森</option><option value="mine">⛏️ 赤錆の鉱山</option><option value="boss">🗿 忘却の地下聖堂（ボス・推奨Lv22／4人）</option><option disabled="" value="oldroad">🌿 苔むした旧道（未発見）</option><option disabled="" value="ruins">🏛️ 巡礼者の地下遺跡（未発見）</option><option disabled="" value="highland">🍃 風鳴りの高原（未発見）</option><option disabled="" value="starwood">🌳 星影の樹海（未発見）</option><option disabled="" value="observatory">🌟 玻璃の天文塔（未発見）</option><option disabled="" value="dawnsea">☀️ 暁の雲海（未発見）</option><option disabled="" value="eclipse">🌘 星蝕の断崖（未発見）</option><option disabled="" value="starpit">🌑 無明の星坑（未発見）</option></select></div></div><div><div class="label">同行NPC（最大3人・編成を外すと自律活動を再開）</div><div class="checkrows" id="companions"><label class="checkrow"><input checked="" type="checkbox" value="gald"/>🛡️ ガルド / 剣士</label><label class="checkrow"><input checked="" type="checkbox" value="rio"/>🏹 リオ / 狩人</label><label class="checkrow"><input type="checkbox" value="sera"/>✨ セラ / 魔術師</label><label class="checkrow"><input checked="" type="checkbox" value="mina"/>💚 ミーナ / 癒し手</label><label class="checkrow"><input type="checkbox" value="noel"/>📖 ノエル / 魔術師</label><label class="checkrow"><input type="checkbox" value="eda"/>🌼 エダ / 癒し手</label><label class="checkrow"><input type="checkbox" value="toto"/>🪙 トト / 狩人</label><label class="checkrow"><input type="checkbox" value="van"/>⚔️ ヴァン / 剣士</label></div></div><div><label class="label" for="speed">戦闘の表示速度</label><select id="speed"><option value="1">1倍</option><option selected="" value="3">3倍</option></select></div><label class="checkboxWide"><input id="loop" type="checkbox"/>勝利したら自動的に次の戦闘へ（ボスは除く）</label><label class="checkboxWide"><input id="autoPotion" type="checkbox"/>周回中にHP・MP回復薬を自動使用する</label><div class="buttons"><button class="btn" id="start">▶ 冒険を始める</button><button class="btn secondary" disabled="" id="pause">一時停止</button><button class="btn secondary" disabled="" id="retreat">撤退する</button></div><div class="meal-adventure-status" id="mealAdventureStatus" role="status" aria-live="polite">🍽️ 食事効果なし。ギルドの調理場で料理を食べると次の冒険に効果が付きます。</div><div class="notice" id="fieldNotice">体力を保ちながら連続探索できます。HPが危険域になると自動撤退し、次の戦闘を始めません。</div></div></section>
+<section class="panel" data-ui-order="0" data-ui-page="adventure"><div class="panel-pagehint"><span>01 / 旅支度</span><button class="ink-link" data-scroll-destinations type="button">行き先を見る ↗</button></div><h2>⚔️ 冒険の準備</h2><div class="group"><div class="fieldrow hero-destination-only"><div class="destination-selected-field"><div class="label">現在の行き先</div><strong aria-live="polite" id="selectedDestinationName">🌲 緑風の森</strong><span class="destination-selected-hint">変更は上の「冒険の行き先」から</span><select aria-hidden="true" id="zone" tabindex="-1"><option value="forest">🌲 緑風の森</option><option value="mine">⛏️ 赤錆の鉱山</option><option value="boss">🗿 忘却の地下聖堂（ボス・推奨Lv22／4人）</option><option disabled="" value="oldroad">🌿 苔むした旧道（未発見）</option><option disabled="" value="ruins">🏛️ 巡礼者の地下遺跡（未発見）</option><option disabled="" value="highland">🍃 風鳴りの高原（未発見）</option><option disabled="" value="starwood">🌳 星影の樹海（未発見）</option><option disabled="" value="observatory">🌟 玻璃の天文塔（未発見）</option><option disabled="" value="dawnsea">☀️ 暁の雲海（未発見）</option><option disabled="" value="eclipse">🌘 星蝕の断崖（未発見）</option><option disabled="" value="starpit">🌑 無明の星坑（未発見）</option></select></div></div><div><div class="label">同行NPC（最大3人・編成を外すと自律活動を再開）</div><div class="checkrows" id="companions"><label class="checkrow"><input checked="" type="checkbox" value="gald"/>🛡️ ガルド / 剣士</label><label class="checkrow"><input checked="" type="checkbox" value="rio"/>🏹 リオ / 狩人</label><label class="checkrow"><input type="checkbox" value="sera"/>✨ セラ / 魔術師</label><label class="checkrow"><input checked="" type="checkbox" value="mina"/>💚 ミーナ / 癒し手</label><label class="checkrow"><input type="checkbox" value="noel"/>📖 ノエル / 魔術師</label><label class="checkrow"><input type="checkbox" value="eda"/>🌼 エダ / 癒し手</label><label class="checkrow"><input type="checkbox" value="toto"/>🪙 トト / 狩人</label><label class="checkrow"><input type="checkbox" value="van"/>⚔️ ヴァン / 剣士</label></div></div><div><label class="label" for="speed">戦闘の表示速度</label><select id="speed"><option value="1">1倍</option><option selected="" value="3">3倍</option></select></div><label class="checkboxWide"><input id="loop" type="checkbox"/>勝利したら自動的に次の戦闘へ（ボスは除く）</label><label class="checkboxWide"><input id="autoPotion" type="checkbox"/>周回中にHP・MP回復薬を自動使用する</label><div class="buttons"><button class="btn" id="start">▶ 冒険を始める</button><button class="btn secondary" disabled="" id="pause">一時停止</button><button class="btn secondary" disabled="" id="retreat">撤退する</button></div><div class="meal-adventure-status" id="mealAdventureStatus" role="status" aria-live="polite">🍽️ 食事効果なし。ギルドの調理場で料理を食べると次の冒険に効果が付きます。</div><div class="notice" id="fieldNotice">体力を保ちながら連続探索できます。HPが危険域になると自動撤退し、次の戦闘を始めません。</div></div></section>
 <section class="panel" data-ui-order="1" data-ui-page="hero"><div aria-label="主人公の肖像画" class="portrait-hero feature-book">
 <div class="portrait-frame hero-frame"><img alt="主人公・冒険者の肖像画" data-portrait-id="001" height="170" width="170"/></div>
 <div class="portrait-hero-copy"><p class="portrait-kicker">CHARACTER 001</p><h3 id="heroCharacterTitle">旅の主人公</h3><p id="heroPortraitMeta">冒険者の旅が、ここから始まります。</p></div>
-</div><h2>🌱 主人公の成長</h2><div class="barlabel"><strong id="heroLevel">冒険者 Lv10</strong><span id="expLabel">0 / 640 EXP</span></div><div class="growBar"><div id="expBar" style="width:0%"></div></div><div class="barlabel mt"><strong id="jobLevel">剣士 職業Lv8</strong><span id="jobExpLabel">0 / 269 職業EXP</span></div><div class="growBar"><div id="jobExpBar" style="width:0%"></div></div><div class="twoStat mt" id="heroStats"></div></section>
+</div><h2>🌱 主人公の成長</h2><div class="hero-job-switch" aria-label="主人公の職業変更"><label class="label" for="job">主人公の職業を変更</label><select id="job"><option value="sword">剣士</option><option value="hunter">狩人</option><option value="mage">魔術師</option><option value="healer">癒し手</option><option disabled="" value="guardian">守護騎士（上位職）</option><option disabled="" value="blade">剣豪（上位職）</option><option disabled="" value="sniper">神射手（上位職）</option><option disabled="" value="tracker">追跡者（上位職）</option><option disabled="" value="archmage">大魔導師（上位職）</option><option disabled="" value="hexer">呪術師（上位職）</option><option disabled="" value="saint">聖職者（上位職）</option><option disabled="" value="sage">賢者（上位職）</option></select><p class="help hero-job-help">転職しても各職業の成長記録は残ります。戦闘中は変更できません。</p></div><div class="barlabel"><strong id="heroLevel">冒険者 Lv10</strong><span id="expLabel">0 / 640 EXP</span></div><div class="growBar"><div id="expBar" style="width:0%"></div></div><div class="barlabel mt"><strong id="jobLevel">剣士 職業Lv8</strong><span id="jobExpLabel">0 / 269 職業EXP</span></div><div class="growBar"><div id="jobExpBar" style="width:0%"></div></div><div class="twoStat mt" id="heroStats"></div></section>
 <section class="panel wide" data-ui-order="12.92" data-ui-page="records" id="fieldSurveyHistory" aria-label="現地調査の記録">
  <div class="sectionRow"><h2 style="margin:0">🧾 現地調査の記録</h2></div>
  <p class="help">新しい地域を見つけた経緯や、そのとき選んだ調査方法を振り返れます。次の行き先や地域解放は「冒険」で確認してください。</p>
@@ -2005,7 +2038,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
  <details class="town-event-log"><summary>これまでの出来事を振り返る</summary><div id="townEventHistory"></div></details>
 </section>
 <section class="panel" data-ui-order="8" data-ui-page="guild" id="guildSection" data-guild-room="quests"><div class="sectionRow"><h2 style="margin:0">📜 ギルドの動的依頼</h2><span class="pill" id="questCount">依頼確認中</span></div>
-<div aria-live="polite" id="questActive"></div><div class="sectionRow mt"><h3 style="margin:0">新着依頼</h3><span class="small muted">町の活動＋毎ゲーム内日の農場・料理注文</span></div>
+<div aria-live="polite" id="questActive"></div><div class="sectionRow mt"><h3 style="margin:0">新着依頼</h3><span class="small muted">町の活動・日替わりの小依頼・農場と料理の注文</span></div>
 <div aria-live="polite" class="questList" id="questOffers"></div><h3 class="mt">完了した依頼</h3><div class="help" id="questHistory">まだありません。</div>
 </section>
 <section class="panel wide" data-ui-order="9" data-ui-page="guild" id="personalSection" data-guild-room="quests">
@@ -2046,7 +2079,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </section>
 
 <section class="panel wide kitchen-panel" data-ui-order="11.3" data-ui-page="guild" id="kitchenSection" aria-labelledby="kitchenTitle" data-guild-room="farm">
- <div class="kitchen-head"><div><p class="kitchen-kicker">GUILD / COOKING HOUSE</p><h2 id="kitchenTitle">🍳 風待ちの調理場</h2></div><span class="farm-pill" id="kitchenCounter">レシピ 0 / 6</span></div>
+ <div class="kitchen-head"><div><p class="kitchen-kicker">GUILD / COOKING HOUSE</p><h2 id="kitchenTitle">🍳 風待ちの調理場</h2></div><span class="farm-pill" id="kitchenCounter">レシピ 0 / 12</span></div>
  <div id="kitchenStatus" class="kitchen-status" role="status" aria-live="polite">調理場を準備中…</div>
  <h3 class="kitchen-section-title">📖 レシピ帳</h3><div id="kitchenRecipes" class="kitchen-recipes"></div>
  <h3 class="kitchen-section-title">🧺 料理の保管箱</h3><div class="kitchen-meal-status" id="kitchenMealStatus" aria-live="polite">食事効果なし</div><div id="kitchenPantry" class="kitchen-pantry"></div>
@@ -2171,9 +2204,9 @@ body.kaze-guild-viewing #quickActions{display:none!important}
  <p class="collection-foot">地域ごとの一覧は実際のドロップ候補を使用。同じ装備が複数地域に現れることがあります。初期・鍛冶屋専用装備も収録。旧版の図鑑は現存する装備と未受取品からのみ復元し、過去に売却した品を推測で登録しません。性能は強化前・獲得時の数値です。</p>
 </section>
 <section aria-label="農作物と料理の図鑑" class="panel wide farm-collection" data-ui-order="13.52" data-ui-page="records" id="farmCollectionSection">
- <div class="collection-title"><div><p class="collection-kicker">LIFE & COLLECTION</p><h2>📗 農作物・料理図鑑</h2><p class="help">初めて収穫した作物と、初めて調理した料理を記録します。種やレシピを買うだけでは登録されません。</p></div><span class="farm-pill" id="farmCollectionCounter">0 / 14種類</span></div>
- <div class="collection-progress" role="progressbar" aria-label="農作物と料理の収集率" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0" id="farmCollectionProgress"><div id="farmCollectionFill"></div></div>
- <div class="collection-nav" role="group" aria-label="図鑑の種類"><button type="button" data-collection-page="crop" aria-pressed="true">🌱 作物 <span id="farmCollectionCrops">0/8</span></button><button type="button" data-collection-page="food" aria-pressed="false">🍳 料理 <span id="farmCollectionFoods">0/6</span></button></div>
+ <div class="collection-title"><div><p class="collection-kicker">LIFE & COLLECTION</p><h2>📗 農作物・料理図鑑</h2><p class="help">初めて収穫した作物と、初めて調理した料理を記録します。種やレシピを買うだけでは登録されません。</p></div><span class="farm-pill" id="farmCollectionCounter">0 / 24種類</span></div>
+ <div class="collection-progress" role="progressbar" aria-label="農作物と料理の収集率" aria-valuemin="0" aria-valuemax="24" aria-valuenow="0" id="farmCollectionProgress"><div id="farmCollectionFill"></div></div>
+ <div class="collection-nav" role="group" aria-label="図鑑の種類"><button type="button" data-collection-page="crop" aria-pressed="true">🌱 作物 <span id="farmCollectionCrops">0/12</span></button><button type="button" data-collection-page="food" aria-pressed="false">🍳 料理 <span id="farmCollectionFoods">0/12</span></button></div>
  <div id="farmCollectionGrid" class="collection-grid" aria-live="polite"></div>
  <p class="collection-foot">旧版の記録は、現在の在庫と保存済みの履歴から確認できる品目のみ引き継ぎます。種類別の累計数は図鑑導入後から集計します。</p>
 </section>
@@ -2241,7 +2274,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 <div class="guide-chapter-body"><h4>行き先を選ぶ</h4>
 <p>「冒険」タブの<strong>「冒険の行き先」</strong>で地域を選び、必要なら地域の調査・解放を行います。地図と行き先の操作は冒険タブに集約されています。未発見の地域は、表示された条件を満たすまで出発できません。</p>
 <h4>戦闘の準備と進行</h4>
-<p>冒険の準備で主人公の職業と同行する仲間（最大3人）を確認し、探索を始めます。基本戦闘は自動で進み、重要なボス戦では<strong>防御・妨害・集中攻撃</strong>などの指示を選ぶ場面があります。戦闘の経過は冒険タブの戦闘ログと、常設チャットの「戦闘」で見られます。</p>
+<p>主人公の職業は「主人公」タブで変更できます。「冒険の準備」で同行する仲間（最大3人）を確認し、探索を始めます。基本戦闘は自動で進み、重要なボス戦では<strong>防御・妨害・集中攻撃</strong>などの指示を選ぶ場面があります。戦闘の経過は冒険タブの戦闘ログと、常設チャットの「戦闘」で見られます。</p>
 <p>勝利すると経験値・G・装備・素材などを得られます。<strong>HP・MPは戦闘後も引き継ぎます。</strong>無理に周回せず、HPが減ったら回復し、装備やスキルを見直してください。</p>
 <h4>休息と連続探索</h4>
 <p>回復薬を使う自動回復や自動周回を利用できます。自動回復はHP・MPが一定割合を下回ると手持ちの薬を使用し、薬が足りなければ無料で補充はされません。危険な状態では自動周回が撤退する場合があります。ギルドの宿屋や野営も活用しましょう。</p>
@@ -2314,7 +2347,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 <p>料理を<strong>「食べる」</strong>と次の探索1回にボーナスが付きます（G・経験値・装備ドロップ率など）。効果は1種類のみで重ね掛けできません。三層の遠征では遠征全体に有効で、勝利・敗北・撤退後に終了します。</p>
 <p>ドロップ率上昇は<strong>相対倍率</strong>です。たとえば元の装備ドロップ率20%に＋12%の効果なら22.4%。レジェンダリーになる確率そのものは上がりません。</p>
 <h4>収集の記録</h4>
-<p>「記録 → 農作物・料理図鑑」では作物8種類・料理6種類の初収穫／初調理を確認できます。作物や料理を売っても図鑑の登録は残ります。</p></div></details>
+<p>「記録 → 農作物・料理図鑑」では作物12種類・料理12種類の初収穫／初調理を確認できます。作物や料理を売っても図鑑の登録は残ります。</p></div></details>
 <details class="guide-chapter" data-guide-name="ギルド 動的依頼 納品 料理 農作物 訓練 個人依頼 第二章 第三章 第四章 受注 達成 報告" id="guide-quests">
 <summary><span aria-hidden="true" class="guide-chapter-icon">📜</span><span>ギルド依頼・個人物語</span></summary>
 <div class="guide-chapter-body"><h4>ギルドの依頼</h4>
@@ -2325,9 +2358,9 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 <p>個人依頼は通常のギルド依頼とは別枠です。進行と選択の結果はその人物の記憶に残り、風信帳で後日談が届くことがあります。</p></div></details>
 <details class="guide-chapter" data-guide-name="世界イベント 市場 出来事 荷馬車 鉱山 青い光 薬草不足 支援 NPC 生活" id="guide-town">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🍃</span><span>世界イベント・町の変化</span></summary>
-<div class="guide-chapter-body"><p>「ギルド → 依頼 → 町で起きている出来事」では、主人公が参加しなくても、NPCの活動やゲーム内時間に応じて事件が進みます。荷馬車の遅れや鉱山の調査など、ある事件の結末が次の出来事につながることもあります。</p>
-<p>事件が起きたら、現地で戦闘に勝つ・素材を届ける・仲間を見守るなどから選べます。<strong>参加は任意</strong>です。結果によって市場の在庫や仲間の活動記録が変化します。</p>
-<p>世界イベントは通常のギルド依頼とは別です。出来事の経過と結末はギルドで確認でき、関連する仲間から便りが届くこともあります。</p></div></details>
+<div class="guide-chapter-body"><p>「ギルド → 依頼 → 町で起きている出来事」では、主人公が参加しなくても、NPCの活動やゲーム内時間に応じて出来事が進みます。荷馬車の遅れや鉱山の調査だけでなく、掲示板の整理、道しるべの修理、町の催しなども起こります。ある出来事の結末が次の話につながることもあります。</p>
+<p>出来事によって選べる行動が異なります。現地で戦闘に勝つ、材料を届ける、<strong>戦闘なしで町の作業を手伝う</strong>、仲間を見守るなどから選べます。<strong>参加は任意</strong>で、戦闘をしない町の出来事では市場の在庫が増減しない場合もあります。</p>
+<p>町の出来事は通常のギルド依頼とは別です。経過と結末はギルドで確認でき、関連する仲間から風信帳に便りが届くこともあります。町の作業に参加しても戦闘報酬や能力値の変化はありません。</p></div></details>
 <details class="guide-chapter" data-guide-name="ログインボーナス 風待ちの贈りもの 毎日 7日 5時 定期補給 受取" id="guide-login">
 <summary><span aria-hidden="true" class="guide-chapter-icon">🎁</span><span>起動時の贈りもの</span></summary>
 <div class="guide-chapter-body"><p>「風待ちの贈りもの」は、冒険者ギルドの<strong>7回周期の定期補給</strong>です。ゲームを起動したとき未受取なら案内が出ます。閉じた場合も「ギルド」の窓口から受け取れます。</p>
@@ -3049,6 +3082,10 @@ const WorldEngine = (() => {
      return {id:q.id,type:'farmOrder',itemId:template.id,kind:template.kind,material:template.name,sourceId:null,memo:'',need:template.need,progress:0,
       createdTick:int(q.createdTick,0,w.halfHours,0),createdDay:int(q.createdDay,0,Math.floor((w.halfHours+16)/48),0),rewardGold:template.gold,rewardExp:template.xp};
     }
+    if(q.type==='community'){
+     const t=COMMUNITY_BY_ID[q.templateId];if(!t)return null;
+     return {id:q.id,type:'community',templateId:t.id,material:t.material,sourceId:t.giver,memo:'',need:t.qty,progress:int(q.progress,0,t.wins,0),createdTick:int(q.createdTick,0,w.halfHours,0),rewardGold:t.gold,rewardExp:t.xp};
+    }
     const type=q.type==='supply'?'supply':q.type==='investigate'?'investigate':null;if(!type)return null;
     const material=type==='supply'?(q.material==='薬草'||q.material==='鉄鉱石'?q.material:null):null;
     const sourceId=type==='investigate'&&KNOWN.includes(q.sourceId)?q.sourceId:null;
@@ -3178,18 +3215,28 @@ const WorldEngine = (() => {
  const FARM_DELIVERY_CATALOG=[
   {id:'wheat',kind:'crop',name:'小麦',need:6,level:1,gold:65,xp:30},
   {id:'carrot',kind:'crop',name:'にんじん',need:6,level:1,gold:100,xp:35},
+  {id:'bean',kind:'crop',name:'いんげん豆',need:6,level:10,gold:88,xp:40},
   {id:'potato',kind:'crop',name:'じゃがいも',need:8,level:15,gold:150,xp:50},
+  {id:'onion',kind:'crop',name:'玉ねぎ',need:6,level:22,gold:170,xp:60},
   {id:'tomato',kind:'crop',name:'トマト',need:6,level:25,gold:220,xp:70},
   {id:'herb',kind:'crop',name:'香草',need:6,level:35,gold:305,xp:85},
+  {id:'mushroom',kind:'crop',name:'森茸',need:6,level:45,gold:400,xp:105},
   {id:'pumpkin',kind:'crop',name:'かぼちゃ',need:6,level:50,gold:550,xp:120},
   {id:'berry',kind:'crop',name:'星蜜ベリー',need:3,level:65,gold:535,xp:155},
+  {id:'apple',kind:'crop',name:'暁りんご',need:3,level:72,gold:795,xp:180},
   {id:'moonturnip',kind:'crop',name:'月光かぶ',need:3,level:80,gold:1150,xp:220},
   {id:'bread',kind:'food',name:'焼き麦パン',need:2,level:1,gold:65,xp:50},
+  {id:'beanSalad',kind:'food',name:'いんげん豆のサラダ',need:2,level:10,gold:128,xp:60},
   {id:'veggieSoup',kind:'food',name:'野菜スープ',need:2,level:15,gold:155,xp:75},
+  {id:'onionSoup',kind:'food',name:'玉ねぎのスープ',need:2,level:25,gold:220,xp:90},
   {id:'herbPotatoes',kind:'food',name:'じゃがいもの香草焼き',need:2,level:35,gold:260,xp:100},
+  {id:'mushroomRice',kind:'food',name:'森茸の炊き込み飯',need:2,level:45,gold:460,xp:125},
   {id:'pumpkinSoup',kind:'food',name:'かぼちゃのポタージュ',need:2,level:50,gold:630,xp:150},
+  {id:'harvestHotpot',kind:'food',name:'畑の具だくさん鍋',need:2,level:55,gold:625,xp:165},
   {id:'berryTart',kind:'food',name:'星蜜ベリーのタルト',need:2,level:65,gold:1050,xp:200},
-  {id:'moonStew',kind:'food',name:'月光かぶのシチュー',need:2,level:80,gold:2360,xp:275}
+  {id:'applePie',kind:'food',name:'暁りんごのパイ',need:2,level:72,gold:1370,xp:225},
+  {id:'moonStew',kind:'food',name:'月光かぶのシチュー',need:2,level:80,gold:2360,xp:275},
+  {id:'twilightStew',kind:'food',name:'月と暁の煮込み',need:2,level:90,gold:3010,xp:320}
  ];
  const FARM_DELIVERY_BY_ID=Object.fromEntries(FARM_DELIVERY_CATALOG.map(o=>[o.id,o]));
  function refreshFarmOrders(w,farm,heroLevel){
@@ -3198,11 +3245,17 @@ const WorldEngine = (() => {
   if(g.lastFarmDay===day)return false;
   g.lastFarmDay=day;
   // Unaccepted offers expire at the next in-game day; accepted quests never expire.
-  g.offers=g.offers.filter(q=>q.type!=='farmOrder');
+  g.offers=g.offers.filter(q=>q.type!=='farmOrder'&&q.type!=='community');
+  // Keep old open requests untouched. New community requests use the same one-per-day rhythm.
+  const eligibleCommunity=COMMUNITY_REQUESTS.filter(t=>heroLevel>=t.level);
+  if(eligibleCommunity.length&&g.offers.length<8&&g.nextId<=999999){
+   const t=eligibleCommunity[day%eligibleCommunity.length];
+   g.offers.push({id:g.nextId++,type:'community',templateId:t.id,material:t.material,sourceId:t.giver,memo:'',need:t.qty,progress:0,createdTick:w.halfHours,rewardGold:t.gold,rewardExp:t.xp});
+  }
   const crops=FARM_DELIVERY_CATALOG.filter(o=>o.kind==='crop'&&heroLevel>=o.level);
   const foods=FARM_DELIVERY_CATALOG.filter(o=>o.kind==='food'&&heroLevel>=o.level&&farm.kitchen?.unlockedRecipes?.includes(o.id));
   if(!crops.length)return true;
-  const index=(day+Math.floor(day/3))%crops.length;
+  const index=day%crops.length; // Full-cycle rotation includes every eligible crop.
   const first=crops[index];
   const fallback=crops.length>1?crops[(index+1)%crops.length]:first;
   // With one unlocked recipe, avoid offering the same cooking order every day.
@@ -3218,6 +3271,55 @@ const WorldEngine = (() => {
   // If the board is full, skip a farm offer instead of deleting an old request.
   g.offers=g.offers.slice(0,8);
   return true;
+ }
+
+ // v0.9.127: rotating, story-grounded town requests (one new offer per game day).
+ // Both paths are complete alternatives, never cumulative prerequisites.
+ const COMMUNITY_REQUESTS=[
+  {id:'gald_watch',giver:'gald',name:'帰還路の目印を整える',story:'ガルドから、森の帰還路にある目印が見えにくくなったと相談が来た。迷わず戻れる道にしておきたいらしい。',material:'鉄鉱石',qty:3,zone:'forest',wins:2,level:1,gold:120,xp:75},
+  {id:'rio_marks',giver:'rio',name:'道しるべを写す手帳',story:'リオが旅人向けに目印を書き込む手帳を作っている。次に通る人のため、森の目印を確かめたいそうだ。',material:'薬草',qty:5,zone:'forest',wins:2,level:1,gold:110,xp:72},
+  {id:'mina_care',giver:'mina',name:'施療所の予備袋',story:'ミーナは遠征帰りの人へ渡す予備の救護袋を整えている。補給の手伝いか、安全な採集路の確認を頼まれた。',material:'薬草',qty:6,zone:'forest',wins:2,level:1,gold:135,xp:85},
+  {id:'noel_notes',giver:'noel',name:'練習帳に残す道の記録',story:'ノエルが新人のために、森で慌てず行動する手順をまとめている。実地の記録か、書き留めるための道具が必要だ。',material:'鉄鉱石',qty:3,zone:'forest',wins:2,level:1,gold:125,xp:82},
+  {id:'eda_board',giver:'eda',name:'旅人のための帰還案内',story:'エダが、出発前と帰還後に見られる案内を掲示板へまとめ直している。森の道の現況か、備えの素材を集めてほしいという。',material:'薬草',qty:5,zone:'forest',wins:2,level:1,gold:120,xp:78},
+  {id:'van_post',giver:'van',name:'見張り台の足場を確かめる',story:'ヴァンから、見張り台へ向かう足場を調べてほしいと連絡が来た。補修用の素材を届けてもよいらしい。',material:'鉄鉱石',qty:4,zone:'forest',wins:2,level:15,gold:160,xp:100},
+  {id:'sera_tablet',giver:'sera',name:'鉱山の石板を守る包み',story:'セラは鉱山で見つかった石板の傷みを心配している。包みの補修材か、現地の足場の記録が必要だという。',material:'鉄鉱石',qty:4,zone:'mine',wins:2,level:20,gold:185,xp:115},
+  {id:'toto_wheels',giver:'toto',name:'荷車の車輪を確かめる',story:'トトの荷車が鉱山の道で揺れるらしい。車輪の留め具を補うか、輸送路の段差を調べる人手を探している。',material:'鉄鉱石',qty:5,zone:'mine',wins:2,level:20,gold:205,xp:125}
+ ];
+ const COMMUNITY_BY_ID=Object.fromEntries(COMMUNITY_REQUESTS.map(q=>[q.id,q]));
+ const FARM_DELIVERY_FLAVOR={
+  wheat:'町の宿屋から、出発する旅人の朝食用に小麦が必要だと知らせが来た。',
+  carrot:'エダが、ギルドの共同台所で使うにんじんを集めている。',
+  bean:'町の炊き出しを続けるため、保存しやすいいんげん豆を求めている。',
+  potato:'市場の料理番が、遠征帰りの人へ温かい食事を出したいそうだ。',
+  onion:'ミーナが、身体の冷えた旅人向けのスープの材料を探している。',
+  tomato:'町の調理場で、採れたてのトマトを使う献立が決まった。',
+  herb:'施療所から、料理と手当ての両方に使う香草の相談が来ている。',
+  mushroom:'森を巡回した冒険者の食卓に、森茸の料理を添えたいという。',
+  pumpkin:'町の台所で、帰還を祝うかぼちゃ料理を仕込む予定がある。',
+  berry:'ギルドの集まりで、小さな甘味を用意したいという声が届いた。',
+  apple:'町の菓子職人が、暁りんごを分けてもらえないか相談している。',
+  moonturnip:'夜の番をする人たちへ温かい煮込みを届けるため、月光かぶを探している。',
+  bread:'宿屋が、夜明けに出発する旅人の携帯食を揃えたいそうだ。',
+  beanSalad:'ギルドの共同台所で、手軽に食べられる豆の料理を用意している。',
+  veggieSoup:'施療所から、帰還した旅人に温かい野菜スープを配りたいと相談があった。',
+  onionSoup:'夕方の当番へ、冷めにくいスープを届ける準備が進んでいる。',
+  herbPotatoes:'巡回帰りの仲間へ、香草の香りがする温かい一皿を出したいそうだ。',
+  mushroomRice:'森の調査を終えた人たちを迎えるため、炊き込み飯を用意している。',
+  pumpkinSoup:'町の料理番が、子どもにも食べやすいポタージュを作りたいという。',
+  harvestHotpot:'ギルドの共同食卓で、収穫した野菜を分け合う鍋の準備がある。',
+  berryTart:'エダが、帰還した仲間へのささやかなお祝いに甘味を考えている。',
+  applePie:'町の菓子職人が、遠方から来た旅人へ焼きたてのパイを届けたいそうだ。',
+  moonStew:'夜警の人たちに、温かいシチューを届ける予定がある。',
+  twilightStew:'長い遠征から戻る一行を迎えるため、特別な煮込みを用意したいという。'
+ };
+ function questDescription(q,w){
+  if(q.type==='community'){
+   const t=COMMUNITY_BY_ID[q.templateId];
+   return t?`${t.story} ${t.material}×${t.qty}の納品、または${LABEL[t.zone]||'指定地域'}で${t.wins}勝して現地確認を行えば達成できます。`:'';
+  }
+  if(q.type==='farmOrder')return `${FARM_DELIVERY_FLAVOR[q.itemId]||'ギルドの調理場から注文が届いた。'} ${q.material}×${q.need}個を納品してください。`;
+  if(q.type==='supply')return `${q.material==='薬草'?'ミーナから救護に必要な薬草を確保したいと相談があった。':'トトから町の鍛冶場へ運ぶ鉄鉱石が足りないと連絡があった。'} 市場在庫は現在${w.market[q.material]}個。${q.material}×${q.need}個を納品してください。`;
+  return `${name(q.sourceId)}が残した発見記録「${q.memo}」をもとに、緑風の森で3勝して現地を確かめてください。`;
  }
  const QUEST_MATERIALS=[{id:'herb',material:'薬草',threshold:24,need:8,rewardGold:100,rewardExp:70},{id:'ore',material:'鉄鉱石',threshold:16,need:6,rewardGold:155,rewardExp:90}];
  function refreshQuests(w){
@@ -3239,18 +3341,37 @@ const WorldEngine = (() => {
   }}
   g.seen=g.seen.slice(-100);
  }
- function questTitle(q){return q.type==='farmOrder'?`${q.material}の納品依頼`:q.type==='supply'?`${q.material}の緊急納品`:`${name(q.sourceId)}が見つけた旧道の調査`;}
+ function questTitle(q){return q.type==='community'?COMMUNITY_BY_ID[q.templateId]?.name||'町の小さな手伝い':q.type==='farmOrder'?`${q.material}の納品依頼`:q.type==='supply'?`${q.material}の緊急納品`:`${name(q.sourceId)}が見つけた旧道の調査`;}
  function takeQuest(w,id){const g=w.guild;if(g.active)return {ok:false,reason:'すでに受注中の依頼があります。'};
   const index=g.offers.findIndex(q=>q.id===id);if(index<0)return {ok:false,reason:'依頼が見つかりません。'};
   const q=g.offers.splice(index,1)[0];g.active=q;log(w,'quest',`主人公が「${questTitle(q)}」を受注した。`);return {ok:true,title:questTitle(q)};
  }
- function recordQuestVictory(w,zone){const q=w.guild?.active;if(!q||q.type!=='investigate'||zone!=='forest')return false;
+ function recordQuestVictory(w,zone){const q=w.guild?.active;if(!q)return false;
+  if(q.type==='community'){
+   const t=COMMUNITY_BY_ID[q.templateId];if(!t||zone!==t.zone||q.progress>=t.wins)return false;
+   q.progress=Math.min(t.wins,q.progress+1);
+   if(q.progress===t.wins)log(w,'quest',`町の依頼「${questTitle(q)}」の現地確認が完了した。素材を納品せず報告できる。`);
+   return true;
+  }
+  if(q.type!=='investigate'||zone!=='forest'||q.progress>=q.need)return false;
   q.progress=Math.min(q.need,q.progress+1);if(q.progress===q.need)log(w,'quest',`調査依頼「${questTitle(q)}」の現地調査を終えた。ギルドで報告できる。`);return true;
  }
- function claimQuest(w,materials,gold,farm){const g=w.guild,q=g?.active;if(!q)return {ok:false,reason:'受注中の依頼はありません。'};
+ function claimQuest(w,materials,gold,farm,method='auto'){const g=w.guild,q=g?.active;if(!q)return {ok:false,reason:'受注中の依頼はありません。'};
   if(g.history.some(x=>x.id===q.id))return {ok:false,reason:'この依頼はすでに完了しています。'};
   if(gold+q.rewardGold>1e9)return {ok:false,reason:'所持金上限のため報酬を受け取れません。'};
-  if(q.type==='farmOrder'){
+  let completedMethod='';
+  if(q.type==='community'){
+   const t=COMMUNITY_BY_ID[q.templateId];if(!t)return {ok:false,reason:'依頼情報が不正です。'};
+   const enoughMaterials=Number.isSafeInteger(Number(materials?.[t.material]))&&Number(materials[t.material])>=t.qty;
+   const fieldDone=q.progress>=t.wins;
+   // Explicit choice is required so scarce materials are never spent accidentally.
+   if(method==='materials'&&enoughMaterials){
+    materials[t.material]=Number(materials[t.material])-t.qty;
+    w.worldConsumed[t.material]=Math.min(1e9,(w.worldConsumed[t.material]||0)+t.qty);
+    completedMethod='素材の納品';
+   }else if(method==='field'&&fieldDone){completedMethod='現地調査';}
+   else return {ok:false,reason:'指定した方法の達成条件を満たしていません。'};
+  }else if(q.type==='farmOrder'){
    const o=FARM_DELIVERY_BY_ID[q.itemId];
    if(!o||q.kind!==o.kind||q.need!==o.need||q.rewardGold!==o.gold||q.rewardExp!==o.xp)return {ok:false,reason:'依頼情報が一致しません。'};
    const stock=o.kind==='crop'?farm?.crops:farm?.kitchen?.foods;
@@ -3272,8 +3393,8 @@ const WorldEngine = (() => {
    if(q.progress<q.need)return {ok:false,reason:`緑風の森であと${q.need-q.progress}勝する必要があります。`};
    const p=w.people[q.sourceId];p.trust=Math.min(100,p.trust+3);g.reports++;
   }
-  const title=questTitle(q);g.history.unshift({id:q.id,title,tick:w.halfHours});g.history=g.history.slice(0,25);g.completedTotal++;g.active=null;
-  log(w,'quest',`主人公が「${title}」を達成。報酬${q.rewardGold}G・EXP ${q.rewardExp}を獲得した。`);
+  const title=questTitle(q);g.history.unshift({id:q.id,title:completedMethod?`${title}（${completedMethod}）`:title,tick:w.halfHours});g.history=g.history.slice(0,25);g.completedTotal++;g.active=null;
+  log(w,'quest',`主人公が「${title}」を${completedMethod||'報告'}で達成。報酬${q.rewardGold}G・EXP ${q.rewardExp}を獲得した。`);
   refreshQuests(w);return {ok:true,title,gold:q.rewardGold,xp:q.rewardExp};
  }
  function tick(w,party=[]){w.halfHours++;const selected=new Set(party);reserve(w,party);
@@ -3299,6 +3420,7 @@ const WorldEngine = (() => {
   }
   storyBeat(w);
   refreshQuests(w);
+  window.KazeDailyScenes?.sync?.(w); // observe only, never award rewards
  }
  function catchUp(w,now,party=[]){now=Number.isFinite(now)?now:Date.now();const elapsed=Math.max(0,Math.min(now-w.lastReal,MAX_OFFLINE_STEPS*STEP_MS));const n=Math.min(MAX_OFFLINE_STEPS,Math.floor(elapsed/STEP_MS));for(let i=0;i<n;i++)tick(w,party);if(n>0)w.lastReal=now-Math.floor(elapsed%STEP_MS);else if(now<w.lastReal)w.lastReal=now;else if(now-w.lastReal>MAX_OFFLINE_STEPS*STEP_MS)w.lastReal=now;return n;}
  function grantMentorXp(w,id,xp){
@@ -3342,14 +3464,14 @@ const WorldEngine = (() => {
   refreshQuests(w);return {ok:true,gold:heroGold,material,side,qty,unit:q.unit,total:q.total};
  }
  function timeText(w){const total=8*60+w.halfHours*30,day=Math.floor(total/1440)+1,minutes=total%1440;return `第${day}日 ${String(Math.floor(minutes/60)).padStart(2,'0')}:${String(minutes%60).padStart(2,'0')}`;}
- return {PROFILES,LABEL,ACTIONS,PAIRS,STEP_MS,storyStatus,personaLine,STORIES,initial,sanitize,tick,catchUp,reserve,recordParty,grantMentorXp,timeText,gearStats,power,maybeShop,MARKET,marketQuote,marketTrade,refreshQuests,refreshFarmOrders,questTitle,takeQuest,recordQuestVictory,claimQuest};
+ return {PROFILES,LABEL,ACTIONS,PAIRS,STEP_MS,storyStatus,personaLine,STORIES,initial,sanitize,tick,catchUp,reserve,recordParty,grantMentorXp,timeText,gearStats,power,maybeShop,MARKET,marketQuote,marketTrade,refreshQuests,refreshFarmOrders,questTitle,questDescription,communityTemplate:id=>COMMUNITY_BY_ID[id]||null,takeQuest,recordQuestVictory,claimQuest};
 })();
 (function(){
 'use strict';
 const $=s=>document.querySelector(s);
-const KEY='kazemachiAdventureLab_v0925',BACKUP_KEY='kazemachiAdventureLab_v0925_backup',V924KEY='kazemachiAdventureLab_v0924',V924BACKUP_KEY='kazemachiAdventureLab_v0924_backup',V923KEY='kazemachiAdventureLab_v0923',V923BACKUP_KEY='kazemachiAdventureLab_v0923_backup',V922KEY='kazemachiAdventureLab_v0922',V922BACKUP_KEY='kazemachiAdventureLab_v0922_backup',V921KEY='kazemachiAdventureLab_v0921',V921BACKUP_KEY='kazemachiAdventureLab_v0921_backup',V919KEY='kazemachiAdventureLab_v0919',V919BACKUP_KEY='kazemachiAdventureLab_v0919_backup',V918KEY='kazemachiAdventureLab_v0918',V918BACKUP_KEY='kazemachiAdventureLab_v0918_backup',V917KEY='kazemachiAdventureLab_v0917',V917BACKUP_KEY='kazemachiAdventureLab_v0917_backup',V916KEY='kazemachiAdventureLab_v0916',V916BACKUP_KEY='kazemachiAdventureLab_v0916_backup',V915KEY='kazemachiAdventureLab_v0915',V915BACKUP_KEY='kazemachiAdventureLab_v0915_backup',V914KEY='kazemachiAdventureLab_v0914',V914BACKUP_KEY='kazemachiAdventureLab_v0914_backup',V913KEY='kazemachiAdventureLab_v0913',V913BACKUP_KEY='kazemachiAdventureLab_v0913_backup',V912KEY='kazemachiAdventureLab_v0912',V912BACKUP_KEY='kazemachiAdventureLab_v0912_backup',V911KEY='kazemachiAdventureLab_v0911',V911BACKUP_KEY='kazemachiAdventureLab_v0911_backup',V910KEY='kazemachiAdventureLab_v0910',V910BACKUP_KEY='kazemachiAdventureLab_v0910_backup',V99KEY='kazemachiAdventureLab_v099',V99BACKUP_KEY='kazemachiAdventureLab_v099_backup',V98KEY='kazemachiAdventureLab_v098',V98BACKUP_KEY='kazemachiAdventureLab_v098_backup',V97KEY='kazemachiAdventureLab_v097',V97BACKUP_KEY='kazemachiAdventureLab_v097_backup',V96KEY='kazemachiAdventureLab_v096',V95KEY='kazemachiAdventureLab_v095',V94KEY='kazemachiAdventureLab_v094',V93KEY='kazemachiAdventureLab_v093',V92KEY='kazemachiAdventureLab_v092',V91KEY='kazemachiAdventureLab_v091',V90KEY='kazemachiAdventureLab_v090',V82KEY='kazemachiAdventureLab_v082',V81KEY='kazemachiAdventureLab_v081',V80KEY='kazemachiAdventureLab_v080',V72KEY='kazemachiAdventureLab_v072',V71KEY='kazemachiAdventureLab_v071',V70KEY='kazemachiAdventureLab_v070', V61KEY='kazemachiAdventureLab_v061', V60KEY='kazemachiAdventureLab_v060', V53KEY='kazemachiAdventureLab_v053', V52KEY='kazemachiAdventureLab_v052', V51KEY='kazemachiAdventureLab_v051', V50KEY='kazemachiAdventureLab_v050', V41KEY='kazemachiAdventureLab_v041', V4KEY='kazemachiAdventureLab_v040', OLDKEY='kazemachiCombatLab_v010', PREVKEY='kazemachiAdventureLab_v020', V3KEY='kazemachiAdventureLab_v030';
+const KEY='kazemachiAdventureLab_v0926',BACKUP_KEY='kazemachiAdventureLab_v0926_backup',V925KEY='kazemachiAdventureLab_v0925',V925BACKUP_KEY='kazemachiAdventureLab_v0925_backup',V924KEY='kazemachiAdventureLab_v0924',V924BACKUP_KEY='kazemachiAdventureLab_v0924_backup',V923KEY='kazemachiAdventureLab_v0923',V923BACKUP_KEY='kazemachiAdventureLab_v0923_backup',V922KEY='kazemachiAdventureLab_v0922',V922BACKUP_KEY='kazemachiAdventureLab_v0922_backup',V921KEY='kazemachiAdventureLab_v0921',V921BACKUP_KEY='kazemachiAdventureLab_v0921_backup',V919KEY='kazemachiAdventureLab_v0919',V919BACKUP_KEY='kazemachiAdventureLab_v0919_backup',V918KEY='kazemachiAdventureLab_v0918',V918BACKUP_KEY='kazemachiAdventureLab_v0918_backup',V917KEY='kazemachiAdventureLab_v0917',V917BACKUP_KEY='kazemachiAdventureLab_v0917_backup',V916KEY='kazemachiAdventureLab_v0916',V916BACKUP_KEY='kazemachiAdventureLab_v0916_backup',V915KEY='kazemachiAdventureLab_v0915',V915BACKUP_KEY='kazemachiAdventureLab_v0915_backup',V914KEY='kazemachiAdventureLab_v0914',V914BACKUP_KEY='kazemachiAdventureLab_v0914_backup',V913KEY='kazemachiAdventureLab_v0913',V913BACKUP_KEY='kazemachiAdventureLab_v0913_backup',V912KEY='kazemachiAdventureLab_v0912',V912BACKUP_KEY='kazemachiAdventureLab_v0912_backup',V911KEY='kazemachiAdventureLab_v0911',V911BACKUP_KEY='kazemachiAdventureLab_v0911_backup',V910KEY='kazemachiAdventureLab_v0910',V910BACKUP_KEY='kazemachiAdventureLab_v0910_backup',V99KEY='kazemachiAdventureLab_v099',V99BACKUP_KEY='kazemachiAdventureLab_v099_backup',V98KEY='kazemachiAdventureLab_v098',V98BACKUP_KEY='kazemachiAdventureLab_v098_backup',V97KEY='kazemachiAdventureLab_v097',V97BACKUP_KEY='kazemachiAdventureLab_v097_backup',V96KEY='kazemachiAdventureLab_v096',V95KEY='kazemachiAdventureLab_v095',V94KEY='kazemachiAdventureLab_v094',V93KEY='kazemachiAdventureLab_v093',V92KEY='kazemachiAdventureLab_v092',V91KEY='kazemachiAdventureLab_v091',V90KEY='kazemachiAdventureLab_v090',V82KEY='kazemachiAdventureLab_v082',V81KEY='kazemachiAdventureLab_v081',V80KEY='kazemachiAdventureLab_v080',V72KEY='kazemachiAdventureLab_v072',V71KEY='kazemachiAdventureLab_v071',V70KEY='kazemachiAdventureLab_v070', V61KEY='kazemachiAdventureLab_v061', V60KEY='kazemachiAdventureLab_v060', V53KEY='kazemachiAdventureLab_v053', V52KEY='kazemachiAdventureLab_v052', V51KEY='kazemachiAdventureLab_v051', V50KEY='kazemachiAdventureLab_v050', V41KEY='kazemachiAdventureLab_v041', V4KEY='kazemachiAdventureLab_v040', OLDKEY='kazemachiCombatLab_v010', PREVKEY='kazemachiAdventureLab_v020', V3KEY='kazemachiAdventureLab_v030';
 const MAX_LEVEL=100,MAX_ITEMS=300;
-// v0.9.121: permanent +10-slot gear storage unlocks, 160 -> 300.
+// v0.9.127: permanent +10-slot gear storage unlocks, 160 -> 300.
 // Store only the purchased tier; deriving capacity avoids conflicting save fields.
 const GEAR_STORAGE_BASE=160,GEAR_STORAGE_STEP=10;
 const GEAR_STORAGE_PRICES=Object.freeze([1000,1500,2300,3400,5100,7600,11400,17100,25600,38400,57700,86500,129700,194600]);
@@ -3604,7 +3726,27 @@ const DUNGEON_EVENTS=[
    {id:'copy',label:'読める文字だけ書き留める',hint:'戦闘勝利後 EXP+35',exp:35,note:'碑文の欠片を手帳に記録した。'},
    {id:'rubble',label:'倒れた碑石を調べる',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'碑石の下から鉱石を回収した。'},
    {id:'sera',require:'sera',label:'セラに古代文字を解読してもらう',hint:'セラ同行時／戦闘勝利後 EXP+80',exp:80,note:'セラが失われた巡礼路の記録を読み解いた。'},
-   {id:'noel',require:'noel',label:'ノエルと安全な解読術を試す',hint:'ノエル同行時／戦闘勝利後 EXP+50',exp:50,note:'ノエルが慎重に文字を写し、解読術を試した。'}]}
+   {id:'noel',require:'noel',label:'ノエルと安全な解読術を試す',hint:'ノエル同行時／戦闘勝利後 EXP+50',exp:50,note:'ノエルが慎重に文字を写し、解読術を試した。'}]},
+  // v0.9.127: four additional encounters for the first floor.
+  {id:'forgotten_camp',floor:1,title:'風を避けた野営跡',scene:'岩陰に小さな炉の跡がある。火はずっと前に消えたが、石は丁寧に並べ直されていた。',choices:[
+   {id:'sketch',label:'野営地の配置を手帳に残す',hint:'戦闘勝利後 EXP+35',exp:35,note:'古い野営の配置から、安全な休息場所の条件を記録した。'},
+   {id:'herbs',label:'炉の周りに生えた薬草を採る',hint:'戦闘勝利後 薬草×1',material:'薬草',quantity:1,note:'石の陰に残った薬草を傷めずに採った。'},
+   {id:'gald',require:'gald',label:'ガルドと退路を確認する',hint:'ガルド同行時／次の戦闘開始から5秒間全員防御',guard:5,note:'ガルドが風下の退路を確かめ、隊列を整えた。'},
+   {id:'mina',require:'mina',label:'ミーナと野営跡の植物を見分ける',hint:'ミーナ同行時／戦闘勝利後 薬草×2',material:'薬草',quantity:2,note:'ミーナが古い薬草と新しく育った葉を見分けた。'}]},
+  {id:'two_wayposts',floor:1,title:'ふたつの道しるべ',scene:'同じ方角を指すはずの二つの石標が、少し違う方向を示している。片方には後から刻んだ線がある。',choices:[
+   {id:'trace',label:'両方の刻線を写し取る',hint:'戦闘勝利後 EXP+35',exp:35,note:'古い刻線と後から加えられた線の違いを記録した。'},
+   {id:'stone',label:'足元の崩れた石材を調べる',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'道しるべの根元に混ざった鉱石を拾った。'},
+   {id:'rio',require:'rio',label:'リオと両方の道の目印を探す',hint:'リオ同行時／戦闘勝利後 EXP+55',exp:55,note:'リオと歩いた道を比べ、石標が直された理由の手掛かりを見つけた。'},
+   {id:'van',require:'van',label:'ヴァンと安全な足運びを確かめる',hint:'ヴァン同行時／次の戦闘開始から4秒間全員防御',guard:4,note:'ヴァンが足場の崩れを確かめ、危険な区間を避けた。'}]},
+  {id:'patched_cloak',floor:1,title:'壁に掛けられた旅装',scene:'補修跡のある古い外套が壁の釘に掛けられている。持ち主がいつ戻るつもりだったのかは分からない。',choices:[
+   {id:'remember',label:'補修の跡を旅の記録に残す',hint:'戦闘勝利後 EXP+35',exp:35,note:'旅装の縫い直しから、ここを通った誰かの工夫を記録した。'},
+   {id:'clasp',label:'床に落ちた金具だけ拾う',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'外套には触れず、床に落ちた古い金具を回収した。'},
+   {id:'toto',require:'toto',label:'トトに金具の用途を尋ねる',hint:'トト同行時／戦闘勝利後 EXP+55',exp:55,note:'トトが金具の使い方を見抜き、持ち主の旅支度を推し量った。'}]},
+  {id:'reed_scraps',floor:1,title:'葦紙に残る言葉',scene:'風に押されて、文字のある葦紙が石の隙間に集まっている。破れた紙片はつながりそうだ。',choices:[
+   {id:'assemble',label:'読める部分を並べて記録する',hint:'戦闘勝利後 EXP+40',exp:40,note:'葦紙の切れ端を並べ、旅人の覚え書きを記録した。'},
+   {id:'collect',label:'紙を押さえる石の下を調べる',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'葦紙を傷めずに石を避け、鉱石を回収した。'},
+   {id:'eda',require:'eda',label:'エダと誰に宛てた言葉か考える',hint:'エダ同行時／戦闘勝利後 EXP+55',exp:55,note:'エダと文章の前後を読み、誰かに帰路を伝えた覚え書きだと分かった。'},
+   {id:'noel',require:'noel',label:'ノエルと読み取れる文字を確かめる',hint:'ノエル同行時／戦闘勝利後 EXP+55',exp:55,note:'ノエルが不鮮明な文字を慎重に判読した。'}]},
  ],
  [
   {id:'sealed_codex',floor:2,title:'封印された書架',scene:'古びた書架の背後に小さな封印が浮かぶ。開けば記録が見つかりそうだ。',choices:[
@@ -3619,7 +3761,26 @@ const DUNGEON_EVENTS=[
   {id:'buried_cache',floor:2,title:'埋もれた補給箱',scene:'古い補給箱が半分だけ地面に埋まっている。無理に引き出せば崩落しそうだ。',choices:[
    {id:'sketch',label:'箱の刻印を記録する',hint:'戦闘勝利後 EXP+40',exp:40,note:'補給箱の所有印を記録した。'},
    {id:'dig',label:'周囲の石を拾う',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'崩落を避けて石材を回収した。'},
-   {id:'gald',require:'gald',label:'ガルドに安全に取り出してもらう',hint:'ガルド同行時／戦闘勝利後 鉄鉱石×3',material:'鉄鉱石',quantity:3,note:'ガルドが箱を支え、使える資材を取り出した。'}]}
+   {id:'gald',require:'gald',label:'ガルドに安全に取り出してもらう',hint:'ガルド同行時／戦闘勝利後 鉄鉱石×3',material:'鉄鉱石',quantity:3,note:'ガルドが箱を支え、使える資材を取り出した。'}]},
+  // v0.9.127: four additional encounters for the second floor.
+  {id:'light_window',floor:2,title:'雲間を写す光窓',scene:'天井のひびから細い光が射し、床に消えかけた文字を浮かび上がらせている。',choices:[
+   {id:'copy',label:'光が届く間に文字を写す',hint:'戦闘勝利後 EXP+40',exp:40,note:'光で見えた床の文字を記録した。'},
+   {id:'sift',label:'窓の下の石片を調べる',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'光窓の足元から鉱石を見つけた。'},
+   {id:'sera',require:'sera',label:'セラに文字の重なりを調べてもらう',hint:'セラ同行時／戦闘勝利後 EXP+75',exp:75,note:'セラが異なる時代の二つの刻印を読み分けた。'}]},
+  {id:'unclaimed_slates',floor:2,title:'棚に戻らない石板',scene:'番号のない石板が棚から外れ、廊下に立てかけられている。分類するための印が裏に残る。',choices:[
+   {id:'catalog',label:'印の並びを写して残す',hint:'戦闘勝利後 EXP+40',exp:40,note:'石板の裏の印から、かつての整理方法を記録した。'},
+   {id:'rubble',label:'転がった固定金具を集める',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'石板を固定していた金具を回収した。'},
+   {id:'noel',require:'noel',label:'ノエルに書庫の順序を推理してもらう',hint:'ノエル同行時／戦闘勝利後 EXP+65',exp:65,note:'ノエルは石板の並びを慎重に見比べ、欠けた番号を推測した。'},
+   {id:'eda',require:'eda',label:'エダと石板を安全に並べ直す',hint:'エダ同行時／次の戦闘開始から5秒間全員防御',guard:5,note:'エダが通路の障害物を片付け、隊列が通れる道を作った。'}]},
+  {id:'dry_basket',floor:2,title:'乾いた薬草籠',scene:'書庫の奥に、薬草を乾かしていた籠が残る。古い葉は使えないが、近くの水場には新しい芽が出ていた。',choices:[
+   {id:'record',label:'古い保存方法を書き留める',hint:'戦闘勝利後 EXP+40',exp:40,note:'籠の作りと保存方法を記録した。'},
+   {id:'sprout',label:'水場の新しい薬草だけ採る',hint:'戦闘勝利後 薬草×2',material:'薬草',quantity:2,note:'傷んだ古い葉を避け、水場の新しい薬草を採った。'},
+   {id:'mina',require:'mina',label:'ミーナと安全な手当ての備えを整える',hint:'ミーナ同行時／次の戦闘開始から5秒間全員防御',guard:5,note:'ミーナと足場を確かめ、薬草籠のそばで隊列を整えた。'},
+   {id:'toto',require:'toto',label:'トトと新芽の状態を調べる',hint:'トト同行時／戦闘勝利後 薬草×3',material:'薬草',quantity:3,note:'トトが傷みのない葉を選んで採取した。'}]},
+  {id:'stilled_hourglass',floor:2,title:'止まった砂時計',scene:'棚の奥で砂時計が横向きに置かれている。ガラスに刻まれた時間の印は、巡礼者の交代を示しているようだ。',choices:[
+   {id:'measure',label:'刻印と砂の位置を記録する',hint:'戦闘勝利後 EXP+45',exp:45,note:'砂時計の刻印を写し、巡礼の交代時刻を調べた。'},
+   {id:'frame',label:'外れた金属の台座を調べる',hint:'戦闘勝利後 鉄鉱石×1',material:'鉄鉱石',quantity:1,note:'砂時計には触れず、外れた台座の金属を持ち帰った。'},
+   {id:'sera',require:'sera',label:'セラに古い時間の測り方を教わる',hint:'セラ同行時／戦闘勝利後 EXP+70',exp:70,note:'セラは刻印の意味を読み、かつての当番表とのつながりを見つけた。'}]},
  ],
  [
   {id:'shadow_guard',floor:3,title:'守護者の影',scene:'壁に長い影が揺れる。大きな剣の動きを予測する手掛かりになるかもしれない。',choices:[
@@ -3634,9 +3795,45 @@ const DUNGEON_EVENTS=[
   {id:'old_ritual',floor:3,title:'古い巡礼の紋様',scene:'地面の紋様は複数の道を示しているようだ。探索者の勘が役立ちそうだ。',choices:[
    {id:'read',label:'紋様を読み取る',hint:'戦闘勝利後 EXP+45',exp:45,note:'古い道順を読み解いた。'},
    {id:'chip',label:'紋様の欠片を集める',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'紋様のある石片を持ち帰った。'},
-   {id:'rio',require:'rio',label:'リオと隠された道筋を探す',hint:'リオ同行時／戦闘勝利後 EXP+60・鉄鉱石×2',exp:60,material:'鉄鉱石',quantity:2,note:'リオが見落としていた巡礼路の枝道を見つけた。'}]}
+   {id:'rio',require:'rio',label:'リオと隠された道筋を探す',hint:'リオ同行時／戦闘勝利後 EXP+60・鉄鉱石×2',exp:60,material:'鉄鉱石',quantity:2,note:'リオが見落としていた巡礼路の枝道を見つけた。'}]},
+  // v0.9.127: four additional encounters for the final floor.
+  {id:'crossed_blade_marks',floor:3,title:'交差する剣の跡',scene:'石壁に向かい合う剣の傷が残る。どちらも深くはなく、誰かが間合いを測っていたようだ。',choices:[
+   {id:'study',label:'傷の位置から動きを推測する',hint:'戦闘勝利後 EXP+45',exp:45,note:'壁に残った傷から剣の間合いを記録した。'},
+   {id:'metal',label:'壁の割れ目にある鉄片を拾う',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'剣痕のそばで鉱石を回収した。'},
+   {id:'van',require:'van',label:'ヴァンと守護者の剣筋を読む',hint:'ヴァン同行時／次の戦闘開始から6秒間全員防御',guard:6,note:'ヴァンが刃の角度を読み、守護者の攻撃を警戒する構えを作った。'},
+   {id:'gald',require:'gald',label:'ガルドと守りの間合いを確認する',hint:'ガルド同行時／次の戦闘開始から6秒間全員防御',guard:6,note:'ガルドが後列との距離を確かめ、防御陣形を整えた。'}]},
+  {id:'unlit_pilgrim_lamp',floor:3,title:'灯らない巡礼灯',scene:'祭壇脇の灯具は火を失っている。それでも周囲には、かつて人が集まったような足跡がある。',choices:[
+   {id:'listen',label:'灯具の由来を調べて記録する',hint:'戦闘勝利後 EXP+45',exp:45,note:'巡礼灯が旅人たちの合流場所だったことを記録した。'},
+   {id:'fittings',label:'外れた金具を回収する',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'灯具本体を残し、床に落ちた金具を回収した。'},
+   {id:'mina',require:'mina',label:'ミーナと合流地点の安全を確かめる',hint:'ミーナ同行時／次の戦闘開始から5秒間全員防御',guard:5,note:'ミーナが休息場所を見極め、守護者に備える隊列を整えた。'},
+   {id:'eda',require:'eda',label:'エダと灯具に残る名前を写す',hint:'エダ同行時／戦闘勝利後 EXP+65',exp:65,note:'エダと一人ひとりの名前を読み、灯りのもとに集った人々を記録した。'}]},
+  {id:'return_etchings',floor:3,title:'帰還を示す刻線',scene:'祭壇の足元には、外へ向かう矢印がいくつも重ねられている。古いものと新しいものが同じ道を指す。',choices:[
+   {id:'note',label:'矢印の重なりを記録する',hint:'戦闘勝利後 EXP+45',exp:45,note:'帰還路が何度も確かめられた形跡を手帳に残した。'},
+   {id:'check',label:'足元の鉱石を調べる',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'刻線を削らずに周囲の鉱石を採取した。'},
+   {id:'rio',require:'rio',label:'リオと帰還路の順序を確かめる',hint:'リオ同行時／戦闘勝利後 EXP+65・鉄鉱石×1',exp:65,material:'鉄鉱石',quantity:1,note:'リオが矢印の重なりから、複数の帰還路を見分けた。'}]},
+  {id:'keepers_promise',floor:3,title:'守り手の約束印',scene:'壁に、名前の代わりに小さな印を並べた場所がある。守護者へ向かう旅人が交わした約束らしい。',choices:[
+   {id:'transcribe',label:'印の並びを記録する',hint:'戦闘勝利後 EXP+50',exp:50,note:'約束印を写し、守り手たちの記録を残した。'},
+   {id:'ore',label:'崩れた土台の石材を拾う',hint:'戦闘勝利後 鉄鉱石×2',material:'鉄鉱石',quantity:2,note:'印には触れず、崩れた土台から鉱石を持ち帰った。'},
+   {id:'sera',require:'sera',label:'セラと約束印の封印を読み解く',hint:'セラ同行時／戦闘勝利後 古代の魔石×1',material:'古代の魔石',quantity:1,note:'セラが約束印を解読し、封印の傍らに残る古代の魔石を見つけた。'},
+   {id:'noel',require:'noel',label:'ノエルと印の意味を考える',hint:'ノエル同行時／戦闘勝利後 EXP+70',exp:70,note:'ノエルが一つずつ印を読み、人が交代で守護していた記録を見つけた。'}]},
  ]
 ];
+
+const DUNGEON_NPC_REMARKS=Object.freeze({
+ forgotten_camp:{gald:'ガルド「石の並べ方で風向きが分かる。退路も確かめよう」',mina:'ミーナ「古い葉には触れず、新しい薬草だけ選びましょう」'},
+ two_wayposts:{rio:'リオ「どっちも道標なんだよね。実際の道を見比べてみよう！」',van:'ヴァン「迷うなら足場を見ろ。崩れる道を避ければいい」'},
+ patched_cloak:{toto:'トト「外套はそのままにしておきな。落ちた金具なら手掛かりになるよ」'},
+ reed_scraps:{eda:'エダ「誰かに伝えたかった言葉かな。順番に読んでみたいね」',noel:'ノエル「字がかすれてますね……少しずつなら読めるかもしれません」'},
+ light_window:{sera:'セラ「光の角度で文字が浮かぶ……重なりを記録しましょう」'},
+ unclaimed_slates:{noel:'ノエル「この印、並び方に決まりがありそうです……！」',eda:'エダ「まず道を空けよう。誰かがつまずいちゃうもの」'},
+ dry_basket:{mina:'ミーナ「古い葉は使えません。水場の新芽だけ確かめましょう」',toto:'トト「葉が元気かどうか、裏側を見ると分かるんだよ」'},
+ stilled_hourglass:{sera:'セラ「刻印は時間だけでなく、交代の順序も示しているようです」'},
+ crossed_blade_marks:{van:'ヴァン「傷が浅い。力ではなく、間合いを測った跡だ」',gald:'ガルド「この位置なら後衛を守れる。隊列を確かめよう」'},
+ unlit_pilgrim_lamp:{mina:'ミーナ「ここで休んだ人がいたのでしょう。足場を確かめましょう」',eda:'エダ「灯りのそばに名前があるよ。読んで残しておきたいな」'},
+ return_etchings:{rio:'リオ「矢印が何度も上書きされてる！　帰り道を教えたかったんだね」'},
+ keepers_promise:{sera:'セラ「名前ではなく印で残した約束……封印の意味を調べます」',noel:'ノエル「一つずつ並べれば、守る順番が分かるかもしれません」'}
+});
+
 const eventById=id=>DUNGEON_EVENTS.flat().find(e=>e.id===id);
 function dungeonEventForFloor(floor){return eventById(save.dungeon.schedule?.[floor]);}
 function advanceDungeonEncounter(){const d=save.dungeon;d.phase=d.schedule[d.floor]?'encounter':'ready';}
@@ -3845,7 +4042,7 @@ function renderChapters(){
 }
 
 
-// v0.9.121: third personal chapters. Their outcomes respond to the saved first
+// v0.9.127: third personal chapters. Their outcomes respond to the saved first
 // and second chapters, without replacing the earlier NPC outlook or achievements.
 const THIRD_CHAPTERS=Object.freeze({"gald":{"title":"灯りをつなぐ役目","first":"forest","last":"mine","partner":"mina","gold":320,"xp":210,"open":"帰還路を確かめる仕事を続けてきたガルドに、若い冒険者が「帰りを待つ人の不安」を相談してきた。","line":"「俺一人で見張れる道には限りがある。帰れる場所を、次の誰かにも守ってもらいたい」","firstCareful":"最初の依頼で記録した安全な帰路が、今も道標になっている。","firstBold":"最初の依頼で見つけた警戒地点が、今では巡回の目印になった。","previousSteady":"第二章で整えた退路を、今度は自分以外の仲間にも伝えようとしている。","previousVenture":"第二章で仲間と迎えに行った経験から、役割を任せることを考え始めた。","firstScene":"森の分岐に古びた灯籠がある。ガルドは自分の印だけでは誰も道を覚えられないと気づく。","consult":"道を守る仕事を、次の人にも残すにはどうする。","settled":{"label":"巡回の手引きを一緒に作る","end":"ガルドは若い冒険者に足場の見方と休息地点の探し方を教えた。「守る」とは、誰かが一人で抱える仕事ではなかった。","letter":"巡回の手引きを渡してきた。俺がいない日も、帰り道を確かめる人がいる。少し安心した。","after":"今日の巡回は若い連中に任せた。俺は帰還報告を聞いていたが、任せるのも悪くないな。"},"forward":{"label":"皆で新しい救援路を確かめる","end":"ガルドは仲間たちを集め、鉱山から町へ戻る別の道を確かめた。救援の判断を一人で決めず、皆の知恵を道標にした。","letter":"新しい救援路を皆で確かめた。目印を決めるときに、俺にはない視点がいくつも出たよ。","after":"道標の位置を仲間と相談した。前なら自分で決めたかもしれんが、今は違う。"}},"rio":{"title":"だれかの帰る地図","first":"mine","last":"forest","partner":"sera","gold":310,"xp":205,"open":"地図の余白を埋めてきたリオは、古道の先に住む人が、自分とは違う道の名前を使っていると知った。","line":"「僕の地図は僕が見つけた道ばっかりだ。ここで暮らす人の道も、ちゃんと描きたい！」","firstCareful":"第一章で丁寧に写した足跡のおかげで、古い道の分岐が分かる。","firstBold":"第一章で奥まで歩いた景色が、道をたどる手掛かりになっている。","previousSteady":"第二章で古い利用者の名を残してから、地図は発見の記録だけではないと思うようになった。","previousVenture":"第二章で道の終点に立ち、そこを通ってきた人々のことも気になり始めた。","firstScene":"鉱山の古い標識には、リオの地図と違う呼び名が刻まれている。誰かの生活に根づいた道らしい。","consult":"地図に道の名前を入れるとしたら、何を大切にする？","settled":{"label":"町の人に道の呼び名を聞く","end":"リオは何人もの旅人の話を聞き、地図に複数の道の名前を書き添えた。道はひとつでも、歩いた人の物語はひとつではなかった。","letter":"地図に名前を二つ書いたんだ。僕がつけた名前と、昔から使われてる呼び名。どっちも残したくて！","after":"今日は町の人に道を教えてもらったよ。地図を埋めても、まだ聞きたいことが増えるんだ。"},"forward":{"label":"誰でも使える案内図を作る","end":"リオは森への道順と休める場所を描き加え、ギルドに案内図を置いた。自分の発見が、誰かの無事な帰り道になっていく。","letter":"ギルドに新しい案内図を置いてきたよ！　初めて歩く人にも、帰り道が分かるように描いたんだ。","after":"案内図を見て出かけた人が帰ってきたって！　地図って誰かの旅を助けられるんだね。"}},"sera":{"title":"石の記録を町へ","first":"mine","last":"forest","partner":"noel","gold":335,"xp":220,"open":"石の紋様を読み解いてきたセラは、発見を研究室にしまうだけでよいのか考えていた。","line":"「正確な記録を残すだけでなく、必要とする人が読める形にしたいのです」","firstCareful":"第一章で保存した標識の写しが、資料の基礎になっている。","firstBold":"第一章で確かめた魔力の反応が、紋様の働きを解く鍵になっている。","previousSteady":"第二章では記録を丁寧に整理する道を選んだ。その資料の使い道を今は考えている。","previousVenture":"第二章では現地で仮説を試した。確かめた事実を誰に伝えるべきかが次の問いになった。","firstScene":"鉱山の古い案内板を見た旅人が、そこに書かれた休息地点を知りたがっている。","consult":"研究の成果を、誰かの日常にも役立てるには？","settled":{"label":"読みやすい手引きを編む","end":"セラは難しい記号を分かりやすい図に直し、ギルドに置いた。資料を読む誰かの手で、新しい発見が生まれることを楽しみにしている。","letter":"古い紋様の読み方を図にしてみました。ギルドの掲示板なら、調査員以外の方にも届きそうです。","after":"案内図を読んだ旅人から質問が届きました。新しい問いが生まれるのは、うれしいことですね。"},"forward":{"label":"現地で使い方を伝える","end":"セラは調査を手伝う仲間と歩き、休息地点の見分け方を教えた。記録は本の中だけでなく、人から人へ受け継がれていく。","letter":"森で、紋様の見分け方を仲間に伝えてきました。質問を受けると私も理解が深まります。","after":"記録の使い方を人に教える時間が増えました。自分の知らない見方にも出会えています。"}},"mina":{"title":"救護箱の次の持ち主","first":"forest","last":"mine","partner":"eda","gold":305,"xp":205,"open":"救護箱を整えたミーナの元へ、手当てを覚えたいという新人が訪れた。","line":"「私が駆けつけるだけではなく、困ったとき互いに助けられる町にしたいんです」","firstCareful":"第一章で確認した休息地点が、救護箱を置く場所になった。","firstBold":"第一章で選んだ安全な迂回路が、今も救護の道として使われている。","previousSteady":"第二章で救護箱の点検を分担したことが、新人の学びにつながっている。","previousVenture":"第二章で現地に合う手順を試した経験を、今度は誰かに手渡したい。","firstScene":"森の休息地点で新人が救護箱を開く。道具はあるが、どこから使えばよいか迷っている。","consult":"次に必要なのは、手当てをする自分の手だろうか。それとも誰かの手だろうか。","settled":{"label":"新人に救護の手順を教える","end":"ミーナは失敗しやすい手順を一緒に確かめ、新人が自分で救護箱を扱えるようになるのを見守った。助ける人が一人増えた。","letter":"救護箱の手順を新人と確かめました。今日は私より先に包帯を用意してくれたんですよ。","after":"新人が自分で休息地点を点検してくれました。任せられる人が増えるのは、心強いですね。"},"forward":{"label":"仲間と救護の連携を試す","end":"ミーナは鉱山の休息地点で役割を分ける訓練をした。自分も休んでよいと知り、救護を続ける方法を見つけた。","letter":"鉱山で救護の役割を分けてみました。私が休んでいる間にも、仲間が動ける仕組みになりそうです。","after":"今日は救護当番を交代して、少し休みました。手を離すことも大切な仕事ですね。"}},"noel":{"title":"はじめて教える呪文","first":"forest","last":"forest","partner":"sera","gold":300,"xp":210,"open":"仲間を守る魔法を覚えたノエルに、新人の魔術師が術の唱え方を尋ねてきた。","line":"「僕が教える側になるなんて……でも、あの子の不安なら分かる気がします」","firstCareful":"第一章で一戦ずつ落ち着いて確かめたことが、今も練習の支えになっている。","firstBold":"第一章で怖い相手にも挑んだ経験を、ノエルは一度も忘れていない。","previousSteady":"第二章では守りの術を繰り返した。その順番を誰かに伝えようとしている。","previousVenture":"第二章では自分で前に出る決断をした。今度は誰かの決断を支えたいと思っている。","firstScene":"森で新人が詠唱を間違える。ノエルはすぐ助けに入ろうとして、自分も初めは同じだったと思い出す。","consult":"教えるとき、答えを先に示すべきだろうか。","settled":{"label":"一緒に最初から練習する","end":"ノエルは緊張した声のまま、新人とひとつずつ呪文を練習した。立派な先生でなくても、隣で考える人にはなれる。","letter":"新人と呪文の一節を練習しました。僕もつまずいたところだったので、うまく説明できた気がします。","after":"今日は教える前に、分からないところを聞いてみました。僕もまだ学んでいる途中なんですね。"},"forward":{"label":"相手の判断を見守る","end":"ノエルは新人が自分で唱えるまで待ち、成功を一緒に喜んだ。誰かを守る魔法が、今度は誰かの勇気を守った。","letter":"今日は新人が自分で術を唱えきりました。途中で口を挟まずに待てたのが、僕にはうれしくて。","after":"練習のとき、すぐ助けずに見守れるようになりました。怖さを知っているからこそ、かもしれません。"}},"eda":{"title":"わたしの予定を一日","first":"forest","last":"mine","partner":"mina","gold":310,"xp":210,"open":"誰かを手伝う約束で予定を埋めていたエダが、自分の行きたい場所を書き込むために手帳を開いた。","line":"「誰かのために出かけるのも好き。でも、今日は私が決めた予定を守ってみたいの」","firstCareful":"第一章で自分で道を選んだ日のことを、エダは大切に覚えている。","firstBold":"第一章で丘の向こうへ踏み出した経験が、自分の好奇心を育てた。","previousSteady":"第二章では景色を味わうために遠回りした。その時間が今も心に残っている。","previousVenture":"第二章では自分のために険しい道を選んだ。もう次の行き先を考えている。","firstScene":"森の道端で誰かに手伝いを頼まれる。エダは快く返事しかけて、今日の自分の約束を思い出した。","consult":"自分の予定と、誰かへの思いやりをどう両立しよう。","settled":{"label":"できる日を伝えて約束する","end":"エダは今日は自分の旅を続け、別の日に手伝う約束をした。優しさを捨てず、自分の時間も大切にできた。","letter":"今日は自分の予定を優先して歩いてきたの。手伝いは明日って約束したから、どっちも楽しみだよ。","after":"予定表に「私のための日」を一つ書き込んだよ。空けておくんじゃなくて、選んでいいんだよね。"},"forward":{"label":"仲間と新しい旅を企画する","end":"エダは自分が見たい景色を話し、仲間を誘って鉱山へ向かった。誰かを支える旅ではなく、自分が企画する旅が始まった。","letter":"今度は私が行き先を決めて、みんなを誘ったの！　地図にしるしをつけるところから楽しかったよ。","after":"ギルドで次の小旅行を相談したの。誰かが決めた予定について行くのとは、違うわくわくがあるね。"}},"toto":{"title":"値札のない届けもの","first":"mine","last":"forest","partner":"rio","gold":345,"xp":215,"open":"仕入れ先の人々と話すようになったトトは、市場に置き忘れられた小さな道具を手にした。","line":"「これには値札をつけられないね。持ち主のところへ戻す方が、よほど値打ちがある」","firstCareful":"第一章で一つずつ品を調べた経験が、持ち主の痕跡を探す助けになる。","firstBold":"第一章で新しい仕入れ先を見つけた経験が、人づての手掛かりになっている。","previousSteady":"第二章で相手と取引条件を話し合ったことで、品の向こうの人を見るようになった。","previousVenture":"第二章で新しい採集先と出会ったからこそ、品が運ばれる道も気にするようになった。","firstScene":"鉱山で見つけた印と、届けものの留め金の傷が似ている。トトは思い当たる仕入れ先を口にする。","consult":"売ること以外に、この品にできることは何だろう。","settled":{"label":"持ち主を探して返しに行く","end":"トトは売り物にならない小さな道具を持ち主へ返した。代金は受け取らなかったが、帰り道に長く続く信頼の重さを感じた。","letter":"道具の持ち主を見つけたよ。値段を聞かれたけど、返しに行っただけさ。こういう商いもあるんだね。","after":"今日も店先で品の由来を尋ねたよ。値札より先に確かめたいことが増えたのさ。"},"forward":{"label":"道具の来歴を帳簿に残す","end":"トトは道具の来歴を聞き取り、市場の帳簿に書き添えた。買わない品にも、残しておくべき誰かの暮らしがある。","letter":"品物の持ち主に話を聞いて、帳簿に来歴を残したよ。売り物じゃなくても、忘れちゃ惜しい話がある。","after":"今日は帳簿の余白に持ち主の名前を一つ書いた。商いの記録も、暮らしの記録になるね。"}},"van":{"title":"剣を預ける日","first":"mine","last":"forest","partner":"gald","gold":350,"xp":230,"open":"剣を納める判断を覚えたヴァンが、訓練場で若い剣士から「一緒に戦いたい」と頼まれた。","line":"「俺が前に出るだけなら簡単だ。だが、あいつが自分で判断できるようにしたい」","firstCareful":"第一章で背中を守る距離を決めた経験が、いま教える役に立っている。","firstBold":"第一章で息を合わせた瞬間が、誰かと剣を振るう基準になった。","previousSteady":"第二章では追撃をやめ、仲間が戻るのを見届けた。その判断を若い剣士にも伝えようとしている。","previousVenture":"第二章では備えてから挑む道を選んだ。挑戦の意味を、今度は誰かと考えたい。","firstScene":"鉱山で追撃したがる新人を見て、ヴァンはかつての自分を思い出す。剣を抜かずに声をかけた。","consult":"若い剣士が次に迷ったとき、何を残してやれるだろう。","settled":{"label":"退く判断を一緒に練習する","end":"ヴァンは引き際を確かめる訓練を重ね、新人が自分で止まる判断をするのを見届けた。強さは勝敗の外にもあった。","letter":"若い剣士と退く判断の訓練をした。今日は俺が止める前に、あいつが自分で剣を納めた。","after":"訓練場で誰かの判断を待つ時間が増えた。俺が全て決める必要はないな。"},"forward":{"label":"役割を交代して共に戦う","end":"ヴァンは新人と先頭を交代し、森の警戒地点を守った。自分が誰かに背中を預けることも、強さの一つになった。","letter":"森の警戒では若い剣士に先頭を任せた。俺は後ろを見た。あいつも、ずいぶん頼もしくなった。","after":"今日は背中を預ける側に回った。あいつの足音を聞いて、ようやく肩の力が抜けたよ。"}}});
 function thirdReady(id){return Boolean(THIRD_CHAPTERS[id]&&save.personalChapters.completed[id]&&!save.personalThird.completed[id]);}
@@ -3931,7 +4128,7 @@ function renderThird(){
  $('#thirdHistory').innerHTML=book.history.length?book.history.map(x=>`<p class="small tight">✓ <b>${escape(personalNpcName(x.id))}</b>：${escape(x.text)}</p>`).join(''):'第三章の記録はまだありません。';
 }
 
-// v0.9.121: fourth personal chapters. Their outcomes respond to the saved first
+// v0.9.127: fourth personal chapters. Their outcomes respond to the saved first
 // and second chapters, without replacing the earlier NPC outlook or achievements.
 const FOURTH_CHAPTERS=Object.freeze({"gald":{"title":"消えかけた道標","first":"forest","last":"mine","partner":"mina","gold":410,"xp":265,"open":"ガルドが後進へ渡した巡回の手引きが使われ始めたころ、森の分岐で道標の向きが変わっていた。慣れた者には分かる道でも、新人には危険な近道に見えてしまう。","line":"「人に任せた道だからこそ、間違いを見つけたら一緒に直さねばならん」","earlier":"第一章で帰路を確かめ、第二章では自分だけで守らない道を選んだ。その判断が今の巡回の基礎になっている。","thirdSettled":"第四章で渡した手引きを、新人たちは毎日持ち歩いている。ただし、紙の手引きは雨で変わる道まで教えてはくれない。","thirdForward":"第四章で皆と決めた救援路にも、雨で崩れる分岐ができた。話し合って決めた道を、また話し合いで直すときが来た。","firstScene":"森の分岐で足跡が二手に分かれている。片方の道標は傾き、先の土は雨で柔らかくなっていた。ガルドは剣に手をかけず、地面を指さした。","consult":"「俺が直せば早い。だが、それでは次に迷う者がまた出る。どう残すべきだ？」","listen":{"label":"巡回役と一緒に目印を直す","end":"ガルドは新人たちと分岐へ戻り、雨の日にも見える道標を据え直した。誰がどの目印を確かめるか、帰還時の手引きにも書き添えた。","letter":"森の道標を新人と直してきた。目印を置く場所を任せたら、俺より見通しのいい位置を選んだ。","after":"今日の巡回報告には、道標の傷みも書いてあった。任せるとは、気づいたことを持ち寄ることなんだな。"},"renew":{"label":"危険な区間を記録して迂回路を整える","end":"ガルドは鉱山側まで回り、ぬかるむ区間を地図に記した。近道を閉じるだけでなく、代わりに通れる道を仲間と確かめた。帰還路は一つでなくてよい。","letter":"雨で傷んだ道を無理に通さず、迂回路を調べた。遠回りでも全員が戻れるなら、それがいい。","after":"今朝、迂回路を通った一行が無事に戻ったと聞いた。道を変える判断も、守る仕事だな。"}},"rio":{"title":"地図の余白は生きている","first":"forest","last":"mine","partner":"sera","gold":405,"xp":270,"open":"リオがギルドに置いた案内図を頼りに旅立った人が、増水で通れない小道に出会った。地図は間違っていなかった。でも道は、昨日と同じではなかった。","line":"「僕の地図を信じてくれた人が困ったんだ。だったら、次に迷わない地図にしたい！」","earlier":"第一章で道を見つけ、第二章で道の先にいる人の暮らしを知った。地図は発見を独り占めするものではなくなった。","thirdSettled":"第四章では昔からの道の呼び名を残した。そこを毎日通る人ほど、季節で道が変わることもよく知っている。","thirdForward":"第四章で描いた案内図が、初めての旅人にも使われている。だからこそ、書いていない危険も見えるようにしたい。","firstScene":"森の水辺に新しい足跡が止まっている。リオは渡れなくなった小道を見て、地図の端を指で押さえた。昨日まで通れたのに。","consult":"「道は変わるよね。僕の地図も変わっていいんだと思う。どう描き直そう？」","listen":{"label":"道を使う人から季節の話を聞く","end":"リオは住人から雨季の通行止めや休める場所を聞き、地図に季節ごとの目印を描き足した。自分の足だけでは見つからない道があった。","letter":"森の人に、雨の日の道を教えてもらったんだ。季節で違う道を描いたら、地図が前より生き生きして見えるよ！","after":"今日も地図に小さな書き足しをしたよ。僕が歩いてない日も、誰かが道を教えてくれるんだね！"},"renew":{"label":"誰でも更新できる地図を作る","end":"リオはギルドの案内図に余白を残し、旅人が通れなかった道を知らせられる欄を作った。完成しない地図だからこそ、長く役立つものになった。","letter":"ギルドの地図に「今日の道の様子」って欄を作ったよ！　知らない人の書き込みも、次の旅の道しるべになるんだ。","after":"地図の余白に新しい印が増えてた！　誰が書いたか知らなくても、帰り道を助け合えるっていいね。"}},"sera":{"title":"訂正の記された石","first":"mine","last":"forest","partner":"noel","gold":425,"xp":280,"open":"セラが公開した古い標識の読み方に、旅人から疑問が届いた。写しに間違いはない。それでも、現地の石には欠けた一文字があるらしい。","line":"「記録を広めた以上、訂正するときも私が説明しなくては。誤りを隠す理由はありません」","earlier":"第一章では石の意味を探り、第二章では仮説を確かめる方法を選んだ。分かったことと分からないことを分ける姿勢は今も変わらない。","thirdSettled":"第四章で作った手引きが町に届き、読者の疑問が返ってきた。読みやすい資料ほど、間違いを明示する責任も生まれる。","thirdForward":"第四章で現地に伝えた読み方を、別の旅人も使ったらしい。教えた内容を、もう一度石の前で確かめる必要がある。","firstScene":"鉱山の古い標識を写すと、文字の下にもう一本の線が見えた。セラはノートの前の頁を開き、書き直すための余白を探す。","consult":"「訂正だけを伝えるか、そこへ至った過程も残すか。どうすれば次の人の役に立つでしょう？」","listen":{"label":"誤読と訂正を並べて公開する","end":"セラは最初の写しを消さず、どこを読み違えたのか図で示した。失敗の記録は、次の調査員が同じ迷いを越えるための手がかりになった。","letter":"古い標識の手引きに、訂正した箇所と読み違えた理由を書き添えました。失敗も記録に残すべきですね。","after":"掲示板に訂正を出したら、似た疑問を持つ方から返事が届きました。研究は一人では終わりませんね。"},"renew":{"label":"現地で確かめる手順を組み直す","end":"セラは文字を図だけで決めず、光の角度や石の傷みも確かめる調査手順を作った。答えを急がない方法が、町の新しい資料になった。","letter":"現地での確認手順を作り直しました。答えを一つ示すより、確かめ方を伝える方が役立つ場面もありますね。","after":"新しい手順で調べた人から、別の読み方が届きました。結論を急がず比べられるのがうれしいです。"}},"mina":{"title":"助けを呼べる場所","first":"forest","last":"mine","partner":"eda","gold":400,"xp":270,"open":"ミーナが手当てを教えた新人から、連絡が届いた。森で休んでいた旅人を助けられたが、次に誰を呼べばいいか分からなかったという。","line":"「手当てを覚えただけでは、助けを続けられないんですね。助けを呼ぶ道も整えたいです」","earlier":"第一章で安全な休息地点を見つけ、第二章で一人で背負わない救護を考えた。その積み重ねが、今の救護箱に残っている。","thirdSettled":"第四章で手順を教えた新人は、もう自分で応急処置ができる。次は遠くにいる仲間に助けを求める方法が必要だ。","thirdForward":"第四章では救護役を分担した。しかし離れた場所では、次の担当へ状況を伝えるのが難しかった。","firstScene":"森の休息地点の帳面には、手当ての内容が丁寧に書かれていた。最後の「次の担当者」の欄だけが空白のままだった。","consult":"「一人が頑張らなくても、必要な助けにたどり着けるようにするには？」","listen":{"label":"救護当番の連絡帳を作る","end":"ミーナは誰がどこにいるか書き込める連絡帳を整え、連絡がつかないときの次の相手も決めた。助けを求めることが、救護の手順の一つになった。","letter":"救護当番の連絡帳を作りました。困ったら次に誰へ頼ればよいか、ひと目で分かるようにしたんです。","after":"新人から「今日は迷わず助けを頼めました」と知らせが来ました。自分で呼べることも力ですね。"},"renew":{"label":"遠征先へ伝える合図を決める","end":"ミーナは鉱山への道に連絡の目印を設け、同行者と合図を練習した。救護箱が届かない時間にも、誰かへ状況を伝える道ができた。","letter":"遠征先から助けを呼ぶ合図を練習してきました。小さな合図でも、誰かにつながると思うと心強いです。","after":"鉱山の帰還報告に、連絡の合図を使った記録がありました。助ける仕事も少しずつ広がっていますね。"}},"noel":{"title":"間違えた呪文の頁","first":"forest","last":"mine","partner":"sera","gold":410,"xp":275,"open":"ノエルに教わった新人が呪文を覚えた。しかし森の訓練で詠唱を一節飛ばし、次から声を出すのを怖がるようになった。","line":"「僕も何度も間違えました。だからこそ、間違えたあとにどうしたらいいかを伝えたいです」","earlier":"第一章で怖さの中に踏みとどまり、第二章では自分で決めて魔法を唱えた。うまくいかなかった経験も彼の大切な一部だ。","thirdSettled":"第四章では新人と最初から練習した。だから今回も、できないことを一緒に確かめられるはずだ。","thirdForward":"第四章では新人の判断を待てた。今度は失敗した相手に、どんな言葉をかけるか迷っている。","firstScene":"森の小さな訓練場に、途中まで書かれた呪文の紙が落ちている。ノエルは拾い上げ、自分の古い練習帳を思い出す。","consult":"「失敗したところを、なかったことにしないで進めるには……どうしたらいいでしょう？」","listen":{"label":"自分の失敗した頁を見せる","end":"ノエルは自分の昔の練習帳を開き、何度も間違えた詠唱を見せた。新人は笑って、もう一度声を出した。教える側も完璧でなくていい。","letter":"昔の練習帳を新人に見せました。間違えたところに丸がいっぱいあって……二人で少し笑えたんです。","after":"今日は「間違えても書き残していい」と伝えました。僕も練習帳を閉じずに続けていきます。"},"renew":{"label":"一節ずつ確かめる練習を作る","end":"ノエルは詠唱を短く区切り、失敗したところから戻れる練習を考えた。新人は自分の速さで唱え直し、最後の一節までたどり着いた。","letter":"呪文を一節ずつ確かめる練習を作りました。途中で止まっても、そこから戻ればいいんですね。","after":"新人が自分のペースで呪文を唱えられました。早くできることだけが成長じゃないんですね。"}},"eda":{"title":"約束の空白","first":"forest","last":"mine","partner":"mina","gold":405,"xp":270,"open":"エダが自分で立てた旅の予定と、友人からの頼まれごとが同じ日に重なった。断ったら、友人は少し寂しそうだったという。","line":"「自分の予定を守るのって、思ったより難しいね。でも、誰かの気持ちも大切にしたいの」","earlier":"第一章で自分の道を選び、第二章では誰かの期待に応えるだけでない自分を見つめた。その続きが今日の手帳にある。","thirdSettled":"第四章で「別の日に手伝う」という約束をした。その約束をきちんと果たすには、お互いの予定を話す時間がいる。","thirdForward":"第四章で自分から旅を企画した。そのわくわくを守りながら、誘えなかった人の気持ちにも目を向けたい。","firstScene":"森の分岐でエダは立ち止まり、手帳を開いた。自分で決めた旅の予定と、友人に返す言葉の間に小さな空白がある。","consult":"「断るだけじゃ伝わらないし、全部引き受けたら私の旅がなくなる。どう話そうかな？」","listen":{"label":"友人の話を聞いて予定を相談する","end":"エダは友人が寂しかった理由を聞き、別の日に一緒に歩く約束をした。自分の予定も変えず、相手の気持ちも聞けたことがうれしかった。","letter":"友人と予定のことを話したよ。断る理由だけじゃなくて、相手の話も聞けた。別の日に一緒に出かけるんだ！","after":"今日は手帳に二つ約束を書いたの。自分の旅も、友人と歩く日も、どっちも大事にしたいな。"},"renew":{"label":"旅の景色を手紙で分け合う","end":"エダは自分の旅を続け、道で見つけたものを友人へ手紙に書いた。同行できなかった日も、話を分け合うことでつながりが残った。","letter":"自分で決めた道を歩いて、見つけた景色を友人に手紙で送ったよ。一緒に行けない日も、話せることはあるね。","after":"友人から返事が届いたよ！　今度は向こうが見た景色を教えてくれるんだって。楽しみだな。"}},"toto":{"title":"帳簿の余白の値段","first":"mine","last":"forest","partner":"rio","gold":440,"xp":280,"open":"トトが品物の来歴を記録するようになると、店に「これはいくらで引き取るべきか」と相談する人が増えた。思い出の品にも、店を続ける費用はかかる。","line":"「値段をつけない親切と、きちんと商いを続けること。どっちも投げ出したくないね」","earlier":"第一章で品を見極め、第二章では取引の向こうにいる人を見た。その目は、売り物にならない品にも向けられている。","thirdSettled":"第四章で返した小さな道具が、町で評判になった。無料の返却が続けば店の人手が足りなくなるのも事実だ。","thirdForward":"第四章で来歴を記した帳簿が、いまは誰かの思い出を探す手がかりになった。その手間をどう支えるか考えている。","firstScene":"鉱山で見つかった古い金具に、持ち主をたどる刻印があった。トトは帳簿に記しながら、その仕事を誰が続けるのか考えた。","consult":"「ただで引き受けるだけじゃ続かない。でも、値段で切り捨てたくもない。どう折り合いをつけようかね？」","listen":{"label":"寄託と取引の決まりを明確にする","end":"トトは無料でできる相談と費用のかかる調査を分け、店先に分かりやすく掲げた。親切を続けるための線引きは、冷たいものではなかった。","letter":"店先に相談と調査の決まりを貼ったよ。何でもただで引き受けるわけじゃない。でも話を聞く時間は残せた。","after":"今日は頼まれごとの内容を聞いて、できる範囲を説明したよ。続けられる親切にしなくちゃね。"},"renew":{"label":"町の人と持ち物の来歴帳を分担する","end":"トトは町の人に協力を頼み、品物の由来を書き込める来歴帳を作った。記録する人が増え、商いと助け合いの両方が続く場所になった。","letter":"町の人と一緒に、品物の来歴を記す帳面を作ったよ。あたし一人の帳簿じゃないってのがいいね。","after":"今日は別の店からも来歴の話が届いた。人の記憶をつなぐのも、立派な町の仕事さ。"}},"van":{"title":"剣の届かない背中","first":"mine","last":"forest","partner":"gald","gold":445,"xp":290,"open":"ヴァンが教えた若い剣士が、今度は一人で巡回へ行くと告げた。助けに出れば早い。しかし、それでは若者の判断を奪うかもしれない。","line":"「俺がいなくても、あいつは歩けるのか。……信じるというのは、楽ではないな」","earlier":"第一章で守る距離を学び、第二章では剣を納める判断を選んだ。強くなることだけでは、誰かと歩けないと知っている。","thirdSettled":"第四章で退く判断を教えた新人が、自分で道を確かめると言い出した。教えたことを信じるか、まだ迷っている。","thirdForward":"第四章で背中を預けた新人が、今度は自分の足で前に進みたいと言う。頼もしさと心配が同時にある。","firstScene":"森の巡回路には、若い剣士の新しい足跡が残っている。ヴァンは剣を抜かず、立ち止まって帰路を確かめた。","consult":"「あいつが自分で歩くと決めた。俺は何をしてやれる？」","listen":{"label":"戻る合図と退路だけ確かめる","end":"ヴァンは若い剣士と帰還時の合図を決め、あとは自分の道を歩かせた。夕暮れにその合図を聞いたとき、初めて見守る強さを知った。","letter":"若い剣士とは帰還の合図だけ決めた。夕方、その合図が聞こえた。……思ったより安心するものだな。","after":"今日はあいつから先に巡回の報告があった。俺が尋ねる前にな。任せた道は、あいつのものだ。"},"renew":{"label":"自分は後方支援を引き受ける","end":"ヴァンは先回りして前に立つ代わりに、補給と後方の安全を確かめた。若い剣士の一歩を奪わず、誰かを守る新しい立ち位置を得た。","letter":"今日は後方の補給を引き受けた。前に出るのはあいつの役目だ。俺にも別の守り方がある。","after":"巡回を終えたあいつが、補給の礼を言ってきた。剣を交えなくても、支えられることはあるんだな。"}}});
 
@@ -4096,11 +4293,11 @@ function renderGearJournal(){
  const more=$('#gearJournalMore');more.hidden=names.length<=view.length;more.textContent=`続きを表示（残り${names.length-view.length}種類）`;
 }
 
-function initial(){return {version:45,gearStorageTier:0,achievements:{version:1,unlocked:[],equipped:""},gearJournal:blankGearJournal(),farm:{version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}},loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,miniClockEnabled:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalThird:{active:null,completed:{},history:[]},personalFourth:{active:null,completed:{},history:[]},personalQuests:{active:null,completed:{},history:[]},dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
+function initial(){return {version:45,gearStorageTier:0,achievements:{version:1,unlocked:[],equipped:""},gearJournal:blankGearJournal(),farm:{version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}},loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,miniClockEnabled:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalThird:{active:null,completed:{},history:[]},personalFourth:{active:null,completed:{},history:[]},npcDailyReflections:{version:1,cursor:0,entries:[]},personalQuests:{active:null,completed:{},history:[]},dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
 function safeInteger(n,min,max,fallback){n=Number(n);return Number.isFinite(n)?Math.max(min,Math.min(max,Math.floor(n))):fallback;}
 // v0.9.80: Farm is part of the same JSON save, with fixed plot indexes and a closed crop whitelist.
 function sanitizeFarm(raw,tick){
- const ids=['wheat','carrot','potato','tomato','herb','pumpkin','berry','moonturnip'];
+ const ids=['wheat','carrot','bean','potato','onion','tomato','herb','mushroom','pumpkin','berry','apple','moonturnip'];
  const result={version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}};
   if(!raw||typeof raw!=='object')return result;
  result.unlockedPlots=safeInteger(raw.unlockedPlots,2,10,2);
@@ -4120,7 +4317,7 @@ function sanitizeFarm(raw,tick){
  result.history=Array.isArray(raw.history)?raw.history.filter(x=>x&&typeof x.text==='string').slice(-25).map(x=>({tick:safeInteger(x.tick,0,tick,0),text:x.text.slice(0,100)})):[];
  // v0.9.81: a bounded recipe whitelist prevents malformed imported saves from
  // granting unknown foods or corrupting the farm/crop inventories.
- const recipeIds=['bread','veggieSoup','herbPotatoes','pumpkinSoup','berryTart','moonStew'];
+ const recipeIds=['bread','beanSalad','veggieSoup','onionSoup','herbPotatoes','mushroomRice','pumpkinSoup','harvestHotpot','berryTart','applePie','moonStew','twilightStew'];
  const kitchen=raw.kitchen;
  if(kitchen&&typeof kitchen==='object'&&!Array.isArray(kitchen)){
   const k=result.kitchen;
@@ -4141,8 +4338,8 @@ function sanitizeFarm(raw,tick){
  // 0.9.84: persistent crop-and-cooking collection journal. Older saves have
  // only capped activity logs, so infer solely from current holdings or explicit
  // recorded harvesting/cooking; never assume bought seeds or recipes were used.
- const names={wheat:'小麦',carrot:'にんじん',potato:'じゃがいも',tomato:'トマト',herb:'香草',pumpkin:'かぼちゃ',berry:'星蜜ベリー',moonturnip:'月光かぶ'};
- const foodNames={bread:'焼き麦パン',veggieSoup:'野菜スープ',herbPotatoes:'じゃがいもの香草焼き',pumpkinSoup:'かぼちゃのポタージュ',berryTart:'星蜜ベリーのタルト',moonStew:'月光かぶのシチュー'};
+ const names={wheat:'小麦',carrot:'にんじん',bean:'いんげん豆',potato:'じゃがいも',onion:'玉ねぎ',tomato:'トマト',herb:'香草',mushroom:'森茸',pumpkin:'かぼちゃ',berry:'星蜜ベリー',apple:'暁りんご',moonturnip:'月光かぶ'};
+ const foodNames={bread:'焼き麦パン',beanSalad:'いんげん豆のサラダ',veggieSoup:'野菜スープ',onionSoup:'玉ねぎのスープ',herbPotatoes:'じゃがいもの香草焼き',mushroomRice:'森茸の炊き込み飯',pumpkinSoup:'かぼちゃのポタージュ',harvestHotpot:'畑の具だくさん鍋',berryTart:'星蜜ベリーのタルト',applePie:'暁りんごのパイ',moonStew:'月光かぶのシチュー',twilightStew:'月と暁の煮込み'};
  const col=result.collection,rawCol=raw.collection&&typeof raw.collection==='object'&&!Array.isArray(raw.collection)?raw.collection:null;
  for(const id of ids){
   const had=!!(result.crops[id]>0||result.history.some(e=>e.text.includes('収穫：')&&e.text.includes(names[id]+'×')));
@@ -4481,7 +4678,19 @@ function sanitize(raw){
   if(s.tower.active&&s.tower.phase==='idle')s.tower.phase='choice';
  }
  if(raw.version>=24&&raw.bossCheckpoint&&CombatEngine.resume(raw.bossCheckpoint))s.bossCheckpoint=raw.bossCheckpoint;
- s.npcWorld=raw.version>=5?WorldEngine.sanitize(raw.npcWorld):WorldEngine.initial();s.tactic=['aggressive','balanced','safe'].includes(raw.tactic)?raw.tactic:'balanced';s.healThreshold=safeInteger(raw.healThreshold,35,85,62);
+ s.npcWorld=raw.version>=5?WorldEngine.sanitize(raw.npcWorld):WorldEngine.initial();
+ // v0.9.127: small daily scenes live in the same save; keep a bounded, validated history.
+ const daily=raw.npcDailyReflections;
+ s.npcDailyReflections.cursor=s.npcWorld.windEventSeq; // old saves do not replay past activity
+ if(daily?.version===1 && Number.isInteger(daily.cursor)){
+  s.npcDailyReflections.cursor=safeInteger(daily.cursor,0,s.npcWorld.windEventSeq,s.npcWorld.windEventSeq);
+  if(Array.isArray(daily.entries)){
+   const allowed=new Set(['gald','rio','sera','mina','noel','eda','toto','van']);
+   const safeDaily=daily.entries.filter(x=>x&&allowed.has(x.id)&&typeof x.key==='string'&&/^(gald|rio|sera|mina|noel|eda|toto|van)-(1c|1b|1n|2s|2v|2j|3s|3f|4l|4r)$/.test(x.key)&&x.key.startsWith(x.id+'-')&&typeof x.text==='string'&&Number.isInteger(x.tick)&&x.tick>=0&&x.tick<=s.npcWorld.halfHours);
+   s.npcDailyReflections.entries=safeDaily.slice(-80).map(x=>({id:x.id,key:x.key,tick:x.tick,stage:Number(x.key.split('-')[1][0]),text:x.text.slice(0,180)}));
+  }
+ }
+s.tactic=['aggressive','balanced','safe'].includes(raw.tactic)?raw.tactic:'balanced';s.healThreshold=safeInteger(raw.healThreshold,35,85,62);
  for(const job of Object.keys(s.builds)){const source=raw.builds?.[job];if(source){for(const typ of ['active','passive']){const defs=CombatEngine.SKILLS[job][typ],max=typ==='active'?4:2,ids=new Set(defs.map(x=>x[0]));if(Array.isArray(source[typ]))s.builds[job][typ]=[...new Set(source[typ].filter(x=>typeof x==='string'&&ids.has(x)))].slice(0,max);}}}
  s.heroLevel=safeInteger(raw.heroLevel,1,MAX_LEVEL,10);s.heroExp=safeInteger(raw.heroExp,0,1e8,0);s.totalExp=safeInteger(raw.totalExp,0,1e10,0);s.gold=safeInteger(raw.gold,0,1e9,180);s.wins=safeInteger(raw.wins,0,1e8,0);s.runs=safeInteger(raw.runs,0,1e8,0);s.found=safeInteger(raw.found,0,1e8,0);
  s.trials={active:null,unlocked:[],history:[]};
@@ -4587,7 +4796,7 @@ function sanitize(raw){
  // Invalid/imported values are discarded, never trusted as executable content.
  const we=raw?.worldEvents;
  if(we&&we.version===1&&typeof we==='object'){
-  const kinds=['caravan','blue','herbs','blueFollow','resupply'];const choices=['none','join','support','watch'];const nowTick=s.npcWorld?.halfHours||0;
+  const kinds=['caravan','blue','herbs','blueFollow','resupply','noticeBoard','roadSigns','archive','supper','cartWheel','letters','lanterns'];const choices=['none','join','support','watch','help'];const nowTick=s.npcWorld?.halfHours||0;
   const id=v=>safeInteger(v,1,10000000,1);
   const safeKind=v=>kinds.includes(v)?v:null;
   const safeChoice=v=>choices.includes(v)?v:'none';
@@ -4600,7 +4809,7 @@ function sanitize(raw){
   const history=Array.isArray(we.history)?we.history.slice(0,25).filter(e=>e&&safeKind(e.kind)).map(e=>({
    id:id(e.id),kind:e.kind,startedTick:safeInteger(e.startedTick,0,2000000,0),endedTick:safeInteger(e.endedTick,0,2000000,0),choice:safeChoice(e.choice),success:e.success===true,heroVictory:e.heroVictory===true,
    helpers:Array.isArray(e.helpers)?e.helpers.filter(x=>['gald','rio','sera','mina','noel','eda','toto','van'].includes(x)).slice(0,3):[],
-   result:typeof e.result==='string'?e.result.slice(0,500):'',material:e.material==='鉄鉱石'?'鉄鉱石':'薬草',returned:safeInteger(e.returned,0,200,0),source:sourceRecord(e.source)
+   result:typeof e.result==='string'?e.result.slice(0,500):'',material:e.material===null?null:e.material==='鉄鉱石'?'鉄鉱石':'薬草',returned:safeInteger(e.returned,0,200,0),source:sourceRecord(e.source)
   })):[];
   const pendingLetters=Array.isArray(we.pendingLetters)?we.pendingLetters.slice(-10).filter(x=>x&&typeof x.key==='string'&&/^town-[0-9]+-(start|end)$/.test(x.key)&&['gald','rio','sera','mina','noel','eda','toto','van'].includes(x.id)&&typeof x.text==='string').map(x=>({key:x.key.slice(0,50),id:x.id,text:x.text.slice(0,240),tick:safeInteger(x.tick,0,2000000,nowTick)})):[];
   // A cause is valid only when its source is already in the recorded history.
@@ -4702,7 +4911,7 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
  }
  s.farm=sanitizeFarm(raw?.farm,s.npcWorld.halfHours);
  s.gearJournal=gearJournalNormalize(raw?.gearJournal,s.gear,s.pendingGear,true);
- // v0.9.121: Cosmetic-only earned titles. No legacy progress is fabricated here;
+ // v0.9.127: Cosmetic-only earned titles. No legacy progress is fabricated here;
  // achievements are evaluated from the existing validated game counters after loading.
  if(raw.achievements && typeof raw.achievements==='object' && !Array.isArray(raw.achievements)){
   const a=raw.achievements;
@@ -4802,7 +5011,7 @@ function diceDraw(){
 }
 
 function load(){
- const keys=[KEY,BACKUP_KEY,V924KEY,V924BACKUP_KEY,V923KEY,V923BACKUP_KEY,V922KEY,V922BACKUP_KEY,V921KEY,V921BACKUP_KEY,V919KEY,V919BACKUP_KEY,V918KEY,V918BACKUP_KEY,V917KEY,V917BACKUP_KEY,V916KEY,V916BACKUP_KEY,V915KEY,V915BACKUP_KEY,V914KEY,V914BACKUP_KEY,V913KEY,V913BACKUP_KEY,V912KEY,V912BACKUP_KEY,V911KEY,V911BACKUP_KEY,V910KEY,V910BACKUP_KEY,V99KEY,V99BACKUP_KEY,V98KEY,V98BACKUP_KEY,V97KEY,V97BACKUP_KEY,V96KEY,V95KEY,V94KEY,V93KEY,V92KEY,V91KEY,V90KEY,V82KEY,V81KEY,V80KEY,V72KEY,V71KEY,V70KEY,V61KEY,V60KEY,V53KEY,V52KEY,V51KEY,V50KEY,V41KEY,V4KEY,V3KEY,PREVKEY,OLDKEY];
+ const keys=[KEY,BACKUP_KEY,V925KEY,V925BACKUP_KEY,V924KEY,V924BACKUP_KEY,V923KEY,V923BACKUP_KEY,V922KEY,V922BACKUP_KEY,V921KEY,V921BACKUP_KEY,V919KEY,V919BACKUP_KEY,V918KEY,V918BACKUP_KEY,V917KEY,V917BACKUP_KEY,V916KEY,V916BACKUP_KEY,V915KEY,V915BACKUP_KEY,V914KEY,V914BACKUP_KEY,V913KEY,V913BACKUP_KEY,V912KEY,V912BACKUP_KEY,V911KEY,V911BACKUP_KEY,V910KEY,V910BACKUP_KEY,V99KEY,V99BACKUP_KEY,V98KEY,V98BACKUP_KEY,V97KEY,V97BACKUP_KEY,V96KEY,V95KEY,V94KEY,V93KEY,V92KEY,V91KEY,V90KEY,V82KEY,V81KEY,V80KEY,V72KEY,V71KEY,V70KEY,V61KEY,V60KEY,V53KEY,V52KEY,V51KEY,V50KEY,V41KEY,V4KEY,V3KEY,PREVKEY,OLDKEY];
  for(const key of keys){try{
   const content=localStorage.getItem(key);if(!content)continue;
   const raw=JSON.parse(content);if(!raw||typeof raw!=='object')continue;
@@ -4823,11 +5032,17 @@ if(save.farm?.kitchen?.mealBuff?.phase==='active'){
 let economyAnchor=save.gold;
 const MEAL_EFFECTS={
  bread:{name:'焼き麦パン',label:'獲得ゴールド＋6%',gold:.06},
+ beanSalad:{name:'いんげん豆のサラダ',label:'獲得経験値＋5%',xp:.05},
  veggieSoup:{name:'野菜スープ',label:'獲得経験値＋8%',xp:.08},
+ onionSoup:{name:'玉ねぎのスープ',label:'獲得ゴールド＋4%・経験値＋4%',gold:.04,xp:.04},
  herbPotatoes:{name:'じゃがいもの香草焼き',label:'装備ドロップ率＋8%（相対）',drop:.08},
+ mushroomRice:{name:'森茸の炊き込み飯',label:'装備ドロップ率＋9%（相対）・経験値＋2%',drop:.09,xp:.02},
  pumpkinSoup:{name:'かぼちゃのポタージュ',label:'素材獲得数の期待値＋10%',material:.10},
+ harvestHotpot:{name:'畑の具だくさん鍋',label:'素材獲得数の期待値＋8%・ゴールド＋4%',material:.08,gold:.04},
  berryTart:{name:'星蜜ベリーのタルト',label:'装備ドロップ率＋12%（相対）',drop:.12},
- moonStew:{name:'月光かぶのシチュー',label:'獲得ゴールド＋12%・経験値＋6%',gold:.12,xp:.06}
+ applePie:{name:'暁りんごのパイ',label:'装備ドロップ率＋10%（相対）・経験値＋4%',drop:.10,xp:.04},
+ moonStew:{name:'月光かぶのシチュー',label:'獲得ゴールド＋12%・経験値＋6%',gold:.12,xp:.06},
+ twilightStew:{name:'月と暁の煮込み',label:'獲得ゴールド＋9%・経験値＋7%',gold:.09,xp:.07}
 };
 function mealState(){return save.farm?.kitchen?.mealBuff||null;}
 function clearActiveMeal(zone){const b=mealState();if(b?.phase==='active'&&(!zone||b.zone===zone))save.farm.kitchen.mealBuff=null;}
@@ -4848,7 +5063,7 @@ function bookGold(reason){
  e.categories[kind]=Math.min(100000000000,(e.categories[kind]||0)+Math.abs(delta));
  e.entries.unshift({kind,delta,run:save.runs});e.entries=e.entries.slice(0,30);
 }
-// v0.9.121: the legacy-v41 snapshot is inspected only once after a successful write.
+// v0.9.127: the legacy-v41 snapshot is inspected only once after a successful write.
 // A failed save does NOT consume the check; the next save retries it as before.
 let legacyBackupInspected=false;
 let uiRevision=0;
@@ -5130,13 +5345,13 @@ function renderDungeon(){
   const e=dungeonEventForFloor(d.floor);
   if(e){const allowed=e.choices.filter(o=>!o.require||d.party.includes(o.require));
    const npcLines={gald:'ガルド「崩れそうな場所は、俺が先に調べる」',rio:'リオ「見落としがないか、もっと探してみるよ」',sera:'セラ「古い文字に意味が残っているはず」',mina:'ミーナ「安全に進める方法を考えましょう」',noel:'ノエル「文字なら少し読めるかも」',eda:'エダ「危険な場所には別の道があるわ」',toto:'トト「これ、商人なら見逃さないよ」',van:'ヴァン「間合いを見れば危険が分かる」'};
-   const guidance=allowed.filter(o=>o.require).map(o=>npcLines[o.require]).join('　');
+   const guidance=allowed.filter(o=>o.require).map(o=>DUNGEON_NPC_REMARKS[e.id]?.[o.require]||npcLines[o.require]).join('　');
    status.innerHTML=`<span class="pill">再探索イベント・${d.floor}層</span><h3 class="mt">✨ ${escapeTxt(e.title)}</h3><p class="help">${escapeTxt(e.scene)}</p>${guidance?`<div class="dungeonHint">${escapeTxt(guidance)}</div>`:''}${actions(allowed.map(o=>['event',o.id,`${escapeTxt(o.label)}<span class="small muted">${escapeTxt(o.hint)}</span>`]))}<p class="help mt">選択した報酬は、この階の戦闘に勝利してから確定します。</p>`;
   }else status.textContent='探索記録を確認できません。町へ帰還して再度出発してください。';
  }
  else if(d.phase==='hidden')status.innerHTML=`<strong>🔎 隠し部屋を発見！</strong><p class="help mt">壁の奥に封印箱がある。開けば珍しいものが得られるかもしれないが、罠の気配も感じる。</p>${actions([['secret','open','封印箱を開ける（魔石×1、HPを消耗）'],['secret','leave','箱には触れず記録する（EXP+45）']])}`;
  else status.innerHTML=`<strong>第${d.floor}層：${escapeTxt(DUNGEON_FLOORS[d.floor-1].name)}</strong><p class="help mt">${d.phase==='fighting'?'戦闘中です。戦闘結果に応じて階層が進みます。':'準備が整いました。「冒険を始める」を押すと、この階層の自動戦闘を開始します。'} ${d.floor===3?'守護者の大技では指揮が必要です。':''}</p>${actions([['action','exit','途中帰還する（進行はリセット）']])}`;
- $('#dungeonDiscoveries').innerHTML=`<strong>探索図鑑：${d.discovered.length} / ${DUNGEON_EVENTS.flat().length}種類 ・ 成果を持ち帰った回数：${d.eventSuccesses}</strong><p class="help tight mt">${d.discovered.length?d.discovered.map(id=>escapeTxt(eventById(id)?.title||id)).join(' ／ '):'まだ記録された探索イベントはありません。'}</p><div class="small muted">${d.eventLog.length?d.eventLog.slice(0,3).map(x=>`<div>・${escapeTxt(x)}</div>`).join(''):'次の遠征で新しい発見を探しましょう。'}</div>`;
+ $('#dungeonDiscoveries').innerHTML=`<strong>探索図鑑：${d.discovered.length} / ${DUNGEON_EVENTS.flat().length}種類 ・ 成果を持ち帰った回数：${d.eventSuccesses}</strong><p class="help tight mt">${d.discovered.length?d.discovered.slice(-5).map(id=>escapeTxt(eventById(id)?.title||id)).join(' ／ '):'まだ記録された探索イベントはありません。'}</p>${d.discovered.length>5?`<details class="dungeon-discovery-details"><summary>発見済みの全${d.discovered.length}種類を見る</summary><div class="help">${d.discovered.map(id=>escapeTxt(eventById(id)?.title||id)).join(' ／ ')}</div></details>`:''}<div class="small muted">${d.eventLog.length?d.eventLog.slice(0,3).map(x=>`<div>・${escapeTxt(x)}</div>`).join(''):'次の遠征で新しい発見を探しましょう。'}</div>`;
  $('#dungeonJournal').innerHTML=`<strong>最高突破：${d.bestFloor} / 3層　・　踏破：${d.clears}回　・　隠し部屋：${d.secretFound?'この遠征で発見':'この遠征では未発見'}</strong><div class="mt">${d.history.length?d.history.slice(0,6).map(x=>`<div>✓ ${escapeTxt(x)}</div>`).join(''):'まだ遠征の記録はありません。'}</div>`;
 }
 // v0.9.3: persistent 3-floor observatory, decisions are separate from automatic battles.
@@ -5964,7 +6179,7 @@ function renderWorld(){
   const personalRecord=save.personalQuests.completed[n.id],chapterRecord=save.personalChapters.completed[n.id],thirdRecord=save.personalThird.completed[n.id],fourthRecord=save.personalFourth.completed[n.id];
   const memories=p.memories.length?p.memories.map(m=>m.text).slice(-2).join(' / '):'まだ大きな記録はありません。';
   const eq=p.equipment||{},gear=WorldEngine.gearStats(p),weapon=eq.weapon,armor=eq.armor;const equipText=`武器：${escape(weapon?.name||'なし')}${weapon?.enhance?' +'+weapon.enhance:''} ／ 胴防具：${escape(armor?.name||'なし')}${armor?.enhance?' +'+armor.enhance:''}`;
-  return `<article class="npcCard"><div class="npcHead"><strong>${escape(n.name)} <span class="muted">${escape(job)} Lv${p.level}</span></strong><span class="pill">${active?'同行中':escape(WorldEngine.LABEL[p.location]||'ギルド')}</span></div><div class="small">${escape(WorldEngine.PROFILES[n.id].style)} ・ 目標：${escape(WorldEngine.PROFILES[n.id].goal)}</div><div class="npcActivity">${escape(act)} ${mentorOrder(n.id).charges>0?`／📖 訓練支援 残${mentorOrder(n.id).charges}勝`:``} ${!active&&p.remaining?'（あと'+p.remaining*30+'ゲーム内分）':''}</div><div class="small muted">EXP ${p.xp} / ${p.level<100?CombatEngine.levelXp(p.level):'上限'} ・ 職業Lv${p.jobLevel} ・ 所持金${p.gold}G ・ 疲労${p.fatigue}%</div><div class="small npcStory">📖 ${escape(WorldEngine.storyStatus(n.id,p))}（${p.story.length}/2）<br>${escape(WorldEngine.personaLine(w,n.id))}</div><div class="npcEquipment">⚒️ ${equipText}<br><span class="small muted">装備補正：攻撃+${gear.atk} / 防御+${gear.def} / HP+${gear.hp} / MP+${gear.mp}</span></div><div class="small muted">所持素材：薬草${p.stock['薬草']} / 鉄鉱石${p.stock['鉄鉱石']}　｜ 信頼${p.trust} ・ 同行勝利${p.partyBattles}回 ・ NPC遠征${p.coExpeditions}回</div>${personalRecord?`<div class="small npcStory">✉️ 第一章：${escape(PERSONAL_QUESTS[n.id].title)}<br>${escape(personalRecord.ending)}</div>`:""}${chapterRecord?`<div class="small npcStory">📖 第二章：${escape(SECOND_CHAPTERS[n.id].title)}<br>${escape(chapterRecord.ending)}<br><span class="muted">その後の生活：${chapterRecord.approach==='steady'?'慎重な訓練・採集・支援を少し重視':'調査・巡回・探索を少し重視'}</span></div>`:''}${thirdRecord?`<div class="small npcStory">📚 第三章：${escape(THIRD_CHAPTERS[n.id].title)}<br>${escape(thirdRecord.ending)}</div>`:''}${fourthRecord?`<div class="small npcStory">📜 第四章：${escape(FOURTH_CHAPTERS[n.id].title)}<br>${escape(fourthRecord.ending)}</div>`:''}<details><summary>人物の物語・最近の行動・記憶</summary><p class="small">${p.story.length?p.story.map(id=>{const beat=WorldEngine.STORIES[n.id].find(b=>b.id===id);return beat?"📖 "+escape(beat.title)+"："+escape(beat.text):""}).join("<br>"):"物語の節目はまだありません。"}</p><p class="small">${escape(p.last)}</p><p class="small muted">${escape(memories)}</p></details></article>`;
+  return `<article class="npcCard"><div class="npcHead"><strong>${escape(n.name)} <span class="muted">${escape(job)} Lv${p.level}</span></strong><span class="pill">${active?'同行中':escape(WorldEngine.LABEL[p.location]||'ギルド')}</span></div><div class="small">${escape(WorldEngine.PROFILES[n.id].style)} ・ 目標：${escape(WorldEngine.PROFILES[n.id].goal)}</div><div class="npcActivity">${escape(act)} ${mentorOrder(n.id).charges>0?`／📖 訓練支援 残${mentorOrder(n.id).charges}勝`:``} ${!active&&p.remaining?'（あと'+p.remaining*30+'ゲーム内分）':''}</div>${window.KazeDailyScenes?.markup?.(n.id)||''}<div class="small muted">EXP ${p.xp} / ${p.level<100?CombatEngine.levelXp(p.level):'上限'} ・ 職業Lv${p.jobLevel} ・ 所持金${p.gold}G ・ 疲労${p.fatigue}%</div><div class="small npcStory">📖 ${escape(WorldEngine.storyStatus(n.id,p))}（${p.story.length}/2）<br>${escape(WorldEngine.personaLine(w,n.id))}</div><div class="npcEquipment">⚒️ ${equipText}<br><span class="small muted">装備補正：攻撃+${gear.atk} / 防御+${gear.def} / HP+${gear.hp} / MP+${gear.mp}</span></div><div class="small muted">所持素材：薬草${p.stock['薬草']} / 鉄鉱石${p.stock['鉄鉱石']}　｜ 信頼${p.trust} ・ 同行勝利${p.partyBattles}回 ・ NPC遠征${p.coExpeditions}回</div>${personalRecord?`<div class="small npcStory">✉️ 第一章：${escape(PERSONAL_QUESTS[n.id].title)}<br>${escape(personalRecord.ending)}</div>`:""}${chapterRecord?`<div class="small npcStory">📖 第二章：${escape(SECOND_CHAPTERS[n.id].title)}<br>${escape(chapterRecord.ending)}<br><span class="muted">その後の生活：${chapterRecord.approach==='steady'?'慎重な訓練・採集・支援を少し重視':'調査・巡回・探索を少し重視'}</span></div>`:''}${thirdRecord?`<div class="small npcStory">📚 第三章：${escape(THIRD_CHAPTERS[n.id].title)}<br>${escape(thirdRecord.ending)}</div>`:''}${fourthRecord?`<div class="small npcStory">📜 第四章：${escape(FOURTH_CHAPTERS[n.id].title)}<br>${escape(fourthRecord.ending)}</div>`:''}<details><summary>人物の物語・最近の行動・記憶</summary><p class="small">${p.story.length?p.story.map(id=>{const beat=WorldEngine.STORIES[n.id].find(b=>b.id===id);return beat?"📖 "+escape(beat.title)+"："+escape(beat.text):""}).join("<br>"):"物語の節目はまだありません。"}</p><p class="small">${escape(p.last)}</p><p class="small muted">${escape(memories)}</p></details></article>`;
  }).join('');
  const kindLabels={story:'人物',quest:'依頼',equipment:'装備',joint:'共同遠征',activity:'活動',guild:'ギルド',market:'市場',growth:'成長',discovery:'発見',memory:'思い出',social:'交流'};
  $('#worldNews').innerHTML=w.news.length?w.news.slice(0,12).map(e=>`<div class="newsItem"><span class="pill">${escape(kindLabels[e.kind]||e.kind)}</span><span><small class="muted">${escape(WorldEngine.timeText({halfHours:e.tick}))}</small> ${escape(e.text)}</span></div>`).join(''):'まだ自律活動の記録はありません。同行していないNPCが時間の経過で行動します。';
@@ -5999,12 +6214,15 @@ function renderGuild(){
  const owned=m=>Number(save.materials[m]||0);const ownedFarm=q=>Number((q.kind==='crop'?save.farm.crops:save.farm.kitchen.foods)[q.itemId]||0);const active=g.active;
  $('#questCount').textContent=`達成 ${g.completedTotal}件・調査報告 ${g.reports}件`;
  if(active){
-  const title=WorldEngine.questTitle(active),done=active.type==='farmOrder'?Math.min(active.need,ownedFarm(active)):active.type==='supply'?Math.min(active.need,owned(active.material)):active.progress;
-  const ready=done>=active.need;
-  const detail=active.type==='farmOrder'?`${active.kind==='crop'?'収穫した作物':'調理済みの料理'}：所持 ${ownedFarm(active)}個 / 納品 ${active.need}個。納品すると在庫から差し引かれます。`:active.type==='supply'?`所持 ${owned(active.material)}個 / 納品 ${active.need}個。受け渡すと町の在庫へ加わります。`:`緑風の森で勝利：${active.progress} / ${active.need}回。情報提供：${WorldEngine.PROFILES[active.sourceId]?.style||'冒険者'}。`;
-  $('#questActive').innerHTML=`<article class="questCard mt"><span class="pill">受注中</span><h3 class="mt">${escape(title)}</h3><div class="small">${escape(active.type==='farmOrder'?'ギルドの農作物・料理納品依頼':active.type==='supply'?'町の素材不足を解消する納品依頼':active.memo)}</div><p class="help mt">${escape(detail)}</p><div class="questBar"><div style="width:${Math.min(100,Math.round(done/active.need*100))}%"></div></div><div class="questMeta"><span class="quest-reward">報酬 ${active.rewardGold}G / EXP ${active.rewardExp}</span></div><div class="questActions"><button type="button" class="btn" data-claim-quest="1" ${ready&&!isBusy()?'':'disabled'}>${ready?'達成報告して報酬を受け取る':'達成条件を満たしていません'}</button></div></article>`;
+  const title=WorldEngine.questTitle(active),community=active.type==='community';
+  const ct=community?WorldEngine.communityTemplate(active.templateId):null;
+  const done=community?Math.max(Math.min(1,owned(ct?.material)/Math.max(1,ct?.qty||1)),Math.min(1,active.progress/Math.max(1,ct?.wins||1)))*100:active.type==='farmOrder'?Math.min(active.need,ownedFarm(active)):active.type==='supply'?Math.min(active.need,owned(active.material)):active.progress;
+  const ready=community?(owned(ct?.material)>=ct.qty||active.progress>=ct.wins):done>=active.need;
+  const detail=community?`${ct.material} ${owned(ct.material)}/${ct.qty}個、または${WorldEngine.LABEL[ct.zone]}の勝利 ${active.progress}/${ct.wins}回。どちらか一方で達成できます。`:active.type==='farmOrder'?`${active.kind==='crop'?'収穫した作物':'調理済みの料理'}：所持 ${ownedFarm(active)}個 / 納品 ${active.need}個。納品すると在庫から差し引かれます。`:active.type==='supply'?`所持 ${owned(active.material)}個 / 納品 ${active.need}個。受け渡すと町の在庫へ加わります。`:`緑風の森で勝利：${active.progress} / ${active.need}回。情報提供：${WorldEngine.PROFILES[active.sourceId]?.style||'冒険者'}。`;
+  const actions=community?`<button type="button" class="btn secondary" data-claim-quest="materials" ${owned(ct.material)>=ct.qty&&!isBusy()?'':'disabled'}>素材を${ct.qty}個納めて達成</button><button type="button" class="btn secondary" data-claim-quest="field" ${active.progress>=ct.wins&&!isBusy()?'':'disabled'}>調査結果を報告して達成</button>`:`<button type="button" class="btn" data-claim-quest="1" ${ready&&!isBusy()?'':'disabled'}>${ready?'達成報告して報酬を受け取る':'達成条件を満たしていません'}</button>`;
+  $('#questActive').innerHTML=`<article class="questCard mt"><span class="pill">${community?'町の小依頼':'受注中'}</span><h3 class="mt">${escape(title)}</h3><p class="help mt tight">${escape(WorldEngine.questDescription(active,w))}</p><p class="help mt">${escape(detail)}</p><div class="questBar"><div style="width:${community?Math.round(done):Math.min(100,Math.round(done/active.need*100))}%"></div></div><div class="questMeta"><span class="quest-reward">報酬 ${active.rewardGold}G / EXP ${active.rewardExp}</span></div><div class="questActions">${actions}</div></article>`;
  }else $('#questActive').innerHTML='<div class="readout mt">受注中の依頼はありません。下の依頼から1件選べます。</div>';
- $('#questOffers').innerHTML=g.offers.length?g.offers.map(q=>`<article class="questCard"><div class="sectionRow"><strong>${escape(WorldEngine.questTitle(q))}</strong><span class="pill">${q.type==='farmOrder'?(q.kind==='crop'?'農作物':'料理'):q.type==='supply'?'納品':'調査'}</span></div><p class="help mt tight">${escape(q.type==='farmOrder'?`${q.material}×${q.need}個を届けてください。${q.kind==='crop'?'農場で収穫した作物':'調理場で作った料理'}を納品します。`:q.type==='supply'?`町の${q.material}の在庫が${w.market[q.material]}個に減っています。${q.material}×${q.need}個を納品してください。`:`${q.memo} 緑風の森で3勝して現地を調べてください。`)}</p><div class="questMeta"><span class="quest-reward">報酬 ${q.rewardGold}G / EXP ${q.rewardExp}</span><span class="quest-post-time">${escape(WorldEngine.timeText({halfHours:q.createdTick}))}掲示</span></div><div class="questActions"><button type="button" class="actionbtn" data-take-quest="${q.id}" ${active||isBusy()?'disabled':''}>依頼を受ける</button></div></article>`).join(''):'<p class="help">現在、新しい依頼はありません。NPCの調査や市場の動きで更新されます。</p>';
+ $('#questOffers').innerHTML=g.offers.length?g.offers.map(q=>`<article class="questCard"><div class="sectionRow"><strong>${escape(WorldEngine.questTitle(q))}</strong><span class="pill">${q.type==='community'?'町の小依頼':q.type==='farmOrder'?(q.kind==='crop'?'農作物':'料理'):q.type==='supply'?'納品':'調査'}</span></div><p class="help mt tight">${escape(WorldEngine.questDescription(q,w))}</p><div class="questMeta"><span class="quest-reward">報酬 ${q.rewardGold}G / EXP ${q.rewardExp}</span><span class="quest-post-time">${escape(WorldEngine.timeText({halfHours:q.createdTick}))}掲示</span></div><div class="questActions"><button type="button" class="actionbtn" data-take-quest="${q.id}" ${active||isBusy()?'disabled':''}>依頼を受ける</button></div></article>`).join(''):'<p class="help">現在、新しい依頼はありません。NPCの調査や市場の動きで更新されます。</p>';
  $('#questHistory').innerHTML=g.history.length?g.history.slice(0,5).map(x=>`<div class="small">✓ ${escape(x.title)} <span class="muted">（${escape(WorldEngine.timeText({halfHours:x.tick}))}）</span></div>`).join(''):'<span class="muted">まだ完了した依頼はありません。</span>';
 }
 const DAWN_AREAS=[
@@ -6650,7 +6868,7 @@ function renderStoryPeople(){
  // The portrait registry loads later than the first game render; a rerender can reuse the existing images.
  document.getElementById('personalCount').textContent=`第1章 ${Object.keys(save.personalQuests.completed).length}/8 · 第2章 ${Object.keys(save.personalChapters.completed).length}/8 · 第3章 ${Object.keys(save.personalThird.completed).length}/8 · 第4章 ${Object.keys(save.personalFourth.completed).length}/8`;
 }
-// v0.9.121: render the complete UI only at boot. Later redraw only the active
+// v0.9.127: render the complete UI only at boot. Later redraw only the active
 // tab; tab navigation refreshes its contents synchronously. Game-state updates,
 // time progression, event/letter arrival and achievement unlocking still run.
 let initialFullRenderComplete=false;
@@ -6665,7 +6883,7 @@ function prepareRenderState(){
  }
 }
 function fullRenderAll(){
- // v0.9.121: records-only visual history is built on first visit to 記録.
+ // v0.9.127: records-only visual history is built on first visit to 記録.
  // Its saved data, achievements, world simulation, and save format stay unchanged.
  renderMealStatus();window.KazeKitchen?.sync?.();window.KazeLoginGift?.sync?.();
  renderEndgame();renderDice();renderCards();renderRace();renderCasino();
@@ -6859,7 +7077,7 @@ const gearActionHandler=e=>{const t=e.target.closest('[data-equip],[data-sell],[
 $('#guildSection').addEventListener('click',e=>{
  const take=e.target.closest('[data-take-quest]'),claim=e.target.closest('[data-claim-quest]');if(isBusy())return;
  if(take){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.takeQuest(save.npcWorld,Number(take.dataset.takeQuest));if(!r.ok){warn(r.reason);return;}save.latest=[`受注：${r.title}`,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`「${r.title}」を受注しました。`);}
- if(claim){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.claimQuest(save.npcWorld,save.materials,save.gold,save.farm);if(!r.ok){warn(r.reason);renderGuild();return;}save.gold+=r.gold;const lines=levelUp(r.xp);save.latest=[`依頼達成：${r.title}・${r.gold}G / EXP +${r.xp}`,...lines,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`依頼達成！ ${r.gold}G・EXP ${r.xp}を獲得しました。`);}
+ if(claim){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.claimQuest(save.npcWorld,save.materials,save.gold,save.farm,claim.dataset.claimQuest);if(!r.ok){warn(r.reason);renderGuild();return;}save.gold+=r.gold;const lines=levelUp(r.xp);save.latest=[`依頼達成：${r.title}・${r.gold}G / EXP +${r.xp}`,...lines,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`依頼達成！ ${r.gold}G・EXP ${r.xp}を獲得しました。`);}
 });
  $('#personalSection').addEventListener('click',e=>{
   const start=e.target.closest('[data-personal-start]'),claim=e.target.closest('[data-personal-claim]'),cancel=e.target.closest('[data-personal-cancel]');
@@ -7021,8 +7239,8 @@ refreshAll();renderAll();persist();
     const pending=isDecisionPending();
     updateQuickNote();
     // Alert only; do not forcibly interrupt a person's current reading.
-    if(pending)document.title='！ボスの指示待ち｜カゼマチヴィアートル v0.9.121';
-    else document.title='カゼマチヴィアートル｜v0.9.121';
+    if(pending)document.title='！ボスの指示待ち｜カゼマチヴィアートル v0.9.127';
+    else document.title='カゼマチヴィアートル｜v0.9.127';
   }).observe(decision,{attributes:true,attributeFilter:['class']});}
   switchPage('adventure',false);
 })();
@@ -7972,7 +8190,7 @@ const serialLabels={serial1:'✧ 日々の小さな物語',serial2:'✧ その�
 const initiating={hello:'最近、調子はどう？',activity:'今日は何をしていた？',travel:'最近の旅で印象に残ったことは？'};
 const blank=()=>({threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:bridge.tick(),lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24});
 let selected='gald',open=false,lastFocus=null,toastTimer=null,ackTarget=null;
-// v0.9.121: only render recent letters; older letters remain in the saved thread.
+// v0.9.127: only render recent letters; older letters remain in the saved thread.
 const WIND_VIEW_STEP=48;
 let visibleWindCount=WIND_VIEW_STEP,windViewPerson=selected;
 const expanded=new Set();
@@ -8024,7 +8242,7 @@ function pending(id){return state().pending[id]||null;}
 // prompt: those choices are the intended response. This never advances quests.
 function canAcknowledge(m){return m?.side==='in'&&m.kind!=='commu'&&m.kind!=='introRecap'&&m.acknowledged!==true;}
 function shortQuote(text,limit=76){const flat=String(text||'').replace(/\s+/g,' ').trim();return flat.length>limit?flat.slice(0,limit-1)+'…':flat;}
-// v0.9.121 — text-anchored reply choices + personal quest readability. Each row corresponds to one authored line,
+// v0.9.127 — text-anchored reply choices + personal quest readability. Each row corresponds to one authored line,
 // not a keyword-based guess. All three player responses address the actual topic.
 const ACK_CORE_ROWS = {
  gald:[
@@ -9091,7 +9309,7 @@ function spontaneous(){
  f.nextId+=1;f.lastSpontaneousTick=t;
  announce(chosen);return true;
 }
-// v0.9.121: conservative exact-match repair for *unanswered* old messages.
+// v0.9.127: conservative exact-match repair for *unanswered* old messages.
 // Already-answered chats are never edited; history/choices/times remain intact.
 const WIND_CLARITY_REPLACEMENTS=Object.freeze({"少しだけ、報告しておこう。":"少し、今考えていることを伝えておく。","聞いてよ！　これ、誰かに言いたかったんだ。":"ねえ聞いて！　ちょっと話したいことができたんだ。","ふと思いついたんだけどさ！":"あ、そうだ。ちょっと話してもいい？","記録を整理していたら、ひとつ考えが浮かびました。":"調べ物の合間に、少しお話ししたくなりました。","思い出したので、お知らせしておきますね。":"少し、今のうちにお話ししておきたくて。","短い報告なんですけど……。":"あの、少し話したいことがありまして。","そうだ、今日のことを話したくなったの。":"そうだ、ちょっと話を聞いてほしくて。","今どうしてる？　《一人称》はね、":"今どうしてる？　私も、ちょっと話したいことがあるの。","商談じゃないんだが、少し聞いてくれ。":"商談の用じゃないんだが、ひとこと聞いておくれ。","慌ただしい日ほど、仲間が帰る場所を整えておきたい。":"出発する仲間の装備棚を片付けていた。帰ってきたとき、荷物を置ける場所は空けておきたいからな。","小さな危険を見過ごさないようにしている。大きな事故はそこから始まる。":"遠征前は靴底の傷みまで確かめるようにしている。小さな危険を見過ごしたくないからな。","判断を急ぎすぎない訓練も必要だと思っている。":"訓練では、合図を聞いても一呼吸おいて周囲を確かめている。急がない判断も必要だ。","誰かと歩くと、一人では見落とすものが見つかる。":"同じ道でも、俺が足元を見ている間に、仲間が遠くの道標を見つけることがある。一人では気づけないな。","元気だよ！　ちょうど何か面白いことないかなって考えてた！":"元気だよ！　今は地図の端を眺めて、次に歩きたい道を探してたところ！","こっちはいい感じ！　さっき地図を見てたら、まだ歩いてない寄り道を見つけたんだ。":"さっき地図の端に、まだ歩いてない小道を見つけたんだ！　次に出かけたら、道しるべを確かめたいな。","誰かと調べると、《一人称》が見ないところまで分かって面白いよ。":"仲間と地図を見ると、僕は曲がり角、相手は帰り道を見てたりするんだ。気づくところが違って面白いね！","新人に道を教えると、自分も新しい発見があるんだ。":"新人に道を教えるとき、どの木を目印にするか説明するんだ。言葉にすると僕も道を覚え直せるよ！","訓練、終わったよ！　同じ動きを繰り返すと、違うことも見えてくるね。":"訓練、終わったよ！　同じ踏み込みでも、足の向きを変えると動きやすくなるんだね。","森の奥を調べてきたよ！　地図の余白がちょっと気になるんだ。":"森の奥を調べてきたよ！　曲がり角の木を目印に覚えたから、地図にも書き込んでおきたいな。","《一人称》は元気です。少し考え事をしていただけです。":"私は元気です。古い印の写しを並べていたら、似た形が気になって……少し考え込んでいました。","何気ない問いが、案外よい発見の始まりになるものです。":"ノートに、同じ印がどこで使われているか書き出してみました。小さな問いから調査が進むこともありますね。","古い記録は、書かれていない部分にも意味があります。":"古い記録には、日付や場所が空欄の箇所もあります。何が書かれていないかも確かめたいですね。","分からないことが増えた日は、むしろ前進した気がします。":"読めない印について、分かる部分と分からない部分をノートに分けて書きました。答えはまだですが、次に調べる点が見えました。","調査のための旅でも、予定外の発見の方が記憶に残ることがあります。":"調査の途中、目的の遺構だけでなく道沿いの石の並びが気になることもあります。予定外の観察ほど覚えているものですね。","共同遠征中です。同行者の視点には学ぶことがあります。":"共同遠征中です。私は地面の痕跡を、同行者は先の足場を見てくれます。視点が違うのは助かりますね。","ギルドで資料を見比べています。似た記述があるんです。":"ギルドで二冊の資料を見比べています。同じ道標でも、描き方が少し違うんです。","遺物の調査から戻りました。小さな違いを見落とさないようにしています。":"遺物の調査から戻りました。表面の傷の向きを、見間違えないよう図に写してきました。","何もなくてよかった、と言える日が《一人称》は好きです。":"救護箱の包帯がほとんど減らない日は、ほっとします。何も起きない日が私は好きなんです。","助けたい気持ちだけでは足りないので、準備を重ねています。":"手当ての順番を手帳に書き直していました。助けたい気持ちだけでは足りないので、準備を重ねています。","小さな疲れを見逃さないようにしたいですね。":"帰ってきた仲間には、まず水を飲めたか聞くようにしています。小さな疲れも見逃したくなくて。","新人の支援をしています。話しやすい雰囲気にしたいですね。":"新人の支援中です。いきなり体調を尋ねるより、まず今日の作業を聞くようにしています。","市場で補給品を揃えると、少し安心できます。":"市場では薬草の在庫を確かめています。救護に必要な分が揃うと安心できますね。","薬草を採ってきました。道具箱の中身を確かめると、少し安心します。":"薬草を採ってきました。葉の傷みを確かめて、救護箱に入れる分を分けています。","今日は落ち着いています。昨日より、少しだけ。":"今日は呪文の最初の一節を、前ほど慌てずに唱えられました。……少し落ち着けた気がします。","大丈夫です。《一人称》なりに、ちゃんと進んでいると思います。":"大丈夫です。呪文の順番をノートに一行ずつ書いています。僕なりに、少しずつ進んでいます。","今日は焦らずにやってみようと決めました。":"今日は呪文を一節唱えるたびに、息を整えることにしました。焦らない練習です。","まだ誰かの助けが必要なことも多いです。でも、覚えたいんです。":"難しい呪文はまだ誰かに確認してもらっています。でも、次は一つくらい自分で手順を説明できるようになりたいです。","新人の支援をしています。《一人称》にできることもあるはずです。":"新人の支援中です。呪文の準備なら、僕にも順番を説明できることがありそうです。","市場は人が多くて緊張しますけど、勉強になります。":"市場は人が多くて緊張しますけど、店の人が素材を仕分ける手順を見るのは勉強になります。","新人のお手伝いをしました。僕もまだ習うことばかりですけど。":"新人のお手伝いをしました。呪文の準備の順番を、一緒に確かめたんです。僕もまだ覚える途中ですけど。","今日は誰かの話をじっくり聞けた気がするの。":"ギルドで旅帰りの人が道の話をしてくれたの。今日は途中で口を挟まず、最後まで聞いてみたよ。","大きな出来事がなくても、いい日はいい日だよね。":"帰ってきた人に「おかえり」って言えたら、それだけでいい日だと思うの。大きな出来事がなくてもね。","人の手伝いをしていると、自分にもできることが増えるんだ。":"新人に荷物の並べ方を聞かれたの。前なら迷ったけど、最近は順番を説明できるようになったよ。","今日は一つ、自分から提案してみようと思ったの。":"今日はギルドの備品を片付ける順番を、自分から提案してみようと思ってるの。","ギルドでいろんな話を聞くと、行ってみたい場所が増えるね。":"ギルドで森の木漏れ日の話を聞いたの。そんな景色があるなら、いつか見に行ってみたいな。","誰かの困りごとを聞くのって、簡単そうで難しいよ。":"新人が道のことで困っていたの。すぐ答えるより、どこで迷ったか聞いてあげたいな。","旅から戻ると、いつものギルドがちょっと違って見えるんだ。":"旅から戻ると、いつものギルドの灯りが少し温かく見えるの。帰ってこられる場所っていいね。","市場で人と話してきたよ。思わぬ話が聞ける場所だね。":"市場では素材の値段を聞いたあと、運んできた道のことも教えてもらったの。そういう話、好きだな。","ギルドでみんなの話を聞いてる。いろんな日があるんだね。":"ギルドで帰還報告を聞いてるの。遠くへ行った人も、町に残った人も、それぞれの一日があるんだね。","森の巡回を終えたよ。帰ってから話したいことが増えた気がする。":"森の巡回を終えたよ。帰り道の目印を確かめてきたの。誰かにも教えてあげたいな。","調子？　悪くないね。よい取引は焦らないことさ。":"調子は悪くないね。値札をつける前に品物の傷をもう一度確かめたよ。慌てないのが一番さ。","今のところ大きな問題はないよ。小さな問題は毎日あるけどね。":"大きな問題はないよ。帳簿の数字が一枚分合わないことはあるけどね。小さいことほど放っておけないのさ。","人の話を聞いていると、思いがけない需要が見えてくる。":"店先で旅人の話を聞くと、どんな道具が足りないのか分かることがある。品物より先に耳を働かせないとね。","道中で拾う品には、値打ち以外の面白さもあるよ。":"道中で拾った欠けた金具にも、使っていた人の工夫が残っていることがある。値段だけでは測れないね。","商談がうまくいかなくても、よい話が聞けることはある。":"商談で値段が合わなくても、向こうの町の道の具合を教えてもらえることがある。手ぶらじゃないさ。","ギルドで次の仕入れを考えてる。目が離せないね。":"ギルドの荷運び予定を見て、次の仕入れ先を考えてる。街道の混む日を避けたいからね。","市場に素材を納めてきたよ。顔を見て取引できるのは悪くないね。":"市場に素材を納めてきたよ。値段を決める前に、品の状態を一緒に確かめられたのがよかったね。","問題ない。訓練は続けている。":"問題ない。訓練で足の置き方を見直していた。踏み込み一つで剣の届き方が変わる。","変わりない。《一人称》にはまだ、やるべきことがある。":"変わりない。今日も剣を振る前の構えを確かめた。足場を見る癖をつけたい。","基本を繰り返している。手を抜く理由はない。":"剣を振る前に重心を戻す。基本の動きを何度も確かめている。手を抜く理由はない。","難しい相手ほど、自分の粗が見える。":"手強い相手を想定して構えると、肩に余計な力が入る。そういう粗が分かるのが訓練だ。","強くなる方法は一つではない。だが、近道もない。":"剣の速さを上げるだけでは足りん。足運びも、相手を見る余裕も鍛えねばな。","他人の戦いを見て学ぶこともある。":"訓練場で仲間の足運びを見ていた。自分と違う間合いの取り方には学ぶところがある。","旅で得るものは戦果だけじゃない。……それくらいは分かっている。":"森を歩いていると、剣を抜かずに道を確かめる時間もある。旅で得るものは戦果だけじゃない。","訓練を続けている。まだ足りない。":"訓練中だ。今日は踏み込む前の姿勢を直している。まだ足りん。","ギルドで次の行き先を考えている。":"ギルドで地図を広げている。次に向かう場所の退路まで確かめておきたい。","こっちはいい感じ！　でもじっとしてるのは、ちょっと苦手かも。":"さっき地図の端に、まだ歩いてない小道を見つけたんだ！　次に出かけたら、道しるべを確かめたいな。"});
 let windClarityRepairedInSession=false;
@@ -9727,8 +9945,65 @@ resupply:{
  startLetter:{id:'toto',text:'この間の「市場の薬草不足」、まだ全部は片づいてないんだ。だから今度は「薬草を届ける臨時便」を動かすことにしたよ。あたしも準備を手伝うさ。'},
  endLetter:{id:'mina',good:'「薬草を届ける臨時便」が町に着きました。必要な人に薬草を届けられそうです。みんなが準備をしてくれたおかげですね。',partial:'「薬草を届ける臨時便」は少し遅れています。必要な人から順に届けられるよう、私も引き続き手伝います。'}
 }
+,noticeBoard:{
+ title:'書き直すギルド掲示板',icon:'📜',location:'風待ちのギルド',zone:null,noncombat:true,material:null,loss:0,support:0,
+ lead:'エダ',intro:'ギルドの掲示板は古い依頼と新しい知らせが重なり、初めて来た旅人には分かりづらい。エダがノエルと相談して、書き方と並べる順番を見直している。',
+ participants:['eda','noel','gald'],actions:['aid','train','patrol'],
+ result:{good:'エダたちは古い依頼を整理し、場所と期限が一目で分かる掲示板に作り直した。新人たちも自分で次の行動を選びやすくなった。',partial:'掲示板の整理は途中だ。急ぎの依頼だけを見やすく分け、残りは少しずつ書き直していくことになった。'},
+ startLetter:{id:'eda',text:'ギルドの掲示板、昔の依頼が重なって読みにくくなってたの。ノエルと相談して、初めて来る人にも分かる並べ方を考えてるところだよ。'},
+ endLetter:{id:'noel',good:'掲示板の書き直し、終わりました。僕も期限の欄を整理したんです。新人さんが迷わず依頼を見つけてくれて、うれしかったです。',partial:'掲示板はまだ全部直せていません。でも、急ぎの依頼だけは先に分けられました。次は見出しの付け方を考えます。'}
+},
+roadSigns:{
+ title:'傾いた道しるべ',icon:'🪧',location:'緑風の森の街道',zone:null,noncombat:true,material:'鉄鉱石',loss:0,support:2,marketEffect:false,
+ lead:'リオ',intro:'街道の道しるべが傾き、雨の後は行き先の文字が見えにくい。リオが道を確かめ、ガルドは通行人が迷わない位置に直そうとしている。',
+ participants:['rio','gald','van'],actions:['patrol','explore','train'],
+ result:{good:'リオが古い目印と新しい道を確かめ、ガルドたちは道しるべを安全な位置に据え直した。曲がり角を行く旅人が立ち止まらずに進めるようになった。',partial:'道しるべは仮に立て直された。文字の塗り直しは天気を待ち、しばらくはギルドが道案内を続ける。'},
+ startLetter:{id:'rio',text:'森の道しるべが傾いてるって聞いたんだ！　地図と見比べたら、曲がり角が分かりづらくなってる。ガルドと直す場所を確かめたいな。'},
+ endLetter:{id:'gald',good:'街道の道しるべを立て直した。リオが別の目印も確かめてくれた。これなら初めて通る者も迷いにくいだろう。',partial:'道しるべは仮に固定した。雨の後でも読めるよう、文字の修繕は続ける。リオには周囲の目印を確認してもらった。'}
+},
+archive:{
+ title:'貸し出された旅の記録',icon:'📚',location:'ギルドの資料室',zone:null,noncombat:true,material:null,loss:0,support:0,
+ lead:'セラ',intro:'資料室の古い道程記録を借りたいという新人が増えた。セラは書き込みを残しても原本を傷めない方法を考え、ノエルと貸し出しの手引きを作っている。',
+ participants:['sera','noel','eda'],actions:['research','aid','guild'],
+ result:{good:'原本を守りながら読める写しと貸出帳が整い、旅の記録が少しずつ新しい旅人の役に立ち始めた。',partial:'貸し出しは一部の資料から始まった。傷みやすい原本は手元に残し、写しを増やすことにした。'},
+ startLetter:{id:'sera',text:'資料室の旅の記録を、もっと多くの人に読んでもらえないか考えています。原本を守りつつ貸し出す方法を、ノエルと試しているところです。'},
+ endLetter:{id:'noel',good:'旅の記録の貸し出し帳ができました。僕が写した道順を、誰かが読んでくれるかもしれないと思うと、少し緊張します。',partial:'資料の貸し出しは少しずつ始めています。傷みやすい頁はまだ写せていません。セラさんと続きを考えます。'}
+},
+supper:{
+ title:'夕暮れのあたたかい鍋',icon:'🥣',location:'風待ちの町',zone:null,noncombat:true,material:null,loss:0,support:0,
+ lead:'ミーナ',intro:'帰りの遅い旅人や仕事帰りの人のために、ギルド前で温かい汁物を用意することになった。ミーナとエダが配る順番を、トトが器の貸し借りを考えている。',
+ participants:['mina','eda','toto'],actions:['aid','sell','rest'],
+ result:{good:'温かい汁物が帰還した人々に行き渡り、ギルドの前には短い休息の輪ができた。使った器も無事に戻った。',partial:'鍋の数は十分ではなかったが、遅く帰った人には温かい分を残せた。次回は器の数を確かめてから準備する。'},
+ startLetter:{id:'mina',text:'夕暮れのギルド前で、帰ってきた方に温かいものを出そうと相談しています。エダと器を並べて、遅い人にも残せるようにしたいですね。'},
+ endLetter:{id:'eda',good:'夕暮れの鍋、ちゃんとみんなに配れたよ！　最後に帰ってきた人にも温かい分が残ってて、ミーナとほっとしたの。',partial:'夕暮れの鍋は少し足りなかったけど、遅く帰る人の分は残せたの。次は器の数から考えてみるね。'}
+},
+cartWheel:{
+ title:'荷車のきしむ車輪',icon:'🛞',location:'町の荷運び場',zone:null,noncombat:true,material:'鉄鉱石',loss:0,support:3,marketEffect:false,
+ lead:'トト',intro:'荷運び場で使っている小さな荷車の車輪が軋み、運ぶ人たちが遠回りをするようになった。トトが部品を揃え、ヴァンとガルドが作業場を整えている。',
+ participants:['toto','van','gald'],actions:['sell','aid','train'],
+ result:{good:'傷んだ車輪の金具が交換され、荷車は静かに走り出した。荷運びの人たちもいつもの道へ戻れた。',partial:'応急処置で荷車はゆっくり動くようになった。重い荷は別の車を使い、本格的な交換を待つことになった。'},
+ startLetter:{id:'toto',text:'町の荷車の車輪がきしんでね。部品を探してるんだよ。ヴァンたちも作業場を空けてくれた。荷運びが止まらないように直したいね。'},
+ endLetter:{id:'van',good:'荷車の車輪は直った。金具が一つ傷んでいたらしい。派手ではないが、町で荷を運ぶ者には必要な仕事だ。',partial:'車輪は仮に使えるようになった。無理に重い荷を積むなと伝えた。金具の交換までは気をつけるべきだ。'}
+},
+letters:{
+ title:'宛先の分からない手紙',icon:'✉️',location:'町の郵便窓口',zone:null,noncombat:true,material:null,loss:0,support:0,
+ lead:'エダ',intro:'宛先の地名が古い一通の手紙が届いた。エダは送り主の思いを守りたいと考え、リオとセラに古い道の呼び名を確かめてもらっている。',
+ participants:['eda','rio','sera'],actions:['aid','explore','research'],
+ result:{good:'古い地名と今の呼び名がつながり、手紙は正しい窓口へ引き継がれた。封を開けずに届ける道を見つけられた。',partial:'宛先はまだ確定していない。手紙を安全に保管し、地名を知る人への聞き取りを続けることになった。'},
+ startLetter:{id:'eda',text:'古い地名で書かれた手紙が届いたんだ。中身を見ずに送り先を探したくて、リオの地図とセラの記録を調べてもらってるの。'},
+ endLetter:{id:'rio',good:'あの手紙の宛先、古い道の名前とつながったんだって！　地図の書き方が変わっても、届けたい気持ちは残るんだね。',partial:'手紙の宛先はまだ分からないんだ。でも古い道の名前を一つ確かめたよ。分かるところから探していこう。'}
+},
+lanterns:{
+ title:'町の灯りをつなぐ日',icon:'🏮',location:'風待ちの広場',zone:null,noncombat:true,material:null,loss:0,support:0,
+ lead:'エダ',intro:'長旅から戻る人を迎えるため、広場の灯りをみんなで整える日が来た。エダが飾る場所を決め、ミーナとリオが暗い帰り道を確かめている。',
+ participants:['eda','mina','rio'],actions:['aid','patrol','explore'],
+ result:{good:'広場からギルドまで小さな灯りが続き、遅く帰った旅人にも町の入口がよく見えた。準備した人たちは静かに灯りを眺めた。',partial:'飾れた灯りは少なかったが、帰り道の角にはしっかり残った。残りの飾りは次の機会に使うことになった。'},
+ startLetter:{id:'eda',text:'広場で帰り道の灯りを整える日なんだ。ミーナやリオと、夜に戻る人が迷わない場所を考えてるの。準備も一緒に楽しみたいな。'},
+ endLetter:{id:'mina',good:'広場の灯りがつながって、帰ってくる人の顔がよく見えました。明かりを見て安心したと言ってもらえて、うれしかったです。',partial:'灯りは全部は飾れませんでしたが、暗い曲がり角には置けました。帰りの道を守れるよう、また準備したいですね。'}
+}
+
  });
- const order=['caravan','blue','herbs'];
+ const order=['caravan','noticeBoard','blue','roadSigns','herbs','letters','archive','supper','cartWheel','lanterns'];
 // A connected episode can only be created from a root event, never another sequel.
 const chainRules=Object.freeze({
   caravan:{failure:'herbs'},
@@ -9766,7 +10041,7 @@ function linkText(source){
  function decideNextTick(t,n){return t+72+(n%3)*24;} // 1.5〜2.5ゲーム内日後
  function begin(t){const s=state(),chain=s.pendingChain,kind=chain?.kind||order[s.normalIndex%order.length],c=catalog[kind],w=world();
   if(!w?.market)return false;
-  const id=s.nextId++;const drop=Math.min(c.loss,w.market[c.material]);w.market[c.material]-=drop;
+  const id=s.nextId++;const drop=c.material&&c.marketEffect!==false?Math.min(c.loss,w.market[c.material]):0;if(c.material)w.market[c.material]-=drop;
   if(chain)s.pendingChain=null;else s.normalIndex=(s.normalIndex+1)%order.length;
   s.active={id,kind,startedTick:t,dueTick:t+32,baselineRuns:current().runs,baselineSeq:w.windEventSeq||0,choice:'none',heroWon:false,marketDrop:drop,source:chain?{...chain.source}:null};
   s.nextTick=-1;
@@ -9782,13 +10057,13 @@ function linkText(source){
  }
  function resolve(t){const s=state(),e=s.active;if(!e)return false;const c=catalog[e.kind],w=world(),evidence=npcEvidence(e);
   const heroVictory=e.heroWon || (e.choice==='join'&&(current().runLedger||[]).some(r=>r.id>e.baselineRuns&&r.zone===c.zone&&r.result==='won'));
-  const success=!!(heroVictory||(e.choice==='support'&&evidence.count>=1)||evidence.count>=2);
-  const returned=success?(e.kind==='blue'?7:e.kind==='caravan'?10:12):(e.kind==='blue'?2:3);
-  const priorStock=w.market[c.material];w.market[c.material]=clamp(priorStock+returned,0,200);
-  const actualReturned=w.market[c.material]-priorStock;
-  const cause=heroVictory?'主人公も現地で力を尽くした。':e.choice==='support'?'主人公は素材を届け、町の支えになった。':evidence.helpers.length?`${evidence.helpers.map(id=>bridge.people().find(p=>p.id===id)?.name||id).join('と')}が、自分たちの仕事を進めていた。`:'ギルドが対応を続けた。';
+  const success=!!(e.choice==='help'||heroVictory||(e.choice==='support'&&(c.noncombat||evidence.count>=1))||evidence.count>=2);
+  const returned=c.material&&c.marketEffect!==false?(success?(e.kind==='blue'?7:e.kind==='caravan'?10:12):(e.kind==='blue'?2:3)):0;
+  const priorStock=c.material?w.market[c.material]:0;if(c.material)w.market[c.material]=clamp(priorStock+returned,0,200);
+  const actualReturned=c.material?w.market[c.material]-priorStock:0;
+  const cause=e.choice==='help'?'主人公も町での作業を手伝い、みんなと一緒に進めた。':heroVictory?'主人公も現地で力を尽くした。':e.choice==='support'?'主人公は必要な材料を届け、町の支えになった。':evidence.helpers.length?`${evidence.helpers.map(id=>bridge.people().find(p=>p.id===id)?.name||id).join('と')}が、自分たちの仕事を進めていた。`:'ギルドが対応を続けた。';
   let result=c.result[success?'good':'partial'];
-  if(heroVictory&&success){
+  if(heroVictory&&success&&!c.noncombat){
    result=e.kind==='caravan'?'主人公が緑風の森の街道を調べ、ギルドの救援につながった。荷馬車は町へ無事に戻った。':e.kind==='blue'?'主人公が赤錆の鉱山を調査し、安全を確かめる手掛かりを持ち帰った。セラたちも記録を整理し、採掘が再開された。':'主人公が緑風の森を調べ、薬草の採集路の確保に貢献した。ギルドと市場の補充も進んだ。';
   }
   s.history.unshift({id:e.id,kind:e.kind,startedTick:e.startedTick,endedTick:t,choice:e.choice,success,heroVictory,helpers:evidence.helpers.slice(0,3),result:`${result}\n${cause}`,material:c.material,returned:actualReturned,source:e.source?{...e.source}:null});s.history=s.history.slice(0,25);
@@ -9800,7 +10075,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   note(`町の出来事「${c.title}」の結末：${result}`,t);
   if(s.pendingChain)note(`「${c.title}」の結末を受け、ギルドでは「${catalog[s.pendingChain.kind].title}」の準備が始まった。`,t);
   let letter=c.endLetter[success?'good':'partial'];
-  if(success&&heroVictory&&evidence.count===0){
+  if(success&&heroVictory&&evidence.count===0&&!c.noncombat){
    letter=e.kind==='caravan'?'「届かない荷馬車」の救援で、主人公が森の街道を確かめてくれたと聞いた。町に荷が戻った。助かった。':e.kind==='blue'?'「鉱山の青い光」は、あなたが現地を調べてくれたおかげで、安全の手掛かりが分かりました。僕もセラさんと記録を見直してみます。':'「市場の薬草不足」で森の道を調べてくれたんだってね。助かったよ。あたしも仕入れを続けるさ。';
   }
   queued(e.id,'end',c.endLetter.id,letter,t);
@@ -9824,17 +10099,18 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   }finally{reentrant=false;}
  }
  function announce(text){const n=$('townEventFeedback');if(n)n.textContent=text;}
- function choose(action){const s=state(),e=s?.active;if(!e||e.choice!=='none'||!['join','support','watch'].includes(action)||bridge.active())return;
-  const c=catalog[e.kind],save=current(),w=world();let oldStock=w.market[c.material],oldMaterial=save.materials[c.material]||0;
+ function choose(action){const s=state(),e=s?.active;if(!e||e.choice!=='none'||!['join','support','watch','help'].includes(action)||bridge.active())return;
+  const entry=catalog[e.kind];if(!entry||(entry.noncombat?(action==='join'||action==='support'&&!entry.material):(action==='help')))return;
+  const c=catalog[e.kind],save=current(),w=world();let oldStock=c.material?w.market[c.material]:0,oldMaterial=c.material?(save.materials[c.material]||0):0;
   if(action==='support'&&oldMaterial<c.support){announce(`${c.material}があと${c.support-oldMaterial}個必要です。市場で購入したり、探索で集めたりできます。`);return;}
   if(action==='support'){
-   save.materials[c.material]-=c.support;w.market[c.material]=clamp(w.market[c.material]+c.support,0,200);
+   save.materials[c.material]-=c.support;if(c.marketEffect!==false)w.market[c.material]=clamp(w.market[c.material]+c.support,0,200);
   }
   const old={...e};e.choice=action;
   if(!bridge.persist()){
-   Object.assign(e,old);w.market[c.material]=oldStock;save.materials[c.material]=oldMaterial;announce('保存できなかったため、選択を確定しませんでした。');return;
+   Object.assign(e,old);if(c.material){w.market[c.material]=oldStock;save.materials[c.material]=oldMaterial;}announce('保存できなかったため、選択を確定しませんでした。');return;
   }
-  note(`「${c.title}」に対し、主人公は${action==='join'?'現地の調査に参加':action==='support'?'物資を提供':'ギルドと仲間の対応を見守ること'}を選んだ。`,tick());
+  note(`「${c.title}」に対し、主人公は${action==='help'?'町の作業に参加':action==='join'?'現地の調査に参加':action==='support'?'物資を提供':'ギルドと仲間の対応を見守ること'}を選んだ。`,tick());
   bridge.persist();render();bridge.refreshWorldEventsUI?.();
   if(action==='join')route(c.zone);
  }
@@ -9859,14 +10135,14 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
     $('townEventActive').innerHTML=`<article class="town-event-card"><div class="town-event-chain"><strong>🌱 前の出来事から続く話</strong>${esc(linkText(next.source))}</div><div class="town-event-hero"><span class="town-event-icon">${esc(cNext.icon)}</span><div><span class="town-event-eyebrow">次の出来事の予兆</span><h3>${esc(cNext.title)}</h3></div></div><p>町では準備が進んでいます。開始まで残り約${esc(durString(Math.max(0,s.nextTick-t)))}。</p></article>`;
   }else $('townEventActive').innerHTML='<p class="town-event-muted">今は大きな出来事がありません。冒険者たちはいつもどおり、それぞれの仕事を続けています。</p>';
  }else{
-   const remaining=Math.max(0,active.dueTick-t),material=current().materials[c.material]||0;
+   const remaining=Math.max(0,active.dueTick-t),material=c.material?(current().materials[c.material]||0):0;
    const evidence=npcEvidence(active),escName=id=>bridge.people().find(p=>p.id===id)?.name||id;
    const involved=evidence.helpers.length?`この出来事に関連する活動を終えた仲間：${evidence.helpers.map(escName).join('・')}`:'仲間たちの対応はこれから記録されます';
-   const progress=active.choice==='join'?(active.heroWon?'現地での探索を達成しました。結末を待っています。':`${c.location}で1回勝利すると、主人公の参加が記録されます。`):active.choice==='support'?`${c.material}×${c.support}を届けました。結末を待っています。`:active.choice==='watch'?'仲間たちの対応を見守っています。時間が進むと結末が決まります。':'主人公は参加しなくても構いません。町の時間は進み続けます。';
-   $('townEventActive').innerHTML=`<article class="town-event-card"><div class="town-event-hero"><span class="town-event-icon">${c.icon}</span><div><span class="town-event-eyebrow">町の出来事・${esc(c.location)}</span><h3>${esc(c.title)}</h3></div><span class="town-event-pill">残り約${esc(durString(remaining))}</span></div>${active.source?`<div class="town-event-chain"><strong>🌱 前の出来事から続く話</strong>${esc(linkText(active.source))}</div>`:''}<p>${esc(c.intro)}</p><div class="town-event-status">${esc(progress)}</div><p class="town-event-muted">${esc(involved)}</p><div class="town-event-actions">${active.choice==='none'?`<button type="button" data-town-choice="join">⚔ 自分も現地へ向かう</button><button type="button" data-town-choice="support" ${material<c.support?'disabled':''}>📦 ${c.material}×${c.support}を届ける（所持${material}）</button><button type="button" data-town-choice="watch">☘ 仲間たちを見守る</button>`:active.choice==='join'&&!active.heroWon?'<button type="button" data-town-route>現地の冒険画面を開く</button>':''}</div></article>`;
+   const progress=active.choice==='help'?'町の作業を手伝いました。仲間たちと一緒に結末を待っています。':active.choice==='join'?(active.heroWon?'現地での探索を達成しました。結末を待っています。':`${c.location}で1回勝利すると、主人公の参加が記録されます。`):active.choice==='support'?`${c.material}×${c.support}を届けました。結末を待っています。`:active.choice==='watch'?'仲間たちの対応を見守っています。時間が進むと結末が決まります。':'主人公は参加しなくても構いません。町の時間は進み続けます。';
+   $('townEventActive').innerHTML=`<article class="town-event-card"><div class="town-event-hero"><span class="town-event-icon">${c.icon}</span><div><span class="town-event-eyebrow">町の出来事・${esc(c.location)}</span><h3>${esc(c.title)}</h3></div><span class="town-event-pill">残り約${esc(durString(remaining))}</span></div>${active.source?`<div class="town-event-chain"><strong>🌱 前の出来事から続く話</strong>${esc(linkText(active.source))}</div>`:''}<p>${esc(c.intro)}</p><div class="town-event-status">${esc(progress)}</div><p class="town-event-muted">${esc(involved)}</p><div class="town-event-actions">${active.choice==='none'?`${c.noncombat?'<button type="button" data-town-choice="help">🤝 町の作業を手伝う</button>':'<button type="button" data-town-choice="join">⚔ 自分も現地へ向かう</button>'}${c.material?`<button type="button" data-town-choice="support" ${material<c.support?'disabled':''}>📦 ${c.material}×${c.support}を届ける（所持${material}）</button>`:''}<button type="button" data-town-choice="watch">☘ 仲間たちを見守る</button>`:active.choice==='join'&&!active.heroWon?'<button type="button" data-town-route>現地の冒険画面を開く</button>':''}</div></article>`;
   }
   const entries=(s.history||[]).slice(0,6);
-  $('townEventHistory').innerHTML=entries.length?entries.map(h=>{const d=catalog[h.kind];return `<details class="town-event-history"><summary>${esc(d?.icon||'✦')} ${esc(d?.title||'町の出来事')} <span>${h.success?'解決':'継続対応'} · ${esc(timeString(h.endedTick))}</span></summary>${h.source?`<div class="town-event-related">🌱 「${esc(catalog[h.source.kind]?.title||'前の出来事')}」の結果から続いた出来事</div>`:''}<p>${esc(h.result)}</p><p class="town-event-muted">${h.choice==='join'?'主人公が現地へ参加':h.choice==='support'?'主人公が素材を支援':h.choice==='watch'?'主人公は見守った':'主人公は参加しなかった'}。市場へ${esc(h.material)}が${h.returned}個補充されました。</p></details>`;}).join(''):'<p class="town-event-muted">まだ大きな出来事の記録はありません。</p>';
+  $('townEventHistory').innerHTML=entries.length?entries.map(h=>{const d=catalog[h.kind];return `<details class="town-event-history"><summary>${esc(d?.icon||'✦')} ${esc(d?.title||'町の出来事')} <span>${h.success?'解決':'継続対応'} · ${esc(timeString(h.endedTick))}</span></summary>${h.source?`<div class="town-event-related">🌱 「${esc(catalog[h.source.kind]?.title||'前の出来事')}」の結果から続いた出来事</div>`:''}<p>${esc(h.result)}</p><p class="town-event-muted">${h.choice==='help'?'主人公が町の作業を手伝った':h.choice==='join'?'主人公が現地へ参加':h.choice==='support'?'主人公が素材を支援':h.choice==='watch'?'主人公は見守った':'主人公は参加しなかった'}。${d?.marketEffect===false?'修繕に使う材料は市場の在庫に加えていません。':h.material?`市場へ${esc(h.material)}が${h.returned}個補充されました。`:'町の出来事による市場在庫の変動はありません。'}</p></details>`;}).join(''):'<p class="town-event-muted">まだ大きな出来事の記録はありません。</p>';
  }
  root.addEventListener('click',e=>{const btn=e.target.closest('[data-town-choice]');if(btn){choose(btn.dataset.townChoice);return;}if(e.target.closest('[data-town-route]')&&state()?.active)route(catalog[state().active.kind].zone);});
  window.KazeWorldEvents={sync,onBattle,inspect:()=>({active:state()?.active,history:state()?.history,queue:state()?.pendingLetters,pendingChain:state()?.pendingChain,normalIndex:state()?.normalIndex})};
@@ -9994,7 +10270,14 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   blue:['鉱山の古い道で、何かあったらしいね。','昔の坑道のこと、知ってる人いるかな。'],
   herbs:['施療所の薬草が足りないんだって。','薬草を探す人が増えそうだね。'],
   blueFollow:['あの青い光の話、まだ続いてるんだって。','古い坑道の調査、気になるなあ。'],
-  resupply:['施療所への届け物、みんな気にかけてるみたい。','町の薬草、少しでも足りるといいね。']
+  resupply:['施療所への届け物、みんな気にかけてるみたい。','町の薬草、少しでも足りるといいね。'],
+  noticeBoard:['ギルドの掲示板、古い依頼が重なって読みにくいんだって。','見出しが整理されたら、依頼を探しやすくなるね。'],
+  roadSigns:['街道の道しるべが傾いているらしいよ。','迷わず帰れるように、道しるべを直したいね。'],
+  archive:['旅の記録を借りられるようにするんだって。','古い手記を傷めずに読めるといいね。'],
+  supper:['夕方のギルドで温かい汁物を配るらしいよ。','遅く帰る旅人にも残るといいな。'],
+  cartWheel:['荷運び場の車輪が傷んだって聞いたよ。','荷車が直るまで、重い荷物は慎重に運びたいね。'],
+  letters:['古い地名の宛先が書かれた手紙があるそうだよ。','差出人に返す前に、届け先を確かめたいね。'],
+  lanterns:['広場で帰り道の灯りを飾るんだって。','夜に帰ってくる人が迷わないようにしたいね。']
  };
  // 0.9.68: mob conversations are authored fiction. They never issue game commands.
  // Format: [conversation id, time of day, [[speaker, line], ...]].
@@ -10166,7 +10449,14 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   blue:[['鉱山夫のギン','鉱山の青い光の噂、耳にしたか？'],['旅する書記のオリ','まだ詳しいことは分からないんだよね。']],
   herbs:[['薬草商のノノ','薬草不足の知らせが来てるね。'],['薬師見習いのロロ','必要なところへ届くといいんだけど。']],
   blueFollow:[['旅する書記のオリ','青い光の件、追加の調査があるんだって。'],['鉱山夫のギン','分かったことが増えるといいな。']],
-  resupply:[['薬草採りのネネ','薬草の届け物、うまくいくといいね。'],['薬草商のノノ','そうだね。知らせを待とう。']]
+  resupply:[['薬草採りのネネ','薬草の届け物、うまくいくといいね。'],['薬草商のノノ','そうだね。知らせを待とう。']],
+  noticeBoard:[['駆け出しのユイ','掲示板の依頼、どれが今日のものか分からなかったんだ。'],['図書係のエル','並べ方を直しているそうだよ。見出しができるといいね。']],
+  roadSigns:[['旅人のミロ','森の道しるべ、少し傾いてたね。'],['郵便配達のサラ','いつも通る人は分かるけど、初めての人には困るよね。']],
+  archive:[['旅する書記のオリ','旅の記録を借りられるようになるの？'],['図書係のエル','写しを作ってるんだって。原本を守りながら読めるね。']],
+  supper:[['料理人のテト','夕方の汁物、器はいくつ必要かな。'],['宿屋番のモエ','帰りが遅い人の分も、少し取っておきたいね。']],
+  cartWheel:[['旅の修繕屋エン','荷車の金具、交換が必要らしいよ。'],['鍛冶見習いのボル','道具を揃えたら、使う人と一緒に確かめたいな。']],
+  letters:[['郵便配達のサラ','昔の地名の手紙、まだ宛先を探しているんだ。'],['地図描きのアオ','古い地図と今の道を比べてみたいね。']],
+  lanterns:[['花売りのミル','広場に灯りを飾るんだって。'],['見張り番のキト','帰り道の曲がり角が明るくなると助かるね。']]
  };
 
  // 0.9.69: recurring townsfolk. Familiarity is presentation memory only;
@@ -10488,7 +10778,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   const history=Array.isArray(s.npcWorld?.expeditionHistory)?s.npcWorld.expeditionHistory:[];
   acceptTicked(history,'guild','共同遠征','expedition',3,all);
  }
- const EVENT_NAMES={caravan:'届かない荷馬車',blue:'鉱山の青い光',herbs:'市場の薬草不足',blueFollow:'青い光の追加調査',resupply:'薬草を届ける臨時便'};
+ const EVENT_NAMES={caravan:'届かない荷馬車',blue:'鉱山の青い光',herbs:'市場の薬草不足',blueFollow:'青い光の追加調査',resupply:'薬草を届ける臨時便',noticeBoard:'書き直すギルド掲示板',roadSigns:'傾いた道しるべ',archive:'貸し出された旅の記録',supper:'夕暮れのあたたかい鍋',cartWheel:'荷車のきしむ車輪',letters:'宛先の分からない手紙',lanterns:'町の灯りをつなぐ日'};
  function syncWorld(first){
   const world=current().worldEvents;if(!world)return;
   const c=state(),cursor=c.sourceCursor;
@@ -10887,7 +11177,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 })();
 </script>
 <script>
-/* v0.9.80: Guild farm. No new timers for crop growth; derives maturity from WorldEngine.halfHours. */
+/* v0.9.127: Guild farm 12 crops; maturity uses existing game time (no new timers). */
 (()=>{
  'use strict';
  const bridge=window.KazeWindBridge,root=document.getElementById('farmSection');
@@ -10895,11 +11185,15 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  const CROPS=[
   {id:'wheat',name:'小麦',icon:'🌾',seed:20,grow:2,yield:3,sell:9,level:1},
   {id:'carrot',name:'にんじん',icon:'🥕',seed:30,grow:3,yield:3,sell:14,level:1},
+  {id:'bean',name:'いんげん豆',icon:'🫘',seed:32,grow:3,yield:4,sell:12,level:10},
   {id:'potato',name:'じゃがいも',icon:'🥔',seed:45,grow:4,yield:4,sell:16,level:15},
+  {id:'onion',name:'玉ねぎ',icon:'🧅',seed:58,grow:5,yield:3,sell:25,level:22},
   {id:'tomato',name:'トマト',icon:'🍅',seed:75,grow:6,yield:3,sell:31,level:25},
   {id:'herb',name:'香草',icon:'🌿',seed:110,grow:8,yield:3,sell:43,level:35},
+  {id:'mushroom',name:'森茸',icon:'🍄',seed:150,grow:9,yield:3,sell:60,level:45},
   {id:'pumpkin',name:'かぼちゃ',icon:'🎃',seed:200,grow:10,yield:3,sell:78,level:50},
   {id:'berry',name:'星蜜ベリー',icon:'🫐',seed:420,grow:12,yield:3,sell:157,level:65},
+  {id:'apple',name:'暁りんご',icon:'🍎',seed:650,grow:14,yield:3,sell:242,level:72},
   {id:'moonturnip',name:'月光かぶ',icon:'🌙',seed:900,grow:16,yield:3,sell:330,level:80}
  ];
  const BY_ID=Object.fromEntries(CROPS.map(c=>[c.id,c]));
@@ -11071,23 +11365,30 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 
 </script>
 <script>
-/* v0.9.82: Six sellable foods, meal buffs persist across a three-floor expedition. */
+/* v0.9.127: Twelve sellable foods; one meal buff persists across a three-floor expedition. */
 (()=>{
  'use strict';
  const bridge=window.KazeWindBridge,root=document.getElementById('kitchenSection');
  if(!bridge||!root)return;
  const CROPS={
-  wheat:['小麦','🌾'],carrot:['にんじん','🥕'],potato:['じゃがいも','🥔'],
-  tomato:['トマト','🍅'],herb:['香草','🌿'],pumpkin:['かぼちゃ','🎃'],
-  berry:['星蜜ベリー','🫐'],moonturnip:['月光かぶ','🌙']
+  wheat:['小麦','🌾'],carrot:['にんじん','🥕'],bean:['いんげん豆','🫘'],
+  potato:['じゃがいも','🥔'],onion:['玉ねぎ','🧅'],tomato:['トマト','🍅'],
+  herb:['香草','🌿'],mushroom:['森茸','🍄'],pumpkin:['かぼちゃ','🎃'],
+  berry:['星蜜ベリー','🫐'],apple:['暁りんご','🍎'],moonturnip:['月光かぶ','🌙']
  };
  const RECIPES=[
   {id:'bread',name:'焼き麦パン',icon:'🍞',level:1,unlock:60,fee:4,sell:27,need:{wheat:2}},
+  {id:'beanSalad',name:'いんげん豆のサラダ',icon:'🥗',level:10,unlock:120,fee:6,sell:55,need:{bean:2,carrot:1}},
   {id:'veggieSoup',name:'野菜スープ',icon:'🥣',level:15,unlock:200,fee:8,sell:65,need:{carrot:2,potato:1}},
+  {id:'onionSoup',name:'玉ねぎのスープ',icon:'🧅',level:25,unlock:350,fee:10,sell:93,need:{onion:2,carrot:1}},
   {id:'herbPotatoes',name:'じゃがいもの香草焼き',icon:'🥔',level:35,unlock:500,fee:12,sell:109,need:{potato:2,herb:1}},
+  {id:'mushroomRice',name:'森茸の炊き込み飯',icon:'🍚',level:45,unlock:900,fee:18,sell:199,need:{mushroom:2,wheat:2}},
   {id:'pumpkinSoup',name:'かぼちゃのポタージュ',icon:'🎃',level:50,unlock:1300,fee:22,sell:275,need:{pumpkin:2,herb:1}},
+  {id:'harvestHotpot',name:'畑の具だくさん鍋',icon:'🍲',level:55,unlock:1700,fee:24,sell:273,need:{pumpkin:1,onion:2,mushroom:1}},
   {id:'berryTart',name:'星蜜ベリーのタルト',icon:'🥧',level:65,unlock:3200,fee:34,sell:455,need:{berry:2,wheat:2}},
-  {id:'moonStew',name:'月光かぶのシチュー',icon:'🍲',level:80,unlock:9000,fee:84,sell:1025,need:{moonturnip:2,pumpkin:1}}
+  {id:'applePie',name:'暁りんごのパイ',icon:'🥧',level:72,unlock:4200,fee:46,sell:615,need:{apple:2,wheat:2}},
+  {id:'moonStew',name:'月光かぶのシチュー',icon:'🍲',level:80,unlock:9000,fee:84,sell:1025,need:{moonturnip:2,pumpkin:1}},
+  {id:'twilightStew',name:'月と暁の煮込み',icon:'🌅',level:90,unlock:11000,fee:100,sell:1380,need:{moonturnip:2,apple:2}}
  ];
  const BY_ID=Object.fromEntries(RECIPES.map(r=>[r.id,r]));
  const MEALS=window.KazeMealUI?.effects||{};
@@ -11225,10 +11526,10 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   if(!c)return;
   last=signature();
   const nCrop=c.seenCrops.length,nFood=c.seenFoods.length,total=nCrop+nFood;
-  $('farmCollectionCounter').textContent=`${total} / 14種類`;
-  $('farmCollectionCrops').textContent=`${nCrop}/8`;
-  $('farmCollectionFoods').textContent=`${nFood}/6`;
-  $('farmCollectionFill').style.width=`${total/14*100}%`;
+  $('farmCollectionCounter').textContent=`${total} / ${crops.length+foods.length}種類`;
+  $('farmCollectionCrops').textContent=`${nCrop}/${crops.length}`;
+  $('farmCollectionFoods').textContent=`${nFood}/${foods.length}`;
+  $('farmCollectionFill').style.width=`${total/(crops.length+foods.length)*100}%`;
   $('farmCollectionProgress').setAttribute('aria-valuenow',String(total));
   root.querySelectorAll('[data-collection-page]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.collectionPage===page)));
   const list=page==='crop'?crops:foods,seen=page==='crop'?c.seenCrops:c.seenFoods;
@@ -11437,7 +11738,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 })();
 </script>
 
-<!-- v0.9.121: typography audit response; gameplay-only scope, after legacy styles -->
+<!-- v0.9.127: typography audit response; gameplay-only scope, after legacy styles -->
 <style id="typography-audit-v0-9-107">
 /* Long-form text, logs and illustration labels are intentionally unchanged. */
 /* Farm: actionable buttons, quantities and sell prices. */
@@ -11494,14 +11795,14 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 }
 </style>
 
-<!-- v0.9.121 — keep reply choices tappable and scrollable on small phones -->
+<!-- v0.9.127 — keep reply choices tappable and scrollable on small phones -->
 <style id="wind-ack-v0-9-108">
 #windCompose .wind-ack-choice{font-size:14px;line-height:1.5;min-height:44px;white-space:normal;overflow-wrap:anywhere}
 #windCompose:has(.wind-ack-panel){max-height:min(56dvh,460px);overflow-y:auto;overscroll-behavior:contain}
 #windCompose .wind-ack-quote{font-size:13px;line-height:1.6}
 </style>
 <script id="achievement-controller-v110">
-/* v0.9.121: titles are cosmetics, earned only from observable saved records. */
+/* v0.9.127: titles are cosmetics, earned only from observable saved records. */
 (()=>{
  'use strict';
  const bridge=window.KazeWindBridge,section=document.getElementById('achievementSection');
@@ -11637,5 +11938,106 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
    }
  }
 })();
+</script>
+<script id="npc-daily-scenes-v122">
+/* v0.9.127 | Small daily lives that remember the four personal chapters.
+   These are observations, not additional quest results or gameplay bonuses. */
+(()=>{
+'use strict';
+const bridge=window.KazeWindBridge;
+if(!bridge)return;
+const ids=['gald','rio','sera','mina','noel','eda','toto','van'];
+const chapterFor={1:'personalQuests',2:'personalChapters',3:'personalThird',4:'personalFourth'};
+const partners={gald:'mina',rio:'sera',sera:'noel',mina:'eda',noel:'sera',eda:'mina',toto:'rio',van:'gald'};
+const rawCatalog={"gald":[["1c","patrol","帰還路の巡回を終えたガルドは、以前の依頼で記録した安全な分岐をもう一度確かめた。目印の見え方は雨の日と晴れの日で違うらしい。"],["1b","patrol","巡回から戻ったガルドは、狼の足跡を追った日に見つけた警戒地点を手引きに書き足した。「危険を知ってこそ避けられる」と話していた。"],["1n","rest","宿屋で休んだガルドは、帰還した仲間の名簿を確かめてから自分の湯飲みに手を伸ばした。全員の無事を見届けてようやく肩を下ろした。"],["2s","aid","新人の訓練を手伝ったガルドは、退路の決め方を自分で説明させていた。教える側が全部決めてしまわないための練習らしい。"],["2v","patrol","森の巡回から戻ったガルドは、仲間が提案した見張り順を取り入れた。自分だけでは思いつかなかった交代の間隔だったそうだ。"],["2j","joint","ミーナとの共同遠征を終えたガルドは、前を歩く役と休息を知らせる役を分けたと話した。帰還報告には二人の名前が並んだ。"],["3s","aid","新人に巡回の手引きを渡したガルドは、最後の頁に「分からない道は相談する」と書き添えた。教えた後も質問を受ける気でいる。"],["3f","explore","森の調査から戻ったガルドは、仲間と決めた救援路の目印を確かめた。一人で道を決めるより、帰還後の報告が増えたらしい。"],["4l","patrol","道標を確かめる巡回で、ガルドは新人が見つけた傷みを先に報告させた。「俺が気づかない場所もある」と、静かに頷いていた。"],["4r","patrol","迂回路の巡回から戻ったガルドは、泥で通れなくなった区間を地図に記した。遠回りを選べることも、守りの一つになっている。"]],"rio":[["1c","explore","森の調査を終えたリオは、最初の依頼で丁寧に写した足跡と今日の足跡を比べた。地図の余白に小さな違いを書き込んでいる。"],["1b","explore","リオは森の奥を歩き、初めて見晴らしを共有した場所の風向きを覚えて帰った。同じ場所でも違う景色があると喜んでいる。"],["1n","rest","休みの日のリオは地図を机いっぱいに広げていた。「今日は歩かない代わりに、まだ知らない道を探すんだ」と笑っている。"],["2s","research","鉱山の調査を終えたリオは、古い道標の呼び名を地図の端に書き留めた。今度はその名前を覚えている人に聞きに行くつもりらしい。"],["2v","explore","森から戻ったリオは、道の終わりではなく、その先に何があるかを気にしていた。新しい道の発見を誰に伝えるか考えている。"],["2j","joint","セラとの共同調査では、リオが道を探し、セラが石の印を確かめた。帰還後は一枚の地図に二人の印を書き込んだそうだ。"],["3s","aid","新人に道を教えるリオは、地図に二つの呼び名を書いた理由を話していた。同じ道でも呼び方が違うのが面白いらしい。"],["3f","explore","リオは森の案内図に、初めて歩く人が休める場所を追記した。自分が通った道を、誰かが無事に帰れる道へ変えている。"],["4l","gather","薬草を探しに出たリオは、雨の日に使える小道を住人から聞いた。採集袋より地図への書き込みが増えたと笑っている。"],["4r","explore","森を調べたリオはギルドの地図の「今日の道の様子」を更新した。知らない旅人の追記を見つけるのが最近の楽しみらしい。"]],"sera":[["1c","research","鉱山の調査を終えたセラは、最初の依頼で写した標識と今日の石の形を比べていた。欠けた部分を想像で埋めず、空白のまま残した。"],["1b","research","セラは鉱山で古い標識の反応を確かめ、前に魔力を流したときの記録と並べた。同じ結果にならなかった理由を調べている。"],["1n","rest","休息中のセラは、調査ノートを閉じる前に次の疑問を一行だけ書いた。「忘れないための余白です」と言っている。"],["2s","research","セラは鉱山の地層を調べ、第二章で整理した資料へ図を一枚足した。分かったことと未確認のことは、違う色で分けている。"],["2v","explore","森の現地調査から戻ったセラは、仮説と違った場所を丸で囲んでいた。答えより先に確かめ直す点が増えたらしい。"],["2j","joint","ノエルとの共同遠征で、セラは術式を読み上げる役を交代した。ノエルが気づいた読み違いも、二人の調査帳に残している。"],["3s","aid","新人に資料を見せたセラは、難しい印の横に小さな説明図を描き足した。教える相手から質問が出る余地を残している。"],["3f","research","鉱山での確認を終えたセラは、現地の手順をノートの冒頭へ移した。結果だけでは次の人が確かめられないと考えたからだ。"],["4l","research","セラは古い標識の読み違いを見つけ、訂正した箇所と根拠を同じ頁に記した。誤りの記録も消さずに残している。"],["4r","research","鉱山の調査を終えたセラは、石を見る光の角度を記録した。読み方が違ったとき、結論より先に手順を確かめられるようにするためだ。"]],"mina":[["1c","gather","薬草を集めたミーナは、第一章で確認した休息地点のそばに小さな補給籠を置いた。雨に濡れない場所を選んだそうだ。"],["1b","patrol","巡回を終えたミーナは、第一章で見つけた安全な迂回路を救護の地図に書き込んだ。急ぐときこそ道を選べるようにしたいらしい。"],["1n","rest","休息を取ったミーナは、救護箱の包帯を数え直してから温かい飲み物を飲んだ。自分の分の休息も予定に入れている。"],["2s","aid","新人を手伝ったミーナは、救護箱の点検表を二人で確認した。自分がいなくても道具の不足に気づけるようになってほしいそうだ。"],["2v","research","鉱山の調査から戻ったミーナは、その土地に合う休息地点をもう一度確かめた。机の上だけでは決められないことがあるらしい。"],["2j","joint","エダとの共同遠征から戻ったミーナは、薬草の採集と休息の見張りを交代したと話した。片方だけが無理をしない旅になった。"],["3s","aid","ミーナは新人が自分で包帯を選ぶまで待っていた。前より少し手を離し、失敗したら一緒に確かめるつもりらしい。"],["3f","rest","ミーナは当番表を仲間に任せ、宿屋で休息を取った。救護を続けるために、自分も休んでよいと少しずつ思えるようになった。"],["4l","aid","救護の手伝いを終えたミーナは、連絡帳の次の担当者欄を確かめた。「助けて」と言える相手がいることも備えだと話している。"],["4r","patrol","巡回から戻ったミーナは、遠征先で使える合図を別の仲間にも教えた。小さな知らせでも届く道が増えるのを喜んでいる。"]],"noel":[["1c","train","訓練を終えたノエルは、最初の依頼で一戦ごとに確認した手順をもう一度なぞった。慌てず息を整えることが身についてきた。"],["1b","train","ノエルは難しい術の練習を続けていた。初めて自分の意思で前に出た日のことを思い出し、怖さを認めたまま一節唱え直した。"],["1n","rest","休みの日のノエルは、練習帳の端にできた小さな丸印を数えていた。今日はうまくできたことを一つだけ書くつもりらしい。"],["2s","train","ノエルは守りの術を一節ずつ練習し、次に誰かに説明できるよう手順を書き直した。つまずいたところは消さずに残した。"],["2v","explore","森の調査から戻ったノエルは、初めて自分で進むと決めた道を少し誇らしげに話した。慎重さは失わずにいる。"],["2j","joint","セラと帰還したノエルは、読めなかった印のことを自分から質問したそうだ。答えを聞くだけでなく、次に確かめることをノートに書いた。"],["3s","aid","新人の訓練を手伝ったノエルは、自分の古い間違いを見せながら説明した。教える側も緊張していたが、二人で笑えたらしい。"],["3f","train","訓練場でノエルは、新人が最後まで詠唱するのを待った。助けたい気持ちを抑えるのは、自分が唱えるより難しいそうだ。"],["4l","aid","新人の支援を終えたノエルは、失敗した練習帳を次の教材にした。間違いを隠さなくても続けられることを伝えたいらしい。"],["4r","train","ノエルは呪文を短い節に区切り、途中で止まったところから練習を再開した。自分にも新人にも無理のない速さを探している。"]],"eda":[["1c","explore","エダは森から戻ると、最初の依頼で自分で決めた道を手帳に描いた。支援の予定ではなく、自分の旅の記録として残している。"],["1b","explore","森の調査から帰ったエダは、初めて自分から踏み出した場所を思い出していた。次に見たい景色にも、小さな印を付けた。"],["1n","rest","休みの日のエダは、手帳の空白に「何もしない午後」と書いていた。誰かの頼まれごとではなく、自分で決めた休息らしい。"],["2s","gather","エダは薬草を採りながら、第二章でゆっくり歩いた景色を思い出した。急がない時間にも、見つけられるものがあると言っていた。"],["2v","explore","森へ出かけたエダは、第二章で自分のために道を選んだ日から、出発前に一つだけ行きたい場所を決めるようになった。"],["2j","joint","ミーナとの共同遠征の帰り道、エダは休む場所を自分から提案した。二人で決めた予定がうれしかったと話している。"],["3s","aid","新人の支援をしたエダは、「今日はここまで」と時間を決めて帰った。別の日に手伝う約束を守るため、自分の予定も確かめている。"],["3f","explore","森から帰ったエダは、自分が企画した小旅行の話を仲間にしていた。誘う言葉を考える時間も冒険の一部らしい。"],["4l","rest","エダは休息の日に友人と予定を話し合い、自分の旅の日も手帳に残した。断ることと離れることは同じではないと感じている。"],["4r","explore","森の調査から戻ったエダは、今日見た景色を友人への手紙に書いた。一緒に歩けない日にも話は分け合えるらしい。"]],"toto":[["1c","sell","市場で品物を納めたトトは、第一章で一つずつ確かめた品の状態を帳簿に記した。値札を書くより先に、傷みを見ている。"],["1b","research","鉱山の調査から戻ったトトは、新しい仕入れ先の道を手帳に描いた。誰が運んでくれるかまで考えるのが商いらしい。"],["1n","rest","休息中のトトは帳簿を閉じ、買わなかった品の話をしていた。値段を付けずに覚えておくものもあるという。"],["2s","sell","市場へ納品したトトは、取引先が無理をしていないか尋ねていた。帳簿に残らない事情も、次の商いには大事らしい。"],["2v","research","鉱山から戻ったトトは、新しい仕入れ先までの道に印を付けた。値段だけでなく、運びやすさも商いの条件になる。"],["2j","joint","リオと共同遠征を終えたトトは、拾った素材の由来を教えてもらった。二人とも道で見つけたものの話が尽きなかったそうだ。"],["3s","sell","トトは市場で品を扱いながら、値段の付かない相談を受けた。店を続けるための仕事と、話を聞く時間を分けている。"],["3f","sell","市場から戻ったトトは、帳簿の余白に品の持ち主の話を記した。売買の数字だけでは残せないものもあるらしい。"],["4l","sell","トトは店先で相談の内容を確かめ、無料でできることと費用のかかる調査を説明した。親切を続けるための線引きだと言う。"],["4r","research","鉱山の調査から帰ったトトは、町の人と共有する来歴帳に新しい品を記した。自分一人の帳簿ではないのが気に入っている。"]],"van":[["1c","patrol","巡回を終えたヴァンは、第一章で守備範囲を決めて戦った日のことを思い出していた。動かない判断も剣の使い方だという。"],["1b","patrol","ヴァンは鉱山へ向かう前に足場を確かめ、第一章で選んだ踏み込み方を思い返した。強さだけでは守れない距離があるらしい。"],["1n","rest","宿屋で休んだヴァンは、剣の手入れを終えると珍しくすぐ席を立たなかった。休むことも次の判断のために必要だと言った。"],["2s","train","訓練を終えたヴァンは、相手を追い詰める前に距離を取る練習をしていた。第二章で選んだ慎重さを今も忘れていない。"],["2v","patrol","巡回から戻ったヴァンは、助けを求める合図を仲間と確かめた。自分が前に出る以外にも守り方があると考えている。"],["2j","joint","ガルドとの共同遠征から帰ったヴァンは、後ろを任せた場面の話をした。二人の剣の間合いは違うが、それでよかったらしい。"],["3s","aid","新人の支援を終えたヴァンは、退く判断を相手に任せた。自分で決めるための時間を渡すことも訓練だという。"],["3f","train","ヴァンは訓練中、若い剣士と間合いを確かめ合っていた。背中を預けることを覚えても、鍛錬の厳しさは変わらない。"],["4l","patrol","巡回を終えたヴァンは、若い剣士から先に届いた帰還報告を読んだ。尋ねる前に報告が来るようになったのを、少し誇らしく思っている。"],["4r","gather","素材採集から戻ったヴァンは、後方の補給が足りているかを確かめた。前に立たない日にも、守る役目は残っている。"]]};
+const catalog={};
+for(const id of ids)catalog[id]=rawCatalog[id].map(([key,action,text])=>{
+ const stage=Number(key.charAt(0));
+ const c=key.charAt(1);
+ const choice=stage===1?(c==='c'?'careful':c==='b'?'bold':null):stage===2?(c==='s'?'steady':c==='v'?'venture':null):stage===3?(c==='s'?'settled':'forward'):stage===4?(c==='l'?'listen':'renew'):null;
+ return {key:id+'-'+key,stage,choice,action,text};
+});
+const safe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function state(s){
+ if(!s.npcDailyReflections||typeof s.npcDailyReflections!=='object')s.npcDailyReflections={version:1,cursor:s.npcWorld?.windEventSeq||0,entries:[]};
+ return s.npcDailyReflections;
+}
+function fits(s,w,id,e,scene){
+ const record=s[chapterFor[scene.stage]]?.completed?.[id];
+ if(!record||e.tick<(record.tick||0)+8)return false;
+ if(scene.choice&&record.approach!==scene.choice)return false;
+ if(scene.action==='joint'){
+  if(e.kind!=='joint'||!e.success||e.partner!==partners[id])return false;
+  const pair=[id,partners[id]].sort().join(':');
+  if((w.pairStats?.[pair]?.successes||0)<2||(w.relations?.[pair]||0)<18)return false;
+ }else if(e.kind!=='activity'||e.action!==scene.action)return false;
+ return true;
+}
+function sync(world){
+ const s=bridge.read(),w=s.npcWorld,book=state(s);
+ if(world && world!==w)return 0;
+ if(!w||!Array.isArray(w.windEvents)||!Number.isInteger(w.windEventSeq))return 0;
+ if(w.windEventSeq<=book.cursor)return 0;
+ const changes=w.windEvents.filter(e=>e.seq>book.cursor).sort((a,b)=>a.seq-b.seq);
+ let added=0;
+ for(const e of changes){
+  if(!ids.includes(e.actor))continue;
+  const id=e.actor,history=book.entries.filter(x=>x.id===id),last=history.at(-1);
+  if(last&&e.tick-last.tick<144)continue; // at most one vignette per three game days per NPC
+  const candidates=catalog[id].filter(scene=>fits(s,w,id,e,scene))
+   .filter(scene=>!history.some(x=>x.key===scene.key&&e.tick-x.tick<48*30));
+  if(!candidates.length)continue;
+  // Prefer unseen developments; among ties, let the most recent chapter have a chance.
+  candidates.sort((a,b)=>{
+   const count=x=>history.filter(e=>e.key===x.key).length;
+   return count(a)-count(b)||b.stage-a.stage||a.key.localeCompare(b.key);
+  });
+  const pick=candidates[0];
+  book.entries.push({id,key:pick.key,tick:e.tick,text:pick.text,stage:pick.stage});
+  if(book.entries.length>80)book.entries.splice(0,book.entries.length-80);
+  added++;
+ }
+ book.cursor=Math.max(book.cursor,w.windEventSeq);
+ if(added)hydrate();
+ return added;
+}
+function visibleEntries(id){
+ const s=bridge.read();
+ return state(s).entries.filter(entry=>{
+  if(entry.id!==id)return false;
+  const scene=catalog[id]?.find(x=>x.key===entry.key);
+  if(!scene)return false;
+  const completed=s[chapterFor[scene.stage]]?.completed?.[id];
+  return completed && (!scene.choice||completed.approach===scene.choice);
+ });
+}
+function markup(id){
+ const diary=visibleEntries(id);
+ if(!diary.length)return '';
+ const last=diary.at(-1),history=diary.slice(-4,-1).reverse();
+ return `<div class="npc-daily-scene"><span class="npc-daily-kicker">✧ 最近の小さな出来事</span><p>${safe(last.text)}</p>${history.length?`<details><summary>以前の日常を読む（直近${history.length}件）</summary>${history.map(x=>`<p class="npc-daily-past">${safe(x.text)}</p>`).join('')}</details>`:''}</div>`;
+}
+function hydrate(){
+ const cards=document.querySelectorAll('#worldPeople .npcCard');
+ cards.forEach((card,i)=>{
+  const id=ids[i];if(!id)return;
+  const latest=visibleEntries(id).at(-1);
+  const old=card.querySelector('.npc-daily-scene');
+  const stamp=latest?latest.key+':'+latest.tick:'';
+  if(!latest){old?.remove();return;}
+  if(old?.dataset?.dailyStamp===stamp)return;
+  const wrap=document.createElement('div');wrap.innerHTML=markup(id);
+  const replacement=wrap.firstElementChild;if(!replacement)return;
+  replacement.dataset.dailyStamp=stamp;
+  if(old)old.replaceWith(replacement);
+  else card.querySelector('.npcActivity')?.insertAdjacentElement('afterend',replacement);
+ });
+}
+window.KazeDailyScenes={sync,markup,hydrate,definitions:Object.fromEntries(ids.map(id=>[id,catalog[id].map(({key,stage,choice,action,text})=>({key,stage,choice,action,text}))]))};
+sync();hydrate();
+const peopleRoot=document.getElementById('worldPeople');
+if(peopleRoot)new MutationObserver(()=>hydrate()).observe(peopleRoot,{childList:true});
+})();
+
 </script>
 </body></html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.113</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.118</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -652,7 +652,8 @@ select,input[type="text"],input[type="number"],textarea{min-height:44px;border-r
 .heroBanner .stats .stat{background:rgba(255,250,240,.15)!important;border:1px solid rgba(255,255,255,.18)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08);}
 .heroBanner .stats .stat strong{color:#fffaf0!important;font-size:19px!important;font-weight:850!important;}
 .heroBanner .stats .stat small{color:#fff8ec!important;font-size:12px!important;font-weight:650!important;}
-.heroBanner .stats #gold + small,.heroBanner .stats #wins + small{color:#f2d99c!important;}
+.heroBanner .stats #gold + small,.heroBanner .stats #herbCount + small,.heroBanner .stats #oreCount + small{color:#f2d99c!important;}
+@media (max-width:650px){.heroBanner .stats{grid-template-columns:repeat(3,minmax(0,1fr))}.heroBanner .stat strong{font-size:17px!important;}.heroBanner .stat small{font-size:11px!important;line-height:1.15;}}
 .book-tab{color:#3d5f55!important;font-weight:800!important;}
 .book-tab .tab-icon{color:inherit!important;opacity:1!important;}
 .book-tab.is-selected,.book-tab[aria-selected="true"]{background:#fffaf0!important;color:#23453d!important;border-color:#5d7b6e!important;box-shadow:0 5px 14px rgba(67,53,32,.14), inset 0 2px #fff!important;}
@@ -1636,7 +1637,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </style>
 
 <style id="personal-readability-v109">
-/* v0.9.113 | personal request and second-chapter readability */
+/* v0.9.118 | personal request and second-chapter readability */
 #personalSection .personalQuest,#chapterSection .chapterCard{display:grid;gap:12px;padding:16px 14px 15px;overflow-wrap:anywhere;}
 #personalSection .personalQuest .sectionRow,#chapterSection .chapterCard .sectionRow{align-items:flex-start;gap:10px;}
 #personalSection .personalQuest h3,#chapterSection .chapterCard h3{font-size:17px;line-height:1.5;margin:0;flex:1;min-width:0;}
@@ -1698,7 +1699,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </style>
 
 <style id="gear-storage-v09113">
-/* v0.9.113 | Compact permanent gear storage expansion. */
+/* v0.9.118 | Compact permanent gear storage expansion. */
 #gearStorageUpgrade.gear-storage-upgrade{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;padding:9px 11px;margin:6px 0 3px;border:1px solid #d9ceb4;background:#f6f2e7;border-radius:11px;min-width:0;color:#385a4c;line-height:1.4}
 #gearStorageUpgrade .gear-storage-label{display:flex;align-items:center;column-gap:8px;row-gap:3px;flex-wrap:wrap;min-width:0;font-size:14px;font-weight:750}
 #gearStorageUpgrade .gear-storage-label strong{font-size:13px;color:#516958;font-weight:700}
@@ -1710,10 +1711,24 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 #gearStorageUpgrade .gear-storage-complete{color:#34715b;font-size:13px;font-weight:650}
 @media(max-width:375px){#gearStorageUpgrade.gear-storage-upgrade{padding:8px 9px;gap:7px}#gearStorageUpgrade .gear-storage-label{font-size:13px}#gearStorageUpgrade .gear-storage-label small{font-size:12px}#gearStorageUpgrade #gearStorageBuy{min-width:66px;padding:7px 9px}}
 </style>
+<style id="gear-progressive-v09115">
+/* 0.9.115: only the visible inventory rows are materialized. */
+#gearListProgress.gear-list-progress{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:9px 12px 12px;border-top:1px solid #ded8c7;color:#536e5d;font-size:13px;line-height:1.5;}
+#gearListProgress[hidden]{display:none!important;}
+#gearListProgress button{min-height:44px;max-width:100%;border:1px solid #a6bea9;border-radius:9px;background:#eaf1e3;color:#355e4b;padding:8px 14px;font-size:14px;font-weight:750;cursor:pointer;}
+#gearListProgress button:focus-visible{outline:3px solid #ac8550;outline-offset:2px;}
+#gearWorkspace .gear-pinned-note{padding:8px 9px 4px;color:#5d745e;font-size:12px;line-height:1.5;font-weight:700;}
+@media(max-width:420px){#gearListProgress{padding:9px 10px 12px;}}
+</style>
+
+<style id="wind-history-optimization-v116">
+#windThread .wind-load-older{align-self:center;flex-shrink:0;margin:0 auto 8px;padding:10px 17px;min-height:44px;max-width:100%;border:1px solid #bdbea5;background:#fff9e9;color:#345c4f;border-radius:999px;font-size:14px;line-height:1.45;font-weight:700;cursor:pointer;white-space:normal;}
+#windThread .wind-load-older:focus-visible{outline:3px solid #b17747;outline-offset:2px;}
+</style>
 </head><body><main>
 <header class="story-cover">
 <div aria-hidden="true" class="cover-art"><span class="cover-sun"></span><span class="cover-hill cover-hill-back"></span><span class="cover-hill cover-hill-front"></span><span class="cover-tree cover-tree-a"></span><span class="cover-tree cover-tree-b"></span><span class="cover-tree cover-tree-c"></span><span class="cover-house"><i></i></span><span class="cover-path"></span></div>
-<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">v0.9.113</span></h1></div></header>
+<div class="cover-copy"><div class="eyebrow">KAZEMACHI / A STORYBOOK ADVENTURE</div><h1>カゼマチヴィアートル <span style="font-size:13px;color:var(--gold)">v0.9.118</span></h1></div></header>
 <nav aria-label="ゲームの画面を切り替える" class="storybook-tabs" id="bookTabs" role="tablist">
 <button aria-controls="gamePanels" aria-selected="true" class="book-tab is-selected" data-ui-go="adventure" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⚔</span><span>冒険</span><span aria-label="ボス戦の指示待ち" class="tab-alert" hidden="" id="bossAlert">!</span></button>
 <button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="hero" role="tab" type="button"><span aria-hidden="true" class="tab-icon">✦</span><span>主人公</span></button>
@@ -1721,7 +1736,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 <button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="guild" role="tab" type="button"><span aria-hidden="true" class="tab-icon">⌂</span><span>ギルド</span><span class="farm-ready-badge" id="farmReadyBadge" hidden aria-label="収穫可能な作物があります">●</span></button>
 <button aria-controls="gamePanels" aria-selected="false" class="book-tab" data-ui-go="records" role="tab" type="button"><span aria-hidden="true" class="tab-icon">▤</span><span>記録</span></button>
 </nav>
-<div class="heroBanner"><div><div class="eyebrow" style="margin-bottom:3px">MY ADVENTURER</div><div class="big" id="heroTitle">剣士 · 冒険者 Lv10</div><div class="small muted" id="jobLine">職業Lv8</div></div><div class="stats"><div class="stat"><strong id="gold">180</strong><small>所持金 G</small></div><div class="stat"><strong id="wins">0</strong><small>通算勝利</small></div></div>
+<div class="heroBanner"><div><div class="eyebrow" style="margin-bottom:3px">MY ADVENTURER</div><div class="big" id="heroTitle">剣士 · 冒険者 Lv10</div><div class="small muted" id="jobLine">職業Lv8</div></div><div class="stats"><div class="stat"><strong id="gold">180</strong><small>所持金 G</small></div><div class="stat"><strong id="herbCount">0</strong><small>薬草</small></div><div class="stat"><strong id="oreCount">0</strong><small>鉄鉱石</small></div></div>
 <div aria-label="ゲーム内の時刻と時間の流れ" class="sky-clock phase-day" id="skyClock">
 <div class="sky-clock-head"><div><span class="sky-clock-kicker">✦ 風待ちの空時計</span><strong id="skyClockTime">第1日 08:00</strong></div><span class="sky-clock-phase" id="skyClockPhase">☀ 朝</span></div>
 <div aria-hidden="true" class="sky-visual" id="skyVisual"><div class="sky-stars">✦　·　✧　·　✦　·　✧　·　✦</div><div class="sky-horizon"></div><div class="sky-orb" id="skyOrb">☀</div></div>
@@ -1821,7 +1836,7 @@ body.kaze-guild-viewing #quickActions{display:none!important}
 </div>
 <div class="gear-result-summary" id="gearResultSummary" role="status" aria-live="polite">所持装備を読み込み中…</div>
 <div class="gear-workspace" id="gearWorkspace">
- <div class="gear-list-pane"><div class="gear-pane-heading"><strong>装備一覧</strong><span>タップして詳細を見る</span></div><div id="inventory" class="gear-compact-list" aria-label="絞り込んだ装備の一覧">装備を読み込み中…</div></div>
+ <div class="gear-list-pane"><div class="gear-pane-heading"><strong>装備一覧</strong><span>タップして詳細を見る</span></div><div id="inventory" class="gear-compact-list" aria-label="絞り込んだ装備の一覧">装備を読み込み中…</div><div class="gear-list-progress" id="gearListProgress" hidden><span id="gearListProgressLabel">表示件数</span><button type="button" id="gearListMore" aria-controls="inventory">さらに表示</button></div></div>
  <div class="gear-detail-pane" id="gearDetail" aria-label="選択した装備の詳細" tabindex="-1"><p class="gear-empty">装備を選ぶと詳細が表示されます。</p></div>
 </div>
 <div class="gear-batch-tools" id="gearBatchTools" aria-label="鞄の整理・一括売却">
@@ -3285,7 +3300,7 @@ const WorldEngine = (() => {
 const $=s=>document.querySelector(s);
 const KEY='kazemachiAdventureLab_v0925',BACKUP_KEY='kazemachiAdventureLab_v0925_backup',V924KEY='kazemachiAdventureLab_v0924',V924BACKUP_KEY='kazemachiAdventureLab_v0924_backup',V923KEY='kazemachiAdventureLab_v0923',V923BACKUP_KEY='kazemachiAdventureLab_v0923_backup',V922KEY='kazemachiAdventureLab_v0922',V922BACKUP_KEY='kazemachiAdventureLab_v0922_backup',V921KEY='kazemachiAdventureLab_v0921',V921BACKUP_KEY='kazemachiAdventureLab_v0921_backup',V919KEY='kazemachiAdventureLab_v0919',V919BACKUP_KEY='kazemachiAdventureLab_v0919_backup',V918KEY='kazemachiAdventureLab_v0918',V918BACKUP_KEY='kazemachiAdventureLab_v0918_backup',V917KEY='kazemachiAdventureLab_v0917',V917BACKUP_KEY='kazemachiAdventureLab_v0917_backup',V916KEY='kazemachiAdventureLab_v0916',V916BACKUP_KEY='kazemachiAdventureLab_v0916_backup',V915KEY='kazemachiAdventureLab_v0915',V915BACKUP_KEY='kazemachiAdventureLab_v0915_backup',V914KEY='kazemachiAdventureLab_v0914',V914BACKUP_KEY='kazemachiAdventureLab_v0914_backup',V913KEY='kazemachiAdventureLab_v0913',V913BACKUP_KEY='kazemachiAdventureLab_v0913_backup',V912KEY='kazemachiAdventureLab_v0912',V912BACKUP_KEY='kazemachiAdventureLab_v0912_backup',V911KEY='kazemachiAdventureLab_v0911',V911BACKUP_KEY='kazemachiAdventureLab_v0911_backup',V910KEY='kazemachiAdventureLab_v0910',V910BACKUP_KEY='kazemachiAdventureLab_v0910_backup',V99KEY='kazemachiAdventureLab_v099',V99BACKUP_KEY='kazemachiAdventureLab_v099_backup',V98KEY='kazemachiAdventureLab_v098',V98BACKUP_KEY='kazemachiAdventureLab_v098_backup',V97KEY='kazemachiAdventureLab_v097',V97BACKUP_KEY='kazemachiAdventureLab_v097_backup',V96KEY='kazemachiAdventureLab_v096',V95KEY='kazemachiAdventureLab_v095',V94KEY='kazemachiAdventureLab_v094',V93KEY='kazemachiAdventureLab_v093',V92KEY='kazemachiAdventureLab_v092',V91KEY='kazemachiAdventureLab_v091',V90KEY='kazemachiAdventureLab_v090',V82KEY='kazemachiAdventureLab_v082',V81KEY='kazemachiAdventureLab_v081',V80KEY='kazemachiAdventureLab_v080',V72KEY='kazemachiAdventureLab_v072',V71KEY='kazemachiAdventureLab_v071',V70KEY='kazemachiAdventureLab_v070', V61KEY='kazemachiAdventureLab_v061', V60KEY='kazemachiAdventureLab_v060', V53KEY='kazemachiAdventureLab_v053', V52KEY='kazemachiAdventureLab_v052', V51KEY='kazemachiAdventureLab_v051', V50KEY='kazemachiAdventureLab_v050', V41KEY='kazemachiAdventureLab_v041', V4KEY='kazemachiAdventureLab_v040', OLDKEY='kazemachiCombatLab_v010', PREVKEY='kazemachiAdventureLab_v020', V3KEY='kazemachiAdventureLab_v030';
 const MAX_LEVEL=100,MAX_ITEMS=300;
-// v0.9.113: permanent +10-slot gear storage unlocks, 160 -> 300.
+// v0.9.118: permanent +10-slot gear storage unlocks, 160 -> 300.
 // Store only the purchased tier; deriving capacity avoids conflicting save fields.
 const GEAR_STORAGE_BASE=160,GEAR_STORAGE_STEP=10;
 const GEAR_STORAGE_PRICES=Object.freeze([1000,1500,2300,3400,5100,7600,11400,17100,25600,38400,57700,86500,129700,194600]);
@@ -4430,7 +4445,7 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
  }
  s.farm=sanitizeFarm(raw?.farm,s.npcWorld.halfHours);
  s.gearJournal=gearJournalNormalize(raw?.gearJournal,s.gear,s.pendingGear,true);
- // v0.9.113: Cosmetic-only earned titles. No legacy progress is fabricated here;
+ // v0.9.118: Cosmetic-only earned titles. No legacy progress is fabricated here;
  // achievements are evaluated from the existing validated game counters after loading.
  if(raw.achievements && typeof raw.achievements==='object' && !Array.isArray(raw.achievements)){
   const a=raw.achievements;
@@ -4576,10 +4591,18 @@ function bookGold(reason){
  e.categories[kind]=Math.min(100000000000,(e.categories[kind]||0)+Math.abs(delta));
  e.entries.unshift({kind,delta,run:save.runs});e.entries=e.entries.slice(0,30);
 }
+// v0.9.118: the legacy-v41 snapshot is inspected only once after a successful write.
+// A failed save does NOT consume the check; the next save retries it as before.
+let legacyBackupInspected=false;
+let uiRevision=0;
 function persist(reason){bookGold(reason);window.KazeAchievementUI?.sync?.(false);save.bossCheckpoint=CombatEngine.checkpoint(battle);try{
- const existing=localStorage.getItem(KEY);
- if(existing){try{const old=JSON.parse(existing);if(old&&old.version===41)localStorage.setItem(BACKUP_KEY,existing);}catch(e){}}
+ if(!legacyBackupInspected){
+  const existing=localStorage.getItem(KEY);
+  if(existing){try{const old=JSON.parse(existing);if(old&&old.version===41)localStorage.setItem(BACKUP_KEY,existing);}catch(e){}}
+ }
  localStorage.setItem(KEY,JSON.stringify(save));
+ legacyBackupInspected=true;
+ if(window.KazeUIActivePage)uiRevision++;
  }catch(e){warn('ブラウザ保存に失敗しました。JSONバックアップを保存してください。');return false;}return true;}
 // v0.9.80: Tokyo 05:00 daily boundary. Daily state is gameplay save state,
 // not a second copy in localStorage (so backup/import remains coherent).
@@ -5408,7 +5431,7 @@ function renderTotals(){
  $('#heroLevel').textContent=`冒険者 Lv${save.heroLevel}`;$('#expLabel').textContent=cap?'この試作の上限に到達':`${nfmt(save.heroExp)} / ${nfmt(need)} EXP`;$('#expBar').style.width=cap?'100%':Math.min(100,save.heroExp/need*100)+'%';
  $('#jobLevel').textContent=`${CombatEngine.JOBS[save.job].name} 職業Lv${j.level}`;$('#jobExpLabel').textContent=j.level>=30?'職業Lv上限':`${nfmt(j.xp)} / ${nfmt(jobNeed)} 職業EXP`;$('#jobExpBar').style.width=j.level>=30?'100%':Math.min(100,j.xp/jobNeed*100)+'%';
  const hero=makeActor('hero');$('#heroStats').innerHTML=[['HP',hero.maxHp],['MP',hero.maxMp],['攻撃力',hero.atk],['防御力',hero.def],['会心率',Math.round(hero.crit*1000)/10+'%'],['攻撃間隔',hero.speed+'秒']].map(([k,v])=>`<span>${escape(k)} <b>${escape(v)}</b></span>`).join('');
- $('#gold').textContent=nfmt(save.gold);$('#wins').textContent=nfmt(save.wins);if($('#runs'))$('#runs').textContent=nfmt(save.runs);if($('#expTotal'))$('#expTotal').textContent=nfmt(save.totalExp);if($('#gearFound'))$('#gearFound').textContent=nfmt(save.found);
+ $('#gold').textContent=nfmt(save.gold);if($('#herbCount'))$('#herbCount').textContent=nfmt(Number(save.materials?.['薬草']||0));if($('#oreCount'))$('#oreCount').textContent=nfmt(Number(save.materials?.['鉄鉱石']||0));if($('#runs'))$('#runs').textContent=nfmt(save.runs);if($('#expTotal'))$('#expTotal').textContent=nfmt(save.totalExp);if($('#gearFound'))$('#gearFound').textContent=nfmt(save.found);
  $('#potions').textContent=`HP薬×${save.items.hp} / MP薬×${save.items.mp}`;
  if($('#loot'))$('#loot').innerHTML=save.latest.length?save.latest.map(x=>`<div>・${escape(x)}</div>`).join(''):'まだ冒険の記録がありません。';
  if(!isBusy())$('#allies').innerHTML=['hero',...selectedParty()].map(id=>memberHTML(conditionView(id))).join('');
@@ -5532,7 +5555,9 @@ function gearComparisonMarkup(item,allowed){
  const slots=item.slot==='charm'?['charm','charm2']:[item.slot];
  return `<div class="gear-detail-section gear-compare-section"><strong>装備変更前の比較</strong>${slots.map(slot=>gearCompareMarkup(item,slot)).join('')}${slots.length>1?'<p class="gear-compare-info">装飾品は①・②の交換先によって結果が異なります。該当の枠に装備するボタンを選んでください。</p>':''}</div>`;
 }
-const gearView={selectedId:null};
+// UI-only view state. No migration or save-field changes are necessary.
+const GEAR_VIEW_STEP=40;
+const gearView={selectedId:null,visibleCount:GEAR_VIEW_STEP};
 function gearStatLine(item){
  const values=effectiveStats(item);
  return Object.entries(values).filter(([k,v])=>v!==0).map(([k,v])=>`${statLabels[k]||k} +${k==='crit'?(v*100).toFixed(1)+'%':nfmt(v)}`).join(' / ')||'能力値の補正なし';
@@ -5572,18 +5597,35 @@ function renderGear(){
   return b.index-a.index;
  });
  const visible=candidates.map(x=>x.item);
- if(!visible.some(item=>item.id===gearView.selectedId))gearView.selectedId=visible[0]?.id||null;
- $('#gearResultSummary').textContent=`${save.gear.length}個のうち ${visible.length}個を表示　｜　装備中 ${save.gear.filter(x=>used.has(x.id)).length}個　｜　保護中 ${save.gear.filter(x=>x.protected).length}個`;
+ // Filtering/sorting always considers all items. Limit only the DOM nodes built below.
+ gearView.visibleCount=Math.max(GEAR_VIEW_STEP,Math.min(gearView.visibleCount,Math.max(GEAR_VIEW_STEP,visible.length)));
+ const shown=visible.slice(0,gearView.visibleCount);
+ if(!visible.some(item=>item.id===gearView.selectedId))gearView.selectedId=shown[0]?.id||null;
+ // When opened from an equipped slot, show just that extra item rather than
+ // expanding 300 rows simply to reveal a late-sorted item.
+ const pinned=visible.find(item=>item.id===gearView.selectedId&&!shown.some(v=>v.id===item.id));
+ const listItems=pinned?[pinned,...shown]:shown;
+ const morePanel=$('#gearListProgress'),moreButton=$('#gearListMore');
+ morePanel.hidden=shown.length>=visible.length;
+ if(!morePanel.hidden){
+  $('#gearListProgressLabel').textContent=`${shown.length} / ${visible.length}件を表示`;
+  moreButton.textContent=`さらに${Math.min(GEAR_VIEW_STEP,visible.length-shown.length)}件表示`;
+ }
+ $('#gearResultSummary').textContent=`所持${save.gear.length}個中 ${visible.length}個が該当（一覧表示 ${shown.length}個）｜ 装備中 ${save.gear.filter(x=>used.has(x.id)).length}個 ｜ 保護中 ${save.gear.filter(x=>x.protected).length}個`;
  const list=$('#inventory'),previousScroll=list.scrollTop;
- list.innerHTML=visible.map(item=>{
+ list.innerHTML=(pinned?'<div class="gear-pinned-note">現在確認中の装備（一覧に一時表示）</div>':'')+listItems.map(item=>{
   const current=used.has(item.id),allowed=isAllowed(item),selected=item.id===gearView.selectedId;
   const bits=[SLOTS[item.slot]==='装飾品①'?'装飾品':SLOTS[item.slot],item.rarity];if(gearTraitInfo(item))bits.push('✧'+gearTraitInfo(item).name);
   const flags=[current?'<span class="gear-row-tag">装備中</span>':'',item.protected?'<span class="gear-row-tag">🔒 保護</span>':'',!allowed?'<span class="gear-row-tag">職業制限</span>':''].join('');
   return `<button type="button" class="gear-list-row has-rarity rarity-${item.rarity} ${selected?'is-selected':''}" data-gear-select="${escape(item.id)}" aria-pressed="${selected?'true':'false'}"><span class="gear-row-top"><strong class="rar-${item.rarity}">${escape(item.name)} <span class="upgradeLevel">+${item.enhance||0}</span>${gearTraitInfo(item)?` <span class="gear-trait-mark" aria-label="追加特性あり">✧</span>`:''}</strong><span class="gear-row-chevron" aria-hidden="true">›</span></span><span class="gear-row-meta">${escape(bits.join(' · '))}</span><span class="gear-row-stats">${escape(gearStatLine(item))}</span>${flags?`<span class="gear-row-tags">${flags}</span>`:''}</button>`;
  }).join('')||'<div class="gear-empty"><strong>該当する装備がありません</strong><p>検索語や絞り込み条件を変更してください。</p></div>';
  list.scrollTop=previousScroll;
+ renderGearSelectedDetail();
+}
+function renderGearSelectedDetail(){
+ const used=new Set(Object.values(save.equipment).filter(Boolean));
  const i=save.gear.find(g=>g.id===gearView.selectedId),detailPane=$('#gearDetail');
- if(!i){detailPane.innerHTML='<div class="gear-empty"><strong>装備が選択されていません</strong><p>左の一覧から装備を選ぶか、絞り込みを変更してください。</p></div>';renderForge();return;}
+ if(!i){detailPane.innerHTML='<div class="gear-empty"><strong>装備が選択されていません</strong><p>左の一覧から装備を選ぶか、絞り込みを変更してください。</p></div>';if(!initialFullRenderComplete||window.KazeUIActivePage==='guild')renderForge();return;}
  const eq=used.has(i.id),allowed=isAllowed(i),special=i.rarity==='レジェンダリー'?SPECIAL[i.name]:null;
  const fee=upgradeCosts(i),canUpgrade=(i.enhance||0)<5,upgradeAfford=canUpgrade&&canAfford({gold:fee.gold,mats:{[fee.material]:fee.qty}});
  const curStats=effectiveStats(i),nextStats=effectiveStats({...i,enhance:(i.enhance||0)+1});
@@ -5594,12 +5636,24 @@ function renderGear(){
  <div class="gear-detail-section"><strong>この装備の性能</strong><p class="gear-detail-stats">${escape(gearStatLine(i))}</p>${special?`<p class="gear-special">✧ ${escape(special[1])}</p>`:''}${gearTraitInfo(i)?`<p class="gear-special">✧ 追加特性「${escape(gearTraitInfo(i).name)}」：${escape(gearTraitInfo(i).description)}（強化後の装備値に適用）</p>`:''}${i.job?`<p class="gear-detail-muted">対応職業：${escape(i.job.split('/').map(k=>CombatEngine.JOBS[k]?.name||k).join('・'))}</p>`:''}</div>
  ${gearComparisonMarkup(i,allowed)}
  <div class="gear-detail-section"><strong>装備・強化・整理</strong><div class="gear-detail-actions">${equipButtons}<button class="actionbtn" data-enhance="${escape(i.id)}" ${(!upgradeAfford||isBusy())?'disabled':''}>${canUpgrade?`強化：${escape(fee.material)}×${fee.qty} / ${nfmt(fee.gold)}G`:'強化上限 +5'}</button><button class="actionbtn" data-protect="${escape(i.id)}" ${isBusy()?'disabled':''}>${i.protected?'🔓 保護解除':'🔒 保護する'}</button>${!eq&&!i.id.startsWith('starter')?`<button class="actionbtn danger" data-sell="${escape(i.id)}" ${(isBusy()||i.protected)?'disabled':''}>売却（${nfmt(saleValue)}G）</button>`:''}</div>${canUpgrade?`<p class="gear-detail-muted">次の強化：${escape(upgradeDiff||'丸めにより、この段階の表示数値は変化しません')}</p>`:''}</div>`;
- renderForge();
+ if(!initialFullRenderComplete||window.KazeUIActivePage==='guild')renderForge();
 }
 function selectGearFromList(id,scrollToDetail=false){
  if(!save.gear.some(i=>i.id===id))return;
  gearView.selectedId=id;
- renderGear();
+ const rows=[...$('#inventory').querySelectorAll('[data-gear-select]')];
+ if(rows.some(row=>row.dataset.gearSelect===id)){
+  // Selection itself is not a data change: repaint only highlights and detail.
+  for(const row of rows){
+   const selected=row.dataset.gearSelect===id;
+   row.classList.toggle('is-selected',selected);
+   row.setAttribute('aria-pressed',selected?'true':'false');
+  }
+  renderGearSelectedDetail();
+ }else{
+  // Keep the 40-item cap; the selected item appears once as a pinned row.
+  renderGear();
+ }
  if(scrollToDetail&&matchMedia('(max-width:819px)').matches){$('#gearDetail').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});}
 }
 function refreshControls(){const busy=isBusy();for(const el of document.querySelectorAll('#job,#zone,#companions input,#start,#retreat,#pause,#healTarget,#healHp,#healMp,#buyHp,#buyMp,#reset,#export,#importBtn,#gearSort,#tactic,#healThreshold')){el.disabled=busy&&['job','zone','start','healTarget','healHp','healMp','buyHp','buyMp','reset','export','importBtn','gearSort','tactic','healThreshold'].includes(el.id)||(busy&&el.closest('#companions')!==null)||(!busy&&['retreat','pause'].includes(el.id));}
@@ -6331,11 +6385,80 @@ function renderStoryPeople(){
  // The portrait registry loads later than the first game render; a rerender can reuse the existing images.
  document.getElementById('personalCount').textContent=`第1章 ${Object.keys(save.personalQuests.completed).length}/8 · 第2章 ${Object.keys(save.personalChapters.completed).length}/8`;
 }
-function renderAll(){const miniClockToggle=$('#miniClockEnabled');if(miniClockToggle){miniClockToggle.checked=save.settings?.miniClockEnabled!==false;window.KazeMiniClockRefresh?.();}if(!save.gearJournal?.initialized){save.gearJournal=gearJournalNormalize(null,save.gear,save.pendingGear,false);for(const e of Object.values(save.gearJournal.entries)){e.firstTick=0;e.lastTick=0;e.lastSource='starter';e.imported=false;}}renderGearJournal();renderMealStatus();window.KazeKitchen?.sync?.();window.KazeLoginGift?.sync?.();renderEndgame();renderDice();renderCards();renderRace();renderCasino();renderEconomyLedger();renderRunLedger();renderJourneySummary();renderTotals();renderHighland();renderStarwood();renderDawn();renderDawnMilestones();renderSupport();renderCaravanFund();renderMentor();renderBossJournal();renderTower();renderPromotions();renderGear();refreshControls();renderSkills();renderWorld();window.KazeWorldEvents?.sync();window.WindLetterUI?.sync();renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();renderStoryPeople();renderMap();renderDungeon();window.KazeAchievementUI?.sync?.(false);if(battle)renderBattle();}
+// v0.9.118: render the complete UI only at boot. Later redraw only the active
+// tab; tab navigation refreshes its contents synchronously. Game-state updates,
+// time progression, event/letter arrival and achievement unlocking still run.
+let initialFullRenderComplete=false;
+const lastPageRenderRevision=Object.create(null);
+const allPageNames=['adventure','hero','party','guild','records'];
+function prepareRenderState(){
+ const miniClockToggle=$('#miniClockEnabled');
+ if(miniClockToggle){miniClockToggle.checked=save.settings?.miniClockEnabled!==false;window.KazeMiniClockRefresh?.();}
+ if(!save.gearJournal?.initialized){
+  save.gearJournal=gearJournalNormalize(null,save.gear,save.pendingGear,false);
+  for(const e of Object.values(save.gearJournal.entries)){e.firstTick=0;e.lastTick=0;e.lastSource='starter';e.imported=false;}
+ }
+}
+function fullRenderAll(){
+ // v0.9.118: records-only visual history is built on first visit to 記録.
+ // Its saved data, achievements, world simulation, and save format stay unchanged.
+ renderMealStatus();window.KazeKitchen?.sync?.();window.KazeLoginGift?.sync?.();
+ renderEndgame();renderDice();renderCards();renderRace();renderCasino();
+ renderTotals();
+ renderHighland();renderStarwood();renderDawn();renderDawnMilestones();
+ renderSupport();renderCaravanFund();renderMentor();renderTower();
+ renderPromotions();renderGear();refreshControls();renderSkills();renderWorld();
+ window.KazeWorldEvents?.sync();window.WindLetterUI?.sync();
+ renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();
+ renderStoryPeople();renderMap();renderDungeon();window.KazeAchievementUI?.sync?.(false);
+ if(battle)renderBattle();
+}
+function renderActivePage(page){
+ // Cross-tab values are intentionally kept current (HP, party, gold, status).
+ renderTotals();refreshControls();
+ // Do NOT stop game-world synchronization while another tab is open.
+ window.KazeWorldEvents?.sync();window.WindLetterUI?.sync();
+ window.KazeAchievementUI?.sync?.(false);
+ switch(page){
+  case 'hero':
+   renderPromotions();renderGear();renderSkills();break;
+  case 'party':
+   renderWorld();break;
+  case 'guild':
+   window.KazeKitchen?.sync?.();window.KazeLoginGift?.sync?.();
+   renderDice();renderCards();renderRace();renderCasino();
+   renderSupport();renderCaravanFund();renderMentor();
+   renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();
+   renderStoryPeople();renderForge();break;
+  case 'records':
+   renderGearJournal();renderEconomyLedger();renderRunLedger();renderJourneySummary();
+   renderBossJournal();break;
+  case 'adventure':
+  default:
+   renderMealStatus();renderEndgame();renderHighland();renderStarwood();
+   renderDawn();renderDawnMilestones();renderTower();renderMap();renderDungeon();
+   if(battle)renderBattle();
+ }
+}
+function renderAll(){
+ prepareRenderState();
+ if(!initialFullRenderComplete){fullRenderAll();initialFullRenderComplete=true;for(const page of allPageNames)lastPageRenderRevision[page]=uiRevision;
+  lastPageRenderRevision.records=-1; // Force first visit even if nothing has been saved since boot.
+  return;}
+ const page=window.KazeUIActivePage||'adventure';
+ renderActivePage(page);lastPageRenderRevision[page]=uiRevision;
+}
+// Called by the existing tab controller after its panels become visible.
+window.KazeRenderPage=page=>{
+ if(!initialFullRenderComplete)return;
+ // Combat can progress without a save write; repaint its live log on returning.
+ if(lastPageRenderRevision[page]===uiRevision){if(page==='adventure'&&battle)renderBattle();return;}
+ prepareRenderState();renderActivePage(page);lastPageRenderRevision[page]=uiRevision;
+};
 $('#gearJournalAreas').addEventListener('change',e=>{if(GEAR_REGIONS.some(r=>r.id===e.target.value))gearJournalArea=e.target.value;gearJournalPageSize=24;renderGearJournal();});
 $('#gearJournalOnlyMissing').addEventListener('change',e=>{gearJournalOnlyMissing=e.target.checked;gearJournalPageSize=24;renderGearJournal();});
 $('#gearJournalMore').addEventListener('click',()=>{gearJournalPageSize+=24;renderGearJournal();});
-setInterval(()=>{if(!battle||paused||battle.state==='decision'||settled)return;if(battle.state==='running'){CombatEngine.step(battle,battle.time+.25*Number($('#speed').value));renderBattle();if(battle.state==='decision')persist();if(['won','lost','retreated'].includes(battle.state))complete();}},250);
+setInterval(()=>{if(!battle||paused||battle.state==='decision'||settled)return;if(battle.state==='running'){CombatEngine.step(battle,battle.time+.25*Number($('#speed').value));if(window.KazeUIActivePage==='adventure'||battle.state==='decision')renderBattle();if(battle.state==='decision')persist();if(['won','lost','retreated'].includes(battle.state))complete();}},250);
 $('#slotBet').addEventListener('change',e=>{const bet=Number(e.target.value);if(SLOT_BETS.includes(bet)&&bet<=slotMaxBet())save.casino.bet=bet;renderCasino();});
 $('#slotSpin').addEventListener('click',playCasinoSlot);
 $('#raceBet').addEventListener('change',e=>{const bet=Number(e.target.value);if(SLOT_BETS.includes(bet)&&bet<=slotMaxBet())save.race.bet=bet;renderRace();});
@@ -6464,9 +6587,10 @@ $('#camp').addEventListener('click',()=>rest('camp'));$('#inn').addEventListener
 const gearActionHandler=e=>{const t=e.target.closest('[data-equip],[data-sell],[data-protect],[data-enhance]');if(!t)return;if(t.dataset.equip)applyEquip(t.dataset.equip,t.dataset.slot);else if(t.dataset.sell)sellGear(t.dataset.sell);else if(t.dataset.protect)toggleProtect(t.dataset.protect);else if(t.dataset.enhance)upgradeGear(t.dataset.enhance);};
  $('#gearDetail').addEventListener('click',gearActionHandler);
  $('#inventory').addEventListener('click',e=>{const t=e.target.closest('[data-gear-select]');if(t)selectGearFromList(t.dataset.gearSelect,true);});
+ $('#gearListMore').addEventListener('click',()=>{gearView.visibleCount+=GEAR_VIEW_STEP;renderGear();});
  $('#equipped').addEventListener('click',e=>{const unequipTarget=e.target.closest('[data-unequip]');if(unequipTarget){unequip(unequipTarget.dataset.unequip);return;}const gearTarget=e.target.closest('[data-gear-equipped]');if(gearTarget){$('#gearSearch').value='';$('#gearSlot').value='all';$('#gearRarity').value='all';$('#gearState').value='all';selectGearFromList(gearTarget.dataset.gearEquipped,true);}});
- ['gearSlot','gearRarity','gearState','gearSort'].forEach(id=>$('#'+id).addEventListener('change',()=>{gearView.selectedId=null;$('#inventory').scrollTop=0;renderGear();}));
- $('#gearSearch').addEventListener('input',()=>{gearView.selectedId=null;$('#inventory').scrollTop=0;renderGear();});
+ ['gearSlot','gearRarity','gearState','gearSort'].forEach(id=>$('#'+id).addEventListener('change',()=>{gearView.selectedId=null;gearView.visibleCount=GEAR_VIEW_STEP;$('#inventory').scrollTop=0;renderGear();}));
+ $('#gearSearch').addEventListener('input',()=>{gearView.selectedId=null;gearView.visibleCount=GEAR_VIEW_STEP;$('#inventory').scrollTop=0;renderGear();});
 $('#guildSection').addEventListener('click',e=>{
  const take=e.target.closest('[data-take-quest]'),claim=e.target.closest('[data-claim-quest]');if(isBusy())return;
  if(take){const before=JSON.parse(JSON.stringify(save));const r=WorldEngine.takeQuest(save.npcWorld,Number(take.dataset.takeQuest));if(!r.ok){warn(r.reason);return;}save.latest=[`受注：${r.title}`,...save.latest].slice(0,12);if(!persist('quest')){save=before;economyAnchor=save.gold;renderAll();return;}renderAll();msg(`「${r.title}」を受注しました。`);}
@@ -6536,7 +6660,12 @@ $('#miniClockEnabled').addEventListener('change',e=>{
 setInterval(updateSkyClock,1000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateSkyClock();});
 // While the page is open, catch up without running an expensive animation for absent NPCs.
-setInterval(()=>{const n=WorldEngine.catchUp(save.npcWorld,Date.now(),save.selected);if(n){window.KazeWorldEvents?.sync();persist();renderWorld();window.WindLetterUI?.sync();renderMarket();renderSupplies();renderGuild();renderMap();renderDungeon();renderStarwood();renderTower();renderPersonal();renderChapters();renderStoryPeople();}},15000);
+setInterval(()=>{const n=WorldEngine.catchUp(save.npcWorld,Date.now(),save.selected);if(n){window.KazeWorldEvents?.sync();WorldEngine.refreshFarmOrders(save.npcWorld,save.farm,save.heroLevel);persist();window.WindLetterUI?.sync();
+ const page=window.KazeUIActivePage||'adventure';
+ if(page==='party')renderWorld();
+ else if(page==='guild'){renderMarket();renderSupplies();renderGuild();renderPersonal();renderChapters();renderStoryPeople();}
+ else if(page==='adventure'){renderMap();renderDungeon();renderStarwood();renderTower();}
+}},15000);
 WorldEngine.reserve(save.npcWorld,save.selected);WorldEngine.catchUp(save.npcWorld,Date.now(),save.selected);WorldEngine.refreshQuests(save.npcWorld);$('#job').value=save.job;document.querySelectorAll('#companions input').forEach(x=>x.checked=save.selected.includes(x.value));if(battle?.state==='decision'){const z=$('#zone');if(z.querySelector('option[value="'+battle.zone+'"]'))z.value=battle.zone;$('#result').textContent='ボス戦の指示待ちを復元しました。作戦を選んで再開してください。';}window.KazeWindBridge={
   read:()=>save,
   persist:reason=>persist(reason),restoreFarmLedger:()=>{economyAnchor=save.gold;},
@@ -6579,6 +6708,8 @@ refreshAll();renderAll();persist();
     document.getElementById('pageChapter').textContent=names[to][0];
     document.getElementById('pageTitle').textContent=names[to][1];
     updateQuickNote();
+    window.KazeUIActivePage=to;
+    if(scroll)window.KazeRenderPage?.(to);
     if(scroll){
       document.getElementById('pageTitle').scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
       document.getElementById('pageTitle').focus({preventScroll:true});
@@ -6617,8 +6748,8 @@ refreshAll();renderAll();persist();
     const pending=isDecisionPending();
     updateQuickNote();
     // Alert only; do not forcibly interrupt a person's current reading.
-    if(pending)document.title='！ボスの指示待ち｜カゼマチヴィアートル v0.9.113';
-    else document.title='カゼマチヴィアートル｜v0.9.113';
+    if(pending)document.title='！ボスの指示待ち｜カゼマチヴィアートル v0.9.118';
+    else document.title='カゼマチヴィアートル｜v0.9.118';
   }).observe(decision,{attributes:true,attributeFilter:['class']});}
   switchPage('adventure',false);
 })();
@@ -7568,6 +7699,9 @@ const serialLabels={serial1:'✧ 日々の小さな物語',serial2:'✧ その�
 const initiating={hello:'最近、調子はどう？',activity:'今日は何をしていた？',travel:'最近の旅で印象に残ったことは？'};
 const blank=()=>({threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:bridge.tick(),lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24});
 let selected='gald',open=false,lastFocus=null,toastTimer=null,ackTarget=null;
+// v0.9.118: only render recent letters; older letters remain in the saved thread.
+const WIND_VIEW_STEP=48;
+let visibleWindCount=WIND_VIEW_STEP,windViewPerson=selected;
 const expanded=new Set();
 function state(){const save=bridge.read();if(!save.windLetters || typeof save.windLetters!=='object')save.windLetters=blank();const f=save.windLetters;f.threads??={};f.pending??={};f.commus??={};f.tutorialRecap??=null;f.lastWorldEventId??=0;f.lastWorldEventTick??=f.lastSpontaneousTick||0;f.lastCommuStartedTick??=0;f.worldEventQueue??=[];f.memoryEchoed??={};f.storyNotes??={};f.lastStoryTick??=-24;
  // Old saves begin listening for NEW life events, never replaying an entire history.
@@ -7617,7 +7751,7 @@ function pending(id){return state().pending[id]||null;}
 // prompt: those choices are the intended response. This never advances quests.
 function canAcknowledge(m){return m?.side==='in'&&m.kind!=='commu'&&m.kind!=='introRecap'&&m.acknowledged!==true;}
 function shortQuote(text,limit=76){const flat=String(text||'').replace(/\s+/g,' ').trim();return flat.length>limit?flat.slice(0,limit-1)+'…':flat;}
-// v0.9.113 — text-anchored reply choices + personal quest readability. Each row corresponds to one authored line,
+// v0.9.118 — text-anchored reply choices + personal quest readability. Each row corresponds to one authored line,
 // not a keyword-based guess. All three player responses address the actual topic.
 const ACK_CORE_ROWS = {
  gald:[
@@ -8655,7 +8789,7 @@ function spontaneous(){
  f.nextId+=1;f.lastSpontaneousTick=t;
  announce(chosen);return true;
 }
-// v0.9.113: conservative exact-match repair for *unanswered* old messages.
+// v0.9.118: conservative exact-match repair for *unanswered* old messages.
 // Already-answered chats are never edited; history/choices/times remain intact.
 const WIND_CLARITY_REPLACEMENTS=Object.freeze({"少しだけ、報告しておこう。":"少し、今考えていることを伝えておく。","聞いてよ！　これ、誰かに言いたかったんだ。":"ねえ聞いて！　ちょっと話したいことができたんだ。","ふと思いついたんだけどさ！":"あ、そうだ。ちょっと話してもいい？","記録を整理していたら、ひとつ考えが浮かびました。":"調べ物の合間に、少しお話ししたくなりました。","思い出したので、お知らせしておきますね。":"少し、今のうちにお話ししておきたくて。","短い報告なんですけど……。":"あの、少し話したいことがありまして。","そうだ、今日のことを話したくなったの。":"そうだ、ちょっと話を聞いてほしくて。","今どうしてる？　《一人称》はね、":"今どうしてる？　私も、ちょっと話したいことがあるの。","商談じゃないんだが、少し聞いてくれ。":"商談の用じゃないんだが、ひとこと聞いておくれ。","慌ただしい日ほど、仲間が帰る場所を整えておきたい。":"出発する仲間の装備棚を片付けていた。帰ってきたとき、荷物を置ける場所は空けておきたいからな。","小さな危険を見過ごさないようにしている。大きな事故はそこから始まる。":"遠征前は靴底の傷みまで確かめるようにしている。小さな危険を見過ごしたくないからな。","判断を急ぎすぎない訓練も必要だと思っている。":"訓練では、合図を聞いても一呼吸おいて周囲を確かめている。急がない判断も必要だ。","誰かと歩くと、一人では見落とすものが見つかる。":"同じ道でも、俺が足元を見ている間に、仲間が遠くの道標を見つけることがある。一人では気づけないな。","元気だよ！　ちょうど何か面白いことないかなって考えてた！":"元気だよ！　今は地図の端を眺めて、次に歩きたい道を探してたところ！","こっちはいい感じ！　さっき地図を見てたら、まだ歩いてない寄り道を見つけたんだ。":"さっき地図の端に、まだ歩いてない小道を見つけたんだ！　次に出かけたら、道しるべを確かめたいな。","誰かと調べると、《一人称》が見ないところまで分かって面白いよ。":"仲間と地図を見ると、僕は曲がり角、相手は帰り道を見てたりするんだ。気づくところが違って面白いね！","新人に道を教えると、自分も新しい発見があるんだ。":"新人に道を教えるとき、どの木を目印にするか説明するんだ。言葉にすると僕も道を覚え直せるよ！","訓練、終わったよ！　同じ動きを繰り返すと、違うことも見えてくるね。":"訓練、終わったよ！　同じ踏み込みでも、足の向きを変えると動きやすくなるんだね。","森の奥を調べてきたよ！　地図の余白がちょっと気になるんだ。":"森の奥を調べてきたよ！　曲がり角の木を目印に覚えたから、地図にも書き込んでおきたいな。","《一人称》は元気です。少し考え事をしていただけです。":"私は元気です。古い印の写しを並べていたら、似た形が気になって……少し考え込んでいました。","何気ない問いが、案外よい発見の始まりになるものです。":"ノートに、同じ印がどこで使われているか書き出してみました。小さな問いから調査が進むこともありますね。","古い記録は、書かれていない部分にも意味があります。":"古い記録には、日付や場所が空欄の箇所もあります。何が書かれていないかも確かめたいですね。","分からないことが増えた日は、むしろ前進した気がします。":"読めない印について、分かる部分と分からない部分をノートに分けて書きました。答えはまだですが、次に調べる点が見えました。","調査のための旅でも、予定外の発見の方が記憶に残ることがあります。":"調査の途中、目的の遺構だけでなく道沿いの石の並びが気になることもあります。予定外の観察ほど覚えているものですね。","共同遠征中です。同行者の視点には学ぶことがあります。":"共同遠征中です。私は地面の痕跡を、同行者は先の足場を見てくれます。視点が違うのは助かりますね。","ギルドで資料を見比べています。似た記述があるんです。":"ギルドで二冊の資料を見比べています。同じ道標でも、描き方が少し違うんです。","遺物の調査から戻りました。小さな違いを見落とさないようにしています。":"遺物の調査から戻りました。表面の傷の向きを、見間違えないよう図に写してきました。","何もなくてよかった、と言える日が《一人称》は好きです。":"救護箱の包帯がほとんど減らない日は、ほっとします。何も起きない日が私は好きなんです。","助けたい気持ちだけでは足りないので、準備を重ねています。":"手当ての順番を手帳に書き直していました。助けたい気持ちだけでは足りないので、準備を重ねています。","小さな疲れを見逃さないようにしたいですね。":"帰ってきた仲間には、まず水を飲めたか聞くようにしています。小さな疲れも見逃したくなくて。","新人の支援をしています。話しやすい雰囲気にしたいですね。":"新人の支援中です。いきなり体調を尋ねるより、まず今日の作業を聞くようにしています。","市場で補給品を揃えると、少し安心できます。":"市場では薬草の在庫を確かめています。救護に必要な分が揃うと安心できますね。","薬草を採ってきました。道具箱の中身を確かめると、少し安心します。":"薬草を採ってきました。葉の傷みを確かめて、救護箱に入れる分を分けています。","今日は落ち着いています。昨日より、少しだけ。":"今日は呪文の最初の一節を、前ほど慌てずに唱えられました。……少し落ち着けた気がします。","大丈夫です。《一人称》なりに、ちゃんと進んでいると思います。":"大丈夫です。呪文の順番をノートに一行ずつ書いています。僕なりに、少しずつ進んでいます。","今日は焦らずにやってみようと決めました。":"今日は呪文を一節唱えるたびに、息を整えることにしました。焦らない練習です。","まだ誰かの助けが必要なことも多いです。でも、覚えたいんです。":"難しい呪文はまだ誰かに確認してもらっています。でも、次は一つくらい自分で手順を説明できるようになりたいです。","新人の支援をしています。《一人称》にできることもあるはずです。":"新人の支援中です。呪文の準備なら、僕にも順番を説明できることがありそうです。","市場は人が多くて緊張しますけど、勉強になります。":"市場は人が多くて緊張しますけど、店の人が素材を仕分ける手順を見るのは勉強になります。","新人のお手伝いをしました。僕もまだ習うことばかりですけど。":"新人のお手伝いをしました。呪文の準備の順番を、一緒に確かめたんです。僕もまだ覚える途中ですけど。","今日は誰かの話をじっくり聞けた気がするの。":"ギルドで旅帰りの人が道の話をしてくれたの。今日は途中で口を挟まず、最後まで聞いてみたよ。","大きな出来事がなくても、いい日はいい日だよね。":"帰ってきた人に「おかえり」って言えたら、それだけでいい日だと思うの。大きな出来事がなくてもね。","人の手伝いをしていると、自分にもできることが増えるんだ。":"新人に荷物の並べ方を聞かれたの。前なら迷ったけど、最近は順番を説明できるようになったよ。","今日は一つ、自分から提案してみようと思ったの。":"今日はギルドの備品を片付ける順番を、自分から提案してみようと思ってるの。","ギルドでいろんな話を聞くと、行ってみたい場所が増えるね。":"ギルドで森の木漏れ日の話を聞いたの。そんな景色があるなら、いつか見に行ってみたいな。","誰かの困りごとを聞くのって、簡単そうで難しいよ。":"新人が道のことで困っていたの。すぐ答えるより、どこで迷ったか聞いてあげたいな。","旅から戻ると、いつものギルドがちょっと違って見えるんだ。":"旅から戻ると、いつものギルドの灯りが少し温かく見えるの。帰ってこられる場所っていいね。","市場で人と話してきたよ。思わぬ話が聞ける場所だね。":"市場では素材の値段を聞いたあと、運んできた道のことも教えてもらったの。そういう話、好きだな。","ギルドでみんなの話を聞いてる。いろんな日があるんだね。":"ギルドで帰還報告を聞いてるの。遠くへ行った人も、町に残った人も、それぞれの一日があるんだね。","森の巡回を終えたよ。帰ってから話したいことが増えた気がする。":"森の巡回を終えたよ。帰り道の目印を確かめてきたの。誰かにも教えてあげたいな。","調子？　悪くないね。よい取引は焦らないことさ。":"調子は悪くないね。値札をつける前に品物の傷をもう一度確かめたよ。慌てないのが一番さ。","今のところ大きな問題はないよ。小さな問題は毎日あるけどね。":"大きな問題はないよ。帳簿の数字が一枚分合わないことはあるけどね。小さいことほど放っておけないのさ。","人の話を聞いていると、思いがけない需要が見えてくる。":"店先で旅人の話を聞くと、どんな道具が足りないのか分かることがある。品物より先に耳を働かせないとね。","道中で拾う品には、値打ち以外の面白さもあるよ。":"道中で拾った欠けた金具にも、使っていた人の工夫が残っていることがある。値段だけでは測れないね。","商談がうまくいかなくても、よい話が聞けることはある。":"商談で値段が合わなくても、向こうの町の道の具合を教えてもらえることがある。手ぶらじゃないさ。","ギルドで次の仕入れを考えてる。目が離せないね。":"ギルドの荷運び予定を見て、次の仕入れ先を考えてる。街道の混む日を避けたいからね。","市場に素材を納めてきたよ。顔を見て取引できるのは悪くないね。":"市場に素材を納めてきたよ。値段を決める前に、品の状態を一緒に確かめられたのがよかったね。","問題ない。訓練は続けている。":"問題ない。訓練で足の置き方を見直していた。踏み込み一つで剣の届き方が変わる。","変わりない。《一人称》にはまだ、やるべきことがある。":"変わりない。今日も剣を振る前の構えを確かめた。足場を見る癖をつけたい。","基本を繰り返している。手を抜く理由はない。":"剣を振る前に重心を戻す。基本の動きを何度も確かめている。手を抜く理由はない。","難しい相手ほど、自分の粗が見える。":"手強い相手を想定して構えると、肩に余計な力が入る。そういう粗が分かるのが訓練だ。","強くなる方法は一つではない。だが、近道もない。":"剣の速さを上げるだけでは足りん。足運びも、相手を見る余裕も鍛えねばな。","他人の戦いを見て学ぶこともある。":"訓練場で仲間の足運びを見ていた。自分と違う間合いの取り方には学ぶところがある。","旅で得るものは戦果だけじゃない。……それくらいは分かっている。":"森を歩いていると、剣を抜かずに道を確かめる時間もある。旅で得るものは戦果だけじゃない。","訓練を続けている。まだ足りない。":"訓練中だ。今日は踏み込む前の姿勢を直している。まだ足りん。","ギルドで次の行き先を考えている。":"ギルドで地図を広げている。次に向かう場所の退路まで確かめておきたい。","こっちはいい感じ！　でもじっとしてるのは、ちょっと苦手かも。":"さっき地図の端に、まだ歩いてない小道を見つけたんだ！　次に出かけたら、道しるべを確かめたいな。"});
 let windClarityRepairedInSession=false;
@@ -8741,9 +8875,13 @@ function renderContacts(){
 }
 function markRead(id){const unreadMessages=thread(id).filter(x=>x.side==='in'&&!x.read);if(unreadMessages.length){unreadMessages.forEach(x=>x.read=true);bridge.persist();}}
 function renderChat(scroll=false){
+ if(windViewPerson!==selected){windViewPerson=selected;visibleWindCount=WIND_VIEW_STEP;}
  $('windPartner').innerHTML=`${avatar(selected)}<span><strong>${esc(names[selected])}</strong><small>${pending(selected)?'返信を待っています':'離れていても言葉が届く'}</small></span>`;
  const oldTop=$('windThread').scrollTop, nearBottom=$('windThread').scrollHeight-oldTop-$('windThread').clientHeight<40;
- $('windThread').innerHTML=thread(selected).map((m,i)=>`<div class="wind-message ${m.side}"><div class="wind-bubble">${['introRecap','introReaction','introAfterword','introEcho'].includes(m.kind)?'<span class="wind-story-label">✦ はじまりの旅の便り</span>':['storyQuest','storyChapter','storyAfterword'].includes(m.kind)?'<span class="wind-story-label">✧ 物語のその後</span>':serialLabels[m.kind]?`<span class="wind-story-label">${serialLabels[m.kind]}</span>`:''}${m.kind==='ack'&&m.replyQuote?`<span class="wind-reply-quote">↳ ${esc(m.replyQuote)}</span>`:''}${esc(m.text)}</div><time>${esc(format(m.tick))}</time>${canAcknowledge(m)?`<button type="button" class="wind-ack-open" data-wind-ack-open="${i}" aria-label="${esc(names[selected])}の便りに返事する">↩ 返事する</button>`:''}</div>`).join('')||'<p class="wind-empty">まだ会話はありません。話題を選んで送ってみましょう。</p>';
+ const allMessages=thread(selected);
+ const startIndex=Math.max(0,allMessages.length-visibleWindCount);
+ const olderButton=startIndex?`<button type="button" class="wind-load-older" data-wind-older="1">↑ 以前の便りを表示（残り${startIndex}通）</button>`:'';
+ $('windThread').innerHTML=olderButton+allMessages.slice(startIndex).map((m,i)=>`<div class="wind-message ${m.side}"><div class="wind-bubble">${['introRecap','introReaction','introAfterword','introEcho'].includes(m.kind)?'<span class="wind-story-label">✦ はじまりの旅の便り</span>':['storyQuest','storyChapter','storyAfterword'].includes(m.kind)?'<span class="wind-story-label">✧ 物語のその後</span>':serialLabels[m.kind]?`<span class="wind-story-label">${serialLabels[m.kind]}</span>`:''}${m.kind==='ack'&&m.replyQuote?`<span class="wind-reply-quote">↳ ${esc(m.replyQuote)}</span>`:''}${esc(m.text)}</div><time>${esc(format(m.tick))}</time>${canAcknowledge(m)?`<button type="button" class="wind-ack-open" data-wind-ack-open="${startIndex+i}" aria-label="${esc(names[selected])}の便りに返事する">↩ 返事する</button>`:''}</div>`).join('')||'<p class="wind-empty">まだ会話はありません。話題を選んで送ってみましょう。</p>';
  const ep=state().commus[selected];
  const episode=commuEpisodes[selected];
  const chooseNow=ep?.stage==='choice';
@@ -8800,7 +8938,17 @@ $('windLetterPreview').addEventListener('click',e=>{const id=e.target.closest('[
 $('windClose').addEventListener('click',closeBook);
 $('windChatOverlay').addEventListener('click',e=>{if(e.target===$('windChatOverlay'))closeBook();});
 $('windContacts').addEventListener('click',e=>{const id=e.target.closest('[data-wind-contact]')?.dataset.windContact;if(!ids.includes(id))return;ackTarget=null;selected=id;markRead(id);render(true);});
-$('windThread').addEventListener('click',e=>{const button=e.target.closest('[data-wind-ack-open]');if(button)openAcknowledgement(selected,Number(button.dataset.windAckOpen));});
+$('windThread').addEventListener('click',e=>{
+ if(e.target.closest('[data-wind-older]')){
+  const pane=$('windThread'),previousHeight=pane.scrollHeight,previousTop=pane.scrollTop;
+  visibleWindCount=Math.min(thread(selected).length,visibleWindCount+WIND_VIEW_STEP);
+  renderChat(false);
+  // Keep the previously visible letter in place when older messages are prepended.
+  pane.scrollTop=previousTop+Math.max(0,pane.scrollHeight-previousHeight);
+  return;
+ }
+ const button=e.target.closest('[data-wind-ack-open]');if(button)openAcknowledgement(selected,Number(button.dataset.windAckOpen));
+});
 $('windCompose').addEventListener('click',e=>{
  const ack=e.target.closest('[data-wind-ack-choice]');if(ack)return sendAcknowledgement(Number(ack.dataset.windAckChoice));
  if(e.target.closest('[data-wind-ack-cancel]')){ackTarget=null;render(false);return;}
@@ -10987,7 +11135,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 })();
 </script>
 
-<!-- v0.9.113: typography audit response; gameplay-only scope, after legacy styles -->
+<!-- v0.9.118: typography audit response; gameplay-only scope, after legacy styles -->
 <style id="typography-audit-v0-9-107">
 /* Long-form text, logs and illustration labels are intentionally unchanged. */
 /* Farm: actionable buttons, quantities and sell prices. */
@@ -11044,14 +11192,14 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
 }
 </style>
 
-<!-- v0.9.113 — keep reply choices tappable and scrollable on small phones -->
+<!-- v0.9.118 — keep reply choices tappable and scrollable on small phones -->
 <style id="wind-ack-v0-9-108">
 #windCompose .wind-ack-choice{font-size:14px;line-height:1.5;min-height:44px;white-space:normal;overflow-wrap:anywhere}
 #windCompose:has(.wind-ack-panel){max-height:min(56dvh,460px);overflow-y:auto;overscroll-behavior:contain}
 #windCompose .wind-ack-quote{font-size:13px;line-height:1.6}
 </style>
 <script id="achievement-controller-v110">
-/* v0.9.113: titles are cosmetics, earned only from observable saved records. */
+/* v0.9.118: titles are cosmetics, earned only from observable saved records. */
 (()=>{
  'use strict';
  const bridge=window.KazeWindBridge,section=document.getElementById('achievementSection');

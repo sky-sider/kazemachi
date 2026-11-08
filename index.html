@@ -5345,13 +5345,13 @@ const GEAR_REGIONS=[
  {id:'oldroad',name:'苔むした旧道',items:['旧道の旅衣','森番の長剣','木の杖','石穿ちの弓']},
  {id:'ruins',name:'巡礼者の地下遺跡',items:['巡礼の護符','巡礼の古杖','旧道の大剣']},
  {id:'highland',name:'風鳴りの高原',items:['風渡りの長剣','渡り鳥の弓','そよぎの杖','野花の衣','風切りの矢筒','風織りの外套','風鳴りの杖','旅風の護符','雲裂きの剣','雷雲の長弓','空色の灯杖','雷雲の兜','風追いの指輪']},
- {id:'stargarden',name:'星巡りの終わらない庭',items:['星糸の細剣','燈芯の指輪','逆星の魔導書','水鏡の外套','彗尾の長弓','庭守の護盾','帰路の灯具','巡星の冠']},
- {id:'greenhouse',name:'眠り花の温室',items:['根脈の杖','苔硝子の盾','花守りの帽子','露染めの外套','眠り蕾の護符','星露の短弓']},
  {id:'starwood',name:'星影の樹海',items:['木漏れ日の剣','薄明の弓','星雫の杖','木陰の法衣','月映えの盾','霞織りの衣','星読みの護符','夜風の矢筒','星樹の長剣','月影の長弓','夜光の杖','深緑の兜','星蜜の指輪']},
+ {id:'greenhouse',name:'眠り花の温室',items:['根脈の杖','苔硝子の盾','花守りの帽子','露染めの外套','眠り蕾の護符','星露の短弓']},
  {id:'observatory',name:'玻璃の天文塔',items:['玻璃の大剣','星盤の長弓','天文の導杖','星守の外套','硝子の護符']},
  {id:'dawnsea',name:'暁の雲海',items:['朝霧の長剣','白雲の弓','夜明けの杖','雲織りの衣','霞守りの盾','虹路の兜','風見の護符','薄明の矢筒','星渡りの剣','黎明の長弓','暁光の導杖','天風の外套','雲の指輪','古竜の鱗盾','暁の竜冠','竜息の護符']},
  {id:'eclipse',name:'星蝕の断崖',items:['宵裂きの長剣','夜渡りの弓','星蝕の導杖','断崖の戦衣','宵星の兜','月喰いの盾','星喰いの矢筒','薄月の写本','夜護りの護符']},
- {id:'starpit',name:'無明の星坑',items:['無明の大剣','静寂の長弓','虚星の祭杖','星坑の守衣','封星の冠','深星の護盾','深闇の魔導書','薄明の灯具','天底の指輪']}
+ {id:'starpit',name:'無明の星坑',items:['無明の大剣','静寂の長弓','虚星の祭杖','星坑の守衣','封星の冠','深星の護盾','深闇の魔導書','薄明の灯具','天底の指輪']},
+ {id:'stargarden',name:'星巡りの終わらない庭',items:['星糸の細剣','燈芯の指輪','逆星の魔導書','水鏡の外套','彗尾の長弓','庭守の護盾','帰路の灯具','巡星の冠']}
 ];
 for(const region of GEAR_REGIONS){
  const added=EXPANSION_GEAR[region.id];
@@ -14211,5 +14211,95 @@ if(peopleRoot)new MutationObserver(()=>hydrate()).observe(peopleRoot,{childList:
 #gamePanels > .panel[data-ui-page="adventure"][data-ui-order="15"] #combatReview :is(.help,.small,.muted) {
   color:#526a5c!important;
 }
+</style>
+
+<style id="npc-roster-wide-pc-v0155">
+/* v0.9.155: desktop-only roster width and column layout.
+   Keep world-person cards and all actions/data/portrait renderers intact. */
+@media (min-width:760px) {
+  /* A legacy per-page desktop rule constrained every Party panel to six grid tracks.
+     The NPC roster is a wide feature and must span all twelve. */
+  #gamePanels.layout > #worldSection.panel.wide {
+    grid-column:1 / -1 !important;
+    min-width:0;
+    width:100%;
+    max-width:none;
+    box-sizing:border-box;
+  }
+  #worldSection #worldPeople.npcGrid {
+    width:100%;
+    min-width:0;
+    align-items:stretch;
+  }
+  #worldSection #worldPeople > .npcCard {
+    min-width:0;
+    box-sizing:border-box;
+  }
+}
+/* The broad desktop canvas provides room for two rows of four travelers. */
+@media (min-width:1024px) {
+  #worldSection #worldPeople.npcGrid {
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:12px;
+  }
+  #worldPeople .npcCard.has-portrait {
+    padding:12px 11px 13px;
+    gap:8px;
+  }
+  #worldPeople .npcCard.has-portrait .npcHead {
+    grid-template-columns:78px minmax(0,1fr);
+    column-gap:9px;
+    row-gap:4px;
+    min-width:0;
+    min-height:0;
+  }
+  #worldPeople .npcCard.has-portrait .npcHead strong {
+    font-size:16px;
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+  #worldPeople .npcCard.has-portrait .npcHead strong .muted {
+    font-size:12px;
+    line-height:1.4;
+  }
+  #worldPeople .npcCard.has-portrait .portrait-npc {
+    width:78px;
+    height:78px;
+    box-sizing:border-box;
+  }
+  #worldPeople .npcCard.has-portrait .npcHead .pill {
+    font-size:11px;
+    line-height:1.45;
+    padding:3px 7px;
+    max-width:100%;
+  }
+  #worldSection #worldPeople .npcActivity {
+    overflow-wrap:anywhere;
+    font-size:13px;
+    line-height:1.55;
+    padding:9px 10px;
+  }
+  #worldSection #worldPeople .wind-card-actions {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:7px;
+    margin-top:auto;
+  }
+  #worldSection #worldPeople .wind-card-actions button {
+    width:100%;
+    min-width:0;
+    min-height:41px;
+    flex:none;
+    padding:8px 7px;
+  }
+}
+/* Intermediate desktop widths prioritize legibility over forcing four narrow cards. */
+@media (min-width:760px) and (max-width:1023px) {
+  #worldSection #worldPeople.npcGrid {
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:12px;
+  }
+}
+/* Mobile layout intentionally inherits the existing 0.9.154 rules unchanged. */
 </style>
 </body></html>

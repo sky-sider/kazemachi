@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.190</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.192</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -297,6 +297,9 @@ footer{color:#746c54;padding:18px 8px 4px;text-align:center;line-height:1.8}
 #greenhouseSection .greenhouse-awards{margin-top:12px;padding:12px;border:1px solid #bccba9;border-radius:12px;background:#eef3e6;color:#315747;line-height:1.75;font-size:14px;}
 #greenhouseSection .greenhouse-awards strong{color:#315747;}
 @media (max-width:480px){#greenhouseSection .greenhouse-specimens{grid-template-columns:repeat(2,minmax(0,1fr));}#greenhouseSection .greenhouse-specimen{padding:.6rem;}#greenhouseSection .greenhouse-specimen p{font-size:.85rem;}}
+
+.npcCareer{display:inline-block;margin:.36rem 0 .25rem;padding:.36rem .65rem;border-radius:12px;background:#edf3e6;color:#315947;font-weight:750;border:1px solid #bdcfb9}
+@media (prefers-color-scheme:dark){.npcCareer{background:#314339;color:#e5f2df;border-color:#526958}}
 </style><style id="storybook-v084">
 /* v0.8.4 旅の挿絵帳：purely presentational, preserves 0.8.2 gameplay */
 :root{--sketch-ink:#416b5b;--sketch-brown:#957752;--warm-paper:#fcf7e8}
@@ -3036,7 +3039,7 @@ button.arcade-machine:focus-visible,.arcade-button:focus-visible,.arcade-score-g
 @media(max-width:360px){#arcadeRecordSection .arcade-record-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#arcadeRecordSection .arcade-record-levels b{font-size:12px}}
 </style>
 <style id="arcade-bear-portrait-v09190">
-/* v0.9.190: WebP bear portrait. Same layout language as the casino dealer; game state untouched. */
+/* v0.9.191: WebP bear portrait. Same layout language as the casino dealer; game state untouched. */
 #arcadeCenterSection .portrait-service--arcade{display:flex;align-items:center;gap:17px;margin:12px 0 16px;padding:16px;max-width:100%;min-width:0}
 #arcadeCenterSection .portrait-service--arcade .portrait-frame{width:145px;flex:0 0 145px;align-self:center}
 #arcadeCenterSection .portrait-service--arcade .portrait-service-copy{min-width:0;flex:1}
@@ -3799,6 +3802,9 @@ button.arcade-machine:focus-visible,.arcade-button:focus-visible,.arcade-score-g
 <h4>活動はゲームの世界に反映される</h4>
 <p>仲間のアバターが採集した素材を市場へ納品すると、本人の素材が減り市場の在庫が増えます。仲間は自分の資金で装備を更新することもあります。発見した手掛かりはその人物の記憶に残り、新しい地域の調査につながる場合があります。</p>
 <p>共同遠征には<strong>成功や撤退</strong>があり、結果に応じて参加した仲間の経験・資金・素材・親しさ・記憶が変わります。人物の節目も、実際に達成した活動に応じて記録されます。</p>
+<h4>仲間の上位職への転職</h4>
+<p>仲間の基本職が<strong>職業Lv30</strong>になると、それぞれの性格・役割に応じた上位職の昇格試練が始まります。ふだん得意とする活動を3回完了するほか、主人公との同行勝利やNPC同士の共同遠征成功でも試練が進みます。達成すると本人が自動で転職し、仲間タブの近況・記憶に記録されます。主人公の素材やGは使いません。</p>
+<p>上位職はLv1から育ちます。冒険者レベル・基本職Lv30・所持装備はそのままです。戦闘スキルは<strong>4枠</strong>のまま入れ替わり、上位職Lv14で後半の専用技能を使うようになります。8人がそれぞれ固定の上位職に進み、別の上位職を掛け持ちしません。</p>
 <h4>共同遠征中の仲間を連れて行きたいとき</h4>
 <p>共同遠征中の仲間を主人公の同行者に選ぶと、<strong>共同遠征を中断するかの確認</strong>が表示されます。中断すると共同遠征の報酬はありません。遠征を続けたい場合はキャンセルしてください。</p>
 <p>主人公の所持金や装備と仲間それぞれの資金・持ち物は別管理です。ゲームを閉じていた時間も、ゲーム内の自動活動は既定の上限内で進みます。世界チャットのログイン・退出のひとことは生活感を表す演出であり、現実の時刻や接続状況を追跡しているものではありません。</p></div></details>
@@ -4009,6 +4015,27 @@ const CombatEngine = (() => {
   {id:'toto',name:'トト',job:'hunter',level:12},
   {id:'van',name:'ヴァン',job:'sword',level:14}
  ];
+ // NPCs have a personal advanced career; they do not unlock all of the hero's jobs.
+ const NPC_ADVANCED=Object.freeze({gald:'guardian',rio:'sniper',sera:'archmage',mina:'saint',noel:'hexer',eda:'sage',toto:'tracker',van:'blade'});
+ // Four active skills at a time, to avoid giving NPCs more ability slots than the player.
+ const NPC_ADVANCED_BUILDS=Object.freeze({
+  guardian:{first:['heavy','guard','taunt','aegis'],later:['guard','taunt','aegis','shieldbash']},
+  sniper:{first:['aim','mark','double','pierce'],later:['aim','mark','pierce','deadeye']},
+  archmage:{first:['fire','ice','focus','meteor'],later:['fire','focus','meteor','arcflare']},
+  saint:{first:['heal','groupheal','blessing','benediction'],later:['heal','blessing','benediction','lightwall']},
+  hexer:{first:['fire','ice','focus','curse'],later:['fire','focus','curse','siphon']},
+  sage:{first:['heal','blessing','groupheal','lumen'],later:['heal','blessing','lumen','clarity']},
+  tracker:{first:['aim','mark','herb','poison'],later:['aim','mark','poison','bind']},
+  blade:{first:['heavy','guard','rally','iaido'],later:['heavy','rally','iaido','flurry']}
+ });
+ function npcJob(id,person){const expected=NPC_ADVANCED[id];return expected&&person?.jobLevel===30&&person.advancedJob===expected?expected:NPCS.find(n=>n.id===id)?.job||'sword';}
+ function npcBuild(id,person){
+  const job=npcJob(id,person);if(!ADVANCED[job])return {job,skills:[...DEFAULT_BUILDS[job].active],passives:[...DEFAULT_BUILDS[job].passive]};
+  const upper=Math.max(1,Math.min(30,Number(person?.advancedLevel)||1));
+  const active=[...(upper>=14?NPC_ADVANCED_BUILDS[job].later:NPC_ADVANCED_BUILDS[job].first)];
+  const passives=[...DEFAULT_BUILDS[BASE_JOB(job)].passive,ADVANCED_TECHNIQUES[job].passive[0][0]];
+  return {job,skills:active,passives};
+ }
  const FOES={
   slime:{name:'森スライム',level:7,hp:130,atk:30,def:9,speed:3.0,icon:'🟢'},
   wolf:{name:'森狼',level:8,hp:158,atk:35,def:12,speed:2.7,icon:'🐺'},
@@ -4197,9 +4224,11 @@ const CombatEngine = (() => {
     case 'observatory': return stage(towerFloor,[{hp:1.20,atk:1.14,def:1.03},{hp:1.26,atk:1.22,def:1.06},{hp:1.38,atk:1.28,def:1.08}]);
     case 'invertedcity': return cityBoss==='bell'?{hp:1.74,atk:1.41,def:1.10}:stage(cityArea,[{hp:1.12,atk:1.12,def:1.03},{hp:1.23,atk:1.20,def:1.06},{hp:1.37,atk:1.28,def:1.08}]);
     case 'dawnsea': return stage(dawnTier,[{hp:1.12,atk:1.12,def:1.02},{hp:1.16,atk:1.13,def:1.04},{hp:1.24,atk:1.20,def:1.06},{hp:1.46,atk:1.26,def:1.08}]);
-    case 'eclipse': return {hp:1.40,atk:1.26,def:1.06};
+    // v0.9.192: endgame balance — approx. 30% advanced-NPC test wins.
+    // Adjust the encounter's endurance only, preserving NPC careers, skills, and other zones.
+    case 'eclipse': return {hp:1.56,atk:1.26,def:1.06};
     case 'stargarden': return gardenMode==='final'&&gardenArea>=7
-     ? stage(gardenArea-6,[{hp:1.22,atk:1.16,def:1.04},{hp:1.30,atk:1.20,def:1.05},{hp:1.42,atk:1.28,def:1.06},{hp:1.55,atk:1.37,def:1.07},{hp:1.75,atk:1.50,def:1.10}])
+     ? stage(gardenArea-6,[{hp:1.22,atk:1.16,def:1.04},{hp:1.30,atk:1.20,def:1.05},{hp:1.42,atk:1.28,def:1.06},{hp:1.55,atk:1.37,def:1.07},{hp:1.96,atk:1.50,def:1.10}])
      : null; // Ordinary garden collection must stay accessible at Lv100.
     default:return null; // forest, mine, boss, and starpit remain reference anchors.
    }
@@ -4681,7 +4710,7 @@ const CombatEngine = (() => {
    xp=Math.round(xp*(1+(b.mealBonus?.xp||0)));gold=Math.round(gold*(1+(b.mealBonus?.gold||0)));
    return {xp,gold,materials,gears};
  }
- return {JOBS,ADVANCED,BASE_JOB,NPCS,FOES,SKILLS,DEFAULT_BUILDS,heroActor,begin,step,resolveBoss,cityGuidePattern,reward,levelXp,jobXp,checkpoint,resume};
+ return {JOBS,ADVANCED,BASE_JOB,NPCS,NPC_ADVANCED,npcJob,npcBuild,FOES,SKILLS,DEFAULT_BUILDS,heroActor,begin,step,resolveBoss,cityGuidePattern,reward,levelXp,jobXp,checkpoint,resume};
 })();
 
 /* v0.5.3: economy audit: stock-responsive local demand, lodging upkeep, persisted equipment history. */
@@ -4794,10 +4823,10 @@ const WorldEngine = (() => {
   if(beat)return ({gald:'「背中を守るだけが仕事じゃない、と分かった」',rio:'「次は誰とどんな場所を見つけようかな」',sera:'「研究は、誰かと確かめてこそ進むこともある」',mina:'「少しずつ、仲間にも任せられるようになりました」',noel:'「まだ怖い。でも、前よりできることがある」',eda:'「手当ての道具と、一緒に冒険する勇気は別ものよ」',toto:'「商売は信用だよ。仕入れ先にも顔があるんだ」',van:'「一人が好きだ。それと共闘しないのは別の話だ」'})[id];
   return ({gald:'「無事に帰るまでが遠征だ」',rio:'「知らない道があるなら調べたいな」',sera:'「現地の記録がもう少し欲しいわ」',mina:'「出発前の準備を大切にしてくださいね」',noel:'「今日は訓練をひとつ増やしてみようかな」',eda:'「助けるだけじゃなくて、私も行ってみたいの」',toto:'「素材も信用も、積み重ねが大切だよ」',van:'「強い敵の噂があるなら聞かせてくれ」'})[id];
  }
- function seedPeople(){const people={};for(const n of CombatEngine.NPCS)people[n.id]={equipment:{weapon:gearFor(n.job,'weapon'),armor:gearFor(n.job,'armor')},level:n.level,xp:0,jobLevel:Math.max(1,n.level-3),jobXp:0,gold:80,stock:{'薬草':0,'鉄鉱石':0},fatigue:12,location:'guild',activity:'guild',remaining:0,missions:0,sales:0,discoveries:0,story:[],trust:10,closeness:10,partyBattles:0,coExpeditions:0,memories:[],outlook:null,last:'ギルドで次の予定を考えている。'};return people;}
- function initial(now=Date.now()){return {version:7,guild:{offers:[],active:null,history:[],completedTotal:0,seen:[],lastOffered:{herb:-100,ore:-100},lastFarmDay:-1,nextId:1,reports:0},marketStats:{bought:0,sold:0,paid:0,earned:0},shopRevenue:0,shopOrders:0,worldConsumed:{'薬草':0,'鉄鉱石':0},lodgingSpent:0,lastReal:now,halfHours:0,seed:9124381,people:seedPeople(),market:{'薬草':18,'鉄鉱石':9},relations:{},pairStats:{},expeditions:[],expeditionHistory:[],nextExpeditionId:1,news:[],totalEvents:0,windEventSeq:0,windEvents:[]};}
+ function seedPeople(){const people={};for(const n of CombatEngine.NPCS)people[n.id]={advancedJob:null,trialProgress:0,advancedLevel:1,advancedXp:0,equipment:{weapon:gearFor(n.job,'weapon'),armor:gearFor(n.job,'armor')},level:n.level,xp:0,jobLevel:Math.max(1,n.level-3),jobXp:0,gold:80,stock:{'薬草':0,'鉄鉱石':0},fatigue:12,location:'guild',activity:'guild',remaining:0,missions:0,sales:0,discoveries:0,story:[],trust:10,closeness:10,partyBattles:0,coExpeditions:0,memories:[],outlook:null,last:'ギルドで次の予定を考えている。'};return people;}
+ function initial(now=Date.now()){return {version:8,guild:{offers:[],active:null,history:[],completedTotal:0,seen:[],lastOffered:{herb:-100,ore:-100},lastFarmDay:-1,nextId:1,reports:0},marketStats:{bought:0,sold:0,paid:0,earned:0},shopRevenue:0,shopOrders:0,worldConsumed:{'薬草':0,'鉄鉱石':0},lodgingSpent:0,lastReal:now,halfHours:0,seed:9124381,people:seedPeople(),market:{'薬草':18,'鉄鉱石':9},relations:{},pairStats:{},expeditions:[],expeditionHistory:[],nextExpeditionId:1,news:[],totalEvents:0,windEventSeq:0,windEvents:[]};}
  function sanitize(raw,now=Date.now()){
-  const w=initial(now);if(!raw||![1,2,3,4,5,6,7].includes(raw.version))return w;
+  const w=initial(now);if(!raw||![1,2,3,4,5,6,7,8].includes(raw.version))return w;
   w.lastReal=int(raw.lastReal,now-365*86400000,now+STEP_MS,now);w.halfHours=int(raw.halfHours,0,2000000,0);w.seed=int(raw.seed,0,4294967295,9124381)>>>0;w.totalEvents=int(raw.totalEvents,0,1e8,0);w.shopRevenue=int(raw.shopRevenue,0,1e9,0);w.shopOrders=int(raw.shopOrders,0,1e7,0);for(const key of ['bought','sold','paid','earned'])w.marketStats[key]=int(raw.marketStats?.[key],0,1e9,0);w.lodgingSpent=int(raw.lodgingSpent,0,1e9,0);for(const mat of ['薬草','鉄鉱石'])w.worldConsumed[mat]=int(raw.worldConsumed?.[mat],0,1e9,0);
   for(const mat of ['薬草','鉄鉱石'])w.market[mat]=int(raw.market?.[mat],0,200,w.market[mat]);
   if(raw.version>=6&&raw.guild&&typeof raw.guild==='object'){
@@ -4830,13 +4859,17 @@ const WorldEngine = (() => {
    w.guild.nextId=Math.max(w.guild.nextId,1,...[...existing,...w.guild.history.map(x=>x.id)].map(id=>id+1));
   }
   for(const n of CombatEngine.NPCS){const p=w.people[n.id],o=raw.people?.[n.id];if(!o)continue;
-   for(const [key,lo,hi] of [['level',n.level,100],['xp',0,1e6],['jobLevel',1,30],['jobXp',0,1e6],['gold',0,1e5],['fatigue',0,100],['remaining',0,8],['missions',0,1e5],['sales',0,1e5],['discoveries',0,1e5],['trust',0,100],['closeness',0,100],['partyBattles',0,1e5],['coExpeditions',0,1e5]])p[key]=int(o[key],lo,hi,p[key]);
+   for(const [key,lo,hi] of [['level',n.level,100],['xp',0,1e6],['jobLevel',1,30],['jobXp',0,1e6],['gold',0,1e5],['fatigue',0,100],['remaining',0,8],['missions',0,1e5],['sales',0,1e5],['discoveries',0,1e5],['trust',0,100],['closeness',0,100],['partyBattles',0,1e5],['coExpeditions',0,1e5],['trialProgress',0,2],['advancedLevel',1,30],['advancedXp',0,1e6]])p[key]=int(o[key],lo,hi,p[key]);
    for(const mat of ['薬草','鉄鉱石'])p.stock[mat]=int(o.stock?.[mat],0,25,0);
    p.location=Object.hasOwn(LABEL,o.location)?o.location:'guild';p.activity=Object.hasOwn(ACTIONS,o.activity)?o.activity:'guild';p.remaining=['guild','party'].includes(p.activity)?0:p.remaining;
+   // Only the canonical career may survive sanitization; older saves remain basic-class.
+   p.advancedJob=p.jobLevel===30&&o.advancedJob===CombatEngine.NPC_ADVANCED[n.id]?o.advancedJob:null;
+   if(!p.advancedJob){p.advancedLevel=1;p.advancedXp=0;}
+   else {p.trialProgress=0;if(p.advancedLevel===30)p.advancedXp=0;}
    p.equipment={weapon:sanitizeGear(o.equipment?.weapon,n.job,'weapon'),armor:sanitizeGear(o.equipment?.armor,n.job,'armor')};
    p.last=typeof o.last==='string'?o.last.slice(0,180):p.last;p.outlook=['steady','venture'].includes(o.outlook)?o.outlook:null;
    p.story=Array.isArray(o.story)?[...new Set(o.story.filter(x=>typeof x==='string'&&STORIES[n.id].some(v=>v.id===x)))].slice(0,2):[];
-   p.memories=Array.isArray(o.memories)?o.memories.filter(m=>m&&['discovery','party_boss','joint','gear','story','personal'].includes(m.type)&&typeof m.text==='string').slice(-12).map(m=>({type:m.type,text:m.text.slice(0,180),tick:int(m.tick,0,w.halfHours,w.halfHours)})):[];
+   p.memories=Array.isArray(o.memories)?o.memories.filter(m=>m&&['discovery','party_boss','joint','gear','story','personal','promotion'].includes(m.type)&&typeof m.text==='string').slice(-12).map(m=>({type:m.type,text:m.text.slice(0,180),tick:int(m.tick,0,w.halfHours,w.halfHours)})):[];
   }
   if(raw.relations&&typeof raw.relations==='object')for(const [key,value] of Object.entries(raw.relations)){const ids=key.split(':');if(ids.length===2&&ids.every(id=>KNOWN.includes(id))&&ids[0]!==ids[1])w.relations[pairKey(...ids)]=int(value,0,100,10);}
   if(raw.pairStats&&typeof raw.pairStats==='object')for(const [key,value] of Object.entries(raw.pairStats)){const ids=key.split(':');if(ids.length!==2||ids.some(id=>!KNOWN.includes(id))||ids[0]===ids[1]||!value)continue;
@@ -4873,9 +4906,27 @@ const WorldEngine = (() => {
  }
  function pick(w,options){let total=options.reduce((sum,x)=>sum+x[1],0),v=random(w)*total;for(const x of options){v-=x[1];if(v<=0)return x[0];}return options.at(-1)[0];}
  function addGrowth(p,xp){p.xp+=xp;p.jobXp+=Math.ceil(xp*.65);let grew=false;
+  if(p.advancedJob){p.advancedXp+=Math.ceil(xp*.65);
+   while(p.advancedLevel<30&&p.advancedXp>=CombatEngine.jobXp(p.advancedLevel)){
+    p.advancedXp-=CombatEngine.jobXp(p.advancedLevel);p.advancedLevel++;
+   }
+   if(p.advancedLevel===30)p.advancedXp=0;
+  }
   while(p.level<100&&p.xp>=CombatEngine.levelXp(p.level)){p.xp-=CombatEngine.levelXp(p.level);p.level++;grew=true;}
   while(p.jobLevel<30&&p.jobXp>=CombatEngine.jobXp(p.jobLevel)){p.jobXp-=CombatEngine.jobXp(p.jobLevel);p.jobLevel++;}
   if(p.level===100)p.xp=0;if(p.jobLevel===30)p.jobXp=0;return grew;
+ }
+ const CAREER_TRIAL=Object.freeze({gald:'patrol',rio:'explore',sera:'research',mina:'aid',noel:'train',eda:'explore',toto:'gather',van:'patrol'});
+ function advancePromotion(w,id,source){
+  const p=w.people[id],job=CombatEngine.NPC_ADVANCED[id];
+  if(!p||p.jobLevel<30||p.advancedJob||!(source==='party'||source==='joint'||source===CAREER_TRIAL[id]))return false;
+  p.trialProgress=Math.min(3,p.trialProgress+1);
+  if(p.trialProgress<3){if(p.trialProgress===1)log(w,'growth',name(id)+'が'+CombatEngine.JOBS[job].name+'への昇格試練を始めた。');return false;}
+  p.advancedJob=job;p.trialProgress=0;p.advancedLevel=1;p.advancedXp=0;
+  const text=name(id)+'が試練を終え、上位職「'+CombatEngine.JOBS[job].name+'」に転職した！';
+  p.memories.push({type:'promotion',text,tick:w.halfHours});p.memories=p.memories.slice(-12);
+  p.last=text;log(w,'growth',text);
+  return true;
  }
  function remember(w,id,text){const p=w.people[id];if(p.memories.some(m=>m.type==='joint'&&m.text===text))return;p.memories.push({type:'joint',text,tick:w.halfHours});p.memories=p.memories.slice(-12);}
  function cancelExpedition(w,e,joinId){
@@ -4902,6 +4953,7 @@ const WorldEngine = (() => {
    case 'aid':{p.fatigue+=10;p.gold=Math.min(1e5,p.gold+12);p.missions++;const grew=addGrowth(p,23);line='ギルドで新人の訓練を手伝い、報酬12Gを受け取った。'+(grew?' Lv'+p.level+'に成長！':'');category='guild';break;}
   }
   p.fatigue=Math.max(0,Math.min(100,p.fatigue));p.last=line||'活動を終えた。';if(['market','growth','discovery','guild'].includes(category)||random(w)<.22)log(w,category,who+'：'+p.last);p.activity='guild';p.location='guild';p.remaining=0;
+  advancePromotion(w,id,action);
   recordWindEvent(w,{kind:'activity',actor:id,action,levelUp:line.includes('に成長！')});
  }
  function startJoint(w,a,b){const key=pairKey(a,b),pattern=PAIRS[key];if(!pattern)return;
@@ -4930,6 +4982,7 @@ const WorldEngine = (() => {
   const headline=success?`${name(a)}と${name(b)}が「${e.title}」から帰還。${pattern.flavor} それぞれ${mat}×${gain}相当と${money}Gの報酬を獲得した。`:`${name(a)}と${name(b)}は「${e.title}」を途中で切り上げ、安全に帰還した。`;
   log(w,'joint',headline);
   w.expeditionHistory.unshift({key:e.key,text:headline,tick:w.halfHours,success});w.expeditionHistory=w.expeditionHistory.slice(0,14);
+  if(success)for(const id of e.ids)advancePromotion(w,id,'joint');
   for(const id of e.ids)recordWindEvent(w,{kind:'joint',actor:id,partner:id===a?b:a,title:e.title,success,action:'joint'});
   // Milestones can only be unlocked by completed, successful, real joint missions.
   let milestone=0,text='';
@@ -5175,7 +5228,7 @@ const WorldEngine = (() => {
   if(p.level>before){log(w,'growth',`${name(id)}が主人公との同行訓練でLv${p.level}に成長した。`);}
   return {xp:granted,before,after:p.level};
  }
- function recordParty(w,ids,zone,won,earnedExp=0){if(!won)return;for(const id of ids){const p=w.people[id];if(!p)continue;p.partyBattles++;const gained=Math.max(1,Math.round(earnedExp*.55));const grew=addGrowth(p,gained);p.fatigue=Math.min(100,p.fatigue+3);if(grew)log(w,'growth',name(id)+'が主人公との共同冒険でLv'+p.level+'に成長した。');p.trust=Math.min(100,p.trust+(p.partyBattles%4===0?1:0));if(['boss','ruins'].includes(zone)&&!p.memories.some(m=>m.type==='party_boss'&&m.text.includes(zone==='boss'?'石像兵':'巡礼路'))){const memory=zone==='boss'?'主人公と共に古代の石像兵を倒した。':'主人公と共に巡礼路の守護者を倒した。';p.memories.push({type:'party_boss',text:memory,tick:w.halfHours});p.memories=p.memories.slice(-12);log(w,'memory',name(id)+'：主人公との初めての'+(zone==='boss'?'石像兵':'巡礼路の守護者')+'討伐を記憶した。');}}}
+ function recordParty(w,ids,zone,won,earnedExp=0){if(!won)return;for(const id of ids){const p=w.people[id];if(!p)continue;p.partyBattles++;const gained=Math.max(1,Math.round(earnedExp*.55));const grew=addGrowth(p,gained);advancePromotion(w,id,'party');p.fatigue=Math.min(100,p.fatigue+3);if(grew)log(w,'growth',name(id)+'が主人公との共同冒険でLv'+p.level+'に成長した。');p.trust=Math.min(100,p.trust+(p.partyBattles%4===0?1:0));if(['boss','ruins'].includes(zone)&&!p.memories.some(m=>m.type==='party_boss'&&m.text.includes(zone==='boss'?'石像兵':'巡礼路'))){const memory=zone==='boss'?'主人公と共に古代の石像兵を倒した。':'主人公と共に巡礼路の守護者を倒した。';p.memories.push({type:'party_boss',text:memory,tick:w.halfHours});p.memories=p.memories.slice(-12);log(w,'memory',name(id)+'：主人公との初めての'+(zone==='boss'?'石像兵':'巡礼路の守護者')+'討伐を記憶した。');}}}
  const MARKET={
   '薬草':{buy:14,sell:7,icon:'🌿'},
   '鉄鉱石':{buy:25,sell:12,icon:'⛏️'}
@@ -7758,7 +7811,7 @@ function makeActor(id){let a;
   a.supportLabel=save.supportSkill&&bonuses.includes(CROSS_SUPPORT[save.supportSkill])?CROSS_SUPPORT[save.supportSkill].name:'なし';
   a.masteryLabels=(save.masteries||[]).filter(id=>MASTERIES[id]&&save.jobs[id]?.level===30&&(!CombatEngine.ADVANCED[id]||save.trials.unlocked.includes(id))).map(id=>MASTERIES[id].name);
 
- }else{const npc=CombatEngine.NPCS.find(n=>n.id===id);if(!npc)return null;a=CombatEngine.heroActor(npc.job,save.npcWorld?.people?.[id]?.level||npc.level,npc.name);a.id=npc.id;a.npc=true;a.skills=[...CombatEngine.DEFAULT_BUILDS[npc.job].active];a.passives=[...CombatEngine.DEFAULT_BUILDS[npc.job].passive];a.tactic=['gald','mina','noel'].includes(id)?'safe':['rio','van'].includes(id)?'aggressive':'balanced';a.healThreshold=['mina','eda'].includes(id)?.70:.58;const gear=WorldEngine.gearStats(save.npcWorld.people[id]);a.atk+=gear.atk;a.def+=gear.def;a.maxHp+=gear.hp;a.maxMp+=gear.mp;a.crit=Math.min(.48,a.crit+gear.crit);if(a.passives.includes('sharp'))a.crit+=.03;if(a.passives.includes('swift'))a.speed*=.94;}
+ }else{const npc=CombatEngine.NPCS.find(n=>n.id===id);if(!npc)return null;const person=save.npcWorld?.people?.[id],career=CombatEngine.npcBuild(id,person);a=CombatEngine.heroActor(career.job,person?.level||npc.level,npc.name);a.id=npc.id;a.npc=true;a.skills=career.skills;a.passives=career.passives;a.tactic=['gald','mina','noel'].includes(id)?'safe':['rio','van'].includes(id)?'aggressive':'balanced';a.healThreshold=['mina','eda'].includes(id)?.70:.58;const gear=WorldEngine.gearStats(save.npcWorld.people[id]);a.atk+=gear.atk;a.def+=gear.def;a.maxHp+=gear.hp;a.maxMp+=gear.mp;a.crit=Math.min(.48,a.crit+gear.crit);if(a.passives.includes('sharp'))a.crit+=.03;if(a.passives.includes('swift'))a.speed*=.94;}
  // Change of gear, level or job retains missing HP/MP rather than resetting to full.
  let c=save.conditions[id];if(c){a.hp=Math.min(a.maxHp,Math.max(0,c.hp+a.maxHp-c.maxHp));a.mp=Math.min(a.maxMp,Math.max(0,c.mp+a.maxMp-c.maxMp));}
  save.conditions[id]={hp:a.hp,mp:a.mp,maxHp:a.maxHp,maxMp:a.maxMp};return a;
@@ -8051,7 +8104,7 @@ function start(){
  }
  const seed=(Date.now()+Math.floor(Math.random()*1e6))>>>0;
  battle=CombatEngine.begin({job:save.job,level:save.heroLevel,companions:ids,zone,seed,dungeonFloor:zone==='starpit'?save.endgame.floor:save.dungeon.floor,dungeonRoute:zone==='starpit'?save.endgame.route:save.dungeon.route,highlandTier:zone==='highland'?save.map.highlandTier:1,starwoodTier:zone==='starwood'?save.map.starwoodTier:1,towerFloor:zone==='observatory'?save.tower.floor:1,dawnTier:zone==='dawnsea'?save.map.dawnTier:1,greenhouseTier:zone==='greenhouse'?save.greenhouse.area:1,gardenArea:zone==='stargarden'?save.starGarden.area:1,gardenMode:zone==='stargarden'?save.starGarden.pending?.difficulty||'normal':'normal',cityArea:zone==='invertedcity'?save.invertedCity.area:1,cityFace:zone==='invertedcity'?save.invertedCity.pending?.face||'normal':'normal',cityBoss:zone==='invertedcity'?save.invertedCity.pending?.bossKind||'':'',cityDifficulty:zone==='invertedcity'?save.invertedCity.difficulty:'normal'});
- for(const a of battle.allies){const chosen=makeActor(a.id);if(chosen){for(const prop of ['level','maxHp','hp','maxMp','mp','atk','def','crit','speed','skills','passives','tactic','healThreshold','specials','specialLabel','legendCount','damageReduction','critDamageBonus'])a[prop]=chosen[prop];}}
+ for(const a of battle.allies){const chosen=makeActor(a.id);if(chosen){for(const prop of ['job','level','maxHp','hp','maxMp','mp','atk','def','crit','speed','skills','passives','tactic','healThreshold','specials','specialLabel','legendCount','damageReduction','critDamageBonus'])a[prop]=chosen[prop];}}
  if(zone==='observatory'&&save.tower.pending?.guard){for(const a of battle.allies)a.guardUntil=Math.max(a.guardUntil||0,save.tower.pending.guard);}
  if(zone==='ruins'&&save.dungeon.pendingEvent?.guard){for(const a of battle.allies)a.guardUntil=Math.max(a.guardUntil||0,save.dungeon.pendingEvent.guard);}
  if(zone==='starpit'&&save.endgame.route==='guard'){for(const a of battle.allies)a.guardUntil=8;}
@@ -8820,13 +8873,22 @@ function renderWorld(){
  const w=save.npcWorld;if(!w)return;
  $('#worldClock').textContent=WorldEngine.timeText(w);
  $('#worldMarket').textContent=`町の市場在庫：薬草 ${w.market['薬草']} ／ 鉄鉱石 ${w.market['鉄鉱石']} ／ 鍛冶注文 ${w.shopOrders||0}件 ／ 町の消費累計 薬草 ${w.worldConsumed?.['薬草']||0}・鉄鉱石 ${w.worldConsumed?.['鉄鉱石']||0} ／ NPC宿泊費累計 ${w.lodgingSpent||0}G`;
+ document.querySelectorAll('#companions input').forEach(input=>{
+  const n=CombatEngine.NPCS.find(x=>x.id===input.value),p=w.people[input.value];if(!n||!p)return;
+  const label=input.parentElement;const icon=({gald:'🛡️',rio:'🏹',sera:'✨',mina:'💚',noel:'📖',eda:'🌼',toto:'🪙',van:'⚔️'})[n.id]||'✦';
+  const title=CombatEngine.JOBS[CombatEngine.npcJob(n.id,p)].name;
+  // A text node (not innerHTML) preserves the user's checked selection.
+  for(const child of [...label.childNodes])if(child.nodeType===Node.TEXT_NODE)child.remove();
+  label.appendChild(document.createTextNode(icon+' '+n.name+' / '+title));
+ });
  $('#worldPeople').innerHTML=CombatEngine.NPCS.map(n=>{
-  const p=w.people[n.id],active=save.selected.includes(n.id),job=CombatEngine.JOBS[n.job].name;
+  const p=w.people[n.id],active=save.selected.includes(n.id),jobId=CombatEngine.npcJob(n.id,p),job=CombatEngine.JOBS[jobId].name;
+  const careerStatus=p.advancedJob?`✦ 上位職Lv${p.advancedLevel}/30${p.advancedLevel<30?' ・ EXP '+p.advancedXp+' / '+CombatEngine.jobXp(p.advancedLevel):'（上限）'}`:p.jobLevel>=30?`✦ ${escape(CombatEngine.JOBS[CombatEngine.NPC_ADVANCED[n.id]].name)}への昇格試練 ${p.trialProgress}/3`:`基本職Lv30で上位職への昇格試練を開始`;
   const act=active?'主人公と同行':p.activity==='guild'?'ギルドで次の活動を検討中':WorldEngine.ACTIONS[p.activity]?.label||'待機中';
   const personalRecord=save.personalQuests.completed[n.id],chapterRecord=save.personalChapters.completed[n.id],thirdRecord=save.personalThird.completed[n.id],fourthRecord=save.personalFourth.completed[n.id];
   const memories=p.memories.length?p.memories.map(m=>m.text).slice(-2).join(' / '):'まだ大きな記録はありません。';
   const eq=p.equipment||{},gear=WorldEngine.gearStats(p),weapon=eq.weapon,armor=eq.armor;const equipText=`武器：${escape(weapon?.name||'なし')}${weapon?.enhance?' +'+weapon.enhance:''} ／ 胴防具：${escape(armor?.name||'なし')}${armor?.enhance?' +'+armor.enhance:''}`;
-  return `<article class="npcCard"><div class="npcHead"><strong>${escape(n.name)} <span class="muted">${escape(job)} Lv${p.level}</span></strong><span class="pill">${active?'同行中':escape(WorldEngine.LABEL[p.location]||'ギルド')}</span></div><div class="small">${escape(WorldEngine.PROFILES[n.id].style)} ・ 目標：${escape(WorldEngine.PROFILES[n.id].goal)}</div><div class="npcActivity">${escape(act)} ${mentorOrder(n.id).charges>0?`／📖 訓練支援 残${mentorOrder(n.id).charges}勝`:``} ${!active&&p.remaining?'（あと'+p.remaining*30+'ゲーム内分）':''}</div>${window.KazeDailyScenes?.markup?.(n.id)||''}<div class="small muted">EXP ${p.xp} / ${p.level<100?CombatEngine.levelXp(p.level):'上限'} ・ 職業Lv${p.jobLevel} ・ 所持金${p.gold}G ・ 疲労${p.fatigue}%</div><div class="small npcStory">📖 ${escape(WorldEngine.storyStatus(n.id,p))}（${p.story.length}/2）<br>${escape(WorldEngine.personaLine(w,n.id))}</div><div class="npcEquipment">⚒️ ${equipText}<br><span class="small muted">装備補正：攻撃+${gear.atk} / 防御+${gear.def} / HP+${gear.hp} / MP+${gear.mp}</span></div><div class="small muted">所持素材：薬草${p.stock['薬草']} / 鉄鉱石${p.stock['鉄鉱石']}　｜ 信頼${p.trust} ・ 同行勝利${p.partyBattles}回 ・ NPC遠征${p.coExpeditions}回</div>${personalRecord?`<div class="small npcStory">✉️ 第一章：${escape(PERSONAL_QUESTS[n.id].title)}<br>${escape(personalRecord.ending)}</div>`:""}${chapterRecord?`<div class="small npcStory">📖 第二章：${escape(SECOND_CHAPTERS[n.id].title)}<br>${escape(chapterRecord.ending)}<br><span class="muted">その後の生活：${chapterRecord.approach==='steady'?'慎重な訓練・採集・支援を少し重視':'調査・巡回・探索を少し重視'}</span></div>`:''}${thirdRecord?`<div class="small npcStory">📚 第三章：${escape(THIRD_CHAPTERS[n.id].title)}<br>${escape(thirdRecord.ending)}</div>`:''}${fourthRecord?`<div class="small npcStory">📜 第四章：${escape(FOURTH_CHAPTERS[n.id].title)}<br>${escape(fourthRecord.ending)}</div>`:''}<details><summary>人物の物語・最近の行動・記憶</summary><p class="small">${p.story.length?p.story.map(id=>{const beat=WorldEngine.STORIES[n.id].find(b=>b.id===id);return beat?"📖 "+escape(beat.title)+"："+escape(beat.text):""}).join("<br>"):"物語の節目はまだありません。"}</p><p class="small">${escape(p.last)}</p><p class="small muted">${escape(memories)}</p></details></article>`;
+  return `<article class="npcCard"><div class="npcHead"><strong>${escape(n.name)} <span class="muted">${escape(job)} Lv${p.level}</span></strong><span class="pill">${active?'同行中':escape(WorldEngine.LABEL[p.location]||'ギルド')}</span></div><div class="small">${escape(WorldEngine.PROFILES[n.id].style)} ・ 目標：${escape(WorldEngine.PROFILES[n.id].goal)}</div><div class="npcActivity">${escape(act)} ${mentorOrder(n.id).charges>0?`／📖 訓練支援 残${mentorOrder(n.id).charges}勝`:``} ${!active&&p.remaining?'（あと'+p.remaining*30+'ゲーム内分）':''}</div>${window.KazeDailyScenes?.markup?.(n.id)||''}<div class="small muted">EXP ${p.xp} / ${p.level<100?CombatEngine.levelXp(p.level):'上限'} ・ 基本職Lv${p.jobLevel} ・ 所持金${p.gold}G ・ 疲労${p.fatigue}%</div><div class="small npcCareer">${careerStatus}</div><div class="small npcStory">📖 ${escape(WorldEngine.storyStatus(n.id,p))}（${p.story.length}/2）<br>${escape(WorldEngine.personaLine(w,n.id))}</div><div class="npcEquipment">⚒️ ${equipText}<br><span class="small muted">装備補正：攻撃+${gear.atk} / 防御+${gear.def} / HP+${gear.hp} / MP+${gear.mp}</span></div><div class="small muted">所持素材：薬草${p.stock['薬草']} / 鉄鉱石${p.stock['鉄鉱石']}　｜ 信頼${p.trust} ・ 同行勝利${p.partyBattles}回 ・ NPC遠征${p.coExpeditions}回</div>${personalRecord?`<div class="small npcStory">✉️ 第一章：${escape(PERSONAL_QUESTS[n.id].title)}<br>${escape(personalRecord.ending)}</div>`:""}${chapterRecord?`<div class="small npcStory">📖 第二章：${escape(SECOND_CHAPTERS[n.id].title)}<br>${escape(chapterRecord.ending)}<br><span class="muted">その後の生活：${chapterRecord.approach==='steady'?'慎重な訓練・採集・支援を少し重視':'調査・巡回・探索を少し重視'}</span></div>`:''}${thirdRecord?`<div class="small npcStory">📚 第三章：${escape(THIRD_CHAPTERS[n.id].title)}<br>${escape(thirdRecord.ending)}</div>`:''}${fourthRecord?`<div class="small npcStory">📜 第四章：${escape(FOURTH_CHAPTERS[n.id].title)}<br>${escape(fourthRecord.ending)}</div>`:''}<details><summary>人物の物語・最近の行動・記憶</summary><p class="small">${p.story.length?p.story.map(id=>{const beat=WorldEngine.STORIES[n.id].find(b=>b.id===id);return beat?"📖 "+escape(beat.title)+"："+escape(beat.text):""}).join("<br>"):"物語の節目はまだありません。"}</p><p class="small">${escape(p.last)}</p><p class="small muted">${escape(memories)}</p></details></article>`;
  }).join('');
  const kindLabels={story:'人物',quest:'依頼',equipment:'装備',joint:'共同遠征',activity:'活動',guild:'ギルド',market:'市場',growth:'成長',discovery:'発見',memory:'思い出',social:'交流'};
  $('#worldNews').innerHTML=w.news.length?w.news.slice(0,12).map(e=>`<div class="newsItem"><span class="pill">${escape(kindLabels[e.kind]||e.kind)}</span><span><small class="muted">${escape(WorldEngine.timeText({halfHours:e.tick}))}</small> ${escape(e.text)}</span></div>`).join(''):'まだ自律活動の記録はありません。同行していないNPCが時間の経過で行動します。';

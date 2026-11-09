@@ -298,8 +298,8 @@ footer{color:#746c54;padding:18px 8px 4px;text-align:center;line-height:1.8}
 #greenhouseSection .greenhouse-awards strong{color:#315747;}
 @media (max-width:480px){#greenhouseSection .greenhouse-specimens{grid-template-columns:repeat(2,minmax(0,1fr));}#greenhouseSection .greenhouse-specimen{padding:.6rem;}#greenhouseSection .greenhouse-specimen p{font-size:.85rem;}}
 
-.npcCareer{display:inline-block;margin:.36rem 0 .25rem;padding:.36rem .65rem;border-radius:12px;background:#edf3e6;color:#315947;font-weight:750;border:1px solid #bdcfb9}
-@media (prefers-color-scheme:dark){.npcCareer{background:#314339;color:#e5f2df;border-color:#526958}}
+.npcCareer{display:inline-block;margin:.36rem 0 .25rem;padding:.36rem .65rem;border-radius:12px;background:#315947;color:#f4ecd8;font-weight:750;border:1px solid #315947}
+@media (prefers-color-scheme:dark){.npcCareer{background:#314339;color:#f4ecd8;border-color:#526958}}
 </style><style id="storybook-v084">
 /* v0.8.4 旅の挿絵帳：purely presentational, preserves 0.8.2 gameplay */
 :root{--sketch-ink:#416b5b;--sketch-brown:#957752;--warm-paper:#fcf7e8}
@@ -3095,6 +3095,51 @@ button.arcade-machine:focus-visible,.arcade-button:focus-visible,.arcade-score-g
    existing panels' order intact while moving this card before Settings. */
 #gamePanels > #arcadeRecordSection { order: 8 !important; grid-column: 1 / -1 !important; }
 #gamePanels > #gameSettingsSection { order: 9 !important; }
+</style>
+
+<style id="npc-career-contrast-v09202">
+#gamePanels > #worldSection .npcCareer{
+  background:#315947!important;
+  color:#f4ecd8!important;
+  border-color:#315947!important;
+  font-size:12px!important;
+}
+@media (prefers-color-scheme:dark){
+  #gamePanels > #worldSection .npcCareer{
+    background:#314339!important;
+    color:#f4ecd8!important;
+    border-color:#526958!important;
+  }
+}
+</style>
+<style id="wind-mobile-unread-badge-v09203">
+/* Mobile contact strip previously hid every .wind-unread badge.
+   Overlay the unread count at the avatar's upper-right without changing contact dimensions. */
+@media (max-width:670px){
+  #windChatOverlay .wind-contact{position:relative;overflow:visible;}
+  #windChatOverlay .wind-contact .wind-unread{
+    display:grid!important;
+    position:absolute;
+    top:0;
+    left:calc(50% + 7px);
+    z-index:2;
+    min-width:20px;
+    height:20px;
+    box-sizing:border-box;
+    padding:0 4px;
+    place-items:center;
+    border:2px solid #fffaf1;
+    border-radius:999px;
+    background:#a54d40!important;
+    color:#fffaf0!important;
+    -webkit-text-fill-color:#fffaf0!important;
+    font-size:11px;
+    font-weight:800;
+    line-height:1;
+    box-shadow:0 1px 4px rgba(29,48,39,.25);
+    pointer-events:none;
+  }
+}
 </style>
 </head><body><main>
 <header class="story-cover cover-with-logo">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.163</title>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#f4ead4" name="theme-color"/><title>カゼマチヴィアートル｜v0.9.168</title>
 <style>
 :root{color-scheme:dark;--bg:#102222;--panel:#1a3434;--panel2:#224241;--line:#44615d;--text:#f0eee0;--muted:#b4c5b9;--gold:#e7c588;--hp:#83c7a1;--enemy:#c88580;--magic:#91ace2}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}body{margin:0;background:radial-gradient(ellipse 100% 400px at 50% 0,#315451 0,transparent 80%),var(--bg)}main{max-width:950px;margin:0 auto;padding:19px 13px 80px}h1,h2,h3,p{margin-top:0}h1{font-family:serif;font-size:clamp(24px,5.5vw,34px);margin-bottom:5px}h2{font-size:1.05rem;margin-bottom:12px}h3{font-size:.92rem;margin-bottom:8px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.22em;font-weight:750;margin:0 0 8px}.sub{color:var(--muted);font-size:.83rem;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:15px}.panel{background:rgba(26,52,52,.95);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0;box-shadow:0 6px 30px #071b1b22}.wide{grid-column:1/-1}.group{display:grid;gap:10px}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}.label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}select,button{font:inherit;min-height:43px;border-radius:9px}select{width:100%;padding:9px;color:var(--text);background:#142d2c;border:1px solid #59726b}.btn{color:#152c2a;background:var(--gold);border:1px solid #f7d49b;cursor:pointer;padding:10px 14px;font-weight:760}.btn.secondary{color:var(--text);background:var(--panel2);border-color:var(--line)}.btn:disabled{opacity:.4;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>.btn{flex:1}.checkrows{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkrow{display:flex;gap:8px;align-items:center;background:#102928;border:1px solid #3b5752;border-radius:9px;padding:8px;font-size:12px}.checkrow input{accent-color:#d1ba8b;width:16px;height:16px}.stats{display:flex;flex-wrap:wrap;gap:8px}.stat{padding:8px 11px;border-radius:8px;background:#102928;flex:1;min-width:85px}.stat strong{display:block;font-size:18px;color:var(--gold)}.stat small{font-size:11px;color:var(--muted)}.unit{padding:9px 0;border-bottom:1px dashed #36514c}.unit:last-child{border:0}.unitHead{display:flex;justify-content:space-between;gap:9px;font-size:13px;margin-bottom:6px}.unitHead span:last-child{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}.meter{height:7px;background:#0f2625;border-radius:30px;overflow:hidden}.fill{height:100%;border-radius:30px;transition:width .25s}.fill.hp{background:var(--hp)}.fill.enemy{background:var(--enemy)}.fill.mp{background:var(--magic)}.dead{opacity:.43}.log{background:#0f2625;padding:12px;max-height:245px;min-height:170px;overflow-y:auto;border:1px solid #37504d;border-radius:9px;font-size:12px;line-height:1.8}.logline{border-bottom:1px dotted #26413f;padding:3px 0}.logline .ts{color:#93aca5;font-variant-numeric:tabular-nums;margin-right:9px}.flags{display:flex;gap:6px;flex-wrap:wrap}.pill{font-size:11px;border-radius:50px;color:#e7dbc0;background:#304d47;padding:5px 9px;border:1px solid #577063}.result{margin-top:10px;padding:12px;border:1px solid #78917b;background:#253f38;border-radius:10px;line-height:1.75;font-size:13px;min-height:48px}.result strong{color:var(--gold)}.decision{margin-top:13px;padding:14px;border:1px solid #b69762;background:#433b2a;border-radius:12px}.decision p{margin-bottom:10px;font-size:13px}.decision .btn{width:100%;margin-top:7px}.help{font-size:12px;line-height:1.85;color:var(--muted)}.help b{color:var(--text)}footer{margin-top:17px;font-size:11px;color:#adc3b7;line-height:1.75}.hidden{display:none!important}@media(max-width:650px){.layout{grid-template-columns:1fr}.wide{grid-column:auto}.panel{padding:14px}.stats .stat{min-width:75px}.buttons .btn{flex-basis:40%}}
@@ -5616,7 +5616,7 @@ function renderGearJournal(){
  const more=$('#gearJournalMore');more.hidden=names.length<=view.length;more.textContent=`続きを表示（残り${names.length-view.length}種類）`;
 }
 
-function initial(){return {version:45,gearStorageTier:0,achievements:{version:1,unlocked:[],equipped:""},gearJournal:blankGearJournal(),farm:{version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}},loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,miniClockEnabled:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},discDrop:{rounds:0,wagered:0,returned:0,bet:30,dropX:500,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalThird:{active:null,completed:{},history:[]},personalFourth:{active:null,completed:{},history:[]},npcDailyReflections:{version:1,cursor:0,entries:[]},personalQuests:{active:null,completed:{},history:[]},greenhouse:blankGreenhouse(),starGarden:blankStarGarden(),invertedCity:blankInvertedCity(),dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
+function initial(){return {version:45,gearStorageTier:0,achievements:{version:1,unlocked:[],equipped:""},gearJournal:blankGearJournal(),farm:{version:2,collection:{version:1,seenCrops:[],seenFoods:[],harvested:{},cooked:{},firstHarvest:{},firstCook:{}},unlockedPlots:2,plots:Array.from({length:10},()=>({cropId:null,plantedAt:null,lastCropId:null})),seeds:{},crops:{},harvestCount:0,earned:0,history:[],kitchen:{version:1,unlockedRecipes:[],foods:{},cookedTotal:0,earned:0,recipeSpent:0,cookSpent:0,history:[],mealBuff:null,mealsEaten:0}},loginGift:{version:1,claims:0,lastClaimDay:-1,maxSeenDay:-1,dismissedDay:-1,history:[]},endgame:{active:false,floor:1,phase:'idle',route:'guard',fieldWins:0,best:0,clears:0,attempts:0,party:[],history:[]},tutorial:{status:'active',step:0,introChoice:-1,battleBaseline:0,forestOutcome:'',visitedHero:false,visitedGear:false,visitedGuild:false,visitedWind:false,storyLog:[],storyFacts:{},pendingScene:'',souvenirAwarded:false,freeGuideEligible:false,freeGuideDismissed:false},chatRoom:{version:1,tab:"world",open:false,configured:false,quiet:false,entries:[],seen:[],unread:{world:0,battle:0,guild:0},ambientSeq:0,lastAmbientAt:0,recentAmbient:[],threads:{activeId:'',step:0,nextDay:0,lastStartDay:-4,lastSceneDay:0,completed:[]},pendingReplies:[],recentDialogs:[],lastDialogueAt:0,townMemory:{visits:{},connections:{},lastConnectionDay:0,recentConnections:[],dialogueHistory:{},eventReactions:[],ambientLineHistory:{},memoryEcho:{},personaHistory:{}}},worldEvents:{version:1,nextId:1,nextTick:-1,normalIndex:0,pendingChain:null,active:null,history:[],pendingLetters:[]},windLetters:{threads:{},pending:{},commus:{},tutorialRecap:null,nextId:1,lastSpontaneousTick:0,lastWorldEventTick:0,lastCommuStartedTick:0,lastWorldEventId:0,worldEventQueue:[],memoryEchoed:{},storyNotes:{},lastStoryTick:-24,serialArcs:{},serialEventCursor:0,lastSerialStartTick:-72,lastSerialTick:-24},settings:{timeOfDayEffects:true,miniClockEnabled:true,windLetterNotifications:true},dice:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},cards:{completed:0,wagered:0,returned:0,bet:20,history:[],pending:null},race:{completed:0,wagered:0,returned:0,bet:20,pick:0,history:[],pending:null},casino:{spins:0,wagered:0,returned:0,bet:20,history:[],pending:null},discDrop:{rounds:0,wagered:0,returned:0,bet:30,dropX:500,history:[],pending:null},economyLedger:{startGold:180,startRuns:0,earned:0,spent:0,categories:{},entries:[]},masteries:[],supportSkill:null,runLedger:[],mentorOrders:{},bossJournal:[],caravanFund:{count:0,spent:0,notes:[]},guildSupport:{level:0,history:[]},bossCheckpoint:null,supplies:{charges:0,bought:0,spent:0,used:0},tower:blankTower(),trials:{active:null,unlocked:[],history:[]},personalChapters:{active:null,completed:{},history:[]},personalThird:{active:null,completed:{},history:[]},personalFourth:{active:null,completed:{},history:[]},npcDailyReflections:{version:1,cursor:0,entries:[]},partyJourney:{version:1,nextId:1,lastDay:0,todayCount:0,lastRun:0,history:[],active:null},npcLifeScenes:{version:1,cursorTick:0,nextId:1,entries:[],arcs:{active:[],completed:[],lastStartDay:0,journal:[]},links:{version:1,initialized:false,installedTick:0,letters:[],chats:[],joints:[],jointNotes:[],lastLetterTick:-48,lastChatTick:-48}},personalQuests:{active:null,completed:{},history:[]},greenhouse:blankGreenhouse(),starGarden:blankStarGarden(),invertedCity:blankInvertedCity(),dungeon:blankDungeon(),map:{oldroad:false,ruins:false,highland:false,highlandTier:1,highlandWins:[0,0,0],highlandApproach:null,starwood:false,starwoodTier:1,starwoodWins:[0,0,0],starwoodApproach:null,observatory:false,observatoryApproach:null,dawnsea:false,dawnTier:1,dawnWins:[0,0,0],dawnApproach:null,dawnBossClears:0,oldroadWins:0,ruinsWins:0,oldroadApproach:null,ruinsApproach:null,log:[]},npcWorld:WorldEngine.initial(),builds:defaultBuilds(),tactic:'balanced',healThreshold:62,pendingGear:[],heroLevel:10,heroExp:0,totalExp:0,jobs:defaultJobs(),job:'sword',gold:180,wins:0,runs:0,found:0,gear:starterItems(),equipment:{weapon:'starter-0',offhand:null,armor:'starter-4',head:null,charm:null,charm2:null},items:{hp:5,mp:3},conditions:{},materials:{},latest:[],campUsed:false,campCooldown:0,selected:['gald','mina'],legacyGear:[]};}
 function safeInteger(n,min,max,fallback){n=Number(n);return Number.isFinite(n)?Math.max(min,Math.min(max,Math.floor(n))):fallback;}
 // v0.9.80: Farm is part of the same JSON save, with fixed plot indexes and a closed crop whitelist.
 function sanitizeFarm(raw,tick){
@@ -6157,7 +6157,7 @@ function sanitize(raw){
   const validMessage=m=>m&&typeof m==='object'&&['in','out'].includes(m.side)&&typeof m.text==='string'&&m.text.length<=240&&Number.isInteger(m.tick)&&m.tick>=0&&m.tick<=2000000;
   for(const id of ids){
    const records=f.threads?.[id];
-   if(Array.isArray(records))s.windLetters.threads[id]=records.filter(validMessage).slice(-200).map(m=>({side:m.side,text:m.text.slice(0,240),tick:m.tick,read:m.read===true,kind:['reply','spontaneous','topic','welcome','commu','choice','reaction','followup','worldEvent','storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter','serial1','serial2','serial3','ack','introRecap','introChoice','introReaction','introAfterword','introEcho','townEvent'].includes(m.kind)?m.kind:'topic',worldEventKey:typeof m.worldEventKey==='string'&&/^town-[0-9]+-(start|end)$/.test(m.worldEventKey)?m.worldEventKey:'',acknowledged:m.side==='in'&&m.acknowledged===true,replyQuote:m.side==='out'&&typeof m.replyQuote==='string'?m.replyQuote.slice(0,90):''}));
+   if(Array.isArray(records))s.windLetters.threads[id]=records.filter(validMessage).slice(-200).map(m=>({side:m.side,text:m.text.slice(0,240),tick:m.tick,read:m.read===true,kind:['reply','spontaneous','topic','welcome','commu','choice','reaction','followup','worldEvent','storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter','serial1','serial2','serial3','npcLife','ack','introRecap','introChoice','introReaction','introAfterword','introEcho','townEvent'].includes(m.kind)?m.kind:'topic',worldEventKey:typeof m.worldEventKey==='string'&&/^town-[0-9]+-(start|end)$/.test(m.worldEventKey)?m.worldEventKey:'',acknowledged:m.side==='in'&&m.acknowledged===true,replyQuote:m.side==='out'&&typeof m.replyQuote==='string'?m.replyQuote.slice(0,90):'',lifeEchoKey:m.kind==='npcLife'&&typeof m.lifeEchoKey==='string'&&/^life-arc(0[1-9]|1[0-8])$/.test(m.lifeEchoKey)?m.lifeEchoKey:''}));
    const p=f.pending?.[id];
    if(p&&typeof p==='object'&&['hello','activity','travel','commuPrompt','commuReaction'].includes(p.topic)&&Number.isInteger(p.due)&&p.due>=0&&p.due<=2000000 && typeof p.text==='string'&&p.text.length<=240)
     s.windLetters.pending[id]={topic:p.topic,due:p.due,text:p.text.slice(0,240)};
@@ -6526,6 +6526,53 @@ function sanitize(raw){
    s.npcDailyReflections.entries=safeDaily.slice(-80).map(x=>({id:x.id,key:x.key,tick:x.tick,stage:Number(x.key.split('-')[1][0]),text:x.text.slice(0,180)}));
   }
  }
+// v0.9.164: safely restore companion-to-companion everyday vignettes.
+ // Old saves start at the current world tick. Do not replay fictional meetings in the past.
+ const life=raw.npcLifeScenes;
+ s.npcLifeScenes.cursorTick=s.npcWorld.halfHours;
+ if(life?.version===1&&typeof life==='object'&&!Array.isArray(life)){
+  s.npcLifeScenes.cursorTick=safeInteger(life.cursorTick,0,s.npcWorld.halfHours,s.npcWorld.halfHours);
+  const safeLife=Array.isArray(life.entries)?life.entries.filter(e=>e&&typeof e==='object'
+   &&typeof e.scriptId==='string'&&(/^(gr|gm|gv|gt|rs|re|rt|sn|se|st|mn|me|mv|ne|nv|et|tv|sm)[123]$/.test(e.scriptId)||/^arc(0[1-9]|1[0-8])-[123]$/.test(e.scriptId))
+   &&Number.isInteger(e.serial)&&e.serial>0&&e.serial<1000000000
+   &&Number.isInteger(e.tick)&&e.tick>=0&&e.tick<=s.npcWorld.halfHours):[];
+  const seenLife=new Set();
+  s.npcLifeScenes.entries=safeLife.slice(-48).filter(e=>{if(seenLife.has(e.serial))return false;seenLife.add(e.serial);return true;}).map(e=>({serial:e.serial,scriptId:e.scriptId,tick:e.tick,chatSent:e.chatSent===true}));
+  s.npcLifeScenes.nextId=Math.max(safeInteger(life.nextId,1,1000000000,1),...s.npcLifeScenes.entries.map(e=>e.serial+1),1);
+  // Validate the 18 serialized storylines and restore only genuine progress.
+  const arcSource=life.arcs&&typeof life.arcs==='object'&&!Array.isArray(life.arcs)?life.arcs:{};
+  const validArc=id=>typeof id==='string'&&/^arc(0[1-9]|1[0-8])$/.test(id);
+  const completed=[...new Set(Array.isArray(arcSource.completed)?arcSource.completed.filter(validArc):[])].slice(0,18);
+  const active=Array.isArray(arcSource.active)?arcSource.active.filter(p=>p&&validArc(p.id)&&!completed.includes(p.id)
+    &&Number.isInteger(p.step)&&p.step>=1&&p.step<=2&&Number.isInteger(p.lastDay)&&p.lastDay>=1
+    &&Number.isInteger(p.startedDay)&&p.startedDay>=1&&p.startedDay<=p.lastDay
+    &&p.lastDay<=1+Math.floor((480+s.npcWorld.halfHours*30)/1440)).slice(0,2):[];
+  const used=new Set();
+  s.npcLifeScenes.arcs={active:active.filter(p=>{if(used.has(p.id))return false;used.add(p.id);return true;})
+    .map(p=>({id:p.id,step:p.step,lastDay:p.lastDay,startedDay:p.startedDay})),
+    completed,lastStartDay:safeInteger(arcSource.lastStartDay,0,1+Math.floor((480+s.npcWorld.halfHours*30)/1440),0),
+    journal:(()=>{const unique=new Set();return (Array.isArray(arcSource.journal)?arcSource.journal:[])
+     .filter(e=>e&&typeof e.scriptId==='string'&&/^arc(0[1-9]|1[0-8])-[123]$/.test(e.scriptId)
+       &&Number.isInteger(e.tick)&&e.tick>=0&&e.tick<=s.npcWorld.halfHours)
+     .filter(e=>{if(unique.has(e.scriptId))return false;unique.add(e.scriptId);return true;})
+     .slice(-54).map(e=>({scriptId:e.scriptId,tick:e.tick}));})()};
+  // v0.9.166: cross-page memories are replay-safe and bounded.
+  const link=life.links;
+  if(link?.version===1&&link.initialized===true){
+   const validLink=id=>typeof id==='string'&&/^arc(0[1-9]|1[0-8])$/.test(id);
+   const uniqueLinks=arr=>[...new Set(Array.isArray(arr)?arr.filter(validLink):[])].slice(-18);
+   const notes=Array.isArray(link.jointNotes)?link.jointNotes.filter(x=>x&&validLink(x.id)
+     &&Number.isInteger(x.tick)&&x.tick>=0&&x.tick<=s.npcWorld.halfHours
+     &&(x.success===true||x.success===false)):[];
+   s.npcLifeScenes.links={version:1,initialized:true,
+    installedTick:safeInteger(link.installedTick,0,s.npcWorld.halfHours,s.npcWorld.halfHours),
+    letters:uniqueLinks(link.letters),chats:uniqueLinks(link.chats),joints:uniqueLinks(link.joints),
+    jointNotes:notes.slice(-12).map(x=>({id:x.id,tick:x.tick,success:x.success===true})),
+    lastLetterTick:safeInteger(link.lastLetterTick,-48,s.npcWorld.halfHours,-48),
+    lastChatTick:safeInteger(link.lastChatTick,-48,s.npcWorld.halfHours,-48)};
+  }
+
+ }
 s.tactic=['aggressive','balanced','safe'].includes(raw.tactic)?raw.tactic:'balanced';s.healThreshold=safeInteger(raw.healThreshold,35,85,62);
  for(const job of Object.keys(s.builds)){const source=raw.builds?.[job];if(source){for(const typ of ['active','passive']){const defs=CombatEngine.SKILLS[job][typ],max=typ==='active'?4:2,ids=new Set(defs.map(x=>x[0]));if(Array.isArray(source[typ]))s.builds[job][typ]=[...new Set(source[typ].filter(x=>typeof x==='string'&&ids.has(x)))].slice(0,max);}}}
  s.heroLevel=safeInteger(raw.heroLevel,1,MAX_LEVEL,10);s.heroExp=safeInteger(raw.heroExp,0,1e8,0);s.totalExp=safeInteger(raw.totalExp,0,1e10,0);s.gold=safeInteger(raw.gold,0,1e9,180);s.wins=safeInteger(raw.wins,0,1e8,0);s.runs=safeInteger(raw.runs,0,1e8,0);s.found=safeInteger(raw.found,0,1e8,0);
@@ -6682,6 +6729,34 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
     factSpeaker:Object.fromEntries(['gald','rio','sera','mina','noel','eda','toto','van'].filter(id=>Number.isInteger(sc.factSpeaker?.[id])).map(id=>[id,safeInteger(sc.factSpeaker[id],0,s.npcWorld?.halfHours||0,0)]))
    };
   }
+  // v0.9.167: Fictional player presence is chat presentation only.
+  // Keep the import bounded and never create past login history on upgrade.
+  const pc=cr.personaPresence;
+  const npcIds=['gald','rio','sera','mina','noel','eda','toto','van'];
+  const currentTick=s.npcWorld?.halfHours||0;
+  if(pc?.version===1&&pc.initialized===true&&typeof pc.states==='object'&&pc.states&&!Array.isArray(pc.states)){
+   const statuses=['online','away','offline'];
+   s.chatRoom.personaPresence={version:1,initialized:true,
+    lastTick:safeInteger(pc.lastTick,0,currentTick,currentTick),
+    states:Object.fromEntries(npcIds.map(id=>[id,statuses.includes(pc.states[id])?pc.states[id]:'offline'])),
+    lastLineDay:safeInteger(pc.lastLineDay,0,1000000,0),
+    linesToday:safeInteger(pc.linesToday,0,3,0),
+    lastById:Object.fromEntries(npcIds.map(id=>[id,safeInteger(pc.lastById?.[id],0,1000000,0)])),
+    history:(Array.isArray(pc.history)?pc.history:[]).filter(x=>x&&npcIds.includes(x.id)&&['online','offline'].includes(x.status)&&Number.isInteger(x.tick)).slice(-24).map(x=>({id:x.id,status:x.status,tick:safeInteger(x.tick,0,currentTick,0)}))};
+  }
+  // v0.9.168: real-player-like friendships; memories are created only by scenes actually shown.
+  const pb=cr.playerBonds;
+  const safeBondId=x=>typeof x==='string'&&/^qb(0[1-9]|1[0-9]|2[0-4])$/.test(x);
+  const safePairKey=x=>typeof x==='string'&&/^(gald|rio|sera|mina|noel|eda|toto|van):(gald|rio|sera|mina|noel|eda|toto|van)$/.test(x);
+  if(pb?.version===1&&pb.initialized===true&&typeof pb==='object'&&!Array.isArray(pb)){
+   s.chatRoom.playerBonds={version:1,initialized:true,
+    cursorTick:safeInteger(pb.cursorTick,0,currentTick,currentTick),
+    lastDay:safeInteger(pb.lastDay,0,1000000,0),
+    seen:[...new Set((Array.isArray(pb.seen)?pb.seen:[]).filter(safeBondId))].slice(-24),
+    lastByPair:Object.fromEntries(Object.entries(pb.lastByPair||{}).filter(([key,value])=>safePairKey(key)&&Number.isInteger(value)).slice(-32).map(([key,value])=>[key,safeInteger(value,0,1000000,0)])),
+    history:(Array.isArray(pb.history)?pb.history:[]).filter(x=>x&&safeBondId(x.id)&&Number.isInteger(x.tick)).slice(-32).map(x=>({id:x.id,tick:safeInteger(x.tick,0,currentTick,0)}))
+   };
+  }
   s.chatRoom.tab=channels.includes(cr.tab)?cr.tab:'world';
   s.chatRoom.open=cr.open===true;s.chatRoom.configured=cr.configured===true;s.chatRoom.quiet=cr.quiet===true;
   s.chatRoom.ambientSeq=safeInteger(cr.ambientSeq,0,1000000000,0);
@@ -6703,7 +6778,7 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
   };
   s.chatRoom.pendingReplies=Array.isArray(cr.pendingReplies)?cr.pendingReplies.filter(x=>x&&typeof x==='object'&&typeof x.id==='string'&&typeof x.speaker==='string'&&typeof x.text==='string'&&typeof x.dueAt==='number').slice(0,4).map(x=>({
     id:x.id.slice(0,135),speaker:x.speaker.slice(0,45),text:x.text.slice(0,270),
-    tick:safeInteger(x.tick,0,2000000000,0),kind:'mob',
+    tick:safeInteger(x.tick,0,2000000000,0),kind:/^npc-life:[1-9][0-9]{0,8}:[1-3]$/.test(x.id)&&x.kind==='npcLife'?'npcLife':'mob',
     dueAt:safeInteger(x.dueAt,0,Date.now()+86400000,Date.now())
   })):[];
   s.chatRoom.recentDialogs=Array.isArray(cr.recentDialogs)?cr.recentDialogs.filter(x=>typeof x==='string').slice(-16).map(x=>x.slice(0,60)):[];
@@ -6785,6 +6860,30 @@ s.worldEvents={version:1,nextId:safeInteger(we.nextId,1,10000000,1),nextTick:saf
   const a=raw.achievements;
   s.achievements.unlocked=Array.isArray(a.unlocked)?[...new Set(a.unlocked.filter(id=>typeof id==='string'&&/^[a-z][a-z0-9_]{0,31}$/.test(id)))].slice(0,100):[];
   s.achievements.equipped=typeof a.equipped==='string'&&/^[a-z][a-z0-9_]{0,31}$/.test(a.equipped)?a.equipped:'';
+ }
+ // v0.9.170: Restore only real travel conversations from previous play.
+ const travel=raw.partyJourney;
+ if(travel?.version===1&&typeof travel==='object'&&!Array.isArray(travel)){
+  const ids=['gald','rio','sera','mina','noel','eda','toto','van'];
+  const phases=['depart','during','return'];
+  const allowedPair=p=>typeof p==='string'&&p.split(':').length===2&&p.split(':').every(x=>ids.includes(x))&&p.split(':')[0]!==p.split(':')[1];
+  const safeEvent=e=>e&&Number.isInteger(e.serial)&&e.serial>0&&e.serial<1000000000
+   &&allowedPair(e.pair)&&phases.includes(e.phase)&&Number.isInteger(e.tick)&&e.tick>=0&&e.tick<=s.npcWorld.halfHours
+   &&Number.isInteger(e.run)&&e.run>=1&&e.run<=s.runs+1&&typeof e.zone==='string'&&/^[a-z]{2,20}$/.test(e.zone);
+  const used=new Set();
+  s.partyJourney.history=(Array.isArray(travel.history)?travel.history:[]).filter(e=>safeEvent(e)&&!used.has(e.serial)&&used.add(e.serial)).slice(-36).map(e=>({
+   serial:e.serial,pair:e.pair,phase:e.phase,tick:e.tick,zone:e.zone.slice(0,20),run:e.run,chatSent:e.chatSent===true
+  }));
+  s.partyJourney.nextId=Math.max(safeInteger(travel.nextId,1,1000000000,1),...s.partyJourney.history.map(e=>e.serial+1),1);
+  s.partyJourney.lastDay=safeInteger(travel.lastDay,0,1000000,0);
+  s.partyJourney.todayCount=safeInteger(travel.todayCount,0,3,0);
+  s.partyJourney.lastRun=safeInteger(travel.lastRun,0,s.runs+1,0);
+  const active=travel.active;
+  // Keep an in-flight vignette only when the parent battle checkpoint exists.
+  if(active&&allowedPair(active.pair)&&phases.includes(active.phase)&&typeof active.zone==='string'
+   &&active.zone===s.bossCheckpoint?.zone&&Number.isInteger(active.run)&&active.run===s.runs+1){
+   s.partyJourney.active={run:active.run,pair:active.pair,phase:active.phase,zone:active.zone,fired:active.fired===true};
+  }
  }
  return s;
 }
@@ -7428,6 +7527,7 @@ function start(){
   }
  battle.autoRetreat=true;
  battle.entryVitals=Object.fromEntries(battle.allies.map(a=>[a.id,{hp:a.hp,mp:a.mp}]));
+ window.KazePartyJourney?.depart?.(battle);
  settled=false;paused=false;lastLog=0;
  $('#combatReview').textContent='戦闘中です。結果が出ると、消費HP・MPや使用スキルを表示します。';$('#log').innerHTML='';$('#result').textContent='探索中。前回の戦闘からHP・MPを引き継いでいます。';$('#pause').textContent='一時停止';
  refreshControls();renderBattle();renderMealStatus();persist();
@@ -7572,6 +7672,7 @@ function complete(){if(!battle||settled)return;settled=true;recordBossResult();s
   // A meal lasts one field battle, or the full continuous three-floor expedition.
   const continuing=battle.zone==='ruins'&&save.dungeon.active||battle.zone==='observatory'&&save.tower.active||battle.zone==='starpit'&&save.endgame.active||battle.zone==='stargarden'&&save.starGarden.final.active;
   if(!continuing)clearActiveMeal(battle.zone);
+  window.KazePartyJourney?.finish?.(battle);
   bookGold('battle');refreshControls();renderAll();showReview();persist();
  if(battle.state==='won'&&$('#loop').checked&&!['boss','ruins','observatory','eclipse','starpit','greenhouse','stargarden','invertedcity'].includes(battle.zone)&&!(battle.zone==='dawnsea'&&battle.dawnTier===4))loopTimer=setTimeout(nextLoop,900);
 }
@@ -7816,6 +7917,7 @@ function renderForge(){
 
 function memberHTML(a,enemy=false){const hp=Math.max(0,Math.round(100*a.hp/a.maxHp));let mp=Math.max(0,Math.round(100*a.mp/a.maxMp));return `<div class="unit ${a.hp<=0?'dead':''}" ${enemy?'':`data-vital-actor="${escape(a.id)}"`}><div class="unitHead"><strong>${enemy?escape(a.icon)+' ':''}${escape(a.name)} <span style="font-size:11px;color:var(--muted)">Lv${a.level}</span></strong><span>${nfmt(a.hp)} / ${nfmt(a.maxHp)} HP</span></div><div class="meter"><div class="fill ${enemy?'enemy':'hp'}" style="width:${hp}%"></div></div>${!enemy?`<div class="vitals"><span>MP ${nfmt(a.mp)} / ${nfmt(a.maxMp)}</span><span>${a.hp===0?'戦闘不能':'活動可能'}</span></div><div class="meter" style="height:5px"><div class="fill mp" style="width:${mp}%"></div></div>`:''}</div>`;}
 function renderBattle(){if(!battle)return;
+ window.KazePartyJourney?.during?.(battle);
  $('#enemies').innerHTML=battle.enemies.map(a=>memberHTML(a,true)).join('');
  const l=$('#log');const newItems=battle.log.slice(lastLog);for(const ev of newItems){const d=document.createElement('div');d.className='logline';const ts=document.createElement('span');ts.className='ts';ts.textContent=`${ev.t.toFixed(1)}s`;d.append(ts,document.createTextNode(ev.text));l.append(d);}lastLog=battle.log.length;while(l.children.length>95)l.firstChild.remove();if(newItems.length)l.scrollTop=l.scrollHeight;
  const guideTell=CombatEngine.cityGuidePattern(battle);
@@ -10340,7 +10442,7 @@ function thread(id){const f=state();return f.threads[id]??(f.threads[id]=[]);}
 function add(id,side,text,kind='topic',tick=bridge.tick()){
  const a=thread(id);a.push({side,text:String(text).slice(0,240),kind,tick,read:side==='out'});if(a.length>200){
   // Ordinary chatter is replaceable; a completed personal story or a choice is not.
-  const important=new Set(['welcome','commu','choice','reaction','followup','storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter','serial1','serial2','serial3','introRecap','introChoice','introReaction','introAfterword','introEcho','townEvent']);
+  const important=new Set(['welcome','commu','choice','reaction','followup','storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter','serial1','serial2','serial3','introRecap','introChoice','introReaction','introAfterword','introEcho','townEvent','npcLife']);
   while(a.length>200){
    let index=a.findIndex(m=>!important.has(m.kind)&&m.read);
    if(index<0)index=a.findIndex(m=>!important.has(m.kind));
@@ -11538,7 +11640,7 @@ function renderChat(scroll=false){
  const allMessages=thread(selected);
  const startIndex=Math.max(0,allMessages.length-visibleWindCount);
  const olderButton=startIndex?`<button type="button" class="wind-load-older" data-wind-older="1">↑ 以前の便りを表示（残り${startIndex}通）</button>`:'';
- $('windThread').innerHTML=olderButton+allMessages.slice(startIndex).map((m,i)=>`<div class="wind-message ${m.side}"><div class="wind-bubble">${['introRecap','introReaction','introAfterword','introEcho'].includes(m.kind)?'<span class="wind-story-label">✦ はじまりの旅の便り</span>':['storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter'].includes(m.kind)?'<span class="wind-story-label">✧ 物語のその後</span>':serialLabels[m.kind]?`<span class="wind-story-label">${serialLabels[m.kind]}</span>`:''}${m.kind==='ack'&&m.replyQuote?`<span class="wind-reply-quote">↳ ${esc(m.replyQuote)}</span>`:''}${esc(m.text)}</div><time>${esc(format(m.tick))}</time>${canAcknowledge(m)?`<button type="button" class="wind-ack-open" data-wind-ack-open="${startIndex+i}" aria-label="${esc(names[selected])}の便りに返事する">↩ 返事する</button>`:''}</div>`).join('')||'<p class="wind-empty">まだ会話はありません。話題を選んで送ってみましょう。</p>';
+ $('windThread').innerHTML=olderButton+allMessages.slice(startIndex).map((m,i)=>`<div class="wind-message ${m.side}"><div class="wind-bubble">${['introRecap','introReaction','introAfterword','introEcho'].includes(m.kind)?'<span class="wind-story-label">✦ はじまりの旅の便り</span>':['storyQuest','storyChapter','storyAfterword','storyThird','storyThirdAfter','storyFourth','storyFourthAfter'].includes(m.kind)?'<span class="wind-story-label">✧ 物語のその後</span>':m.kind==='npcLife'?'<span class="wind-story-label">☕ 町のひとこま・その後</span>':serialLabels[m.kind]?`<span class="wind-story-label">${serialLabels[m.kind]}</span>`:''}${m.kind==='ack'&&m.replyQuote?`<span class="wind-reply-quote">↳ ${esc(m.replyQuote)}</span>`:''}${esc(m.text)}</div><time>${esc(format(m.tick))}</time>${canAcknowledge(m)?`<button type="button" class="wind-ack-open" data-wind-ack-open="${startIndex+i}" aria-label="${esc(names[selected])}の便りに返事する">↩ 返事する</button>`:''}</div>`).join('')||'<p class="wind-empty">まだ会話はありません。話題を選んで送ってみましょう。</p>';
  const ep=state().commus[selected];
  const episode=commuEpisodes[selected];
  const chooseNow=ep?.stage==='choice';
@@ -11576,7 +11678,7 @@ function decorateCards(){
   const id=ids[i];if(!id||card.querySelector('.wind-card-actions'))return;
   card.classList.add('wind-compact');if(expanded.has(id))card.classList.add('wind-expanded');
   const bar=doc.createElement('div');bar.className='wind-card-actions';
-  bar.innerHTML=`<button type="button" class="wind-card-message" data-wind-person="${id}">✉️ 便りを開く</button><button type="button" data-wind-toggle="${id}" aria-expanded="${expanded.has(id)}">${expanded.has(id)?'詳細を閉じる':'詳しく見る'}</button>`;
+  bar.innerHTML=`<button type="button" class="wind-card-message" data-wind-person="${id}">✉️ 便りを開く</button><button type="button" class="npc-origin-open" data-npc-origin="${id}">📖 はじまりの出会いを読む</button><button type="button" data-wind-toggle="${id}" aria-expanded="${expanded.has(id)}">${expanded.has(id)?'詳細を閉じる':'詳しく見る'}</button>`;
   card.append(bar);
  });
 }
@@ -12913,6 +13015,117 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   markDirty();return true;
  }
 
+
+ // v0.9.167 — Fictional players have their own lives outside the MMO.
+ // This affects ambient chat only, not NPC AI, companion selection, combat or economics.
+ const PERSONA_IDS=['gald','rio','sera','mina','noel','eda','toto','van'];
+ const PERSONA_PLAN={
+  gald:[19,24],rio:[18,24],sera:[20,26],mina:[6,10],noel:[16,22],
+  eda:[21,27],toto:[18,23],van:[22,27]
+ };
+ const PERSONA_LINES={
+  gald:{online:['戻った。少しだけ時間が取れたから、手伝えることがあれば言ってくれ。','こんばんは。今日もみんな無事か？','少し遅くなった。荷物を整理してから合流する。','今日は長くはいられないが、一度くらいなら付き合える。'],offline:['そろそろ落ちる。みんな、無茶はするなよ。','今日はここまでだ。次の冒険も帰り道を忘れるな。','明日は早い。先に失礼する。','もう休むことにする。またな。']},
+  rio:{online:['やっと来られた！　今日はどこへ行こうかな？','ログインしたよ！　地図の続き、見にいきたい！','今日も少しだけ探検しようっと！','こんばんは！　新しい道、見つかった？'],offline:['あっ、もうこんな時間！　今日はここで落ちるね！','明日もあるし、そろそろ寝ようかな。またね！','続きは次にしよう！　みんなおやすみ！','今日は地図を見るだけで終わっちゃった。また来るよ！']},
+  sera:{online:['戻りました。今日は静かなところを調べたい気分ね。','少しだけ時間ができたわ。調査の続き、見ておきましょう。','こんばんは。新しい記録が増えているかしら。','ログインできたわ。まずは資料を確認するわね。'],offline:['今日はここまでにするわ。続きはまた今度。','資料はこの辺で閉じましょう。おやすみなさい。','明日の用事に備えて、今日は落ちるわ。','少し目を休めたいの。皆さん、またね。']},
+  mina:{online:['おはようございます。少し時間があるので、備品を確認しますね。','こんばんは。まず回復薬の数を見ておきましょう。','今日は短い時間ですが、よろしくお願いします。','戻りました。皆さん、無理はしていませんか？'],offline:['今日はここまでにします。皆さんも休んでくださいね。','明日の準備があるので、先に失礼します。','無理をする前に休みます。またお会いしましょう。','では、おやすみなさい。補給は忘れずに。']},
+  noel:{online:['こんばんは。少しだけ練習しに来ました。','今日も来られてよかった。魔法の手順を確かめたいんです。','みなさん、こんばんは。まずは昨日のノートから……。','少し時間ができました。よければ一緒に練習を。'],offline:['そろそろ休みます。今日の手順、忘れないように書いておこう。','今日はここまでにします。おやすみなさい。','明日また練習してみますね。では失礼します。','もうこんな時間なんですね。先に休みます。']},
+  eda:{online:['やっほー！　今日は何を試そうかな。','ログインできた！　気になってたこと、もう一度試してみよう。','こんばんは！　誰か新しい発見あった？','今日は少し余裕があるんだ。何か手伝おうか？'],offline:['そろそろ落ちるね。続きはまた明日！','あ、時間！　今日はここまでにするよ。','結果はメモしたし、今日は休もうかな。おやすみ！','また時間ができたら来るね。みんな、おつかれさま！']},
+  toto:{online:['さてさて、今日は何が売れてるかな。','やっと顔を出せたよ。市場をひと回りしてこようかね。','こんばんは。いい品があったら教えておくれ。','今日は少しだけ。相場を見るくらいはできるねえ。'],offline:['今日は店じまいだよ。またねえ。','そろそろ落ちるとするよ。無駄遣いには気をつけな。','明日は忙しいから、今日はおしまい。','また来るよ。値段が変わってなきゃいいけどねえ。']},
+  van:{online:['来た。今日は少し強い相手を探す。','戻った。まず装備を確認する。','時間ができた。もう一度試す。','……こんばんは。今日は短くてもいい戦いをしたい。'],offline:['今日はここまでだ。','落ちる。また挑む。','続きは次だ。先に失礼する。','もう休む。お前たちも無理をするな。']}
+ };
+ const PERSONA_PARTY_LINES={
+  gald:['今日は少しの時間でも剣を振れればいい。行こう。','最近は仕事が立て込んでいた。こっちでは焦らず進みたいな。','無理はするな。……俺も今日は早めに休むつもりだ。','こうして同じ道を歩くのも、悪くない。'],
+  rio:['昨日も地図を眺めてたよ。まだ見たいところがいっぱいある！','今日は短めに遊ぶつもりだったのに、もう次の道が気になる！','ここを歩くと、現実でも遠出したくなるなあ。','帰ったら眠くなりそう。でも今はもう少し探索したい！'],
+  sera:['昼間はずいぶん賑やかだったから、今は静かな景色がいいわね。','この世界の記録は、読み返すたびに発見があるわ。','少し忙しかったけれど、今日は落ち着いて考えられそう。','今日は長居できないけれど、この続きだけは確かめたいわ。'],
+  mina:['今日は点検するものが多かった気がします。こちらの装備も確かめておきましょう。','時間は限られていますから、無理のないところまで進みましょう。','この道の帰りも考えておくと安心ですね。','ここに来ると、少し気分が切り替わります。'],
+  noel:['覚えた手順、ちゃんと使えるか試してみたいんです。','今日も少しだけのつもりです。でも、練習は続けたいな。','新しいことを覚えるのは、いつになっても楽しいですね。','ノートを開かなくても唱えられるようになりたいです。'],
+  eda:['今日は気になることがあるんだ。一緒に試してみない？','また小さな違いに気づいちゃった。後でメモしておこう。','少し疲れてたけど、みんなと歩くと楽しいね。','今日は珍しく時間に余裕があるよ。何をしようか！'],
+  toto:['今日は忙しかったけど、こっちの市も見ておきたいねえ。','花の名前は覚えられるのに、装備の値段はなかなか覚えられないよ。','商売の話ばかりしてないで、たまには景色でも見ようかね。','今夜は短くても、一品くらい見つけたいもんだ。'],
+  van:['今日は余計なことを考えずに戦いたい。','長くは遊べない。だが、一度は試す。','人の多い一日だった。ここでは静かに進む。','何度でも挑む。今日は今日の手がある。']
+ };
+ function personaStatus(id,t,s){
+  // The existing companion and joint-expedition systems retain their authority.
+  const person=s.npcWorld?.people?.[id];
+  if((s.selected||[]).includes(id)||person?.activity==='party'||person?.activity==='joint')return 'online';
+  const minutes=480+Math.max(0,t)*30,day=Math.floor(minutes/1440),hour=(minutes%1440)/60;
+  let [start,end]=PERSONA_PLAN[id];
+  // Mina's on-site work changes her preferred session from morning to evening.
+  if(id==='mina'&&day%3===1){start=20;end=24;}
+  const seed=[...id].reduce((acc,c)=>acc+c.charCodeAt(0),0);
+  const offset=((seed+day*7)%3)-1;
+  start+=offset;end+=offset;
+  const available=hour>=start&&hour<end||end>24&&hour<end-24;
+  if(!available)return 'offline';
+  return (t+seed)%23===0?'away':'online';
+ }
+ function personaState(){
+  const c=state(),t=bridge.tick();
+  if(!c.personaPresence||c.personaPresence.version!==1){
+   c.personaPresence={version:1,initialized:false,lastTick:t,states:{},lastLineDay:0,linesToday:0,lastById:{},history:[]};markDirty();
+  }
+  return c.personaPresence;
+ }
+ function personaAvailable(id){
+  if(!PERSONA_IDS.includes(id))return true;
+  if((current().selected||[]).includes(id))return true;
+  // Only spontaneous world-chat speech needs active presence. Do not lock gameplay.
+  const p=state().personaPresence;
+  return !p||!p.initialized||p.states[id]!=='offline';
+ }
+ function syncPersonaPresence(){
+  const s=current(),c=state(),p=personaState(),t=bridge.tick();
+  if(!p.initialized){
+   p.initialized=true;p.lastTick=t;
+   for(const id of PERSONA_IDS)p.states[id]=personaStatus(id,t,s);
+   markDirty();return;
+  }
+  if(t<p.lastTick){ // Edited or newly loaded save: rebaseline with no fictitious history.
+   p.lastTick=t;for(const id of PERSONA_IDS)p.states[id]=personaStatus(id,t,s);markDirty();return;
+  }
+  const day=worldDay(t);
+  const newDay=day!==p.lastLineDay;
+  if(newDay){p.lastLineDay=day;p.linesToday=0;markDirty();}
+  // A companion reserved by the hero remains present for gameplay: offer a
+  // personal aside instead of fabricating a logout while adventuring together.
+  if(newDay&&t-p.lastTick<=3&&!document.hidden&&!c.quiet&&s.tutorial?.status!=='active'&&!(bridge.active?.())){
+   const party=(s.selected||[]).filter(id=>PERSONA_IDS.includes(id));
+   if(party.length){
+    const id=party[day%party.length],lines=PERSONA_PARTY_LINES[id];
+    if(day-(p.lastById[id]||-100)>=2&&lines&&p.linesToday<3){
+     if(pushMessage(`persona-party:${id}:${day}`,'world',NAMES[id],lines[day%lines.length],'person',t)){
+      p.linesToday++;p.lastById[id]=day;c.lastAmbientAt=Date.now();lastAmbientRuntime=Date.now();
+     }
+    }
+   }
+  }
+  const beforeTick=p.lastTick;
+  if(t===beforeTick)return;
+  p.lastTick=t;
+  const busy=document.hidden||c.quiet||s.tutorial?.status==='active'||c.pendingReplies.length>0;
+  const changed=[];
+  for(const id of PERSONA_IDS){
+   const before=p.states[id]||'offline',after=personaStatus(id,t,s);
+   p.states[id]=after;
+   if(before!==after&&(before==='online'||after==='online')&&after!=='away'&&before!=='away')changed.push({id,status:after});
+  }
+  // Catch-up and background activity never invent past logins; display at most 3/day.
+  if(!busy&&t-beforeTick<=3&&p.linesToday<3&&changed.length){
+   const candidates=changed.filter(x=>day-(p.lastById[x.id]||-100)>=2);
+   if(candidates.length){
+    const choice=candidates[(t+day)%candidates.length],lines=PERSONA_LINES[choice.id]?.[choice.status];
+    if(lines){
+     const text=lines[day%lines.length],speaker=NAMES[choice.id];
+     if(pushMessage(`persona-presence:${choice.id}:${t}:${choice.status}`,'world',speaker,text,'person',t)){
+      p.lastById[choice.id]=day;p.linesToday++;
+      p.history.push({id:choice.id,status:choice.status,tick:t});p.history=p.history.slice(-24);
+      c.lastAmbientAt=Date.now();lastAmbientRuntime=Date.now();
+     }
+    }
+   }
+  }
+  markDirty();
+ }
+
  const CHANNEL_LABEL={world:'世界',battle:'戦闘',guild:'ギルド'};
  function current(){return bridge.read();}
  function state(){
@@ -13017,6 +13230,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   for(const e of recent.slice(-12)){
    // Joint completion generates a mirrored event for both participants.
    if(e.kind==='joint'&&!(e.actor<e.partner))continue;
+   if(!personaAvailable(e.actor))continue; // World action remains in NPC history; no offline live-chat claim.
    const line=completedNPCLine(e);if(!line)continue;
    const topic=e.kind==='joint'?'joint:'+e.partner:e.action;
    const key=e.actor+':'+topic,lastTopic=cur.factHistory?.[key]??-999999,lastActor=cur.factSpeaker?.[e.actor]??-999999;
@@ -13051,7 +13265,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   lines.forEach((pair,i)=>{
    if(!Array.isArray(pair)||pair.length!==2)return;
    const item={id:`${prefix}:${i}`,speaker:pair[0],text:pair[1],tick,kind,dueAt:now+i*(2800+(c.ambientSeq%3)*700)};
-   if(i===0)sayMob(item.id,item.speaker,item.text,item.tick);
+   if(i===0){if(kind==='npcLife')pushMessage(item.id,'world',item.speaker,item.text,'person',item.tick);else sayMob(item.id,item.speaker,item.text,item.tick);}
    else c.pendingReplies.push(item);
   });
   c.lastDialogueAt=now;c.lastAmbientAt=now;lastAmbientRuntime=now;markDirty();
@@ -13067,7 +13281,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
    c.pendingReplies=c.pendingReplies.filter(x=>!x.id.startsWith(`evt-chat:${eventLine[1]}:`));markDirty();return true;
   }
   if(Date.now()-msg.dueAt>6*3600000){c.pendingReplies.forEach((m,i)=>{m.dueAt=Date.now()+2500*(i+1);});markDirty();return true;}
-  if(Date.now()>=msg.dueAt){c.pendingReplies.shift();sayMob(msg.id,msg.speaker,msg.text,msg.tick);c.lastAmbientAt=Date.now();lastAmbientRuntime=Date.now();markDirty();}
+  if(Date.now()>=msg.dueAt){c.pendingReplies.shift();if(msg.kind==='npcLife')pushMessage(msg.id,'world',msg.speaker,msg.text,'person',msg.tick);else sayMob(msg.id,msg.speaker,msg.text,msg.tick);c.lastAmbientAt=Date.now();lastAmbientRuntime=Date.now();markDirty();}
   return true;
  }
  function tryStory(force=false){
@@ -13259,7 +13473,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
   if(Math.random()<.23){
    const s=current(),m=townMemory(),now=Date.now(),day=worldDay(bridge.tick());
    const eligible=Object.entries(s.npcWorld?.people||{}).filter(([id,p])=>{
-    if(!NAMES[id]||(s.selected||[]).includes(id)||!p||p.activity==='party'||c.recentAmbient.includes(NAMES[id]))return false;
+    if(!NAMES[id]||!personaAvailable(id)||(s.selected||[]).includes(id)||!p||p.activity==='party'||c.recentAmbient.includes(NAMES[id]))return false;
     const last=m.personaHistory[NAMES[id]];
     return !last||(day>last.day&&(now<last.at||now-last.at>=5400000));
    });
@@ -13372,7 +13586,7 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  function sync(first=false){
   if(current()!==saveRef){saveRef=current();battleRef=null;lastRenderCount=-1;lastRenderChannel='';state();lastAmbientRuntime=Date.now();first=true;}
   const view=state();if(!view.configured){view.open=window.innerWidth>=760;view.configured=true;markDirty();}
-  syncNews(first);syncWorld(first);syncNPCFacts(first);syncBattle();syncCasinoRumors(first);syncFarmRumors(first);ambient(first);fitChatByNav();draw();flush();
+  syncPersonaPresence();syncNews(first);syncWorld(first);syncNPCFacts(first);syncBattle();syncCasinoRumors(first);syncFarmRumors(first);ambient(first);fitChatByNav();draw();flush();
  }
  el('chatToggle').addEventListener('click',()=>{const c=state();c.open=!c.open;if(c.open)c.unread[c.tab]=0;markDirty();lastRenderCount=-1;draw(true);if(c.open){historyEl.scrollTop=historyEl.scrollHeight;el('chatScrollNew').hidden=true;}flush();});
  root.querySelectorAll('[data-chat-channel]').forEach(btn=>btn.addEventListener('click',()=>{const c=state();c.tab=btn.dataset.chatChannel;c.unread[c.tab]=0;markDirty();lastRenderCount=-1;draw(true);historyEl.scrollTop=historyEl.scrollHeight;el('chatScrollNew').hidden=true;flush();}));
@@ -13390,7 +13604,19 @@ s.active=null;s.nextTick=followup?t+24:decideNextTick(t,s.nextId);
  }
  window.addEventListener('resize',scheduleChatFit,{passive:true});
  window.addEventListener('scroll',scheduleChatFit,{passive:true});
- window.KazeChat={sync,inspect:()=>({tab:state().tab,open:state().open,quiet:state().quiet,total:state().entries.length,byChannel:Object.fromEntries(CHANNELS.map(c=>[c,state().entries.filter(e=>e.channel===c).length])),thread:{...state().threads},pendingReplies:state().pendingReplies.length,recentDialogs:state().recentDialogs.slice(),dialogueHistory:{...townMemory().dialogueHistory},ambientLineCount:Object.keys(townMemory().ambientLineHistory).length,todayTopic:townTopic(),eventReactions:townMemory().eventReactions.slice(),sourceCursor:{...state().sourceCursor},familiarVoices:Object.entries(townMemory().visits).sort((a,b)=>b[1].count-a[1].count).slice(0,12),relationships:Object.fromEntries(Object.entries(townMemory().connections).map(([id,v])=>[id,{stage:v.stage,revisits:v.revisits,lastDay:v.lastDay,nextDay:v.nextDay}])),farmTalk:state().farmTalk?{...state().farmTalk}:null,last:state().entries.slice(-5)})};
+ window.KazePersonaPresence={inspect:()=>({tick:bridge.tick(),states:{...personaState().states},history:[...personaState().history],linesToday:personaState().linesToday})};
+ window.KazeChat={sync,publishPartyJourney:(serial,lines)=>{
+  if(state().quiet||document.hidden||current().tutorial?.status==='active')return false;
+  if(!Number.isSafeInteger(serial)||serial<1||!Array.isArray(lines)||lines.length!==2)return false;
+  if(!lines.every(pair=>Array.isArray(pair)&&pair.length===2&&typeof pair[0]==='string'&&typeof pair[1]==='string'&&pair[1].length<=220))return false;
+  return beginLines('party-journey:'+serial,lines,'npcLife');
+ },publishNpcLife:(serial,lines)=>{
+  if(document.hidden||state().quiet||current().tutorial?.status==='active')return false;
+  if(!Number.isSafeInteger(serial)||serial<1||!Array.isArray(lines)||lines.length<2||lines.length>4)return false;
+  if(!lines.every(line=>Array.isArray(line)&&line.length===2&&typeof line[0]==='string'&&typeof line[1]==='string'&&line[1].length<=220))return false;
+  if(lines.some(([name])=>{const id=PERSONA_IDS.find(k=>NAMES[k]===name);return id&&!personaAvailable(id)}))return false;
+  return beginLines('npc-life:'+serial,lines,'npcLife');
+ },inspect:()=>({tab:state().tab,open:state().open,quiet:state().quiet,total:state().entries.length,byChannel:Object.fromEntries(CHANNELS.map(c=>[c,state().entries.filter(e=>e.channel===c).length])),thread:{...state().threads},pendingReplies:state().pendingReplies.length,recentDialogs:state().recentDialogs.slice(),dialogueHistory:{...townMemory().dialogueHistory},ambientLineCount:Object.keys(townMemory().ambientLineHistory).length,todayTopic:townTopic(),eventReactions:townMemory().eventReactions.slice(),sourceCursor:{...state().sourceCursor},familiarVoices:Object.entries(townMemory().visits).sort((a,b)=>b[1].count-a[1].count).slice(0,12),relationships:Object.fromEntries(Object.entries(townMemory().connections).map(([id,v])=>[id,{stage:v.stage,revisits:v.revisits,lastDay:v.lastDay,nextDay:v.nextDay}])),farmTalk:state().farmTalk?{...state().farmTalk}:null,last:state().entries.slice(-5)})};
  sync();setInterval(()=>sync(),900);
  root.dataset.chatReady='true';
 })();
@@ -14371,6 +14597,413 @@ if(peopleRoot)new MutationObserver(()=>hydrate()).observe(peopleRoot,{childList:
 })();
 
 </script>
+<style id="npc-life-book-v164">
+#npcLifeBook{margin:18px 0 20px;padding:17px;border:1px solid #d4c4a5;border-radius:18px;background:linear-gradient(155deg,#fffbf2,#f3f0e3);color:#2c5143;min-width:0}
+#npcLifeBook .npc-life-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+#npcLifeBook .npc-life-overline{display:block;font-size:10px;letter-spacing:.12em;font-weight:800;color:#7d6a51;margin-bottom:4px}
+#npcLifeBook h3{color:#294f42!important;font-size:19px;line-height:1.5;font-weight:850;margin:0}
+#npcLifeBook .npc-life-count{font-size:12px;font-weight:750;border-radius:99px;padding:5px 10px;background:#e7eddf;border:1px solid #c5d1b8;color:#315a46}
+#npcLifeBook .npc-life-intro{font-size:14px;line-height:1.7;color:#536b5d;margin:0 0 13px}
+#npcLifeBook .npc-life-entries{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#npcLifeBook .npc-life-item{min-width:0;border:1px solid #d6c7ac;border-radius:13px;background:#fffdf5;overflow:hidden;align-self:start}
+#npcLifeBook .npc-life-item>summary{display:flex;align-items:center;gap:9px;flex-wrap:wrap;list-style:none;cursor:pointer;padding:13px;min-height:48px;color:#315647!important;font-size:14px}
+#npcLifeBook .npc-life-item>summary::-webkit-details-marker{display:none}
+#npcLifeBook .npc-life-item>summary:focus-visible{outline:3px solid #bc9a5e;outline-offset:-3px}
+#npcLifeBook .npc-life-item>summary::after{content:'⌄';margin-left:auto;color:#5a735e}
+#npcLifeBook .npc-life-item[open]>summary::after{transform:rotate(180deg)}
+#npcLifeBook .npc-life-summary-title{font-weight:850;color:#284c40}
+#npcLifeBook .npc-life-summary-speakers{font-size:12px;color:#607767}
+#npcLifeBook .npc-life-place{font-size:11px;color:#667865;margin:1px 13px 10px;line-height:1.5}
+#npcLifeBook .npc-life-dialogue{display:grid;gap:7px;margin:0 12px}
+#npcLifeBook .npc-life-line{display:grid;grid-template-columns:65px minmax(0,1fr);gap:7px;align-items:start;background:#eef2e8;border:1px solid #dce3d4;border-radius:10px;padding:8px 10px;font-size:13px;line-height:1.65;color:#304e42}
+#npcLifeBook .npc-life-line b{color:#356451;font-weight:800}
+#npcLifeBook .npc-life-note{font-size:12px;line-height:1.65;color:#526b5b;margin:11px 13px 13px}
+#npcLifeBook .npc-life-empty{font-size:13px;line-height:1.7;color:#586d60;margin:0;grid-column:1/-1}
+#npcLifeBook .npc-life-archive{grid-column:1/-1;min-width:0;border-radius:12px;border:1px solid #d6c7ac;background:#faf5e9}
+#npcLifeBook .npc-life-archive>summary{padding:12px 14px;cursor:pointer;font-size:13px;font-weight:800;color:#365c4a!important;min-height:46px}
+#npcLifeBook .npc-life-archive-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 10px 12px}
+@media(max-width:850px){#npcLifeBook .npc-life-archive-grid{grid-template-columns:1fr}}
+
+@media(max-width:850px){#npcLifeBook .npc-life-entries{grid-template-columns:1fr}}
+@media(max-width:440px){#npcLifeBook{padding:13px 10px}#npcLifeBook .npc-life-line{grid-template-columns:54px minmax(0,1fr);padding:8px 7px;font-size:13px}#npcLifeBook .npc-life-overline{font-size:9px}}
+</style>
+<style id="npc-life-serial-v165">
+#npcLifeBook .npc-life-series-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:14px 0 8px;font-size:14px;color:#2f5545}
+#npcLifeBook .npc-life-series-heading span{font-size:12px;color:#5a715f}
+#npcLifeBook .npc-life-series[hidden]{display:none!important}
+#npcLifeBook .npc-life-series{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 14px}
+#npcLifeBook .npc-life-series-row{display:grid;gap:4px;min-width:0;padding:10px 12px;background:#e8efe5;border:1px solid #c6d6c5;border-radius:12px;color:#2c5242}
+#npcLifeBook .npc-life-series-row b{font-size:14px}
+#npcLifeBook .npc-life-series-row span{font-size:12px;color:#536f5d}
+#npcLifeBook .npc-life-completed{grid-column:1/-1;padding:8px 12px;border:1px solid #ddcfb4;border-radius:12px;background:#fcf7ed;color:#385a47}
+#npcLifeBook .npc-life-completed summary{font-size:13px;min-height:32px;cursor:pointer;color:#385a47!important}
+#npcLifeBook .npc-life-completed p{font-size:12px;line-height:1.8;overflow-wrap:anywhere}
+#npcLifeBook .npc-life-completed-grid{display:grid;gap:8px;margin-top:8px}
+#npcLifeBook .npc-life-completed-book{background:#fffbf2;border:1px solid #d8c7a7;border-radius:10px;padding:5px 9px;min-width:0}
+#npcLifeBook .npc-life-completed-book>summary{padding:9px 4px;font-size:13px;font-weight:750;line-height:1.5;color:#345a48!important;cursor:pointer}
+#npcLifeBook .npc-life-completed-stages{display:grid;gap:8px;padding:4px 0 10px}
+
+#npcLifeBook .npc-life-arc-label{display:block;font-size:11px;color:#866b46;font-weight:800;margin-bottom:3px}
+@media(max-width:850px){#npcLifeBook .npc-life-series{grid-template-columns:1fr}}
+</style>
+<script id="npc-life-v164">
+/* v0.9.164: NPC-to-NPC daily vignettes. Authored dialogues; no artificial economic effects. */
+(()=>{
+ 'use strict';
+ const bridge=window.KazeWindBridge;
+ const partyPanel=document.getElementById('worldSection');
+ if(!bridge||!partyPanel)return;
+ const S=[
+ // Each scene: id, actors, location, period, title, narration, alternating speaker lines.
+ ['gr1','gald','rio','guild','any','地図の折り目','ガルドは破れかけた地図の角を丁寧に戻した。',['リオ','この道、描き足したら地図が閉じなくなったんだ。','ガルド','まず紙を折る場所を決めろ。道のほうは消さなくていい。','リオ','そっか、地図に道を合わせなくてもいいんだね！']],
+ ['gr2','gald','rio','forest','day','枝の向こうの道','二人は同じ枝を見上げて、別々のことを考えている。',['リオ','あの先、通れるかな？','ガルド','行く前に戻る道を見ておけ。','リオ','分かった。帰りの道もちゃんと冒険なんだね。']],
+ ['gr3','gald','rio','guild','night','消えない机の灯','地図の端に小さな灯りが残っていた。',['ガルド','まだ地図を見ているのか。','リオ','もう一か所だけ確認したくて。','ガルド','なら俺も一緒に見る。眠る時刻は決めておこう。']],
+ ['gm1','gald','mina','guild','day','救護箱の置き場所','ギルドの棚で小さな相談が続いている。',['ミーナ','救護箱は入口の近くがいいでしょうか。','ガルド','出発前に見つけやすい場所がいいな。','ミーナ','それなら、戻ってきた人にも分かる札を付けますね。']],
+ ['gm2','gald','mina','forest','any','休憩の合図','森の道で、二人は歩く速さを合わせた。',['ガルド','俺が先に進みすぎたら知らせてくれ。','ミーナ','もちろんです。でも、ガルドさんも疲れたら教えてください。','ガルド','……ああ。忘れずに言おう。']],
+ ['gm3','gald','mina','guild','night','湯飲みは二つ','休憩室の机に、湯飲みが二つ並んでいる。',['ミーナ','片方はガルドさんの分です。','ガルド','俺の分まで用意したのか。ありがとう。','ミーナ','見守る人にも休憩は必要ですから。']],
+ ['gv1','gald','van','guild','any','剣の手入れ','二人は無言で刃を見ていた。',['ヴァン','刃こぼれを見つけるのが早いな。','ガルド','毎日見ていれば分かる。','ヴァン','俺は戦ったあとの傷を見るほうが得意だ。','ガルド','なら、両方必要だな。']],
+ ['gv2','gald','van','training','day','一歩の間合い','訓練所で剣先が静かに止まる。',['ガルド','今の一歩は無理をしたな。','ヴァン','攻めどころだと思った。','ガルド','そういうときほど背後を見ろ。','ヴァン','……次はそうする。']],
+ ['gv3','gald','van','guild','night','静かな勝負','休憩室で、どちらも先に席を立とうとしない。',['ヴァン','今日は先に休むのか。','ガルド','そういうお前も座っている。','ヴァン','勝負じゃないさ。','ガルド','それなら、急ぐ理由もないな。']],
+ ['gt1','gald','toto','guild','day','値札の裏側','トトの帳簿に書かれた小さな数字を、ガルドが見つめた。',['トト','その数字は運ぶ人の手間賃だよ。','ガルド','品物だけじゃなく、道中の仕事も値段に入るんだな。','トト','そう。無事に届くまでが商いさ。']],
+ ['gt2','gald','toto','forest','any','荷ひもの結び方','森の端で二人は荷ひもを確かめている。',['ガルド','この結び目、緩みにくいな。','トト','でもほどくのは簡単にしてあるんだ。','ガルド','急ぐときのことまで考えているのか。','トト','運びやすさも大事だからね。']],
+ ['gt3','gald','toto','guild','night','帳簿の余白','最後の数字を書き終えても、トトは帳簿を閉じない。',['ガルド','まだ仕事があるのか？','トト','今日助けてもらった人の名前を書いてるんだ。','ガルド','なら、俺の名前も書いておいてくれ。','トト','ふふ、もう書いたよ。']],
+ ['rs1','rio','sera','guild','day','地図と星印','二人のノートには、同じ場所に異なる印がある。',['リオ','ここ、僕は星を描いたよ。','セラ','私はまだ調査が必要な場所として印を付けたわ。','リオ','同じ印なのに意味が違うね！','セラ','凡例を書きましょう。あとで困るもの。']],
+ ['rs2','rio','sera','mine','any','石に残る線','鉱山の壁で小さな傷を見つけた。',['リオ','これ、誰かが引いた道の印かな？','セラ','断定するには早いわ。まず深さを記録しましょう。','リオ','うん。分かったら、地図にも描きたいな。']],
+ ['rs3','rio','sera','guild','night','調査ノートの余白','セラのノートに、リオが小さな矢印を描いた。',['セラ','この矢印は何かしら。','リオ','明日もう一度見たい場所！','セラ','……では、消さずに残しておきましょう。']],
+ ['re1','rio','eda','guild','day','次の休みの約束','エダの手帳に、まだ何も書いていない一日がある。',['リオ','その日はどこか行く予定？','エダ','まだ決めてないの。私の行きたい場所を考えてるところ。','リオ','いいね。決まったら地図を貸すよ！']],
+ ['re2','rio','eda','forest','any','寄り道の目印','木の根元に、二人だけが気づいた小さな石がある。',['エダ','こっちの道、遠回りじゃない？','リオ','そうだけど、景色がいいんだ！','エダ','なら、帰る時刻を決めてから行きましょう。']],
+ ['re3','rio','eda','guild','night','描きかけの景色','二人は机の上の紙を眺めている。',['リオ','この景色、地図にはどう描けばいいかな。','エダ','好きだったところを描いてみたら？','リオ','じゃあ、この大きな雲から描こう！']],
+ ['rt1','rio','toto','guild','day','木の実の値段','トトの小さな品物箱から木の実が一つ出てきた。',['リオ','これ、森でよく見かけるよ。','トト','売り物になるか考えてたんだ。','リオ','僕なら地図の目印に使うかな。','トト','それも立派な使い道だね。']],
+ ['rt2','rio','toto','forest','any','袋の中の地図','トトは道具袋から折り畳んだ紙を取り出した。',['トト','仕入れの道を覚えるための地図だよ。','リオ','あっ、ここに細い道がある！','トト','通れるかどうか、今度ちゃんと確かめよう。']],
+ ['rt3','rio','toto','guild','night','どちらが得をした？','二人は互いの小さな発見を交換した。',['リオ','僕は新しい道を教えたよ。','トト','私はその道のお店を教えた。','リオ','じゃあ二人とも得したね！','トト','そういう取引がいちばん好きだよ。']],
+ ['sn1','sera','noel','guild','day','消さない間違い','ノエルの練習帳に赤い印が残っている。',['ノエル','間違えたところ、消したほうがいいかな。','セラ','残しておきなさい。次に分かったことを書けるから。','ノエル','……じゃあ、余白も残しておくよ。']],
+ ['sn2','sera','noel','training','day','一節ずつ','静かな詠唱が訓練所に響く。',['セラ','全部を一度に覚えなくていいのよ。','ノエル','一節だけでも、前より上手くなれる？','セラ','もちろん。確かめながら進みましょう。']],
+ ['sn3','sera','noel','guild','night','夜の研究机','二人は読書灯の明るさを少し下げた。',['ノエル','今日はここまでにしようかな。','セラ','それがいいわ。続きは明日でも逃げないもの。','ノエル','……うん。明日なら、少し勇気が出そう。']],
+ ['se1','sera','eda','guild','day','古い言葉の意味','エダが旅人から聞いた言葉をセラに見せた。',['エダ','これ、昔の呼び名なのかな。','セラ','似た単語はあるけれど、決めつけないほうがいいわ。','エダ','じゃあ、本人にもう一度聞いてみる。']],
+ ['se2','sera','eda','mine','any','石の手触り','二人は少し離れたところから石の表面を比べている。',['セラ','模様の違いを記録しておきたいわ。','エダ','私は、ここを歩いた人がどう感じたか気になる。','セラ','両方書けば、もっと良い記録になりそうね。']],
+ ['se3','sera','eda','guild','night','書き直した一行','エダは書きかけの報告書を見つめた。',['エダ','人の言葉を短くまとめるって難しいね。','セラ','意味を削りすぎないのが大事よ。','エダ','うん。もう一行だけ、足してみる。']],
+ ['st1','sera','toto','guild','day','資料の値段','セラの机に古い紙片が置かれている。',['トト','この紙、買い取るならいくらだろう。','セラ','値段をつける前に内容を読ませて。','トト','商いを急がない日も必要、ってことだね。']],
+ ['st2','sera','toto','mine','any','石の名前','二人は鉱石の表面を静かに見比べている。',['トト','似た石でも値段が違うのはなぜかな。','セラ','成分と来歴が違うこともあるわ。','トト','なるほど。まず正しく知るところからか。']],
+ ['st3','sera','toto','guild','night','しまわれる帳面','棚に戻す資料を二人で整理した。',['セラ','この記録は調査棚に置いておくわ。','トト','こっちの帳簿は市場の棚へ。','セラ','置き場所は違っても、忘れないためのものね。']],
+ ['mn1','mina','noel','guild','day','包帯のたたみ方','ミーナが机に広げた包帯を、ノエルが真似している。',['ノエル','端っこがどうしてもずれるんだ。','ミーナ','少しずつ折れば大丈夫ですよ。','ノエル','魔法より難しいかもしれない……。']],
+ ['mn2','mina','noel','forest','any','足元の小さな花','ノエルが立ち止まると、ミーナも歩みを緩めた。',['ノエル','この花、踏まないほうがいいよね。','ミーナ','ええ。回り道にしましょう。','ノエル','よかった。僕が気づけて。']],
+ ['mn3','mina','noel','guild','night','休む練習','ノエルの練習帳が机の端に閉じられている。',['ミーナ','今日はもう休んでもいいと思いますよ。','ノエル','何もしないと落ち着かなくて。','ミーナ','休むことも、上手になる練習ですよ。']],
+ ['me1','mina','eda','guild','day','当番表の余白','二人は当番表を前に相談している。',['エダ','この時間、私が引き受けようか？','ミーナ','ありがとうございます。でも、エダさんの予定も大切です。','エダ','じゃあ、交代できる日にしよう。']],
+ ['me2','mina','eda','forest','any','摘まない葉','二人は同じ葉を見つけたが、採集袋には入れなかった。',['ミーナ','まだ小さすぎますね。','エダ','今日は置いていこうか。','ミーナ','ええ。次に来る人の分にもなりますから。']],
+ ['me3','mina','eda','guild','night','ちょうどいい距離','机の向こうで、二人が小さく笑った。',['エダ','手伝うつもりで、つい全部やっちゃうの。','ミーナ','私もです。頼る練習が要りますね。','エダ','一緒に練習できそうだね。']],
+ ['mv1','mina','van','guild','day','無理の境界','ヴァンは手袋の傷を見せた。',['ミーナ','傷が広がる前に直しましょう。','ヴァン','まだ使える。','ミーナ','使えることと、安全なことは違いますよ。','ヴァン','……なるほどな。']],
+ ['mv2','mina','van','forest','any','歩幅の調整','森の小径で二人の足音が揃う。',['ヴァン','少し遅いか？','ミーナ','いえ、これくらいなら話しながら歩けます。','ヴァン','なら今日はこの速さで行こう。']],
+ ['mv3','mina','van','guild','night','包帯の端','ミーナは包帯の結び目をそっと直した。',['ヴァン','大げさな傷じゃない。','ミーナ','小さいうちに気づけてよかったです。','ヴァン','……礼は言っておく。']],
+ ['ne1','noel','eda','guild','day','先に決めること','二人は出発前のメモを並べている。',['ノエル','もし迷ったら、どうしよう。','エダ','まず、帰る時間を決めておこうよ。','ノエル','それなら僕にも決められそう。']],
+ ['ne2','noel','eda','forest','any','小さな道しるべ','エダは足元に落ちていた枝を拾い上げた。',['エダ','この枝、さっきも見なかった？','ノエル','うん。帰り道の目印になるかな。','エダ','じゃあ、覚えておこう。']],
+ ['ne3','noel','eda','guild','night','言いかけた言葉','ノエルが言葉を探しているあいだ、エダは待っていた。',['ノエル','あのね……今日は少し楽しかったんだ。','エダ','うん、聞いてるよ。','ノエル','急がなくていいって、思えたから。']],
+ ['nv1','noel','van','guild','day','強さの測り方','ノエルは訓練記録の数字を見つめている。',['ノエル','まだあまり強くなっていない気がする。','ヴァン','昨日できなかったことは？','ノエル','一つ、できるようになったよ。','ヴァン','それを数えろ。']],
+ ['nv2','noel','van','training','day','一歩引く練習','剣と魔法の練習が同じ場所で続いている。',['ヴァン','攻める前に一歩引いてみろ。','ノエル','退いてもいいの？','ヴァン','退ける奴は、次の一歩を選べる。']],
+ ['nv3','noel','van','guild','night','怖さの話','片付けの終わった訓練帳が机にある。',['ノエル','ヴァンは怖くないの？','ヴァン','怖さを知らないわけじゃない。','ノエル','……そっか。僕だけじゃないんだ。']],
+ ['et1','eda','toto','guild','day','頼まれごとの値段','トトが依頼の紙を裏返した。',['トト','これ、手間がかかるわりに報酬が少ないね。','エダ','でも、困ってる人がいるみたい。','トト','だからこそ続けられるやり方を考えたいんだ。']],
+ ['et2','eda','toto','forest','any','小さな収穫','二人は採集袋の中身を見比べた。',['エダ','少なくても、見つけられたのはうれしいね。','トト','これなら運びやすいしね。','エダ','トトはそう考えるんだ。ふふ。']],
+ ['et3','eda','toto','guild','night','手帳の空白','トトの帳簿とエダの手帳が並んでいる。',['エダ','今日は空白の予定があってうれしいの。','トト','私も帳簿を閉じる時間を決めたいな。','エダ','それ、明日からやってみようよ。']],
+ ['tv1','toto','van','guild','day','荷物の重さ','トトが荷の重さを測っている。',['ヴァン','俺が持とうか。','トト','ありがとう。でも分けて持てば一人で済むよ。','ヴァン','なるほど。力だけで解決する話じゃないな。']],
+ ['tv2','toto','van','mine','any','石の選び方','二人は鉱石の違いについて話している。',['トト','これ、重さのわりに値がつかないんだ。','ヴァン','使い道で価値は変わるだろう。','トト','そう。だから持ち帰る前に考えるのさ。']],
+ ['tv3','toto','van','guild','night','明日の取引','二人は閉じた店の看板を見た。',['ヴァン','もう店じまいか。','トト','明日も開けるためにね。','ヴァン','……理にかなってる。']],
+ ['sm1','sera','mina','guild','day','記録の余白','ミーナの備品帳にセラが小さな印を付けた。',['セラ','この欄、確認した時刻も書けると便利ね。','ミーナ','そうですね。次の担当者にも分かりやすくなります。','セラ','書式を整えましょうか。']],
+ ['sm2','sera','mina','mine','any','暗い道の灯','鉱山の小さな灯りを二人で確かめた。',['ミーナ','この光なら帰り道も見えそうです。','セラ','魔力の反応も安定しているわ。','ミーナ','でも予備の灯りも持っておきますね。']],
+ ['sm3','sera','mina','guild','night','休憩の理由','机の上の資料を閉じる音がした。',['セラ','続きは明日でいいかしら。','ミーナ','もちろんです。疲れていると見落としも増えますから。','セラ','それも大切な観察結果ね。']]
+ ];
+ const IDs=new Set(['gald','rio','sera','mina','noel','eda','toto','van']);
+ const names=Object.fromEntries(bridge.people().map(p=>[p.id,p.name]));
+ const places={guild:'ギルド',forest:'緑風の森',mine:'赤錆の鉱山',training:'訓練所',inn:'宿屋'};
+ const scenes=S.map(([id,a,b,place,period,title,note,dialog])=>({id,a,b,place,period,title,note,lines:Array.from({length:dialog.length/2},(_,i)=>[dialog[i*2],dialog[i*2+1]])}));
+
+ // v0.9.166: 18 independent 3-part stories. Nothing is inferred without a recorded prior scene.
+ const arcDefs=[{"id":"arc01","a":"gald","b":"rio","place":"guild","period":"any","title":"なくした地図","stages":[{"title":"地図が見当たらない","note":"リオは開いていたはずの地図を探している。","lines":[["リオ","さっきまでここにあったんだ。机の上にもないよ。"],["ガルド","使った場所から順に思い出そう。"],["リオ","うん。最後に見たのはギルドの棚の近くだったはず。"]]},{"title":"棚の裏の折り目","note":"二人は前に話した棚をもう一度調べた。","lines":[["ガルド","この棚の裏に紙が挟まっている。"],["リオ","それだ！　でも、どうしてそんなところに？"],["ガルド","片付ける時に落ちたのかもしれないな。"]]},{"title":"なくさない工夫","note":"リオの地図に、新しい紐が結ばれている。","lines":[["リオ","地図に紐を付けてみたよ。これなら鞄から落ちない！"],["ガルド","それなら安心だ。地図自体にも名前を書いておけ。"],["リオ","ガルドにも見せたくて、まずここに持ってきたんだ。"]]}]},{"id":"arc02","a":"mina","b":"eda","place":"guild","period":"any","title":"当番表の空白","stages":[{"title":"引き受けすぎた仕事","note":"エダとミーナは当番表の前で立ち止まった。","lines":[["エダ","私の名前、同じ日に何度もあるね。"],["ミーナ","私も見落としていました。無理はしないでください。"],["エダ","じゃあ、明日以降の分を一緒に見直そう。"]]},{"title":"交代の日を決める","note":"以前の当番表を二人で机に広げた。","lines":[["ミーナ","この日の午後なら私が交代できます。"],["エダ","ありがとう。私は別の日の午前を引き受けるね。"],["ミーナ","一人で抱えず、これからも相談しましょう。"]]},{"title":"何もない日の予定","note":"新しい当番表には、小さな余白が残っている。","lines":[["エダ","見て。この日は何も頼まれてないの。"],["ミーナ","何もしない時間も大切にしたいですね。"],["エダ","うん。まずはお茶を飲みに行こうかな。"]]}]},{"id":"arc03","a":"sera","b":"noel","place":"guild","period":"any","title":"消さない練習帳","stages":[{"title":"間違えた頁","note":"ノエルは書き直しだらけの練習帳を隠そうとした。","lines":[["ノエル","間違いばかりで、全部消したくなっちゃう。"],["セラ","消す前に、どうして間違えたか残しておきなさい。"],["ノエル","これも僕の練習の記録になるんだね。"]]},{"title":"余白に書くこと","note":"セラはあの練習帳の余白を指さした。","lines":[["セラ","この印の隣に、今分かったことを書いてみて。"],["ノエル","あっ、前と同じところで止まってる。"],["セラ","気づけたなら、一歩進んでいるわ。"]]},{"title":"残してよかった頁","note":"ノエルが練習帳を開いて、少し笑った。","lines":[["ノエル","ここ、前は間違えてたのに今日はできたよ。"],["セラ","残しておいてよかったでしょう。"],["ノエル","うん。消さない頁が一番好きになった。"]]}]},{"id":"arc04","a":"toto","b":"van","place":"guild","period":"any","title":"重すぎる荷箱","stages":[{"title":"ひとりで持てる？","note":"ヴァンは大きな荷箱の前で腕を組んだ。","lines":[["ヴァン","これは俺が運ぼう。"],["トト","待って。重さより中身の割れやすさを見て。"],["ヴァン","……箱を分けたほうがよさそうだな。"]]},{"title":"箱を分ける仕事","note":"二人は以前の荷箱の中身を確かめた。","lines":[["トト","これを二箱に分ければ安全に運べるよ。"],["ヴァン","一つずつなら、俺にも任せられそうだ。"],["トト","力があっても、工夫する余地はあるものさ。"]]},{"title":"軽い箱の行方","note":"届け先から戻った二人は、空になった箱を見下ろした。","lines":[["ヴァン","割れた品は一つもなかった。"],["トト","助かったよ。次もこの分け方にしよう。"],["ヴァン","ふっ。力任せより賢いな。"]]}]},{"id":"arc05","a":"rio","b":"toto","place":"guild","period":"any","title":"森の小さな店","stages":[{"title":"地図にない店","note":"リオがトトの前に、道を書き込んだ紙を広げた。","lines":[["リオ","森の入り口に小さな売店があるんだ。"],["トト","へえ、私の仕入れ帳にはない店だね。"],["リオ","通る道を描いておくよ。"]]},{"title":"仕入れ帳の新しい行","note":"トトは前に聞いた店への道を帳簿に写した。","lines":[["トト","あの売店の場所、教えてくれた通りだったよ。"],["リオ","よかった！　何を売ってた？"],["トト","小さな瓶と、旅の途中で役立つものさ。"]]},{"title":"道の名前","note":"リオの地図に新しい名前が書かれている。","lines":[["リオ","あの道を「瓶の小径」って呼んでみたんだ。"],["トト","いいね。私は仕入れ帳にその名前を書いておくよ。"],["リオ","これで二人とも道を覚えられるね！"]]}]},{"id":"arc06","a":"gald","b":"mina","place":"guild","period":"any","title":"救護箱の札","stages":[{"title":"見つからない箱","note":"ミーナは救護箱の置き場を確かめていた。","lines":[["ミーナ","急ぐときに迷わず見つけられる場所がいいですね。"],["ガルド","入口に近い棚ならどうだ。"],["ミーナ","では、誰でも読める札を付けましょう。"]]},{"title":"札の文字","note":"二人は以前決めた棚に札を取り付けた。","lines":[["ガルド","この大きさなら遠くからも見えるな。"],["ミーナ","でも文字が少し小さいかもしれません。"],["ガルド","書き直そう。使う人が迷わないのが一番だ。"]]},{"title":"迷わない入口","note":"救護箱の札は、扉からも見える場所に落ち着いた。","lines":[["ミーナ","これで戻った人にもすぐ分かります。"],["ガルド","見つけやすさも安全のうちだな。"],["ミーナ","手伝ってくれてありがとうございます。"]]}]},{"id":"arc07","a":"rio","b":"eda","place":"guild","period":"any","title":"休みの日の地図","stages":[{"title":"行き先は未定","note":"エダは白紙の予定表をリオに見せた。","lines":[["エダ","休みの日、どこへ行こうか迷ってるの。"],["リオ","じゃあ、僕が好きな道を地図に書いてみるよ！"],["エダ","行くかどうかは、それを見てから決めるね。"]]},{"title":"景色の印","note":"リオが描いた地図の端には小さな絵があった。","lines":[["エダ","この丸い印は何？"],["リオ","風が気持ちいい場所なんだ。"],["エダ","ふふ。道の名前より分かりやすいかも。"]]},{"title":"選んだ寄り道","note":"エダは地図を丁寧に折りたたんだ。","lines":[["エダ","次の休みは、この印の場所へ行ってみる。"],["リオ","いいね！　道に迷ったら、戻る方を先に見てね。"],["エダ","それ、ガルドの言い方に似てきたよ。"]]}]},{"id":"arc08","a":"sera","b":"eda","place":"guild","period":"any","title":"書き換えない記録","stages":[{"title":"長すぎる報告","note":"エダは分厚い報告書にため息をついた。","lines":[["エダ","短くしようとすると、人の言葉まで消えちゃう。"],["セラ","事実と感想を分けて書けばいいの。"],["エダ","なるほど。まず線を引いてみるね。"]]},{"title":"二つの欄","note":"報告書には「見たこと」と「聞いたこと」の欄が増えていた。","lines":[["エダ","こうすれば、誰の言葉か分かるね。"],["セラ","ええ。記録する人の都合で意味を変えないことが大切よ。"],["エダ","もう少しだけ、読み直してみる。"]]},{"title":"残せた言葉","note":"書き直した報告書を、エダは静かに閉じた。","lines":[["エダ","あの人の言ったこと、ちゃんと残せたと思う。"],["セラ","よく考えて書いたのね。"],["エダ","助けてくれてありがとう。"]]}]},{"id":"arc09","a":"noel","b":"eda","place":"guild","period":"any","title":"一歩先の約束","stages":[{"title":"行く前の心配","note":"ノエルは出発の予定表を何度も見ていた。","lines":[["ノエル","もし道が分からなくなったら、どうしよう。"],["エダ","先に帰る時間を決めておく？"],["ノエル","それなら、少し安心できるかも。"]]},{"title":"戻る時刻","note":"エダは前の約束を小さな紙に書いて渡した。","lines":[["エダ","この時刻になったら、途中でも戻ることにしよう。"],["ノエル","途中でもいいんだね。"],["エダ","もちろん。帰るのも立派な選択だよ。"]]},{"title":"次の一歩","note":"ノエルはその紙を練習帳に挟んでいた。","lines":[["ノエル","帰る時間を決めたら、前より道が怖くなかった。"],["エダ","よかった。次はどの道を見たい？"],["ノエル","……今度は、少し遠い道かな。"]]}]},{"id":"arc10","a":"mina","b":"noel","place":"guild","period":"any","title":"包帯の小さな練習","stages":[{"title":"折り目が合わない","note":"ノエルの手元で包帯がくしゃりと曲がった。","lines":[["ノエル","またずれちゃった。"],["ミーナ","急がず、端を合わせてみてください。"],["ノエル","魔法の練習より難しいなあ。"]]},{"title":"折り方のこつ","note":"二人は前に使った包帯をもう一度広げた。","lines":[["ミーナ","片方の手で端を押さえるといいですよ。"],["ノエル","あっ、今度はまっすぐになった！"],["ミーナ","上達しましたね。"]]},{"title":"しまう前に","note":"きれいに畳んだ包帯が棚に並んだ。","lines":[["ノエル","一人でも畳めるようになったよ。"],["ミーナ","それなら、誰かを助けるときにも役立ちますね。"],["ノエル","うん。忘れないようにしておこう。"]]}]},{"id":"arc11","a":"mina","b":"van","place":"guild","period":"any","title":"手袋の縫い目","stages":[{"title":"見つかったほつれ","note":"ヴァンは手袋のほつれを隠そうとした。","lines":[["ミーナ","その糸、引っ張るともっとほどけますよ。"],["ヴァン","まだ使えると思っていた。"],["ミーナ","直せるうちに直しましょう。"]]},{"title":"針と糸","note":"ミーナは縫い目を確かめ、ヴァンに糸を渡した。","lines":[["ミーナ","ここは細かく縫ったほうが丈夫です。"],["ヴァン","剣より針のほうが難しいな。"],["ミーナ","でも、少しずつ上手になっていますよ。"]]},{"title":"新しい縫い目","note":"ヴァンは直した手袋をはめ直した。","lines":[["ヴァン","前より手に馴染む。"],["ミーナ","無理をする前に気づけてよかったですね。"],["ヴァン","……次は早めに相談する。"]]}]},{"id":"arc12","a":"gald","b":"van","place":"guild","period":"any","title":"剣の手入れ当番","stages":[{"title":"刃こぼれの相談","note":"ヴァンは使い込んだ剣をガルドに見せた。","lines":[["ヴァン","こういう小さな傷は、いつ直す？"],["ガルド","見つけた時だな。大きくなる前に。"],["ヴァン","なら、今日は手入れの日にするか。"]]},{"title":"二振り並べて","note":"二人の剣が布の上に並んでいる。","lines":[["ガルド","同じ手入れでも、刃の癖は違うな。"],["ヴァン","使い方が違うからな。"],["ガルド","だからこそ、互いのやり方が参考になる。"]]},{"title":"黙ったままの礼","note":"きれいになった剣を二人は鞘に収めた。","lines":[["ヴァン","……いい時間だった。"],["ガルド","ああ。剣も少し長持ちしそうだ。"],["ヴァン","また手入れするときは声をかける。"]]}]},{"id":"arc13","a":"noel","b":"van","place":"guild","period":"any","title":"怖さの置き場所","stages":[{"title":"上手になれない夜","note":"ノエルが練習帳を閉じようとしている。","lines":[["ノエル","また失敗したらと思うと、手が止まるんだ。"],["ヴァン","怖いなら、まず何が怖いか考えろ。"],["ノエル","失敗すること……かな。"]]},{"title":"失敗した日の話","note":"ヴァンは以前の言葉を思い出したように頷いた。","lines":[["ヴァン","俺も昔、失敗したことがある。"],["ノエル","ヴァンでも？"],["ヴァン","だから今、準備を怠らない。"]]},{"title":"それでも進む","note":"ノエルは練習帳に短い一行を書き足した。","lines":[["ノエル","怖いままでも、少しなら進めるんだね。"],["ヴァン","そうだ。一歩で十分な日もある。"],["ノエル","今日は、その一歩を忘れないようにする。"]]}]},{"id":"arc14","a":"gald","b":"toto","place":"guild","period":"any","title":"帳簿に書く名前","stages":[{"title":"名前のない欄","note":"トトは帳簿に空白の欄を作っていた。","lines":[["ガルド","ここは何を記録する？"],["トト","運ぶのを助けてくれた人の名前さ。"],["ガルド","品物の数字だけじゃないんだな。"]]},{"title":"一行の手間","note":"ガルドが帳簿を覗くと、名前が一つ増えていた。","lines":[["ガルド","小さな手伝いまで書くのか。"],["トト","小さな手伝いほど忘れやすいからね。"],["ガルド","それは、いい記録だな。"]]},{"title":"最後の一行","note":"トトは帳簿を閉じる直前、もう一行を書いた。","lines":[["トト","今日相談に乗ってくれた人も書いておいたよ。"],["ガルド","……俺の名前か。"],["トト","物を運ぶだけが助けじゃないもの。"]]}]},{"id":"arc15","a":"rio","b":"sera","place":"guild","period":"any","title":"二つの星印","stages":[{"title":"同じ記号","note":"リオとセラの地図に同じ星印が並んでいた。","lines":[["リオ","僕の星は、景色がきれいな場所の印だよ。"],["セラ","私の星は、まだ調べていない場所よ。"],["リオ","同じ形なのに意味が違うんだね！"]]},{"title":"印の凡例","note":"二人は地図の隅に小さな凡例を書き足した。","lines":[["セラ","これなら読む人が迷わないでしょう。"],["リオ","じゃあ、僕の星には小さな丸も付けるよ。"],["セラ","いい考えね。違いが一目で分かるわ。"]]},{"title":"誰でも読める地図","note":"新しい地図を見て、リオは満足そうに頷いた。","lines":[["リオ","この地図なら誰でも道を選べそう！"],["セラ","印だけでなく、言葉も添えておきましょう。"],["リオ","うん。僕たちだけの地図じゃないもんね。"]]}]},{"id":"arc16","a":"eda","b":"toto","place":"guild","period":"any","title":"帳簿を閉じる時間","stages":[{"title":"閉じられない帳簿","note":"エダはトトの開いた帳簿を覗いた。","lines":[["エダ","まだ仕事をしてたの？"],["トト","もう一行だけ、と思っていたらこんな時間さ。"],["エダ","私も同じ。終わりを決めるのって難しいね。"]]},{"title":"閉じる合図","note":"トトとエダは机の上に小さな札を置いた。","lines":[["トト","この札が出たら、今日は終わりにするよ。"],["エダ","私も手帳を閉じる合図にしようかな。"],["トト","明日の自分にも仕事は残せるからね。"]]},{"title":"机の空いた夜","note":"二人の机には、閉じた帳簿と手帳が並んでいた。","lines":[["エダ","今日はちゃんと閉じられたね。"],["トト","思ったより気分がいいよ。"],["エダ","じゃあ、お茶でも飲みに行こうか。"]]}]},{"id":"arc17","a":"sera","b":"mina","place":"guild","period":"any","title":"見落とさない備品帳","stages":[{"title":"書いていない時刻","note":"セラがミーナの備品帳に気づいた。","lines":[["セラ","補充した時刻も記録すると便利よ。"],["ミーナ","次の当番の人が迷わずに済みますね。"],["セラ","表の欄を少し増やしてみましょう。"]]},{"title":"書式を試す","note":"二人は新しい帳面を一緒に使ってみた。","lines":[["ミーナ","時刻があると、確認の順番が分かりやすいです。"],["セラ","ただ、書く手間が増えすぎないようにしたいわ。"],["ミーナ","必要な欄だけ残しましょう。"]]},{"title":"続けられる形","note":"備品帳には簡潔な印と時刻が並んでいる。","lines":[["セラ","これなら長く使えそうね。"],["ミーナ","作るだけでなく、続けられる形にできました。"],["セラ","ええ。よい記録は続いてこそ意味があるわ。"]]}]},{"id":"arc18","a":"gald","b":"rio","place":"guild","period":"night","title":"眠らない灯り","stages":[{"title":"机に残る灯","note":"リオは地図を読みながらあくびをした。","lines":[["ガルド","そろそろ休め。目が疲れている。"],["リオ","あと一つだけ見たいところがあって。"],["ガルド","続きはここに印をつけておこう。"]]},{"title":"続きの印","note":"小さな星印が地図の端に残っていた。","lines":[["リオ","この印のおかげで続きがすぐ分かったよ。"],["ガルド","なら、夜更かしは必要なかったな。"],["リオ","……たしかに！"]]},{"title":"片付いた机","note":"二人は閉じた地図を棚へ戻した。","lines":[["リオ","今日はここで終わりにするよ。"],["ガルド","いい判断だ。"],["リオ","明日の冒険は、明日の僕に任せる！"]]}]}];
+ const arcById=Object.fromEntries(arcDefs.map(a=>[a.id,a]));
+ const arcScenes=arcDefs.flatMap(a=>a.stages.map((stage,i)=>({
+  id:a.id+'-'+(i+1),a:a.a,b:a.b,place:a.place,period:a.period,
+  title:a.title+' — '+stage.title,note:stage.note,lines:stage.lines,
+  arcId:a.id,arcStep:i+1,arcTitle:a.title
+ })));
+ scenes.push(...arcScenes);
+ const byId=Object.fromEntries(scenes.map(s=>[s.id,s]));
+ const escapeHtml=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const dayAt=t=>1+Math.floor((480+Math.max(0,t)*30)/1440);
+ const clockAt=t=>{const m=(480+Math.max(0,t)*30)%1440;return `${String(Math.floor(m/60)).padStart(2,'0')}:${String(m%60).padStart(2,'0')}`};
+ const periodAt=t=>{const h=((480+Math.max(0,t)*30)%1440)/60;return h>=6&&h<19?'day':'night'};
+ function state(){
+  const save=bridge.read(),world=save.npcWorld;
+  if(!save.npcLifeScenes||save.npcLifeScenes.version!==1){
+   save.npcLifeScenes={version:1,cursorTick:world?.halfHours||0,nextId:1,entries:[],arcs:{active:[],completed:[],lastStartDay:0,journal:[]}};
+  }
+  if(!save.npcLifeScenes.arcs||typeof save.npcLifeScenes.arcs!=='object')
+   save.npcLifeScenes.arcs={active:[],completed:[],lastStartDay:0,journal:[]};
+  if(!Array.isArray(save.npcLifeScenes.arcs.journal))save.npcLifeScenes.arcs.journal=[];
+  return save.npcLifeScenes;
+ }
+ function eligible(scene,world,t){
+  if(scene.period!=='any'&&scene.period!==periodAt(t))return false;
+  const x=world.people?.[scene.a],y=world.people?.[scene.b];
+  return !!(x&&y&&x.location===scene.place&&y.location===scene.place
+   &&!['party','joint'].includes(x.activity)&&!['party','joint'].includes(y.activity));
+ }
+ function chooseCasual(world,book,t){
+  const day=dayAt(t),today=book.entries.filter(x=>dayAt(x.tick)===day);
+  if(today.length>=3)return null;
+  const last=book.entries.at(-1);
+  if(last && t-last.tick<4)return null;
+  const previous=new Set(book.entries.slice(-35).map(x=>x.scriptId));
+  const recentPairs=new Set(book.entries.slice(-3).map(x=>byId[x.scriptId]?[byId[x.scriptId].a,byId[x.scriptId].b].sort().join(':'):''));
+  const available=scenes.filter(s=>!s.arcId&&eligible(s,world,t));
+  const fresh=available.filter(s=>!previous.has(s.id));
+  const pool=fresh.length?fresh:available.filter(s=>!book.entries.some(x=>x.scriptId===s.id&&t-x.tick<48*12));
+  if(!pool.length)return null;
+  const ranked=pool.map(s=>{
+   const pair=[s.a,s.b].sort().join(':'),rel=Math.max(0,Math.min(100,world.relations?.[pair]??10));
+   const penalty=recentPairs.has(pair)?1000:0;
+   let hash=2166136261;
+   for(const c of s.id+':'+t+':'+(world.seed||0)){hash^=c.charCodeAt(0);hash=Math.imul(hash,16777619);}
+   return {s,score:penalty-rel/5+((hash>>>0)%650)/100};
+  }).sort((a,b)=>a.score-b.score);
+  return ranked[0].s;
+ }
+ function choose(world,book,t){
+  const day=dayAt(t),today=book.entries.filter(x=>dayAt(x.tick)===day);
+  if(today.length>=3)return null;
+  const last=book.entries.at(-1);
+  if(last&&t-last.tick<4)return null;
+  const arcs=book.arcs;
+  // Resume the oldest open storyline only after a *different day* and an actual meeting.
+  const continuations=arcs.active.slice().sort((a,b)=>a.startedDay-b.startedDay)
+   .filter(progress=>day>progress.lastDay&&progress.step>=1&&progress.step<=2)
+   .map(progress=>({progress,scene:byId[progress.id+'-'+(progress.step+1)]}))
+   .filter(o=>o.scene&&eligible(o.scene,world,t));
+  if(continuations.length){
+   const pick=continuations[0];
+   return {scene:pick.scene,arcId:pick.progress.id,step:pick.progress.step+1};
+  }
+  // At most two unfinished stories; a new one begins only when participants actually meet.
+  if(arcs.active.length<2&&day-arcs.lastStartDay>=2&&((t*11+(world.seed>>>8))%7)<3){
+   const candidates=arcDefs.filter(a=>!arcs.completed.includes(a.id)
+    &&!arcs.active.some(x=>x.id===a.id)
+    &&eligible(byId[a.id+'-1'],world,t));
+   if(candidates.length){
+    const n=(Math.imul(t+29,1103515245)^(world.seed>>>0))>>>0;
+    const candidate=candidates[n%candidates.length];
+    return {scene:byId[candidate.id+'-1'],arcId:candidate.id,step:1};
+   }
+  }
+  const scene=chooseCasual(world,book,t);
+  return scene?{scene,arcId:'',step:0}:null;
+ }
+ function applyArc(book,picked,t){
+  if(!picked.arcId)return;
+  const day=dayAt(t),arcs=book.arcs,id=picked.arcId;
+  if(!arcs.journal.some(e=>e.scriptId===picked.scene.id))arcs.journal.push({scriptId:picked.scene.id,tick:t});
+  if(picked.step===1){
+   arcs.active.push({id,step:1,lastDay:day,startedDay:day});
+   arcs.lastStartDay=day;
+  }else{
+   const item=arcs.active.find(a=>a.id===id);
+   if(!item||item.step!==picked.step-1||day<=item.lastDay)return;
+   if(picked.step===3){
+    arcs.active=arcs.active.filter(a=>a.id!==id);
+    if(!arcs.completed.includes(id))arcs.completed.push(id);
+   }else{item.step=picked.step;item.lastDay=day;}
+  }
+ }
+
+ const host=document.createElement('section');
+ host.id='npcLifeBook';host.className='npc-life-book';host.setAttribute('aria-labelledby','npcLifeTitle');
+ host.innerHTML='<div class="npc-life-heading"><div><span class="npc-life-overline">SMALL MOMENTS / 旅人たちの日々</span><h3 id="npcLifeTitle">☕ 町のひとこま帳</h3></div><span class="npc-life-count" id="npcLifeCount">0件</span></div><p class="npc-life-intro">同じ場所にいる仲間同士が交わす小さな会話。主人公に同行中の仲間は町の場面に登場しません。同行を入れ替えると、別の組み合わせの話も進みやすくなります。通常のひとこまは最近40件を表示し、連続物語は別枠で全話を読み返せます。</p><div class="npc-life-series-heading"><strong>📖 日をまたぐ小さな物語</strong><span id="npcLifeSeriesCount">完結 0 / 18</span></div><div id="npcLifeSeries" class="npc-life-series" hidden></div><div id="npcLifeEntries" class="npc-life-entries" aria-live="off"><p class="npc-life-empty">新しいひとこまが届くのを待っています。</p></div>';
+ const anchor=document.getElementById('worldPeople');
+ if(anchor)anchor.insertAdjacentElement('afterend',host);
+ else partyPanel.append(host);
+ const out=host.querySelector('#npcLifeEntries'),count=host.querySelector('#npcLifeCount');
+ const seriesEl=host.querySelector('#npcLifeSeries'),seriesCount=host.querySelector('#npcLifeSeriesCount');
+ function formatEntry(entry,latest){
+  const scene=byId[entry.scriptId];if(!scene)return '';
+  const speakers=scene.lines.map(([who,line])=>`<div class="npc-life-line"><b>${escapeHtml(who)}</b><span>「${escapeHtml(line)}」</span></div>`).join('');
+  const content=`<p class="npc-life-place">${escapeHtml(places[scene.place])} · 第${dayAt(entry.tick)}日 ${clockAt(entry.tick)}</p><div class="npc-life-dialogue">${speakers}</div><p class="npc-life-note">${escapeHtml(scene.note)}</p>`;
+  return `<details class="npc-life-item" ${latest?'open':''}><summary><span class="npc-life-summary-title">${scene.arcId?'<small class="npc-life-arc-label">連続エピソード 第'+scene.arcStep+'話</small>':''}${escapeHtml(scene.title)}</span><span class="npc-life-summary-speakers">${escapeHtml(names[scene.a])} × ${escapeHtml(names[scene.b])}</span></summary>${content}</details>`;
+ }
+ let renderSignature='';
+ function render(force=false){
+  const book=state();const recent=book.entries.filter(x=>byId[x.scriptId]).slice(-40).reverse();
+  const arcs=book.arcs;
+  const signature=recent.map(x=>x.serial+':'+x.chatSent).join(',')+'|'+arcs.active.map(x=>x.id+':'+x.step).join(',')+'|'+arcs.completed.join(',')+'|'+arcs.journal.map(x=>x.scriptId).join(',');
+  if(!force&&signature===renderSignature)return;
+  // The visible list is capped at 40, but nextId records all actual scenes.
+  renderSignature=signature;count.textContent=`通算 ${Math.max(0,book.nextId-1).toLocaleString('ja-JP')}件`;
+  seriesCount.textContent=`完結 ${arcs.completed.length} / ${arcDefs.length}`;
+  seriesEl.hidden=!arcs.active.length&&!arcs.completed.length;
+  const activeHtml=arcs.active.map(p=>{
+   const a=arcById[p.id];if(!a)return '';
+   return `<div class="npc-life-series-row"><b>${escapeHtml(a.title)}</b><span>${p.step}/3話 · 次の再会を待っています</span></div>`;
+  }).join('');
+  const doneHtml=arcs.completed.length?`<details class="npc-life-completed"><summary>完結した物語（${arcs.completed.length}本）</summary><div class="npc-life-completed-grid">${arcs.completed.map(id=>{
+   const a=arcById[id];if(!a)return '';
+   const episodes=arcs.journal.filter(e=>e.scriptId.startsWith(id+'-')).sort((x,y)=>x.scriptId.localeCompare(y.scriptId));
+   return `<details class="npc-life-completed-book"><summary>${escapeHtml(a.title)} · 全3話</summary><div class="npc-life-completed-stages">${episodes.length?episodes.map(e=>formatEntry(e,false)).join(''):'<p>以前の記録は保存されていません。今後完結する物語は全話を読み返せます。</p>'}</div></details>`;
+  }).join('')}</div></details>`:'';
+  seriesEl.innerHTML=activeHtml+doneHtml;
+
+  out.innerHTML=recent.length?`${recent.slice(0,4).map((x,i)=>formatEntry(x,i===0)).join('')}${recent.length>4?`<details class="npc-life-archive"><summary>以前のひとこまを読む（${recent.length-4}件）</summary><div class="npc-life-archive-grid">${recent.slice(4).map(x=>formatEntry(x,false)).join('')}</div></details>`:''}`:'<p class="npc-life-empty">まだ小さな出来事の記録はありません。仲間たちが同じ場所で過ごしていると、会話が生まれます。</p>';
+ }
+ function relay(){
+  const book=state(),world=bridge.read().npcWorld;
+  for(const entry of book.entries.slice(-4)){
+   if(entry.chatSent)continue;
+   const s=byId[entry.scriptId];if(!s){entry.chatSent=true;continue;}
+   if(world.halfHours-entry.tick>2){entry.chatSent=true;continue;}
+   if(window.KazeChat?.publishNpcLife?.(entry.serial,s.lines)){
+    entry.chatSent=true;bridge.persist('npcLifeChat');return true;
+   }
+   break;
+  }
+  return false;
+ }
+ let knownSave=null;
+ function sync(){
+  const save=bridge.read(),w=save.npcWorld;
+  if(!w)return;
+  const book=state();
+  if(knownSave!==save){knownSave=save;renderSignature='';}
+  // Newly introduced saves start at the current world tick; never fabricate historical meetings.
+  if(w.halfHours<book.cursorTick)book.cursorTick=w.halfHours;
+  const t=w.halfHours;
+  if(t>book.cursorTick){
+   book.cursorTick=t;
+   if(save.tutorial?.status!=='active'&&document.visibilityState!=='hidden'){
+    const day=dayAt(t),today=book.entries.filter(x=>dayAt(x.tick)===day);
+    // Deterministic lightweight gate; 1–3 scenes/day only when characters actually meet.
+    if(today.length<3&&(today.length===0||((t*7+(w.seed>>>12))%5)<3)){
+     const picked=choose(w,book,t);
+     if(picked){const scene=picked.scene;book.entries.push({serial:book.nextId++,scriptId:scene.id,tick:t,chatSent:false});
+      applyArc(book,picked,t);
+      if(book.entries.length>48)book.entries.splice(0,book.entries.length-48);
+     }
+    }
+   }
+   bridge.persist('npcLifeTick');render(true);
+  }
+  relay();render();
+ }
+ window.KazeNpcLife={sync,inspect:()=>({scenes:scenes.length,casualScenes:54,series:arcDefs.length,arcs:JSON.parse(JSON.stringify(state().arcs)),records:state().entries.slice(),currentTick:bridge.tick(),eligible:scenes.filter(s=>eligible(s,bridge.read().npcWorld,bridge.tick())).map(s=>s.id)}),definitions:scenes.map(s=>({id:s.id,a:s.a,b:s.b,place:s.place,period:s.period,title:s.title}))};
+ sync();setInterval(sync,2800);
+})();
+
+</script>
+<style id="npc-life-links-style-v166">
+#npcLifeBook .npc-life-series-heading strong{color:#315749!important}
+#npcLifeCrosslinks{margin:12px 0;padding:12px 14px;background:#f4f0e4;border:1px solid #d9c6a8;border-radius:13px;color:#2d5144}
+#npcLifeCrosslinks h4{margin:0 0 6px;color:#2f5546!important;font-size:15px}
+#npcLifeCrosslinks p{margin:3px 0;font-size:12px;line-height:1.65;color:#526b5b}
+#npcLifeJointEcho[hidden]{display:none!important}
+#npcLifeJointEcho{margin:12px 0;padding:12px;background:#f4efe2;border:1px solid #d8c9aa;border-radius:13px;color:#304f42}
+#npcLifeJointEcho h4{margin:0 0 7px;color:#315746!important;font-size:15px}
+#npcLifeJointEcho .life-joint-record{padding:8px 0;border-top:1px solid #ded3bb;font-size:13px;line-height:1.7;overflow-wrap:anywhere;color:#35594a}
+@media(max-width:440px){#npcLifeJointEcho,#npcLifeCrosslinks{padding:10px}}
+</style>
+<script id="npc-life-links-v166">
+/* Follow-up threads backed by completed, recorded NPC-to-NPC stories and actual expeditions. */
+(()=>{'use strict';
+ const bridge=window.KazeWindBridge,book=window.KazeNpcLife;
+ if(!bridge||!book)return;
+ const arcs=[{"id":"arc01","a":"gald","b":"rio","title":"なくした地図","letter":"リオと探していた地図の話、覚えているか。あいつは見つけたあと、ちゃんとしまう場所を決めた。小さなことだが、少し安心したよ。","chat":[["リオ","地図の場所は決めたよ！　今度は迷わないと思う。"],["ガルド","その言葉も地図に書いておくといい。"]]},{"id":"arc02","a":"mina","b":"eda","title":"当番表の空白","letter":"エダさんと当番表を見直したんです。互いに休める時間も書いたら、かえって仕事の見通しがよくなりました。","chat":[["エダ","今日は当番表に空白があるね。"],["ミーナ","ええ。休むための大切な予定です。"]]},{"id":"arc03","a":"noel","b":"sera","title":"消さない練習帳","letter":"セラさんと話した練習帳、間違いを消さずに残しています。前よりできるようになったところも見つかるんです。","chat":[["ノエル","あの失敗の印、まだ残してるよ。"],["セラ","よいと思うわ。変化が分かるもの。"]]},{"id":"arc04","a":"toto","b":"van","title":"重すぎる荷箱","letter":"ヴァンと運んだ荷の話さ。力任せより分けて運ぶほうがいいこともある。あいつも今は荷の数を確かめるようになったよ。","chat":[["トト","今日は荷箱をちゃんと分けておいたよ。"],["ヴァン","俺も一つずつ運ぶとしよう。"]]},{"id":"arc05","a":"rio","b":"toto","title":"森の小さな店","letter":"トトと森で見つけた小さな店の話、まだ地図に残ってるよ。店の場所だけじゃなく、帰り道も書いたんだ！","chat":[["リオ","あのお店、また行けたらいいな。"],["トト","道を覚えたなら、今度は迷わず帰れるね。"]]},{"id":"arc06","a":"gald","b":"mina","title":"救護箱の札","letter":"ミーナと救護箱に札を付けたことがある。俺がいない時にも誰かが迷わず使えるのは、やはり大事だな。","chat":[["ガルド","救護箱の札、まだ読めるな。"],["ミーナ","誰でも見つけられる場所に置いてあります。"]]},{"id":"arc07","a":"eda","b":"rio","title":"休みの日の地図","letter":"リオが休みの日の地図を描いてくれたの。行きたい場所を自分で選ぶのって、少し楽しくなってきたよ。","chat":[["エダ","あの地図、ちゃんと取ってあるよ。"],["リオ","次の休みも、空白を増やしておこう！"]]},{"id":"arc08","a":"sera","b":"eda","title":"書き換えない記録","letter":"エダと書いた記録のことを思い出していたわ。分からないところは、無理に説明を足さずに残しておくことにしたの。","chat":[["セラ","記録の余白は、そのままにしておいたわ。"],["エダ","あとで読み返すとき、きっと助かるね。"]]},{"id":"arc09","a":"eda","b":"noel","title":"一歩先の約束","letter":"ノエルと決めた小さな約束、急がず守ることにしたよ。できたことを一つずつ話せるのが、なんだかうれしいね。","chat":[["ノエル","約束したこと、一つできたんだ。"],["エダ","うん。急がず聞かせて。"]]},{"id":"arc10","a":"mina","b":"noel","title":"包帯の小さな練習","letter":"ノエルさんと包帯をたたむ練習をしました。何度でも試していいと分かって、前より落ち着いていたようです。","chat":[["ノエル","今日は端がそろったよ！"],["ミーナ","ちゃんと練習の成果が出ていますね。"]]},{"id":"arc11","a":"van","b":"mina","title":"手袋の縫い目","letter":"ミーナに手袋の傷を直してもらった。まだ使えると言い張るより、傷む前に手入れするほうがいいな。","chat":[["ヴァン","あの手袋、今日は問題ない。"],["ミーナ","よかったです。でもまた確かめてくださいね。"]]},{"id":"arc12","a":"gald","b":"van","title":"剣の手入れ当番","letter":"ヴァンと剣の手入れ当番を分けた。互いの癖が分かると、刃の傷まで見落としにくくなるものだな。","chat":[["ヴァン","今日は俺が刃を確かめておく。"],["ガルド","頼んだ。俺は柄を見ておこう。"]]},{"id":"arc13","a":"noel","b":"van","title":"怖さの置き場所","letter":"ヴァンに怖いときのことを聞いたんです。強い人でも怖いことはあるって分かって、練習に戻りやすくなりました。","chat":[["ノエル","怖くても、一歩だけやってみるよ。"],["ヴァン","それなら十分だ。急ぐな。"]]},{"id":"arc14","a":"toto","b":"gald","title":"帳簿に書く名前","letter":"ガルドと話した帳簿の余白さ。品物の数だけじゃなく、手伝ってくれた人の名前も忘れたくないね。","chat":[["トト","今日は名前の欄も埋まったよ。"],["ガルド","仕事をした人のことが残るなら、いい帳簿だ。"]]},{"id":"arc15","a":"rio","b":"sera","title":"二つの星印","letter":"セラと地図に付けた星印、意味が違っていたんだ。いまは凡例も書いてるよ。同じ印でも見方が変わるんだね。","chat":[["リオ","この星印は、調べたい場所！"],["セラ","ええ。凡例も書いてあるから分かるわ。"]]},{"id":"arc16","a":"eda","b":"toto","title":"帳簿を閉じる時間","letter":"トトと話してから、今日の仕事を終える時刻を意識してるの。全部を片づけるより、大切なことを選ぶ日もあるね。","chat":[["エダ","そろそろ手帳を閉じようかな。"],["トト","あたしも帳簿を閉じるよ。明日また開ければいいさ。"]]},{"id":"arc17","a":"sera","b":"mina","title":"見落とさない備品帳","letter":"ミーナと備品帳を確かめたの。誰が見ても分かる記録って、書く人だけでは作れないのね。","chat":[["セラ","この欄、読みやすくなったわ。"],["ミーナ","次の担当の人も迷わず済みますね。"]]},{"id":"arc18","a":"rio","b":"gald","title":"眠らない灯り","letter":"ガルドと遅くまで地図を見ていた日のこと、まだ覚えてるよ。今度は眠る時間もちゃんと決めてから始めるんだ。","chat":[["リオ","今日は灯りを消す時間も決めたよ！"],["ガルド","それなら、安心して地図を広げられるな。"]]}];
+ const byId=Object.fromEntries(arcs.map(a=>[a.id,a]));
+ const names={"gald": "ガルド", "rio": "リオ", "sera": "セラ", "mina": "ミーナ", "noel": "ノエル", "eda": "エダ", "toto": "トト", "van": "ヴァン"};
+ const lifePanel=document.getElementById('npcLifeBook');
+ const expeditionPanel=document.getElementById('worldExpeditions');
+ if(!lifePanel||!expeditionPanel)return;
+ const summary=document.createElement('section');summary.id='npcLifeCrosslinks';summary.setAttribute('aria-label','続いていく仲間の話');
+ lifePanel.querySelector('.npc-life-series-heading')?.insertAdjacentElement('beforebegin',summary);
+ const jointPanel=document.createElement('section');jointPanel.id='npcLifeJointEcho';jointPanel.hidden=true;
+ expeditionPanel.insertAdjacentElement('afterend',jointPanel);
+ const day=t=>1+Math.floor((480+t*30)/1440);
+ const time=t=>`第${day(t)}日 ${String(Math.floor((480+t*30)%1440/60)).padStart(2,'0')}:${String((480+t*30)%60).padStart(2,'0')}`;
+ const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function state(){const s=bridge.read();return s.npcLifeScenes?.links;}
+ function completed(){const s=bridge.read(),arcsState=s.npcLifeScenes?.arcs;
+  const records=arcsState?.journal||[];
+  return (arcsState?.completed||[]).map(id=>{
+   const entry=records.find(e=>e.scriptId===id+'-3');
+   return entry&&byId[id]?{...byId[id],tick:entry.tick}:null;
+  }).filter(Boolean);
+ }
+ function readyPerson(id){const save=bridge.read(),p=save.npcWorld?.people?.[id];
+  return p&&!save.selected?.includes(id)&&p.activity!=='party'&&p.activity!=='joint';
+ }
+ function samePlace(a,b){const w=bridge.read().npcWorld;
+  return readyPerson(a)&&readyPerson(b)&&w.people[a].location===w.people[b].location;
+ }
+ function init(){const links=state();if(!links||links.initialized)return false;
+  const now=bridge.tick();
+  // Only previously recorded episodes qualify. A past episode can inspire a NEW later message.
+  links.initialized=true;links.installedTick=now;links.letters=[];links.chats=[];links.joints=[];
+  links.jointNotes=[];links.lastLetterTick=-48;links.lastChatTick=-48;
+  bridge.persist('npcLifeLinksMigrate');return true;
+ }
+ function letter(arc,links){const save=bridge.read(),f=save.windLetters,t=bridge.tick();
+  if(!f||links.letters.includes(arc.id)||day(t)<=day(arc.tick)||day(t)===day(links.lastLetterTick))return false;
+  if(!readyPerson(arc.a)||!window.WindLetterUI)return false;
+  f.threads??={};const thread=f.threads[arc.a]??(f.threads[arc.a]=[]),key='life-'+arc.id;
+  if(thread.some(m=>m.lifeEchoKey===key)){links.letters.push(arc.id);bridge.persist('npcLifeAlreadyLetter');return true;}
+  const before=thread.slice(),prev=links.lastLetterTick;
+  thread.push({side:'in',text:arc.letter,kind:'npcLife',tick:t,read:false,lifeEchoKey:key});
+  if(thread.length>200){const ix=thread.findIndex(m=>m.side==='in'&&m.read&&m.kind!=='npcLife');thread.splice(ix>=0?ix:0,1);}
+  links.letters.push(arc.id);links.lastLetterTick=t;
+  if(!bridge.persist('npcLifeLetter')){f.threads[arc.a]=before;links.letters=links.letters.filter(id=>id!==arc.id);links.lastLetterTick=prev;return false;}
+  window.WindLetterUI.sync();return true;
+ }
+ function chat(arc,links){const t=bridge.tick();
+  if(links.chats.includes(arc.id)||day(t)<=day(arc.tick)||day(t)===day(links.lastChatTick)||!samePlace(arc.a,arc.b))return false;
+  const serial=920000+Number(arc.id.slice(3));
+  if(!window.KazeChat?.publishNpcLife?.(serial,arc.chat))return false;
+  links.chats.push(arc.id);links.lastChatTick=t;bridge.persist('npcLifeMemoryChat');return true;
+ }
+ function joint(links){const w=bridge.read().npcWorld,events=w?.expeditionHistory||[],arcsDone=completed();
+  for(const arc of arcsDone){
+   if(links.joints.includes(arc.id))continue;
+   const key=[arc.a,arc.b].sort().join(':');
+   const ev=events.find(e=>e.key===key&&e.tick>arc.tick&&e.tick>links.installedTick&&e.tick<=w.halfHours);
+   if(!ev)continue;
+   const before=JSON.stringify(links);
+   links.joints.push(arc.id);links.jointNotes.push({id:arc.id,tick:ev.tick,success:ev.success===true});
+   links.jointNotes=links.jointNotes.slice(-12);
+   if(!bridge.persist('npcLifeJointMemory')){
+    Object.assign(links,JSON.parse(before));return false;
+   }
+   return true;
+  }
+  return false;
+ }
+ let prevSignature='';
+ function display(links){
+  const sig=[links.letters.join(','),links.chats.join(','),links.jointNotes.map(e=>e.id+':'+e.tick).join(',')].join('|');
+  if(sig===prevSignature)return;prevSignature=sig;
+  summary.innerHTML=`<h4>✧ 別の場所へ続く小さな物語</h4><p>風信帳での後日談 ${links.letters.length}件 ／ 世界チャットでの思い出話 ${links.chats.length}件 ／ 共同遠征での再会 ${links.jointNotes.length}件</p><p>ここにある数字は、実際に発生した出来事だけを数えています。過去の会話を読み返すこともできます。</p>`;
+  const list=links.jointNotes.slice(-4).reverse();jointPanel.hidden=!list.length;
+  jointPanel.innerHTML=list.length?'<h4>✧ 共同遠征で思い出したこと</h4>'+list.map(e=>{
+   const a=byId[e.id];return a?`<div class="life-joint-record"><b>${escape(names[a.a])} × ${escape(names[a.b])}</b> ・ ${escape(time(e.tick))}<div>${escape(e.success?'二人は無事に共同遠征から帰還した。':'二人は無理せず共同遠征から引き返した。')} 以前の「${escape(a.title)}」の出来事も、今では二人だけの思い出になっている。</div></div>`:'';
+  }).join(''):'';
+ }
+ let lastSave=null;
+ function sync(){
+  const save=bridge.read(),links=state();if(!links||!save.npcWorld)return;
+  if(lastSave!==save){lastSave=save;prevSignature='';}
+  if(!links.initialized){init();display(links);return;}
+  if(save.tutorial?.status==='active'){display(links);return;}
+  const done=completed();
+  // At most one letter and one chat a game day; avoid queues of stale messages.
+  joint(links);
+  done.some(a=>letter(a,links));
+  done.some(a=>chat(a,links));
+  display(links);
+ }
+ window.KazeNpcLifeLinks={sync,inspect:()=>({completed:completed().map(x=>x.id),links:JSON.parse(JSON.stringify(state())),jointRecords:bridge.read().npcWorld?.expeditionHistory?.slice(0,4)||[]})};
+ sync();setInterval(sync,3500);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync();});
+})();
+</script>
 <style id="ui-cohesion-v0148">
 /* v0.9.148 | Five-page UI cohesion and safe mobile bottom dock.
    Presentation only: no changes to gameplay, persistence, or page selection. */
@@ -14699,4 +15332,407 @@ if(peopleRoot)new MutationObserver(()=>hydrate()).observe(peopleRoot,{childList:
 }
 /* Mobile layout intentionally inherits the existing 0.9.154 rules unchanged. */
 </style>
+<style id="kaze-player-bonds-v168-style">
+#kazePlayerBonds{margin:16px 0 0;padding:15px;border:1px solid #c8b99d;border-radius:17px;background:linear-gradient(145deg,#fffaf0,#f4ecdc);color:#2d5042;box-shadow:0 4px 14px #453d2510}
+#kazePlayerBonds .bonds-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:1px solid #dbcdb4;padding-bottom:10px;margin-bottom:10px}
+#kazePlayerBonds .bonds-kicker{font-size:10px;letter-spacing:.1em;font-weight:800;color:#8d7654;margin:0 0 4px}
+#kazePlayerBonds h3{color:#2e594a!important;font-size:19px;margin:0}
+#kazePlayerBonds .bonds-counter{font-size:12px;font-weight:800;color:#3b6955;background:#e8efe4;border:1px solid #c5d2bc;padding:6px 9px;border-radius:20px}
+#kazePlayerBonds .bonds-intro{font-size:13px;line-height:1.8;color:#536c5d!important;margin:0 0 12px}
+#kazePlayerBonds .bonds-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#kazePlayerBonds .bonds-card{min-width:0;background:#fffdf6;border:1px solid #d7c7a7;border-radius:12px;overflow:hidden}
+#kazePlayerBonds .bonds-card>summary{display:flex;align-items:center;gap:6px;flex-wrap:wrap;cursor:pointer;padding:12px;color:#2e5544!important;font-size:14px;font-weight:800;min-height:46px}
+#kazePlayerBonds .bonds-card>summary small{font-size:11px;color:#728273;font-weight:500;margin-left:auto}
+#kazePlayerBonds .bonds-talk{padding:0 12px 12px;display:grid;gap:8px}
+#kazePlayerBonds .bonds-talk p{margin:0;line-height:1.65;color:#345b48!important;font-size:13px}
+#kazePlayerBonds .bonds-talk strong{color:#2b5645!important;font-weight:800;margin-right:5px}
+#kazePlayerBonds .bonds-archive{grid-column:1/-1;border:1px solid #d8cab1;border-radius:12px;background:#fbf6ea}
+#kazePlayerBonds .bonds-archive>summary{padding:12px;font-weight:800;color:#365d4a!important;min-height:44px;cursor:pointer}
+#kazePlayerBonds .bonds-archive-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0 10px 12px}
+#kazePlayerBonds .bonds-empty{color:#546c5f!important;font-size:13px;line-height:1.8;margin:5px 0 0}
+@media(max-width:860px){#kazePlayerBonds .bonds-list,#kazePlayerBonds .bonds-archive-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:440px){#kazePlayerBonds{padding:12px 10px}#kazePlayerBonds .bonds-card>summary{font-size:13px;padding:10px}#kazePlayerBonds h3{font-size:18px}}
+</style>
+<script id="kaze-player-bonds-v168">
+/* A quiet MMORPG social layer: dialogues are fictional players' chat, not revealed real identities. */
+(()=>{'use strict';
+ const bridge=window.KazeWindBridge,chat=window.KazeChat;
+ const world=document.getElementById('worldSection'),diary=document.getElementById('npcLifeBook');
+ if(!bridge||!chat||!world||!diary)return;
+ const SCENES=[{"id":"qb01","pair":["gald","rio"],"gate":null,"title":"待ち合わせの時間","lines":[["ガルド","リオ、待たせたな。少し予定が押した。"],["リオ","大丈夫！　その間、近くの道を描いてたよ。"],["ガルド","待つ時間まで楽しめるのは、いいことだな。"]]},{"id":"qb02","pair":["sera","noel"],"gate":null,"title":"教える側と習う側","lines":[["ノエル","また詠唱を間違えちゃった。もう一度いいかな。"],["セラ","もちろん。私も最初は何度も間違えたもの。"],["ノエル","そうなんだ。少し安心したよ。"]]},{"id":"qb03","pair":["mina","eda"],"gate":null,"title":"無理のない予定","lines":[["エダ","明日も一緒に遠征できるかな？"],["ミーナ","予定が合えばぜひ。無理なら、また別の日にしましょう。"],["エダ","うん。楽しみは逃げないもんね。"]]},{"id":"qb04","pair":["toto","van"],"gate":null,"title":"誰かと戦う理由","lines":[["トト","あんたは一人で強敵に挑むのが好きだねえ。"],["ヴァン","一人で確かめたいことがある。だが、誘われるのも嫌いじゃない。"],["トト","そうかい。じゃあ今度、こっちから声をかけるよ。"]]},{"id":"qb05","pair":["gald","mina"],"gate":null,"title":"休憩の約束","lines":[["ガルド","少し休んでから次へ行こう。"],["ミーナ","ガルドさんから言ってもらえると助かります。"],["ガルド","俺も休みたかったんだ。気にするな。"]]},{"id":"qb06","pair":["rio","toto"],"gate":null,"title":"売るより残すもの","lines":[["リオ","この石、売ったらいくらになるかな？"],["トト","値段も悪くないけど、初めて拾った場所の記念にもなるね。"],["リオ","じゃあ、今日は持って帰る！"]]},{"id":"qb07","pair":["gald","van"],"gate":null,"title":"強い人の迷い","lines":[["ヴァン","昨日は同じ相手に何度も負けた。"],["ガルド","なら今日は、一つ作戦を変えてみるか。"],["ヴァン","ああ。付き合ってくれるなら助かる。"]]},{"id":"qb08","pair":["sera","eda"],"gate":null,"title":"分からないを残す","lines":[["エダ","調べても分からないことって、書いていいのかな。"],["セラ","ええ。「まだ分からない」と記録するのも大切よ。"],["エダ","それなら、ここはそのまま残そう。"]]},{"id":"qb09","pair":["noel","van"],"gate":null,"title":"上手な負け方","lines":[["ノエル","負けたあとって、何を見直せばいいのかな。"],["ヴァン","まず、生き残れた時間を見てみろ。"],["ノエル","……少しずつ長くなってる。うれしいな。"]]},{"id":"qb10","pair":["toto","eda"],"gate":null,"title":"遊び方の違い","lines":[["エダ","今日は新しい機能を試してみたいんだ。"],["トト","あたしは市場の相場を見たいねえ。"],["エダ","じゃあ、あとで発見を交換しよう！"]]},{"id":"qb11","pair":["rio","sera"],"gate":null,"title":"知らない景色の話","lines":[["リオ","まだ地図の空白があるんだ！"],["セラ","慌てて埋めなくてもいいわ。空白がある間だけの楽しみもあるもの。"],["リオ","それもそうだね。ゆっくり行こう！"]]},{"id":"qb12","pair":["mina","noel"],"gate":null,"title":"短い時間の練習","lines":[["ノエル","今日は少ししか遊べないんだ。"],["ミーナ","それなら短い練習を一つだけにしましょう。"],["ノエル","うん。一つでも覚えて帰りたいな。"]]},{"id":"qb13","pair":["van","sera"],"gate":null,"title":"説明しすぎない案内","lines":[["ヴァン","あの仕掛け、答えを教えれば早いが……。"],["セラ","相手が考える時間も残したいわね。"],["ヴァン","そうだな。まずヒントだけにする。"]]},{"id":"qb14","pair":["gald","eda"],"gate":null,"title":"初めての提案","lines":[["エダ","今度の遠征、私が行き先を決めてもいい？"],["ガルド","もちろんだ。相談はするが、任せてみたい。"],["エダ","やった！　じゃあ帰り道も考えておくね。"]]},{"id":"qb15","pair":["toto","noel"],"gate":null,"title":"メモの置き場所","lines":[["ノエル","装備の使い方を紙に書いたんだ。"],["トト","いいねえ。こっちは値札で手一杯だよ。"],["ノエル","必要なら、覚えたことを分けるよ。"]]},{"id":"qb16","pair":["rio","van"],"gate":null,"title":"失敗の話","lines":[["リオ","初めて行く場所って、わくわくする！"],["ヴァン","俺もそうだ。何度負けてもな。"],["リオ","ヴァンも最初は負けてたんだね！"]]},{"id":"qb17","pair":["mina","toto"],"gate":null,"title":"花の話から","lines":[["ミーナ","この薬草、名前が似ているものが多いんです。"],["トト","葉っぱの形なら、あたしも少しは詳しいよ。"],["ミーナ","では、一緒に見比べてみませんか。"]]},{"id":"qb18","pair":["noel","gald"],"gate":null,"title":"先輩と後輩","lines":[["ノエル","ガルドは、ここで長く冒険しているんだよね。"],["ガルド","ああ。だが知らないこともまだ多い。"],["ノエル","僕も、少しずつ覚えていきたいな。"]]},{"id":"qb19","pair":["gald","rio"],"gate":"arc01","title":"折りたたんだ地図","lines":[["リオ","今日は地図、ちゃんとしまってあるよ。"],["ガルド","なら心配いらないな。……なくしたら一緒に探すが。"],["リオ","そのときはよろしく！"]]},{"id":"qb20","pair":["sera","noel"],"gate":"arc03","title":"練習帳の続き","lines":[["ノエル","消さずに残した間違い、見返したら少し面白かったよ。"],["セラ","上達したところも分かるでしょう。"],["ノエル","うん。前の自分が応援してくれてるみたい。"]]},{"id":"qb21","pair":["mina","eda"],"gate":"arc02","title":"空いた時間","lines":[["エダ","当番表に休む時間も書いてよかったね。"],["ミーナ","ええ。予定を空けるのも、大事な準備ですね。"],["エダ","今日はその時間に、のんびりしようかな。"]]},{"id":"qb22","pair":["toto","van"],"gate":"arc04","title":"荷箱を分けて","lines":[["トト","この前の荷箱、今日は最初から分けて運んだよ。"],["ヴァン","そのほうが早かったな。"],["トト","ふふ、力の使いどころは選ぶもんさ。"]]},{"id":"qb23","pair":["gald","mina"],"gate":"arc06","title":"救護箱の札","lines":[["ガルド","救護箱の札、今日も役に立っていたな。"],["ミーナ","ガルドさんも気づいてくれたんですね。"],["ガルド","ああ。備えたことが残るのは、いい。"]]},{"id":"qb24","pair":["rio","toto"],"gate":"arc05","title":"森の小さな店の話","lines":[["リオ","あのお店の場所、地図にちゃんと残してあるよ！"],["トト","それなら今度は道案内を頼もうかねえ。"],["リオ","任せて！　帰り道まで案内するよ！"]]}];
+ const byId=Object.fromEntries(SCENES.map(x=>[x.id,x]));
+ const playerIds=['gald','rio','sera','mina','noel','eda','toto','van'];
+ const day=t=>1+Math.floor((480+Math.max(0,t)*30)/1440);
+ const hour=t=>String(Math.floor(((480+t*30)%1440)/60)).padStart(2,'0')+':'+String((480+t*30)%60).padStart(2,'0');
+ const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const panel=document.createElement('section');panel.id='kazePlayerBonds';panel.setAttribute('aria-labelledby','kazePlayerBondsTitle');
+ panel.innerHTML='<div class="bonds-head"><div><p class="bonds-kicker">ONLINE FRIENDSHIPS / 旅人同士の会話</p><h3 id="kazePlayerBondsTitle">✦ ログの向こうの仲間たち</h3></div><span id="kazeBondsCount" class="bonds-counter">0件</span></div><p class="bonds-intro">攻略の相談も、次に遊べる日の約束も。現実の素性を知らなくても、仲間たちは少しずつ親しくなっていきます。実際に世界チャットで交わされた話を記録します。ここでは最近32件を保存・表示します。</p><div id="kazeBondsEntries" class="bonds-list" aria-live="off"><p class="bonds-empty">まだ新しい会話の記録はありません。</p></div>';
+ diary.insertAdjacentElement('afterend',panel);
+ const target=panel.querySelector('#kazeBondsEntries'),count=panel.querySelector('#kazeBondsCount');
+ function state(){const s=bridge.read();return s.chatRoom?.playerBonds;}
+ function initialize(){const s=bridge.read(),c=s.chatRoom,t=bridge.tick();
+  if(c.playerBonds?.version===1&&c.playerBonds.initialized===true)return c.playerBonds;
+  c.playerBonds={version:1,initialized:true,cursorTick:t,lastDay:0,seen:[],lastByPair:{},history:[]};
+  bridge.persist('playerBondsInit');return c.playerBonds;
+ }
+ function ready(id,s){
+  const person=s.npcWorld?.people?.[id];
+  if(!person||person.activity==='joint')return false;
+  const presence=s.chatRoom?.personaPresence;
+  if(!presence?.initialized)return false;
+  if((s.selected||[]).includes(id))return true;
+  return presence.states?.[id]==='online';
+ }
+ function canStart(s){return !document.hidden&&!s.chatRoom?.quiet&&s.tutorial?.status!=='active'&&!s.chatRoom?.pendingReplies?.length&&!bridge.active?.();}
+ function qualifies(scene,s,b,nowDay){
+  if(scene.gate&&!s.npcLifeScenes?.arcs?.completed?.includes(scene.gate))return false;
+  if(!scene.pair.every(id=>ready(id,s)))return false;
+  const pair=scene.pair.slice().sort().join(':');
+  if(nowDay-(b.lastByPair[pair]||-99)<4)return false;
+  const wasSeen=b.seen.includes(scene.id);
+  if(wasSeen){const last=b.history.slice().reverse().find(e=>e.id===scene.id);if(!last||nowDay-day(last.tick)<18)return false;}
+  return true;
+ }
+ function talk(s,b,t){const nowDay=day(t);
+  // No more than one conversation every two in-world days; don't crowd regular chat.
+  if(nowDay-b.lastDay<2||t%5!==0)return false;
+  const pool=SCENES.filter(scene=>qualifies(scene,s,b,nowDay));
+  if(!pool.length)return false;
+  const newScenes=pool.filter(x=>!b.seen.includes(x.id));
+  const choices=newScenes.length?newScenes:pool;
+  const seed=(s.npcWorld?.seed||1)>>>0;
+  const picked=choices[(t+nowDay+seed)%choices.length];
+  const serial=930000+Number(picked.id.slice(2));
+  if(!chat.publishNpcLife(serial,picked.lines))return false;
+  b.lastDay=nowDay;b.seen=[...new Set([...b.seen,picked.id])].slice(-24);
+  b.lastByPair[picked.pair.slice().sort().join(':')]=nowDay;
+  b.history.push({id:picked.id,tick:t});b.history=b.history.slice(-32);
+  bridge.persist('playerBondsScene');return true;
+ }
+ function entry(e,open=false){const scene=byId[e.id];if(!scene)return '';
+  return `<details class="bonds-card" ${open?'open':''}><summary><span>${escape(scene.title)}</span><small>第${day(e.tick)}日 ${hour(e.tick)}</small></summary><div class="bonds-talk">${scene.lines.map(([name,text])=>`<p><strong>${escape(name)}</strong>「${escape(text)}」</p>`).join('')}</div></details>`;
+ }
+ let signature='';
+ function render(b,force=false){const entries=b.history.filter(e=>byId[e.id]).slice().reverse();
+  const sig=entries.map(x=>x.id+':'+x.tick).join('|');if(sig===signature&&!force)return;signature=sig;
+  count.textContent='最近 '+entries.length+'件';
+  target.innerHTML=entries.length?entries.slice(0,4).map((e,i)=>entry(e,i===0)).join('')+(entries.length>4?`<details class="bonds-archive"><summary>以前のゲーム談義を読む（${entries.length-4}件）</summary><div class="bonds-archive-grid">${entries.slice(4).map(e=>entry(e)).join('')}</div></details>`:''):'<p class="bonds-empty">仲間たちが時間を合わせてログインすると、ここにも会話が残ります。現実の年齢や仕事を公開する必要はありません。</p>';
+ }
+ let ref=null;
+ function sync(){const s=bridge.read();if(!s?.npcWorld||!s.chatRoom)return;
+  if(s!==ref){ref=s;signature='';}
+  const b=initialize(),t=bridge.tick();
+  if(t<b.cursorTick){b.cursorTick=t;bridge.persist('playerBondsRebaseline');render(b);return;}
+  if(t>b.cursorTick){const delta=t-b.cursorTick;b.cursorTick=t;
+   if(delta<=2&&canStart(s))talk(s,b,t);
+   bridge.persist('playerBondsTick');
+  }
+  render(b);
+ }
+ window.KazePlayerBonds={inspect:()=>{const b=state();return b?{count:b.history.length,heard:b.seen.slice(),lastDay:b.lastDay,history:b.history.slice(),cursorTick:b.cursorTick}:null;},sync};
+ sync();setInterval(sync,3500);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync()});
+})();
+</script>
+
+<style id="kaze-party-journey-style-v09170">
+.pj-panel{margin-top:16px;padding:15px;border:1px solid #d4c3a2;border-radius:17px;background:linear-gradient(155deg,#fffdf6,#f1ecde);color:#284b40;box-shadow:0 3px 12px #6e533718}
+.pj-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.pj-kicker{font-size:10px;letter-spacing:.11em;color:#8b7955;font-weight:800}
+.pj-heading h3{margin:4px 0 0;font-size:19px;color:#2c5244;font-weight:800}
+.pj-counter{border:1px solid #b9c9b5;border-radius:99px;padding:5px 10px;color:#366251;background:#e8eddf;font-size:12px;font-weight:750}
+.pj-help{margin:9px 0 12px;font-size:13px;line-height:1.75;color:#4c6a5d}
+.pj-entries{display:grid;gap:8px}
+.pj-entry{padding:11px 13px;border-radius:13px;border:1px solid #d7c9b3;background:#fffbf1;min-width:0;color:#2d5144}
+.pj-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.pj-meta strong{font-size:13px;color:#315b4b}.pj-meta small{font-size:11px;color:#657568}
+.pj-entry p{font-size:14px;line-height:1.65;margin:4px 0;overflow-wrap:anywhere;color:#2d5144}
+.pj-entry b{color:#315e4c;margin-right:5px}.pj-empty{color:#5b7466;font-size:13px;line-height:1.7}
+.pj-archive{padding:8px 0}.pj-archive>summary{cursor:pointer;color:#325747;min-height:42px;padding:9px;border:1px solid #d0c3aa;border-radius:10px;background:#f3eddf;font-weight:750}
+.pj-archive .pj-entry{margin-top:8px}
+@media(max-width:650px){.pj-panel{padding:12px 11px}.pj-heading h3{font-size:17px}.pj-entry p{font-size:14px}}
+</style>
+
+<script id="kaze-party-journey-v09170">
+/* KAZEMACHI v0.9.170: companion-to-companion travel dialogue.
+   Cosmetic only; no changes to damage, rewards, NPC AI or party selection. */
+(()=>{
+ 'use strict';
+ const bridge=window.KazeWindBridge;
+ if(!bridge||!document.getElementById('companions'))return;
+ const IDS=['gald','rio','sera','mina','noel','eda','toto','van'];
+ const N={gald:'ガルド',rio:'リオ',sera:'セラ',mina:'ミーナ',noel:'ノエル',eda:'エダ',toto:'トト',van:'ヴァン'};
+ const PHASES={depart:'出発前',during:'探索中',return:'帰還後'};
+ const ZONES={forest:'緑風の森',mine:'赤錆の鉱山',boss:'忘却の地下聖堂',oldroad:'苔むした旧道',ruins:'巡礼者の地下遺跡',highland:'風鳴りの高原',starwood:'星影の樹海',greenhouse:'眠り花の温室',observatory:'玻璃の天文塔',invertedcity:'宵空の逆さ都',dawnsea:'暁の雲海',eclipse:'星蝕の断崖',starpit:'無明の星坑',stargarden:'星巡りの終わらない庭'};
+ /* All 28 pairings have distinct, in-character exchanges at all three phases. */
+ const TALK={
+  'gald:rio':[
+   ['また新しい道を見つけたのか、リオ。帰りの目印は？','ちゃんと書いたよ！ ……たぶん、この辺！'],
+   ['リオ、走るな。足場を見ろ。','分かってる！ ……あ、今のは助かった！'],
+   ['今日の地図はどうだった。','ほら、ここ！ 迷ったところまで記録したんだ。']],
+  'gald:sera':[
+   ['セラ、その本はずいぶん厚いな。持てるか？','平気よ。剣ほど重くはないもの。'],
+   ['この紋章、何か分かるか。','少し待って。見覚えのある綴りだわ。'],
+   ['さっきの解読、助かった。','あなたが足を止めてくれたから読めたのよ。']],
+  'gald:mina':[
+   ['備品の確認は終わったか。','はい。ガルドさんの分も用意してあります。'],
+   ['怪我人が出そうなら俺が前へ出る。','その前に、一度立ち位置を相談しましょう。'],
+   ['今日は皆が無事でよかった。','それが何よりですね。回復薬も少し残りました。']],
+  'gald:noel':[
+   ['焦らなくていい。いつもの手順で頼む。','はい……一つずつ、確かめます。'],
+   ['ノエル、今の呪文で道が見えたぞ。','本当ですか？ 練習しておいてよかった……。'],
+   ['今日はよく動けていたな。','ありがとうございます。また少し自信がつきました。']],
+  'gald:eda':[
+   ['出発前に気になることはないか。','ひとつ試したいんだ。帰り道もちゃんと見ておくよ！'],
+   ['ここは俺が盾になる。','じゃあ次の動き、私が合図するね！'],
+   ['何か分かったか、エダ。','うん！ 予想と違ったところが面白かったよ。']],
+  'gald:toto':[
+   ['荷物はそれで全部か？','ああ、帰りに何か拾う余地も残してあるよ。'],
+   ['トト、落とし物を拾うなら足元に気をつけろ。','分かってるって。……この石、売れるかねえ。'],
+   ['収穫はあったか。','儲けより面白い話があったよ。あんたにも後で聞かせるさ。']],
+  'gald:van':[
+   ['二人とも前に出るのは危険だ。役割を決めよう。','俺は右から行く。左は任せる。'],
+   ['ヴァン、合図を待て。','分かってる。……今だな。'],
+   ['いい連携だった。','悪くない。次はもう少し速く動ける。']],
+  'rio:sera':[
+   ['セラ、この星の形って何か意味がある？','よく気づいたわね。道標の記号かもしれないわ。'],
+   ['こっちからも文字が読めそう！','触る前に待って。順番があるの。'],
+   ['今日の発見、記録しておいてね！','ええ。あなたが見つけたものだから、名前も残すわ。']],
+  'rio:mina':[
+   ['ミーナ、寄り道してもいい？','帰りの時間を決めてからにしましょう。'],
+   ['あっ、ここ滑る！','手を貸します。慌てないでくださいね。'],
+   ['今日も助けられちゃった。','次は自分で気づけたら、それで十分です。']],
+  'rio:noel':[
+   ['新しい道、見つけたら一緒に見に行かない？','僕でよければ……地図も持っていきます。'],
+   ['ノエル、あそこの模様が光ったよ！','そうですね。どの呪文に反応したんでしょう。'],
+   ['今日はすっごく面白かった！','僕もです。忘れないように書いておきますね。']],
+  'rio:eda':[
+   ['今日は道の先を試してみようよ！','いいね！ 何が違うか私も確かめたい。'],
+   ['今の、ちょっと変わってなかった？','うん、二回目は動きが違った！'],
+   ['次は別の道から行こう！','賛成。今日の結果を残しておくね。']],
+  'rio:toto':[
+   ['トト、変な石を見つけたんだ！','ほう、変な石ほど値がつくこともあるよ。'],
+   ['これって何かの素材かな？','使い道は分からないけど、拾っとこうかねえ。'],
+   ['今日の宝物、いくらになるかな！','すぐ売るのは惜しいねえ。ちょっと眺めておきな。']],
+  'rio:van':[
+   ['ヴァン、今日はどこまで進む？','行けるところまで。無茶はしない。'],
+   ['この先、近道かもしれない！','見つけたなら先に足場を確かめろ。'],
+   ['また一緒に行ってくれる？','予定が合えばな。地図は持ってこい。']],
+  'sera:mina':[
+   ['魔力の配分を少し試したいの。','安全を確認してからにしましょう。'],
+   ['この仕組み、想定より複雑ね。','記録を残します。次に役立つはずです。'],
+   ['今日は観察に付き合ってくれてありがとう。','こちらこそ。説明が分かりやすかったです。']],
+  'sera:noel':[
+   ['前に教えた式、覚えている？','はい。紙に書いて、毎日少しずつ。'],
+   ['ノエル、今のはとてもいいわ。','ありがとうございます。もう一度、同じ手順で……。'],
+   ['無理をせず、続きは次でもいいのよ。','そうですね。次が楽しみになりました。']],
+  'sera:eda':[
+   ['この記録、順序を入れ替えると読めそうね。','じゃあ、違う並びも試してみる？'],
+   ['この条件だけ反応が違うわ。','本当だ！ どうしてだろう。'],
+   ['今日の結果、あとで照合しましょう。','私もまとめておくね。次が楽しみ！']],
+  'sera:toto':[
+   ['この花、夜だけ開くのね。','あたしも気になってたよ。珍しい品だねえ。'],
+   ['この葉の模様は魔法の影響かしら。','似たのを見たことはあるけど、こいつは違うね。'],
+   ['標本にしてもいいかしら。','もちろん。値札をつける前に頼むよ。']],
+  'sera:van':[
+   ['少し観察する時間をもらえる？','……いい。周りを見ておく。'],
+   ['ヴァン、右の魔法陣が先に動くわ。','分かった。合図で踏み込む。'],
+   ['待ってくれて助かったわ。','必要な時間だった。それだけだ。']],
+  'mina:noel':[
+   ['準備は整っていますか？','はい。手順を一つずつ確認しました。'],
+   ['ノエルさん、少し休みませんか。','そうですね。集中しすぎていました。'],
+   ['今日は落ち着いて進めましたね。','ミーナさんが声をかけてくれたおかげです。']],
+  'mina:eda':[
+   ['薬草の仕分けをお願いできますか。','もちろん！ 種類ごとに試してみるね。'],
+   ['この薬、効き方が少し違います。','えっ、じゃあ記録しておいた方がいいね！'],
+   ['今日は手伝ってくれて助かりました。','こちらこそ！ 次はもっと早くできそう。']],
+  'mina:toto':[
+   ['薬草は必要な分だけにしましょう。','分かったよ。余りは市場に回すからね。'],
+   ['足元の葉、踏まないでくださいね。','おっと、危ない。助かったよ。'],
+   ['いい薬草が採れました。','花の匂いもよかったねえ。また見に行こう。']],
+  'mina:van':[
+   ['回復薬、持っていますか？','持ってる。……使うタイミングは任せる。'],
+   ['少し下がってください。回復します。','……分かった。次は俺が前に出る。'],
+   ['無事に戻れてよかったです。','ああ。支えてくれて助かった。']],
+  'noel:eda':[
+   ['今日は覚えた魔法を試したいんです。','いいね！ 私も動きを見てみたい。'],
+   ['今の、いつもより早く唱えられました。','うん！ でも次はゆっくりも試してみよう。'],
+   ['結果をノートにまとめておきます。','私もメモする！ 見比べようね。']],
+  'noel:toto':[
+   ['この道具、古い作りですね。','いい品は長持ちするからねえ。'],
+   ['紐がほどけそうです。結び直しましょう。','器用だねえ。あたしのも頼めるかい？'],
+   ['直した道具、まだ使えそうですね。','ああ、しばらく大切に使わせてもらうよ。']],
+  'noel:van':[
+   ['僕、少し遅れてしまうかもしれません。','構わない。急ぐ必要はない。'],
+   ['あの敵、どう動くんでしょう。','見てから決めろ。焦るな。'],
+   ['怖かったけれど、最後までできました。','よくやった。次も同じように。']],
+  'eda:toto':[
+   ['今日の市場、何か変わった？','この間の品がずいぶん値上がりしたよ。'],
+   ['あっ、この道具まだ使えるんだ！','使い方次第さ。すぐ捨てるのはもったいない。'],
+   ['今日の発見、値段がつかなくてもいいね。','そうさね。面白かったら、それで十分だよ。']],
+  'eda:van':[
+   ['今日は違う戦い方を試してみない？','……一度なら。'],
+   ['今の動き、前と違ったよ！','なら次は、その差を利用する。'],
+   ['また新しい組み合わせ考えようよ！','考えておく。悪くなかった。']],
+  'toto:van':[
+   ['ヴァン、その剣はまだ使うのかい。','使う。手になじんでる。'],
+   ['あんた、珍しいものを見つけても黙ってるねえ。','戦ってる間は、そっちが先だ。'],
+   ['強い敵だったねえ。','ああ。だがいい戦いだった。']]
+ };
+ const pairKey=(a,b)=>[a,b].sort((x,y)=>IDS.indexOf(x)-IDS.indexOf(y)).join(':');
+ const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const day=t=>1+Math.floor((480+Math.max(0,t)*30)/1440);
+ const time=t=>{const n=480+Math.max(0,t)*30;return String(Math.floor((n%1440)/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');};
+ const parent=document.querySelector('.layout > .panel[data-ui-page="adventure"][data-ui-order="0"]');
+ if(!parent)return;
+ const panel=document.createElement('section');panel.className='pj-panel';panel.id='partyJourneyPanel';panel.setAttribute('aria-label','旅の道中会話');
+ panel.innerHTML='<div class="pj-heading"><div><span class="pj-kicker">PARTY JOURNAL / 同行する仲間の会話</span><h3>☕ 旅の道中会話</h3></div><span class="pj-counter" id="partyJourneyCount">0件</span></div><p class="pj-help">一緒に冒険している仲間が、出発前や探索中、帰還後にふと交わす言葉。二人以上が同行すると、ときどき聞こえてきます。</p><div id="partyJourneyEntries" class="pj-entries" aria-live="off"><p class="pj-empty">まだ道中の会話はありません。仲間を二人以上連れて冒険すると記録が増えます。</p></div>';
+ parent.append(panel);
+ const list=panel.querySelector('#partyJourneyEntries'),count=panel.querySelector('#partyJourneyCount');
+ let ref=null,lastSignature='';
+ const blank=()=>({version:1,nextId:1,lastDay:0,todayCount:0,lastRun:0,history:[],active:null});
+ function state(){const s=bridge.read();if(!s.partyJourney||s.partyJourney.version!==1)s.partyJourney=blank();return s.partyJourney;}
+ function choosePair(ids,history,run){
+  const pairs=[];for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){const key=pairKey(ids[i],ids[j]);if(TALK[key])pairs.push(key);}
+  if(!pairs.length)return null;
+  const counts=Object.fromEntries(pairs.map(p=>[p,history.filter(x=>x.pair===p).length]));
+  const lowest=Math.min(...Object.values(counts));const candidates=pairs.filter(p=>counts[p]===lowest);
+  return candidates[run%candidates.length];
+ }
+ function show(silent=false){
+  const s=bridge.read(),st=state(),rows=st.history.slice(-24).reverse();
+  const sig=rows.map(x=>x.serial+':'+x.chatSent).join('|')+'|'+st.history.length;
+  if(sig===lastSignature&&!silent)return;lastSignature=sig;
+  count.textContent=`最近 ${rows.length}件`;
+  const format=e=>{const talk=TALK[e.pair]?.[['depart','during','return'].indexOf(e.phase)];if(!talk)return '';
+   return `<article class="pj-entry"><div class="pj-meta"><strong>${esc(PHASES[e.phase])}</strong><small>第${day(e.tick)}日 ${time(e.tick)} · ${esc(ZONES[e.zone]||e.zone)}</small></div>${talk.map((t,i)=>`<p><b>${esc(N[e.pair.split(':')[i]])}</b>「${esc(t)}」</p>`).join('')}</article>`;};
+  list.innerHTML=rows.length?rows.slice(0,3).map(format).join('')+(rows.length>3?`<details class="pj-archive"><summary>以前の道中会話を見る（${rows.length-3}件）</summary>${rows.slice(3).map(format).join('')}</details>`:''):'<p class="pj-empty">まだ道中の会話はありません。仲間を二人以上連れて冒険すると記録が増えます。</p>';
+ }
+ function deliver(){
+  const s=bridge.read(),st=state();if(s.chatRoom?.quiet||s.tutorial?.status==='active'||document.hidden)return;
+  // Do not broadcast past outings long after re-opening an older save.
+  const now=bridge.tick(),waiting=st.history.filter(e=>!e.chatSent).slice(0,1);
+  for(const e of waiting){
+   if(now<e.tick||now-e.tick>6){e.chatSent=true;bridge.persist('partyJourneyExpire');continue;}
+   const messages=TALK[e.pair]?.[['depart','during','return'].indexOf(e.phase)];if(!messages){e.chatSent=true;continue;}
+   const who=e.pair.split(':');
+   if(window.KazeChat?.publishPartyJourney?.(e.serial,[[N[who[0]],messages[0]],[N[who[1]],messages[1]]])){
+    e.chatSent=true;bridge.persist('partyJourneyChat');break;
+   }
+  }
+ }
+ function addEvent(phase,b){
+  const s=bridge.read(),st=state(),active=st.active;
+  if(!active||active.fired||active.phase!==phase||active.run!==s.runs+(phase==='return'?0:1)||active.zone!==b.zone)return false;
+  const ids=b.allies.filter(a=>a.npc&&a.team==='ally').map(a=>a.id);
+  if(!active.pair.split(':').every(id=>ids.includes(id)))return false;
+  const e={serial:st.nextId++,pair:active.pair,phase,tick:bridge.tick(),zone:b.zone,run:active.run,chatSent:false};
+  st.history.push(e);st.history=st.history.slice(-36);active.fired=true;
+  if(phase==='return')st.active=null;
+  bridge.persist('partyJourneyScene');show();deliver();return true;
+ }
+ function depart(b){
+  if(!b)return;const s=bridge.read(),st=state(),ids=b.allies.filter(a=>a.npc&&a.team==='ally').map(a=>a.id);
+  const currentDay=day(bridge.tick());if(st.lastDay!==currentDay){st.lastDay=currentDay;st.todayCount=0;}
+  st.active=null;
+  if(ids.length<2||st.todayCount>=3||s.tutorial?.status==='active')return;
+  const run=s.runs+1;
+  // At most one vignette per battle, with rotation across preparation/field/return.
+  const pair=choosePair(ids,st.history,run);if(!pair)return;
+  const phases=['depart','return','during'];const phase=phases[(run+ids.length)%phases.length];
+  st.active={run,pair,phase,zone:b.zone,fired:false};st.todayCount++;st.lastRun=run;
+  if(phase==='depart')addEvent('depart',b);
+  bridge.persist('partyJourneyDepart');show();
+ }
+ function during(b){if(b?.state==='running'&&b.time>=8)addEvent('during',b);}
+ function finish(b){
+  if(!b||!['won','retreated','lost'].includes(b.state))return;
+  if(state().active?.phase==='return')addEvent('return',b);
+  state().active=null;bridge.persist('partyJourneyFinish');show();
+ }
+ function sync(){const s=bridge.read();if(s!==ref){ref=s;lastSignature='';}
+  show();deliver();}
+ window.KazePartyJourney={depart,during,finish,sync,inspect:()=>({state:JSON.parse(JSON.stringify(state())),pairs:Object.keys(TALK).length,phases:Object.keys(PHASES)})};
+ sync();setInterval(sync,5000);
+})();
+
+</script>
+<style id="kaze-npc-origin-novels-v0171">
+/* The origin buttons are visible even on collapsed NPC roster cards. */
+#worldPeople .wind-card-actions .npc-origin-open{background:#ede7d7!important;color:#2c5547!important;border:1px solid #c7b18a!important;font-size:clamp(12px,1.2vw,14px);font-weight:750;line-height:1.5;min-height:44px;white-space:normal;}
+#worldPeople .wind-card-actions .npc-origin-open:hover{background:#e7dfca!important;}
+#worldPeople .wind-card-actions .npc-origin-open:focus-visible{outline:3px solid #c79958;outline-offset:2px;}
+#npcOriginDialog{width:min(700px,calc(100% - 24px));max-height:min(91dvh,850px);border:1px solid #bda989;border-radius:19px;padding:0;background:#fff9ed;color:#2c4b40;box-shadow:0 22px 72px #152e2866;overflow:hidden;}
+#npcOriginDialog::backdrop{background:rgba(17,32,29,.73);backdrop-filter:blur(3px);}
+.npc-origin-layout{display:flex;flex-direction:column;max-height:min(91dvh,850px);min-height:0;}
+.npc-origin-header{display:flex;align-items:center;justify-content:space-between;gap:15px;background:#efe3cb;border-bottom:1px solid #d6c3a1;padding:15px 18px;flex:none;}
+.npc-origin-overline{font-size:11px;font-weight:800;letter-spacing:.1em;color:#846849;margin:0 0 3px;}
+#npcOriginTitle{font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-size:clamp(19px,3.5vw,25px);line-height:1.5;color:#2d5647;margin:0;}
+.npc-origin-close{flex:0 0 auto;border:1px solid #c9b69a;border-radius:13px;min-width:44px;min-height:44px;padding:8px 14px;background:#fffaf0;color:#315547;font-size:15px;font-weight:800;cursor:pointer;}
+.npc-origin-scroll{overflow-y:auto;overscroll-behavior:contain;padding:21px clamp(17px,4vw,40px) 26px;min-height:0;}
+.npc-origin-meta{display:flex;align-items:center;gap:13px;min-width:0;margin:0 0 20px;padding-bottom:13px;border-bottom:1px dashed #d2c4a9;}
+.npc-origin-portrait{width:75px;height:75px;object-fit:cover;border-radius:13px;border:3px solid #fffdfa;outline:1px solid #c6b49b;background:#f3e7cd;flex:none;}
+.npc-origin-small{font-size:13px;line-height:1.8;color:#597264;margin:0;}
+.npc-origin-intro{font-size:14px;line-height:1.9;color:#3e604f;margin:0 0 14px;}
+.npc-origin-story{font-size:clamp(15px,1.65vw,17px);line-height:2.06;letter-spacing:.014em;color:#2a453c;}
+.npc-origin-story p{margin:0 0 1.3em;white-space:pre-wrap;overflow-wrap:anywhere;}
+.npc-origin-story p:last-child{margin-bottom:0;}
+.npc-origin-footer{border-top:1px solid #dbcaad;background:#f4ecdd;display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));flex:none;}
+.npc-origin-footer button{border:1px solid #bca989;background:#fffaf0;color:#305648;border-radius:11px;min-height:44px;padding:9px 13px;font-weight:800;cursor:pointer;font-size:14px;}
+.npc-origin-footer button:disabled{opacity:.38;cursor:default;}
+.npc-origin-footer .npc-origin-done{background:#356f5c;color:#fff9eb;border-color:#34604d;}
+#npcOriginDialog button:focus-visible{outline:3px solid #bf8f4d;outline-offset:2px;}
+@media(max-width:600px){#npcOriginDialog{max-height:min(88dvh,770px);}.npc-origin-layout{max-height:min(88dvh,770px);}.npc-origin-header{padding:12px 14px;}.npc-origin-scroll{padding:18px 18px 20px;}.npc-origin-meta{gap:11px;}.npc-origin-portrait{width:64px;height:64px;}.npc-origin-footer{gap:7px;}.npc-origin-footer button{font-size:12px;padding:8px 10px;}}
+</style>
+<dialog id="npcOriginDialog" aria-labelledby="npcOriginTitle" aria-describedby="npcOriginIntro">
+ <div class="npc-origin-layout">
+  <header class="npc-origin-header"><div><p class="npc-origin-overline">FRIENDSHIP ORIGINS / はじまりの出会い</p><h2 id="npcOriginTitle">はじまりの出会い</h2></div><button type="button" class="npc-origin-close" id="npcOriginCloseTop" aria-label="物語を閉じる">閉じる</button></header>
+  <div class="npc-origin-scroll" id="npcOriginScroll" tabindex="0"><div class="npc-origin-meta" id="npcOriginMeta"></div><p class="npc-origin-intro" id="npcOriginIntro"></p><div class="npc-origin-story" id="npcOriginStory"></div></div>
+  <footer class="npc-origin-footer"><button type="button" id="npcOriginPrev">前の仲間</button><button type="button" id="npcOriginNext">次の仲間</button><button type="button" id="npcOriginCloseBottom" class="npc-origin-done">読み終える</button></footer>
+ </div>
+</dialog>
+<script id="kaze-npc-origin-novels-v0171">
+(()=>{
+'use strict';
+const STORIES=[{"id":"gald","name":"ガルド","title":"木橋の向こうで待つ人","kicker":"盾を構える理由","levels":"主人公 Lv10前後 ／ ガルド Lv12","history":"長く遊んだ後に少し離れ、剣士のアバターを新しく育て直していたころ。","paragraphs":["緑風の森の木橋は、見るたびに少し違う音を立てた。あなたが橋の前で足を止めたのは、渡れないからではない。向こう岸にいる剣士が、誰かを待っているように見えたからだった。","「……先に行っていいぞ」　青みがかった髪の剣士は言った。名前はガルド。頭上のレベル表示は十二。あなたより二つ高いだけなのに、盾を持つ姿はずっと手慣れて見えた。けれど、彼の足元には、同じ場所を行ったり来たりしたような跡があった。","「道を忘れたんですか」と尋ねると、ガルドは少し黙った。「昔は知っていた。久しぶりに来たら、少し変わっていてな」。それ以上は説明しない。古いアカウントの話なのか、別の冒険の話なのか、あなたにも分からなかった。","橋の向こうには森狼がいた。一人で渡るには不安だが、二人ならどうだろう。あなたがパーティー申請を送ると、数秒して承認の小さな音がした。「俺が前に出る。危なくなったら、遠慮なく戻れ」。その言い方に命令らしさはなく、選択肢を一つ増やしてくれたように聞こえた。","戦いは完璧ではなかった。ガルドが古い癖で踏み込みすぎ、あなたが回復のタイミングを迷う。倒したあと、二人でしばらく橋の上に立ち尽くした。「……今のは、俺が急いだ」。頼りになる人も、ちゃんと失敗するのだと知った。","帰り道、ガルドは橋の手前で一度振り返った。「今日は助かった。久しぶりの森を、一人で歩くよりよかった」。あなたが「また一緒に歩きませんか」と言うと、彼はすぐには返事をしなかった。やがて、フレンド申請が一件届いた。","《ガルドからフレンド申請が届いています》。「次は、橋の先まで行こう」。その短い言葉を読みながら、あなたは承認を押した。橋の軋む音は、もう少しだけ頼もしく思えた。"]},{"id":"rio","name":"リオ","title":"地図の端に、まだ道がある","kicker":"迷い道から始まるフレンド","levels":"主人公 Lv10前後 ／ リオ Lv10","history":"主人公と近い時期に遊び始めた、まだ慣れない狩人だったころ。","paragraphs":["ギルドの掲示板の端に、誰かが小さな地図を貼っていた。きれいな線で描かれているのに、肝心の道が途中で切れている。《この先を知っている人、いますか？》と書かれた文字の下に、リオという名前があった。","声をかけると、橙色の髪の狩人がぱっと振り向いた。「えっ、行ってくれるの？　よかった！　僕、ここまで描いたのに、帰り道が分からなくなっちゃって」。レベルは十。あなたと同じくらいだ。地図を作るのが好きだと言う割に、方向にはあまり自信がないらしい。","二人で緑風の森へ出る。リオは花の咲き方や風の向きを次々と教えてくれた。あなたが道しるべを見つけると、彼はそこに小さな丸を描き足した。「知ってることが違うと、地図ってちゃんと埋まるんだね」。","森の奥で小さな分かれ道に出た。リオは右を指し、あなたは左に道しるべがあることに気づく。二人はしばらく話し合い、いったん戻って確かめることにした。結局、どちらの道も同じ大木の下へつながっていた。「なんだ、正解が二つあったんだ！」　リオは悔しがるより先に笑った。","その笑い方につられて、あなたも笑った。二人で歩いたぶんだけ、地図には目印が増えていた。今日の探索で得たものは珍しい装備でも大量の経験値でもなく、たった一枚の書きかけの地図だった。","町へ戻ると、リオは掲示板から古い地図を外して、新しいものを貼った。端には《一緒に歩いてくれた人にありがとう》と書き足されている。あなたがそれを見つけるより先に、風信帳へメッセージが届いた。","「今度、新しい道を見つけたら先に誘っていい？　フレンド登録しておけば、すぐ声かけられるよね！」。承認を押すと、地図の空白が、知らない場所というより、次に二人で行く場所に見えた。"]},{"id":"sera","name":"セラ","title":"星図の余白に書いたこと","kicker":"言葉を交わすのが遅い二人","levels":"主人公 Lv10前後 ／ セラ Lv11","history":"以前から世界を知っていたが、忙しい時期を経て魔術師を育て直していたころ。","paragraphs":["冒険者ギルドの古い本棚には、誰かが読み終えた地図帳が置かれていた。あなたがそれを開くと、余白に細い文字が書き込まれている。《この印は、本当に北を示しているのでしょうか》。ページの向こうで、同じ本をのぞき込んだ魔術師が小さく会釈した。","「すみません。私の書き込みです」。セラという名の女性魔術師だった。レベルは十一。難しい本を読んでいるので高名な冒険者かと思ったが、装備はまだ駆け出しのものだった。「以前は別のことに夢中で、この職はまだ勉強中なんです」と彼女は言った。","二人で森の道標を確かめに行くことになった。セラは道の印を読み、あなたはそこから見える木々の形を覚える。彼女は時々足を止めて考え込んだが、急かされるのが苦手なのではなく、確かでないことを確かだと言いたくないのだと、あなたには分かった。","一度だけ、彼女の予想した道が行き止まりだった。あなたが来た道を指すと、セラは地図をしまい、「間違っていましたね」と素直に言った。「でも、戻り道を覚えていてくれたので助かりました」。それはお世辞ではなく、事実を丁寧に並べた礼だった。","帰りのギルドで、セラは地図帳に新しい一行を書き足した。《印は北ではなく、古い橋を指す》。その下にあなたが見つけた目印も書いてくれた。名前を書かれて少しくすぐったくなり、「そこまでしなくても」と伝えると、彼女は首を振った。","「一人で分かったことにしたくないんです。今日の道は、二人で確かめましたから」。本を閉じたあと、セラは少し考えてから続けた。「よければ、これからも一緒に調べませんか。時間が合う日だけで構いません」。","フレンド申請の表示は控えめだった。でも、それを承認した瞬間、あなたには次の一ページを開く理由ができた。いつか、地図帳の余白が足りなくなったらいい。そんなことを思った。"]},{"id":"mina","name":"ミーナ","title":"帰るために持っていくもの","kicker":"勝つことだけが冒険ではない","levels":"主人公 Lv10前後 ／ ミーナ Lv11","history":"支援職で新しい冒険を始めたばかりの、準備を欠かさない旅人だったころ。","paragraphs":["宿屋の前に、薬草を数えている癒し手がいた。三つ数えて、いったん袋へ戻す。また取り出して、今度は二つだけを残す。その慎重な手つきに足を止めると、彼女は気づいて笑った。「荷物が増えると、帰りが大変ですから」。","ミーナ。レベル十一の癒し手だという。あなたは少し驚いた。回復役なら薬草をたくさん持つものだと思っていたからだ。「使える数と、持てる数は違いますよ」と彼女は言う。「必要なら途中で戻ればいいんです」。","同じ森の依頼を受けていたと知り、二人で出発することになった。ミーナは回復の合図を決めたが、あなたにも「無理だと思ったら言ってください」と頼んだ。頼られる側だけでなく、頼る側にもなれる人なのだと、旅の始まりから伝わってきた。","森では、予定より早く薬草を使い切りそうになった。敵はまだ先にいる。あなたが迷っていると、ミーナは「いったん戻りませんか」と提案した。倒せるかもしれない。でも、帰り道の分を使ってまで進む必要はない。二人で決め、町へ引き返した。","受付へ報告するとき、ミーナは撤退を失敗とは呼ばなかった。「今日は道の状態を知れました。次は少し準備を変えてみましょう」。それは、あなたの判断を無理に褒める言葉でもなかった。彼女自身も、同じ選択に納得している声だった。","「回復役だからって、私が毎回一緒にいなくても大丈夫です」とミーナは言った。「でも、予定が合ったら、また同行したいです」。そう言って差し出されたフレンド申請には、何かを約束させる重さがなかった。","あなたは承認を押した。いつか遠くの地へ行く日が来ても、この人となら、引き返すことまで一緒に考えられそうだと思った。"]},{"id":"noel","name":"ノエル","title":"魔法の手順を、もう一度","kicker":"教わりながら教え合う","levels":"主人公 Lv10前後 ／ ノエル Lv9","history":"以前から少しずつ遊んでいたが、魔術師の操作をゆっくり学んでいたころ。","paragraphs":["訓練場の片隅で、同じ魔法が三度続けて失敗した。小さな火花が弾け、次の瞬間には消える。その前に立つ魔術師は、四度目を試す前に長く息をついた。あなたが近づくと、ノエルと名乗った彼は、困ったように笑った。","レベルは九。あなたより少し低い。「押す順番を覚えたつもりだったんですが、戦いになると慌ててしまって」。慣れた手つきでノートのようなメモを開き、短い言葉で操作を書き留める。あなたはその几帳面さに、つい見入ってしまった。","「一度、森で試してみませんか」と誘うと、ノエルはためらった。「迷惑をかけませんか」。あなたにもまだ、ほかの人を完璧に助けるだけの余裕はない。「私も練習中です」と伝えると、彼は少しほっとしたようだった。","森では最初の合図が遅れた。あなたも防御のタイミングを間違えた。二人で立て直しながら小さな戦いを終えると、ノエルは「今、二つ目の操作を忘れました」と正直に言った。「私もです」と返すと、彼は声を上げずに笑った。","帰り道、ノエルはメモに三つのことを書いた。慌てたこと、できたこと、次に試すこと。最後の行だけは空白だった。「ここは、また一緒に考えてもらえますか」。彼にとって、誰かと組むことは迷惑をかけることではなく、考える相手が増えることなのかもしれない。","ギルドに戻ってから、彼のほうからフレンド申請が届いた。添えられた文は「毎回うまくできるとは限りませんが、それでもよければ」。あなたは迷わず承認した。","翌日、風信帳に短い便りが届いた。《昨日の三つ目の手順、思い出しました》。そんな小さな報告が、二人の最初の共通の記録になった。"]},{"id":"eda","name":"エダ","title":"報告書の余白に","kicker":"初めての旅を聞いてくれた人","levels":"主人公 Lv10前後 ／ エダ Lv12","history":"ゲーム内では自分から話しかけることを楽しんでいた、比較的新しいプレイヤーだったころ。","paragraphs":["最初の森の依頼から戻った日のことを、あなたは覚えている。勝てたか、途中で引き返したか。その結果以上に、ギルドの掲示板の前でしばらく立ち止まった時間が心に残っていた。何を報告すればいいのか、うまく言葉にならなかったのだ。","「どうだった？」と明るい声がした。振り向くと、花の飾りをつけた癒し手がいた。名前はエダ。レベルは十二。彼女は報告用の紙を二枚持っていて、片方には小さな丸印が並んでいた。「結果だけじゃなくて、途中で気になったことも書くといいよ」。","あなたが話すたびに、エダは「なるほど」「それは大事だね」と紙に書き込んだ。森の道しるべ、歩きやすかった場所、思ったより難しかった戦い。彼女は一つも、失敗だから消してしまおうとは言わなかった。","「今度、別の道も確かめに行かない？」とエダが誘った。「私、依頼の書き方がちょっと分かりにくいところを調べてるんだ」。二人でパーティーを組んだものの、彼女は道中でも思いつくたびに足を止める。「あれ、こっちから読むと意味が違う！」。そのたびにあなたも一緒に確認した。","戻ってから、報告書にはたくさんの修正が入った。最初の案よりずっと読みやすくなったが、エダは満足そうにうなずくばかりだった。「一人だと、自分の説明の分かりにくさって気づけないんだね」。そう言ったあと、「また一緒に試してくれる？」と少しだけ声を落とした。","あなたが頷くと、今度はフレンド申請が届いた。「依頼がなくても話せるようにしておきたいな。旅の話、もっと聞きたいし！」。それは、次の仕事を頼むためだけではない誘いだった。","ずっとあと、エダから風信帳に「最初の旅、どうだった？」という便りが来ることになる。あなたがどんな答えを選んでも、彼女はきっと、あの日の報告書のように大切に聞いてくれる。"]},{"id":"toto","name":"トト","title":"値札のない拾いもの","kicker":"取引ではない約束","levels":"主人公 Lv10前後 ／ トト Lv12","history":"商売や収集を長く楽しみ、冒険用の狩人を新しく育てていたころ。","paragraphs":["町の市場で、あなたは小さな素材を手に立ち尽くしていた。売って薬草を買うか、取っておいて鍛冶に使うか。たいした値段ではないのに決めかねていると、隣の露店から声が飛んできた。「おや、悩みごとかい？」","トトという狩人だった。レベルは十二。露店の値札を見比べる目は鋭いのに、あなたの手元の素材を見ると、すぐには値段を言わなかった。「それ、どこで拾った？」。緑風の森だと答えると、彼女は「ああ、あそこの石の陰ね」と笑った。","「売るなら値段は教えられるよ。でも、売りたいかどうかはあんたが決めな」。その言葉が意外で、あなたは聞き返した。トトは肩をすくめた。「あたしだって、最初に拾ったものはしばらく手放せなかったからねえ」。","話しているうちに、トトは森の採集へ誘ってくれた。自分も狩人としては育て直しの途中で、まだ遠い場所へは行かないという。「ほら、二人で拾えば、ちょっとくらい余分に悩めるだろ」。冗談めいた誘いに、あなたはパーティー申請を送った。","森ではトトが素材の場所を見つけ、あなたが帰り道を確かめた。珍しいものは落ちなかった。それでも帰りに露店へ寄ると、トトはその日の拾いものを一つだけ自分用に残した。「これは今日の記念。値段はつけないよ」。","「また市場に来たら声をかけな。買い物しなくてもいいから」。そう言ってフレンド申請を送ってきた。あなたが「商売にならないのでは」と尋ねると、トトは笑った。「全部を商売にしたら、つまらないじゃないか」。","承認したあと、あなたは最初の素材を売らずにしまった。それは高価ではない。ただ、トトと知り合った日のことを思い出せる、値札のないものになった。"]},{"id":"van","name":"ヴァン","title":"ひとりで行く道、二人で帰る道","kicker":"断れる関係から始める","levels":"主人公 Lv10前後 ／ ヴァン Lv14","history":"長く遊んでいたが、ひとりで挑戦するため剣士を育て直したころ。","paragraphs":["森の外れに、誰も通らない細い道があった。あなたがそこへ近づくと、岩陰から剣士が現れた。黒っぽい装備に、手入れの行き届いた剣。名前はヴァン、レベルは十四。こちらを一度見て、「その先はまだ早い」と短く言った。","言い方は無愛想だったが、道をふさいだわけではなかった。彼自身も何度か同じ道を行き来しているらしく、装備の傷は新しい。「一人で行くのが好きなんですか」と尋ねると、「ああ」とだけ答えた。","あなたが別の道を確かめようとすると、ヴァンが後ろから声をかけた。「その地図、少し古い」。彼は足元の石を示した。雨で崩れた場所だった。あなたがお礼を言うと、ヴァンはもう歩き出している。放っておかれたのに、突き放された感じはしなかった。","数日後、ギルドの入口で再会した。ヴァンは手持ちの装備を整えていたが、探索先を決めかねているらしい。「この前の道、まだ試してないのか」。あなたが一人では不安だと答えると、彼は少し考えた。「途中までなら組める。そこから先は、お互いに決めよう」。","パーティーを組んだ二人は、慎重に道を進んだ。強い敵を見かけたとき、ヴァンは前へ出ず、あなたの返事を待った。引き返すことを選んでも何も言わない。町へ戻る途中、彼はぽつりと呟いた。「自分で決めるなら、それでいい」。","ギルドで解散しようとしたとき、あなたからフレンド申請を送った。ヴァンはしばらく画面の前で止まったように動かなかった。「俺は、いつも一緒には行かないぞ」。あなたは「それでもいい」と返した。","短い承認音がした。「……分かった。行く気になったら呼ぶ」。いつかその誘いが届く日を楽しみにしながら、あなたは別の道へ歩き出した。一緒にいない時間も、フレンドであることは変わらなかった。"]}];
+const order=['gald','rio','sera','mina','noel','eda','toto','van'];
+const byId=new Map(STORIES.map(s=>[s.id,s]));
+const dialog=document.getElementById('npcOriginDialog');
+const root=document.getElementById('worldPeople');
+const scroll=document.getElementById('npcOriginScroll');
+const title=document.getElementById('npcOriginTitle');
+const intro=document.getElementById('npcOriginIntro');
+const meta=document.getElementById('npcOriginMeta');
+const body=document.getElementById('npcOriginStory');
+const prev=document.getElementById('npcOriginPrev');
+const next=document.getElementById('npcOriginNext');
+let current='gald';let lastFocus=null;
+function showPerson(id){
+ const story=byId.get(id);if(!story)return;
+ current=id; title.textContent=`${story.name} — ${story.title}`;
+ intro.textContent=story.history;
+ meta.replaceChildren();
+ const card=[...root.querySelectorAll('.npcCard')][order.indexOf(id)];
+ const cardImg=card?.querySelector('.portrait-npc');
+ if(cardImg){const img=document.createElement('img');img.className='npc-origin-portrait';img.src=cardImg.src;img.alt=`${story.name}の肖像`;meta.append(img);}
+ const description=document.createElement('div');description.className='npc-origin-small';
+ const kicker=document.createElement('strong');kicker.textContent=story.kicker;
+ const lv=document.createElement('div');lv.textContent=story.levels;
+ description.append(kicker,lv);meta.append(description);
+ body.replaceChildren();
+ for(const line of story.paragraphs){const p=document.createElement('p');p.textContent=line;body.append(p);}
+ scroll.scrollTop=0;prev.disabled=order.indexOf(current)===0;next.disabled=order.indexOf(current)===order.length-1;
+}
+function openPerson(id){if(!byId.has(id))return;lastFocus=document.activeElement;showPerson(id);try{dialog.showModal();}catch(e){dialog.setAttribute('open','');}document.getElementById('npcOriginCloseTop').focus();}
+function close(){if(dialog.open){if(typeof dialog.close==='function')dialog.close();else dialog.removeAttribute('open');}lastFocus?.focus?.();}
+root.addEventListener('click',event=>{const button=event.target.closest('[data-npc-origin]');if(button&&root.contains(button)){event.preventDefault();openPerson(button.dataset.npcOrigin);}});
+document.getElementById('npcOriginCloseTop').addEventListener('click',close);
+document.getElementById('npcOriginCloseBottom').addEventListener('click',close);
+prev.addEventListener('click',()=>{const i=order.indexOf(current);if(i>0)showPerson(order[i-1]);});
+next.addEventListener('click',()=>{const i=order.indexOf(current);if(i<order.length-1)showPerson(order[i+1]);});
+dialog.addEventListener('close',()=>lastFocus?.focus?.());
+dialog.addEventListener('click',e=>{if(e.target===dialog)close();});
+window.KazeFriendOrigins={names:STORIES.map(s=>s.name),titles:STORIES.map(s=>s.title),open:openPerson};
+})();
+</script>
 </body></html>

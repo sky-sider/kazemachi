@@ -4050,6 +4050,7 @@ button.arcade-machine:focus-visible,.arcade-button:focus-visible,.arcade-score-g
 <p>同じレジェンダリーでも個体差があり、＋5までの装備強化も役立ちます。ただし最良装備でも勝利は保証されません。どの手段で生き残るかを考えて挑みましょう。</p><h4>宵空の逆さ都（Lv85〜）</h4><p>主人公がLv85に達し、玻璃の天文塔を一度踏破すると解放されます。区域を選び、最初の向き（正位または逆位）を決め、転位門で一度反転するかそのまま調べるかを選びます。その後に調査方針を決め、「冒険を始める」から戦闘に進んでください。区域の勝利数や発見した出来事は戦闘に勝利して初めて記録されます。都市の記憶は各区域3種類、合計9種類です。記憶を辿る・品々を調べる・安全な道を確かめる、の調査方法で発見率が変化します。戦闘勝利時に最大1回抽選し、反転すると発見率が少し上がります。固有装備8種類は区域ごとにランダムドロップし、旅装備図鑑に記録されます。都市ボスは後続の更新で追加する予定です。</p></div></details><details class="guide-chapter" data-guide-name="主人公 職業 レベル 上位職 転職 スキル 編成 熟練 補助技能 極意 継承" id="guide-jobs">
 <summary><span aria-hidden="true" class="guide-chapter-icon">✦</span><span>主人公・職業・スキル</span></summary>
 <div class="guide-chapter-body"><p>主人公には全職業共通の<strong>冒険者レベル（最大100）</strong>と、職業ごとに育つ<strong>職業レベル</strong>があります。転職しても、その職業で積み上げた熟練は保存されます。</p>
+<p>冒険者Lv50を超えると、次のレベルまでに必要な経験値が徐々に大きくなります。後半は珍しい装備の収集と並行して、長く育てる目標です。<strong>職業レベルの成長速度は変わりません。</strong></p>
 <p>「主人公」でスキル・作戦・装備を整えましょう。戦闘で使われるのは基本的に<strong>編成している技能</strong>です。戦闘中は装備・スキルを変更できません。</p>
 <h4>上位職への道</h4>
 <p><strong>冒険者Lv35以上＋基本職Lv30</strong>で昇格試練を受けられます。「主人公 → 上位職への道」で受注し、対応する基本職で<strong>指定地域5勝＋風鳴りの高原2勝</strong>を達成します。高原は冒険タブの地図で入口を調査してください。試練後に<strong>800Gと鉄鉱石5個</strong>を納めると昇格します。受注前の勝利は試練に加算されず、習得済みの上位職はそのまま使えます。</p>
@@ -5039,7 +5040,12 @@ const CombatEngine = (() => {
   b.cooperation=fresh;
   b.rand=rng(0);b.rand.setState(check.randomState);b.bossOrders=Array.isArray(check.bossOrders)?check.bossOrders.filter(x=>x&&[1,2,3].includes(x.phase)&&["guard","interrupt","rush"].includes(x.choice)).slice(0,3):[];delete b.randomState;return b;
  }
- function levelXp(level){return Math.round(80+16*level+4*level*level);}
+ // Adventurer EXP: keep early growth familiar, then provide a long-term goal
+ // alongside legendary gear collecting. Job EXP uses a separate unchanged curve.
+ function levelXp(level){
+  const base=80+16*level+4*level*level;
+  return Math.round(base*(level>50?Math.pow(1.025,level-50):1));
+ }
  function jobXp(level){return Math.round(45+12*level+2*level*level);}
  const ECLIPSE_GEAR=['宵裂きの長剣','夜渡りの弓','星蝕の導杖','断崖の戦衣','宵星の兜','月喰いの盾','星喰いの矢筒','薄月の写本','夜護りの護符'];
  const STARPIT_GEAR=['無明の大剣','静寂の長弓','虚星の祭杖','星坑の守衣','封星の冠','深星の護盾','深闇の魔導書','薄明の灯具','天底の指輪'];
